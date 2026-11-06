@@ -1,0 +1,652 @@
+country,year,accounting_entry,usd_millions
+Chile,1995,asset,1075.4
+Chile,1995,liability,3033.0
+Chile,1995,net_capital_outflow,-1957.6
+Chile,1996,asset,2122.674223469997
+Chile,1996,liability,6330.082
+Chile,1996,net_capital_outflow,-4207.4077765300035
+Chile,1997,asset,2909.000000000001
+Chile,1997,liability,9485.5
+Chile,1997,net_capital_outflow,-6576.499999999999
+Chile,1998,asset,6747.099999999994
+Chile,1998,liability,8772.6
+Chile,1998,net_capital_outflow,-2025.5000000000064
+Chile,1999,asset,11722.170394401252
+Chile,1999,liability,11964.912081913424
+Chile,1999,net_capital_outflow,-242.74168751217258
+Chile,2000,asset,5285.198380068562
+Chile,2000,liability,6070.417319585218
+Chile,2000,net_capital_outflow,-785.2189395166561
+Chile,2001,asset,4321.508442616318
+Chile,2001,liability,5769.03255668506
+Chile,2001,net_capital_outflow,-1447.5241140687422
+Chile,2002,asset,2518.334905112904
+Chile,2002,liability,4276.334632245006
+Chile,2002,net_capital_outflow,-1757.9997271321022
+Chile,2003,asset,6624.064946532763
+Chile,2003,liability,5209.040860780893
+Chile,2003,net_capital_outflow,1415.0240857518702
+Chile,2004,asset,9154.218294769915
+Chile,2004,liability,5543.12658944264
+Chile,2004,net_capital_outflow,3611.091705327275
+Chile,2005,asset,8723.00389924225
+Chile,2005,liability,9065.749442491362
+Chile,2005,net_capital_outflow,-342.7455432491115
+Chile,2006,asset,15533.791098415491
+Chile,2006,liability,7887.565448425279
+Chile,2006,net_capital_outflow,7646.225649990212
+Chile,2007,asset,28348.72577190947
+Chile,2007,liability,16854.646403287188
+Chile,2007,net_capital_outflow,11494.079368622282
+Chile,2008,asset,13369.15463263571
+Chile,2008,liability,25603.86703885461
+Chile,2008,net_capital_outflow,-12234.7124062189
+Chile,2009,asset,20686.071082438575
+Chile,2009,liability,20994.387434658827
+Chile,2009,net_capital_outflow,-308.31635222025216
+Chile,2010,asset,30396.040304089147
+Chile,2010,liability,26866.096298571527
+Chile,2010,net_capital_outflow,3529.94400551762
+Chile,2011,asset,15273.684418450293
+Chile,2011,liability,40978.51322191139
+Chile,2011,net_capital_outflow,-25704.828803461096
+Chile,2012,asset,32612.954645849833
+Chile,2012,liability,47442.85741383967
+Chile,2012,net_capital_outflow,-14829.902767989839
+Chile,2013,asset,18839.670824168443
+Chile,2013,liability,33691.084823571546
+Chile,2013,net_capital_outflow,-14851.413999403103
+Chile,2014,asset,22696.166439417844
+Chile,2014,liability,34706.075633981636
+Chile,2014,net_capital_outflow,-12009.909194563792
+Chile,2015,asset,12942.89432648164
+Chile,2015,liability,17793.13978549071
+Chile,2015,net_capital_outflow,-4850.245459009071
+Chile,2016,asset,8359.63961218089
+Chile,2016,liability,15085.515839492715
+Chile,2016,net_capital_outflow,-6725.876227311825
+Chile,2017,asset,15504.93312969771
+Chile,2017,liability,18977.837827438758
+Chile,2017,net_capital_outflow,-3472.904697741047
+Chile,2018,asset,3623.8968709243604
+Chile,2018,liability,17240.986125331183
+Chile,2018,net_capital_outflow,-13617.089254406823
+Chile,2019,asset,14330.634277532528
+Chile,2019,liability,26468.466770174007
+Chile,2019,net_capital_outflow,-12137.832492641479
+Chile,2020,asset,9488.98032516428
+Chile,2020,liability,16847.534437900496
+Chile,2020,net_capital_outflow,-7358.554112736216
+Chile,2021,asset,21375.55794857365
+Chile,2021,liability,58764.539701122914
+Chile,2021,net_capital_outflow,-37388.98175254927
+Chile,2022,asset,20770.241673497003
+Chile,2022,liability,40696.3790225155
+Chile,2022,net_capital_outflow,-19926.1373490185
+Chile,2023,asset,10675.335220880002
+Chile,2023,liability,24903.02332895
+Chile,2023,net_capital_outflow,-14227.688108069997
+Chile,2024,asset,14781.938984864999
+Chile,2024,liability,18015.442524910002
+Chile,2024,net_capital_outflow,-3233.5035400450033
+Chile,2025,asset,28810.168859014
+Chile,2025,liability,35371.588163545995
+Chile,2025,net_capital_outflow,-6561.419304531995
+Indonesia,1995,asset,603.0
+Indonesia,1995,liability,10862.0
+Indonesia,1995,net_capital_outflow,-10259.0
+Indonesia,1996,asset,600.0
+Indonesia,1996,liability,11447.0
+Indonesia,1996,net_capital_outflow,-10847.0
+Indonesia,1997,asset,178.0
+Indonesia,1997,liability,2611.0
+Indonesia,1997,net_capital_outflow,-2433.0
+Indonesia,1998,asset,44.0
+Indonesia,1998,liability,-3828.1000000000004
+Indonesia,1998,net_capital_outflow,3872.1000000000004
+Indonesia,1999,asset,72.0
+Indonesia,1999,liability,-4499.29866632822
+Indonesia,1999,net_capital_outflow,4571.29866632822
+Indonesia,2000,asset,150.0
+Indonesia,2000,liability,-6622.39968866732
+Indonesia,2000,net_capital_outflow,6772.39968866732
+Indonesia,2001,asset,125.0
+Indonesia,2001,liability,-8867.22159431789
+Indonesia,2001,net_capital_outflow,8992.22159431789
+Indonesia,2002,asset,500.0
+Indonesia,2002,liability,-1608.7698872246642
+Indonesia,2002,net_capital_outflow,2108.769887224664
+Indonesia,2003,asset,5.0
+Indonesia,2003,liability,-341.67413343414296
+Indonesia,2003,net_capital_outflow,346.67413343414296
+Indonesia,2004,asset,2070.0
+Indonesia,2004,liability,2938.8820773557677
+Indonesia,2004,net_capital_outflow,-868.8820773557677
+Indonesia,2005,asset,12790.956
+Indonesia,2005,liability,11695.633723847928
+Indonesia,2005,net_capital_outflow,1095.322276152072
+Indonesia,2006,asset,6143.035732923918
+Indonesia,2006,liability,1209.6403614601695
+Indonesia,2006,net_capital_outflow,4933.395371463748
+Indonesia,2007,asset,13576.07
+Indonesia,2007,liability,16620.78
+Indonesia,2007,net_capital_outflow,-3044.709999999999
+Indonesia,2008,asset,17949.07399172225
+Indonesia,2008,liability,15822.80159714708
+Indonesia,2008,net_capital_outflow,2126.2723945751695
+Indonesia,2009,asset,14395.115155634117
+Indonesia,2009,liability,19151.48137398292
+Indonesia,2009,net_capital_outflow,-4756.366218348801
+Indonesia,2010,asset,8422.238502518774
+Indonesia,2010,liability,34992.75570331344
+Indonesia,2010,net_capital_outflow,-26570.517200794668
+Indonesia,2011,asset,16980.46591029584
+Indonesia,2011,liability,30514.449571326502
+Indonesia,2011,net_capital_outflow,-13533.983661030663
+Indonesia,2012,asset,18304.569912786268
+Indonesia,2012,liability,43851.5627823659
+Indonesia,2012,net_capital_outflow,-25546.992869579633
+Indonesia,2013,asset,15811.830294932748
+Indonesia,2013,liability,38071.771841382055
+Indonesia,2013,net_capital_outflow,-22259.941546449307
+Indonesia,2014,asset,11227.633226564769
+Indonesia,2014,liability,56299.2585166802
+Indonesia,2014,net_capital_outflow,-45071.62529011544
+Indonesia,2015,asset,22155.214775837514
+Indonesia,2015,liability,38978.35743696992
+Indonesia,2015,net_capital_outflow,-16823.142661132406
+Indonesia,2016,asset,-15311.33364705337
+Indonesia,2016,liability,14003.35472216563
+Indonesia,2016,net_capital_outflow,-29314.688369219002
+Indonesia,2017,asset,18851.305589737192
+Indonesia,2017,liability,47664.914643828895
+Indonesia,2017,net_capital_outflow,-28813.609054091703
+Indonesia,2018,asset,19803.917874610863
+Indonesia,2018,liability,44892.34017668169
+Indonesia,2018,net_capital_outflow,-25088.422302070827
+Indonesia,2019,asset,16255.728628844223
+Indonesia,2019,liability,52632.91675290227
+Indonesia,2019,net_capital_outflow,-36377.18812405804
+Indonesia,2020,asset,18139.5032627147
+Indonesia,2020,liability,26006.288718868334
+Indonesia,2020,net_capital_outflow,-7866.785456153633
+Indonesia,2021,asset,15190.677320957475
+Indonesia,2021,liability,27350.216868636173
+Indonesia,2021,net_capital_outflow,-12159.539547678698
+Indonesia,2022,asset,27564.143845956707
+Indonesia,2022,liability,18359.041010635574
+Indonesia,2022,net_capital_outflow,9205.102835321133
+Indonesia,2023,asset,21338.435941402742
+Indonesia,2023,liability,31017.360781655625
+Indonesia,2023,net_capital_outflow,-9678.924840252883
+Indonesia,2024,asset,28618.973941864933
+Indonesia,2024,liability,46028.69868746143
+Indonesia,2024,net_capital_outflow,-17409.724745596497
+Indonesia,2025,asset,28199.441903013645
+Indonesia,2025,liability,23801.2104416552
+Indonesia,2025,net_capital_outflow,4398.231461358446
+Malaysia,1995,asset,-1014.61259081917
+Malaysia,1995,liability,6627.923807559015
+Malaysia,1995,net_capital_outflow,-7642.5363983781845
+Malaysia,1996,asset,-4133.63977912849
+Malaysia,1996,liability,5343.126879886962
+Malaysia,1996,net_capital_outflow,-9476.766659015451
+Malaysia,1997,asset,4603.667838724104
+Malaysia,1997,liability,6801.171859957401
+Malaysia,1997,net_capital_outflow,-2197.504021233297
+Malaysia,1998,asset,5268.609651218347
+Malaysia,1998,liability,2718.9042841216756
+Malaysia,1998,net_capital_outflow,2549.705367096671
+Malaysia,1999,asset,9491.315789473683
+Malaysia,1999,liability,
+Malaysia,1999,net_capital_outflow,
+Malaysia,2000,asset,7977.894736842106
+Malaysia,2000,liability,
+Malaysia,2000,net_capital_outflow,
+Malaysia,2001,asset,2714.473684210526
+Malaysia,2001,liability,-940.7894736842107
+Malaysia,2001,net_capital_outflow,3655.2631578947367
+Malaysia,2002,asset,7053.684210526317
+Malaysia,2002,liability,4224.473684210527
+Malaysia,2002,net_capital_outflow,2829.21052631579
+Malaysia,2003,asset,6813.421052631578
+Malaysia,2003,liability,3498.4210526315783
+Malaysia,2003,net_capital_outflow,3315.0
+Malaysia,2004,asset,12855.789473684214
+Malaysia,2004,liability,17652.894736842107
+Malaysia,2004,net_capital_outflow,-4797.105263157893
+Malaysia,2005,asset,8523.44784015837
+Malaysia,2005,liability,-1224.0954266263589
+Malaysia,2005,net_capital_outflow,9747.543266784727
+Malaysia,2006,asset,18320.8017115541
+Malaysia,2006,liability,6478.954306349499
+Malaysia,2006,net_capital_outflow,11841.8474052046
+Malaysia,2007,asset,33147.57666216296
+Malaysia,2007,liability,21818.19167611247
+Malaysia,2007,net_capital_outflow,11329.384986050489
+Malaysia,2008,asset,14452.5404623123
+Malaysia,2008,liability,-18861.751101371665
+Malaysia,2008,net_capital_outflow,33314.29156368396
+Malaysia,2009,asset,30747.52052121525
+Malaysia,2009,liability,7417.227724899022
+Malaysia,2009,net_capital_outflow,23330.29279631623
+Malaysia,2010,asset,41144.43785956505
+Malaysia,2010,liability,35394.819071193124
+Malaysia,2010,net_capital_outflow,5749.618788371925
+Malaysia,2011,asset,33703.51810951002
+Malaysia,2011,liability,41451.21743251213
+Malaysia,2011,net_capital_outflow,-7747.699323002111
+Malaysia,2012,asset,43170.91613026209
+Malaysia,2012,liability,35356.6336056498
+Malaysia,2012,net_capital_outflow,7814.282524612296
+Malaysia,2013,asset,39910.89424271567
+Malaysia,2013,liability,33834.012380207336
+Malaysia,2013,net_capital_outflow,6076.881862508337
+Malaysia,2014,asset,40440.80252292543
+Malaysia,2014,liability,16566.454564090152
+Malaysia,2014,net_capital_outflow,23874.347958835275
+Malaysia,2015,asset,13130.852518465
+Malaysia,2015,liability,-1283.7674800474906
+Malaysia,2015,net_capital_outflow,14414.619998512491
+Malaysia,2016,asset,15109.748382257943
+Malaysia,2016,liability,15415.806786514642
+Malaysia,2016,net_capital_outflow,-306.05840425669885
+Malaysia,2017,asset,14413.395162390978
+Malaysia,2017,liability,13413.573478279002
+Malaysia,2017,net_capital_outflow,999.8216841119756
+Malaysia,2018,asset,7338.398330442655
+Malaysia,2018,liability,10076.68182408228
+Malaysia,2018,net_capital_outflow,-2738.283493639625
+Malaysia,2019,asset,23702.298573414693
+Malaysia,2019,liability,14614.763978322984
+Malaysia,2019,net_capital_outflow,9087.534595091709
+Malaysia,2020,asset,18911.329373336146
+Malaysia,2020,liability,469.2276865052909
+Malaysia,2020,net_capital_outflow,18442.101686830854
+Malaysia,2021,asset,33959.5489107818
+Malaysia,2021,liability,38490.804068352314
+Malaysia,2021,net_capital_outflow,-4531.255157570515
+Malaysia,2022,asset,21103.831759916924
+Malaysia,2022,liability,23982.54099677763
+Malaysia,2022,net_capital_outflow,-2878.7092368607046
+Malaysia,2023,asset,17252.65449767278
+Malaysia,2023,liability,16546.02583615102
+Malaysia,2023,net_capital_outflow,706.6286615217577
+Malaysia,2024,asset,36427.56572128667
+Malaysia,2024,liability,33016.707964183784
+Malaysia,2024,net_capital_outflow,3410.8577571028873
+Malaysia,2025,asset,41957.98174545964
+Malaysia,2025,liability,38310.37659064222
+Malaysia,2025,net_capital_outflow,3647.605154817422
+Peru,1995,asset,286.607
+Peru,1995,liability,5509.32991289
+Peru,1995,net_capital_outflow,-5222.72291289
+Peru,1996,asset,600.881
+Peru,1996,liability,5226.1934
+Peru,1996,net_capital_outflow,-4625.3124
+Peru,1997,asset,-49.13499999999999
+Peru,1997,liability,4676.909
+Peru,1997,net_capital_outflow,-4726.044
+Peru,1998,asset,192.11799999999968
+Peru,1998,liability,2060.00148292647
+Peru,1998,net_capital_outflow,-1867.8834829264704
+Peru,1999,asset,229.458
+Peru,1999,liability,593.1253679999988
+Peru,1999,net_capital_outflow,-363.6673679999989
+Peru,2000,asset,290.641547
+Peru,2000,liability,1007.0186628153067
+Peru,2000,net_capital_outflow,-716.3771158153068
+Peru,2001,asset,-272.18906829873606
+Peru,2001,liability,1112.50494509
+Peru,2001,net_capital_outflow,-1384.694013388736
+Peru,2002,asset,315.8674977625004
+Peru,2002,liability,2169.5042967076006
+Peru,2002,net_capital_outflow,-1853.6367989451
+Peru,2003,asset,1219.416885872442
+Peru,2003,liability,1967.1445694480767
+Peru,2003,net_capital_outflow,-747.7276835756347
+Peru,2004,asset,411.0936945379208
+Peru,2004,liability,2697.021536429429
+Peru,2004,net_capital_outflow,-2285.9278418915083
+Peru,2005,asset,1900.7594667587475
+Peru,2005,liability,1924.5114790075027
+Peru,2005,net_capital_outflow,-23.752012248755136
+Peru,2006,asset,2500.4105632729766
+Peru,2006,liability,3344.457827932355
+Peru,2006,net_capital_outflow,-844.0472646593785
+Peru,2007,asset,899.226651077661
+Peru,2007,liability,10035.44375403995
+Peru,2007,net_capital_outflow,-9136.21710296229
+Peru,2008,asset,-585.3433876283855
+Peru,2008,liability,8431.71238512719
+Peru,2008,net_capital_outflow,-9017.055772755575
+Peru,2009,asset,3352.2868065584134
+Peru,2009,liability,6655.922686601673
+Peru,2009,net_capital_outflow,-3303.63588004326
+Peru,2010,asset,3649.7838046068373
+Peru,2010,liability,16488.686278764944
+Peru,2010,net_capital_outflow,-12838.902474158107
+Peru,2011,asset,2437.8854772257296
+Peru,2011,liability,11826.154951404606
+Peru,2011,net_capital_outflow,-9388.269474178876
+Peru,2012,asset,5629.947345236761
+Peru,2012,liability,25008.0689644647
+Peru,2012,net_capital_outflow,-19378.12161922794
+Peru,2013,asset,2147.8027682757493
+Peru,2013,liability,12629.654111057342
+Peru,2013,net_capital_outflow,-10481.851342781592
+Peru,2014,asset,6888.796871902966
+Peru,2014,liability,13410.356063964759
+Peru,2014,net_capital_outflow,-6521.559192061793
+Peru,2015,asset,1109.1031770114992
+Peru,2015,liability,12051.30006220419
+Peru,2015,net_capital_outflow,-10942.196885192692
+Peru,2016,asset,2975.587344381443
+Peru,2016,liability,8562.822981689771
+Peru,2016,net_capital_outflow,-5587.235637308328
+Peru,2017,asset,5890.061722923256
+Peru,2017,liability,8650.981605525445
+Peru,2017,net_capital_outflow,-2760.9198826021893
+Peru,2018,asset,5887.90367925126
+Peru,2018,liability,7989.246640022217
+Peru,2018,net_capital_outflow,-2101.3429607709577
+Peru,2019,asset,-974.3965994073769
+Peru,2019,liability,6688.73214176629
+Peru,2019,net_capital_outflow,-7663.128741173667
+Peru,2020,asset,4007.369084555903
+Peru,2020,liability,10454.050780436175
+Peru,2020,net_capital_outflow,-6446.681695880272
+Peru,2021,asset,7377.856943823588
+Peru,2021,liability,23233.088739692506
+Peru,2021,net_capital_outflow,-15855.231795868918
+Peru,2022,asset,2263.0732873058396
+Peru,2022,liability,10145.900362614473
+Peru,2022,net_capital_outflow,-7882.8270753086335
+Peru,2023,asset,7290.898447496596
+Peru,2023,liability,6586.776807305261
+Peru,2023,net_capital_outflow,704.1216401913352
+Peru,2024,asset,8940.143223319015
+Peru,2024,liability,10675.992968112128
+Peru,2024,net_capital_outflow,-1735.8497447931131
+Peru,2025,asset,12164.230747008265
+Peru,2025,liability,13872.923149601142
+Peru,2025,net_capital_outflow,-1708.6924025928765
+Philippines,1995,asset,1828.0
+Philippines,1995,liability,6778.0
+Philippines,1995,net_capital_outflow,-4950.0
+Philippines,1996,asset,1736.0
+Philippines,1996,liability,12735.0
+Philippines,1996,net_capital_outflow,-10999.0
+Philippines,1997,asset,-280.0
+Philippines,1997,liability,6731.0
+Philippines,1997,net_capital_outflow,-7011.0
+Philippines,1998,asset,-46.0
+Philippines,1998,liability,1082.0
+Philippines,1998,net_capital_outflow,-1128.0
+Philippines,1999,asset,2369.0
+Philippines,1999,liability,6747.0
+Philippines,1999,net_capital_outflow,-4378.0
+Philippines,2000,asset,-2271.0
+Philippines,2000,liability,1329.0
+Philippines,2000,net_capital_outflow,-3600.0
+Philippines,2001,asset,-279.0
+Philippines,2001,liability,1258.0
+Philippines,2001,net_capital_outflow,-1537.0
+Philippines,2002,asset,1176.0
+Philippines,2002,liability,1163.0
+Philippines,2002,net_capital_outflow,13.0
+Philippines,2003,asset,379.0
+Philippines,2003,liability,645.0
+Philippines,2003,net_capital_outflow,-266.0
+Philippines,2004,asset,2252.0
+Philippines,2004,liability,-725.0
+Philippines,2004,net_capital_outflow,2977.0
+Philippines,2005,asset,6481.1336037499
+Philippines,2005,liability,3901.627949079304
+Philippines,2005,net_capital_outflow,2579.5056546705964
+Philippines,2006,asset,5573.668990662234
+Philippines,2006,liability,3192.954993730823
+Philippines,2006,net_capital_outflow,2380.713996931411
+Philippines,2007,asset,8729.778125468321
+Philippines,2007,liability,9180.904168309971
+Philippines,2007,net_capital_outflow,-451.1260428416499
+Philippines,2008,asset,-4058.47292900001
+Philippines,2008,liability,-3806.753786655291
+Philippines,2008,net_capital_outflow,-251.71914234471888
+Philippines,2009,asset,3021.520119464466
+Philippines,2009,liability,2376.7469466815046
+Philippines,2009,net_capital_outflow,644.7731727829614
+Philippines,2010,asset,1373.1636661443972
+Philippines,2010,liability,13056.569386774183
+Philippines,2010,net_capital_outflow,-11683.405720629786
+Philippines,2011,asset,2134.801330773613
+Philippines,2011,liability,6447.7075853121805
+Philippines,2011,net_capital_outflow,-4312.906254538568
+Philippines,2012,asset,4122.949836722386
+Philippines,2012,liability,10856.295298535688
+Philippines,2012,net_capital_outflow,-6733.345461813302
+Philippines,2013,asset,6649.061545269487
+Philippines,2013,liability,4330.943657510746
+Philippines,2013,net_capital_outflow,2318.1178877587417
+Philippines,2014,asset,15297.133565015496
+Philippines,2014,liability,5669.951827432258
+Philippines,2014,net_capital_outflow,9627.181737583238
+Philippines,2015,asset,6669.498538725524
+Philippines,2015,liability,4374.562858433803
+Philippines,2015,net_capital_outflow,2294.935680291721
+Philippines,2016,asset,6359.187092190763
+Philippines,2016,liability,6152.299157640502
+Philippines,2016,net_capital_outflow,206.88793455026098
+Philippines,2017,asset,7220.01968593001
+Philippines,2017,liability,9968.868122649736
+Philippines,2017,net_capital_outflow,-2748.848436719725
+Philippines,2018,asset,8201.529275705125
+Philippines,2018,liability,17481.255027904146
+Philippines,2018,net_capital_outflow,-9279.725752199021
+Philippines,2019,asset,8170.324969859103
+Philippines,2019,liability,16031.026561106723
+Philippines,2019,net_capital_outflow,-7860.70159124762
+Philippines,2020,asset,14081.619766570053
+Philippines,2020,liability,20786.704282272716
+Philippines,2020,net_capital_outflow,-6705.084515702663
+Philippines,2021,asset,10709.700928917995
+Philippines,2021,liability,17192.036256279716
+Philippines,2021,net_capital_outflow,-6482.335327361721
+Philippines,2022,asset,3165.080103188866
+Philippines,2022,liability,17019.08877874882
+Philippines,2022,net_capital_outflow,-13854.008675559955
+Philippines,2023,asset,4925.856540590558
+Philippines,2023,liability,18426.091601763554
+Philippines,2023,net_capital_outflow,-13500.235061172996
+Philippines,2024,asset,5539.918915303078
+Philippines,2024,liability,24327.570467277375
+Philippines,2024,net_capital_outflow,-18787.651551974297
+Philippines,2025,asset,7307.254115459186
+Philippines,2025,liability,18877.633661038442
+Philippines,2025,net_capital_outflow,-11570.379545579257
+South Africa,1995,asset,3174.573969590703
+South Africa,1995,liability,7469.915902527189
+South Africa,1995,net_capital_outflow,-4295.341932936486
+South Africa,1996,asset,4299.719375307968
+South Africa,1996,liability,6665.361149633665
+South Africa,1996,net_capital_outflow,-2365.641774325697
+South Africa,1997,asset,9118.712114263064
+South Africa,1997,liability,16561.77078126085
+South Africa,1997,net_capital_outflow,-7443.058666997786
+South Africa,1998,asset,8712.812130299015
+South Africa,1998,liability,12287.394808718187
+South Africa,1998,net_capital_outflow,-3574.582678419172
+South Africa,1999,asset,10492.6720335174
+South Africa,1999,liability,13767.945513231407
+South Africa,1999,net_capital_outflow,-3275.2734797140074
+South Africa,2000,asset,3914.6512455037982
+South Africa,2000,liability,4129.851184044418
+South Africa,2000,net_capital_outflow,-215.19993854061977
+South Africa,2001,asset,5736.728980036631
+South Africa,2001,liability,4548.479741518878
+South Africa,2001,net_capital_outflow,1188.249238517753
+South Africa,2002,asset,760.2963082957979
+South Africa,2002,liability,53.08222728491319
+South Africa,2002,net_capital_outflow,707.2140810108847
+South Africa,2003,asset,5902.806987515894
+South Africa,2003,liability,3941.44105426969
+South Africa,2003,net_capital_outflow,1961.3659332462043
+South Africa,2004,asset,2687.5087050346883
+South Africa,2004,liability,10082.733085385225
+South Africa,2004,net_capital_outflow,-7395.224380350537
+South Africa,2005,asset,5441.521955969445
+South Africa,2005,liability,18053.543513463996
+South Africa,2005,net_capital_outflow,-12612.02155749455
+South Africa,2006,asset,14794.808639460056
+South Africa,2006,liability,30937.53828793925
+South Africa,2006,net_capital_outflow,-16142.729648479193
+South Africa,2007,asset,5903.678895213671
+South Africa,2007,liability,27463.594607965064
+South Africa,2007,net_capital_outflow,-21559.915712751394
+South Africa,2008,asset,-4320.913620141084
+South Africa,2008,liability,7674.463298777864
+South Africa,2008,net_capital_outflow,-11995.376918918948
+South Africa,2009,asset,-44.11389447011243
+South Africa,2009,liability,18486.53728510865
+South Africa,2009,net_capital_outflow,-18530.651179578763
+South Africa,2010,asset,7666.890820409548
+South Africa,2010,liability,18971.163632122552
+South Africa,2010,net_capital_outflow,-11304.272811713005
+South Africa,2011,asset,9458.78506313482
+South Africa,2011,liability,24864.197179330295
+South Africa,2011,net_capital_outflow,-15405.412116195475
+South Africa,2012,asset,11412.943423434459
+South Africa,2012,liability,34992.7895973764
+South Africa,2012,net_capital_outflow,-23579.846173941944
+South Africa,2013,asset,8793.631950429859
+South Africa,2013,liability,27009.167310103177
+South Africa,2013,net_capital_outflow,-18215.53535967332
+South Africa,2014,asset,10189.405690199519
+South Africa,2014,liability,33017.7348340502
+South Africa,2014,net_capital_outflow,-22828.32914385068
+South Africa,2015,asset,2215.4535567841
+South Africa,2015,liability,16970.09251265596
+South Africa,2015,net_capital_outflow,-14754.63895587186
+South Africa,2016,asset,-1024.4236996733425
+South Africa,2016,liability,11563.533891992494
+South Africa,2016,net_capital_outflow,-12587.957591665836
+South Africa,2017,asset,17176.14856998736
+South Africa,2017,liability,27614.200173268662
+South Africa,2017,net_capital_outflow,-10438.051603281303
+South Africa,2018,asset,10054.130686461465
+South Africa,2018,liability,21833.749464034252
+South Africa,2018,net_capital_outflow,-11779.618777572787
+South Africa,2019,asset,-60.7117692686823
+South Africa,2019,liability,9120.613557824832
+South Africa,2019,net_capital_outflow,-9181.325327093515
+South Africa,2020,asset,5610.842411449531
+South Africa,2020,liability,-5008.274462989848
+South Africa,2020,net_capital_outflow,10619.11687443938
+South Africa,2021,asset,26559.122297914255
+South Africa,2021,liability,13860.011718025853
+South Africa,2021,net_capital_outflow,12699.110579888402
+South Africa,2022,asset,13954.995524808797
+South Africa,2022,liability,24032.601690846168
+South Africa,2022,net_capital_outflow,-10077.60616603737
+South Africa,2023,asset,-2491.9824688530352
+South Africa,2023,liability,-1782.7564196767094
+South Africa,2023,net_capital_outflow,-709.2260491763259
+South Africa,2024,asset,6424.1078840563105
+South Africa,2024,liability,9878.89913017745
+South Africa,2024,net_capital_outflow,-3454.791246121139
+South Africa,2025,asset,4876.627068115112
+South Africa,2025,liability,9646.683203007367
+South Africa,2025,net_capital_outflow,-4770.056134892256
+Thailand,1995,asset,3511.220373763468
+Thailand,1995,liability,25447.866957525242
+Thailand,1995,net_capital_outflow,-21936.646583761772
+Thailand,1996,asset,-1604.8460895872358
+Thailand,1996,liability,17881.134444485044
+Thailand,1996,net_capital_outflow,-19485.98053407228
+Thailand,1997,asset,2884.903830529783
+Thailand,1997,liability,-770.9060778228304
+Thailand,1997,net_capital_outflow,3655.8099083526135
+Thailand,1998,asset,3526.740565406613
+Thailand,1998,liability,-6485.2615131955135
+Thailand,1998,net_capital_outflow,10012.002078602127
+Thailand,1999,asset,2170.3058691853007
+Thailand,1999,liability,-5734.323225239256
+Thailand,1999,net_capital_outflow,7904.6290944245575
+Thailand,2000,asset,2361.37776160999
+Thailand,2000,liability,-7876.151294454551
+Thailand,2000,net_capital_outflow,10237.52905606454
+Thailand,2001,asset,526.070601061218
+Thailand,2001,liability,-3005.1986772405526
+Thailand,2001,net_capital_outflow,3531.2692783017706
+Thailand,2002,asset,-1733.4546069505063
+Thailand,2002,liability,-3637.788534826471
+Thailand,2002,net_capital_outflow,1904.3339278759645
+Thailand,2003,asset,1606.7161089238343
+Thailand,2003,liability,-3268.277930139705
+Thailand,2003,net_capital_outflow,4874.994039063539
+Thailand,2004,asset,539.7962500936524
+Thailand,2004,liability,4309.79772406652
+Thailand,2004,net_capital_outflow,-3770.001473972867
+Thailand,2005,asset,7754.005658599999
+Thailand,2005,liability,16139.90300760001
+Thailand,2005,net_capital_outflow,-8385.897349000012
+Thailand,2006,asset,12679.599636300032
+Thailand,2006,liability,20961.984308
+Thailand,2006,net_capital_outflow,-8282.384671699967
+Thailand,2007,asset,19066.29309909997
+Thailand,2007,liability,19061.638940499997
+Thailand,2007,net_capital_outflow,4.654158599973016
+Thailand,2008,asset,-19147.91975119998
+Thailand,2008,liability,-1684.8956072999902
+Thailand,2008,net_capital_outflow,-17463.02414389999
+Thailand,2009,asset,14219.880877800004
+Thailand,2009,liability,15431.6313582
+Thailand,2009,net_capital_outflow,-1211.7504803999964
+Thailand,2010,asset,15446.10506340001
+Thailand,2010,liability,38888.873835999984
+Thailand,2010,net_capital_outflow,-23442.768772599975
+Thailand,2011,asset,14082.178720599999
+Thailand,2011,liability,6423.2703903
+Thailand,2011,net_capital_outflow,7658.908330299999
+Thailand,2012,asset,25523.621370850236
+Thailand,2012,liability,37774.83708565621
+Thailand,2012,net_capital_outflow,-12251.215714805974
+Thailand,2013,asset,26470.031417462462
+Thailand,2013,liability,24323.09343036712
+Thailand,2013,net_capital_outflow,2146.9379870953417
+Thailand,2014,asset,23027.734902521748
+Thailand,2014,liability,6107.267202989337
+Thailand,2014,net_capital_outflow,16920.46769953241
+Thailand,2015,asset,12253.560209077506
+Thailand,2015,liability,-5448.983284162761
+Thailand,2015,net_capital_outflow,17702.543493240268
+Thailand,2016,asset,24905.682651561772
+Thailand,2016,liability,4407.757028253376
+Thailand,2016,net_capital_outflow,20497.925623308394
+Thailand,2017,asset,37687.10841657916
+Thailand,2017,liability,27097.304773291853
+Thailand,2017,net_capital_outflow,10589.803643287309
+Thailand,2018,asset,25472.28884571001
+Thailand,2018,liability,13039.792834001953
+Thailand,2018,net_capital_outflow,12432.496011708055
+Thailand,2019,asset,23446.455297294764
+Thailand,2019,liability,6130.019229717904
+Thailand,2019,net_capital_outflow,17316.436067576862
+Thailand,2020,asset,14335.936986206238
+Thailand,2020,liability,2137.8241869018493
+Thailand,2020,net_capital_outflow,12198.112799304388
+Thailand,2021,asset,32033.760454296713
+Thailand,2021,liability,28249.148353165925
+Thailand,2021,net_capital_outflow,3784.612101130788
+Thailand,2022,asset,20247.50805049519
+Thailand,2022,liability,27320.76595590538
+Thailand,2022,net_capital_outflow,-7073.257905410188
+Thailand,2023,asset,15566.277182988715
+Thailand,2023,liability,871.557235549046
+Thailand,2023,net_capital_outflow,14694.71994743967
+Thailand,2024,asset,15370.241123291904
+Thailand,2024,liability,9394.56356683662
+Thailand,2024,net_capital_outflow,5975.6775564552845
+Thailand,2025,asset,45197.78639450377
+Thailand,2025,liability,23131.46235405103
+Thailand,2025,net_capital_outflow,22066.32404045274

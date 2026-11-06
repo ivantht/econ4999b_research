@@ -1,0 +1,743 @@
+country,year_month,local_per_usd
+Chile,2018-01,601.2
+Chile,2018-02,594.28
+Chile,2018-03,603.9
+Chile,2018-04,613.66
+Chile,2018-05,632.01
+Chile,2018-06,654.35
+Chile,2018-07,636.66
+Chile,2018-08,682.74
+Chile,2018-09,656.85
+Chile,2018-10,696.64
+Chile,2018-11,672.55
+Chile,2018-12,693.6
+Chile,2019-01,654.45
+Chile,2019-02,654.63
+Chile,2019-03,679.7
+Chile,2019-04,676.7
+Chile,2019-05,710.36
+Chile,2019-06,678.72
+Chile,2019-07,697.1
+Chile,2019-08,721.7
+Chile,2019-09,728.41
+Chile,2019-10,740.5
+Chile,2019-11,810.47
+Chile,2019-12,751.75
+Chile,2020-01,800.49
+Chile,2020-02,820.78
+Chile,2020-03,855.15
+Chile,2020-04,835.58
+Chile,2020-05,806.63
+Chile,2020-06,821.22
+Chile,2020-07,757.77
+Chile,2020-08,776.65
+Chile,2020-09,784.33
+Chile,2020-10,773.87
+Chile,2020-11,767.35
+Chile,2020-12,711.78
+Chile,2021-01,732.5
+Chile,2021-02,725.38
+Chile,2021-03,719.04
+Chile,2021-04,710.35
+Chile,2021-05,722.18
+Chile,2021-06,734.38
+Chile,2021-07,759.0
+Chile,2021-08,774.15
+Chile,2021-09,810.06
+Chile,2021-10,814.5
+Chile,2021-11,829.25
+Chile,2021-12,852.0
+Chile,2022-01,800.62
+Chile,2022-02,798.58
+Chile,2022-03,786.05
+Chile,2022-04,851.0
+Chile,2022-05,823.88
+Chile,2022-06,918.08
+Chile,2022-07,900.24
+Chile,2022-08,896.0
+Chile,2022-09,968.69
+Chile,2022-10,943.4
+Chile,2022-11,894.0
+Chile,2022-12,851.13
+Chile,2023-01,797.5
+Chile,2023-02,827.05
+Chile,2023-03,795.47
+Chile,2023-04,807.25
+Chile,2023-05,809.53
+Chile,2023-06,802.25
+Chile,2023-07,838.75
+Chile,2023-08,852.29
+Chile,2023-09,891.53
+Chile,2023-10,897.38
+Chile,2023-11,869.72
+Chile,2023-12,879.0
+Chile,2024-01,929.08
+Chile,2024-02,966.5
+Chile,2024-03,979.36
+Chile,2024-04,960.33
+Chile,2024-05,918.25
+Chile,2024-06,940.23
+Chile,2024-07,941.65
+Chile,2024-08,910.68
+Chile,2024-09,898.7
+Chile,2024-10,962.33
+Chile,2024-11,973.68
+Chile,2024-12,994.92
+Chile,2025-01,980.25
+Chile,2025-02,963.3
+Chile,2025-03,951.08
+Chile,2025-04,948.4
+Chile,2025-05,945.68
+Chile,2025-06,931.62
+Chile,2025-07,972.61
+Chile,2025-08,966.88
+Chile,2025-09,962.5
+Chile,2025-10,942.38
+Chile,2025-11,927.9
+Chile,2025-12,900.58
+Chile,2026-01,873.7
+Chile,2026-02,872.73
+Chile,2026-03,926.33
+Chile,2026-04,899.17
+Chile,2026-05,889.72
+Chile,2026-06,922.31
+Chile,2026-07,931.0
+Chile,2026-08,934.17
+Chile,2026-09,974.17
+Chile,2026-10,992.95
+Indonesia,2018-01,13389.0
+Indonesia,2018-02,13745.0
+Indonesia,2018-03,13768.0
+Indonesia,2018-04,13913.0
+Indonesia,2018-05,13894.0
+Indonesia,2018-06,14330.0
+Indonesia,2018-07,14420.0
+Indonesia,2018-08,14730.0
+Indonesia,2018-09,14903.0
+Indonesia,2018-10,15203.0
+Indonesia,2018-11,14302.0
+Indonesia,2018-12,14390.0
+Indonesia,2019-01,13973.0
+Indonesia,2019-02,14069.0
+Indonesia,2019-03,14241.0
+Indonesia,2019-04,14259.0
+Indonesia,2019-05,14273.0
+Indonesia,2019-06,14128.0
+Indonesia,2019-07,14022.0
+Indonesia,2019-08,14191.0
+Indonesia,2019-09,14195.0
+Indonesia,2019-10,14041.0
+Indonesia,2019-11,14108.0
+Indonesia,2019-12,13866.0
+Indonesia,2020-01,13655.0
+Indonesia,2020-02,14318.0
+Indonesia,2020-03,16310.0
+Indonesia,2020-04,14882.0
+Indonesia,2020-05,14610.0
+Indonesia,2020-06,14265.0
+Indonesia,2020-07,14600.0
+Indonesia,2020-08,14563.0
+Indonesia,2020-09,14880.0
+Indonesia,2020-10,14625.0
+Indonesia,2020-11,14120.0
+Indonesia,2020-12,14050.0
+Indonesia,2021-01,14030.0
+Indonesia,2021-02,14235.0
+Indonesia,2021-03,14525.0
+Indonesia,2021-04,14445.0
+Indonesia,2021-05,14280.0
+Indonesia,2021-06,14500.0
+Indonesia,2021-07,14463.0
+Indonesia,2021-08,14268.0
+Indonesia,2021-09,14313.0
+Indonesia,2021-10,14168.0
+Indonesia,2021-11,14323.0
+Indonesia,2021-12,14253.0
+Indonesia,2022-01,14383.0
+Indonesia,2022-02,14367.0
+Indonesia,2022-03,14369.0
+Indonesia,2022-04,14497.0
+Indonesia,2022-05,14583.0
+Indonesia,2022-06,14898.0
+Indonesia,2022-07,14833.0
+Indonesia,2022-08,14843.0
+Indonesia,2022-09,15228.0
+Indonesia,2022-10,15598.0
+Indonesia,2022-11,15732.0
+Indonesia,2022-12,15568.0
+Indonesia,2023-01,14990.0
+Indonesia,2023-02,15250.0
+Indonesia,2023-03,14995.0
+Indonesia,2023-04,14670.0
+Indonesia,2023-05,14993.0
+Indonesia,2023-06,14993.0
+Indonesia,2023-07,15080.0
+Indonesia,2023-08,15230.0
+Indonesia,2023-09,15455.0
+Indonesia,2023-10,15885.0
+Indonesia,2023-11,15510.0
+Indonesia,2023-12,15397.0
+Indonesia,2024-01,15780.0
+Indonesia,2024-02,15715.0
+Indonesia,2024-03,15855.0
+Indonesia,2024-04,16260.0
+Indonesia,2024-05,16250.0
+Indonesia,2024-06,16375.0
+Indonesia,2024-07,16260.0
+Indonesia,2024-08,15455.0
+Indonesia,2024-09,15140.0
+Indonesia,2024-10,15697.0
+Indonesia,2024-11,15845.0
+Indonesia,2024-12,16102.0
+Indonesia,2025-01,16300.0
+Indonesia,2025-02,16580.0
+Indonesia,2025-03,16560.0
+Indonesia,2025-04,16601.0
+Indonesia,2025-05,16290.0
+Indonesia,2025-06,16238.0
+Indonesia,2025-07,16455.0
+Indonesia,2025-08,16490.0
+Indonesia,2025-09,16665.0
+Indonesia,2025-10,16630.0
+Indonesia,2025-11,16660.0
+Indonesia,2025-12,16690.0
+Indonesia,2026-01,16785.0
+Indonesia,2026-02,16771.0
+Indonesia,2026-03,16995.0
+Indonesia,2026-04,17353.0
+Indonesia,2026-05,17874.0
+Indonesia,2026-06,17882.0
+Indonesia,2026-07,18000.0
+Indonesia,2026-08,17720.0
+Indonesia,2026-09,17870.0
+Indonesia,2026-10,18127.0
+Malaysia,2018-01,3.8985
+Malaysia,2018-02,3.917
+Malaysia,2018-03,3.8635
+Malaysia,2018-04,3.9235
+Malaysia,2018-05,3.9798
+Malaysia,2018-06,4.0385
+Malaysia,2018-07,4.0652
+Malaysia,2018-08,4.109
+Malaysia,2018-09,4.1383
+Malaysia,2018-10,4.1842
+Malaysia,2018-11,4.1842
+Malaysia,2018-12,4.1335
+Malaysia,2019-01,4.0953
+Malaysia,2019-02,4.0658
+Malaysia,2019-03,4.082
+Malaysia,2019-04,4.1347
+Malaysia,2019-05,4.19
+Malaysia,2019-06,4.132
+Malaysia,2019-07,4.1265
+Malaysia,2019-08,4.2055
+Malaysia,2019-09,4.1877
+Malaysia,2019-10,4.1782
+Malaysia,2019-11,4.1778
+Malaysia,2019-12,4.091
+Malaysia,2020-01,4.098
+Malaysia,2020-02,4.215
+Malaysia,2020-03,4.3212
+Malaysia,2020-04,4.3022
+Malaysia,2020-05,4.3465
+Malaysia,2020-06,4.2863
+Malaysia,2020-07,4.2393
+Malaysia,2020-08,4.164
+Malaysia,2020-09,4.1565
+Malaysia,2020-10,4.1558
+Malaysia,2020-11,4.0738
+Malaysia,2020-12,4.0203
+Malaysia,2021-01,4.04
+Malaysia,2021-02,4.0498
+Malaysia,2021-03,4.145
+Malaysia,2021-04,4.088
+Malaysia,2021-05,4.1252
+Malaysia,2021-06,4.149
+Malaysia,2021-07,4.2205
+Malaysia,2021-08,4.1552
+Malaysia,2021-09,4.1862
+Malaysia,2021-10,4.1403
+Malaysia,2021-11,4.2038
+Malaysia,2021-12,4.166
+Malaysia,2022-01,4.1855
+Malaysia,2022-02,4.1993
+Malaysia,2022-03,4.2035
+Malaysia,2022-04,4.3538
+Malaysia,2022-05,4.377
+Malaysia,2022-06,4.4085
+Malaysia,2022-07,4.4508
+Malaysia,2022-08,4.476
+Malaysia,2022-09,4.6375
+Malaysia,2022-10,4.7267
+Malaysia,2022-11,4.4445
+Malaysia,2022-12,4.404
+Malaysia,2023-01,4.274
+Malaysia,2023-02,4.4873
+Malaysia,2023-03,4.4152
+Malaysia,2023-04,4.4622
+Malaysia,2023-05,4.613
+Malaysia,2023-06,4.6665
+Malaysia,2023-07,4.507
+Malaysia,2023-08,4.6385
+Malaysia,2023-09,4.6953
+Malaysia,2023-10,4.7632
+Malaysia,2023-11,4.6625
+Malaysia,2023-12,4.594
+Malaysia,2024-01,4.733
+Malaysia,2024-02,4.7428
+Malaysia,2024-03,4.725
+Malaysia,2024-04,4.7725
+Malaysia,2024-05,4.7065
+Malaysia,2024-06,4.7175
+Malaysia,2024-07,4.5905
+Malaysia,2024-08,4.3205
+Malaysia,2024-09,4.1235
+Malaysia,2024-10,4.378
+Malaysia,2024-11,4.4475
+Malaysia,2024-12,4.4722
+Malaysia,2025-01,4.4602
+Malaysia,2025-02,4.4625
+Malaysia,2025-03,4.4383
+Malaysia,2025-04,4.3158
+Malaysia,2025-05,4.2568
+Malaysia,2025-06,4.2102
+Malaysia,2025-07,4.265
+Malaysia,2025-08,4.2248
+Malaysia,2025-09,4.2072
+Malaysia,2025-10,4.1885
+Malaysia,2025-11,4.1328
+Malaysia,2025-12,4.0603
+Malaysia,2026-01,3.9453
+Malaysia,2026-02,3.8925
+Malaysia,2026-03,4.0495
+Malaysia,2026-04,3.9717
+Malaysia,2026-05,3.9645
+Malaysia,2026-06,4.084
+Malaysia,2026-07,4.086
+Malaysia,2026-08,4.0247
+Malaysia,2026-09,4.0798
+Malaysia,2026-10,4.0582
+Peru,2018-01,3.216
+Peru,2018-02,3.2663
+Peru,2018-03,3.2298
+Peru,2018-04,3.2525
+Peru,2018-05,3.2715
+Peru,2018-06,3.2765
+Peru,2018-07,3.2717
+Peru,2018-08,3.2878
+Peru,2018-09,3.304
+Peru,2018-10,3.3715
+Peru,2018-11,3.383
+Peru,2018-12,3.3685
+Peru,2019-01,3.3275
+Peru,2019-02,3.2985
+Peru,2019-03,3.3185
+Peru,2019-04,3.3065
+Peru,2019-05,3.3815
+Peru,2019-06,3.294
+Peru,2019-07,3.3044
+Peru,2019-08,3.4014
+Peru,2019-09,3.3695
+Peru,2019-10,3.345
+Peru,2019-11,3.4054
+Peru,2019-12,3.313
+Peru,2020-01,3.386
+Peru,2020-02,3.4095
+Peru,2020-03,3.432
+Peru,2020-04,3.3757
+Peru,2020-05,3.4284
+Peru,2020-06,3.5415
+Peru,2020-07,3.5339
+Peru,2020-08,3.5427
+Peru,2020-09,3.6025
+Peru,2020-10,3.6153
+Peru,2020-11,3.6072
+Peru,2020-12,3.618
+Peru,2021-01,3.6368
+Peru,2021-02,3.6493
+Peru,2021-03,3.7435
+Peru,2021-04,3.7857
+Peru,2021-05,3.8375
+Peru,2021-06,3.8659
+Peru,2021-07,4.0685
+Peru,2021-08,4.0884
+Peru,2021-09,4.1345
+Peru,2021-10,3.9915
+Peru,2021-11,4.0654
+Peru,2021-12,4.0015
+Peru,2022-01,3.845
+Peru,2022-02,3.781
+Peru,2022-03,3.6804
+Peru,2022-04,3.8375
+Peru,2022-05,3.714
+Peru,2022-06,3.8265
+Peru,2022-07,3.9219
+Peru,2022-08,3.853
+Peru,2022-09,3.9832
+Peru,2022-10,3.986
+Peru,2022-11,3.8561
+Peru,2022-12,3.8061
+Peru,2023-01,3.846
+Peru,2023-02,3.7936
+Peru,2023-03,3.7631
+Peru,2023-04,3.708
+Peru,2023-05,3.67
+Peru,2023-06,3.625
+Peru,2023-07,3.6137
+Peru,2023-08,3.69
+Peru,2023-09,3.7849
+Peru,2023-10,3.839
+Peru,2023-11,3.7382
+Peru,2023-12,3.7042
+Peru,2024-01,3.8085
+Peru,2024-02,3.7801
+Peru,2024-03,3.7176
+Peru,2024-04,3.7664
+Peru,2024-05,3.7245
+Peru,2024-06,3.8425
+Peru,2024-07,3.7283
+Peru,2024-08,3.7496
+Peru,2024-09,3.704
+Peru,2024-10,3.7745
+Peru,2024-11,3.76
+Peru,2024-12,3.7403
+Peru,2025-01,3.7275
+Peru,2025-02,3.6916
+Peru,2025-03,3.677
+Peru,2025-04,3.663
+Peru,2025-05,3.619
+Peru,2025-06,3.5425
+Peru,2025-07,3.5921
+Peru,2025-08,3.532
+Peru,2025-09,3.4719
+Peru,2025-10,3.3678
+Peru,2025-11,3.3645
+Peru,2025-12,3.3625
+Peru,2026-01,3.369
+Peru,2026-02,3.3535
+Peru,2026-03,3.4775
+Peru,2026-04,3.5075
+Peru,2026-05,3.414
+Peru,2026-06,3.4087
+Peru,2026-07,3.3987
+Peru,2026-08,3.3704
+Peru,2026-09,3.4321
+Peru,2026-10,3.4685
+Philippines,2018-01,51.295
+Philippines,2018-02,52.11
+Philippines,2018-03,52.17
+Philippines,2018-04,51.76
+Philippines,2018-05,52.54
+Philippines,2018-06,53.325
+Philippines,2018-07,53.097
+Philippines,2018-08,53.475
+Philippines,2018-09,54.02
+Philippines,2018-10,53.535
+Philippines,2018-11,52.45
+Philippines,2018-12,52.58
+Philippines,2019-01,52.12
+Philippines,2019-02,51.71
+Philippines,2019-03,52.51
+Philippines,2019-04,51.915
+Philippines,2019-05,52.17
+Philippines,2019-06,51.235
+Philippines,2019-07,50.9
+Philippines,2019-08,52.05
+Philippines,2019-09,51.83
+Philippines,2019-10,50.765
+Philippines,2019-11,50.81
+Philippines,2019-12,50.65
+Philippines,2020-01,50.83
+Philippines,2020-02,50.904
+Philippines,2020-03,50.699
+Philippines,2020-04,50.42
+Philippines,2020-05,50.605
+Philippines,2020-06,49.822
+Philippines,2020-07,49.153
+Philippines,2020-08,48.507
+Philippines,2020-09,48.487
+Philippines,2020-10,48.405
+Philippines,2020-11,48.08
+Philippines,2020-12,48.027
+Philippines,2021-01,48.077
+Philippines,2021-02,48.565
+Philippines,2021-03,48.533
+Philippines,2021-04,48.124
+Philippines,2021-05,47.7
+Philippines,2021-06,48.81
+Philippines,2021-07,50.02
+Philippines,2021-08,49.75
+Philippines,2021-09,50.987
+Philippines,2021-10,50.42
+Philippines,2021-11,50.383
+Philippines,2021-12,50.99
+Philippines,2022-01,50.975
+Philippines,2022-02,51.28
+Philippines,2022-03,51.755
+Philippines,2022-04,52.193
+Philippines,2022-05,52.389
+Philippines,2022-06,54.975
+Philippines,2022-07,55.15
+Philippines,2022-08,56.156
+Philippines,2022-09,58.647
+Philippines,2022-10,57.98
+Philippines,2022-11,56.575
+Philippines,2022-12,55.729
+Philippines,2023-01,54.655
+Philippines,2023-02,55.335
+Philippines,2023-03,54.367
+Philippines,2023-04,55.36
+Philippines,2023-05,56.17
+Philippines,2023-06,55.206
+Philippines,2023-07,54.9
+Philippines,2023-08,56.598
+Philippines,2023-09,56.592
+Philippines,2023-10,56.73
+Philippines,2023-11,55.493
+Philippines,2023-12,55.387
+Philippines,2024-01,56.295
+Philippines,2024-02,56.207
+Philippines,2024-03,56.223
+Philippines,2024-04,57.774
+Philippines,2024-05,58.526
+Philippines,2024-06,58.611
+Philippines,2024-07,58.365
+Philippines,2024-08,56.138
+Philippines,2024-09,56.045
+Philippines,2024-10,58.115
+Philippines,2024-11,58.635
+Philippines,2024-12,57.843
+Philippines,2025-01,58.372
+Philippines,2025-02,57.99
+Philippines,2025-03,57.23
+Philippines,2025-04,55.86
+Philippines,2025-05,55.772
+Philippines,2025-06,56.322
+Philippines,2025-07,58.325
+Philippines,2025-08,57.143
+Philippines,2025-09,58.205
+Philippines,2025-10,58.885
+Philippines,2025-11,58.635
+Philippines,2025-12,58.822
+Philippines,2026-01,58.88
+Philippines,2026-02,57.66
+Philippines,2026-03,60.745
+Philippines,2026-04,61.481
+Philippines,2026-05,61.596
+Philippines,2026-06,61.356
+Philippines,2026-07,61.246
+Philippines,2026-08,62.26
+Philippines,2026-09,62.645
+Philippines,2026-10,63.735
+South Africa,2018-01,11.8514
+South Africa,2018-02,11.7957
+South Africa,2018-03,11.8408
+South Africa,2018-04,12.4608
+South Africa,2018-05,12.6993
+South Africa,2018-06,13.725
+South Africa,2018-07,13.275
+South Africa,2018-08,14.6887
+South Africa,2018-09,14.1415
+South Africa,2018-10,14.7864
+South Africa,2018-11,13.8699
+South Africa,2018-12,14.3467
+South Africa,2019-01,13.2542
+South Africa,2019-02,14.0849
+South Africa,2019-03,14.5012
+South Africa,2019-04,14.2986
+South Africa,2019-05,14.5803
+South Africa,2019-06,14.0869
+South Africa,2019-07,14.3429
+South Africa,2019-08,15.1954
+South Africa,2019-09,15.1363
+South Africa,2019-10,15.1008
+South Africa,2019-11,14.6706
+South Africa,2019-12,14.0
+South Africa,2020-01,15.0282
+South Africa,2020-02,15.6609
+South Africa,2020-03,17.8379
+South Africa,2020-04,18.5264
+South Africa,2020-05,17.5465
+South Africa,2020-06,17.3512
+South Africa,2020-07,17.0718
+South Africa,2020-08,16.9416
+South Africa,2020-09,16.7484
+South Africa,2020-10,16.2439
+South Africa,2020-11,15.4681
+South Africa,2020-12,14.6947
+South Africa,2021-01,15.1609
+South Africa,2021-02,15.1204
+South Africa,2021-03,14.7759
+South Africa,2021-04,14.495
+South Africa,2021-05,13.7373
+South Africa,2021-06,14.2854
+South Africa,2021-07,14.6019
+South Africa,2021-08,14.5242
+South Africa,2021-09,15.0683
+South Africa,2021-10,15.2412
+South Africa,2021-11,15.8859
+South Africa,2021-12,15.9372
+South Africa,2022-01,15.3866
+South Africa,2022-02,15.3756
+South Africa,2022-03,14.6115
+South Africa,2022-04,15.7892
+South Africa,2022-05,15.6405
+South Africa,2022-06,16.2782
+South Africa,2022-07,16.6237
+South Africa,2022-08,17.1189
+South Africa,2022-09,18.0855
+South Africa,2022-10,18.3545
+South Africa,2022-11,17.2031
+South Africa,2022-12,17.0374
+South Africa,2023-01,17.4081
+South Africa,2023-02,18.357
+South Africa,2023-03,17.7962
+South Africa,2023-04,18.2902
+South Africa,2023-05,19.7255
+South Africa,2023-06,18.8485
+South Africa,2023-07,17.8481
+South Africa,2023-08,18.8758
+South Africa,2023-09,18.9226
+South Africa,2023-10,18.6488
+South Africa,2023-11,18.8545
+South Africa,2023-12,18.3621
+South Africa,2024-01,18.6849
+South Africa,2024-02,19.204
+South Africa,2024-03,18.881
+South Africa,2024-04,18.7821
+South Africa,2024-05,18.793
+South Africa,2024-06,18.1933
+South Africa,2024-07,18.2031
+South Africa,2024-08,17.8183
+South Africa,2024-09,17.2687
+South Africa,2024-10,17.6029
+South Africa,2024-11,18.0569
+South Africa,2024-12,18.8432
+South Africa,2025-01,18.6694
+South Africa,2025-02,18.6906
+South Africa,2025-03,18.3227
+South Africa,2025-04,18.6057
+South Africa,2025-05,18.0027
+South Africa,2025-06,17.7118
+South Africa,2025-07,18.2175
+South Africa,2025-08,17.6566
+South Africa,2025-09,17.2704
+South Africa,2025-10,17.3325
+South Africa,2025-11,17.113
+South Africa,2025-12,16.5611
+South Africa,2026-01,16.1469
+South Africa,2026-02,15.9364
+South Africa,2026-03,16.9412
+South Africa,2026-04,16.6715
+South Africa,2026-05,16.2259
+South Africa,2026-06,16.3892
+South Africa,2026-07,16.5295
+South Africa,2026-08,16.115
+South Africa,2026-09,16.4226
+South Africa,2026-10,16.7094
+Thailand,2018-01,31.327
+Thailand,2018-02,31.385
+Thailand,2018-03,31.188
+Thailand,2018-04,31.54
+Thailand,2018-05,31.995
+Thailand,2018-06,33.123
+Thailand,2018-07,33.272
+Thailand,2018-08,32.73
+Thailand,2018-09,32.342
+Thailand,2018-10,33.155
+Thailand,2018-11,32.885
+Thailand,2018-12,32.548
+Thailand,2019-01,31.24
+Thailand,2019-02,31.515
+Thailand,2019-03,31.74
+Thailand,2019-04,31.925
+Thailand,2019-05,31.645
+Thailand,2019-06,30.67
+Thailand,2019-07,30.755
+Thailand,2019-08,30.575
+Thailand,2019-09,30.585
+Thailand,2019-10,30.188
+Thailand,2019-11,30.228
+Thailand,2019-12,29.967
+Thailand,2020-01,31.163
+Thailand,2020-02,31.56
+Thailand,2020-03,32.798
+Thailand,2020-04,32.353
+Thailand,2020-05,31.81
+Thailand,2020-06,30.905
+Thailand,2020-07,31.177
+Thailand,2020-08,31.118
+Thailand,2020-09,31.68
+Thailand,2020-10,31.173
+Thailand,2020-11,30.26
+Thailand,2020-12,29.95
+Thailand,2021-01,29.935
+Thailand,2021-02,30.132
+Thailand,2021-03,31.26
+Thailand,2021-04,31.14
+Thailand,2021-05,31.24
+Thailand,2021-06,32.052
+Thailand,2021-07,32.868
+Thailand,2021-08,32.24
+Thailand,2021-09,33.83
+Thailand,2021-10,33.18
+Thailand,2021-11,33.698
+Thailand,2021-12,33.405
+Thailand,2022-01,33.295
+Thailand,2022-02,32.675
+Thailand,2022-03,33.257
+Thailand,2022-04,34.252
+Thailand,2022-05,34.217
+Thailand,2022-06,35.353
+Thailand,2022-07,36.807
+Thailand,2022-08,36.463
+Thailand,2022-09,37.73
+Thailand,2022-10,38.06
+Thailand,2022-11,35.26
+Thailand,2022-12,34.605
+Thailand,2023-01,33.005
+Thailand,2023-02,35.35
+Thailand,2023-03,34.198
+Thailand,2023-04,34.143
+Thailand,2023-05,34.8
+Thailand,2023-06,35.455
+Thailand,2023-07,34.217
+Thailand,2023-08,35.0
+Thailand,2023-09,36.412
+Thailand,2023-10,35.94
+Thailand,2023-11,35.188
+Thailand,2023-12,34.14
+Thailand,2024-01,35.472
+Thailand,2024-02,35.87
+Thailand,2024-03,36.39
+Thailand,2024-04,37.057
+Thailand,2024-05,36.787
+Thailand,2024-06,36.702
+Thailand,2024-07,35.65
+Thailand,2024-08,33.86
+Thailand,2024-09,32.173
+Thailand,2024-10,33.738
+Thailand,2024-11,34.302
+Thailand,2024-12,34.095
+Thailand,2025-01,33.673
+Thailand,2025-02,34.173
+Thailand,2025-03,33.923
+Thailand,2025-04,33.417
+Thailand,2025-05,32.83
+Thailand,2025-06,32.502
+Thailand,2025-07,32.682
+Thailand,2025-08,32.393
+Thailand,2025-09,32.403
+Thailand,2025-10,32.34
+Thailand,2025-11,32.195
+Thailand,2025-12,31.505
+Thailand,2026-01,31.475
+Thailand,2026-02,31.08
+Thailand,2026-03,32.97
+Thailand,2026-04,32.597
+Thailand,2026-05,32.542
+Thailand,2026-06,33.223
+Thailand,2026-07,33.393
+Thailand,2026-08,33.16
+Thailand,2026-09,33.557
+Thailand,2026-10,33.682

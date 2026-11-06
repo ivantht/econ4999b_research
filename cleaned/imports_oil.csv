@@ -1,0 +1,723 @@
+country,year_month,category,value
+Chile,2018-02,oil_fuels,664.33
+Chile,2018-03,oil_fuels,797.08
+Chile,2018-04,oil_fuels,855.11
+Chile,2018-05,oil_fuels,875.58
+Chile,2018-06,oil_fuels,911.25
+Chile,2018-07,oil_fuels,734.23
+Chile,2018-08,oil_fuels,951.2
+Chile,2018-09,oil_fuels,644.26
+Chile,2018-10,oil_fuels,993.81
+Chile,2018-11,oil_fuels,732.02
+Chile,2018-12,oil_fuels,791.84
+Chile,2019-01,oil_fuels,580.23
+Chile,2019-02,oil_fuels,734.12
+Chile,2019-03,oil_fuels,839.95
+Chile,2019-04,oil_fuels,787.37
+Chile,2019-05,oil_fuels,1093.47
+Chile,2019-06,oil_fuels,696.39
+Chile,2019-07,oil_fuels,779.57
+Chile,2019-08,oil_fuels,764.22
+Chile,2019-09,oil_fuels,701.13
+Chile,2019-10,oil_fuels,835.09
+Chile,2019-11,oil_fuels,712.15
+Chile,2019-12,oil_fuels,752.32
+Chile,2020-01,oil_fuels,939.13
+Chile,2020-02,oil_fuels,594.45
+Chile,2020-03,oil_fuels,660.99
+Chile,2020-04,oil_fuels,365.51
+Chile,2020-05,oil_fuels,237.29
+Chile,2020-06,oil_fuels,325.87
+Chile,2020-07,oil_fuels,478.16
+Chile,2020-08,oil_fuels,336.95
+Chile,2020-09,oil_fuels,507.46
+Chile,2020-10,oil_fuels,508.38
+Chile,2020-11,oil_fuels,390.45
+Chile,2020-12,oil_fuels,626.62
+Chile,2021-01,oil_fuels,555.76
+Chile,2021-02,oil_fuels,753.87
+Chile,2021-03,oil_fuels,883.95
+Chile,2021-04,oil_fuels,685.47
+Chile,2021-05,oil_fuels,789.77
+Chile,2021-06,oil_fuels,873.58
+Chile,2021-07,oil_fuels,937.28
+Chile,2021-08,oil_fuels,1112.17
+Chile,2021-09,oil_fuels,1167.53
+Chile,2021-10,oil_fuels,1099.07
+Chile,2021-11,oil_fuels,1004.36
+Chile,2021-12,oil_fuels,1047.01
+Chile,2022-01,oil_fuels,1190.96
+Chile,2022-02,oil_fuels,1215.16
+Chile,2022-03,oil_fuels,1335.15
+Chile,2022-04,oil_fuels,1299.45
+Chile,2022-05,oil_fuels,1685.93
+Chile,2022-06,oil_fuels,1817.55
+Chile,2022-07,oil_fuels,1684.21
+Chile,2022-08,oil_fuels,1760.44
+Chile,2022-09,oil_fuels,1449.09
+Chile,2022-10,oil_fuels,1311.3
+Chile,2022-11,oil_fuels,1641.15
+Chile,2022-12,oil_fuels,1054.28
+Chile,2023-01,oil_fuels,1188.36
+Chile,2023-02,oil_fuels,1095.29
+Chile,2023-03,oil_fuels,1576.33
+Chile,2023-04,oil_fuels,1043.83
+Chile,2023-05,oil_fuels,1198.22
+Chile,2023-06,oil_fuels,986.03
+Chile,2023-07,oil_fuels,1072.51
+Chile,2023-08,oil_fuels,1172.53
+Chile,2023-09,oil_fuels,1071.24
+Chile,2023-10,oil_fuels,1421.36
+Chile,2023-11,oil_fuels,1141.08
+Chile,2023-12,oil_fuels,824.69
+Chile,2024-01,oil_fuels,1073.15
+Chile,2024-02,oil_fuels,1355.52
+Chile,2024-03,oil_fuels,1006.48
+Chile,2024-04,oil_fuels,1148.38
+Chile,2024-05,oil_fuels,1151.65
+Chile,2024-06,oil_fuels,823.85
+Chile,2024-07,oil_fuels,1252.04
+Chile,2024-08,oil_fuels,1058.01
+Chile,2024-09,oil_fuels,741.78
+Chile,2024-10,oil_fuels,1049.51
+Chile,2024-11,oil_fuels,885.69
+Chile,2024-12,oil_fuels,861.52
+Chile,2025-01,oil_fuels,1105.75
+Chile,2025-02,oil_fuels,927.9
+Chile,2025-03,oil_fuels,819.5
+Chile,2025-04,oil_fuels,1095.92
+Chile,2025-05,oil_fuels,739.57
+Chile,2025-06,oil_fuels,1026.3
+Chile,2025-07,oil_fuels,1252.69
+Chile,2025-08,oil_fuels,723.84
+Chile,2025-09,oil_fuels,934.31
+Chile,2025-10,oil_fuels,884.03
+Chile,2025-11,oil_fuels,945.55
+Chile,2025-12,oil_fuels,955.25
+Chile,2026-01,oil_fuels,756.67
+Chile,2026-02,oil_fuels,1064.03
+Chile,2026-03,oil_fuels,1346.61
+Chile,2026-04,oil_fuels,1481.36
+Chile,2026-05,oil_fuels,1198.67
+Chile,2026-06,oil_fuels,1353.58
+Chile,2026-07,oil_fuels,1205.05
+Chile,2026-08,oil_fuels,1214.46
+Chile,2026-09,oil_fuels,1644.1
+Indonesia,2018-02,oil_fuels,2462.0
+Indonesia,2018-03,oil_fuels,2330.0
+Indonesia,2018-04,oil_fuels,2306.0
+Indonesia,2018-05,oil_fuels,2992.0
+Indonesia,2018-06,oil_fuels,2260.0
+Indonesia,2018-07,oil_fuels,2849.0
+Indonesia,2018-08,oil_fuels,3141.0
+Indonesia,2018-09,oil_fuels,2368.0
+Indonesia,2018-10,oil_fuels,3171.0
+Indonesia,2018-11,oil_fuels,3002.0
+Indonesia,2018-12,oil_fuels,2143.0
+Indonesia,2019-01,oil_fuels,1772.0
+Indonesia,2019-02,oil_fuels,1699.0
+Indonesia,2019-03,oil_fuels,1608.0
+Indonesia,2019-04,oil_fuels,2344.0
+Indonesia,2019-05,oil_fuels,2291.0
+Indonesia,2019-06,oil_fuels,1821.0
+Indonesia,2019-07,oil_fuels,1874.0
+Indonesia,2019-08,oil_fuels,1749.0
+Indonesia,2019-09,oil_fuels,1697.0
+Indonesia,2019-10,oil_fuels,1910.0
+Indonesia,2019-11,oil_fuels,2427.0
+Indonesia,2019-12,oil_fuels,2286.0
+Indonesia,2020-01,oil_fuels,2100.0
+Indonesia,2020-02,oil_fuels,1890.0
+Indonesia,2020-03,oil_fuels,1738.0
+Indonesia,2020-04,oil_fuels,997.0
+Indonesia,2020-05,oil_fuels,739.0
+Indonesia,2020-06,oil_fuels,832.0
+Indonesia,2020-07,oil_fuels,1070.0
+Indonesia,2020-08,oil_fuels,1048.0
+Indonesia,2020-09,oil_fuels,1294.0
+Indonesia,2020-10,oil_fuels,1207.0
+Indonesia,2020-11,oil_fuels,1182.0
+Indonesia,2020-12,oil_fuels,1680.0
+Indonesia,2021-01,oil_fuels,1749.0
+Indonesia,2021-02,oil_fuels,1487.0
+Indonesia,2021-03,oil_fuels,2610.0
+Indonesia,2021-04,oil_fuels,2327.0
+Indonesia,2021-05,oil_fuels,2317.0
+Indonesia,2021-06,oil_fuels,2496.0
+Indonesia,2021-07,oil_fuels,1927.0
+Indonesia,2021-08,oil_fuels,2175.0
+Indonesia,2021-09,oil_fuels,2269.0
+Indonesia,2021-10,oil_fuels,2280.0
+Indonesia,2021-11,oil_fuels,3331.0
+Indonesia,2021-12,oil_fuels,3870.0
+Indonesia,2022-01,oil_fuels,2381.0
+Indonesia,2022-02,oil_fuels,3107.0
+Indonesia,2022-03,oil_fuels,3895.0
+Indonesia,2022-04,oil_fuels,4191.0
+Indonesia,2022-05,oil_fuels,3805.0
+Indonesia,2022-06,oil_fuels,4185.0
+Indonesia,2022-07,oil_fuels,4821.0
+Indonesia,2022-08,oil_fuels,4273.0
+Indonesia,2022-09,oil_fuels,3879.0
+Indonesia,2022-10,oil_fuels,3728.0
+Indonesia,2022-11,oil_fuels,3093.0
+Indonesia,2022-12,oil_fuels,3535.0
+Indonesia,2023-01,oil_fuels,3326.0
+Indonesia,2023-02,oil_fuels,2718.0
+Indonesia,2023-03,oil_fuels,3476.0
+Indonesia,2023-04,oil_fuels,3339.0
+Indonesia,2023-05,oil_fuels,3551.0
+Indonesia,2023-06,oil_fuels,2537.0
+Indonesia,2023-07,oil_fuels,3455.0
+Indonesia,2023-08,oil_fuels,2963.0
+Indonesia,2023-09,oil_fuels,3565.0
+Indonesia,2023-10,oil_fuels,3523.0
+Indonesia,2023-11,oil_fuels,3765.0
+Indonesia,2023-12,oil_fuels,3897.0
+Indonesia,2024-01,oil_fuels,3038.0
+Indonesia,2024-02,oil_fuels,3377.0
+Indonesia,2024-03,oil_fuels,3657.0
+Indonesia,2024-04,oil_fuels,3349.0
+Indonesia,2024-05,oil_fuels,3125.0
+Indonesia,2024-06,oil_fuels,3595.0
+Indonesia,2024-07,oil_fuels,4113.0
+Indonesia,2024-08,oil_fuels,3072.0
+Indonesia,2024-09,oil_fuels,2766.0
+Indonesia,2024-10,oil_fuels,3969.0
+Indonesia,2024-11,oil_fuels,2884.0
+Indonesia,2024-12,oil_fuels,3716.0
+Indonesia,2025-01,oil_fuels,2742.0
+Indonesia,2025-02,oil_fuels,3331.0
+Indonesia,2025-03,oil_fuels,3454.0
+Indonesia,2025-04,oil_fuels,2821.0
+Indonesia,2025-05,oil_fuels,2930.0
+Indonesia,2025-06,oil_fuels,2634.0
+Indonesia,2025-07,oil_fuels,2792.0
+Indonesia,2025-08,oil_fuels,2987.0
+Indonesia,2025-09,oil_fuels,3002.0
+Indonesia,2025-10,oil_fuels,3180.0
+Indonesia,2025-11,oil_fuels,3128.0
+Indonesia,2025-12,oil_fuels,3765.0
+Indonesia,2026-01,oil_fuels,3466.0
+Indonesia,2026-02,oil_fuels,2399.0
+Indonesia,2026-03,oil_fuels,3640.0
+Indonesia,2026-04,oil_fuels,5228.0
+Indonesia,2026-05,oil_fuels,5012.0
+Indonesia,2026-06,oil_fuels,5076.0
+Indonesia,2026-07,oil_fuels,4250.0
+Malaysia,2018-02,oil_fuels,2026.083738
+Malaysia,2018-03,oil_fuels,2267.431086
+Malaysia,2018-04,oil_fuels,2732.318083
+Malaysia,2018-05,oil_fuels,3034.916327
+Malaysia,2018-06,oil_fuels,2398.61087
+Malaysia,2018-07,oil_fuels,2778.210174
+Malaysia,2018-08,oil_fuels,2492.942322
+Malaysia,2018-09,oil_fuels,2196.962521
+Malaysia,2018-10,oil_fuels,3454.096363
+Malaysia,2018-11,oil_fuels,3013.952488
+Malaysia,2018-12,oil_fuels,2462.794242
+Malaysia,2019-01,oil_fuels,2258.779577
+Malaysia,2019-02,oil_fuels,1802.533327
+Malaysia,2019-03,oil_fuels,2462.278295
+Malaysia,2019-04,oil_fuels,2911.606646
+Malaysia,2019-05,oil_fuels,2916.701671
+Malaysia,2019-06,oil_fuels,2482.666989
+Malaysia,2019-07,oil_fuels,2722.244032
+Malaysia,2019-08,oil_fuels,2113.698728
+Malaysia,2019-09,oil_fuels,2510.017432
+Malaysia,2019-10,oil_fuels,2325.980087
+Malaysia,2019-11,oil_fuels,2629.470056
+Malaysia,2019-12,oil_fuels,2710.146663
+Malaysia,2020-01,oil_fuels,2876.115178
+Malaysia,2020-02,oil_fuels,2400.57414
+Malaysia,2020-03,oil_fuels,2876.77497
+Malaysia,2020-04,oil_fuels,1744.97234
+Malaysia,2020-05,oil_fuels,1066.154377
+Malaysia,2020-06,oil_fuels,1499.370086
+Malaysia,2020-07,oil_fuels,1906.965773
+Malaysia,2020-08,oil_fuels,1781.301633
+Malaysia,2020-09,oil_fuels,1446.697943
+Malaysia,2020-10,oil_fuels,1912.272005
+Malaysia,2020-11,oil_fuels,1550.009819
+Malaysia,2020-12,oil_fuels,1598.674228
+Malaysia,2021-01,oil_fuels,1756.933168
+Malaysia,2021-02,oil_fuels,2099.217245
+Malaysia,2021-03,oil_fuels,1927.862485
+Malaysia,2021-04,oil_fuels,3165.523483
+Malaysia,2021-05,oil_fuels,2205.284592
+Malaysia,2021-06,oil_fuels,2684.273319
+Malaysia,2021-07,oil_fuels,2832.10757
+Malaysia,2021-08,oil_fuels,1982.576049
+Malaysia,2021-09,oil_fuels,2664.421193
+Malaysia,2021-10,oil_fuels,3054.218293
+Malaysia,2021-11,oil_fuels,3133.993054
+Malaysia,2021-12,oil_fuels,2344.092655
+Malaysia,2022-01,oil_fuels,2315.539362
+Malaysia,2022-02,oil_fuels,2546.693497
+Malaysia,2022-03,oil_fuels,4345.062448
+Malaysia,2022-04,oil_fuels,4007.774817
+Malaysia,2022-05,oil_fuels,4159.634453
+Malaysia,2022-06,oil_fuels,6348.62198
+Malaysia,2022-07,oil_fuels,6096.050148
+Malaysia,2022-08,oil_fuels,6936.338248
+Malaysia,2022-09,oil_fuels,4655.989218
+Malaysia,2022-10,oil_fuels,5219.40889
+Malaysia,2022-11,oil_fuels,4066.560918
+Malaysia,2022-12,oil_fuels,4284.602634
+Malaysia,2023-01,oil_fuels,3856.569958
+Malaysia,2023-02,oil_fuels,4667.004658
+Malaysia,2023-03,oil_fuels,4102.656731
+Malaysia,2023-04,oil_fuels,3950.759715
+Malaysia,2023-05,oil_fuels,4539.932799
+Malaysia,2023-06,oil_fuels,4572.060431
+Malaysia,2023-07,oil_fuels,4207.275349
+Malaysia,2023-08,oil_fuels,3626.098954
+Malaysia,2023-09,oil_fuels,3564.392052
+Malaysia,2023-10,oil_fuels,5095.813739
+Malaysia,2023-11,oil_fuels,4281.825201
+Malaysia,2023-12,oil_fuels,4211.808881
+Malaysia,2024-01,oil_fuels,4216.674414
+Malaysia,2024-02,oil_fuels,4206.717551
+Malaysia,2024-03,oil_fuels,5036.095238
+Malaysia,2024-04,oil_fuels,3438.88109
+Malaysia,2024-05,oil_fuels,4539.226602
+Malaysia,2024-06,oil_fuels,4312.332803
+Malaysia,2024-07,oil_fuels,4081.795011
+Malaysia,2024-08,oil_fuels,3826.108089
+Malaysia,2024-09,oil_fuels,4262.216564
+Malaysia,2024-10,oil_fuels,4040.781179
+Malaysia,2024-11,oil_fuels,3522.131535
+Malaysia,2024-12,oil_fuels,3585.065516
+Malaysia,2025-01,oil_fuels,3402.497646
+Malaysia,2025-02,oil_fuels,3531.016246
+Malaysia,2025-03,oil_fuels,3111.213753
+Malaysia,2025-04,oil_fuels,2970.202512
+Malaysia,2025-05,oil_fuels,3313.67694
+Malaysia,2025-06,oil_fuels,3682.064985
+Malaysia,2025-07,oil_fuels,3746.166471
+Malaysia,2025-08,oil_fuels,3123.717099
+Malaysia,2025-09,oil_fuels,3978.161247
+Malaysia,2025-10,oil_fuels,3504.965978
+Malaysia,2025-11,oil_fuels,3377.332559
+Malaysia,2025-12,oil_fuels,3232.955693
+Malaysia,2026-01,oil_fuels,3499.627405
+Malaysia,2026-02,oil_fuels,2643.306358
+Malaysia,2026-03,oil_fuels,2751.579207
+Malaysia,2026-04,oil_fuels,6066.3746
+Malaysia,2026-05,oil_fuels,4232.266364
+Malaysia,2026-06,oil_fuels,5180.374633
+Malaysia,2026-07,oil_fuels,4762.542829
+Malaysia,2026-08,oil_fuels,4840.842796
+Malaysia,2026-09,oil_fuels,5086.05814
+Peru,2018-01,oil_fuels,541.96818
+Peru,2018-02,oil_fuels,504.626413
+Peru,2018-03,oil_fuels,537.699447
+Peru,2018-04,oil_fuels,519.206971
+Peru,2018-05,oil_fuels,557.845512
+Peru,2018-06,oil_fuels,512.10098
+Peru,2018-07,oil_fuels,521.525707
+Peru,2018-08,oil_fuels,765.74066
+Peru,2018-09,oil_fuels,520.506652
+Peru,2018-10,oil_fuels,773.967529
+Peru,2018-11,oil_fuels,414.496608
+Peru,2018-12,oil_fuels,415.31097
+Peru,2019-01,oil_fuels,468.758747
+Peru,2019-02,oil_fuels,467.644681
+Peru,2019-03,oil_fuels,467.404642
+Peru,2019-04,oil_fuels,542.073043
+Peru,2019-05,oil_fuels,438.928065
+Peru,2019-06,oil_fuels,503.318086
+Peru,2019-07,oil_fuels,422.25121
+Peru,2019-08,oil_fuels,475.037413
+Peru,2019-09,oil_fuels,431.275115
+Peru,2019-10,oil_fuels,603.61684
+Peru,2019-11,oil_fuels,404.314379
+Peru,2019-12,oil_fuels,428.335892
+Peru,2020-01,oil_fuels,540.527761
+Peru,2020-02,oil_fuels,379.561945
+Peru,2020-03,oil_fuels,314.24302
+Peru,2020-04,oil_fuels,140.696616
+Peru,2020-05,oil_fuels,82.76965
+Peru,2020-06,oil_fuels,69.776779
+Peru,2020-07,oil_fuels,184.395628
+Peru,2020-08,oil_fuels,176.663492
+Peru,2020-09,oil_fuels,216.785976
+Peru,2020-10,oil_fuels,235.889491
+Peru,2020-11,oil_fuels,246.376984
+Peru,2020-12,oil_fuels,393.545298
+Peru,2021-01,oil_fuels,390.027687
+Peru,2021-02,oil_fuels,375.020154
+Peru,2021-03,oil_fuels,385.138033
+Peru,2021-04,oil_fuels,460.453026
+Peru,2021-05,oil_fuels,435.255589
+Peru,2021-06,oil_fuels,488.340286
+Peru,2021-07,oil_fuels,582.042642
+Peru,2021-08,oil_fuels,547.754286
+Peru,2021-09,oil_fuels,586.331886
+Peru,2021-10,oil_fuels,724.263066
+Peru,2021-11,oil_fuels,605.704098
+Peru,2021-12,oil_fuels,494.798959
+Peru,2022-01,oil_fuels,680.760938
+Peru,2022-02,oil_fuels,688.740463
+Peru,2022-03,oil_fuels,641.798576
+Peru,2022-04,oil_fuels,1016.801352
+Peru,2022-05,oil_fuels,788.816418
+Peru,2022-06,oil_fuels,1220.548464
+Peru,2022-07,oil_fuels,882.371804
+Peru,2022-08,oil_fuels,1037.140484
+Peru,2022-09,oil_fuels,817.331036
+Peru,2022-10,oil_fuels,1063.684184
+Peru,2022-11,oil_fuels,876.74796
+Peru,2022-12,oil_fuels,780.618937
+Peru,2023-01,oil_fuels,700.943042
+Peru,2023-02,oil_fuels,702.876502
+Peru,2023-03,oil_fuels,602.766969
+Peru,2023-04,oil_fuels,571.854332
+Peru,2023-05,oil_fuels,676.809757
+Peru,2023-06,oil_fuels,563.919057
+Peru,2023-07,oil_fuels,748.812582
+Peru,2023-08,oil_fuels,895.686427
+Peru,2023-09,oil_fuels,993.201713
+Peru,2023-10,oil_fuels,926.810439
+Peru,2023-11,oil_fuels,569.882407
+Peru,2023-12,oil_fuels,705.702731
+Peru,2024-01,oil_fuels,563.328344
+Peru,2024-02,oil_fuels,715.702209
+Peru,2024-03,oil_fuels,770.914105
+Peru,2024-04,oil_fuels,710.108794
+Peru,2024-05,oil_fuels,751.429293
+Peru,2024-06,oil_fuels,484.254724
+Peru,2024-07,oil_fuels,850.196271
+Peru,2024-08,oil_fuels,873.31832
+Peru,2024-09,oil_fuels,609.615464
+Peru,2024-10,oil_fuels,631.950004
+Peru,2024-11,oil_fuels,691.946784
+Peru,2024-12,oil_fuels,699.815774
+Peru,2025-01,oil_fuels,795.388927
+Peru,2025-02,oil_fuels,643.313239
+Peru,2025-03,oil_fuels,682.462289
+Peru,2025-04,oil_fuels,591.946821
+Peru,2025-05,oil_fuels,586.967268
+Peru,2025-06,oil_fuels,471.348138
+Peru,2025-07,oil_fuels,650.227144
+Peru,2025-08,oil_fuels,607.337776
+Peru,2025-09,oil_fuels,612.538057
+Peru,2025-10,oil_fuels,569.380743
+Peru,2025-11,oil_fuels,635.548636
+Peru,2025-12,oil_fuels,679.899797
+Peru,2026-01,oil_fuels,690.94904
+Peru,2026-02,oil_fuels,686.133849
+Peru,2026-03,oil_fuels,980.206144
+Peru,2026-04,oil_fuels,1132.39141
+Peru,2026-05,oil_fuels,924.432437
+Peru,2026-06,oil_fuels,884.402251
+Peru,2026-07,oil_fuels,930.622855
+Peru,2026-08,oil_fuels,1126.568457
+Philippines,2018-02,oil_fuels,814.76
+Philippines,2018-03,oil_fuels,1248.52
+Philippines,2018-04,oil_fuels,892.52
+Philippines,2018-05,oil_fuels,1428.4
+Philippines,2018-06,oil_fuels,1146.5
+Philippines,2018-07,oil_fuels,1303.33
+Philippines,2018-08,oil_fuels,1184.98
+Philippines,2018-09,oil_fuels,1277.16
+Philippines,2018-10,oil_fuels,1293.79
+Philippines,2018-11,oil_fuels,1285.53
+Philippines,2018-12,oil_fuels,1184.17
+Philippines,2019-01,oil_fuels,853.97
+Philippines,2019-02,oil_fuels,948.88
+Philippines,2019-03,oil_fuels,1154.81
+Philippines,2019-04,oil_fuels,1217.88
+Philippines,2019-05,oil_fuels,1182.52
+Philippines,2019-06,oil_fuels,1115.99
+Philippines,2019-07,oil_fuels,1171.12
+Philippines,2019-08,oil_fuels,1076.56
+Philippines,2019-09,oil_fuels,1150.68
+Philippines,2019-10,oil_fuels,1158.67
+Philippines,2019-11,oil_fuels,856.24
+Philippines,2019-12,oil_fuels,1308.38
+Philippines,2020-01,oil_fuels,1026.21
+Philippines,2020-02,oil_fuels,866.23
+Philippines,2020-03,oil_fuels,833.58
+Philippines,2020-04,oil_fuels,172.57
+Philippines,2020-05,oil_fuels,242.44
+Philippines,2020-06,oil_fuels,515.74
+Philippines,2020-07,oil_fuels,755.43
+Philippines,2020-08,oil_fuels,603.34
+Philippines,2020-09,oil_fuels,658.18
+Philippines,2020-10,oil_fuels,626.74
+Philippines,2020-11,oil_fuels,642.87
+Philippines,2020-12,oil_fuels,679.08
+Philippines,2021-01,oil_fuels,716.69
+Philippines,2021-02,oil_fuels,721.24
+Philippines,2021-03,oil_fuels,1041.77
+Philippines,2021-04,oil_fuels,861.82
+Philippines,2021-05,oil_fuels,986.81
+Philippines,2021-06,oil_fuels,1173.36
+Philippines,2021-07,oil_fuels,1252.89
+Philippines,2021-08,oil_fuels,1099.35
+Philippines,2021-09,oil_fuels,1242.13
+Philippines,2021-10,oil_fuels,1453.36
+Philippines,2021-11,oil_fuels,1550.71
+Philippines,2021-12,oil_fuels,1525.05
+Philippines,2022-01,oil_fuels,1209.85
+Philippines,2022-02,oil_fuels,1611.0
+Philippines,2022-03,oil_fuels,2176.54
+Philippines,2022-04,oil_fuels,2175.91
+Philippines,2022-05,oil_fuels,2132.55
+Philippines,2022-06,oil_fuels,2669.38
+Philippines,2022-07,oil_fuels,2337.3
+Philippines,2022-08,oil_fuels,2105.28
+Philippines,2022-09,oil_fuels,2052.46
+Philippines,2022-10,oil_fuels,1892.16
+Philippines,2022-11,oil_fuels,1694.19
+Philippines,2022-12,oil_fuels,1738.85
+Philippines,2023-01,oil_fuels,2070.69
+Philippines,2023-02,oil_fuels,1586.12
+Philippines,2023-03,oil_fuels,1783.6
+Philippines,2023-04,oil_fuels,1535.11
+Philippines,2023-05,oil_fuels,1528.24
+Philippines,2023-06,oil_fuels,1535.64
+Philippines,2023-07,oil_fuels,1536.97
+Philippines,2023-08,oil_fuels,1970.18
+Philippines,2023-09,oil_fuels,1536.27
+Philippines,2023-10,oil_fuels,1881.06
+Philippines,2023-11,oil_fuels,1728.8
+Philippines,2023-12,oil_fuels,1417.55
+Philippines,2024-01,oil_fuels,1510.85
+Philippines,2024-02,oil_fuels,1724.25
+Philippines,2024-03,oil_fuels,1698.39
+Philippines,2024-04,oil_fuels,1667.26
+Philippines,2024-05,oil_fuels,1938.39
+Philippines,2024-06,oil_fuels,1569.57
+Philippines,2024-07,oil_fuels,1436.12
+Philippines,2024-08,oil_fuels,1791.26
+Philippines,2024-09,oil_fuels,1365.37
+Philippines,2024-10,oil_fuels,1686.25
+Philippines,2024-11,oil_fuels,1307.04
+Philippines,2024-12,oil_fuels,1368.76
+Philippines,2025-01,oil_fuels,1618.56
+Philippines,2025-02,oil_fuels,1407.25
+Philippines,2025-03,oil_fuels,1481.83
+Philippines,2025-04,oil_fuels,1241.22
+Philippines,2025-05,oil_fuels,1289.75
+Philippines,2025-06,oil_fuels,1520.11
+Philippines,2025-07,oil_fuels,1442.92
+Philippines,2025-08,oil_fuels,1336.63
+Philippines,2025-09,oil_fuels,1287.88
+Philippines,2025-10,oil_fuels,1355.66
+Philippines,2025-11,oil_fuels,1059.72
+Philippines,2025-12,oil_fuels,1455.52
+Philippines,2026-01,oil_fuels,1214.59
+Philippines,2026-02,oil_fuels,1461.35
+Philippines,2026-03,oil_fuels,2001.76
+Philippines,2026-04,oil_fuels,2552.43
+Philippines,2026-05,oil_fuels,1748.48
+Philippines,2026-06,oil_fuels,1616.01
+Philippines,2026-07,oil_fuels,1945.62
+Philippines,2026-08,oil_fuels,1853.03
+Philippines,2026-09,oil_fuels,1974.9
+South Africa,2018-01,oil_fuels,1562.441334
+South Africa,2018-02,oil_fuels,1405.919005
+South Africa,2018-03,oil_fuels,1121.935892
+South Africa,2018-04,oil_fuels,1291.757921
+South Africa,2018-05,oil_fuels,1186.932994
+South Africa,2018-06,oil_fuels,1312.185513
+South Africa,2018-07,oil_fuels,1596.68643
+South Africa,2018-08,oil_fuels,892.752676
+South Africa,2018-09,oil_fuels,1581.570581
+South Africa,2018-10,oil_fuels,1493.749859
+South Africa,2018-11,oil_fuels,1333.117199
+South Africa,2018-12,oil_fuels,1148.91899
+South Africa,2019-01,oil_fuels,860.118849
+South Africa,2019-02,oil_fuels,1081.275635
+South Africa,2019-03,oil_fuels,1209.200056
+South Africa,2019-04,oil_fuels,1278.8231
+South Africa,2019-05,oil_fuels,1276.931088
+South Africa,2019-06,oil_fuels,1361.019979
+South Africa,2019-07,oil_fuels,1217.4279
+South Africa,2019-08,oil_fuels,941.767826
+South Africa,2019-09,oil_fuels,800.419438
+South Africa,2019-10,oil_fuels,1248.415455
+South Africa,2019-11,oil_fuels,1239.9439
+South Africa,2019-12,oil_fuels,1332.190333
+South Africa,2020-01,oil_fuels,1143.131547
+South Africa,2020-02,oil_fuels,1125.460429
+South Africa,2020-03,oil_fuels,1019.738271
+South Africa,2020-04,oil_fuels,649.690716
+South Africa,2020-05,oil_fuels,515.858316
+South Africa,2020-06,oil_fuels,410.570846
+South Africa,2020-07,oil_fuels,621.584388
+South Africa,2020-08,oil_fuels,617.740603
+South Africa,2020-09,oil_fuels,801.098768
+South Africa,2020-10,oil_fuels,697.010469
+South Africa,2020-11,oil_fuels,632.666705
+South Africa,2021-01,oil_fuels,801.958117
+South Africa,2021-02,oil_fuels,1122.937719
+South Africa,2021-03,oil_fuels,932.975765
+South Africa,2021-04,oil_fuels,1119.220564
+South Africa,2021-05,oil_fuels,1242.818724
+South Africa,2021-06,oil_fuels,1124.426297
+South Africa,2021-07,oil_fuels,1110.463844
+South Africa,2021-08,oil_fuels,1073.686725
+South Africa,2021-09,oil_fuels,1888.187113
+South Africa,2021-10,oil_fuels,1206.403826
+South Africa,2021-11,oil_fuels,1235.3925
+South Africa,2021-12,oil_fuels,1499.712178
+South Africa,2022-01,oil_fuels,1168.394434
+South Africa,2022-02,oil_fuels,1660.034461
+South Africa,2022-03,oil_fuels,1962.415182
+South Africa,2022-04,oil_fuels,1921.842234
+South Africa,2022-05,oil_fuels,2026.687435
+South Africa,2022-06,oil_fuels,2515.213597
+South Africa,2022-07,oil_fuels,1929.783161
+South Africa,2022-08,oil_fuels,2193.059748
+South Africa,2022-09,oil_fuels,2290.298555
+South Africa,2022-10,oil_fuels,2287.267456
+South Africa,2022-11,oil_fuels,1863.712185
+South Africa,2022-12,oil_fuels,2009.782203
+South Africa,2023-01,oil_fuels,1889.830797
+South Africa,2023-02,oil_fuels,1315.089566
+South Africa,2023-03,oil_fuels,2341.661002
+South Africa,2023-04,oil_fuels,1476.972711
+South Africa,2023-05,oil_fuels,1520.27261
+South Africa,2023-06,oil_fuels,1547.15672
+South Africa,2023-07,oil_fuels,1563.801347
+South Africa,2023-08,oil_fuels,1386.684132
+South Africa,2023-09,oil_fuels,1655.794034
+South Africa,2023-10,oil_fuels,2427.60892
+South Africa,2023-11,oil_fuels,1932.211895
+South Africa,2023-12,oil_fuels,1791.941839
+South Africa,2024-01,oil_fuels,1396.218187
+South Africa,2024-02,oil_fuels,1528.959088
+South Africa,2024-03,oil_fuels,1780.954813
+South Africa,2024-04,oil_fuels,1609.995217
+South Africa,2024-05,oil_fuels,1616.166763
+South Africa,2024-06,oil_fuels,1492.681303
+South Africa,2024-07,oil_fuels,1455.678991
+South Africa,2024-08,oil_fuels,1373.255748
+South Africa,2024-09,oil_fuels,1628.381264
+South Africa,2024-10,oil_fuels,1430.903777
+South Africa,2024-11,oil_fuels,1243.674626
+South Africa,2024-12,oil_fuels,1668.676523
+South Africa,2025-01,oil_fuels,1428.833414
+South Africa,2025-02,oil_fuels,1448.247633
+South Africa,2025-03,oil_fuels,1646.105583
+South Africa,2025-04,oil_fuels,1279.977842
+South Africa,2025-05,oil_fuels,1579.015715
+South Africa,2025-06,oil_fuels,1178.615301
+South Africa,2025-07,oil_fuels,1604.083876
+South Africa,2025-08,oil_fuels,1494.227995
+South Africa,2025-09,oil_fuels,1482.127569
+South Africa,2025-10,oil_fuels,1773.296365
+South Africa,2025-11,oil_fuels,1263.2231
+South Africa,2025-12,oil_fuels,1323.365013
+South Africa,2026-01,oil_fuels,1401.201841
+South Africa,2026-02,oil_fuels,1392.047272
+South Africa,2026-03,oil_fuels,1571.562202
+South Africa,2026-04,oil_fuels,2817.494127
+South Africa,2026-05,oil_fuels,2984.664603
+Thailand,2018-02,oil_fuels,2557.47
+Thailand,2018-03,oil_fuels,3185.99
+Thailand,2018-04,oil_fuels,3604.75
+Thailand,2018-05,oil_fuels,3172.94
+Thailand,2018-06,oil_fuels,3223.55
+Thailand,2018-07,oil_fuels,3685.15
+Thailand,2018-08,oil_fuels,3376.31
+Thailand,2018-09,oil_fuels,3265.69
+Thailand,2018-10,oil_fuels,3529.19
+Thailand,2018-11,oil_fuels,4110.64
+Thailand,2018-12,oil_fuels,3067.66
+Thailand,2019-01,oil_fuels,2988.8
+Thailand,2019-02,oil_fuels,3001.27
+Thailand,2019-03,oil_fuels,3179.51
+Thailand,2019-04,oil_fuels,3012.4
+Thailand,2019-05,oil_fuels,3746.27
+Thailand,2019-06,oil_fuels,2473.85
+Thailand,2019-07,oil_fuels,3137.53
+Thailand,2019-08,oil_fuels,3224.57
+Thailand,2019-09,oil_fuels,2506.31
+Thailand,2019-10,oil_fuels,2465.27
+Thailand,2019-11,oil_fuels,2035.67
+Thailand,2019-12,oil_fuels,3012.06
+Thailand,2020-01,oil_fuels,3347.7
+Thailand,2020-02,oil_fuels,2425.35
+Thailand,2020-03,oil_fuels,3247.05
+Thailand,2020-04,oil_fuels,2045.15
+Thailand,2020-05,oil_fuels,1037.47
+Thailand,2020-06,oil_fuels,1617.5
+Thailand,2020-07,oil_fuels,1814.42
+Thailand,2020-08,oil_fuels,1889.95
+Thailand,2020-09,oil_fuels,2179.44
+Thailand,2020-10,oil_fuels,1808.38
+Thailand,2020-11,oil_fuels,1683.66
+Thailand,2020-12,oil_fuels,2238.44
+Thailand,2021-01,oil_fuels,2146.67
+Thailand,2021-02,oil_fuels,2459.68
+Thailand,2021-03,oil_fuels,2647.41
+Thailand,2021-04,oil_fuels,2734.75
+Thailand,2021-05,oil_fuels,3185.64
+Thailand,2021-06,oil_fuels,2721.26
+Thailand,2021-07,oil_fuels,2991.18
+Thailand,2021-08,oil_fuels,3253.29
+Thailand,2021-09,oil_fuels,3081.77
+Thailand,2021-10,oil_fuels,3655.99
+Thailand,2021-11,oil_fuels,2809.58
+Thailand,2021-12,oil_fuels,5526.5
+Thailand,2022-01,oil_fuels,2690.81
+Thailand,2022-02,oil_fuels,4441.87
+Thailand,2022-03,oil_fuels,5862.2
+Thailand,2022-04,oil_fuels,5187.82
+Thailand,2022-05,oil_fuels,5107.45
+Thailand,2022-06,oil_fuels,5842.2
+Thailand,2022-07,oil_fuels,5343.87
+Thailand,2022-08,oil_fuels,5522.83
+Thailand,2022-09,oil_fuels,5426.62
+Thailand,2022-10,oil_fuels,3712.38
+Thailand,2022-11,oil_fuels,4155.22
+Thailand,2022-12,oil_fuels,4554.94
+Thailand,2023-01,oil_fuels,4930.62
+Thailand,2023-02,oil_fuels,4839.71
+Thailand,2023-03,oil_fuels,3417.37
+Thailand,2023-04,oil_fuels,4520.38
+Thailand,2023-05,oil_fuels,4283.01
+Thailand,2023-06,oil_fuels,4534.76
+Thailand,2023-07,oil_fuels,3827.88
+Thailand,2023-08,oil_fuels,3412.29
+Thailand,2023-09,oil_fuels,4495.1
+Thailand,2023-10,oil_fuels,3623.97
+Thailand,2023-11,oil_fuels,4419.77
+Thailand,2023-12,oil_fuels,4149.54
+Thailand,2024-01,oil_fuels,3860.19
+Thailand,2024-02,oil_fuels,3569.34
+Thailand,2024-03,oil_fuels,4548.04
+Thailand,2024-04,oil_fuels,3702.02
+Thailand,2024-05,oil_fuels,4158.09
+Thailand,2024-06,oil_fuels,4158.72
+Thailand,2024-07,oil_fuels,4493.69
+Thailand,2024-08,oil_fuels,3558.14
+Thailand,2024-09,oil_fuels,3684.74
+Thailand,2024-10,oil_fuels,4217.58
+Thailand,2024-11,oil_fuels,3237.41
+Thailand,2024-12,oil_fuels,3619.22
+Thailand,2025-01,oil_fuels,3615.63
+Thailand,2025-02,oil_fuels,3093.74
+Thailand,2025-03,oil_fuels,4419.13
+Thailand,2025-04,oil_fuels,3483.39
+Thailand,2025-05,oil_fuels,3341.3
+Thailand,2025-06,oil_fuels,3475.07
+Thailand,2025-07,oil_fuels,2618.55
+Thailand,2025-08,oil_fuels,3514.31
+Thailand,2025-09,oil_fuels,3359.43
+Thailand,2025-10,oil_fuels,3556.76
+Thailand,2025-11,oil_fuels,2522.57
+Thailand,2025-12,oil_fuels,2774.43
+Thailand,2026-01,oil_fuels,3583.14
+Thailand,2026-02,oil_fuels,2379.44
+Thailand,2026-03,oil_fuels,4138.23
+Thailand,2026-04,oil_fuels,8201.29
+Thailand,2026-05,oil_fuels,6666.12
+Thailand,2026-06,oil_fuels,4905.02
+Thailand,2026-07,oil_fuels,4171.64
+Thailand,2026-08,oil_fuels,5130.85
+Thailand,2026-09,oil_fuels,5040.08
