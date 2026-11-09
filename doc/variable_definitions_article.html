@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Variable Definitions from "how GRP affect FX and capital flow"</title>
+  <style>
+    body{font:16px/1.55 Georgia,serif;max-width:1200px;margin:2rem auto;padding:0 1rem;color:#1f2430}
+    h1,h2{margin:.3rem 0 .7rem}
+    .note{background:#fff7e6;border:1px solid #ebd29a;padding:.8rem;margin:.8rem 0}
+    table{border-collapse:collapse;width:100%;margin:1rem 0}
+    th,td{border-bottom:1px solid #d8dce5;padding:.55rem;vertical-align:top;text-align:left}
+    th{background:#f5f7fb}
+    code{font-size:.93em}
+    .small{font-size:.93em;color:#46506a}
+  </style>
+</head>
+<body>
+  <h1>Article Variable Definitions and Construction</h1>
+  <p class="small">
+    Source document: <code>doc/how GRP affect FX and capital flow.md</code>.
+    This page summarizes each variable by (1) characteristics, (2) data source, and (3) processing/formula used by the authors.
+  </p>
+
+  <h2>1) Sample characteristics (applies to variables in the baseline panel setup)</h2>
+  <ul>
+    <li><strong>Frequency:</strong> monthly panel (unbalanced).</li>
+    <li><strong>Period:</strong> 2000:M1 to 2023:M12.</li>
+    <li><strong>Countries (29):</strong> Belgium, Brazil, Canada, Chile, PRC, Colombia, Germany, Denmark, Spain, Finland, France, Hungary, Indonesia, India, Italy, Japan, Korea, Mexico, Malaysia, Netherlands, Philippines, Poland, Portugal, Sweden, Thailand, Türkiye, Ukraine, United States, South Africa.</li>
+    <li><strong>Notes from authors:</strong> start year may vary by variable/country due to data availability; controls enter with one-period lag in Equation (2).</li>
+  </ul>
+
+  <div class="note">
+    <strong>Baseline equation (paper Eq. 2):</strong><br>
+    <code>y(i,t)^j = β·GPR(i,t) + γ·X(i,t−1) + GEPU(t−1) + VIX(t−1) + δ(i) + ε(i,t)</code>
+  </div>
+
+  <h2>2) Variable-by-variable definition</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>Variable</th>
+        <th>Characteristics (freq / period / coverage)</th>
+        <th>How found (source in article)</th>
+        <th>How processed / formula in article</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Geopolitical risk (GPR index)</td>
+        <td>Monthly; panel countries; enters as key regressor.</td>
+        <td>Caldara and Iacoviello (2022), country-specific monthly GPR.</td>
+        <td>
+          Constructed by counting joint newspaper occurrences of geopolitical terms and country name/capital/main city; index is ratio of geopolitical articles to total articles. In regressions, described as <em>standardized by country</em>.
+        </td>
+      </tr>
+      <tr>
+        <td>Capital flow volatility</td>
+        <td>Monthly series built from monthly portfolio inflows.</td>
+        <td>OECD Monthly Capital Flow Dataset (de Crescenzio and Lepers 2024).</td>
+        <td>
+          Baseline measure is rolling volatility over a 3-month window:<br>
+          <code>CFV(t) = SD(CF(t), CF(t−1), CF(t−2))</code>.<br>
+          Robustness uses 6/12-month windows and alternative GARCH/ARIMA-based volatility measures.
+        </td>
+      </tr>
+      <tr>
+        <td>Real stock prices</td>
+        <td>Monthly country panel outcome.</td>
+        <td>OECD Main Economic Indicators / IMF IFS / BIS (as grouped in the data section).</td>
+        <td>Used in logarithm form (table labels and model notation indicate log stock prices).</td>
+      </tr>
+      <tr>
+        <td>Long-term bond yield</td>
+        <td>Monthly country panel outcome; 10-year government bond yield.</td>
+        <td>OECD Main Economic Indicators / IMF IFS / BIS.</td>
+        <td>Used in level percentage terms (not logged in table labels).</td>
+      </tr>
+      <tr>
+        <td>Exchange rate (REER)</td>
+        <td>Monthly country panel outcome.</td>
+        <td>OECD Main Economic Indicators / IMF IFS / BIS.</td>
+        <td>Used as log of real effective exchange rate: <code>log(REER)</code>.</td>
+      </tr>
+      <tr>
+        <td>Real industrial production</td>
+        <td>Domestic fundamental control.</td>
+        <td>IMF IFS and BIS database.</td>
+        <td>Used in logarithm form in the model (real industrial production (log)).</td>
+      </tr>
+      <tr>
+        <td>Inflation</td>
+        <td>Domestic fundamental control.</td>
+        <td>IMF IFS and BIS database (CPI-based).</td>
+        <td>Defined as year-on-year change in CPI; included as control (lagged by one period in Eq. 2).</td>
+      </tr>
+      <tr>
+        <td>Policy rate</td>
+        <td>Domestic fundamental control.</td>
+        <td>IMF IFS and BIS database.</td>
+        <td>Included in level percentage terms; enters with one-period lag.</td>
+      </tr>
+      <tr>
+        <td>Oil price</td>
+        <td>Global factor control.</td>
+        <td>WTI crude oil price series.</td>
+        <td>Used in logarithm form (Oil price (log)); enters with one-period lag in baseline setup.</td>
+      </tr>
+      <tr>
+        <td>VIX</td>
+        <td>Global factor control.</td>
+        <td>CBOE VIX index.</td>
+        <td>Used as <code>log(VIX)</code>; enters as <code>VIX(t−1)</code> in Eq. 2.</td>
+      </tr>
+      <tr>
+        <td>Global EPU</td>
+        <td>Global factor control.</td>
+        <td>Baker, Bloom, and Davis (2016) Economic Policy Uncertainty index.</td>
+        <td>Used as <code>log(GEPU)</code>; enters as <code>GEPU(t−1)</code> in Eq. 2.</td>
+      </tr>
+      <tr>
+        <td>Financial development index</td>
+        <td>Country-specific characteristic control.</td>
+        <td>IMF Financial Development Index.</td>
+        <td>Index level included as control and in heterogeneity splits.</td>
+      </tr>
+      <tr>
+        <td>Central bank independence index</td>
+        <td>Country-specific characteristic control.</td>
+        <td>Romelli (2022) CBI index.</td>
+        <td>Index level included as control and in heterogeneity splits.</td>
+      </tr>
+      <tr>
+        <td>Public debt to GDP</td>
+        <td>Country-specific characteristic control.</td>
+        <td>IMF World Economic Outlook.</td>
+        <td>Debt-to-GDP ratio in percent, included as control.</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h2>3) Clarifications on what the article does <em>not</em> fully specify</h2>
+  <ul>
+    <li>For some variables (e.g., stock price deflator method, exact REER broad/narrow basket), the markdown notes list data repositories but not a deeper transformation pipeline.</li>
+    <li>The paper clearly states transformed forms in the regression framework/tables (e.g., log(REER), log stock, log oil, log VIX, log GEPU, log industrial production) and the one-period lag structure for controls.</li>
+  </ul>
+</body>
+</html>

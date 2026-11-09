@@ -40,6 +40,8 @@ COUNTRY_MAP = {
 }
 
 DIMENSIONS = [("rl", "Rule of law"), ("ge", "Government effectiveness")]
+TREND_PRE_MONTHS = 6
+TREND_POST_MONTHS = 6
 
 CONTROL_NAMES = [
     "inflation_l1",
@@ -355,12 +357,17 @@ def make_plot(obs, episode, dim_code, dim_label, shock_dt):
         ax.fill_between(months, lo, hi, color=colors[g], alpha=0.16)
         any_drawn = True
 
+    window_start = add_months(shock_dt, -TREND_PRE_MONTHS)
+    window_end = add_months(shock_dt, TREND_POST_MONTHS)
+    ax.axvspan(window_start, shock_dt, color="#f3f4f6", alpha=0.45, label="Pre-shock window")
+    ax.axvspan(add_months(shock_dt, 1), window_end, color="#eef6ff", alpha=0.35, label="Post-shock window")
     ax.axvline(shock_dt, color="#404040", linestyle="--", linewidth=1.4, label="Shock month")
     ax.set_title(f"{episode} — {dim_label}: Monthly exchange-rate change around shock")
     ax.set_ylabel("100 × ln(local_per_usd / pre-shock monthly mean)")
     ax.set_xlabel("Month")
     ax.grid(True, alpha=0.25)
-    ax.xaxis.set_major_locator(mdates.YearLocator(base=1))
+    ax.set_xlim(window_start, window_end)
+    ax.xaxis.set_major_locator(mdates.MonthLocator(interval=1))
     ax.xaxis.set_major_formatter(mdates.DateFormatter("%Y-%m"))
     plt.setp(ax.get_xticklabels(), rotation=45, ha="right")
     ax.legend(loc="best")
@@ -420,7 +427,7 @@ def get_controls_for_month(country, month_dt, controls):
 
 
 def build_trend_obs(fx, used_countries, treat_map, shock_dt):
-    trend_window = month_range(add_months(shock_dt, -3), add_months(shock_dt, 3))
+    trend_window = month_range(add_months(shock_dt, -TREND_PRE_MONTHS), add_months(shock_dt, TREND_POST_MONTHS))
     trend = []
     base_month = month_str(add_months(shock_dt, -1))
     for c in used_countries:
@@ -637,8 +644,8 @@ def run():
                 },
                 "k_params": fit["k_params"],
                 "figure": fig_name,
-                "chart_window_start": month_str(add_months(shock_dt, -3)),
-                "chart_window_end": month_str(add_months(shock_dt, 3)),
+                "chart_window_start": month_str(add_months(shock_dt, -TREND_PRE_MONTHS)),
+                "chart_window_end": month_str(add_months(shock_dt, TREND_POST_MONTHS)),
                 "inferential_ok": fit["n_country"] >= 5,
             }
             if not res["inferential_ok"]:
@@ -744,7 +751,7 @@ def run():
         f.write("<li>Reference framework from the PDF (<code>doc/how GRP affect FX and capital flow.pdf</code>): monthly GPR context, exchange-rate channel, and macro/global controls.</li>")
         f.write("<li>Outcome (<em>Y</em>): immediate exchange-rate change from just two values: <code>100 × ln(FX[t+1] / FX[t-1])</code>. The pre-shock row is 0 and the post-shock row is this change.</li>")
         f.write("<li>No averaging is used for exchange-rate levels: only month <code>t-1</code> (before shock) and month <code>t+1</code> (right after shock) are used.</li>")
-        f.write("<li>Charts are for trend visualization only and use a 7-month window around the shock (<code>t-3</code> to <code>t+3</code>), normalized by <code>t-1</code> for each country.</li>")
+        f.write("<li>Charts are for trend visualization only and use a 13-month window around the shock (<code>t-6</code> to <code>t+6</code>), normalized by <code>t-1</code> for each country.</li>")
         f.write("<li>Treatment/control: good institution (=1) if country WGI score in the pre-shock year is strictly above the selected-country mean in that pre-shock year; otherwise 0.</li>")
         f.write("<li>Dimensions: Rule of Law (<code>rl</code>) and Government Effectiveness (<code>ge</code>).</li>")
         f.write("<li>Augmented DiD model: <code>Y = α + δ·Treat + γ·Post + θ·(Treat×Post) + β'Controls + ε</code>; θ is the DiD effect.</li>")

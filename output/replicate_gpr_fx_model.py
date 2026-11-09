@@ -1,6 +1,7 @@
 import csv
 import math
 import os
+import re
 from collections import defaultdict
 from datetime import date
 from html import escape
@@ -13,6 +14,11 @@ from scipy.stats import t as student_t
 ROOT = r"C:\0 UST CourseWork\ECON4999B\econ4999b_research"
 CLEANED_DIR = os.path.join(ROOT, "cleaned")
 OUTPUT_DIR = os.path.join(ROOT, "output")
+REER_SOURCE_CANDIDATES = [
+    os.path.join(ROOT, "input", "WS_EER_csv_col.csv"),
+    r"C:\Users\wscha\AppData\Local\Temp\WS_EER_csv_col.csv",
+]
+REAL_IP_SOURCE = os.path.join(ROOT, "input", "Real industrial production.csv")
 
 
 SHOCK_MONTHS = {
@@ -26,7 +32,14 @@ SHOCK_MONTHS = {
     "E20": "2026-02",
 }
 
-COUNTRY_MAP = {"Türkiye": "Turkey"}
+COUNTRY_MAP = {
+    "Türkiye": "Turkey",
+    "TÃ¼rkiye": "Turkey",
+    "Tï¿½rkiye": "Turkey",
+    "T�rkiye": "Turkey",
+    "Türkiye, Republic of": "Turkey",
+    "Egypt, Arab Republic of": "Egypt",
+}
 
 
 def parse_month(s):
@@ -68,6 +81,45 @@ def read_monthly_country_series(file_name, value_col):
     return out
 
 
+def normalize_country_name(name):
+    return COUNTRY_MAP.get(name.strip(), name.strip())
+
+
+def resolve_reer_source():
+    for p in REER_SOURCE_CANDIDATES:
+        if os.path.exists(p):
+            return p
+    raise FileNotFoundError(
+        "Could not find BIS REER source file. Checked: "
+        + ", ".join(REER_SOURCE_CANDIDATES)
+    )
+
+
+def read_bis_reer_real_broad_monthly():
+    source_path = resolve_reer_source()
+    out = defaultdict(dict)
+    with open(source_path, "r", encoding="utf-8-sig", newline="") as f:
+        r = csv.DictReader(f)
+        month_cols = [c for c in (r.fieldnames or []) if re.fullmatch(r"\d{4}-\d{2}", c or "")]
+        for row in r:
+            if row.get("FREQ") != "M" or row.get("EER_TYPE") != "R" or row.get("EER_BASKET") != "B":
+                continue
+            title = (row.get("TITLE_TS") or "").strip()
+            if not title:
+                continue
+            country = normalize_country_name(title.split(" - ")[0].strip())
+            for m in month_cols:
+                raw = (row.get(m) or "").strip()
+                if not raw or raw.lower() == "nan":
+                    continue
+                try:
+                    val = float(raw)
+                except ValueError:
+                    continue
+                out[country][m] = val
+    return out
+
+
 def read_monthly_global_series(file_name, value_col):
     out = {}
     with open(os.path.join(CLEANED_DIR, file_name), "r", encoding="utf-8-sig", newline="") as f:
@@ -93,6 +145,27 @@ def read_annual_country_series(file_name, year_col, value_col):
     return out
 
 
+def read_real_industrial_production_annual():
+    out = defaultdict(dict)
+    with open(REAL_IP_SOURCE, "r", encoding="utf-8-sig", newline="") as f:
+        r = csv.DictReader(f)
+        year_cols = [c for c in (r.fieldnames or []) if re.fullmatch(r"\d{4}", c or "")]
+        for row in r:
+            country_raw = (row.get("COUNTRY") or "").strip()
+            if not country_raw:
+                continue
+            country = normalize_country_name(country_raw)
+            for y in year_cols:
+                raw = (row.get(y) or "").strip()
+                if not raw:
+                    continue
+                try:
+                    out[country][int(y)] = float(raw)
+                except ValueError:
+                    continue
+    return out
+
+
 def read_selected_shocks():
     wb = load_workbook(
         os.path.join(CLEANED_DIR, "oil_related_geopolitical_shocks_imf.xlsx"),
@@ -112,7 +185,7 @@ def read_selected_shocks():
         country_raw = row[2]
         if not country_raw:
             continue
-        country = COUNTRY_MAP.get(country_raw, country_raw)
+        country = normalize_country_name(country_raw)
         signed_jump = row[6]
         shock_type = row[8]
         if signed_jump is None:
@@ -205,17 +278,18 @@ def fit_ols_cluster(rows, rhs_vars, target_var="y"):
 
 
 def build_panel():
-    fx = read_monthly_country_series("fx_rate.csv", "local_per_usd")
+    reer = read_bis_reer_real_broad_monthly()
     inflation = read_monthly_country_series("inflation.csv", "value")
     policy = read_monthly_country_series("policy_rate.csv", "value")
     debt = read_annual_country_series("debt_gdp.csv", "period", "debt_gdp_pct")
     fin_dev = read_annual_country_series("financial_development.csv", "year", "fd_fdi_ovrl")
     vix = read_monthly_global_series("vix.csv", "value")
     gepu = read_monthly_global_series("gepu_current.csv", "value")
-    ind_prod = read_annual_country_series("industrial_production.csv", "year", "index")
+    ind_prod = read_real_industrial_production_annual()
 
     selected = read_selected_shocks()
-    screened_countries = sorted({r["country"] for r in selected if r["country"] in fx})
+    selected_countries = sorted({r["country"] for r in selected})
+    screened_countries = sorted({c for c in selected_countries if c in reer})
 
     shock_map = defaultdict(list)
     for s in selected:
@@ -226,16 +300,16 @@ def build_panel():
     rows = []
     missing_tracker = defaultdict(int)
     for c in screened_countries:
-        months_sorted = sorted(fx[c].keys())
+        months_sorted = sorted(reer[c].keys())
         month_dates = [parse_month(m) for m in months_sorted]
         for d in month_dates:
             m = month_str(d)
             lag_m = month_str(add_months(d, -1))
             lag_y = add_months(d, -1).year
-            fx_t = fx[c].get(m)
-            if fx_t is None or fx_t <= 0:
+            reer_t = reer[c].get(m)
+            if reer_t is None or reer_t <= 0:
                 continue
-            y_log_fx_level = math.log(fx_t)
+            y_log_reer_level = math.log(reer_t)
 
             shocks_here = shock_map.get((c, m), [])
             gpr_proxy_raw = float(sum(x["signed_jump_pp"] for x in shocks_here)) if shocks_here else 0.0
@@ -260,7 +334,7 @@ def build_panel():
             row = {
                 "country": c,
                 "month": m,
-                "y": y_log_fx_level,
+                "y": y_log_reer_level,
                 "gpr_proxy_raw": gpr_proxy_raw,
             }
             row.update(vals)
@@ -287,6 +361,7 @@ def build_panel():
         "screened_countries": screened_countries,
         "n_shocks_country_episode": len(selected),
         "n_screened_countries": len(screened_countries),
+        "countries_without_reer": sorted(set(selected_countries) - set(screened_countries)),
         "missing_tracker": dict(sorted(missing_tracker.items())),
     }
     return rows, meta
@@ -307,6 +382,7 @@ def filter_complete(rows, needed_vars):
 
 def impute_controls(rows, control_vars):
     country_controls = {
+        "log_industrial_production_l1",
         "inflation_l1",
         "policy_rate_l1",
         "debt_gdp_l1",
@@ -344,6 +420,7 @@ def impute_controls(rows, control_vars):
 def run():
     rows, meta = build_panel()
     full_controls = [
+        "log_industrial_production_l1",
         "inflation_l1",
         "policy_rate_l1",
         "debt_gdp_l1",
@@ -358,19 +435,19 @@ def run():
     specs = [
         {
             "name": "S1",
-            "label": "Standardized GPR proxy + controls (excl. industrial production) + country FE",
+            "label": "Standardized GPR proxy + controls (with real industrial production) + country FE",
             "shock_var": "gpr_proxy_std",
             "controls": full_controls,
         },
         {
             "name": "S2",
-            "label": "Raw intensity proxy + controls (excl. industrial production) + country FE",
+            "label": "Raw intensity proxy + controls (with real industrial production) + country FE",
             "shock_var": "gpr_proxy_raw",
             "controls": full_controls,
         },
         {
             "name": "S3",
-            "label": "Binary event-month proxy + controls (excl. industrial production) + country FE",
+            "label": "Binary event-month proxy + controls (with real industrial production) + country FE",
             "shock_var": "gpr_event_dummy",
             "controls": full_controls,
         },
@@ -470,7 +547,7 @@ def run():
             "code{font-size:.92em}"
             "</style></head><body>"
         )
-        f.write("<h1>Replication of paper-style panel model: exchange-rate level response to geopolitical shocks</h1>")
+        f.write("<h1>Replication of paper-style panel model: REER level response to geopolitical shocks</h1>")
         f.write(
             "<p>This report follows the panel-regression structure in <code>doc/how GRP affect FX and capital flow.pdf</code>, "
             "but uses repository shocks and screened countries.</p>"
@@ -478,20 +555,20 @@ def run():
         f.write("<h2>Model used</h2>")
         f.write("<p><code>y_it = β·GPR_it + γ'X_i,t-1 + φ'Z_t-1 + δ_i + ε_it</code></p>")
         f.write("<ul>")
-        f.write("<li><code>y_it</code>: log exchange-rate level proxy, <code>ln(local_per_usd_t)</code>, matching the paper's level-log setup for exchange rates.</li>")
+        f.write("<li><code>y_it</code>: log real effective exchange rate, <code>ln(REER_t)</code>, using BIS monthly real broad index.</li>")
         f.write("<li><code>GPR_it</code>: repository shock proxy (event-month signed jump), including country-standardized proxy in paper-style specifications.</li>")
-        f.write("<li><code>X_i,t−1</code>: lagged domestic controls available here: log industrial production, inflation, policy rate, debt-to-GDP, financial development.</li>")
+        f.write("<li><code>X_i,t−1</code>: lagged domestic controls: log real industrial production, inflation, policy rate, debt-to-GDP, financial development.</li>")
         f.write("<li><code>Z_t−1</code>: lagged global controls per paper style: log GEPU and log VIX.</li>")
         f.write("<li><code>δ_i</code>: country fixed effects; SE clustered by country.</li>")
         f.write("</ul>")
         f.write(
             "<div class='note'><strong>Missing-data handling:</strong> no rows are dropped for missing controls. "
-            "Industrial production is excluded from controls, and remaining missing controls are imputed "
+            "Real industrial production from <code>input/Real industrial production.csv</code> is included, and missing controls are imputed "
             "using country-median (country controls) or global-median (global controls) values.</div>"
         )
         f.write(
-            "<div class='note'><strong>Alignment note:</strong> The paper uses monthly country GPR index levels and real effective exchange rate. "
-            "This repository has shock episodes and bilateral local-per-USD FX; therefore <code>GPR_it</code> and exchange-rate measure are proxies, but the formula structure now matches Equation (2).</div>"
+            "<div class='note'><strong>Alignment note:</strong> This run uses monthly BIS real effective exchange rate (real, broad basket). "
+            "<code>GPR_it</code> remains the repository shock-episode proxy.</div>"
         )
 
         f.write("<h2>Table: shock coefficient estimates (paper-style summary)</h2>")
@@ -527,6 +604,10 @@ def run():
         f.write("<ul>")
         f.write(f"<li>Screened countries in estimation universe: {meta['n_screened_countries']}.</li>")
         f.write(f"<li>Selected country-episode shocks loaded: {meta['n_shocks_country_episode']}.</li>")
+        f.write(
+            f"<li>Selected countries without BIS monthly real broad REER coverage: "
+            f"{', '.join(meta['countries_without_reer']) if meta['countries_without_reer'] else 'None'}.</li>"
+        )
         f.write("</ul>")
 
         f.write("<h3>Missing-control counts (before imputation)</h3>")
