@@ -1,0 +1,21 @@
+series,comparison,definition,n,corr,mean_cleaned,mean_literature,mean_abs_gap,note
+Real effective exchange rate,level,same measure,2592,1,108.1873688,108.1873688,0,BIS broad real index in the literature panel.
+Real effective exchange rate,log,same measure,2592,1,4.664468325,4.664468325,0,The regression uses the log. A constant rebase is absorbed by country fixed effects.
+Policy rate,level,same measure,2055,0.9993063236,5.875148418,5.87763017,0.01794647202,Literature panel uses the BIS policy rate.
+Inflation,year-on-year percent,"close, not the same vintage",2352,0.992653757,5.601237245,5.547714903,0.1969695716,Literature panel uses IMF IFS year-on-year CPI. The mean absolute gap is about 0.2 percentage points.
+Oil price,level,same measure,288,0.9999924517,63.13611111,63.11680556,0.04395833333,One observation per month. Literature panel uses EIA WTI.
+Oil price,log,same measure,288,0.9999938906,4.052489788,4.052288403,0.0007509495836,
+VIX,level,"same concept, different monthly aggregation",288,0.9366568945,20.12770833,20.05319524,1.901888515,"The monthly means almost match, and the month-by-month gap is about 1.9 index points. The literature panel is the average of the daily close."
+VIX,log,"same concept, different monthly aggregation",288,0.9386410352,2.935818191,2.932068268,0.09105456063,The regression uses the log. This aggregation gap changes the control slightly. It does not replace the GPR regressor.
+Global EPU,level,same measure,288,1,142.1990501,142.1990501,0,Literature panel uses GEPU_current.
+Global EPU,log,same measure,288,1,4.847727347,4.847727347,0,
+GPR,global index vs country index,different definition,2592,0.2609718867,105.4513061,0.0906975106,105.3606086,Cleaned GPR is one global index near 100. The literature panel is the country article-share index.
+GPR,global index vs within-country z-score,different definition,2592,0.4421730398,105.4513061,-1.233581138e-17,105.4513061,"Mean within-country correlation of the global index with the country index is 0.442 across 9 countries. The z-score is that country index standardized within the country, which is the regressor in the literature panel."
+Financial development,annual,different definition,198,0.8417446734,32.55228478,0.4463023933,32.10598238,Cleaned fd_fdi_ovrl is not the IMF 0-to-1 Financial Development Index used in the literature panel.
+Debt/GDP,annual percent,same measure,216,0.9997238624,47.52819245,47.54383796,0.1712251481,Literature panel uses IMF WEO general-government gross debt.
+Industrial production,annual index vs mean of monthly IMF index,different definition,74,0.8792892856,115.6040957,112.972579,6.60439396,Cleaned industrial production is annual. The literature panel uses monthly IMF IFS AIP_IX. This row compares the annual index with the average of the monthly index in that year.
+Industrial production,log of that annual comparison,different definition,74,0.8481753997,4.70596085,4.694240634,0.06216549779,"The literature regression uses the log of the monthly index, not this annual average."
+Central bank independence,annual,not in cleaned,,,,,,Romelli CBIE is in the literature panel for 216 shared country-years. It is not in cleaned.
+Country set,shared emerging economies,overlap,9,,,,,Chile; Hungary; India; Indonesia; Mexico; Philippines; South Africa; Thailand; Turkey
+Country set,in the literature emerging sample only,coverage,6,,,,,Brazil; China; Colombia; Malaysia; Poland; Ukraine
+Country set,in the cleaned emerging exchange-rate sample only,coverage,2,,,,,Argentina; Peru. South Korea is in cleaned and is classified as advanced in the literature panel. Taiwan is in neither the paper nor that panel.

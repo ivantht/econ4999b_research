@@ -1,0 +1,9 @@
+variable,label,paper_coef,paper_stars,our_coef,our_se,our_p,our_stars,same_sign,same_significance,n_obs,n_country,r2,countries
+gpr_z,GPR,-0.010,***,0.002602888947,0.004633402709,0.5866444654,,no,no,2319,11,0.6062670368,Argentina; Chile; Hungary; India; Indonesia; Mexico; Peru; Philippines; South Africa; Thailand; Turkey
+policy_rate_l1,Policy rate,,,0.005591226552,0.001752592577,0.009649882868,***,,,2319,11,0.6062670368,Argentina; Chile; Hungary; India; Indonesia; Mexico; Peru; Philippines; South Africa; Thailand; Turkey
+inflation_l1,Inflation,,,-0.005972752817,0.002948371534,0.07029844917,*,,,2319,11,0.6062670368,Argentina; Chile; Hungary; India; Indonesia; Mexico; Peru; Philippines; South Africa; Thailand; Turkey
+log_oil_l1,Oil price,,,0.06789520376,0.02928479529,0.04288615857,**,,,2319,11,0.6062670368,Argentina; Chile; Hungary; India; Indonesia; Mexico; Peru; Philippines; South Africa; Thailand; Turkey
+log_vix_l1,VIX,,,-0.001851639736,0.0135991227,0.8943978154,,,,2319,11,0.6062670368,Argentina; Chile; Hungary; India; Indonesia; Mexico; Peru; Philippines; South Africa; Thailand; Turkey
+log_gepu_l1,Global EPU,,,-0.002328007043,0.05261462868,0.9655790764,,,,2319,11,0.6062670368,Argentina; Chile; Hungary; India; Indonesia; Mexico; Peru; Philippines; South Africa; Thailand; Turkey
+financial_development_l1,Financial development,,,0.0002453410521,0.003447228812,0.9446652936,,,,2319,11,0.6062670368,Argentina; Chile; Hungary; India; Indonesia; Mexico; Peru; Philippines; South Africa; Thailand; Turkey
+debt_gdp_l1,Debt/GDP,,,-0.002689003568,0.001881589618,0.1834571087,,,,2319,11,0.6062670368,Argentina; Chile; Hungary; India; Indonesia; Mexico; Peru; Philippines; South Africa; Thailand; Turkey

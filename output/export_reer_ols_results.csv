@@ -1,0 +1,10 @@
+variable,label,coef,se,t,p,ci_lo,ci_hi,n_obs,n_country,df,r2,month_min,month_max,countries
+ytrend_l1,"Export trend, lagged",-0.2152776293,0.02986185144,-7.20911862,0.0008003569971,-0.2920399622,-0.1385152964,956,6,5,0.8539590759,2006-02,2025-01,Chile; Hungary; Mexico; South Korea; Taiwan; Turkey
+policy_rate_l1,"Policy rate, lagged",0.00376397749,0.001009447889,3.728748685,0.01358856121,0.001169109081,0.006358845898,956,6,5,0.8539590759,2006-02,2025-01,Chile; Hungary; Mexico; South Korea; Taiwan; Turkey
+log_industrial_production_l1,"Log industrial production, lagged",-0.06180192409,0.02480157727,-2.491854587,0.05503597053,-0.1255564081,0.001952559944,956,6,5,0.8539590759,2006-02,2025-01,Chile; Hungary; Mexico; South Korea; Taiwan; Turkey
+inflation_l1,"Inflation, lagged",-0.0002366986024,0.0008748356333,-0.2705635132,0.7975400992,-0.00248553519,0.002012137986,956,6,5,0.8539590759,2006-02,2025-01,Chile; Hungary; Mexico; South Korea; Taiwan; Turkey
+log_oil_l1,"Log oil price, lagged",0.03480787134,0.03075578626,1.131750333,0.309080008,-0.04425239416,0.1138681369,956,6,5,0.8539590759,2006-02,2025-01,Chile; Hungary; Mexico; South Korea; Taiwan; Turkey
+log_vix_l1,"Log VIX, lagged",-0.05374088894,0.005209311365,-10.31631346,0.0001472055251,-0.06713185011,-0.04034992777,956,6,5,0.8539590759,2006-02,2025-01,Chile; Hungary; Mexico; South Korea; Taiwan; Turkey
+log_gepu_l1,"Log global EPU, lagged",0.02632177466,0.03050524999,0.8628604801,0.42765318,-0.05209446687,0.1047380162,956,6,5,0.8539590759,2006-02,2025-01,Chile; Hungary; Mexico; South Korea; Taiwan; Turkey
+financial_development_l1,"Financial development, lagged",0.0053676476,0.001618159157,3.31713205,0.02107455316,0.001208037065,0.009527258135,956,6,5,0.8539590759,2006-02,2025-01,Chile; Hungary; Mexico; South Korea; Taiwan; Turkey
+debt_gdp_l1,"Debt/GDP, lagged",-0.002794601023,0.001112436566,-2.51214416,0.05368717788,-0.005654210252,6.500820716e-05,956,6,5,0.8539590759,2006-02,2025-01,Chile; Hungary; Mexico; South Korea; Taiwan; Turkey

@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Emerging-economy exchange-rate replication</title>
+<style>
+body { font: 16px/1.5 Georgia, serif; max-width: 980px; margin: 2em auto; padding: 0 1em; color: #20242a; }
+table { border-collapse: collapse; width: 100%; margin: 1em 0; font-size: .92em; }
+th, td { border-bottom: 1px solid #ccc; padding: .45em; text-align: right; vertical-align: top; }
+th:first-child, td:first-child { text-align: left; }
+.note { background: #fff5da; padding: 1em; border: 1px solid #e6d59d; }
+</style>
+</head>
+<body>
+<h1>Emerging-economy exchange rate</h1>
+<div class="note">
+<p>The comparison is Table 3, column 4, the emerging-economy exchange rate. In that column GPR is −0.010 and significant at 1 percent. The pooled sample in Table 2 is not the benchmark: there GPR is 0.001 and not significant, because advanced economies dilute the depreciation.</p>
+<p>N = 2319. Emerging economies = 11: Argentina, Chile, Hungary, India, Indonesia, Mexico, Peru, Philippines, South Africa, Thailand, Turkey. Months = 2000-02 to 2023-12. R-squared = 0.6063. The paper's emerging exchange-rate column has 1,970 observations and an R-squared of 0.651. South Korea and Taiwan are excluded.</p>
+<p>GPR is the global index, centered and divided by its sample standard deviation (44.92; mean 103.27). The paper uses a country GPR index standardized within each country, so the comparison is the sign and the significance star. A negative coefficient is a depreciation of the real effective exchange rate.</p>
+<p>Industrial production is omitted. It is an annual index and is missing for Argentina, Peru, South Africa, India, Indonesia, the Philippines, and Thailand, so requiring it would leave only Chile, Hungary, Mexico, and Turkey. The paper includes industrial production, but Table 3 does not print that coefficient. Financial development is <code>fd_fdi_ovrl</code>, not the paper's 0-to-1 index. Central bank independence is not in <code>cleaned/</code>. Controls are lagged one month. Standard errors are clustered by country.</p>
+</div>
+<h2>Table 3, emerging economies, exchange rate</h2>
+<table>
+<thead><tr><th>Variable</th><th>Paper</th><th>Ours</th><th>Our SE</th><th>Our p-value</th><th>Same sign</th><th>Same stars</th></tr></thead>
+<tbody>
+<tr><td>GPR</td><td>-0.010***</td><td>0.0026</td><td>0.0046</td><td>0.5866</td><td>no</td><td>no</td></tr><tr><td>Policy rate</td><td>not published</td><td>0.0056***</td><td>0.0018</td><td>0.0096</td><td></td><td></td></tr><tr><td>Inflation</td><td>not published</td><td>-0.0060*</td><td>0.0029</td><td>0.0703</td><td></td><td></td></tr><tr><td>Oil price</td><td>not published</td><td>0.0679**</td><td>0.0293</td><td>0.0429</td><td></td><td></td></tr><tr><td>VIX</td><td>not published</td><td>-0.0019</td><td>0.0136</td><td>0.8944</td><td></td><td></td></tr><tr><td>Global EPU</td><td>not published</td><td>-0.0023</td><td>0.0526</td><td>0.9656</td><td></td><td></td></tr><tr><td>Financial development</td><td>not published</td><td>0.0002</td><td>0.0034</td><td>0.9447</td><td></td><td></td></tr><tr><td>Debt/GDP</td><td>not published</td><td>-0.0027</td><td>0.0019</td><td>0.1835</td><td></td><td></td></tr>
+</tbody>
+</table>
+<p><em>Significance:</em> *** p&lt;0.01, ** p&lt;0.05, * p&lt;0.10. Table 3 includes the other controls and country fixed effects, and it does not print their coefficients.</p>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Panel summary and Table 1</title>
+<style>
+body { font: 16px/1.5 Georgia, serif; max-width: 1100px; margin: 2em auto; padding: 0 1em; color: #20242a; }
+table { border-collapse: collapse; width: 100%; margin: 1em 0; font-size: .86em; }
+th, td { border-bottom: 1px solid #ccc; padding: .4em; text-align: right; vertical-align: top; }
+th:nth-child(-n+2), td:nth-child(-n+2) { text-align: left; }
+.note { background: #fff5da; padding: 1em; border: 1px solid #e6d59d; }
+</style>
+</head>
+<body>
+<h1>Literature-review panel beside Table 1</h1>
+<div class="note">
+<p>These moments use every non-missing value in the literature-review panel, the dataset behind the exchange-rate and capital-flow-volatility regressions. VIX and global EPU are repeated once for each country in a month. Stock prices are the log of the nominal index, which is the scale of Table 1. Oil is deflated by the US consumer price index. The regression itself uses the raw geopolitical-risk share after standardizing it within each country, and it uses the nominal log oil price.</p>
+</div>
+<table>
+<thead>
+<tr><th>Variable</th><th>Judgment</th><th>Author mean</th><th>Author SD</th><th>Author min</th><th>Author max</th><th>N</th><th>Panel mean</th><th>Panel SD</th><th>Panel min</th><th>Panel max</th></tr>
+</thead>
+<tbody>
+<tr><td>Capital flow volatility (SD)</td><td>same concept, moments differ</td><td>7.22</td><td>19.62</td><td>0.00</td><td>528.40</td><td>6505</td><td>8.85</td><td>21.51</td><td>0.00</td><td>412.43</td></tr><tr><td>Stock prices (log)</td><td>same concept, moments differ</td><td>4.32</td><td>0.47</td><td>2.37</td><td>5.46</td><td>8064</td><td>4.38</td><td>0.59</td><td>1.98</td><td>6.91</td></tr><tr><td>Long-term bond yield (%)</td><td>close to the author&#x27;s series</td><td>4.74</td><td>3.63</td><td>-0.65</td><td>42.18</td><td>6965</td><td>4.33</td><td>2.84</td><td>-0.65</td><td>16.06</td></tr><tr><td>Real effective exchange rate (log)</td><td>close to the author&#x27;s series</td><td>4.64</td><td>0.18</td><td>3.61</td><td>5.23</td><td>8064</td><td>4.65</td><td>0.15</td><td>4.16</td><td>5.23</td></tr><tr><td>Geopolitical risk (index)</td><td>close to the author&#x27;s series</td><td>0.22</td><td>0.52</td><td>0.00</td><td>13.23</td><td>8352</td><td>0.23</td><td>0.55</td><td>0.00</td><td>13.23</td></tr><tr><td>Policy rate (%)</td><td>close to the author&#x27;s series</td><td>4.37</td><td>4.87</td><td>-0.75</td><td>57.00</td><td>7863</td><td>4.06</td><td>4.48</td><td>-0.75</td><td>57.00</td></tr><tr><td>Real industrial production (log)</td><td>same concept, moments differ</td><td>4.58</td><td>0.31</td><td>2.29</td><td>5.81</td><td>6636</td><td>4.63</td><td>0.21</td><td>3.61</td><td>5.59</td></tr><tr><td>Inflation (%)</td><td>close to the author&#x27;s series</td><td>4.06</td><td>6.18</td><td>-4.43</td><td>85.51</td><td>8352</td><td>4.06</td><td>6.19</td><td>-4.43</td><td>85.51</td></tr><tr><td>Oil price (log)</td><td>same concept, moments differ</td><td>3.73</td><td>0.63</td><td>2.42</td><td>4.90</td><td>8352</td><td>3.77</td><td>0.39</td><td>2.39</td><td>4.64</td></tr><tr><td>VIX, level</td><td>close to the author&#x27;s series</td><td>19.59</td><td>7.54</td><td>10.13</td><td>62.67</td><td>8352</td><td>20.05</td><td>8.16</td><td>10.13</td><td>62.67</td></tr><tr><td>Global economic policy uncertainty (index)</td><td>close to the author&#x27;s series</td><td>140.26</td><td>74.91</td><td>49.23</td><td>431.73</td><td>8352</td><td>142.20</td><td>68.68</td><td>47.59</td><td>410.50</td></tr><tr><td>Financial development (index)</td><td>close to the author&#x27;s series</td><td>0.60</td><td>0.19</td><td>0.11</td><td>0.93</td><td>7656</td><td>0.60</td><td>0.19</td><td>0.11</td><td>0.93</td></tr><tr><td>Central bank independence (index)</td><td>close to the author&#x27;s series</td><td>0.66</td><td>0.19</td><td>0.14</td><td>0.93</td><td>8352</td><td>0.72</td><td>0.17</td><td>0.14</td><td>0.93</td></tr><tr><td>Public debt to GDP (%)</td><td>close to the author&#x27;s series</td><td>68.77</td><td>36.40</td><td>11.82</td><td>216.33</td><td>8340</td><td>65.36</td><td>38.84</td><td>3.90</td><td>258.37</td></tr>
+</tbody>
+</table>
+<h2>What each row is</h2>
+<ul>
+<li><strong>Capital flow volatility (SD).</strong> 3-month standard deviation of portfolio inflows, in billion dollars. This is the volatility outcome.</li><li><strong>Stock prices (log).</strong> Log of the nominal equity index. The CPI-deflated series used in a stock regression has mean about -0.25, so it is not the Table 1 row.</li><li><strong>Long-term bond yield (%).</strong> Long-term government bond yield.</li><li><strong>Real effective exchange rate (log).</strong> Log of the BIS broad real effective exchange rate.</li><li><strong>Geopolitical risk (index).</strong> Raw country article share, the series printed in Table 1. The regression standardizes this within each country, which gives mean 0 and standard deviation 1.</li><li><strong>Policy rate (%).</strong> BIS policy rate.</li><li><strong>Real industrial production (log).</strong> Log of the monthly industrial-production index.</li><li><strong>Inflation (%).</strong> Year-on-year CPI inflation.</li><li><strong>Oil price (log).</strong> Log of the oil price deflated by US CPI, with January 2000 as the base. The regression uses the nominal log, whose mean is about 4.05.</li><li><strong>VIX, level.</strong> Table 1 is labeled log, but the printed numbers are the VIX level.</li><li><strong>Global economic policy uncertainty (index).</strong> GEPU current index, the level, repeated for every country in a month.</li><li><strong>Financial development (index).</strong> IMF financial-development index, 0 to 1.</li><li><strong>Central bank independence (index).</strong> Romelli central-bank independence index.</li><li><strong>Public debt to GDP (%).</strong> General-government gross debt as a percent of GDP.</li>
+</ul>
+</body>
+</html>

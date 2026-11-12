@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Cleaned data and the literature-review panel</title>
+<style>
+body { font: 16px/1.5 Georgia, serif; max-width: 1080px; margin: 2em auto; padding: 0 1em; color: #20242a; }
+table { border-collapse: collapse; width: 100%; margin: 1em 0; font-size: .88em; }
+th, td { border-bottom: 1px solid #ccc; padding: .4em; text-align: right; vertical-align: top; }
+th:nth-child(-n+3), td:nth-child(-n+3) { text-align: left; }
+.note { background: #fff5da; padding: 1em; border: 1px solid #e6d59d; }
+</style>
+</head>
+<body>
+<h1>Cleaned data and the literature-review panel</h1>
+<div class="note">
+<p>The literature-review panel is the public-source file behind Tables 2 and 3. On its own emerging exchange-rate regression, GPR is 0.0008 and not significant. The paper's emerging coefficient is −0.010. The published sign is already absent from that closer panel, before any comparison with <code>cleaned/</code>.</p>
+<p>The numbers below are the overlap of that panel with <code>cleaned/</code> for Chile, Hungary, India, Indonesia, Mexico, the Philippines, South Africa, Thailand, and Turkey, from 2000-01 through 2023-12. Global series use one observation per month.</p>
+</div>
+<h2>Overlap</h2>
+<table>
+<thead><tr><th>Series</th><th>Comparison</th><th>Definition</th><th>N</th><th>Correlation</th><th>Cleaned mean</th><th>Literature mean</th><th>Mean absolute gap</th></tr></thead>
+<tbody>
+<tr><td>Real effective exchange rate</td><td>level</td><td>same measure</td><td>2592</td><td>1.000</td><td>108.187</td><td>108.187</td><td>0.000</td></tr><tr><td>Real effective exchange rate</td><td>log</td><td>same measure</td><td>2592</td><td>1.000</td><td>4.664</td><td>4.664</td><td>0.000</td></tr><tr><td>Policy rate</td><td>level</td><td>same measure</td><td>2055</td><td>0.999</td><td>5.875</td><td>5.878</td><td>0.018</td></tr><tr><td>Inflation</td><td>year-on-year percent</td><td>close, not the same vintage</td><td>2352</td><td>0.993</td><td>5.601</td><td>5.548</td><td>0.197</td></tr><tr><td>Oil price</td><td>level</td><td>same measure</td><td>288</td><td>1.000</td><td>63.136</td><td>63.117</td><td>0.044</td></tr><tr><td>Oil price</td><td>log</td><td>same measure</td><td>288</td><td>1.000</td><td>4.052</td><td>4.052</td><td>0.001</td></tr><tr><td>VIX</td><td>level</td><td>same concept, different monthly aggregation</td><td>288</td><td>0.937</td><td>20.128</td><td>20.053</td><td>1.902</td></tr><tr><td>VIX</td><td>log</td><td>same concept, different monthly aggregation</td><td>288</td><td>0.939</td><td>2.936</td><td>2.932</td><td>0.091</td></tr><tr><td>Global EPU</td><td>level</td><td>same measure</td><td>288</td><td>1.000</td><td>142.199</td><td>142.199</td><td>0.000</td></tr><tr><td>Global EPU</td><td>log</td><td>same measure</td><td>288</td><td>1.000</td><td>4.848</td><td>4.848</td><td>0.000</td></tr><tr><td>GPR</td><td>global index vs country index</td><td>different definition</td><td>2592</td><td>0.261</td><td>105.451</td><td>0.091</td><td>105.361</td></tr><tr><td>GPR</td><td>global index vs within-country z-score</td><td>different definition</td><td>2592</td><td>0.442</td><td>105.451</td><td>-0.000</td><td>105.451</td></tr><tr><td>Financial development</td><td>annual</td><td>different definition</td><td>198</td><td>0.842</td><td>32.552</td><td>0.446</td><td>32.106</td></tr><tr><td>Debt/GDP</td><td>annual percent</td><td>same measure</td><td>216</td><td>1.000</td><td>47.528</td><td>47.544</td><td>0.171</td></tr><tr><td>Industrial production</td><td>annual index vs mean of monthly IMF index</td><td>different definition</td><td>74</td><td>0.879</td><td>115.604</td><td>112.973</td><td>6.604</td></tr><tr><td>Industrial production</td><td>log of that annual comparison</td><td>different definition</td><td>74</td><td>0.848</td><td>4.706</td><td>4.694</td><td>0.062</td></tr><tr><td>Central bank independence</td><td>annual</td><td>not in cleaned</td><td></td><td></td><td></td><td></td><td></td></tr>
+</tbody>
+</table>
+<h2>What the gap is</h2>
+<ul>
+<li><strong>Real effective exchange rate, level.</strong> BIS broad real index in the literature panel.</li><li><strong>Real effective exchange rate, log.</strong> The regression uses the log. A constant rebase is absorbed by country fixed effects.</li><li><strong>Policy rate, level.</strong> Literature panel uses the BIS policy rate.</li><li><strong>Inflation, year-on-year percent.</strong> Literature panel uses IMF IFS year-on-year CPI. The mean absolute gap is about 0.2 percentage points.</li><li><strong>Oil price, level.</strong> One observation per month. Literature panel uses EIA WTI.</li><li><strong>VIX, level.</strong> The monthly means almost match, and the month-by-month gap is about 1.9 index points. The literature panel is the average of the daily close.</li><li><strong>VIX, log.</strong> The regression uses the log. This aggregation gap changes the control slightly. It does not replace the GPR regressor.</li><li><strong>Global EPU, level.</strong> Literature panel uses GEPU_current.</li><li><strong>GPR, global index vs country index.</strong> Cleaned GPR is one global index near 100. The literature panel is the country article-share index.</li><li><strong>GPR, global index vs within-country z-score.</strong> Mean within-country correlation of the global index with the country index is 0.442 across 9 countries. The z-score is that country index standardized within the country, which is the regressor in the literature panel.</li><li><strong>Financial development, annual.</strong> Cleaned fd_fdi_ovrl is not the IMF 0-to-1 Financial Development Index used in the literature panel.</li><li><strong>Debt/GDP, annual percent.</strong> Literature panel uses IMF WEO general-government gross debt.</li><li><strong>Industrial production, annual index vs mean of monthly IMF index.</strong> Cleaned industrial production is annual. The literature panel uses monthly IMF IFS AIP_IX. This row compares the annual index with the average of the monthly index in that year.</li><li><strong>Industrial production, log of that annual comparison.</strong> The literature regression uses the log of the monthly index, not this annual average.</li><li><strong>Central bank independence, annual.</strong> Romelli CBIE is in the literature panel for 216 shared country-years. It is not in cleaned.</li>
+<li><strong>Same measure on the overlap:</strong> Real effective exchange rate (level), Real effective exchange rate (log), Policy rate (level), Oil price (level), Oil price (log), Global EPU (level), Global EPU (log), Debt/GDP (annual percent). A series that is the same measure is not why the GPR sign differs.</li>
+</ul>
+<h2>What can move the exchange-rate coefficient</h2>
+<ul>
+<li>GPR is a different variable. The cleaned file is one global index. The literature panel, and the paper, use a country article-share index standardized within each country. A global index has no country-specific spike, so it cannot reproduce the within-country GPR variation that identifies the exchange-rate coefficient.</li><li>The country set differs. Brazil, China, Colombia, Malaysia, Poland, and Ukraine are in the literature emerging sample and have no row in the cleaned exchange-rate file. Argentina and Peru are in the cleaned emerging sample and are not in the paper. South Korea is advanced in the literature-review split.</li><li>Industrial production is annual in cleaned and monthly in the literature panel, and the cleaned emerging regression leaves it out. Central bank independence is in the literature regression and missing from cleaned. Financial development is a different series, so it does not absorb the same variation.</li>
+</ul>
+<h2>Countries</h2>
+<p>Shared emerging economies: Chile, Hungary, India, Indonesia, Mexico, Philippines, South Africa, Thailand, Turkey.</p>
+<p>In the literature emerging sample only: Brazil, China, Colombia, Malaysia, Poland, Ukraine.</p>
+<p>In the cleaned emerging exchange-rate sample only: Argentina, Peru. South Korea is in cleaned and is advanced in the literature panel. Taiwan is in neither the paper nor that panel.</p>
+</body>
+</html>

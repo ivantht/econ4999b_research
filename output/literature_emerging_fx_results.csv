@@ -1,0 +1,11 @@
+variable,label,paper_coef,paper_se,paper_stars,our_coef,se_within,p_within,stars_within,se_cluster,p_cluster,stars_cluster,same_sign,n_obs,n_country,r2,countries
+gpr_z,GPR,-0.010,0.002,***,0.0007873598282,0.002615460128,0.7634123353,,0.00417004268,0.8549410968,,no,2189,9,0.2677486402,Brazil; Chile; China; Hungary; India; Malaysia; Mexico; Poland; Turkey
+rate_l1,Policy rate,,,,0.004838944699,0.0009306482823,2.185103221e-07,***,0.004192260852,0.2817085474,,,2189,9,0.2677486402,Brazil; Chile; China; Hungary; India; Malaysia; Mexico; Poland; Turkey
+ln_ip_l1,Real industrial production,,,,-0.08733463248,0.01634206005,1.003493086e-07,***,0.1535792416,0.5851911663,,,2189,9,0.2677486402,Brazil; Chile; China; Hungary; India; Malaysia; Mexico; Poland; Turkey
+infl_l1,Inflation,,,,-0.01022917778,0.0009801130564,0,***,0.003188301567,0.01245517989,**,,2189,9,0.2677486402,Brazil; Chile; China; Hungary; India; Malaysia; Mexico; Poland; Turkey
+ln_oil_l1,Oil price,,,,0.05715557661,0.006725832343,0,***,0.04055473564,0.196399529,,,2189,9,0.2677486402,Brazil; Chile; China; Hungary; India; Malaysia; Mexico; Poland; Turkey
+ln_vix_l1,VIX,,,,0.03874564096,0.007687613534,5.040257871e-07,***,0.02640288701,0.1804275475,,,2189,9,0.2677486402,Brazil; Chile; China; Hungary; India; Malaysia; Mexico; Poland; Turkey
+ln_gepu_l1,Global EPU,,,,-0.08603633429,0.007956221608,0,***,0.05422007526,0.1512197125,,,2189,9,0.2677486402,Brazil; Chile; China; Hungary; India; Malaysia; Mexico; Poland; Turkey
+fd_l1,Financial development,,,,0.7967602655,0.06746212535,0,***,0.4545439776,0.117716117,,,2189,9,0.2677486402,Brazil; Chile; China; Hungary; India; Malaysia; Mexico; Poland; Turkey
+cbi_l1,Central bank independence,,,,0.4865260773,0.06672406364,4.269917753e-13,***,0.2824622807,0.1232872594,,,2189,9,0.2677486402,Brazil; Chile; China; Hungary; India; Malaysia; Mexico; Poland; Turkey
+debt_l1,Debt/GDP,,,,-0.002316780865,0.0003266839145,1.783906356e-12,***,0.002875899949,0.4437655777,,,2189,9,0.2677486402,Brazil; Chile; China; Hungary; India; Malaysia; Mexico; Poland; Turkey
