@@ -974,6 +974,8 @@ def write_two_tables_html(base_results, base_meta, exp_results, exp_meta, out_ht
 
 
 def write_plots_html(model_data_for_plot):
+    from institution_group_diagnostics import render_group_diagnostics
+
     # Pack data for JS
     packed = {}
     for aspect, payload in model_data_for_plot.items():
@@ -1111,7 +1113,9 @@ Plotly.newPlot('trend', allTrendTraces, {
 });
 """
         )
-        f.write("</script></body></html>")
+        f.write("</script>")
+        f.write(render_group_diagnostics())
+        f.write("</body></html>")
 
 
 def main():
