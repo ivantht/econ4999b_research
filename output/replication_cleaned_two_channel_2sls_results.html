@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Exports, inflation, and the exchange rate</title>
+<style>
+body { font: 16px/1.5 Georgia, serif; max-width: 1100px; margin: 2em auto; padding: 0 1em; color: #20242a; }
+table { border-collapse: collapse; width: 100%; margin: 1em 0; font-size: .92em; }
+th, td { border-bottom: 1px solid #ccc; padding: .45em; text-align: right; vertical-align: top; }
+th:first-child, td:first-child { text-align: left; }
+.note { background: #fff5da; padding: 1em; border: 1px solid #e6d59d; }
+</style>
+</head>
+<body>
+<h1>Real exports, inflation, and the exchange rate</h1>
+<div class="note">
+<p>Second stage: log real effective exchange rate on the fitted log real exports, the fitted inflation rate, and the paper's lagged controls except inflation and GPR. The exchange rate is <code>reer</code> in <code>cleaned/replication_cleaned</code>.</p>
+<p>Export first stage: log real exports, lagged one month, on GPR, one WGI dimension, their interaction, lagged inflation, and the other lagged controls. Inflation first stage: lagged inflation, not logged, on the same regressors with inflation removed. GPR, WGI, and the interaction are the excluded instruments. GPR is standardized within country. WGI is centered before the interaction.</p>
+<p>Each cell shows the coefficient, the country-clustered standard error in parentheses, and the 95% confidence interval. The second-stage standard errors use the structural residual. *** p&lt;0.01, ** p&lt;0.05, * p&lt;0.10.</p>
+</div>
+<h2>Second stage</h2>
+<table>
+<thead><tr><th>Variable</th><th>Rule of law</th><th>Government effectiveness</th><th>Regulatory quality</th></tr></thead>
+<tbody>
+<tr><td>Fitted log real exports</td><td>-0.8025***<br>(0.1839)<br>[-1.2751, -0.3299]</td><td>-1.0315**<br>(0.3123)<br>[-1.8343, -0.2286]</td><td>-0.8188**<br>(0.2144)<br>[-1.3699, -0.2676]</td></tr><tr><td>Fitted inflation</td><td>0.0064<br>(0.0150)<br>[-0.0320, 0.0449]</td><td>0.0067<br>(0.0157)<br>[-0.0336, 0.0470]</td><td>0.0094<br>(0.0240)<br>[-0.0523, 0.0711]</td></tr><tr><td>Policy rate, lagged</td><td>-0.0033<br>(0.0071)<br>[-0.0214, 0.0149]</td><td>0.0001<br>(0.0083)<br>[-0.0212, 0.0215]</td><td>-0.0046<br>(0.0112)<br>[-0.0333, 0.0241]</td></tr><tr><td>Log industrial production, lagged</td><td>0.5133*<br>(0.2080)<br>[-0.0213, 1.0479]</td><td>0.7664*<br>(0.3574)<br>[-0.1524, 1.6852]</td><td>0.5153*<br>(0.2083)<br>[-0.0203, 1.0508]</td></tr><tr><td>Log oil price, lagged</td><td>0.0839***<br>(0.0164)<br>[0.0418, 0.1260]</td><td>0.0851***<br>(0.0182)<br>[0.0385, 0.1318]</td><td>0.0825***<br>(0.0149)<br>[0.0441, 0.1209]</td></tr><tr><td>Log VIX, lagged</td><td>-0.0608*<br>(0.0295)<br>[-0.1367, 0.0151]</td><td>-0.0718<br>(0.0447)<br>[-0.1867, 0.0431]</td><td>-0.0643<br>(0.0345)<br>[-0.1529, 0.0243]</td></tr><tr><td>Log global EPU, lagged</td><td>0.0286*<br>(0.0127)<br>[-0.0040, 0.0613]</td><td>0.0611<br>(0.0479)<br>[-0.0621, 0.1843]</td><td>0.0299<br>(0.0164)<br>[-0.0123, 0.0721]</td></tr><tr><td>Financial development, lagged</td><td>0.3711<br>(0.4294)<br>[-0.7328, 1.4750]</td><td>0.4487<br>(0.7635)<br>[-1.5140, 2.4113]</td><td>0.3459<br>(0.4171)<br>[-0.7264, 1.4182]</td></tr><tr><td>Central bank independence, lagged</td><td>0.4580<br>(0.3773)<br>[-0.5119, 1.4279]</td><td>0.5697<br>(0.6284)<br>[-1.0455, 2.1850]</td><td>0.4617<br>(0.4021)<br>[-0.5721, 1.4954]</td></tr><tr><td>Debt/GDP, lagged</td><td>0.0007<br>(0.0010)<br>[-0.0018, 0.0031]</td><td>0.0008<br>(0.0015)<br>[-0.0031, 0.0047]</td><td>0.0008<br>(0.0010)<br>[-0.0017, 0.0032]</td></tr>
+<tr><td>Observations</td><td>1047<br>6 countries<br>2006-02 to 2022-01</td><td>1047<br>6 countries<br>2006-02 to 2022-01</td><td>1047<br>6 countries<br>2006-02 to 2022-01</td></tr>
+<tr><td>Export-equation partial F on GPR, WGI, and WGI × GPR</td><td>17.17<br>p=0.0046<br>F(3, 5)</td><td>2.76<br>p=0.1512<br>F(3, 5)</td><td>40.09<br>p=0.0006<br>F(3, 5)</td></tr>
+<tr><td>Inflation-equation partial F on GPR, WGI, and WGI × GPR</td><td>11.74<br>p=0.0106<br>F(3, 5)</td><td>8.35<br>p=0.0216<br>F(3, 5)</td><td>74.64<br>p=0.0001<br>F(3, 5)</td></tr>
+</tbody>
+</table>
+<h2>First stage: real exports</h2>
+<table>
+<thead><tr><th>Variable</th><th>Rule of law</th><th>Government effectiveness</th><th>Regulatory quality</th></tr></thead>
+<tbody>
+<tr><td>GPR, contemporaneous</td><td>0.0041<br>(0.0049)<br>[-0.0086, 0.0167]</td><td>0.0065<br>(0.0057)<br>[-0.0082, 0.0211]</td><td>0.0047<br>(0.0027)<br>[-0.0024, 0.0117]</td></tr><tr><td>WGI, lagged</td><td>-0.4328**<br>(0.1083)<br>[-0.7111, -0.1545]</td><td>-0.1573<br>(0.1081)<br>[-0.4351, 0.1206]</td><td>-0.4710***<br>(0.0953)<br>[-0.7160, -0.2261]</td></tr><tr><td>WGI × GPR</td><td>0.0013<br>(0.0147)<br>[-0.0365, 0.0390]</td><td>-0.0120<br>(0.0203)<br>[-0.0642, 0.0402]</td><td>0.0071<br>(0.0129)<br>[-0.0262, 0.0403]</td></tr><tr><td>Inflation, lagged</td><td>0.0048<br>(0.0061)<br>[-0.0108, 0.0203]</td><td>0.0114<br>(0.0058)<br>[-0.0035, 0.0263]</td><td>0.0053<br>(0.0070)<br>[-0.0128, 0.0233]</td></tr><tr><td>Policy rate, lagged</td><td>0.0100**<br>(0.0031)<br>[0.0021, 0.0179]</td><td>0.0062<br>(0.0031)<br>[-0.0018, 0.0143]</td><td>0.0096*<br>(0.0043)<br>[-0.0016, 0.0207]</td></tr><tr><td>Log industrial production, lagged</td><td>0.9358***<br>(0.1233)<br>[0.6188, 1.2527]</td><td>1.0441***<br>(0.1564)<br>[0.6422, 1.4460]</td><td>0.9720***<br>(0.1203)<br>[0.6627, 1.2812]</td></tr><tr><td>Log oil price, lagged</td><td>0.0420<br>(0.0377)<br>[-0.0550, 0.1390]</td><td>0.0168<br>(0.0377)<br>[-0.0801, 0.1136]</td><td>0.0537<br>(0.0367)<br>[-0.0407, 0.1482]</td></tr><tr><td>Log VIX, lagged</td><td>-0.0195<br>(0.0563)<br>[-0.1642, 0.1253]</td><td>-0.0544<br>(0.0685)<br>[-0.2306, 0.1218]</td><td>-0.0368<br>(0.0589)<br>[-0.1881, 0.1145]</td></tr><tr><td>Log global EPU, lagged</td><td>0.0631<br>(0.0450)<br>[-0.0525, 0.1788]</td><td>0.1458<br>(0.0755)<br>[-0.0482, 0.3398]</td><td>0.0785<br>(0.0486)<br>[-0.0464, 0.2034]</td></tr><tr><td>Financial development, lagged</td><td>0.0071<br>(0.9478)<br>[-2.4292, 2.4435]</td><td>0.2749<br>(1.2165)<br>[-2.8522, 3.4019]</td><td>1.5166<br>(0.8590)<br>[-0.6916, 3.7247]</td></tr><tr><td>Central bank independence, lagged</td><td>-0.1149<br>(0.7786)<br>[-2.1163, 1.8864]</td><td>0.4273<br>(1.0078)<br>[-2.1632, 3.0178]</td><td>-0.0668<br>(0.7267)<br>[-1.9348, 1.8012]</td></tr><tr><td>Debt/GDP, lagged</td><td>0.0019<br>(0.0040)<br>[-0.0085, 0.0122]</td><td>0.0006<br>(0.0035)<br>[-0.0085, 0.0096]</td><td>-0.0013<br>(0.0037)<br>[-0.0108, 0.0082]</td></tr>
+</tbody>
+</table>
+<h2>First stage: inflation</h2>
+<table>
+<thead><tr><th>Variable</th><th>Rule of law</th><th>Government effectiveness</th><th>Regulatory quality</th></tr></thead>
+<tbody>
+<tr><td>GPR, contemporaneous</td><td>-0.1010<br>(0.0591)<br>[-0.2529, 0.0509]</td><td>-0.1095**<br>(0.0311)<br>[-0.1896, -0.0294]</td><td>-0.0960<br>(0.0724)<br>[-0.2821, 0.0901]</td></tr><tr><td>WGI, lagged</td><td>-2.7461*<br>(1.0718)<br>[-5.5014, 0.0091]</td><td>-3.0914**<br>(0.9343)<br>[-5.4931, -0.6897]</td><td>-2.9970**<br>(0.7535)<br>[-4.9339, -1.0601]</td></tr><tr><td>WGI × GPR</td><td>0.2289**<br>(0.0759)<br>[0.0339, 0.4239]</td><td>0.2906**<br>(0.0805)<br>[0.0837, 0.4975]</td><td>0.2658*<br>(0.1301)<br>[-0.0687, 0.6003]</td></tr><tr><td>Policy rate, lagged</td><td>0.5070***<br>(0.0248)<br>[0.4432, 0.5709]</td><td>0.4596***<br>(0.0221)<br>[0.4027, 0.5165]</td><td>0.5028***<br>(0.0309)<br>[0.4233, 0.5823]</td></tr><tr><td>Log industrial production, lagged</td><td>4.5780***<br>(0.8443)<br>[2.4077, 6.7484]</td><td>5.6275***<br>(0.9398)<br>[3.2116, 8.0434]</td><td>4.8363***<br>(0.9517)<br>[2.3900, 7.2827]</td></tr><tr><td>Log oil price, lagged</td><td>0.6769<br>(0.4493)<br>[-0.4780, 1.8318]</td><td>0.7143<br>(0.3803)<br>[-0.2632, 1.6918]</td><td>0.7718<br>(0.4376)<br>[-0.3531, 1.8968]</td></tr><tr><td>Log VIX, lagged</td><td>1.0852<br>(0.5431)<br>[-0.3109, 2.4813]</td><td>0.9351*<br>(0.4619)<br>[-0.2523, 2.1226]</td><td>0.9794*<br>(0.4305)<br>[-0.1272, 2.0860]</td></tr><tr><td>Log global EPU, lagged</td><td>-0.0891<br>(0.5938)<br>[-1.6155, 1.4373]</td><td>0.5896<br>(0.5097)<br>[-0.7205, 1.8997]</td><td>-0.0015<br>(0.4879)<br>[-1.2556, 1.2527]</td></tr><tr><td>Financial development, lagged</td><td>9.0298<br>(7.5442)<br>[-10.3632, 28.4228]</td><td>11.8209*<br>(5.7638)<br>[-2.9956, 26.6373]</td><td>18.7533**<br>(6.9847)<br>[0.7986, 36.7080]</td></tr><tr><td>Central bank independence, lagged</td><td>-1.9498<br>(4.8478)<br>[-14.4114, 10.5119]</td><td>1.4405<br>(3.3948)<br>[-7.2861, 10.1672]</td><td>-1.6190<br>(4.8069)<br>[-13.9755, 10.7375]</td></tr><tr><td>Debt/GDP, lagged</td><td>-0.0287<br>(0.0295)<br>[-0.1046, 0.0471]</td><td>-0.0471*<br>(0.0221)<br>[-0.1039, 0.0097]</td><td>-0.0484*<br>(0.0236)<br>[-0.1092, 0.0123]</td></tr>
+</tbody>
+</table>
+<h2>Countries that remain</h2>
+<ul>
+<li>Rule of law: Chile, Hungary, India, Mexico, South Korea, Turkey</li><li>Government effectiveness: Chile, Hungary, India, Mexico, South Korea, Turkey</li><li>Regulatory quality: Chile, Hungary, India, Mexico, South Korea, Turkey</li>
+</ul>
+<h2>Countries that drop</h2>
+<ul>
+<li>Indonesia: no industrial production in the replication file</li><li>Philippines: no industrial production in the replication file</li><li>South Africa: no industrial production in the replication file</li><li>Thailand: no industrial production in the replication file</li><li>Ukraine: no month with exports, inflation, the exchange rate, WGI, GPR, and every control</li><li>Argentina: not in the replication file</li><li>Egypt: not in the replication file</li><li>Peru: not in the replication file</li><li>Tunisia: not in the replication file</li><li>Vietnam: not in the replication file</li>
+</ul>
+</body>
+</html>

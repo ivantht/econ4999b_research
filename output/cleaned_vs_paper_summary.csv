@@ -1,0 +1,17 @@
+variable,judgment,paper_mean,paper_sd,paper_min,paper_max,n,our_mean,our_sd,our_min,our_max,note
+Capital flow volatility (SD),a different variable,7.22,19.62,0.00,528.40,1536,-2111.761417,6999.383364,-39621.42985,40981.6,"Cleaned file is the quarterly dollar flow, not a 3-month standard deviation of portfolio inflows."
+Real stock prices (log),not in cleaned,4.32,0.47,2.37,5.46,,,,,,No stock-price series in cleaned.
+Long-term bond yield (%),not in cleaned,4.74,3.63,-0.65,42.18,,,,,,No bond-yield series in cleaned.
+Real effective exchange rate (log),"same concept, moments differ",4.64,0.18,3.61,5.23,3744,4.686285381,0.2465531461,4.160288346,6.252173596,Log of the cleaned real effective exchange rate.
+Geopolitical risk (index),"same concept, moments differ",0.22,0.52,0.00,13.23,4896,0.1087523926,0.2575645046,0,8.704862595,"Raw country article share in gpr_country.csv, restricted here to 2000-2023. The author's regression then standardizes this within each country."
+"Geopolitical risk, global index",a different variable,,,,,288,105.4513061,52.08234426,45.06056213,512.5297241,"Series GPR in gpr_index.csv. One global series scaled near 100, not the country article share."
+Policy rate (%),"same concept, moments differ",4.37,4.87,-0.75,57.00,3600,6.880119972,9.154118256,0.25,133,Monthly policy rate.
+Real industrial production (log),a different variable,4.58,0.31,2.29,5.81,171,4.608281914,0.2581291888,3.93538155,5.334742865,Cleaned index is annual. The paper's row is the log of a monthly index.
+Inflation (%),"same concept, moments differ",4.06,6.18,-4.43,85.51,4051,4.790557887,18.04260923,-100,211.4,Monthly year-on-year inflation.
+Oil price (log),close to the same series,3.73,0.63,2.42,4.90,288,4.052489788,0.4488147208,2.806386102,4.897317275,Log of the monthly WTI spot price. One observation per month.
+"VIX, level",close to the same series,19.59,7.54,10.13,62.67,288,20.12770833,8.037570378,9.51,59.89,"Table 1 is labeled log, but its mean of 19.59 and maximum of 62.67 are the level. One observation per month."
+"VIX, log",a different variable,19.59,7.54,10.13,62.67,288,2.935818191,0.3534765153,2.252343877,4.092509546,Natural log of the cleaned VIX. These moments are not the numbers printed in Table 1.
+Global economic policy uncertainty (index),close to the same series,140.26,74.91,49.23,431.73,288,142.1990501,68.79413846,47.5894247,410.4991132,"GEPU current index, the level. One observation per month."
+Financial development (index),a different variable,0.60,0.19,0.11,0.93,408,31.64440711,11.21695809,10.208864,67.074165,Column fd_fdi_ovrl. The paper uses the IMF index on a 0-to-1 scale.
+Central bank independence (index),not in cleaned,0.66,0.19,0.14,0.93,,,,,,Romelli's index is not in cleaned.
+Public debt to GDP (%),"same concept, moments differ",68.77,36.40,11.82,216.33,396,49.0471984,22.34968504,3.90126,153.37476,Annual general-government gross debt as a percent of GDP.

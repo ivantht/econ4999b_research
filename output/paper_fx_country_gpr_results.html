@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Exchange rate with country GPR</title>
+<style>
+body { font: 16px/1.5 Georgia, serif; max-width: 980px; margin: 2em auto; padding: 0 1em; color: #20242a; }
+table { border-collapse: collapse; width: 100%; margin: 1em 0; font-size: .92em; }
+th, td { border-bottom: 1px solid #ccc; padding: .45em; text-align: right; vertical-align: top; }
+th:first-child, td:first-child { text-align: left; }
+.note { background: #fff5da; padding: 1em; border: 1px solid #e6d59d; }
+</style>
+</head>
+<body>
+<h1>Exchange rate with the country GPR</h1>
+<div class="note">
+<p>GPR starts as the raw country article share in <code>cleaned/gpr_country.csv</code>. On the months that enter the regression it is standardized within each country, which is the paper's regression step. A negative coefficient is a depreciation of the real effective exchange rate.</p>
+<p>The emerging-economy GPR coefficient is -0.0018. Table 3, column 4 is −0.010 and significant at 1 percent. The sign agrees and the significance star does not agree.</p>
+<p>Industrial production is omitted so that Argentina, Peru, South Africa, India, Indonesia, the Philippines, and Thailand remain. Central bank independence is not in <code>cleaned/</code>. Financial development is <code>fd_fdi_ovrl</code>. Controls are lagged one month. Standard errors are clustered by country. *** p&lt;0.01, ** p&lt;0.05, * p&lt;0.10.</p>
+</div>
+<h2>Table 3, column 4</h2><p>N = 2319. Countries = 11: Mexico, Argentina, Chile, Peru, Hungary, Turkey, South Africa, India, Indonesia, Philippines, Thailand. Months = 2000-02 to 2023-12. R-squared = 0.6062. The paper has 1,970 observations and an R-squared of 0.651.</p><table><thead><tr><th>Variable</th><th>Paper GPR</th><th>Ours</th><th>Our SE</th><th>Our p-value</th><th>Same sign</th><th>Same stars</th></tr></thead><tbody><tr><td>GPR</td><td>-0.010***</td><td>-0.0018</td><td>0.0047</td><td>0.7073</td><td>yes</td><td>no</td></tr><tr><td>Policy rate</td><td>not published for this column</td><td>0.0056**</td><td>0.0018</td><td>0.0102</td><td></td><td></td></tr><tr><td>Inflation</td><td>not published for this column</td><td>-0.0059*</td><td>0.0029</td><td>0.0720</td><td></td><td></td></tr><tr><td>Oil price</td><td>not published for this column</td><td>0.0670**</td><td>0.0300</td><td>0.0492</td><td></td><td></td></tr><tr><td>VIX</td><td>not published for this column</td><td>-0.0018</td><td>0.0134</td><td>0.8964</td><td></td><td></td></tr><tr><td>Global EPU</td><td>not published for this column</td><td>-0.0011</td><td>0.0528</td><td>0.9831</td><td></td><td></td></tr><tr><td>Financial development</td><td>not published for this column</td><td>0.0001</td><td>0.0035</td><td>0.9839</td><td></td><td></td></tr><tr><td>Debt/GDP</td><td>not published for this column</td><td>-0.0027</td><td>0.0019</td><td>0.1861</td><td></td><td></td></tr></tbody></table><h2>Table 2, column 4</h2><p>N = 2749. Countries = 13: Mexico, Argentina, Chile, Peru, Hungary, Turkey, South Africa, India, Indonesia, Philippines, Thailand, Taiwan, South Korea. Months = 2000-02 to 2023-12. R-squared = 0.5886. The paper has 5,671 observations and an R-squared of 0.517.</p><table><thead><tr><th>Variable</th><th>Paper GPR</th><th>Ours</th><th>Our SE</th><th>Our p-value</th><th>Same sign</th><th>Same stars</th></tr></thead><tbody><tr><td>GPR</td><td>0.001</td><td>0.0002</td><td>0.0051</td><td>0.9736</td><td>yes</td><td>yes</td></tr><tr><td>Policy rate</td><td>published only for the pooled sample</td><td>0.0054***</td><td>0.0017</td><td>0.0082</td><td></td><td></td></tr><tr><td>Inflation</td><td>published only for the pooled sample</td><td>-0.0056*</td><td>0.0031</td><td>0.0954</td><td></td><td></td></tr><tr><td>Oil price</td><td>published only for the pooled sample</td><td>0.0478</td><td>0.0303</td><td>0.1404</td><td></td><td></td></tr><tr><td>VIX</td><td>published only for the pooled sample</td><td>-0.0069</td><td>0.0132</td><td>0.6094</td><td></td><td></td></tr><tr><td>Global EPU</td><td>published only for the pooled sample</td><td>0.0097</td><td>0.0485</td><td>0.8444</td><td></td><td></td></tr><tr><td>Financial development</td><td>published only for the pooled sample</td><td>-0.0016</td><td>0.0025</td><td>0.5370</td><td></td><td></td></tr><tr><td>Debt/GDP</td><td>published only for the pooled sample</td><td>-0.0029</td><td>0.0018</td><td>0.1346</td><td></td><td></td></tr></tbody></table>
+</body>
+</html>

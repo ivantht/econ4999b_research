@@ -1,0 +1,349 @@
+country,group,variable,n,first,last,mean,minimum,maximum
+Belgium,Advanced,Capital flow volatility (SD),190,2008-03,2023-12,7.009376235,0.359928685,16.84653265
+Brazil,Emerging,Capital flow volatility (SD),288,2000-01,2023-12,2.647127299,0.116815807,13.37169249
+Canada,Advanced,Capital flow volatility (SD),288,2000-01,2023-12,7.331533288,0.3269510667,33.33438362
+Chile,Emerging,Capital flow volatility (SD),250,2003-03,2023-12,0.8113828955,0.02198263732,5.200975823
+China,Emerging,Capital flow volatility (SD),118,2014-03,2023-12,11.07869208,0.5733301735,34.57055925
+Colombia,Emerging,Capital flow volatility (SD),106,2015-03,2023-12,0.4025563775,0.04845175911,1.187952895
+Germany,Advanced,Capital flow volatility (SD),288,2000-01,2023-12,21.71355433,0.9965167,71.76514397
+Denmark,Advanced,Capital flow volatility (SD),226,2005-03,2023-12,3.546157108,0.3741324978,9.926797
+Spain,Advanced,Capital flow volatility (SD),288,2000-01,2023-12,8.899749237,0.7534801935,33.04127128
+Finland,Advanced,Capital flow volatility (SD),214,2006-03,2023-12,3.605063759,0.2118256833,11.78022319
+France,Advanced,Capital flow volatility (SD),190,2008-03,2023-12,23.08796163,2.891174607,64.91030851
+Hungary,Emerging,Capital flow volatility (SD),190,2008-03,2023-12,1.202903457,0.01794374051,4.355182966
+Indonesia,Emerging,Capital flow volatility (SD),154,2011-03,2023-12,1.165352613,0.1257083196,5.242483671
+India,Emerging,Capital flow volatility (SD),288,2000-01,2023-12,2.254147006,0.02250185178,24.51436279
+Italy,Advanced,Capital flow volatility (SD),288,2000-01,2023-12,13.734511,0.5073599627,50.46096931
+Japan,Advanced,Capital flow volatility (SD),288,2000-01,2023-12,28.16490698,0.9621141482,90.26449572
+Korea,Advanced,Capital flow volatility (SD),288,2000-01,2023-12,2.837165317,0.1851255787,8.824997196
+Mexico,Emerging,Capital flow volatility (SD),178,2009-03,2023-12,2.121951273,0.2394420292,5.772257404
+Malaysia,Emerging,Capital flow volatility (SD),153,2011-04,2023-12,1.513094763,0.05654420746,4.582725304
+Netherlands,Advanced,Capital flow volatility (SD),34,2019-03,2021-12,23.60673396,1.870893779,91.1357489
+Philippines,Emerging,Capital flow volatility (SD),226,2005-03,2023-12,0.6724108601,0.01533403302,2.325472855
+Poland,Emerging,Capital flow volatility (SD),238,2004-03,2023-12,1.488884297,0.03060162369,9.103460357
+Portugal,Advanced,Capital flow volatility (SD),288,2000-01,2023-12,2.225992632,0.224381912,8.855119528
+Sweden,Advanced,Capital flow volatility (SD),190,2008-03,2023-12,4.767661058,0.003204636311,19.83841713
+Thailand,Emerging,Capital flow volatility (SD),226,2005-03,2023-12,0.8019929528,0.01639663788,2.877142377
+Turkiye,Emerging,Capital flow volatility (SD),288,2000-01,2023-12,1.460027208,0.04712041313,5.418430492
+Ukraine,Emerging,Capital flow volatility (SD),166,2010-03,2023-12,0.4803933449,0.008326663998,1.96665435
+United States,Advanced,Capital flow volatility (SD),288,2000-01,2023-12,64.91123033,1.540749601,412.4257368
+South Africa,Emerging,Capital flow volatility (SD),288,2000-01,2023-12,0.8465767113,0.0468900116,3.201021601
+Belgium,Advanced,Real stock prices (log),288,2000-01,2023-12,4.331509326,3.617148923,4.726009052
+Brazil,Emerging,Real stock prices (log),288,2000-01,2023-12,4.559005307,2.9146079,5.565833336
+Canada,Advanced,Real stock prices (log),288,2000-01,2023-12,4.47248894,3.758431305,5.016089187
+Chile,Emerging,Real stock prices (log),288,2000-01,2023-12,4.359833749,3.209547464,5.119004751
+China,Emerging,Real stock prices (log),288,2000-01,2023-12,4.19056408,3.339215871,5.049711208
+Colombia,Emerging,Real stock prices (log),288,2000-01,2023-12,4.172954802,1.983173212,4.974390837
+Germany,Advanced,Real stock prices (log),288,2000-01,2023-12,4.349846673,3.452839237,4.849802106
+Denmark,Advanced,Real stock prices (log),288,2000-01,2023-12,4.181057472,3.04190199,5.369712863
+Spain,Advanced,Real stock prices (log),288,2000-01,2023-12,4.484494395,4.034027805,5.056668127
+Finland,Advanced,Real stock prices (log),288,2000-01,2023-12,4.571062008,3.973486233,5.305025859
+France,Advanced,Real stock prices (log),288,2000-01,2023-12,4.502678946,3.882216203,5.010723317
+Hungary,Emerging,Real stock prices (log),288,2000-01,2023-12,4.600789253,3.35663539,5.648298167
+Indonesia,Emerging,Real stock prices (log),288,2000-01,2023-12,3.936157183,1.991686277,4.98864394
+India,Emerging,Real stock prices (log),288,2000-01,2023-12,4.097422277,2.36719547,5.551522672
+Italy,Advanced,Real stock prices (log),288,2000-01,2023-12,4.656222528,4.085022396,5.162599533
+Japan,Advanced,Real stock prices (log),288,2000-01,2023-12,4.432814548,3.851284494,5.033967526
+Korea,Advanced,Real stock prices (log),288,2000-01,2023-12,4.353795753,3.221341464,5.08790447
+Mexico,Emerging,Real stock prices (log),288,2000-01,2023-12,4.083242169,2.536261529,4.850287946
+Malaysia,Emerging,Real stock prices (log),288,2000-01,2023-12,4.287839474,3.499282201,4.691175275
+Netherlands,Advanced,Real stock prices (log),288,2000-01,2023-12,4.543179418,3.843681989,5.060363036
+Philippines,Emerging,Real stock prices (log),288,2000-01,2023-12,3.97540138,2.566768068,4.789338102
+Poland,Emerging,Real stock prices (log),288,2000-01,2023-12,4.324148009,3.16530988,5.0067
+Portugal,Advanced,Real stock prices (log),288,2000-01,2023-12,4.693261936,4.06954156,5.262912348
+Sweden,Advanced,Real stock prices (log),288,2000-01,2023-12,4.321771607,3.306068518,5.274208007
+Thailand,Emerging,Real stock prices (log),288,2000-01,2023-12,4.154868391,2.906257681,4.821179972
+Turkiye,Emerging,Real stock prices (log),288,2000-01,2023-12,4.227639008,2.347694834,6.912437893
+Ukraine,Emerging,Real stock prices (log),0,,,,,
+United States,Advanced,Real stock prices (log),288,2000-01,2023-12,4.450289901,3.789754272,5.074816448
+South Africa,Emerging,Real stock prices (log),288,2000-01,2023-12,4.047536628,2.637953491,5.030196837
+Belgium,Advanced,"Real stock prices, CPI-deflated (log)",288,2000-01,2023-12,-0.2197827744,-0.756767811,0.2724243529
+Brazil,Emerging,"Real stock prices, CPI-deflated (log)",288,2000-01,2023-12,0.1818709134,-0.8919031905,0.7842494341
+Canada,Advanced,"Real stock prices, CPI-deflated (log)",288,2000-01,2023-12,-0.0789859654,-0.623068459,0.2717954617
+Chile,Emerging,"Real stock prices, CPI-deflated (log)",288,2000-01,2023-12,-0.1340274179,-0.9993898048,0.3599656438
+China,Emerging,"Real stock prices, CPI-deflated (log)",288,2000-01,2023-12,-0.3137682301,-0.9731594188,0.6488704838
+Colombia,Emerging,"Real stock prices, CPI-deflated (log)",288,2000-01,2023-12,-0.305665774,-1.961832173,0.5224166792
+Germany,Advanced,"Real stock prices, CPI-deflated (log)",288,2000-01,2023-12,-0.2104594362,-0.9741964235,0.2267731549
+Denmark,Advanced,"Real stock prices, CPI-deflated (log)",288,2000-01,2023-12,-0.3612585445,-1.364493852,0.6268748575
+Spain,Advanced,"Real stock prices, CPI-deflated (log)",288,2000-01,2023-12,-0.0566161638,-0.5185530019,0.5573763341
+Finland,Advanced,"Real stock prices, CPI-deflated (log)",288,2000-01,2023-12,0.0225724132,-0.5379719155,0.9405217189
+France,Advanced,"Real stock prices, CPI-deflated (log)",288,2000-01,2023-12,-0.05854445934,-0.5900572045,0.3359195102
+Hungary,Emerging,"Real stock prices, CPI-deflated (log)",288,2000-01,2023-12,0.1154896173,-0.6915063316,0.7597571784
+Indonesia,Emerging,"Real stock prices, CPI-deflated (log)",288,2000-01,2023-12,-0.3912255637,-1.724342754,0.1998125507
+India,Emerging,"Real stock prices, CPI-deflated (log)",288,2000-01,2023-12,-0.2019987382,-1.331752437,0.5352847445
+Italy,Advanced,"Real stock prices, CPI-deflated (log)",288,2000-01,2023-12,0.1134210552,-0.5064061974,0.8347170524
+Japan,Advanced,"Real stock prices, CPI-deflated (log)",288,2000-01,2023-12,-0.1634498574,-0.712045108,0.3507339966
+Korea,Advanced,"Real stock prices, CPI-deflated (log)",288,2000-01,2023-12,-0.1564050487,-1.023825461,0.4096831786
+Mexico,Emerging,"Real stock prices, CPI-deflated (log)",288,2000-01,2023-12,-0.3919382353,-1.52010191,0.1053620022
+Malaysia,Emerging,"Real stock prices, CPI-deflated (log)",288,2000-01,2023-12,-0.2257022708,-0.7828472251,0.1084913762
+Netherlands,Advanced,"Real stock prices, CPI-deflated (log)",288,2000-01,2023-12,-0.008123657654,-0.6655278061,0.5942352526
+Philippines,Emerging,"Real stock prices, CPI-deflated (log)",288,2000-01,2023-12,-0.4938488812,-1.507954829,0.1200772447
+Poland,Emerging,"Real stock prices, CPI-deflated (log)",288,2000-01,2023-12,-0.2214406848,-1.144296159,0.4115520906
+Portugal,Advanced,"Real stock prices, CPI-deflated (log)",288,2000-01,2023-12,0.1455932032,-0.3145016158,0.6508023332
+Sweden,Advanced,"Real stock prices, CPI-deflated (log)",288,2000-01,2023-12,-0.2670386273,-1.180793782,0.5640566179
+Thailand,Emerging,"Real stock prices, CPI-deflated (log)",288,2000-01,2023-12,-0.3470976176,-1.347330298,0.2017038818
+Turkiye,Emerging,"Real stock prices, CPI-deflated (log)",288,2000-01,2023-12,-0.1562413501,-1.101481426,0.5737375694
+Ukraine,Emerging,"Real stock prices, CPI-deflated (log)",0,,,,,
+United States,Advanced,"Real stock prices, CPI-deflated (log)",288,2000-01,2023-12,-0.09754796568,-0.7039271354,0.3103440852
+South Africa,Emerging,"Real stock prices, CPI-deflated (log)",288,2000-01,2023-12,-0.3688475426,-1.334890182,0.06997702805
+Belgium,Advanced,Long-term bond yield (%),287,2000-01,2023-12,2.777979094,-0.39,5.79
+Brazil,Emerging,Long-term bond yield (%),288,2000-01,2023-12,7.202604167,4.39,12
+Canada,Advanced,Long-term bond yield (%),288,2000-01,2023-12,3.104855545,0.516363636,6.4915
+Chile,Emerging,Long-term bond yield (%),223,2004-07,2023-12,5.186016426,2.397113613,7.88893025
+China,Emerging,Long-term bond yield (%),120,2014-01,2023-12,3.204935,2.538,4.5019
+Colombia,Emerging,Long-term bond yield (%),252,2003-01,2023-12,9.1370936,5.086376662,16.06253494
+Germany,Advanced,Long-term bond yield (%),288,2000-01,2023-12,2.284002979,-0.649090909,5.53952381
+Denmark,Advanced,Long-term bond yield (%),288,2000-01,2023-12,2.472659722,-0.591,5.869
+Spain,Advanced,Long-term bond yield (%),288,2000-01,2023-12,3.318263543,0.04218181818,6.795
+Finland,Advanced,Long-term bond yield (%),288,2000-01,2023-12,2.548316646,-0.41,5.74
+France,Advanced,Long-term bond yield (%),288,2000-01,2023-12,2.63557463,-0.3390952381,5.662380952
+Hungary,Emerging,Long-term bond yield (%),288,2000-01,2023-12,6.059878142,1.83,11.65
+Indonesia,Emerging,Long-term bond yield (%),144,2012-01,2023-12,7.118052757,5.15,9.64
+India,Emerging,Long-term bond yield (%),228,2005-01,2023-12,7.47284405,5,9.32
+Italy,Advanced,Long-term bond yield (%),288,2000-01,2023-12,3.61840059,0.578,7.057
+Japan,Advanced,Long-term bond yield (%),286,2000-01,2023-12,0.8320734266,-0.28,1.956
+Korea,Advanced,Long-term bond yield (%),288,2000-01,2023-12,4.081465278,1.254,9.91
+Mexico,Emerging,Long-term bond yield (%),210,2001-07,2023-12,7.862216144,4.64,11.4553902
+Malaysia,Emerging,Long-term bond yield (%),288,2000-01,2023-12,3.584809028,2.049,5.523
+Netherlands,Advanced,Long-term bond yield (%),288,2000-01,2023-12,2.484493056,-0.553,5.666
+Philippines,Emerging,Long-term bond yield (%),43,2000-01,2014-04,10.02586047,2.727,15.515
+Poland,Emerging,Long-term bond yield (%),276,2001-01,2023-12,4.918646971,1.19,11.86
+Portugal,Advanced,Long-term bond yield (%),288,2000-01,2023-12,4.090868056,0.03,13.85
+Sweden,Advanced,Long-term bond yield (%),288,2000-01,2023-12,2.544446368,-0.2884,5.95
+Thailand,Emerging,Long-term bond yield (%),288,2000-01,2023-12,3.648356716,1.17,7.8483084
+Turkiye,Emerging,Long-term bond yield (%),0,,,,,
+Ukraine,Emerging,Long-term bond yield (%),0,,,,,
+United States,Advanced,Long-term bond yield (%),288,2000-01,2023-12,3.245104167,0.62,6.66
+South Africa,Emerging,Long-term bond yield (%),288,2000-01,2023-12,9.385662048,6.903636364,14.79
+Belgium,Advanced,Real effective exchange rate (log),288,2000-01,2023-12,4.58536546,4.493903374,4.634923144
+Brazil,Emerging,Real effective exchange rate (log),288,2000-01,2023-12,4.823276834,4.25020806,5.211342353
+Canada,Advanced,Real effective exchange rate (log),288,2000-01,2023-12,4.680633966,4.488861064,4.885374369
+Chile,Emerging,Real effective exchange rate (log),288,2000-01,2023-12,4.705323451,4.524502283,4.847488717
+China,Emerging,Real effective exchange rate (log),288,2000-01,2023-12,4.449508151,4.187379428,4.675721842
+Colombia,Emerging,Real effective exchange rate (log),288,2000-01,2023-12,4.722958763,4.422208424,5.001594549
+Germany,Advanced,Real effective exchange rate (log),288,2000-01,2023-12,4.634643675,4.551452903,4.728272383
+Denmark,Advanced,Real effective exchange rate (log),288,2000-01,2023-12,4.616779472,4.55103074,4.691531352
+Spain,Advanced,Real effective exchange rate (log),288,2000-01,2023-12,4.615724698,4.504465482,4.69217323
+Finland,Advanced,Real effective exchange rate (log),288,2000-01,2023-12,4.628900958,4.555034116,4.704743991
+France,Advanced,Real effective exchange rate (log),288,2000-01,2023-12,4.64158369,4.539030383,4.729332829
+Hungary,Emerging,Real effective exchange rate (log),288,2000-01,2023-12,4.667813731,4.418720119,4.90468201
+Indonesia,Emerging,Real effective exchange rate (log),288,2000-01,2023-12,4.57561185,4.169761202,4.730568595
+India,Emerging,Real effective exchange rate (log),288,2000-01,2023-12,4.554283134,4.422328494,4.645351976
+Italy,Advanced,Real effective exchange rate (log),288,2000-01,2023-12,4.641037643,4.571509984,4.710790668
+Japan,Advanced,Real effective exchange rate (log),288,2000-01,2023-12,4.71357352,4.278747285,5.10491464
+Korea,Advanced,Real effective exchange rate (log),288,2000-01,2023-12,4.622766906,4.36792771,4.824225391
+Mexico,Emerging,Real effective exchange rate (log),288,2000-01,2023-12,4.840674569,4.487287145,5.147378191
+Malaysia,Emerging,Real effective exchange rate (log),288,2000-01,2023-12,4.697368285,4.537105455,4.829513018
+Netherlands,Advanced,Real effective exchange rate (log),288,2000-01,2023-12,4.59846489,4.498252904,4.662306377
+Philippines,Emerging,Real effective exchange rate (log),288,2000-01,2023-12,4.463054866,4.160288346,4.649569773
+Poland,Emerging,Real effective exchange rate (log),288,2000-01,2023-12,4.640214602,4.480513581,4.883332085
+Portugal,Advanced,Real effective exchange rate (log),288,2000-01,2023-12,4.620546297,4.554613462,4.668989699
+Sweden,Advanced,Real effective exchange rate (log),288,2000-01,2023-12,4.721241732,4.519503359,4.869378902
+Thailand,Emerging,Real effective exchange rate (log),288,2000-01,2023-12,4.494095182,4.318421012,4.660604893
+Turkiye,Emerging,Real effective exchange rate (log),288,2000-01,2023-12,4.907576855,4.25830412,5.227680287
+Ukraine,Emerging,Real effective exchange rate (log),288,2000-01,2023-12,4.626630616,4.038602418,4.973177985
+United States,Advanced,Real effective exchange rate (log),288,2000-01,2023-12,4.542117646,4.362078997,4.72862599
+South Africa,Emerging,Real effective exchange rate (log),288,2000-01,2023-12,4.771781291,4.450736133,5.025523907
+Belgium,Advanced,Geopolitical risk (index),288,2000-01,2023-12,0.15977041,0.01848497242,1.015888333
+Brazil,Emerging,Geopolitical risk (index),288,2000-01,2023-12,0.05369152739,0.008214002475,0.225194484
+Canada,Advanced,Geopolitical risk (index),288,2000-01,2023-12,0.2228744628,0.05654509366,1.724345446
+Chile,Emerging,Geopolitical risk (index),288,2000-01,2023-12,0.0162651676,0,0.2854688168
+China,Emerging,Geopolitical risk (index),288,2000-01,2023-12,0.5546922867,0.161294803,2.474723101
+Colombia,Emerging,Geopolitical risk (index),288,2000-01,2023-12,0.03937768058,0,0.3351902664
+Germany,Advanced,Geopolitical risk (index),288,2000-01,2023-12,0.4238743441,0.0868331939,2.662493944
+Denmark,Advanced,Geopolitical risk (index),288,2000-01,2023-12,0.03555369728,0,0.1689596921
+Spain,Advanced,Geopolitical risk (index),288,2000-01,2023-12,0.1068555318,0.01727637835,1.149589658
+Finland,Advanced,Geopolitical risk (index),288,2000-01,2023-12,0.03694597653,0,0.5489219427
+France,Advanced,Geopolitical risk (index),288,2000-01,2023-12,0.5425030421,0.1698107421,2.799086809
+Hungary,Emerging,Geopolitical risk (index),288,2000-01,2023-12,0.03243475755,0,0.5777564049
+Indonesia,Emerging,Geopolitical risk (index),288,2000-01,2023-12,0.05318222036,0,0.5101040006
+India,Emerging,Geopolitical risk (index),288,2000-01,2023-12,0.2203672912,0.06396783143,0.9459720254
+Italy,Advanced,Geopolitical risk (index),288,2000-01,2023-12,0.144615595,0.02813335136,0.6451612711
+Japan,Advanced,Geopolitical risk (index),288,2000-01,2023-12,0.2403935335,0.05866189301,1.236834168
+Korea,Advanced,Geopolitical risk (index),288,2000-01,2023-12,0.3113980824,0.0648797676,1.815851331
+Mexico,Emerging,Geopolitical risk (index),288,2000-01,2023-12,0.0982732783,0.0162199419,0.4574179947
+Malaysia,Emerging,Geopolitical risk (index),288,2000-01,2023-12,0.0401249052,0,0.9727779031
+Netherlands,Advanced,Geopolitical risk (index),288,2000-01,2023-12,0.08381257738,0.01053555775,0.4471640289
+Philippines,Emerging,Geopolitical risk (index),288,2000-01,2023-12,0.04553363582,0,0.2623880208
+Poland,Emerging,Geopolitical risk (index),288,2000-01,2023-12,0.09533763885,0.00378716155,2.099181414
+Portugal,Advanced,Geopolitical risk (index),288,2000-01,2023-12,0.02223985598,0,0.2445756644
+Sweden,Advanced,Geopolitical risk (index),288,2000-01,2023-12,0.05565329793,0.006501527969,0.5489219427
+Thailand,Emerging,Geopolitical risk (index),288,2000-01,2023-12,0.04050355255,0,0.2816196382
+Turkiye,Emerging,Geopolitical risk (index),288,2000-01,2023-12,0.2549158114,0.02004122734,1.200077653
+Ukraine,Emerging,Geopolitical risk (index),288,2000-01,2023-12,0.3467679688,0,8.704862595
+United States,Advanced,Geopolitical risk (index),288,2000-01,2023-12,2.4296055,0.8201089501,13.22900963
+South Africa,Emerging,Geopolitical risk (index),288,2000-01,2023-12,0.05480188051,0.004218163434,0.2418596298
+Belgium,Advanced,Policy rate (%),288,2000-01,2023-12,1.580208333,0,4.75
+Brazil,Emerging,Policy rate (%),288,2000-01,2023-12,12.33940972,2,26.5
+Canada,Advanced,Policy rate (%),288,2000-01,2023-12,2.035590278,0.25,5.75
+Chile,Emerging,Policy rate (%),288,2000-01,2023-12,4.040798611,0.5,11.25
+China,Emerging,Policy rate (%),288,2000-01,2023-12,5.229861111,3.45,7.47
+Colombia,Emerging,Policy rate (%),288,2000-01,2023-12,6.278645833,1.75,13.25
+Germany,Advanced,Policy rate (%),288,2000-01,2023-12,1.580208333,0,4.75
+Denmark,Advanced,Policy rate (%),288,2000-01,2023-12,1.364409722,-0.75,5.6
+Spain,Advanced,Policy rate (%),288,2000-01,2023-12,1.580208333,0,4.75
+Finland,Advanced,Policy rate (%),288,2000-01,2023-12,1.580208333,0,4.75
+France,Advanced,Policy rate (%),288,2000-01,2023-12,1.580208333,0,4.75
+Hungary,Emerging,Policy rate (%),288,2000-01,2023-12,5.976041667,0.6,13
+Indonesia,Emerging,Policy rate (%),222,2005-07,2023-12,6.528153153,3.5,12.75
+India,Emerging,Policy rate (%),288,2000-01,2023-12,6.628993056,4,9
+Italy,Advanced,Policy rate (%),288,2000-01,2023-12,1.580208333,0,4.75
+Japan,Advanced,Policy rate (%),182,2000-08,2023-12,0.05,-0.1,0.5
+Korea,Advanced,Policy rate (%),288,2000-01,2023-12,2.835069444,0.5,5.25
+Mexico,Emerging,Policy rate (%),288,2000-01,2023-12,6.8553125,3,19.25
+Malaysia,Emerging,Policy rate (%),288,2000-01,2023-12,3.249305556,1.75,5.5
+Netherlands,Advanced,Policy rate (%),288,2000-01,2023-12,1.580208333,0,4.75
+Philippines,Emerging,Policy rate (%),288,2000-01,2023-12,5.162326389,2,15
+Poland,Emerging,Policy rate (%),288,2000-01,2023-12,4.761979167,0.1,19
+Portugal,Advanced,Policy rate (%),288,2000-01,2023-12,1.580208333,0,4.75
+Sweden,Advanced,Policy rate (%),288,2000-01,2023-12,1.526736111,-0.5,4.75
+Thailand,Emerging,Policy rate (%),284,2000-05,2023-12,2.011443662,0.5,5
+Turkiye,Emerging,Policy rate (%),263,2002-02,2023-12,14.88688213,4.5,57
+Ukraine,Emerging,Policy rate (%),0,,,,,
+United States,Advanced,Policy rate (%),288,2000-01,2023-12,1.793836806,0.125,6.5
+South Africa,Emerging,Policy rate (%),288,2000-01,2023-12,7.509548611,3.5,13.5
+Belgium,Advanced,Real industrial production (log),288,2000-01,2023-12,4.57780715,4.109733866,5.151719938
+Brazil,Emerging,Real industrial production (log),287,2000-01,2023-11,4.586300054,4.195231511,4.819879382
+Canada,Advanced,Real industrial production (log),286,2000-01,2023-10,4.588519457,4.377175191,4.720312671
+Chile,Emerging,Real industrial production (log),257,2000-01,2021-05,4.503480861,4.160248449,4.703658979
+China,Emerging,Real industrial production (log),155,2010-01,2022-11,4.62721065,3.862968326,5.132354269
+Colombia,Emerging,Real industrial production (log),287,2000-01,2023-11,4.542305125,4.242639974,4.864774622
+Germany,Advanced,Real industrial production (log),288,2000-01,2023-12,4.533308771,4.259431299,4.751832093
+Denmark,Advanced,Real industrial production (log),288,2000-01,2023-12,4.678213799,4.396675427,5.039721386
+Spain,Advanced,Real industrial production (log),288,2000-01,2023-12,4.70177966,4.211135724,5.000286806
+Finland,Advanced,Real industrial production (log),288,2000-01,2023-12,4.678693959,4.380503985,4.934389098
+France,Advanced,Real industrial production (log),288,2000-01,2023-12,4.630341966,4.193406231,4.816188001
+Hungary,Emerging,Real industrial production (log),288,2000-01,2023-12,4.479675137,3.905861801,4.938552369
+Indonesia,Emerging,Real industrial production (log),0,,,,,
+India,Emerging,Real industrial production (log),288,2000-01,2023-12,4.583279392,3.988900717,5.02576893
+Italy,Advanced,Real industrial production (log),288,2000-01,2023-12,4.69303238,4.021586857,4.990598435
+Japan,Advanced,Real industrial production (log),287,2000-01,2023-11,4.621705155,4.291464919,4.847707879
+Korea,Advanced,Real industrial production (log),287,2000-01,2023-11,4.437607804,3.7894378,4.861949254
+Mexico,Emerging,Real industrial production (log),262,2000-01,2021-10,4.536068251,4.241877052,4.645774543
+Malaysia,Emerging,Real industrial production (log),231,2000-01,2019-03,4.471310335,4.10891419,4.765544317
+Netherlands,Advanced,Real industrial production (log),288,2000-01,2023-12,4.627548694,4.435357005,4.803926736
+Philippines,Emerging,Real industrial production (log),0,,,,,
+Poland,Emerging,Real industrial production (log),288,2000-01,2023-12,4.445257409,3.72426156,5.131781207
+Portugal,Advanced,Real industrial production (log),288,2000-01,2023-12,4.664034465,4.250763184,4.941827754
+Sweden,Advanced,Real industrial production (log),288,2000-01,2023-12,4.659970331,4.293330015,4.914293458
+Thailand,Emerging,Real industrial production (log),0,,,,,
+Turkiye,Emerging,Real industrial production (log),288,2000-01,2023-12,4.370114123,3.594916983,5.104739164
+Ukraine,Emerging,Real industrial production (log),264,2002-01,2023-12,4.700961146,3.833714885,5.143023651
+United States,Advanced,Real industrial production (log),288,2000-01,2023-12,4.566109327,4.406086526,4.655414816
+South Africa,Emerging,Real industrial production (log),0,,,,,
+Belgium,Advanced,Inflation (%),288,2000-01,2023-12,2.343845262,-1.680945667,12.26795096
+Brazil,Emerging,Inflation (%),288,2000-01,2023-12,6.361488114,1.877727164,17.23584936
+Canada,Advanced,Inflation (%),288,2000-01,2023-12,2.225169429,-0.9499136442,8.132956153
+Chile,Emerging,Inflation (%),288,2000-01,2023-12,3.759918661,-3.38089102,14.08987744
+China,Emerging,Inflation (%),288,2000-01,2023-12,2.097796695,-1.794011255,8.804665249
+Colombia,Emerging,Inflation (%),288,2000-01,2023-12,5.33417118,1.489446574,13.3443088
+Germany,Advanced,Inflation (%),288,2000-01,2023-12,1.886648012,-1.040906731,8.820709492
+Denmark,Advanced,Inflation (%),288,2000-01,2023-12,1.943094758,-0.1011122346,10.11235955
+Spain,Advanced,Inflation (%),288,2000-01,2023-12,2.363336672,-1.369076333,10.77025339
+Finland,Advanced,Inflation (%),288,2000-01,2023-12,1.911252447,-1.551089072,9.145036748
+France,Advanced,Inflation (%),288,2000-01,2023-12,1.695983687,-0.7252559727,6.278685515
+Hungary,Emerging,Inflation (%),288,2000-01,2023-12,5.280900323,-1.479289941,25.71770335
+Indonesia,Emerging,Inflation (%),288,2000-01,2023-12,5.988614527,-1.165211234,18.34742684
+India,Emerging,Inflation (%),288,2000-01,2023-12,6.144399361,1.537279016,16.21621622
+Italy,Advanced,Inflation (%),288,2000-01,2023-12,2.086274827,-0.583090379,11.83712121
+Japan,Advanced,Inflation (%),288,2000-01,2023-12,0.3185450882,-2.515090543,4.386839482
+Korea,Advanced,Inflation (%),288,2000-01,2023-12,2.504851219,-0.4260584109,6.327009583
+Mexico,Emerging,Inflation (%),288,2000-01,2023-12,4.764066004,2.130808274,11.02319089
+Malaysia,Emerging,Inflation (%),288,2000-01,2023-12,2.105961264,-2.89017341,8.514664144
+Netherlands,Advanced,Inflation (%),288,2000-01,2023-12,2.303960585,-0.4054580897,14.53199747
+Philippines,Emerging,Inflation (%),288,2000-01,2023-12,3.955148638,-0.3727865797,10.54158607
+Poland,Emerging,Inflation (%),288,2000-01,2023-12,3.574063168,-1.287208367,19.23335575
+Portugal,Advanced,Inflation (%),288,2000-01,2023-12,2.128733838,-1.664839317,10.13933346
+Sweden,Advanced,Inflation (%),288,2000-01,2023-12,1.901593418,-1.871640226,12.33863875
+Thailand,Emerging,Inflation (%),288,2000-01,2023-12,1.990111071,-4.425830491,11.95731012
+Turkiye,Emerging,Inflation (%),288,2000-01,2023-12,20.27503242,3.986037608,85.51478642
+Ukraine,Emerging,Inflation (%),288,2000-01,2023-12,12.67166784,-1.133144476,60.93189964
+United States,Advanced,Inflation (%),288,2000-01,2023-12,2.563728464,-2.097161354,9.059757965
+South Africa,Emerging,Inflation (%),288,2000-01,2023-12,5.296990848,-1.999259705,14.00701112
+Belgium,Advanced,Financial development (index),264,2000-01,2021-12,0.6521493061,0.5862966776,0.7266650796
+Brazil,Emerging,Financial development (index),264,2000-01,2021-12,0.5722098472,0.4163941145,0.666647315
+Canada,Advanced,Financial development (index),264,2000-01,2021-12,0.8519577194,0.7010650635,0.9257486463
+Chile,Emerging,Financial development (index),264,2000-01,2021-12,0.4869865802,0.3866125643,0.5326369405
+China,Emerging,Financial development (index),264,2000-01,2021-12,0.525596093,0.3540082574,0.6742995977
+Colombia,Emerging,Financial development (index),264,2000-01,2021-12,0.3377135938,0.2419625521,0.3964265883
+Germany,Advanced,Financial development (index),264,2000-01,2021-12,0.7306653993,0.6697968245,0.7820094824
+Denmark,Advanced,Financial development (index),264,2000-01,2021-12,0.6868044301,0.5984207988,0.7397701144
+Spain,Advanced,Financial development (index),264,2000-01,2021-12,0.8485816148,0.8034850955,0.90148592
+Finland,Advanced,Financial development (index),264,2000-01,2021-12,0.6065536033,0.518660605,0.665517807
+France,Advanced,Financial development (index),264,2000-01,2021-12,0.7767750702,0.6917482615,0.8329839706
+Hungary,Emerging,Financial development (index),264,2000-01,2021-12,0.4715463004,0.4060726762,0.5711421967
+Indonesia,Emerging,Financial development (index),264,2000-01,2021-12,0.3289036046,0.2703421414,0.3741481006
+India,Emerging,Financial development (index),264,2000-01,2021-12,0.4583146084,0.4194969237,0.5387584567
+Italy,Advanced,Financial development (index),264,2000-01,2021-12,0.7585047077,0.7299041152,0.794591248
+Japan,Advanced,Financial development (index),264,2000-01,2021-12,0.8244961798,0.6980780959,0.9333177805
+Korea,Advanced,Financial development (index),264,2000-01,2021-12,0.8161688203,0.7454769611,0.8528286815
+Mexico,Emerging,Financial development (index),264,2000-01,2021-12,0.3645718843,0.2924143076,0.4085939825
+Malaysia,Emerging,Financial development (index),264,2000-01,2021-12,0.6376834647,0.5446640849,0.7321554422
+Netherlands,Advanced,Financial development (index),264,2000-01,2021-12,0.7816718735,0.7089013457,0.8662741184
+Philippines,Emerging,Financial development (index),264,2000-01,2021-12,0.3339158446,0.2986223102,0.3791387975
+Poland,Emerging,Financial development (index),264,2000-01,2021-12,0.4196411886,0.2756679356,0.4779757857
+Portugal,Advanced,Financial development (index),264,2000-01,2021-12,0.6928476014,0.6456215978,0.8057183623
+Sweden,Advanced,Financial development (index),264,2000-01,2021-12,0.7748727717,0.6947119236,0.8118240833
+Thailand,Emerging,Financial development (index),264,2000-01,2021-12,0.6185260293,0.4434172809,0.7408381701
+Turkiye,Emerging,Financial development (index),264,2000-01,2021-12,0.4495779425,0.3349424303,0.5108639002
+Ukraine,Emerging,Financial development (index),264,2000-01,2021-12,0.1971163343,0.1088666096,0.2436448336
+United States,Advanced,Financial development (index),264,2000-01,2021-12,0.9107393948,0.8757811189,0.9213193655
+South Africa,Emerging,Financial development (index),264,2000-01,2021-12,0.5043787455,0.3866303861,0.5925185084
+Belgium,Advanced,Central bank independence (index),288,2000-01,2023-12,0.9197916761,0.9120000005,0.92900002
+Brazil,Emerging,Central bank independence (index),288,2000-01,2023-12,0.6586875071,0.6405000091,0.7490000129
+Canada,Advanced,Central bank independence (index),288,2000-01,2023-12,0.6039999723,0.6039999723,0.6039999723
+Chile,Emerging,Central bank independence (index),288,2000-01,2023-12,0.7329374949,0.7294999957,0.7459999919
+China,Emerging,Central bank independence (index),288,2000-01,2023-12,0.654812485,0.6255000234,0.6589999795
+Colombia,Emerging,Central bank independence (index),288,2000-01,2023-12,0.7570000291,0.7570000291,0.7570000291
+Germany,Advanced,Central bank independence (index),288,2000-01,2023-12,0.9120000005,0.9120000005,0.9120000005
+Denmark,Advanced,Central bank independence (index),288,2000-01,2023-12,0.6060000062,0.6060000062,0.6060000062
+Spain,Advanced,Central bank independence (index),288,2000-01,2023-12,0.8955000043,0.8955000043,0.8955000043
+Finland,Advanced,Central bank independence (index),288,2000-01,2023-12,0.9219166785,0.9120000005,0.92900002
+France,Advanced,Central bank independence (index),288,2000-01,2023-12,0.9120000005,0.9120000005,0.9120000005
+Hungary,Emerging,Central bank independence (index),288,2000-01,2023-12,0.7820000077,0.4679999948,0.9210000038
+Indonesia,Emerging,Central bank independence (index),288,2000-01,2023-12,0.8201666549,0.75849998,0.8414999843
+India,Emerging,Central bank independence (index),288,2000-01,2023-12,0.5359166786,0.5055000186,0.5945000052
+Italy,Advanced,Central bank independence (index),288,2000-01,2023-12,0.8955000043,0.8955000043,0.8955000043
+Japan,Advanced,Central bank independence (index),288,2000-01,2023-12,0.3664999902,0.3664999902,0.3664999902
+Korea,Advanced,Central bank independence (index),288,2000-01,2023-12,0.6794999838,0.6794999838,0.6794999838
+Mexico,Emerging,Central bank independence (index),288,2000-01,2023-12,0.6347500036,0.6154999733,0.6485000253
+Malaysia,Emerging,Central bank independence (index),288,2000-01,2023-12,0.5540000051,0.5389999747,0.5630000234
+Netherlands,Advanced,Central bank independence (index),288,2000-01,2023-12,0.8955000043,0.8955000043,0.8955000043
+Philippines,Emerging,Central bank independence (index),288,2000-01,2023-12,0.6389999986,0.6389999986,0.6389999986
+Poland,Emerging,Central bank independence (index),288,2000-01,2023-12,0.835395818,0.8029999733,0.84799999
+Portugal,Advanced,Central bank independence (index),288,2000-01,2023-12,0.8955000043,0.8955000043,0.8955000043
+Sweden,Advanced,Central bank independence (index),288,2000-01,2023-12,0.7770416488,0.7699999809,0.8544999957
+Thailand,Emerging,Central bank independence (index),288,2000-01,2023-12,0.3376666655,0.1420000046,0.4354999959
+Turkiye,Emerging,Central bank independence (index),288,2000-01,2023-12,0.7960416526,0.5799999833,0.8069999814
+Ukraine,Emerging,Central bank independence (index),288,2000-01,2023-12,0.82979167,0.7605000138,0.8934999704
+United States,Advanced,Central bank independence (index),288,2000-01,2023-12,0.6140000224,0.6140000224,0.6140000224
+South Africa,Emerging,Central bank independence (index),288,2000-01,2023-12,0.5059999824,0.5059999824,0.5059999824
+Belgium,Advanced,Public debt to GDP (%),288,2000-01,2023-12,101.8257083,87.325,111.098
+Brazil,Emerging,Public debt to GDP (%),288,2000-01,2023-12,72.0185,59.595,96.007
+Canada,Advanced,Public debt to GDP (%),288,2000-01,2023-12,86.52991667,67.181,118.066
+Chile,Emerging,Public debt to GDP (%),288,2000-01,2023-12,17.251375,3.901,39.415
+China,Emerging,Public debt to GDP (%),288,2000-01,2023-12,41.566375,22.708,82.014
+Colombia,Emerging,Public debt to GDP (%),288,2000-01,2023-12,44.75633333,32.382,65.274
+Germany,Advanced,Public debt to GDP (%),288,2000-01,2023-12,67.4325,58.062,81.009
+Denmark,Advanced,Public debt to GDP (%),288,2000-01,2023-12,42.83208333,29.483,53.553
+Spain,Advanced,Public debt to GDP (%),288,2000-01,2023-12,76.74095833,35.698,119.179
+Finland,Advanced,Public debt to GDP (%),288,2000-01,2023-12,54.78141667,32.563,77.302
+France,Advanced,Public debt to GDP (%),288,2000-01,2023-12,85.91141667,59.324,114.831
+Hungary,Emerging,Public debt to GDP (%),288,2000-01,2023-12,69.65570833,52.205,80.468
+Indonesia,Emerging,Public debt to GDP (%),288,2000-01,2023-12,38.82070833,22.955,87.437
+India,Emerging,Public debt to GDP (%),288,2000-01,2023-12,75.858375,67.102,88.427
+Italy,Advanced,Public debt to GDP (%),288,2000-01,2023-12,122.6930833,103.454,154.288
+Japan,Advanced,Public debt to GDP (%),288,2000-01,2023-12,205.8597917,135.609,258.369
+Korea,Advanced,Public debt to GDP (%),288,2000-01,2023-12,32.424375,16.087,50.697
+Mexico,Emerging,Public debt to GDP (%),288,2000-01,2023-12,45.19583333,35.529,58.456
+Malaysia,Emerging,Public debt to GDP (%),288,2000-01,2023-12,50.95575,32.518,69.749
+Netherlands,Advanced,Public debt to GDP (%),288,2000-01,2023-12,53.96558333,42.741,67.166
+Philippines,Emerging,Public debt to GDP (%),288,2000-01,2023-12,51.370375,36.973,71.393
+Poland,Emerging,Public debt to GDP (%),288,2000-01,2023-12,48.683875,36.275,56.859
+Portugal,Advanced,Public debt to GDP (%),288,2000-01,2023-12,99.295875,54.193,134.096
+Sweden,Advanced,Public debt to GDP (%),288,2000-01,2023-12,42.01629167,31.461,51.986
+Thailand,Emerging,Public debt to GDP (%),288,2000-01,2023-12,46.167625,34.947,62.321
+Turkiye,Emerging,Public debt to GDP (%),288,2000-01,2023-12,41.06008333,27.163,75.509
+Ukraine,Emerging,Public debt to GDP (%),288,2000-01,2023-12,46.06258333,12.267,82.329
+United States,Advanced,Public debt to GDP (%),276,2001-01,2023-12,92.3293913,53.331,132.032
+South Africa,Emerging,Public debt to GDP (%),288,2000-01,2023-12,42.51445833,24.045,73.363
