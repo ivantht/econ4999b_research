@@ -1,0 +1,25 @@
+variable,description,unit,source,raw_file
+iso,ISO2 country code,code,Paper sample of 29 economies,
+country,Country name,text,Paper sample,
+group,Advanced or emerging,text,Advanced economies are the IMF advanced members of the paper sample,
+date,Month,month-start date,January 2000 through December 2023,
+gpr,Country geopolitical-risk index,article share,GPRC columns,raw/gpr_export.xls
+portfolio_inflow,Portfolio inflows,billion US dollars,Column port_inf,raw/oecd_capital_flows.xlsx
+capital_flow_volatility,Standard deviation of portfolio inflows over the current and previous two months,billion US dollars,Computed from portfolio_inflow; three observed months required,raw/oecd_capital_flows.xlsx
+share_price,"Share-price index, 2015=100",index,"OECD SPASTT01, IMF FPE_IX where OECD is missing",raw/recovered/mei_SPASTT01_IXOB.json; raw/recovered/ifs_FPE_IX.json
+share_source,Source used for share_price,text,OECD or IMF IFS,raw/recovered/mei_SPASTT01_IXOB.json; raw/recovered/ifs_FPE_IX.json
+cpi,"Consumer price index, 2015=100",index,"IMF IFS PCPI_IX, rebased to 2015",raw/recovered/ifs_PCPI_IX.json
+bond_yield,Long-term government bond yield,percent,"OECD IRLTLT01, IMF FIGB_PA where OECD is missing",raw/recovered/mei_IRLTLT01_ST.json; raw/recovered/ifs_FIGB_PA.json
+bond_source,Source used for bond_yield,text,OECD or IMF IFS,raw/recovered/mei_IRLTLT01_ST.json; raw/recovered/ifs_FIGB_PA.json
+reer,Broad real effective exchange rate,index,"BIS WS_EER real broad; IMF EREER_IX, rebased to 2020, where BIS is missing",raw/recovered/bis_reer.csv; raw/recovered/ifs_EREER_IX.json
+reer_source,Source used for reer,text,BIS or IMF IFS,raw/recovered/bis_reer.csv; raw/recovered/ifs_EREER_IX.json
+policy_rate,Central-bank policy rate,percent,BIS WS_CBPOL; euro-area members use the BIS euro-area rate in the same file,raw/recovered/bis_policy.csv
+industrial_production,"Real industrial production, 2015=100",index,IMF IFS AIP_IX when a country has at least 24 months; otherwise OECD PRINTO01,raw/recovered/ifs_AIP_IX.json; raw/recovered/mei_PRINTO01_IXOB.json; raw/recovered/mei_PRINTO01_IXOBSA.json; raw/recovered/ifs_AIP_SA_IX.json
+ip_source,Source used for industrial_production,text,IMF IFS or OECD,raw/recovered/ifs_AIP_IX.json; raw/recovered/mei_PRINTO01_IXOB.json; raw/recovered/mei_PRINTO01_IXOBSA.json; raw/recovered/ifs_AIP_SA_IX.json
+inflation,Year-on-year consumer-price inflation,percent,IMF IFS PCPI_PC_CP_A_PT,raw/recovered/ifs_PCPI_PC_CP_A_PT.json
+oil_price,WTI crude oil spot price,US dollars per barrel,"EIA Cushing monthly spot price, sheet Data 1",raw/wti_monthly.xls
+vix,Monthly average of the daily VIX close,index,Daily close averaged to the month,raw/vix_history.csv
+gepu,"Global economic policy uncertainty, current-price index",index,GEPU_current,raw/epu_all_country.xlsx
+financial_development,IMF financial-development index,"index, 0 to 1",Annual index repeated within the year,raw/recovered/fd.json
+central_bank_independence,Romelli central-bank independence index,"index, 0 to 1",Annual index repeated within the year,raw/cbi_2025.xlsx
+public_debt_gdp,General government gross debt,percent of GDP,"IMF WEO April 2025, GGXWDG_NGDP, annual value repeated within the year",raw/recovered/debt.json
