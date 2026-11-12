@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Author GPR significance</title>
+<style>
+body { font: 16px/1.5 Georgia, serif; max-width: 1200px; margin: 2em auto; padding: 0 1em; color: #20242a; }
+table { border-collapse: collapse; width: 100%; margin: 1em 0; font-size: .82em; }
+th, td { border-bottom: 1px solid #ccc; padding: .4em; text-align: right; vertical-align: top; }
+th:nth-child(-n+2), td:nth-child(-n+2), td:last-child { text-align: left; }
+.note { background: #fff5da; padding: 1em; border: 1px solid #e6d59d; }
+</style>
+</head>
+<body>
+<h1>Author's GPR on the exchange rate and capital-flow volatility</h1>
+<div class="note">
+<p>Equation (2) on the literature-review panel. GPR is the country index standardized within each country. Controls are lagged one month and include industrial production, financial development, central bank independence, and debt. No WGI term. Country fixed effects.</p>
+<p>"Reaches the paper's star" is yes when our p-value is at least as strong as the star the paper prints. The full-sample exchange rate has no star in the paper, so that cell is yes only when our coefficient is also insignificant. *** p&lt;0.01, ** p&lt;0.05, * p&lt;0.10.</p>
+</div>
+<table>
+<thead>
+<tr>
+<th>Sample</th><th>Outcome</th><th>Paper GPR</th>
+<th>Ours, within</th><th>Within SE</th><th>Within p</th>
+<th>Ours, clustered</th><th>Clustered SE</th><th>Clustered p</th>
+<th>Same sign</th><th>Within reaches star</th><th>Cluster reaches star</th>
+<th>N</th><th>Countries</th>
+</tr>
+</thead>
+<tbody>
+<tr><td>all</td><td>Exchange rate</td><td>0.001</td><td>0.0000</td><td>0.0013</td><td>0.9984</td><td>0.0000</td><td>0.0030</td><td>0.9993</td><td>yes</td><td>yes</td><td>yes</td><td>5767</td><td>Belgium, Brazil, Canada, Chile, China, Germany, Denmark, Spain, Finland, France, Hungary, India, Italy, Japan, South Korea, Mexico, Malaysia, Netherlands, Poland, Portugal, Sweden, Turkey, United States</td></tr><tr><td>all</td><td>Capital-flow volatility</td><td>0.867**</td><td>-0.4885**</td><td>0.2114</td><td>0.0209</td><td>-0.4885</td><td>0.4042</td><td>0.2397</td><td>no</td><td>yes</td><td>no</td><td>4637</td><td>Belgium, Brazil, Canada, Chile, China, Germany, Denmark, Spain, Finland, France, Hungary, India, Italy, Japan, South Korea, Mexico, Malaysia, Netherlands, Poland, Portugal, Sweden, Turkey, United States</td></tr><tr><td>emerging</td><td>Exchange rate</td><td>-0.010***</td><td>0.0008</td><td>0.0026</td><td>0.7634</td><td>0.0008</td><td>0.0042</td><td>0.8549</td><td>no</td><td>no</td><td>no</td><td>2189</td><td>Brazil, Chile, China, Hungary, India, Mexico, Malaysia, Poland, Turkey</td></tr><tr><td>emerging</td><td>Capital-flow volatility</td><td>3.144*</td><td>0.0137</td><td>0.0618</td><td>0.8244</td><td>0.0137</td><td>0.0859</td><td>0.8771</td><td>yes</td><td>no</td><td>no</td><td>1714</td><td>Brazil, Chile, China, Hungary, India, Mexico, Malaysia, Poland, Turkey</td></tr>
+</tbody>
+</table>
+</body>
+</html>

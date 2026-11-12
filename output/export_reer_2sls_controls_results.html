@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>2SLS with controls in both stages</title>
+<style>
+body { font: 16px/1.5 Georgia, serif; max-width: 1100px; margin: 2em auto; padding: 0 1em; color: #20242a; }
+table { border-collapse: collapse; width: 100%; margin: 1em 0; font-size: .92em; }
+th, td { border-bottom: 1px solid #ccc; padding: .45em; text-align: right; vertical-align: top; }
+th:first-child, td:first-child { text-align: left; }
+.note { background: #fff5da; padding: 1em; border: 1px solid #e6d59d; }
+</style>
+</head>
+<body>
+<h1>Export trend and the real effective exchange rate</h1>
+<div class="note">
+<p>Second stage: log real effective exchange rate on the fitted lagged export trend, the controls, and country fixed effects.</p>
+<p>First stage: the lagged Hodrick-Prescott log export trend on one lagged WGI dimension, that dimension times contemporaneous GPR, the same controls, and country fixed effects. WGI and WGI × GPR are the excluded instruments. GPR is contemporaneous. Every other control is lagged one month.</p>
+<p>Each cell shows the coefficient, the country-clustered standard error in parentheses, and the 95% confidence interval. The standard errors use the 2SLS structural residual.</p>
+</div>
+<h2>Second stage</h2>
+<table>
+<thead><tr><th>Variable</th><th>Regulatory quality</th><th>Government effectiveness</th><th>Rule of law</th></tr></thead>
+<tbody>
+<tr><td>Fitted export trend</td><td>-0.1458<br>(0.0785)<br>[-0.3475, 0.0560]</td><td>-0.3072***<br>(0.0567)<br>[-0.4529, -0.1615]</td><td>-0.2086*<br>(0.0938)<br>[-0.4498, 0.0326]</td></tr><tr><td>GPR, contemporaneous</td><td>0.0001<br>(0.0001)<br>[-0.0001, 0.0003]</td><td>0.0002<br>(0.0001)<br>[-0.0001, 0.0005]</td><td>0.0001**<br>(0.0000)<br>[0.0000, 0.0002]</td></tr><tr><td>Policy rate, lagged</td><td>0.0020<br>(0.0018)<br>[-0.0027, 0.0067]</td><td>0.0061**<br>(0.0020)<br>[0.0009, 0.0113]</td><td>0.0036<br>(0.0024)<br>[-0.0025, 0.0097]</td></tr><tr><td>Log industrial production, lagged</td><td>-0.1498<br>(0.0950)<br>[-0.3939, 0.0943]</td><td>0.0460<br>(0.0835)<br>[-0.1685, 0.2605]</td><td>-0.0736<br>(0.0977)<br>[-0.3248, 0.1775]</td></tr><tr><td>Inflation, lagged</td><td>-0.0019<br>(0.0019)<br>[-0.0069, 0.0030]</td><td>0.0018<br>(0.0012)<br>[-0.0014, 0.0050]</td><td>-0.0005<br>(0.0024)<br>[-0.0066, 0.0056]</td></tr><tr><td>Log oil price, lagged</td><td>0.0468<br>(0.0390)<br>[-0.0535, 0.1471]</td><td>0.0192<br>(0.0327)<br>[-0.0647, 0.1032]</td><td>0.0361<br>(0.0399)<br>[-0.0666, 0.1387]</td></tr><tr><td>Log VIX, lagged</td><td>-0.0468***<br>(0.0109)<br>[-0.0748, -0.0188]</td><td>-0.0604***<br>(0.0074)<br>[-0.0795, -0.0413]</td><td>-0.0521***<br>(0.0066)<br>[-0.0689, -0.0352]</td></tr><tr><td>Log global EPU, lagged</td><td>0.0038<br>(0.0292)<br>[-0.0714, 0.0789]</td><td>0.0591<br>(0.0410)<br>[-0.0464, 0.1645]</td><td>0.0253<br>(0.0225)<br>[-0.0325, 0.0831]</td></tr><tr><td>Financial development, lagged</td><td>0.0067**<br>(0.0024)<br>[0.0005, 0.0130]</td><td>0.0036<br>(0.0020)<br>[-0.0016, 0.0087]</td><td>0.0055***<br>(0.0012)<br>[0.0024, 0.0086]</td></tr><tr><td>Debt/GDP, lagged</td><td>-0.0032**<br>(0.0012)<br>[-0.0062, -0.0002]</td><td>-0.0022*<br>(0.0010)<br>[-0.0048, 0.0004]</td><td>-0.0028**<br>(0.0009)<br>[-0.0051, -0.0006]</td></tr>
+<tr><td>Observations</td><td>956<br>6 countries<br>2006-02 to 2025-01</td><td>956<br>6 countries<br>2006-02 to 2025-01</td><td>956<br>6 countries<br>2006-02 to 2025-01</td></tr>
+<tr><td>First-stage partial F on WGI and WGI × GPR</td><td>53.48<br>p=0.0004<br>F(2, 5)</td><td>23.07<br>p=0.0030<br>F(2, 5)</td><td>55.17<br>p=0.0004<br>F(2, 5)</td></tr>
+</tbody>
+</table>
+<p><em>Significance:</em> *** p&lt;0.01, ** p&lt;0.05, * p&lt;0.10.</p>
+<h2>First stage</h2>
+<table>
+<thead><tr><th>Variable</th><th>Regulatory quality</th><th>Government effectiveness</th><th>Rule of law</th></tr></thead>
+<tbody>
+<tr><td>WGI, lagged</td><td>-0.9421***<br>(0.1670)<br>[-1.3713, -0.5129]</td><td>-0.9288<br>(0.4925)<br>[-2.1949, 0.3374]</td><td>-1.2044***<br>(0.1471)<br>[-1.5824, -0.8263]</td></tr><tr><td>WGI × GPR</td><td>0.0004<br>(0.0010)<br>[-0.0021, 0.0029]</td><td>-0.0005<br>(0.0012)<br>[-0.0035, 0.0026]</td><td>0.0003<br>(0.0007)<br>[-0.0017, 0.0022]</td></tr><tr><td>GPR, contemporaneous</td><td>-0.0007<br>(0.0009)<br>[-0.0029, 0.0016]</td><td>0.0009<br>(0.0015)<br>[-0.0030, 0.0047]</td><td>0.0002<br>(0.0009)<br>[-0.0020, 0.0024]</td></tr><tr><td>Policy rate, lagged</td><td>0.0263***<br>(0.0015)<br>[0.0225, 0.0301]</td><td>0.0196***<br>(0.0035)<br>[0.0105, 0.0287]</td><td>0.0199***<br>(0.0039)<br>[0.0099, 0.0299]</td></tr><tr><td>Log industrial production, lagged</td><td>0.9083**<br>(0.3531)<br>[0.0005, 1.8161]</td><td>1.3284**<br>(0.3911)<br>[0.3230, 2.3339]</td><td>0.5748<br>(0.2877)<br>[-0.1647, 1.3143]</td></tr><tr><td>Inflation, lagged</td><td>0.0209***<br>(0.0014)<br>[0.0172, 0.0245]</td><td>0.0167***<br>(0.0032)<br>[0.0085, 0.0250]</td><td>0.0221***<br>(0.0018)<br>[0.0174, 0.0268]</td></tr><tr><td>Log oil price, lagged</td><td>-0.1111<br>(0.0573)<br>[-0.2583, 0.0361]</td><td>-0.0691<br>(0.0478)<br>[-0.1919, 0.0537]</td><td>-0.1092<br>(0.0549)<br>[-0.2504, 0.0319]</td></tr><tr><td>Log VIX, lagged</td><td>-0.0052<br>(0.0597)<br>[-0.1586, 0.1481]</td><td>-0.0337<br>(0.0806)<br>[-0.2410, 0.1735]</td><td>-0.0536<br>(0.0735)<br>[-0.2425, 0.1354]</td></tr><tr><td>Log global EPU, lagged</td><td>0.0444<br>(0.0228)<br>[-0.0141, 0.1029]</td><td>0.3288**<br>(0.0817)<br>[0.1188, 0.5387]</td><td>0.1307***<br>(0.0265)<br>[0.0625, 0.1989]</td></tr><tr><td>Financial development, lagged</td><td>-0.0021<br>(0.0111)<br>[-0.0306, 0.0263]</td><td>-0.0090<br>(0.0097)<br>[-0.0338, 0.0158]</td><td>-0.0023<br>(0.0101)<br>[-0.0282, 0.0236]</td></tr><tr><td>Debt/GDP, lagged</td><td>0.0022<br>(0.0039)<br>[-0.0077, 0.0122]</td><td>0.0006<br>(0.0046)<br>[-0.0112, 0.0124]</td><td>0.0025<br>(0.0057)<br>[-0.0122, 0.0172]</td></tr>
+</tbody>
+</table>
+<h2>Countries</h2>
+<ul>
+<li>Regulatory quality: Chile, Hungary, Mexico, South Korea, Taiwan, Turkey</li><li>Government effectiveness: Chile, Hungary, Mexico, South Korea, Taiwan, Turkey</li><li>Rule of law: Chile, Hungary, Mexico, South Korea, Taiwan, Turkey</li>
+</ul>
+</body>
+</html>

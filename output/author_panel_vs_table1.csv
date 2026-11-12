@@ -1,0 +1,15 @@
+variable,judgment,paper_mean,paper_sd,paper_min,paper_max,n,our_mean,our_sd,our_min,our_max,note
+Capital flow volatility (SD),"same concept, moments differ",7.22,19.62,0.00,528.40,6505,8.848712716,21.51131294,0.003204636311,412.4257368,"3-month standard deviation of portfolio inflows, in billion dollars. This is the volatility outcome."
+Stock prices (log),"same concept, moments differ",4.32,0.47,2.37,5.46,8064,4.384899521,0.5918970398,1.983173212,6.912437893,"Log of the nominal equity index. The CPI-deflated series used in a stock regression has mean about -0.25, so it is not the Table 1 row."
+Long-term bond yield (%),close to the author's series,4.74,3.63,-0.65,42.18,6965,4.328014002,2.839647869,-0.649090909,16.06253494,Long-term government bond yield.
+Real effective exchange rate (log),close to the author's series,4.64,0.18,3.61,5.23,8064,4.64917579,0.1500350476,4.160288346,5.227680287,Log of the BIS broad real effective exchange rate.
+Geopolitical risk (index),close to the author's series,0.22,0.52,0.00,13.23,8352,0.2331850176,0.5519807588,0,13.22900963,"Raw country article share, the series printed in Table 1. The regression standardizes this within each country, which gives mean 0 and standard deviation 1."
+Policy rate (%),close to the author's series,4.37,4.87,-0.75,57.00,7863,4.060912502,4.479960139,-0.75,57,BIS policy rate.
+Real industrial production (log),"same concept, moments differ",4.58,0.31,2.29,5.81,6636,4.629414025,0.2072193666,3.613587613,5.592358286,Log of the monthly industrial-production index.
+Inflation (%),close to the author's series,4.06,6.18,-4.43,85.51,8352,4.061287856,6.188973667,-4.425830491,85.51478642,Year-on-year CPI inflation.
+Oil price (log),"same concept, moments differ",3.73,0.63,2.42,4.90,8352,3.770203437,0.3862876203,2.388404862,4.637431835,"Log of the oil price deflated by US CPI, with January 2000 as the base. The regression uses the nominal log, whose mean is about 4.05."
+"VIX, level",close to the author's series,19.59,7.54,10.13,62.67,8352,20.05319524,8.160979645,10.12545455,62.66894737,"Table 1 is labeled log, but the printed numbers are the VIX level."
+Global economic policy uncertainty (index),close to the author's series,140.26,74.91,49.23,431.73,8352,142.1990501,68.67871197,47.5894247,410.4991132,"GEPU current index, the level, repeated for every country in a month."
+Financial development (index),close to the author's series,0.60,0.19,0.11,0.93,7656,0.6006713984,0.1948623537,0.1088666096,0.9333177805,"IMF financial-development index, 0 to 1."
+Central bank independence (index),close to the author's series,0.66,0.19,0.14,0.93,8352,0.7230660914,0.1670921937,0.1420000046,0.92900002,Romelli central-bank independence index.
+Public debt to GDP (%),close to the author's series,68.77,36.40,11.82,216.33,8340,65.36043597,38.84445357,3.901,258.369,General-government gross debt as a percent of GDP.

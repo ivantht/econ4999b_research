@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Cleaned series and Table 1</title>
+<style>
+body { font: 16px/1.5 Georgia, serif; max-width: 1100px; margin: 2em auto; padding: 0 1em; color: #20242a; }
+table { border-collapse: collapse; width: 100%; margin: 1em 0; font-size: .86em; }
+th, td { border-bottom: 1px solid #ccc; padding: .4em; text-align: right; vertical-align: top; }
+th:nth-child(-n+2), td:nth-child(-n+2) { text-align: left; }
+.note { background: #fff5da; padding: 1em; border: 1px solid #e6d59d; }
+</style>
+</head>
+<body>
+<h1>Cleaned series beside Table 1</h1>
+<div class="note">
+<p>Cleaned moments use every non-missing observation from 2000 through 2023. The paper's moments are for 29 countries. Global series are one observation per month, so their means are not weighted by the number of countries.</p>
+<p>A row marked "a different variable" cannot be the source of a coefficient gap inside the same regression, because it is not the series the paper used. A row marked "close to the same series" can. "Same concept, moments differ" means the definition matches and the 17-country window does not reproduce the published moments.</p>
+</div>
+<table>
+<thead>
+<tr><th>Variable</th><th>Judgment</th><th>Paper mean</th><th>Paper SD</th><th>Paper min</th><th>Paper max</th><th>N</th><th>Our mean</th><th>Our SD</th><th>Our min</th><th>Our max</th></tr>
+</thead>
+<tbody>
+<tr><td>Capital flow volatility (SD)</td><td>a different variable</td><td>7.22</td><td>19.62</td><td>0.00</td><td>528.40</td><td>1536</td><td>-2111.76</td><td>6999.38</td><td>-39621.43</td><td>40981.60</td></tr><tr><td>Real stock prices (log)</td><td>not in cleaned</td><td>4.32</td><td>0.47</td><td>2.37</td><td>5.46</td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>Long-term bond yield (%)</td><td>not in cleaned</td><td>4.74</td><td>3.63</td><td>-0.65</td><td>42.18</td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>Real effective exchange rate (log)</td><td>same concept, moments differ</td><td>4.64</td><td>0.18</td><td>3.61</td><td>5.23</td><td>3744</td><td>4.69</td><td>0.25</td><td>4.16</td><td>6.25</td></tr><tr><td>Geopolitical risk (index)</td><td>same concept, moments differ</td><td>0.22</td><td>0.52</td><td>0.00</td><td>13.23</td><td>4896</td><td>0.11</td><td>0.26</td><td>0.00</td><td>8.70</td></tr><tr><td>Geopolitical risk, global index</td><td>a different variable</td><td></td><td></td><td></td><td></td><td>288</td><td>105.45</td><td>52.08</td><td>45.06</td><td>512.53</td></tr><tr><td>Policy rate (%)</td><td>same concept, moments differ</td><td>4.37</td><td>4.87</td><td>-0.75</td><td>57.00</td><td>3600</td><td>6.88</td><td>9.15</td><td>0.25</td><td>133.00</td></tr><tr><td>Real industrial production (log)</td><td>a different variable</td><td>4.58</td><td>0.31</td><td>2.29</td><td>5.81</td><td>171</td><td>4.61</td><td>0.26</td><td>3.94</td><td>5.33</td></tr><tr><td>Inflation (%)</td><td>same concept, moments differ</td><td>4.06</td><td>6.18</td><td>-4.43</td><td>85.51</td><td>4051</td><td>4.79</td><td>18.04</td><td>-100.00</td><td>211.40</td></tr><tr><td>Oil price (log)</td><td>close to the same series</td><td>3.73</td><td>0.63</td><td>2.42</td><td>4.90</td><td>288</td><td>4.05</td><td>0.45</td><td>2.81</td><td>4.90</td></tr><tr><td>VIX, level</td><td>close to the same series</td><td>19.59</td><td>7.54</td><td>10.13</td><td>62.67</td><td>288</td><td>20.13</td><td>8.04</td><td>9.51</td><td>59.89</td></tr><tr><td>VIX, log</td><td>a different variable</td><td>19.59</td><td>7.54</td><td>10.13</td><td>62.67</td><td>288</td><td>2.94</td><td>0.35</td><td>2.25</td><td>4.09</td></tr><tr><td>Global economic policy uncertainty (index)</td><td>close to the same series</td><td>140.26</td><td>74.91</td><td>49.23</td><td>431.73</td><td>288</td><td>142.20</td><td>68.79</td><td>47.59</td><td>410.50</td></tr><tr><td>Financial development (index)</td><td>a different variable</td><td>0.60</td><td>0.19</td><td>0.11</td><td>0.93</td><td>408</td><td>31.64</td><td>11.22</td><td>10.21</td><td>67.07</td></tr><tr><td>Central bank independence (index)</td><td>not in cleaned</td><td>0.66</td><td>0.19</td><td>0.14</td><td>0.93</td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>Public debt to GDP (%)</td><td>same concept, moments differ</td><td>68.77</td><td>36.40</td><td>11.82</td><td>216.33</td><td>396</td><td>49.05</td><td>22.35</td><td>3.90</td><td>153.37</td></tr>
+</tbody>
+</table>
+<h2>What each row is</h2>
+<ul>
+<li><strong>Capital flow volatility (SD).</strong> Cleaned file is the quarterly dollar flow, not a 3-month standard deviation of portfolio inflows.</li><li><strong>Real stock prices (log).</strong> No stock-price series in cleaned.</li><li><strong>Long-term bond yield (%).</strong> No bond-yield series in cleaned.</li><li><strong>Real effective exchange rate (log).</strong> Log of the cleaned real effective exchange rate.</li><li><strong>Geopolitical risk (index).</strong> Raw country article share in gpr_country.csv, restricted here to 2000-2023. The author&#x27;s regression then standardizes this within each country.</li><li><strong>Geopolitical risk, global index.</strong> Series GPR in gpr_index.csv. One global series scaled near 100, not the country article share.</li><li><strong>Policy rate (%).</strong> Monthly policy rate.</li><li><strong>Real industrial production (log).</strong> Cleaned index is annual. The paper&#x27;s row is the log of a monthly index.</li><li><strong>Inflation (%).</strong> Monthly year-on-year inflation.</li><li><strong>Oil price (log).</strong> Log of the monthly WTI spot price. One observation per month.</li><li><strong>VIX, level.</strong> Table 1 is labeled log, but its mean of 19.59 and maximum of 62.67 are the level. One observation per month.</li><li><strong>VIX, log.</strong> Natural log of the cleaned VIX. These moments are not the numbers printed in Table 1.</li><li><strong>Global economic policy uncertainty (index).</strong> GEPU current index, the level. One observation per month.</li><li><strong>Financial development (index).</strong> Column fd_fdi_ovrl. The paper uses the IMF index on a 0-to-1 scale.</li><li><strong>Central bank independence (index).</strong> Romelli&#x27;s index is not in cleaned.</li><li><strong>Public debt to GDP (%).</strong> Annual general-government gross debt as a percent of GDP.</li>
+</ul>
+</body>
+</html>

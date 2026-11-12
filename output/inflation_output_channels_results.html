@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Inflation and output channels</title>
+<style>
+body { font: 16px/1.5 Georgia, serif; max-width: 1100px; margin: 2em auto; padding: 0 1em; color: #20242a; }
+table { border-collapse: collapse; width: 100%; margin: 1em 0; font-size: .92em; }
+th, td { border-bottom: 1px solid #ccc; padding: .45em; text-align: right; vertical-align: top; }
+th:first-child, td:first-child { text-align: left; }
+.note { background: #fff5da; padding: 1em; border: 1px solid #e6d59d; }
+</style>
+</head>
+<body>
+<h1>Inflation and output as the export channels</h1>
+<div class="note">
+<p>Each equation includes GPR, lagged WGI, and their interaction, plus country fixed effects. WGI is centered on that equation's sample, so the GPR coefficient is the effect at the average institution and the interaction is the cushion around that average.</p>
+<p>A negative inflation interaction means a higher WGI reduces the inflation response to GPR. For the export-trend change, the interaction is how much a higher WGI changes the response of that growth rate to GPR. Standard errors in parentheses are clustered by country.</p>
+<p>Import/GDP is not available. The log oil price is the imported-cost control. The second equation uses the year-over-year log change of the real-export Hodrick-Prescott trend. That series is already a log change.</p>
+</div>
+
+<h2>Inflation, monthly</h2>
+<p>Controls are lagged one month. Industrial production uses the year of that lagged month.</p>
+<table>
+<thead><tr><th>Variable</th><th>Regulatory quality</th><th>Government effectiveness</th><th>Rule of law</th></tr></thead>
+<tbody>
+<tr><td>GPR</td><td>0.0019<br>(0.0030)</td><td>0.0018<br>(0.0030)</td><td>0.0015<br>(0.0033)</td></tr><tr><td>WGI, centered and lagged</td><td>-0.2569<br>(0.4372)</td><td>-1.0222<br>(0.5672)</td><td>-0.4485<br>(0.6984)</td></tr><tr><td>WGI × GPR</td><td>0.0025<br>(0.0055)</td><td>0.0042<br>(0.0051)</td><td>0.0002<br>(0.0057)</td></tr><tr><td>Inflation, lagged</td><td>0.9797***<br>(0.0057)</td><td>0.9804***<br>(0.0061)</td><td>0.9806***<br>(0.0053)</td></tr><tr><td>Policy rate, lagged</td><td>-0.0125<br>(0.0109)</td><td>-0.0168<br>(0.0139)</td><td>-0.0172<br>(0.0141)</td></tr><tr><td>Log oil price, lagged</td><td>0.4238<br>(0.3501)</td><td>0.4209<br>(0.3520)</td><td>0.4251<br>(0.3580)</td></tr><tr><td>Log industrial production, lagged</td><td>0.2852<br>(0.2871)</td><td>0.2768<br>(0.2467)</td><td>0.1465<br>(0.1832)</td></tr>
+<tr><td>Sample</td><td>1707<br>10 countries<br>2000-02 to 2026-01<br>R² 0.9788</td><td>1707<br>10 countries<br>2000-02 to 2026-01<br>R² 0.9788</td><td>1707<br>10 countries<br>2000-02 to 2026-01<br>R² 0.9788</td></tr>
+</tbody>
+</table>
+<ul><li>Regulatory quality: Chile, Egypt, Hungary, Mexico, South Korea, Taiwan, Tunisia, Turkey, Ukraine, Vietnam. WGI is centered at 0.3521.</li><li>Government effectiveness: Chile, Egypt, Hungary, Mexico, South Korea, Taiwan, Tunisia, Turkey, Ukraine, Vietnam. WGI is centered at 0.3714.</li><li>Rule of law: Chile, Egypt, Hungary, Mexico, South Korea, Taiwan, Tunisia, Turkey, Ukraine, Vietnam. WGI is centered at 0.1009.</li></ul>
+
+
+<h2>Real export trend change, monthly</h2>
+<p>The outcome is the year-over-year log change of the real-export Hodrick-Prescott trend. GPR is contemporaneous. WGI and the controls are lagged one month.</p>
+<table>
+<thead><tr><th>Variable</th><th>Regulatory quality</th><th>Government effectiveness</th><th>Rule of law</th></tr></thead>
+<tbody>
+<tr><td>GPR</td><td>0.0000<br>(0.0000)</td><td>-0.0000<br>(0.0000)</td><td>0.0000<br>(0.0000)</td></tr><tr><td>WGI, centered and lagged</td><td>0.0009<br>(0.0005)</td><td>0.0009<br>(0.0006)</td><td>0.0017**<br>(0.0007)</td></tr><tr><td>WGI × GPR</td><td>0.0000<br>(0.0000)</td><td>0.0000<br>(0.0000)</td><td>0.0000<br>(0.0000)</td></tr><tr><td>Real export trend change, lagged</td><td>1.0008***<br>(0.0014)</td><td>0.9993***<br>(0.0013)</td><td>1.0002***<br>(0.0011)</td></tr><tr><td>Policy rate, lagged</td><td>-0.0000<br>(0.0000)</td><td>-0.0000*<br>(0.0000)</td><td>-0.0000<br>(0.0000)</td></tr><tr><td>Log oil price, lagged</td><td>-0.0009**<br>(0.0003)</td><td>-0.0008**<br>(0.0003)</td><td>-0.0009***<br>(0.0003)</td></tr><tr><td>Inflation, lagged</td><td>0.0000<br>(0.0000)</td><td>0.0000<br>(0.0000)</td><td>0.0000<br>(0.0000)</td></tr>
+<tr><td>Sample</td><td>2840<br>16 countries<br>2007-02 to 2026-01<br>R² 0.9995</td><td>2840<br>16 countries<br>2007-02 to 2026-01<br>R² 0.9995</td><td>2840<br>16 countries<br>2007-02 to 2026-01<br>R² 0.9995</td></tr>
+</tbody>
+</table>
+<ul><li>Regulatory quality: Argentina, Chile, Egypt, Hungary, India, Indonesia, Mexico, Peru, Philippines, South Africa, South Korea, Thailand, Tunisia, Turkey, Ukraine, Vietnam. WGI is centered at 0.1950.</li><li>Government effectiveness: Argentina, Chile, Egypt, Hungary, India, Indonesia, Mexico, Peru, Philippines, South Africa, South Korea, Thailand, Tunisia, Turkey, Ukraine, Vietnam. WGI is centered at 0.2654.</li><li>Rule of law: Argentina, Chile, Egypt, Hungary, India, Indonesia, Mexico, Peru, Philippines, South Africa, South Korea, Thailand, Tunisia, Turkey, Ukraine, Vietnam. WGI is centered at -0.1156.</li></ul>
+
+<p><em>Significance:</em> *** p&lt;0.01, ** p&lt;0.05, * p&lt;0.10.</p>
+</body>
+</html>
