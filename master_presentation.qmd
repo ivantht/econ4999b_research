@@ -1,0 +1,409 @@
+---
+format:
+  revealjs:
+    css: master_presentation.css
+    width: 1280
+    height: 720
+    margin: 0.06
+    slide-number: true
+    transition: none
+    embed-resources: true
+---
+
+## [Presentation title] {.cover}
+
+::: {.cover-content}
+[Institution or course]
+
+# [Presentation title]
+
+**[Subtitle]**
+
+[Presenters]  
+[Date]
+:::
+
+## [Research question]
+
+::: {.question-banner}
+**[Main research question]**
+:::
+
+::: {.columns}
+::: {.column width="50%"}
+### [Objective]
+
+- **[Key term]**: [Placeholder]
+- **[Key term]**: [Placeholder]
+:::
+
+::: {.column width="50%"}
+### [Approach]
+
+- **[Key term]**: [Placeholder]
+- **[Key term]**: [Placeholder]
+:::
+:::
+
+## [Baseline model]
+
+::: {.columns}
+::: {.column width="46%"}
+::: {.finding-card}
+::: {.card-label}
+[Model overview]
+:::
+
+**[Specification]**
+
+- [Outcome and main variables]
+- [Controls and fixed effects]
+- [Sample and estimation]
+:::
+:::
+
+::: {.column width="54%"}
+::: {.table-area}
+**[Baseline equation or model summary]**
+
+| [Component] | [Placeholder] |
+|:------------|:--------------|
+| [Outcome] | [To be added] |
+| [Interaction] | [To be added] |
+| [Controls] | [To be added] |
+| [Sample] | [To be added] |
+:::
+:::
+:::
+
+## [Exchange-rate buffering: baseline results]
+
+::: {.columns}
+::: {.column width="40%"}
+::: {.finding-card}
+::: {.card-label}
+[Key finding]
+:::
+
+**[Buffering conclusion]**
+
+- [Coefficient and direction]
+- [Statistical significance]
+- [Interpretation]
+:::
+:::
+
+::: {.column width="60%"}
+::: {.table-area}
+**[Baseline regression results]**
+
+| [Variable] | [Model 1] | [Model 2] |
+|:-----------|:---------:|:---------:|
+| [Term] | [ ] | [ ] |
+| [Interaction] | [ ] | [ ] |
+| [Controls] | [ ] | [ ] |
+| [Observations] | [ ] | [ ] |
+
+::: {.table-note}
+[Standard errors and significance notes]
+:::
+:::
+:::
+:::
+
+## [Institutional aspects]
+
+::: {.columns}
+::: {.column width="40%"}
+::: {.finding-card}
+::: {.card-label}
+[Key finding]
+:::
+
+**[Institutional aspect]**
+
+- [Relevant interaction]
+- [Significance and direction]
+- [Comparison across aspects]
+:::
+:::
+
+::: {.column width="60%"}
+::: {.table-area}
+**[Institutional-aspect results]**
+
+| [Aspect] | [Estimate] | [Significance] |
+|:---------|:----------:|:--------------:|
+| [Aspect 1] | [ ] | [ ] |
+| [Aspect 2] | [ ] | [ ] |
+| [Aspect 3] | [ ] | [ ] |
+| [Additional aspects] | [ ] | [ ] |
+
+::: {.table-note}
+[Model and significance notes]
+:::
+:::
+:::
+:::
+
+## [Capital-flow volatility]
+
+::: {.columns}
+::: {.column width="40%"}
+::: {.finding-card}
+::: {.card-label}
+[Mechanism]
+:::
+
+**[Institution and capital flows]**
+
+- [Proposed channel]
+- [Estimate and significance]
+- [What higher volatility implies]
+:::
+:::
+
+::: {.column width="60%"}
+::: {.table-area}
+**[Capital-flow volatility results]**
+
+| [Variable] | [Estimate] | [Significance] |
+|:-----------|:----------:|:--------------:|
+| [Term] | [ ] | [ ] |
+| [Interaction] | [ ] | [ ] |
+| [Controls] | [ ] | [ ] |
+| [Observations] | [ ] | [ ] |
+
+::: {.table-note}
+[Definition and model notes]
+:::
+:::
+:::
+:::
+
+## [Net-export channel]
+
+::: {.columns}
+::: {.column width="50%"}
+::: {.finding-card}
+::: {.card-label}
+[Proposed channel]
+:::
+
+**[Institutional aspect]**
+
+- [Link to exchange rates]
+- [Link to net exports]
+- [Qualifications]
+:::
+:::
+
+::: {.column width="50%"}
+::: {.finding-card}
+::: {.card-label}
+[Evidence]
+:::
+
+**[Result or figure]**
+
+- [Estimate and significance]
+- [Interpretation]
+- [Limitations]
+:::
+:::
+:::
+
+## [Inflation results]
+
+::: {.columns}
+::: {.column width="40%"}
+::: {.finding-card}
+::: {.card-label}
+[Key finding]
+:::
+
+**[Inflation result]**
+
+- [Estimate and significance]
+- [Economic interpretation]
+- [Model qualification]
+:::
+:::
+
+::: {.column width="60%"}
+::: {.table-area}
+**[Inflation regression results]**
+
+| [Variable] | [Model 1] | [Model 2] |
+|:-----------|:---------:|:---------:|
+| [Term] | [ ] | [ ] |
+| [Interaction] | [ ] | [ ] |
+| [Controls] | [ ] | [ ] |
+| [Observations] | [ ] | [ ] |
+
+::: {.table-note}
+[Standard errors and significance notes]
+:::
+:::
+:::
+:::
+
+## [Real-export results]
+
+::: {.columns}
+::: {.column width="40%"}
+::: {.finding-card}
+::: {.card-label}
+[Key finding]
+:::
+
+**[Real-export result]**
+
+- [Estimate and significance]
+- [Economic interpretation]
+- [Model qualification]
+:::
+:::
+
+::: {.column width="60%"}
+::: {.table-area}
+**[Real-export regression results]**
+
+| [Variable] | [Model 1] | [Model 2] |
+|:-----------|:---------:|:---------:|
+| [Term] | [ ] | [ ] |
+| [Interaction] | [ ] | [ ] |
+| [Controls] | [ ] | [ ] |
+| [Observations] | [ ] | [ ] |
+
+::: {.table-note}
+[Standard errors and significance notes]
+:::
+:::
+:::
+:::
+
+## [Interpreting the results]
+
+::: {.stacked-point}
+::: {.point-label}
+[Result 1]
+:::
+**[Economic explanation]**: [Placeholder]
+:::
+
+::: {.stacked-point}
+::: {.point-label}
+[Result 2]
+:::
+**[Economic explanation]**: [Placeholder]
+:::
+
+::: {.stacked-point}
+::: {.point-label}
+[Result 3]
+:::
+**[Economic explanation and limitations]**: [Placeholder]
+:::
+
+## [Subsample tests: model comparison]
+
+::: {.columns}
+::: {.column width="50%"}
+::: {.finding-card}
+::: {.card-label}
+[Original model]
+:::
+
+- **[Specification]**: [Placeholder]
+- **[Sample]**: [Placeholder]
+- **[Controls]**: [Placeholder]
+:::
+:::
+
+::: {.column width="50%"}
+::: {.finding-card}
+::: {.card-label}
+[Robustness model]
+:::
+
+- **[Specification]**: [Placeholder]
+- **[Sample]**: [Placeholder]
+- **[Controls]**: [Placeholder]
+:::
+:::
+:::
+
+::: {.bottom-callout}
+**[What changes and what stays the same]**: [Placeholder]
+:::
+
+## [Subsample tests: results]
+
+::: {.table-area .wide-table}
+**[Original and subsample regression results]**
+
+| [Variable] | [Original] | [Subsample 1] | [Subsample 2] |
+|:-----------|:----------:|:-------------:|:-------------:|
+| [Term] | [ ] | [ ] | [ ] |
+| [Interaction] | [ ] | [ ] | [ ] |
+| [Controls] | [ ] | [ ] | [ ] |
+| [Observations] | [ ] | [ ] | [ ] |
+
+::: {.table-note}
+[Sample definitions, standard errors and significance notes]
+:::
+:::
+
+## [Subsample tests: key differences]
+
+::: {.columns}
+::: {.column width="50%"}
+### [Comparison 1]
+
+- **[Direction]**: [Placeholder]
+- **[Magnitude]**: [Placeholder]
+- **[Significance]**: [Placeholder]
+:::
+
+::: {.column width="50%"}
+### [Comparison 2]
+
+- **[Direction]**: [Placeholder]
+- **[Magnitude]**: [Placeholder]
+- **[Significance]**: [Placeholder]
+:::
+:::
+
+::: {.bottom-callout}
+**[Interpretation and any formal comparison]**: [Placeholder]
+:::
+
+## [Conclusion]
+
+::: {.stacked-point}
+::: {.point-label}
+[Buffering]
+:::
+**[Conclusion]**: [Placeholder]
+:::
+
+::: {.stacked-point}
+::: {.point-label}
+[Mechanisms]
+:::
+**[Conclusion]**: [Placeholder]
+:::
+
+::: {.stacked-point}
+::: {.point-label}
+[Robustness]
+:::
+**[Conclusion and limitations]**: [Placeholder]
+:::
+
+## [Questions] {.closing}
+
+::: {.closing-content}
+**[Questions]**
+:::

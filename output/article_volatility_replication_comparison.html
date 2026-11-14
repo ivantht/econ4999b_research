@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Article and replication: capital-flow volatility comparison</title>
+<style>
+  :root { color-scheme: light; }
+  body { max-width: 1200px; margin: 2rem auto; padding: 0 1.25rem 3rem;
+         color: #202b38; background: #fff; font: 16px/1.55 Georgia, serif; }
+  h1, h2, h3 { color: #173a57; line-height: 1.25; }
+  h1 { font-size: 2rem; }
+  h2 { margin-top: 2.2rem; border-bottom: 2px solid #d7e3eb; padding-bottom: .35rem; }
+  .lead { font-size: 1.08rem; }
+  .note { padding: .8rem 1rem; border-left: 4px solid #ba8c25; background: #fff8e6; }
+  .table-wrap { overflow-x: auto; }
+  table { width: 100%; border-collapse: collapse; margin: 1rem 0 1.4rem; font-size: .92rem; }
+  th, td { padding: .6rem .7rem; border-bottom: 1px solid #d9e1e6; text-align: left;
+           vertical-align: top; }
+  th { background: #edf4f8; color: #173a57; }
+  td.number, th.number { text-align: right; white-space: nowrap; }
+  caption { text-align: left; font-weight: bold; margin-bottom: .4rem; }
+  small, .muted { color: #53636e; }
+  a { color: #175c89; }
+  code { font-size: .92em; }
+  @media print { body { max-width: none; margin: 0; } h2 { break-after: avoid; }
+                 tr { break-inside: avoid; } }
+</style>
+</head>
+<body>
+<h1>Comparing the article with our capital-flow volatility model</h1>
+<p class="lead"><strong>Overall assessment:</strong> The outcome, country-specific geopolitical
+risk (GPR), control categories and country fixed effects follow the article's general approach.
+However, our World Governance Indicators (WGI) interaction models are an <strong>extension</strong>,
+not an exact replication: the specification and effective sample differ.</p>
+<div class="note">
+<strong>Scope:</strong> This comparison concerns capital-flow volatility, not the article's
+separate stock-price, bond-yield or exchange-rate outcomes. Our findings below are as reported in
+the tagged WGI results, not a fresh re-estimation.
+</div>
+<p><strong>Sources:</strong>
+<a href="../1.%20Source%20of%20Truth/how%20GRP%20affect%20FX%20and%20capital%20flow.md">Article text</a>;
+<a href="../../replication_cleaned_volatility_wgi_results.html">capital-flow volatility and WGI report</a>;
+<a href="../cleaned/replication_cleaned/country_month.csv">country-month panel</a>;
+<a href="replication_cleaned_table1_summary_stats.csv">our summary statistics</a>.
+The WGI report is located outside the repository; the relative link works while its current location is retained.
+</p>
+
+<h2>1. Model setup</h2>
+<div class="table-wrap"><table>
+<thead><tr><th>Feature</th><th>Original article</th><th>Our volatility report</th><th>Assessment</th></tr></thead>
+<tbody>
+<tr><td>Outcome</td><td>Three-month rolling standard deviation of monthly portfolio inflows.</td>
+<td>Three-month rolling standard deviation of portfolio inflows.</td>
+<td>Broadly aligned in concept. The 6,481 observations recomputable within our panel match a
+three-month sample standard deviation; the article's exact standard-deviation convention is not established by its text.</td></tr>
+<tr><td>GPR</td><td>Country-specific GPR, standardized by country.</td>
+<td>Country-specific GPR, standardized within country over the months entering each regression.</td>
+<td>Broadly aligned, but the standardization sample may differ.</td></tr>
+<tr><td>Controls</td><td>Domestic fundamentals, global factors and country characteristics,
+lagged one month.</td><td>The same control categories, lagged one month.</td>
+<td>Broadly aligned; individual series, transformations and coverage need verification.</td></tr>
+<tr><td>Fixed effects</td><td>Country fixed effects.</td><td>Country fixed effects.</td><td>Aligned.</td></tr>
+<tr><td>Institutions</td><td>Separate regressions by emerging/advanced status and levels of
+financial development, central-bank independence and debt.</td>
+<td>Includes a WGI score and a GPR × WGI interaction.</td>
+<td>Our extension answers a related but different question. WGI is not in the article's baseline Table 2.</td></tr>
+<tr><td>Standard errors</td><td>Table 2 reports standard errors, but its table note does not specify clustering.</td>
+<td>Reports within-model and country-clustered standard errors.</td>
+<td>Equivalence is not established; significance depends on the inference method.</td></tr>
+<tr><td>Dynamic analysis</td><td>Also estimates a panel structural VAR and impulse responses.</td>
+<td>The tagged report presents fixed-effects regressions, not a VAR.</td><td>Not yet replicated.</td></tr>
+</tbody></table></div>
+<p class="muted">The article's baseline GPR coefficient is not directly equivalent to the
+GPR coefficient in an interaction model, where the latter is conditional on the WGI value.</p>
+
+<h2>2. Variables and data</h2>
+<div class="table-wrap"><table>
+<thead><tr><th>Variable</th><th>Article</th><th>Our data or report</th><th>Alignment or concern</th></tr></thead>
+<tbody>
+<tr><td>Capital-flow volatility</td><td>OECD portfolio inflows; three-month rolling SD.</td>
+<td>Panel <code>capital_flow_volatility</code>; report describes units as billions of dollars.</td>
+<td>Construction is broadly consistent. Verify underlying series, units, revisions and missing-month treatment.</td></tr>
+<tr><td>GPR</td><td>Caldara–Iacoviello country-specific index.</td><td>Panel <code>gpr</code>, standardized by country.</td>
+<td>Plausible match; check source vintage and standardization window.</td></tr>
+<tr><td>Real output</td><td>Log real industrial production.</td><td>Lagged log industrial production.</td>
+<td>Same intended measure, but Indonesia, Philippines, Thailand and South Africa have no IP data in our panel.</td></tr>
+<tr><td>Inflation</td><td>Year-on-year CPI change.</td><td>Lagged panel <code>inflation</code>.</td>
+<td>Full-panel summary is close to the article's; this does not prove observation-by-observation identity.</td></tr>
+<tr><td>Policy rate</td><td>Central-bank policy rate.</td><td>Lagged panel <code>policy_rate</code>.</td>
+<td>Same intended measure; Ukraine has no policy-rate observations in our panel.</td></tr>
+<tr><td>Oil</td><td>WTI crude oil price.</td><td>Lagged log oil price.</td>
+<td>Same intended control, but summary statistics differ noticeably; check source vintage and transformation.</td></tr>
+<tr><td>VIX</td><td>Methodology specifies log VIX; Table 1 labels the variable log but reports values that resemble levels.</td>
+<td>Lagged log VIX; the panel's level-scale VIX is logged once.</td>
+<td>The article's labeling inconsistency remains unresolved.</td></tr>
+<tr><td>Global EPU</td><td>Global economic policy uncertainty; methodology specifies its logarithm.</td>
+<td>Lagged log global EPU.</td><td>Broadly aligned; index version and vintage may differ.</td></tr>
+<tr><td>Financial development</td><td>IMF Financial Development Index.</td><td>Lagged panel <code>financial_development</code>.</td>
+<td>Same intended concept, but our values end in December 2021.</td></tr>
+<tr><td>Central-bank independence</td><td>Romelli index.</td><td>Lagged panel <code>central_bank_independence</code>.</td>
+<td>Same intended concept; investigate version and country-year matching.</td></tr>
+<tr><td>Public debt/GDP</td><td>IMF World Economic Outlook measure.</td><td>Lagged panel <code>public_debt_gdp</code>.</td>
+<td>Same intended ratio, but our summary range and average differ.</td></tr>
+<tr><td>WGI</td><td>Not a baseline Table 2 control.</td>
+<td>Rule of law, government effectiveness, or regulatory quality; one aspect per regression.</td>
+<td>A useful extension, but not a baseline replication. The tagged report tests three of the six WGI aspects.</td></tr>
+</tbody></table></div>
+
+<h2>3. Sample differences</h2>
+<div class="table-wrap"><table>
+<thead><tr><th>Feature</th><th>Article</th><th>Our WGI volatility report</th></tr></thead>
+<tbody>
+<tr><td>Target period</td><td>2000-01 to 2023-12.</td><td>Same underlying panel window.</td></tr>
+<tr><td>Target countries</td><td>29.</td><td>29 in the source panel.</td></tr>
+<tr><td>Volatility regression</td><td>4,779 observations in Table 2.</td><td>4,609 observations across 24 countries.</td></tr>
+<tr><td>Effective period</td><td>The article states 2000–2023; variable availability varies.</td>
+<td>2000-02 to 2022-01.</td></tr>
+</tbody></table></div>
+<p>The five countries with no complete regression month are Indonesia, Philippines, Thailand,
+South Africa and Ukraine. The first four lack industrial production in our panel, and Ukraine
+lacks the policy rate. Financial-development values end in 2021-12, so the one-month lag
+prevents observations after 2022-01 from entering without filling.</p>
+<p class="note">The article describes an unbalanced panel. Its 29-country target does not prove
+that all 29 countries entered every individual regression.</p>
+
+<h2>4. Descriptive statistics: selected variables</h2>
+<div class="table-wrap"><table>
+<thead><tr><th>Variable</th><th class="number">Article mean</th><th class="number">Our mean</th><th>Initial assessment</th></tr></thead>
+<tbody>
+<tr><td>Capital-flow volatility</td><td class="number">7.22</td><td class="number">8.85</td><td>Noticeable difference.</td></tr>
+<tr><td>GPR index, raw</td><td class="number">0.22</td><td class="number">0.23</td><td>Close.</td></tr>
+<tr><td>Inflation</td><td class="number">4.06</td><td class="number">4.06</td><td>Close.</td></tr>
+<tr><td>Log industrial production</td><td class="number">4.58</td><td class="number">4.58</td><td>Mean is close; coverage and dispersion differ.</td></tr>
+<tr><td>Log oil price</td><td class="number">3.73</td><td class="number">4.05</td><td>Noticeable difference.</td></tr>
+<tr><td>Financial development</td><td class="number">0.60</td><td class="number">0.60</td><td>Close mean; end-date gap remains.</td></tr>
+<tr><td>Central-bank independence</td><td class="number">0.66</td><td class="number">0.72</td><td>Noticeable difference.</td></tr>
+<tr><td>Public debt/GDP</td><td class="number">68.77</td><td class="number">65.36</td><td>Some difference.</td></tr>
+</tbody></table></div>
+<p class="muted">Our figures summarize the full available country-month data, not necessarily
+the same observations as the article. Similar or different means alone do not establish why
+regression results differ.</p>
+
+<h2>5. Comparison of findings</h2>
+<p>The article's Table 2 reports a GPR coefficient of <strong>+0.867</strong> for capital-flow
+volatility, significant at the 5% level. Our report's GPR coefficients are negative and
+not significant using country-clustered standard errors:</p>
+<div class="table-wrap"><table>
+<thead><tr><th>WGI specification</th><th class="number">GPR coefficient</th><th class="number">Clustered p</th>
+<th class="number">GPR × WGI coefficient</th><th class="number">Clustered p</th></tr></thead>
+<tbody>
+<tr><td>Rule of law</td><td class="number">−0.585</td><td class="number">0.216</td><td class="number">−0.340</td><td class="number">0.038</td></tr>
+<tr><td>Government effectiveness</td><td class="number">−0.620</td><td class="number">0.220</td><td class="number">−0.630</td><td class="number">0.064</td></tr>
+<tr><td>Regulatory quality</td><td class="number">−0.641</td><td class="number">0.225</td><td class="number">−0.774</td><td class="number">0.117</td></tr>
+</tbody></table></div>
+<p>The interaction-model GPR coefficient is the estimated GPR association at the regression's
+average WGI score, whereas the article's coefficient comes from a model without WGI. Their signs
+differ, but this comparison does not isolate the cause. The rule-of-law interaction is significant
+at 5% with the report's clustered standard errors; it indicates a varying association, not proof
+that institutions causally reduce volatility.</p>
+
+<h2>6. Recommended next checks</h2>
+<ol>
+<li>Run the article's baseline without WGI on our available data. Then add WGI on the same
+observations to isolate the effect of the extension.</li>
+<li>Audit the portfolio-inflow series: source, units, rolling-window convention, missing months and vintage.</li>
+<li>Compare the regression sample itself: country-by-country observations, dates and missing controls.</li>
+<li>Investigate oil, central-bank independence and debt sources and transformations, where descriptive differences are visible.</li>
+<li>Confirm inference choices where the article's documentation permits; retain country-clustered
+results and report the limited number of clusters.</li>
+</ol>
+<div class="note"><strong>Bottom line:</strong> This is a reasonable research extension inspired
+by the article, but it is not yet a like-for-like replication. A no-WGI Table 2(1) benchmark
+on a documented common sample is the most useful next step.</div>
+</body>
+</html>

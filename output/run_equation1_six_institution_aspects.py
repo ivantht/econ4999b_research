@@ -38,6 +38,10 @@ PLOTS_HTML = os.path.join(OUT_DIR, "equation1_six_aspects_plots.html")
 EXPANDED17_RESULTS_CSV = os.path.join(OUT_DIR, "equation1_six_aspects_results_expanded17.csv")
 EXPANDED17_RESULTS_HTML = os.path.join(OUT_DIR, "equation1_six_aspects_results_expanded17.html")
 TWO_TABLES_HTML = os.path.join(OUT_DIR, "equation1_six_aspects_results_two_tables.html")
+WITHIN_RESULTS_CSV = os.path.join(OUT_DIR, "equation1_six_aspects_results_within_country_wgi.csv")
+WITHIN_EXPANDED_RESULTS_CSV = os.path.join(
+    OUT_DIR, "equation1_six_aspects_results_expanded17_within_country_wgi.csv"
+)
 
 START_YEAR = 2000
 END_YEAR = 2023
@@ -310,10 +314,12 @@ def load_cbi_annual():
     return out
 
 
-def fit_ols_cluster(rows, rhs_vars, target_var):
+def fit_ols_cluster(rows, rhs_vars, target_var, include_fe=True):
     countries = sorted({r["iso"] for r in rows})
-    if len(countries) < 2:
+    if include_fe and len(countries) < 2:
         return None, "Need at least two countries for FE model."
+    if len(rows) < 2:
+        return None, "Need at least two observations."
 
     y = np.array([r[target_var] for r in rows], dtype=float)
     X_cols = [np.ones(len(rows), dtype=float)]
@@ -321,9 +327,10 @@ def fit_ols_cluster(rows, rhs_vars, target_var):
     for v in rhs_vars:
         X_cols.append(np.array([r[v] for r in rows], dtype=float))
         names.append(v)
-    for c in countries[1:]:
-        X_cols.append(np.array([1.0 if r["iso"] == c else 0.0 for r in rows], dtype=float))
-        names.append(f"fe_{c}")
+    if include_fe:
+        for c in countries[1:]:
+            X_cols.append(np.array([1.0 if r["iso"] == c else 0.0 for r in rows], dtype=float))
+            names.append(f"fe_{c}")
 
     X = np.column_stack(X_cols)
     n, k = X.shape
@@ -379,6 +386,7 @@ def fit_ols_cluster(rows, rhs_vars, target_var):
         "n_country": g,
         "k_params": k,
         "r2": r2,
+        "resid": resid,
     }, None
 
 
@@ -501,7 +509,29 @@ def aspect_values_for_row(inst_map, row_country, year, aspect):
     return inst_map.get((inst_country, year, aspect))
 
 
-def build_model_data(panel, inst_map, aspect):
+def standardize_within_country(rows, value_key, out_key):
+    # Same method as article GPR: within country, (x - mean) / sample SD (ddof=1).
+    by_iso = defaultdict(list)
+    for i, row in enumerate(rows):
+        val = row.get(value_key)
+        if val is None or (isinstance(val, float) and math.isnan(val)):
+            row[out_key] = None
+            continue
+        by_iso[row["iso"]].append(i)
+        row[out_key] = None
+    for idxs in by_iso.values():
+        vals = np.array([rows[i][value_key] for i in idxs], dtype=float)
+        if len(vals) < 2:
+            continue
+        mean = float(np.mean(vals))
+        std = float(np.std(vals, ddof=1))
+        if std == 0 or math.isnan(std):
+            continue
+        for i in idxs:
+            rows[i][out_key] = (rows[i][value_key] - mean) / std
+
+
+def build_model_data(panel, inst_map, aspect, inst_standardization="pooled"):
     # fill yearly institution within country (ffill+bfill), then lag monthly
     by_iso = defaultdict(list)
     for r in panel:
@@ -550,16 +580,22 @@ def build_model_data(panel, inst_map, aspect):
     if inst_vals:
         mean = float(np.mean(np.array(inst_vals, dtype=float)))
         std = float(np.std(np.array(inst_vals, dtype=float)))
-        if std == 0:
+        if std == 0 or math.isnan(std):
             std = 1.0
     else:
         mean = None
         std = None
+    if inst_standardization == "within_country":
+        standardize_within_country(model_rows, "inst_l1", "inst_z_l1")
+        mean = None
+        std = None
+    else:
+        for r in model_rows:
+            if r["inst_l1"] is None or mean is None:
+                r["inst_z_l1"] = None
+            else:
+                r["inst_z_l1"] = (r["inst_l1"] - mean) / std
     for r in model_rows:
-        if r["inst_l1"] is None or mean is None:
-            r["inst_z_l1"] = None
-        else:
-            r["inst_z_l1"] = (r["inst_l1"] - mean) / std
         if r["gpr_z"] is None or r["inst_z_l1"] is None:
             r["gpr_x_inst"] = None
         else:
@@ -568,7 +604,7 @@ def build_model_data(panel, inst_map, aspect):
     return model_rows, mean, std, inst_fill_meta
 
 
-def run_models(expanded_target=False):
+def run_models(expanded_target=False, inst_standardization="pooled"):
     screened_names, screened_isos, unmapped_screened = load_screened_country_set()
     panel_iso_universe = load_panel_iso_universe()
     panel_iso_set = set(panel_iso_universe)
@@ -598,7 +634,9 @@ def run_models(expanded_target=False):
     results = []
     model_data_for_plot = {}
     for aspect in ASPECTS:
-        rows, inst_mean, inst_std, inst_fill_meta = build_model_data(panel, inst_map, aspect)
+        rows, inst_mean, inst_std, inst_fill_meta = build_model_data(
+            panel, inst_map, aspect, inst_standardization=inst_standardization
+        )
         sample = []
         missing_rhs_counts = defaultdict(int)
         for r in rows:
@@ -674,6 +712,7 @@ def run_models(expanded_target=False):
 
     meta = {
         "is_expanded_run": expanded_target,
+        "inst_standardization": inst_standardization,
         "screened_names": screened_names,
         "screened_isos": screened_isos,
         "target_isos": target_isos,
@@ -891,7 +930,15 @@ def write_results_html(results, meta, out_html):
         f.write("</body></html>")
 
 
-def write_two_tables_html(base_results, base_meta, exp_results, exp_meta, out_html):
+def write_two_tables_html(
+    base_results,
+    base_meta,
+    exp_results,
+    exp_meta,
+    out_html,
+    robust_base_results=None,
+    robust_exp_results=None,
+):
     def render_table_rows(f, rows):
         for r in rows:
             f.write(
@@ -970,6 +1017,43 @@ def write_two_tables_html(base_results, base_meta, exp_results, exp_meta, out_ht
         render_table_rows(f, exp_ok)
         f.write("</tbody></table>")
         f.write("<p><em>Significance stars:</em> *** p&lt;0.01, ** p&lt;0.05, * p&lt;0.10.</p>")
+
+        if robust_base_results is not None and robust_exp_results is not None:
+            robust_base_ok = [r for r in robust_base_results if "error" not in r]
+            robust_exp_ok = [r for r in robust_exp_results if "error" not in r]
+            f.write("<h2>Robustness: WGI standardized with the GPR method</h2>")
+            f.write(
+                "<div class='note'>"
+                "Institution scores in Tables 3 and 4 are standardized within country using the same formula as article GPR: "
+                "<code>(x − country mean) / country sample standard deviation</code> (ddof = 1), applied to the lagged monthly institution series. "
+                "Tables 1 and 2 instead use a pooled z-score across countries. GPR itself is unchanged."
+                "</div>"
+            )
+            f.write("<h3>Table 3 — 10-country sample, within-country WGI z-score</h3>")
+            f.write(
+                "<table><thead><tr>"
+                "<th>Aspect</th>"
+                "<th>β1 Institution</th><th>SE</th><th>p</th><th>95% CI</th>"
+                "<th>β2 GPR</th><th>SE</th><th>p</th><th>95% CI</th>"
+                "<th>β3 Interaction</th><th>SE</th><th>p</th><th>95% CI</th>"
+                "<th>N</th><th>Countries</th><th>R²</th>"
+                "</tr></thead><tbody>"
+            )
+            render_table_rows(f, robust_base_ok)
+            f.write("</tbody></table>")
+            f.write("<h3>Table 4 — Expanded sample, within-country WGI z-score</h3>")
+            f.write(
+                "<table><thead><tr>"
+                "<th>Aspect</th>"
+                "<th>β1 Institution</th><th>SE</th><th>p</th><th>95% CI</th>"
+                "<th>β2 GPR</th><th>SE</th><th>p</th><th>95% CI</th>"
+                "<th>β3 Interaction</th><th>SE</th><th>p</th><th>95% CI</th>"
+                "<th>N</th><th>Countries</th><th>R²</th>"
+                "</tr></thead><tbody>"
+            )
+            render_table_rows(f, robust_exp_ok)
+            f.write("</tbody></table>")
+            f.write("<p><em>Significance stars:</em> *** p&lt;0.01, ** p&lt;0.05, * p&lt;0.10.</p>")
         f.write("</body></html>")
 
 
@@ -1127,7 +1211,19 @@ def main():
     exp_results, _, exp_meta = run_models(expanded_target=True)
     write_results_csv(exp_results, EXPANDED17_RESULTS_CSV)
     write_results_html(exp_results, exp_meta, EXPANDED17_RESULTS_HTML)
-    write_two_tables_html(results, meta, exp_results, exp_meta, TWO_TABLES_HTML)
+    robust_results, _, _ = run_models(expanded_target=False, inst_standardization="within_country")
+    robust_exp_results, _, _ = run_models(expanded_target=True, inst_standardization="within_country")
+    write_results_csv(robust_results, WITHIN_RESULTS_CSV)
+    write_results_csv(robust_exp_results, WITHIN_EXPANDED_RESULTS_CSV)
+    write_two_tables_html(
+        results,
+        meta,
+        exp_results,
+        exp_meta,
+        TWO_TABLES_HTML,
+        robust_base_results=robust_results,
+        robust_exp_results=robust_exp_results,
+    )
     print("Generated:")
     print(RESULTS_CSV)
     print(RESULTS_HTML)
@@ -1135,6 +1231,8 @@ def main():
     print(EXPANDED17_RESULTS_CSV)
     print(EXPANDED17_RESULTS_HTML)
     print(TWO_TABLES_HTML)
+    print(WITHIN_RESULTS_CSV)
+    print(WITHIN_EXPANDED_RESULTS_CSV)
 
 
 if __name__ == "__main__":

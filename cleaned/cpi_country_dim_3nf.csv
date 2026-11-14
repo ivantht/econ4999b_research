@@ -1,0 +1,17 @@
+country,cpi_base_label,source_file
+Mexico,"index, 2018-07",input/monthly CPI.xlsx
+Argentina,"index, 2016-12",input/monthly CPI.xlsx
+Chile,"index, 2023",input/monthly CPI.xlsx
+Peru,"index, 2021-12",input/monthly CPI.xlsx
+Hungary,"index, 2006-12",input/monthly CPI.xlsx
+Ukraine,"index, 2010-12",input/monthly CPI.xlsx
+Turkey,"index, 2025",input/monthly CPI.xlsx
+Egypt,"index, 2018",input/monthly CPI.xlsx
+Tunisia,"index, 2015",input/monthly CPI.xlsx
+South Africa,"index, 2024-12",input/monthly CPI.xlsx
+India,"index, 2024",input/monthly CPI.xlsx
+Indonesia,"index, 2022",input/monthly CPI.xlsx
+Philippines,"index, 2018",input/monthly CPI.xlsx
+Thailand,"index, 2023",input/monthly CPI.xlsx
+Vietnam,"index, 2024",input/monthly CPI.xlsx
+South Korea,"index, 2020",input/monthly CPI.xlsx

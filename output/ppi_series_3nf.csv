@@ -1,0 +1,1158 @@
+series_id,country,series_code,indicator,frequency,unit,index_type,ppi_activity,transformation,reference_period
+1,"Armenia, Republic of",ARM.PPI.IX.Q,Producer price index (PPI),Quarterly,Index,Producer price index (PPI),Producer: goods and services,,2010=100
+2,"Kazakhstan, Republic of",KAZ.PPI.IX.Q,Producer price index (PPI),Quarterly,Index,Producer price index (PPI),Producer: goods and services,,2010=100
+3,Czechoslovakia,CSK.WPI.IX.Q,Wholesale price index (WPI),Quarterly,Index,Wholesale price index (WPI),Wholesale trade,,2010=100
+4,Lebanon,LBN.WPI.IX.Q,Wholesale price index (WPI),Quarterly,Index,Wholesale price index (WPI),Wholesale trade,,1970=100
+5,Zambia,ZMB.WPI.IX.Q,Wholesale price index (WPI),Quarterly,Index,Wholesale price index (WPI),Wholesale trade,,1995=100
+6,Ecuador,ECU.WPI.IX.Q,Wholesale price index (WPI),Quarterly,Index,Wholesale price index (WPI),Wholesale trade,,1990=100
+7,Cyprus,CYP.WPI.IX.Q,Wholesale price index (WPI),Quarterly,Index,Wholesale price index (WPI),Wholesale trade,,2010=100
+8,Thailand,THA.WPI.IX.Q,Wholesale price index (WPI),Quarterly,Index,Wholesale price index (WPI),Wholesale trade,,2000=100
+9,Japan,JPN.PPI.IX.Q,Producer price index (PPI),Quarterly,Index,Producer price index (PPI),Producer: goods and services,,2010=100
+10,Panama,PAN.WPI.IX.Q,Wholesale price index (WPI),Quarterly,Index,Wholesale price index (WPI),Wholesale trade,,2010=100
+11,Taiwan Province of China,TWN.WPI.IX.Q,Wholesale price index (WPI),Quarterly,Index,Wholesale price index (WPI),Wholesale trade,,2010=100
+12,"Ethiopia, The Federal Democratic Republic of",ETH.PPI.IX.Q,Producer price index (PPI),Quarterly,Index,Producer price index (PPI),Producer: goods and services,,2010=100
+13,Syrian Arab Republic,SYR.WPI.IX.Q,Wholesale price index (WPI),Quarterly,Index,Wholesale price index (WPI),Wholesale trade,,1975=100
+14,Sri Lanka,LKA.WPI.IX.Q,Wholesale price index (WPI),Quarterly,Index,Wholesale price index (WPI),Wholesale trade,,2010=100
+15,Jordan,JOR.WPI.IX.Q,Wholesale price index (WPI),Quarterly,Index,Wholesale price index (WPI),Wholesale trade,,2010=100
+16,Kuwait,KWT.WPI.IX.Q,Wholesale price index (WPI),Quarterly,Index,Wholesale price index (WPI),Wholesale trade,,2010=100
+17,Peru,PER.WPI.IX.Q,Wholesale price index (WPI),Quarterly,Index,Wholesale price index (WPI),Wholesale trade,,2010=100
+18,Iraq,IRQ.WPI.IX.Q,Wholesale price index (WPI),Quarterly,Index,Wholesale price index (WPI),Wholesale trade,,1975=100
+19,Australia,AUS.PPI.IX.Q,Producer price index (PPI),Quarterly,Index,Producer price index (PPI),Producer: goods and services,,2010=100
+20,Brazil,BRA.WPI.IX.Q,Wholesale price index (WPI),Quarterly,Index,Wholesale price index (WPI),Wholesale trade,,2010=100
+21,Montenegro,MNE.PPI.IX.Q,Producer price index (PPI),Quarterly,Index,Producer price index (PPI),Producer: goods and services,,2010=100
+22,Costa Rica,CRI.WPI.IX.Q,Wholesale price index (WPI),Quarterly,Index,Wholesale price index (WPI),Wholesale trade,,1990=100
+23,South Africa,ZAF.PPI.IX.Q,Producer price index (PPI),Quarterly,Index,Producer price index (PPI),Producer: goods and services,,2010=100
+24,Ecuador,ECU.PPI.IX.Q,Producer price index (PPI),Quarterly,Index,Producer price index (PPI),Producer: goods and services,,2010=100
+25,Sudan,SDN.PPI.IX.Q,Producer price index (PPI),Quarterly,Index,Producer price index (PPI),Producer: goods and services,,1970=100
+26,Canada,CAN.PPI.IX.Q,Producer price index (PPI),Quarterly,Index,Producer price index (PPI),Producer: goods and services,,2010=100
+27,Colombia,COL.PPI.IX.Q,Producer price index (PPI),Quarterly,Index,Producer price index (PPI),Producer: goods and services,,2010=100
+28,Germany,DEU.WPI.IX.Q,Wholesale price index (WPI),Quarterly,Index,Wholesale price index (WPI),Wholesale trade,,1990=100
+29,"Korea, Republic of",KOR.PPI.IX.Q,Producer price index (PPI),Quarterly,Index,Producer price index (PPI),Producer: goods and services,,2010=100
+30,"Iran, Islamic Republic of",IRN.WPI.IX.Q,Wholesale price index (WPI),Quarterly,Index,Wholesale price index (WPI),Wholesale trade,,2005=100
+31,Jordan,JOR.PPI.IX.Q,Producer price index (PPI),Quarterly,Index,Producer price index (PPI),Producer: goods and services,,2010=100
+32,Guatemala,GTM.PPI.IX.Q,Producer price index (PPI),Quarterly,Index,Producer price index (PPI),Producer: goods and services,,1985=100
+33,"Iran, Islamic Republic of",IRN.PPI.IX.Q,Producer price index (PPI),Quarterly,Index,Producer price index (PPI),Producer: goods and services,,2010=100
+34,"Venezuela, República Bolivariana de",VEN.WPI.IX.Q,Wholesale price index (WPI),Quarterly,Index,Wholesale price index (WPI),Wholesale trade,,2010=100
+35,Bangladesh,BGD.WPI.IX.Q,Wholesale price index (WPI),Quarterly,Index,Wholesale price index (WPI),Wholesale trade,,2005=100
+36,Israel,ISR.WPI.IX.Q,Wholesale price index (WPI),Quarterly,Index,Wholesale price index (WPI),Wholesale trade,,2010=100
+37,Japan,JPN.WPI.IX.Q,Wholesale price index (WPI),Quarterly,Index,Wholesale price index (WPI),Wholesale trade,,2000=100
+38,Zambia,ZMB.PPI.IX.Q,Producer price index (PPI),Quarterly,Index,Producer price index (PPI),Producer: goods and services,,1990=100
+39,Oman,OMN.PPI.IX.Q,Producer price index (PPI),Quarterly,Index,Producer price index (PPI),Producer: goods and services,,2010=100
+40,Mexico,MEX.WPI.IX.Q,Wholesale price index (WPI),Quarterly,Index,Wholesale price index (WPI),Wholesale trade,,2000=100
+41,Gabon,GAB.WPI.IX.Q,Wholesale price index (WPI),Quarterly,Index,Wholesale price index (WPI),Wholesale trade,,1965=100
+42,"Kazakhstan, Republic of",KAZ.WPI.IX.Q,Wholesale price index (WPI),Quarterly,Index,Wholesale price index (WPI),Wholesale trade,,2010=100
+43,Gabon,GAB.PPI.IX.Q,Producer price index (PPI),Quarterly,Index,Producer price index (PPI),Producer: goods and services,,1985=100
+44,"Korea, Republic of",KOR.WPI.IX.Q,Wholesale price index (WPI),Quarterly,Index,Wholesale price index (WPI),Wholesale trade,,1990=100
+45,"Azerbaijan, Republic of",AZE.PPI.IX.Q,Producer price index (PPI),Quarterly,Index,Producer price index (PPI),Producer: goods and services,,2010=100
+46,Australia,AUS.WPI.IX.Q,Wholesale price index (WPI),Quarterly,Index,Wholesale price index (WPI),Wholesale trade,,1995=100
+47,India,IND.PPI.IX.Q,Producer price index (PPI),Quarterly,Index,Producer price index (PPI),Producer: goods and services,,2010=100
+48,Iceland,ISL.PPI.IX.Q,Producer price index (PPI),Quarterly,Index,Producer price index (PPI),Producer: goods and services,,2010=100
+49,Israel,ISR.PPI.IX.Q,Producer price index (PPI),Quarterly,Index,Producer price index (PPI),Producer: goods and services,,2010=100
+50,Dominican Republic,DOM.WPI.IX.Q,Wholesale price index (WPI),Quarterly,Index,Wholesale price index (WPI),Wholesale trade,,1970=100
+51,"Croatia, Republic of",HRV.WPI.IX.Q,Wholesale price index (WPI),Quarterly,Index,Wholesale price index (WPI),Wholesale trade,,1995=100
+52,Euro Area (EA),G163.PPI.YOY_PCH_PT.A,Producer price index (PPI),Annual,Percent,Producer price index (PPI),Producer: goods and services,Year-over-year (YOY) percent change,
+53,Euro Area (EA),G163.PPI.POP_PCH_PT.A,Producer price index (PPI),Annual,Percent,Producer price index (PPI),Producer: goods and services,Period-over-preceding period percent change,
+54,"Iran, Islamic Republic of",IRN.WPI.IX.A,Wholesale price index (WPI),Annual,Index,Wholesale price index (WPI),Wholesale trade,,2005=100
+55,Thailand,THA.WPI.IX.A,Wholesale price index (WPI),Annual,Index,Wholesale price index (WPI),Wholesale trade,,2000=100
+56,Japan,JPN.PPI.IX.A,Producer price index (PPI),Annual,Index,Producer price index (PPI),Producer: goods and services,,2010=100
+57,Slovak Republic,SVK.WPI.IX.A,Wholesale price index (WPI),Annual,Index,Wholesale price index (WPI),Wholesale trade,,1990=100
+58,Cyprus,CYP.WPI.IX.A,Wholesale price index (WPI),Annual,Index,Wholesale price index (WPI),Wholesale trade,,2010=100
+59,Syrian Arab Republic,SYR.WPI.IX.A,Wholesale price index (WPI),Annual,Index,Wholesale price index (WPI),Wholesale trade,,2005=100
+60,Zambia,ZMB.WPI.IX.A,Wholesale price index (WPI),Annual,Index,Wholesale price index (WPI),Wholesale trade,,1995=100
+61,Ecuador,ECU.WPI.IX.A,Wholesale price index (WPI),Annual,Index,Wholesale price index (WPI),Wholesale trade,,1990=100
+62,Zambia,ZMB.PPI.IX.A,Producer price index (PPI),Annual,Index,Producer price index (PPI),Producer: goods and services,,1990=100
+63,Lebanon,LBN.WPI.IX.A,Wholesale price index (WPI),Annual,Index,Wholesale price index (WPI),Wholesale trade,,1970=100
+64,"Armenia, Republic of",ARM.PPI.IX.A,Producer price index (PPI),Annual,Index,Producer price index (PPI),Producer: goods and services,,2010=100
+65,Jordan,JOR.WPI.IX.A,Wholesale price index (WPI),Annual,Index,Wholesale price index (WPI),Wholesale trade,,2010=100
+66,Kuwait,KWT.WPI.IX.A,Wholesale price index (WPI),Annual,Index,Wholesale price index (WPI),Wholesale trade,,2010=100
+67,Australia,AUS.PPI.IX.A,Producer price index (PPI),Annual,Index,Producer price index (PPI),Producer: goods and services,,2010=100
+68,Canada,CAN.PPI.IX.A,Producer price index (PPI),Annual,Index,Producer price index (PPI),Producer: goods and services,,2010=100
+69,Ecuador,ECU.PPI.IX.A,Producer price index (PPI),Annual,Index,Producer price index (PPI),Producer: goods and services,,2010=100
+70,Czechoslovakia,CSK.WPI.IX.A,Wholesale price index (WPI),Annual,Index,Wholesale price index (WPI),Wholesale trade,,2010=100
+71,"Venezuela, República Bolivariana de",VEN.WPI.IX.A,Wholesale price index (WPI),Annual,Index,Wholesale price index (WPI),Wholesale trade,,2010=100
+72,Iraq,IRQ.WPI.IX.A,Wholesale price index (WPI),Annual,Index,Wholesale price index (WPI),Wholesale trade,,1975=100
+73,"Ethiopia, The Federal Democratic Republic of",ETH.PPI.IX.A,Producer price index (PPI),Annual,Index,Producer price index (PPI),Producer: goods and services,,2010=100
+74,Israel,ISR.WPI.IX.A,Wholesale price index (WPI),Annual,Index,Wholesale price index (WPI),Wholesale trade,,2010=100
+75,Spain,ESP.WPI.IX.A,Wholesale price index (WPI),Annual,Index,Wholesale price index (WPI),Wholesale trade,,1975=100
+76,Oman,OMN.PPI.IX.A,Producer price index (PPI),Annual,Index,Producer price index (PPI),Producer: goods and services,,2010=100
+77,Colombia,COL.PPI.IX.M,Producer price index (PPI),Monthly,Index,Producer price index (PPI),Producer: goods and services,,2010=100
+78,Mexico,MEX.WPI.IX.A,Wholesale price index (WPI),Annual,Index,Wholesale price index (WPI),Wholesale trade,,2000=100
+79,Peru,PER.WPI.IX.A,Wholesale price index (WPI),Annual,Index,Wholesale price index (WPI),Wholesale trade,,2010=100
+80,Gabon,GAB.WPI.IX.A,Wholesale price index (WPI),Annual,Index,Wholesale price index (WPI),Wholesale trade,,1965=100
+81,Costa Rica,CRI.WPI.IX.A,Wholesale price index (WPI),Annual,Index,Wholesale price index (WPI),Wholesale trade,,1990=100
+82,"Kazakhstan, Republic of",KAZ.WPI.IX.A,Wholesale price index (WPI),Annual,Index,Wholesale price index (WPI),Wholesale trade,,2010=100
+83,Taiwan Province of China,TWN.WPI.IX.A,Wholesale price index (WPI),Annual,Index,Wholesale price index (WPI),Wholesale trade,,2010=100
+84,Colombia,COL.PPI.IX.A,Producer price index (PPI),Annual,Index,Producer price index (PPI),Producer: goods and services,,2010=100
+85,"Korea, Republic of",KOR.WPI.IX.A,Wholesale price index (WPI),Annual,Index,Wholesale price index (WPI),Wholesale trade,,1990=100
+86,Gabon,GAB.PPI.IX.A,Producer price index (PPI),Annual,Index,Producer price index (PPI),Producer: goods and services,,1985=100
+87,"Azerbaijan, Republic of",AZE.PPI.IX.A,Producer price index (PPI),Annual,Index,Producer price index (PPI),Producer: goods and services,,2010=100
+88,Montenegro,MNE.PPI.IX.A,Producer price index (PPI),Annual,Index,Producer price index (PPI),Producer: goods and services,,2010=100
+89,"Iran, Islamic Republic of",IRN.PPI.IX.A,Producer price index (PPI),Annual,Index,Producer price index (PPI),Producer: goods and services,,2010=100
+90,Japan,JPN.WPI.IX.A,Wholesale price index (WPI),Annual,Index,Wholesale price index (WPI),Wholesale trade,,2000=100
+91,"Kazakhstan, Republic of",KAZ.PPI.IX.A,Producer price index (PPI),Annual,Index,Producer price index (PPI),Producer: goods and services,,2010=100
+92,"Iran, Islamic Republic of",IRN.PPI.IX.M,Producer price index (PPI),Monthly,Index,Producer price index (PPI),Producer: goods and services,,2010=100
+93,Brazil,BRA.WPI.IX.A,Wholesale price index (WPI),Annual,Index,Wholesale price index (WPI),Wholesale trade,,2010=100
+94,Australia,AUS.WPI.IX.A,Wholesale price index (WPI),Annual,Index,Wholesale price index (WPI),Wholesale trade,,1995=100
+95,Israel,ISR.PPI.IX.A,Producer price index (PPI),Annual,Index,Producer price index (PPI),Producer: goods and services,,2010=100
+96,Jordan,JOR.PPI.IX.A,Producer price index (PPI),Annual,Index,Producer price index (PPI),Producer: goods and services,,2010=100
+97,South Africa,ZAF.PPI.IX.A,Producer price index (PPI),Annual,Index,Producer price index (PPI),Producer: goods and services,,2010=100
+98,India,IND.PPI.IX.A,Producer price index (PPI),Annual,Index,Producer price index (PPI),Producer: goods and services,,2010=100
+99,Iceland,ISL.PPI.IX.A,Producer price index (PPI),Annual,Index,Producer price index (PPI),Producer: goods and services,,2010=100
+100,Germany,DEU.WPI.IX.A,Wholesale price index (WPI),Annual,Index,Wholesale price index (WPI),Wholesale trade,,1990=100
+101,"Korea, Republic of",KOR.PPI.IX.A,Producer price index (PPI),Annual,Index,Producer price index (PPI),Producer: goods and services,,2010=100
+102,Panama,PAN.WPI.IX.A,Wholesale price index (WPI),Annual,Index,Wholesale price index (WPI),Wholesale trade,,2010=100
+103,Sri Lanka,LKA.WPI.IX.A,Wholesale price index (WPI),Annual,Index,Wholesale price index (WPI),Wholesale trade,,2010=100
+104,Guatemala,GTM.PPI.IX.A,Producer price index (PPI),Annual,Index,Producer price index (PPI),Producer: goods and services,,1985=100
+105,"Croatia, Republic of",HRV.WPI.IX.A,Wholesale price index (WPI),Annual,Index,Wholesale price index (WPI),Wholesale trade,,1995=100
+106,Sudan,SDN.PPI.IX.A,Producer price index (PPI),Annual,Index,Producer price index (PPI),Producer: goods and services,,1975=100
+107,Australia,AUS.PPI.IX.M,Producer price index (PPI),Monthly,Index,Producer price index (PPI),Producer: goods and services,,2010=100
+108,Bangladesh,BGD.WPI.IX.A,Wholesale price index (WPI),Annual,Index,Wholesale price index (WPI),Wholesale trade,,2005=100
+109,Dominican Republic,DOM.WPI.IX.A,Wholesale price index (WPI),Annual,Index,Wholesale price index (WPI),Wholesale trade,,1970=100
+110,Israel,ISR.WPI.IX.M,Wholesale price index (WPI),Monthly,Index,Wholesale price index (WPI),Wholesale trade,,2010=100
+111,"Venezuela, República Bolivariana de",VEN.WPI.IX.M,Wholesale price index (WPI),Monthly,Index,Wholesale price index (WPI),Wholesale trade,,2010=100
+112,Jordan,JOR.PPI.IX.M,Producer price index (PPI),Monthly,Index,Producer price index (PPI),Producer: goods and services,,2010=100
+113,"Armenia, Republic of",ARM.PPI.IX.M,Producer price index (PPI),Monthly,Index,Producer price index (PPI),Producer: goods and services,,2010=100
+114,Kuwait,KWT.WPI.IX.M,Wholesale price index (WPI),Monthly,Index,Wholesale price index (WPI),Wholesale trade,,2010=100
+115,Thailand,THA.WPI.IX.M,Wholesale price index (WPI),Monthly,Index,Wholesale price index (WPI),Wholesale trade,,2000=100
+116,South Africa,ZAF.PPI.IX.M,Producer price index (PPI),Monthly,Index,Producer price index (PPI),Producer: goods and services,,2010=100
+117,Peru,PER.WPI.IX.M,Wholesale price index (WPI),Monthly,Index,Wholesale price index (WPI),Wholesale trade,,2010=100
+118,Cyprus,CYP.WPI.IX.M,Wholesale price index (WPI),Monthly,Index,Wholesale price index (WPI),Wholesale trade,,2010=100
+119,Czechoslovakia,CSK.WPI.IX.M,Wholesale price index (WPI),Monthly,Index,Wholesale price index (WPI),Wholesale trade,,2010=100
+120,Lebanon,LBN.WPI.IX.M,Wholesale price index (WPI),Monthly,Index,Wholesale price index (WPI),Wholesale trade,,1970=100
+121,"Kazakhstan, Republic of",KAZ.PPI.IX.M,Producer price index (PPI),Monthly,Index,Producer price index (PPI),Producer: goods and services,,2010=100
+122,"Iran, Islamic Republic of",IRN.WPI.IX.M,Wholesale price index (WPI),Monthly,Index,Wholesale price index (WPI),Wholesale trade,,2005=100
+123,Japan,JPN.WPI.IX.M,Wholesale price index (WPI),Monthly,Index,Wholesale price index (WPI),Wholesale trade,,2000=100
+124,Ecuador,ECU.WPI.IX.M,Wholesale price index (WPI),Monthly,Index,Wholesale price index (WPI),Wholesale trade,,1990=100
+125,Bangladesh,BGD.WPI.IX.M,Wholesale price index (WPI),Monthly,Index,Wholesale price index (WPI),Wholesale trade,,2005=100
+126,Taiwan Province of China,TWN.WPI.IX.M,Wholesale price index (WPI),Monthly,Index,Wholesale price index (WPI),Wholesale trade,,2010=100
+127,Syrian Arab Republic,SYR.WPI.IX.M,Wholesale price index (WPI),Monthly,Index,Wholesale price index (WPI),Wholesale trade,,1975=100
+128,Costa Rica,CRI.WPI.IX.M,Wholesale price index (WPI),Monthly,Index,Wholesale price index (WPI),Wholesale trade,,1990=100
+129,"Azerbaijan, Republic of",AZE.PPI.IX.M,Producer price index (PPI),Monthly,Index,Producer price index (PPI),Producer: goods and services,,2010=100
+130,Sri Lanka,LKA.WPI.IX.M,Wholesale price index (WPI),Monthly,Index,Wholesale price index (WPI),Wholesale trade,,2010=100
+131,Brazil,BRA.WPI.IX.M,Wholesale price index (WPI),Monthly,Index,Wholesale price index (WPI),Wholesale trade,,2010=100
+132,"Ethiopia, The Federal Democratic Republic of",ETH.PPI.IX.M,Producer price index (PPI),Monthly,Index,Producer price index (PPI),Producer: goods and services,,2010=100
+133,Mexico,MEX.WPI.IX.M,Wholesale price index (WPI),Monthly,Index,Wholesale price index (WPI),Wholesale trade,,2000=100
+134,"Croatia, Republic of",HRV.WPI.IX.M,Wholesale price index (WPI),Monthly,Index,Wholesale price index (WPI),Wholesale trade,,1995=100
+135,Japan,JPN.PPI.IX.M,Producer price index (PPI),Monthly,Index,Producer price index (PPI),Producer: goods and services,,2010=100
+136,Iraq,IRQ.WPI.IX.M,Wholesale price index (WPI),Monthly,Index,Wholesale price index (WPI),Wholesale trade,,1975=100
+137,Canada,CAN.PPI.IX.M,Producer price index (PPI),Monthly,Index,Producer price index (PPI),Producer: goods and services,,2010=100
+138,Montenegro,MNE.PPI.IX.M,Producer price index (PPI),Monthly,Index,Producer price index (PPI),Producer: goods and services,,2010=100
+139,Ecuador,ECU.PPI.IX.M,Producer price index (PPI),Monthly,Index,Producer price index (PPI),Producer: goods and services,,2010=100
+140,Australia,AUS.WPI.IX.M,Wholesale price index (WPI),Monthly,Index,Wholesale price index (WPI),Wholesale trade,,1995=100
+141,"Korea, Republic of",KOR.WPI.IX.M,Wholesale price index (WPI),Monthly,Index,Wholesale price index (WPI),Wholesale trade,,1990=100
+142,Germany,DEU.WPI.IX.M,Wholesale price index (WPI),Monthly,Index,Wholesale price index (WPI),Wholesale trade,,1990=100
+143,India,IND.PPI.IX.M,Producer price index (PPI),Monthly,Index,Producer price index (PPI),Producer: goods and services,,2010=100
+144,Dominican Republic,DOM.WPI.IX.M,Wholesale price index (WPI),Monthly,Index,Wholesale price index (WPI),Wholesale trade,,1970=100
+145,Iceland,ISL.PPI.IX.M,Producer price index (PPI),Monthly,Index,Producer price index (PPI),Producer: goods and services,,2010=100
+146,"Korea, Republic of",KOR.PPI.IX.M,Producer price index (PPI),Monthly,Index,Producer price index (PPI),Producer: goods and services,,2010=100
+147,Israel,ISR.PPI.IX.M,Producer price index (PPI),Monthly,Index,Producer price index (PPI),Producer: goods and services,,2010=100
+148,"Kazakhstan, Republic of",KAZ.WPI.IX.M,Wholesale price index (WPI),Monthly,Index,Wholesale price index (WPI),Wholesale trade,,2010=100
+149,Guatemala,GTM.PPI.IX.M,Producer price index (PPI),Monthly,Index,Producer price index (PPI),Producer: goods and services,,1985=100
+150,Brazil,BRA.PPI.IX.Q,Producer price index (PPI),Quarterly,Index,Producer price index (PPI),Producer: goods and services,,2010=100
+151,Brazil,BRA.PPI.IX.A,Producer price index (PPI),Annual,Index,Producer price index (PPI),Producer: goods and services,,2010=100
+152,India,IND.WPI.IX.A,Wholesale price index (WPI),Annual,Index,Wholesale price index (WPI),Wholesale trade,,2010=100
+153,Brazil,BRA.PPI.IX.M,Producer price index (PPI),Monthly,Index,Producer price index (PPI),Producer: goods and services,,2010=100
+154,New Zealand,NZL.PPI.IX.A,Producer price index (PPI),Annual,Index,Producer price index (PPI),Producer: goods and services,,2010=100
+155,"Korea, Republic of",KOR.PPI.YOY_PCH_PT.A,Producer price index (PPI),Annual,Percent,Producer price index (PPI),Producer: goods and services,Year-over-year (YOY) percent change,
+156,"Korea, Republic of",KOR.WPI.YOY_PCH_PT.A,Wholesale price index (WPI),Annual,Percent,Wholesale price index (WPI),Wholesale trade,Year-over-year (YOY) percent change,
+157,"Iran, Islamic Republic of",IRN.WPI.YOY_PCH_PT.A,Wholesale price index (WPI),Annual,Percent,Wholesale price index (WPI),Wholesale trade,Year-over-year (YOY) percent change,
+158,Ecuador,ECU.WPI.POP_PCH_PT.A,Wholesale price index (WPI),Annual,Percent,Wholesale price index (WPI),Wholesale trade,Period-over-preceding period percent change,
+159,Ecuador,ECU.PPI.YOY_PCH_PT.A,Producer price index (PPI),Annual,Percent,Producer price index (PPI),Producer: goods and services,Year-over-year (YOY) percent change,
+160,Iceland,ISL.PPI.YOY_PCH_PT.A,Producer price index (PPI),Annual,Percent,Producer price index (PPI),Producer: goods and services,Year-over-year (YOY) percent change,
+161,Kuwait,KWT.WPI.POP_PCH_PT.A,Wholesale price index (WPI),Annual,Percent,Wholesale price index (WPI),Wholesale trade,Period-over-preceding period percent change,
+162,"Kazakhstan, Republic of",KAZ.WPI.POP_PCH_PT.A,Wholesale price index (WPI),Annual,Percent,Wholesale price index (WPI),Wholesale trade,Period-over-preceding period percent change,
+163,Canada,CAN.PPI.YOY_PCH_PT.A,Producer price index (PPI),Annual,Percent,Producer price index (PPI),Producer: goods and services,Year-over-year (YOY) percent change,
+164,Brazil,BRA.PPI.POP_PCH_PT.A,Producer price index (PPI),Annual,Percent,Producer price index (PPI),Producer: goods and services,Period-over-preceding period percent change,
+165,Japan,JPN.WPI.POP_PCH_PT.A,Wholesale price index (WPI),Annual,Percent,Wholesale price index (WPI),Wholesale trade,Period-over-preceding period percent change,
+166,Brazil,BRA.PPI.YOY_PCH_PT.A,Producer price index (PPI),Annual,Percent,Producer price index (PPI),Producer: goods and services,Year-over-year (YOY) percent change,
+167,Iraq,IRQ.WPI.POP_PCH_PT.A,Wholesale price index (WPI),Annual,Percent,Wholesale price index (WPI),Wholesale trade,Period-over-preceding period percent change,
+168,"Venezuela, República Bolivariana de",VEN.WPI.YOY_PCH_PT.A,Wholesale price index (WPI),Annual,Percent,Wholesale price index (WPI),Wholesale trade,Year-over-year (YOY) percent change,
+169,Japan,JPN.PPI.POP_PCH_PT.A,Producer price index (PPI),Annual,Percent,Producer price index (PPI),Producer: goods and services,Period-over-preceding period percent change,
+170,"Kazakhstan, Republic of",KAZ.PPI.POP_PCH_PT.A,Producer price index (PPI),Annual,Percent,Producer price index (PPI),Producer: goods and services,Period-over-preceding period percent change,
+171,Brazil,BRA.WPI.POP_PCH_PT.A,Wholesale price index (WPI),Annual,Percent,Wholesale price index (WPI),Wholesale trade,Period-over-preceding period percent change,
+172,"Iran, Islamic Republic of",IRN.WPI.POP_PCH_PT.A,Wholesale price index (WPI),Annual,Percent,Wholesale price index (WPI),Wholesale trade,Period-over-preceding period percent change,
+173,Kuwait,KWT.WPI.YOY_PCH_PT.A,Wholesale price index (WPI),Annual,Percent,Wholesale price index (WPI),Wholesale trade,Year-over-year (YOY) percent change,
+174,New Zealand,NZL.PPI.YOY_PCH_PT.A,Producer price index (PPI),Annual,Percent,Producer price index (PPI),Producer: goods and services,Year-over-year (YOY) percent change,
+175,Oman,OMN.PPI.POP_PCH_PT.A,Producer price index (PPI),Annual,Percent,Producer price index (PPI),Producer: goods and services,Period-over-preceding period percent change,
+176,"Ethiopia, The Federal Democratic Republic of",ETH.PPI.POP_PCH_PT.A,Producer price index (PPI),Annual,Percent,Producer price index (PPI),Producer: goods and services,Period-over-preceding period percent change,
+177,Israel,ISR.PPI.YOY_PCH_PT.A,Producer price index (PPI),Annual,Percent,Producer price index (PPI),Producer: goods and services,Year-over-year (YOY) percent change,
+178,Canada,CAN.PPI.POP_PCH_PT.A,Producer price index (PPI),Annual,Percent,Producer price index (PPI),Producer: goods and services,Period-over-preceding period percent change,
+179,India,IND.WPI.YOY_PCH_PT.A,Wholesale price index (WPI),Annual,Percent,Wholesale price index (WPI),Wholesale trade,Year-over-year (YOY) percent change,
+180,Mexico,MEX.WPI.YOY_PCH_PT.A,Wholesale price index (WPI),Annual,Percent,Wholesale price index (WPI),Wholesale trade,Year-over-year (YOY) percent change,
+181,"Kazakhstan, Republic of",KAZ.PPI.YOY_PCH_PT.A,Producer price index (PPI),Annual,Percent,Producer price index (PPI),Producer: goods and services,Year-over-year (YOY) percent change,
+182,Colombia,COL.PPI.POP_PCH_PT.A,Producer price index (PPI),Annual,Percent,Producer price index (PPI),Producer: goods and services,Period-over-preceding period percent change,
+183,Slovak Republic,SVK.WPI.POP_PCH_PT.A,Wholesale price index (WPI),Annual,Percent,Wholesale price index (WPI),Wholesale trade,Period-over-preceding period percent change,
+184,Japan,JPN.PPI.YOY_PCH_PT.A,Producer price index (PPI),Annual,Percent,Producer price index (PPI),Producer: goods and services,Year-over-year (YOY) percent change,
+185,Australia,AUS.WPI.POP_PCH_PT.A,Wholesale price index (WPI),Annual,Percent,Wholesale price index (WPI),Wholesale trade,Period-over-preceding period percent change,
+186,Jordan,JOR.PPI.POP_PCH_PT.A,Producer price index (PPI),Annual,Percent,Producer price index (PPI),Producer: goods and services,Period-over-preceding period percent change,
+187,South Africa,ZAF.PPI.POP_PCH_PT.A,Producer price index (PPI),Annual,Percent,Producer price index (PPI),Producer: goods and services,Period-over-preceding period percent change,
+188,India,IND.PPI.POP_PCH_PT.A,Producer price index (PPI),Annual,Percent,Producer price index (PPI),Producer: goods and services,Period-over-preceding period percent change,
+189,India,IND.WPI.POP_PCH_PT.A,Wholesale price index (WPI),Annual,Percent,Wholesale price index (WPI),Wholesale trade,Period-over-preceding period percent change,
+190,South Africa,ZAF.PPI.YOY_PCH_PT.A,Producer price index (PPI),Annual,Percent,Producer price index (PPI),Producer: goods and services,Year-over-year (YOY) percent change,
+191,India,IND.PPI.YOY_PCH_PT.A,Producer price index (PPI),Annual,Percent,Producer price index (PPI),Producer: goods and services,Year-over-year (YOY) percent change,
+192,Australia,AUS.PPI.POP_PCH_PT.A,Producer price index (PPI),Annual,Percent,Producer price index (PPI),Producer: goods and services,Period-over-preceding period percent change,
+193,"Venezuela, República Bolivariana de",VEN.WPI.POP_PCH_PT.A,Wholesale price index (WPI),Annual,Percent,Wholesale price index (WPI),Wholesale trade,Period-over-preceding period percent change,
+194,Ecuador,ECU.PPI.POP_PCH_PT.A,Producer price index (PPI),Annual,Percent,Producer price index (PPI),Producer: goods and services,Period-over-preceding period percent change,
+195,Colombia,COL.PPI.YOY_PCH_PT.A,Producer price index (PPI),Annual,Percent,Producer price index (PPI),Producer: goods and services,Year-over-year (YOY) percent change,
+196,Japan,JPN.WPI.YOY_PCH_PT.A,Wholesale price index (WPI),Annual,Percent,Wholesale price index (WPI),Wholesale trade,Year-over-year (YOY) percent change,
+197,Lebanon,LBN.WPI.YOY_PCH_PT.A,Wholesale price index (WPI),Annual,Percent,Wholesale price index (WPI),Wholesale trade,Year-over-year (YOY) percent change,
+198,Israel,ISR.WPI.YOY_PCH_PT.A,Wholesale price index (WPI),Annual,Percent,Wholesale price index (WPI),Wholesale trade,Year-over-year (YOY) percent change,
+199,"Armenia, Republic of",ARM.PPI.YOY_PCH_PT.A,Producer price index (PPI),Annual,Percent,Producer price index (PPI),Producer: goods and services,Year-over-year (YOY) percent change,
+200,"Korea, Republic of",KOR.WPI.POP_PCH_PT.A,Wholesale price index (WPI),Annual,Percent,Wholesale price index (WPI),Wholesale trade,Period-over-preceding period percent change,
+201,Jordan,JOR.WPI.POP_PCH_PT.A,Wholesale price index (WPI),Annual,Percent,Wholesale price index (WPI),Wholesale trade,Period-over-preceding period percent change,
+202,Thailand,THA.WPI.POP_PCH_PT.M,Wholesale price index (WPI),Monthly,Percent,Wholesale price index (WPI),Wholesale trade,Period-over-preceding period percent change,
+203,Australia,AUS.PPI.YOY_PCH_PT.A,Producer price index (PPI),Annual,Percent,Producer price index (PPI),Producer: goods and services,Year-over-year (YOY) percent change,
+204,Thailand,THA.WPI.YOY_PCH_PT.A,Wholesale price index (WPI),Annual,Percent,Wholesale price index (WPI),Wholesale trade,Year-over-year (YOY) percent change,
+205,"Korea, Republic of",KOR.PPI.YOY_PCH_PT.M,Producer price index (PPI),Monthly,Percent,Producer price index (PPI),Producer: goods and services,Year-over-year (YOY) percent change,
+206,Australia,AUS.WPI.YOY_PCH_PT.A,Wholesale price index (WPI),Annual,Percent,Wholesale price index (WPI),Wholesale trade,Year-over-year (YOY) percent change,
+207,Slovak Republic,SVK.WPI.YOY_PCH_PT.A,Wholesale price index (WPI),Annual,Percent,Wholesale price index (WPI),Wholesale trade,Year-over-year (YOY) percent change,
+208,"Kazakhstan, Republic of",KAZ.WPI.YOY_PCH_PT.A,Wholesale price index (WPI),Annual,Percent,Wholesale price index (WPI),Wholesale trade,Year-over-year (YOY) percent change,
+209,Iceland,ISL.PPI.POP_PCH_PT.A,Producer price index (PPI),Annual,Percent,Producer price index (PPI),Producer: goods and services,Period-over-preceding period percent change,
+210,Israel,ISR.WPI.YOY_PCH_PT.M,Wholesale price index (WPI),Monthly,Percent,Wholesale price index (WPI),Wholesale trade,Year-over-year (YOY) percent change,
+211,"Armenia, Republic of",ARM.PPI.YOY_PCH_PT.M,Producer price index (PPI),Monthly,Percent,Producer price index (PPI),Producer: goods and services,Year-over-year (YOY) percent change,
+212,"Ethiopia, The Federal Democratic Republic of",ETH.PPI.POP_PCH_PT.M,Producer price index (PPI),Monthly,Percent,Producer price index (PPI),Producer: goods and services,Period-over-preceding period percent change,
+213,"Iran, Islamic Republic of",IRN.WPI.YOY_PCH_PT.M,Wholesale price index (WPI),Monthly,Percent,Wholesale price index (WPI),Wholesale trade,Year-over-year (YOY) percent change,
+214,Mexico,MEX.WPI.POP_PCH_PT.M,Wholesale price index (WPI),Monthly,Percent,Wholesale price index (WPI),Wholesale trade,Period-over-preceding period percent change,
+215,Ecuador,ECU.PPI.POP_PCH_PT.M,Producer price index (PPI),Monthly,Percent,Producer price index (PPI),Producer: goods and services,Period-over-preceding period percent change,
+216,Spain,ESP.WPI.YOY_PCH_PT.A,Wholesale price index (WPI),Annual,Percent,Wholesale price index (WPI),Wholesale trade,Year-over-year (YOY) percent change,
+217,Japan,JPN.WPI.POP_PCH_PT.M,Wholesale price index (WPI),Monthly,Percent,Wholesale price index (WPI),Wholesale trade,Period-over-preceding period percent change,
+218,Iraq,IRQ.WPI.YOY_PCH_PT.M,Wholesale price index (WPI),Monthly,Percent,Wholesale price index (WPI),Wholesale trade,Year-over-year (YOY) percent change,
+219,Japan,JPN.PPI.YOY_PCH_PT.M,Producer price index (PPI),Monthly,Percent,Producer price index (PPI),Producer: goods and services,Year-over-year (YOY) percent change,
+220,Japan,JPN.PPI.POP_PCH_PT.M,Producer price index (PPI),Monthly,Percent,Producer price index (PPI),Producer: goods and services,Period-over-preceding period percent change,
+221,Iraq,IRQ.WPI.POP_PCH_PT.M,Wholesale price index (WPI),Monthly,Percent,Wholesale price index (WPI),Wholesale trade,Period-over-preceding period percent change,
+222,Japan,JPN.WPI.YOY_PCH_PT.M,Wholesale price index (WPI),Monthly,Percent,Wholesale price index (WPI),Wholesale trade,Year-over-year (YOY) percent change,
+223,Lebanon,LBN.WPI.YOY_PCH_PT.M,Wholesale price index (WPI),Monthly,Percent,Wholesale price index (WPI),Wholesale trade,Year-over-year (YOY) percent change,
+224,"Ethiopia, The Federal Democratic Republic of",ETH.PPI.YOY_PCH_PT.M,Producer price index (PPI),Monthly,Percent,Producer price index (PPI),Producer: goods and services,Year-over-year (YOY) percent change,
+225,Colombia,COL.PPI.YOY_PCH_PT.M,Producer price index (PPI),Monthly,Percent,Producer price index (PPI),Producer: goods and services,Year-over-year (YOY) percent change,
+226,"Iran, Islamic Republic of",IRN.PPI.YOY_PCH_PT.M,Producer price index (PPI),Monthly,Percent,Producer price index (PPI),Producer: goods and services,Year-over-year (YOY) percent change,
+227,"Armenia, Republic of",ARM.PPI.POP_PCH_PT.M,Producer price index (PPI),Monthly,Percent,Producer price index (PPI),Producer: goods and services,Period-over-preceding period percent change,
+228,Brazil,BRA.WPI.POP_PCH_PT.M,Wholesale price index (WPI),Monthly,Percent,Wholesale price index (WPI),Wholesale trade,Period-over-preceding period percent change,
+229,Brazil,BRA.PPI.YOY_PCH_PT.M,Producer price index (PPI),Monthly,Percent,Producer price index (PPI),Producer: goods and services,Year-over-year (YOY) percent change,
+230,"Venezuela, República Bolivariana de",VEN.WPI.YOY_PCH_PT.M,Wholesale price index (WPI),Monthly,Percent,Wholesale price index (WPI),Wholesale trade,Year-over-year (YOY) percent change,
+231,Canada,CAN.PPI.YOY_PCH_PT.M,Producer price index (PPI),Monthly,Percent,Producer price index (PPI),Producer: goods and services,Year-over-year (YOY) percent change,
+232,Canada,CAN.PPI.POP_PCH_PT.M,Producer price index (PPI),Monthly,Percent,Producer price index (PPI),Producer: goods and services,Period-over-preceding period percent change,
+233,"Kazakhstan, Republic of",KAZ.PPI.POP_PCH_PT.M,Producer price index (PPI),Monthly,Percent,Producer price index (PPI),Producer: goods and services,Period-over-preceding period percent change,
+234,"Kazakhstan, Republic of",KAZ.PPI.YOY_PCH_PT.M,Producer price index (PPI),Monthly,Percent,Producer price index (PPI),Producer: goods and services,Year-over-year (YOY) percent change,
+235,Jordan,JOR.PPI.POP_PCH_PT.M,Producer price index (PPI),Monthly,Percent,Producer price index (PPI),Producer: goods and services,Period-over-preceding period percent change,
+236,Israel,ISR.PPI.YOY_PCH_PT.M,Producer price index (PPI),Monthly,Percent,Producer price index (PPI),Producer: goods and services,Year-over-year (YOY) percent change,
+237,Israel,ISR.PPI.POP_PCH_PT.M,Producer price index (PPI),Monthly,Percent,Producer price index (PPI),Producer: goods and services,Period-over-preceding period percent change,
+238,Brazil,BRA.WPI.YOY_PCH_PT.M,Wholesale price index (WPI),Monthly,Percent,Wholesale price index (WPI),Wholesale trade,Year-over-year (YOY) percent change,
+239,Brazil,BRA.PPI.POP_PCH_PT.M,Producer price index (PPI),Monthly,Percent,Producer price index (PPI),Producer: goods and services,Period-over-preceding period percent change,
+240,Kuwait,KWT.WPI.YOY_PCH_PT.M,Wholesale price index (WPI),Monthly,Percent,Wholesale price index (WPI),Wholesale trade,Year-over-year (YOY) percent change,
+241,Kuwait,KWT.WPI.POP_PCH_PT.M,Wholesale price index (WPI),Monthly,Percent,Wholesale price index (WPI),Wholesale trade,Period-over-preceding period percent change,
+242,Iceland,ISL.PPI.YOY_PCH_PT.M,Producer price index (PPI),Monthly,Percent,Producer price index (PPI),Producer: goods and services,Year-over-year (YOY) percent change,
+243,"Venezuela, República Bolivariana de",VEN.WPI.POP_PCH_PT.M,Wholesale price index (WPI),Monthly,Percent,Wholesale price index (WPI),Wholesale trade,Period-over-preceding period percent change,
+244,South Africa,ZAF.PPI.YOY_PCH_PT.M,Producer price index (PPI),Monthly,Percent,Producer price index (PPI),Producer: goods and services,Year-over-year (YOY) percent change,
+245,Lebanon,LBN.WPI.POP_PCH_PT.A,Wholesale price index (WPI),Annual,Percent,Wholesale price index (WPI),Wholesale trade,Period-over-preceding period percent change,
+246,India,IND.PPI.YOY_PCH_PT.M,Producer price index (PPI),Monthly,Percent,Producer price index (PPI),Producer: goods and services,Year-over-year (YOY) percent change,
+247,India,IND.PPI.POP_PCH_PT.M,Producer price index (PPI),Monthly,Percent,Producer price index (PPI),Producer: goods and services,Period-over-preceding period percent change,
+248,Australia,AUS.WPI.YOY_PCH_PT.Q,Wholesale price index (WPI),Quarterly,Percent,Wholesale price index (WPI),Wholesale trade,Year-over-year (YOY) percent change,
+249,Russian Federation,RUS.PPI.POP_PCH_PT.Q,Producer price index (PPI),Quarterly,Percent,Producer price index (PPI),Producer: goods and services,Period-over-preceding period percent change,
+250,"Kazakhstan, Republic of",KAZ.WPI.POP_PCH_PT.M,Wholesale price index (WPI),Monthly,Percent,Wholesale price index (WPI),Wholesale trade,Period-over-preceding period percent change,
+251,"Kazakhstan, Republic of",KAZ.WPI.YOY_PCH_PT.M,Wholesale price index (WPI),Monthly,Percent,Wholesale price index (WPI),Wholesale trade,Year-over-year (YOY) percent change,
+252,Australia,AUS.WPI.POP_PCH_PT.Q,Wholesale price index (WPI),Quarterly,Percent,Wholesale price index (WPI),Wholesale trade,Period-over-preceding period percent change,
+253,Iceland,ISL.PPI.POP_PCH_PT.M,Producer price index (PPI),Monthly,Percent,Producer price index (PPI),Producer: goods and services,Period-over-preceding period percent change,
+254,Russian Federation,RUS.PPI.YOY_PCH_PT.Q,Producer price index (PPI),Quarterly,Percent,Producer price index (PPI),Producer: goods and services,Year-over-year (YOY) percent change,
+255,Iraq,IRQ.WPI.YOY_PCH_PT.Q,Wholesale price index (WPI),Quarterly,Percent,Wholesale price index (WPI),Wholesale trade,Year-over-year (YOY) percent change,
+256,"Ethiopia, The Federal Democratic Republic of",ETH.PPI.POP_PCH_PT.Q,Producer price index (PPI),Quarterly,Percent,Producer price index (PPI),Producer: goods and services,Period-over-preceding period percent change,
+257,Colombia,COL.PPI.YOY_PCH_PT.Q,Producer price index (PPI),Quarterly,Percent,Producer price index (PPI),Producer: goods and services,Year-over-year (YOY) percent change,
+258,Lebanon,LBN.WPI.POP_PCH_PT.Q,Wholesale price index (WPI),Quarterly,Percent,Wholesale price index (WPI),Wholesale trade,Period-over-preceding period percent change,
+259,Ecuador,ECU.WPI.YOY_PCH_PT.Q,Wholesale price index (WPI),Quarterly,Percent,Wholesale price index (WPI),Wholesale trade,Year-over-year (YOY) percent change,
+260,Brazil,BRA.WPI.YOY_PCH_PT.A,Wholesale price index (WPI),Annual,Percent,Wholesale price index (WPI),Wholesale trade,Year-over-year (YOY) percent change,
+261,Jordan,JOR.WPI.YOY_PCH_PT.A,Wholesale price index (WPI),Annual,Percent,Wholesale price index (WPI),Wholesale trade,Year-over-year (YOY) percent change,
+262,Iraq,IRQ.WPI.YOY_PCH_PT.A,Wholesale price index (WPI),Annual,Percent,Wholesale price index (WPI),Wholesale trade,Year-over-year (YOY) percent change,
+263,"Armenia, Republic of",ARM.PPI.POP_PCH_PT.A,Producer price index (PPI),Annual,Percent,Producer price index (PPI),Producer: goods and services,Period-over-preceding period percent change,
+264,"Ethiopia, The Federal Democratic Republic of",ETH.PPI.YOY_PCH_PT.A,Producer price index (PPI),Annual,Percent,Producer price index (PPI),Producer: goods and services,Year-over-year (YOY) percent change,
+265,Jordan,JOR.PPI.YOY_PCH_PT.A,Producer price index (PPI),Annual,Percent,Producer price index (PPI),Producer: goods and services,Year-over-year (YOY) percent change,
+266,Colombia,COL.PPI.POP_PCH_PT.M,Producer price index (PPI),Monthly,Percent,Producer price index (PPI),Producer: goods and services,Period-over-preceding period percent change,
+267,Algeria,DZA.PPI.POP_PCH_PT.A,Producer price index (PPI),Annual,Percent,Producer price index (PPI),Producer: goods and services,Period-over-preceding period percent change,
+268,Brazil,BRA.WPI.YOY_PCH_PT.Q,Wholesale price index (WPI),Quarterly,Percent,Wholesale price index (WPI),Wholesale trade,Year-over-year (YOY) percent change,
+269,Russian Federation,RUS.PPI.YOY_PCH_PT.A,Producer price index (PPI),Annual,Percent,Producer price index (PPI),Producer: goods and services,Year-over-year (YOY) percent change,
+270,Jordan,JOR.WPI.YOY_PCH_PT.Q,Wholesale price index (WPI),Quarterly,Percent,Wholesale price index (WPI),Wholesale trade,Year-over-year (YOY) percent change,
+271,Kuwait,KWT.WPI.POP_PCH_PT.Q,Wholesale price index (WPI),Quarterly,Percent,Wholesale price index (WPI),Wholesale trade,Period-over-preceding period percent change,
+272,Russian Federation,RUS.PPI.POP_PCH_PT.A,Producer price index (PPI),Annual,Percent,Producer price index (PPI),Producer: goods and services,Period-over-preceding period percent change,
+273,"Iran, Islamic Republic of",IRN.PPI.POP_PCH_PT.A,Producer price index (PPI),Annual,Percent,Producer price index (PPI),Producer: goods and services,Period-over-preceding period percent change,
+274,Kuwait,KWT.WPI.YOY_PCH_PT.Q,Wholesale price index (WPI),Quarterly,Percent,Wholesale price index (WPI),Wholesale trade,Year-over-year (YOY) percent change,
+275,Iraq,IRQ.WPI.POP_PCH_PT.Q,Wholesale price index (WPI),Quarterly,Percent,Wholesale price index (WPI),Wholesale trade,Period-over-preceding period percent change,
+276,Ecuador,ECU.WPI.YOY_PCH_PT.A,Wholesale price index (WPI),Annual,Percent,Wholesale price index (WPI),Wholesale trade,Year-over-year (YOY) percent change,
+277,"Iran, Islamic Republic of",IRN.WPI.YOY_PCH_PT.Q,Wholesale price index (WPI),Quarterly,Percent,Wholesale price index (WPI),Wholesale trade,Year-over-year (YOY) percent change,
+278,Mexico,MEX.WPI.YOY_PCH_PT.Q,Wholesale price index (WPI),Quarterly,Percent,Wholesale price index (WPI),Wholesale trade,Year-over-year (YOY) percent change,
+279,"Armenia, Republic of",ARM.PPI.POP_PCH_PT.Q,Producer price index (PPI),Quarterly,Percent,Producer price index (PPI),Producer: goods and services,Period-over-preceding period percent change,
+280,"Iran, Islamic Republic of",IRN.PPI.YOY_PCH_PT.Q,Producer price index (PPI),Quarterly,Percent,Producer price index (PPI),Producer: goods and services,Year-over-year (YOY) percent change,
+281,Japan,JPN.WPI.POP_PCH_PT.Q,Wholesale price index (WPI),Quarterly,Percent,Wholesale price index (WPI),Wholesale trade,Period-over-preceding period percent change,
+282,"Armenia, Republic of",ARM.PPI.YOY_PCH_PT.Q,Producer price index (PPI),Quarterly,Percent,Producer price index (PPI),Producer: goods and services,Year-over-year (YOY) percent change,
+283,"Venezuela, República Bolivariana de",VEN.WPI.YOY_PCH_PT.Q,Wholesale price index (WPI),Quarterly,Percent,Wholesale price index (WPI),Wholesale trade,Year-over-year (YOY) percent change,
+284,"Iran, Islamic Republic of",IRN.WPI.POP_PCH_PT.Q,Wholesale price index (WPI),Quarterly,Percent,Wholesale price index (WPI),Wholesale trade,Period-over-preceding period percent change,
+285,"Kazakhstan, Republic of",KAZ.PPI.YOY_PCH_PT.Q,Producer price index (PPI),Quarterly,Percent,Producer price index (PPI),Producer: goods and services,Year-over-year (YOY) percent change,
+286,"Venezuela, República Bolivariana de",VEN.WPI.POP_PCH_PT.Q,Wholesale price index (WPI),Quarterly,Percent,Wholesale price index (WPI),Wholesale trade,Period-over-preceding period percent change,
+287,Canada,CAN.PPI.POP_PCH_PT.Q,Producer price index (PPI),Quarterly,Percent,Producer price index (PPI),Producer: goods and services,Period-over-preceding period percent change,
+288,Ecuador,ECU.WPI.POP_PCH_PT.Q,Wholesale price index (WPI),Quarterly,Percent,Wholesale price index (WPI),Wholesale trade,Period-over-preceding period percent change,
+289,Japan,JPN.PPI.POP_PCH_PT.Q,Producer price index (PPI),Quarterly,Percent,Producer price index (PPI),Producer: goods and services,Period-over-preceding period percent change,
+290,Colombia,COL.PPI.POP_PCH_PT.Q,Producer price index (PPI),Quarterly,Percent,Producer price index (PPI),Producer: goods and services,Period-over-preceding period percent change,
+291,Japan,JPN.PPI.YOY_PCH_PT.Q,Producer price index (PPI),Quarterly,Percent,Producer price index (PPI),Producer: goods and services,Year-over-year (YOY) percent change,
+292,Lebanon,LBN.WPI.YOY_PCH_PT.Q,Wholesale price index (WPI),Quarterly,Percent,Wholesale price index (WPI),Wholesale trade,Year-over-year (YOY) percent change,
+293,Ecuador,ECU.PPI.POP_PCH_PT.Q,Producer price index (PPI),Quarterly,Percent,Producer price index (PPI),Producer: goods and services,Period-over-preceding period percent change,
+294,Mexico,MEX.WPI.POP_PCH_PT.Q,Wholesale price index (WPI),Quarterly,Percent,Wholesale price index (WPI),Wholesale trade,Period-over-preceding period percent change,
+295,Japan,JPN.WPI.YOY_PCH_PT.Q,Wholesale price index (WPI),Quarterly,Percent,Wholesale price index (WPI),Wholesale trade,Year-over-year (YOY) percent change,
+296,Mexico,MEX.WPI.POP_PCH_PT.A,Wholesale price index (WPI),Annual,Percent,Wholesale price index (WPI),Wholesale trade,Period-over-preceding period percent change,
+297,Israel,ISR.WPI.POP_PCH_PT.A,Wholesale price index (WPI),Annual,Percent,Wholesale price index (WPI),Wholesale trade,Period-over-preceding period percent change,
+298,Algeria,DZA.PPI.POP_PCH_PT.Q,Producer price index (PPI),Quarterly,Percent,Producer price index (PPI),Producer: goods and services,Period-over-preceding period percent change,
+299,"Korea, Republic of",KOR.PPI.POP_PCH_PT.A,Producer price index (PPI),Annual,Percent,Producer price index (PPI),Producer: goods and services,Period-over-preceding period percent change,
+300,Algeria,DZA.PPI.YOY_PCH_PT.Q,Producer price index (PPI),Quarterly,Percent,Producer price index (PPI),Producer: goods and services,Year-over-year (YOY) percent change,
+301,South Africa,ZAF.PPI.YOY_PCH_PT.Q,Producer price index (PPI),Quarterly,Percent,Producer price index (PPI),Producer: goods and services,Year-over-year (YOY) percent change,
+302,New Zealand,NZL.PPI.POP_PCH_PT.A,Producer price index (PPI),Annual,Percent,Producer price index (PPI),Producer: goods and services,Period-over-preceding period percent change,
+303,"Iran, Islamic Republic of",IRN.PPI.YOY_PCH_PT.A,Producer price index (PPI),Annual,Percent,Producer price index (PPI),Producer: goods and services,Year-over-year (YOY) percent change,
+304,Spain,ESP.WPI.POP_PCH_PT.A,Wholesale price index (WPI),Annual,Percent,Wholesale price index (WPI),Wholesale trade,Period-over-preceding period percent change,
+305,"Kazakhstan, Republic of",KAZ.WPI.POP_PCH_PT.Q,Wholesale price index (WPI),Quarterly,Percent,Wholesale price index (WPI),Wholesale trade,Period-over-preceding period percent change,
+306,Algeria,DZA.PPI.IX.Q,Producer price index (PPI),Quarterly,Index,Producer price index (PPI),Producer: goods and services,,2010=100
+307,Russian Federation,RUS.PPI.IX.A,Producer price index (PPI),Annual,Index,Producer price index (PPI),Producer: goods and services,,2010=100
+308,Algeria,DZA.PPI.IX.A,Producer price index (PPI),Annual,Index,Producer price index (PPI),Producer: goods and services,,2010=100
+309,"Azerbaijan, Republic of",AZE.PPI.YOY_PCH_PT.A,Producer price index (PPI),Annual,Percent,Producer price index (PPI),Producer: goods and services,Year-over-year (YOY) percent change,
+310,Bangladesh,BGD.WPI.POP_PCH_PT.A,Wholesale price index (WPI),Annual,Percent,Wholesale price index (WPI),Wholesale trade,Period-over-preceding period percent change,
+311,"Gambia, The",GMB.PPI.POP_PCH_PT.A,Producer price index (PPI),Annual,Percent,Producer price index (PPI),Producer: goods and services,Period-over-preceding period percent change,
+312,Zambia,ZMB.PPI.POP_PCH_PT.A,Producer price index (PPI),Annual,Percent,Producer price index (PPI),Producer: goods and services,Period-over-preceding period percent change,
+313,"Gambia, The",GMB.PPI.YOY_PCH_PT.A,Producer price index (PPI),Annual,Percent,Producer price index (PPI),Producer: goods and services,Year-over-year (YOY) percent change,
+314,Bangladesh,BGD.WPI.YOY_PCH_PT.A,Wholesale price index (WPI),Annual,Percent,Wholesale price index (WPI),Wholesale trade,Year-over-year (YOY) percent change,
+315,Montenegro,MNE.PPI.YOY_PCH_PT.M,Producer price index (PPI),Monthly,Percent,Producer price index (PPI),Producer: goods and services,Year-over-year (YOY) percent change,
+316,Montenegro,MNE.PPI.YOY_PCH_PT.A,Producer price index (PPI),Annual,Percent,Producer price index (PPI),Producer: goods and services,Year-over-year (YOY) percent change,
+317,Bangladesh,BGD.WPI.YOY_PCH_PT.M,Wholesale price index (WPI),Monthly,Percent,Wholesale price index (WPI),Wholesale trade,Year-over-year (YOY) percent change,
+318,Montenegro,MNE.PPI.POP_PCH_PT.M,Producer price index (PPI),Monthly,Percent,Producer price index (PPI),Producer: goods and services,Period-over-preceding period percent change,
+319,Zambia,ZMB.WPI.YOY_PCH_PT.A,Wholesale price index (WPI),Annual,Percent,Wholesale price index (WPI),Wholesale trade,Year-over-year (YOY) percent change,
+320,Zambia,ZMB.PPI.YOY_PCH_PT.A,Producer price index (PPI),Annual,Percent,Producer price index (PPI),Producer: goods and services,Year-over-year (YOY) percent change,
+321,"Azerbaijan, Republic of",AZE.PPI.POP_PCH_PT.A,Producer price index (PPI),Annual,Percent,Producer price index (PPI),Producer: goods and services,Period-over-preceding period percent change,
+322,Bangladesh,BGD.WPI.POP_PCH_PT.M,Wholesale price index (WPI),Monthly,Percent,Wholesale price index (WPI),Wholesale trade,Period-over-preceding period percent change,
+323,Montenegro,MNE.PPI.POP_PCH_PT.A,Producer price index (PPI),Annual,Percent,Producer price index (PPI),Producer: goods and services,Period-over-preceding period percent change,
+324,Montenegro,MNE.PPI.POP_PCH_PT.Q,Producer price index (PPI),Quarterly,Percent,Producer price index (PPI),Producer: goods and services,Period-over-preceding period percent change,
+325,"Azerbaijan, Republic of",AZE.PPI.POP_PCH_PT.M,Producer price index (PPI),Monthly,Percent,Producer price index (PPI),Producer: goods and services,Period-over-preceding period percent change,
+326,"Azerbaijan, Republic of",AZE.PPI.YOY_PCH_PT.Q,Producer price index (PPI),Quarterly,Percent,Producer price index (PPI),Producer: goods and services,Year-over-year (YOY) percent change,
+327,"Azerbaijan, Republic of",AZE.PPI.POP_PCH_PT.Q,Producer price index (PPI),Quarterly,Percent,Producer price index (PPI),Producer: goods and services,Period-over-preceding period percent change,
+328,"Azerbaijan, Republic of",AZE.PPI.YOY_PCH_PT.M,Producer price index (PPI),Monthly,Percent,Producer price index (PPI),Producer: goods and services,Year-over-year (YOY) percent change,
+329,Bangladesh,BGD.WPI.POP_PCH_PT.Q,Wholesale price index (WPI),Quarterly,Percent,Wholesale price index (WPI),Wholesale trade,Period-over-preceding period percent change,
+330,Montenegro,MNE.PPI.YOY_PCH_PT.Q,Producer price index (PPI),Quarterly,Percent,Producer price index (PPI),Producer: goods and services,Year-over-year (YOY) percent change,
+331,Zambia,ZMB.WPI.POP_PCH_PT.A,Wholesale price index (WPI),Annual,Percent,Wholesale price index (WPI),Wholesale trade,Period-over-preceding period percent change,
+332,Zambia,ZMB.PPI.POP_PCH_PT.Q,Producer price index (PPI),Quarterly,Percent,Producer price index (PPI),Producer: goods and services,Period-over-preceding period percent change,
+333,Zambia,ZMB.PPI.YOY_PCH_PT.Q,Producer price index (PPI),Quarterly,Percent,Producer price index (PPI),Producer: goods and services,Year-over-year (YOY) percent change,
+334,Bangladesh,BGD.WPI.YOY_PCH_PT.Q,Wholesale price index (WPI),Quarterly,Percent,Wholesale price index (WPI),Wholesale trade,Year-over-year (YOY) percent change,
+335,Zambia,ZMB.WPI.POP_PCH_PT.Q,Wholesale price index (WPI),Quarterly,Percent,Wholesale price index (WPI),Wholesale trade,Period-over-preceding period percent change,
+336,Zambia,ZMB.WPI.YOY_PCH_PT.Q,Wholesale price index (WPI),Quarterly,Percent,Wholesale price index (WPI),Wholesale trade,Year-over-year (YOY) percent change,
+337,"Gambia, The",GMB.PPI.IX.A,Producer price index (PPI),Annual,Index,Producer price index (PPI),Producer: goods and services,,2010=100
+338,"Congo, Republic of",COG.PPI.IX.Q,Producer price index (PPI),Quarterly,Index,Producer price index (PPI),Producer: goods and services,,1985=100
+339,"Congo, Republic of",COG.PPI.IX.M,Producer price index (PPI),Monthly,Index,Producer price index (PPI),Producer: goods and services,,1985=100
+340,"Congo, Republic of",COG.WPI.IX.Q,Wholesale price index (WPI),Quarterly,Index,Wholesale price index (WPI),Wholesale trade,,1990=100
+341,"Congo, Republic of",COG.WPI.IX.A,Wholesale price index (WPI),Annual,Index,Wholesale price index (WPI),Wholesale trade,,1990=100
+342,"Congo, Republic of",COG.WPI.IX.M,Wholesale price index (WPI),Monthly,Index,Wholesale price index (WPI),Wholesale trade,,1990=100
+343,"Congo, Republic of",COG.PPI.IX.A,Producer price index (PPI),Annual,Index,Producer price index (PPI),Producer: goods and services,,1985=100
+344,"Congo, Republic of",COG.PPI.POP_PCH_PT.A,Producer price index (PPI),Annual,Percent,Producer price index (PPI),Producer: goods and services,Period-over-preceding period percent change,
+345,Peru,PER.WPI.YOY_PCH_PT.A,Wholesale price index (WPI),Annual,Percent,Wholesale price index (WPI),Wholesale trade,Year-over-year (YOY) percent change,
+346,Costa Rica,CRI.WPI.POP_PCH_PT.A,Wholesale price index (WPI),Annual,Percent,Wholesale price index (WPI),Wholesale trade,Period-over-preceding period percent change,
+347,Cyprus,CYP.WPI.POP_PCH_PT.A,Wholesale price index (WPI),Annual,Percent,Wholesale price index (WPI),Wholesale trade,Period-over-preceding period percent change,
+348,Cyprus,CYP.WPI.YOY_PCH_PT.A,Wholesale price index (WPI),Annual,Percent,Wholesale price index (WPI),Wholesale trade,Year-over-year (YOY) percent change,
+349,Panama,PAN.WPI.YOY_PCH_PT.A,Wholesale price index (WPI),Annual,Percent,Wholesale price index (WPI),Wholesale trade,Year-over-year (YOY) percent change,
+350,Costa Rica,CRI.WPI.YOY_PCH_PT.M,Wholesale price index (WPI),Monthly,Percent,Wholesale price index (WPI),Wholesale trade,Year-over-year (YOY) percent change,
+351,Syrian Arab Republic,SYR.WPI.POP_PCH_PT.A,Wholesale price index (WPI),Annual,Percent,Wholesale price index (WPI),Wholesale trade,Period-over-preceding period percent change,
+352,Peru,PER.WPI.POP_PCH_PT.A,Wholesale price index (WPI),Annual,Percent,Wholesale price index (WPI),Wholesale trade,Period-over-preceding period percent change,
+353,"Croatia, Republic of",HRV.WPI.YOY_PCH_PT.A,Wholesale price index (WPI),Annual,Percent,Wholesale price index (WPI),Wholesale trade,Year-over-year (YOY) percent change,
+354,Costa Rica,CRI.WPI.YOY_PCH_PT.A,Wholesale price index (WPI),Annual,Percent,Wholesale price index (WPI),Wholesale trade,Year-over-year (YOY) percent change,
+355,Dominican Republic,DOM.WPI.YOY_PCH_PT.A,Wholesale price index (WPI),Annual,Percent,Wholesale price index (WPI),Wholesale trade,Year-over-year (YOY) percent change,
+356,Taiwan Province of China,TWN.WPI.POP_PCH_PT.A,Wholesale price index (WPI),Annual,Percent,Wholesale price index (WPI),Wholesale trade,Period-over-preceding period percent change,
+357,Sudan,SDN.PPI.POP_PCH_PT.A,Producer price index (PPI),Annual,Percent,Producer price index (PPI),Producer: goods and services,Period-over-preceding period percent change,
+358,Guatemala,GTM.PPI.POP_PCH_PT.A,Producer price index (PPI),Annual,Percent,Producer price index (PPI),Producer: goods and services,Period-over-preceding period percent change,
+359,Sudan,SDN.PPI.YOY_PCH_PT.A,Producer price index (PPI),Annual,Percent,Producer price index (PPI),Producer: goods and services,Year-over-year (YOY) percent change,
+360,Guatemala,GTM.PPI.YOY_PCH_PT.A,Producer price index (PPI),Annual,Percent,Producer price index (PPI),Producer: goods and services,Year-over-year (YOY) percent change,
+361,"Congo, Republic of",COG.WPI.YOY_PCH_PT.A,Wholesale price index (WPI),Annual,Percent,Wholesale price index (WPI),Wholesale trade,Year-over-year (YOY) percent change,
+362,Panama,PAN.WPI.POP_PCH_PT.A,Wholesale price index (WPI),Annual,Percent,Wholesale price index (WPI),Wholesale trade,Period-over-preceding period percent change,
+363,Germany,DEU.WPI.YOY_PCH_PT.A,Wholesale price index (WPI),Annual,Percent,Wholesale price index (WPI),Wholesale trade,Year-over-year (YOY) percent change,
+364,Germany,DEU.WPI.POP_PCH_PT.A,Wholesale price index (WPI),Annual,Percent,Wholesale price index (WPI),Wholesale trade,Period-over-preceding period percent change,
+365,"Congo, Republic of",COG.WPI.POP_PCH_PT.A,Wholesale price index (WPI),Annual,Percent,Wholesale price index (WPI),Wholesale trade,Period-over-preceding period percent change,
+366,Dominican Republic,DOM.WPI.POP_PCH_PT.A,Wholesale price index (WPI),Annual,Percent,Wholesale price index (WPI),Wholesale trade,Period-over-preceding period percent change,
+367,"Congo, Republic of",COG.PPI.YOY_PCH_PT.A,Producer price index (PPI),Annual,Percent,Producer price index (PPI),Producer: goods and services,Year-over-year (YOY) percent change,
+368,"Croatia, Republic of",HRV.WPI.POP_PCH_PT.A,Wholesale price index (WPI),Annual,Percent,Wholesale price index (WPI),Wholesale trade,Period-over-preceding period percent change,
+369,Syrian Arab Republic,SYR.WPI.YOY_PCH_PT.A,Wholesale price index (WPI),Annual,Percent,Wholesale price index (WPI),Wholesale trade,Year-over-year (YOY) percent change,
+370,"Croatia, Republic of",HRV.WPI.POP_PCH_PT.M,Wholesale price index (WPI),Monthly,Percent,Wholesale price index (WPI),Wholesale trade,Period-over-preceding period percent change,
+371,"Croatia, Republic of",HRV.WPI.YOY_PCH_PT.M,Wholesale price index (WPI),Monthly,Percent,Wholesale price index (WPI),Wholesale trade,Year-over-year (YOY) percent change,
+372,Costa Rica,CRI.WPI.POP_PCH_PT.M,Wholesale price index (WPI),Monthly,Percent,Wholesale price index (WPI),Wholesale trade,Period-over-preceding period percent change,
+373,Germany,DEU.WPI.POP_PCH_PT.M,Wholesale price index (WPI),Monthly,Percent,Wholesale price index (WPI),Wholesale trade,Period-over-preceding period percent change,
+374,Germany,DEU.WPI.YOY_PCH_PT.M,Wholesale price index (WPI),Monthly,Percent,Wholesale price index (WPI),Wholesale trade,Year-over-year (YOY) percent change,
+375,Peru,PER.WPI.POP_PCH_PT.M,Wholesale price index (WPI),Monthly,Percent,Wholesale price index (WPI),Wholesale trade,Period-over-preceding period percent change,
+376,Peru,PER.WPI.YOY_PCH_PT.M,Wholesale price index (WPI),Monthly,Percent,Wholesale price index (WPI),Wholesale trade,Year-over-year (YOY) percent change,
+377,Cyprus,CYP.WPI.POP_PCH_PT.M,Wholesale price index (WPI),Monthly,Percent,Wholesale price index (WPI),Wholesale trade,Period-over-preceding period percent change,
+378,"Congo, Republic of",COG.WPI.YOY_PCH_PT.M,Wholesale price index (WPI),Monthly,Percent,Wholesale price index (WPI),Wholesale trade,Year-over-year (YOY) percent change,
+379,Syrian Arab Republic,SYR.WPI.YOY_PCH_PT.M,Wholesale price index (WPI),Monthly,Percent,Wholesale price index (WPI),Wholesale trade,Year-over-year (YOY) percent change,
+380,"Congo, Republic of",COG.PPI.POP_PCH_PT.M,Producer price index (PPI),Monthly,Percent,Producer price index (PPI),Producer: goods and services,Period-over-preceding period percent change,
+381,Dominican Republic,DOM.WPI.POP_PCH_PT.M,Wholesale price index (WPI),Monthly,Percent,Wholesale price index (WPI),Wholesale trade,Period-over-preceding period percent change,
+382,Costa Rica,CRI.WPI.POP_PCH_PT.Q,Wholesale price index (WPI),Quarterly,Percent,Wholesale price index (WPI),Wholesale trade,Period-over-preceding period percent change,
+383,Dominican Republic,DOM.WPI.YOY_PCH_PT.M,Wholesale price index (WPI),Monthly,Percent,Wholesale price index (WPI),Wholesale trade,Year-over-year (YOY) percent change,
+384,Taiwan Province of China,TWN.WPI.YOY_PCH_PT.A,Wholesale price index (WPI),Annual,Percent,Wholesale price index (WPI),Wholesale trade,Year-over-year (YOY) percent change,
+385,"Congo, Republic of",COG.PPI.YOY_PCH_PT.M,Producer price index (PPI),Monthly,Percent,Producer price index (PPI),Producer: goods and services,Year-over-year (YOY) percent change,
+386,Cyprus,CYP.WPI.YOY_PCH_PT.M,Wholesale price index (WPI),Monthly,Percent,Wholesale price index (WPI),Wholesale trade,Year-over-year (YOY) percent change,
+387,Guatemala,GTM.PPI.YOY_PCH_PT.M,Producer price index (PPI),Monthly,Percent,Producer price index (PPI),Producer: goods and services,Year-over-year (YOY) percent change,
+388,Costa Rica,CRI.WPI.YOY_PCH_PT.Q,Wholesale price index (WPI),Quarterly,Percent,Wholesale price index (WPI),Wholesale trade,Year-over-year (YOY) percent change,
+389,"Congo, Republic of",COG.WPI.POP_PCH_PT.M,Wholesale price index (WPI),Monthly,Percent,Wholesale price index (WPI),Wholesale trade,Period-over-preceding period percent change,
+390,Syrian Arab Republic,SYR.WPI.POP_PCH_PT.M,Wholesale price index (WPI),Monthly,Percent,Wholesale price index (WPI),Wholesale trade,Period-over-preceding period percent change,
+391,Panama,PAN.WPI.YOY_PCH_PT.Q,Wholesale price index (WPI),Quarterly,Percent,Wholesale price index (WPI),Wholesale trade,Year-over-year (YOY) percent change,
+392,Syrian Arab Republic,SYR.WPI.YOY_PCH_PT.Q,Wholesale price index (WPI),Quarterly,Percent,Wholesale price index (WPI),Wholesale trade,Year-over-year (YOY) percent change,
+393,"Congo, Republic of",COG.PPI.POP_PCH_PT.Q,Producer price index (PPI),Quarterly,Percent,Producer price index (PPI),Producer: goods and services,Period-over-preceding period percent change,
+394,Peru,PER.WPI.YOY_PCH_PT.Q,Wholesale price index (WPI),Quarterly,Percent,Wholesale price index (WPI),Wholesale trade,Year-over-year (YOY) percent change,
+395,Peru,PER.WPI.POP_PCH_PT.Q,Wholesale price index (WPI),Quarterly,Percent,Wholesale price index (WPI),Wholesale trade,Period-over-preceding period percent change,
+396,Cyprus,CYP.WPI.POP_PCH_PT.Q,Wholesale price index (WPI),Quarterly,Percent,Wholesale price index (WPI),Wholesale trade,Period-over-preceding period percent change,
+397,Cyprus,CYP.WPI.YOY_PCH_PT.Q,Wholesale price index (WPI),Quarterly,Percent,Wholesale price index (WPI),Wholesale trade,Year-over-year (YOY) percent change,
+398,Germany,DEU.WPI.YOY_PCH_PT.Q,Wholesale price index (WPI),Quarterly,Percent,Wholesale price index (WPI),Wholesale trade,Year-over-year (YOY) percent change,
+399,Syrian Arab Republic,SYR.WPI.POP_PCH_PT.Q,Wholesale price index (WPI),Quarterly,Percent,Wholesale price index (WPI),Wholesale trade,Period-over-preceding period percent change,
+400,Taiwan Province of China,TWN.WPI.POP_PCH_PT.Q,Wholesale price index (WPI),Quarterly,Percent,Wholesale price index (WPI),Wholesale trade,Period-over-preceding period percent change,
+401,Guatemala,GTM.PPI.POP_PCH_PT.M,Producer price index (PPI),Monthly,Percent,Producer price index (PPI),Producer: goods and services,Period-over-preceding period percent change,
+402,"Congo, Republic of",COG.WPI.YOY_PCH_PT.Q,Wholesale price index (WPI),Quarterly,Percent,Wholesale price index (WPI),Wholesale trade,Year-over-year (YOY) percent change,
+403,Germany,DEU.WPI.POP_PCH_PT.Q,Wholesale price index (WPI),Quarterly,Percent,Wholesale price index (WPI),Wholesale trade,Period-over-preceding period percent change,
+404,Taiwan Province of China,TWN.WPI.POP_PCH_PT.M,Wholesale price index (WPI),Monthly,Percent,Wholesale price index (WPI),Wholesale trade,Period-over-preceding period percent change,
+405,Dominican Republic,DOM.WPI.YOY_PCH_PT.Q,Wholesale price index (WPI),Quarterly,Percent,Wholesale price index (WPI),Wholesale trade,Year-over-year (YOY) percent change,
+406,Dominican Republic,DOM.WPI.POP_PCH_PT.Q,Wholesale price index (WPI),Quarterly,Percent,Wholesale price index (WPI),Wholesale trade,Period-over-preceding period percent change,
+407,Sudan,SDN.PPI.POP_PCH_PT.Q,Producer price index (PPI),Quarterly,Percent,Producer price index (PPI),Producer: goods and services,Period-over-preceding period percent change,
+408,"Congo, Republic of",COG.PPI.YOY_PCH_PT.Q,Producer price index (PPI),Quarterly,Percent,Producer price index (PPI),Producer: goods and services,Year-over-year (YOY) percent change,
+409,Guatemala,GTM.PPI.POP_PCH_PT.Q,Producer price index (PPI),Quarterly,Percent,Producer price index (PPI),Producer: goods and services,Period-over-preceding period percent change,
+410,Sudan,SDN.PPI.YOY_PCH_PT.Q,Producer price index (PPI),Quarterly,Percent,Producer price index (PPI),Producer: goods and services,Year-over-year (YOY) percent change,
+411,Guatemala,GTM.PPI.YOY_PCH_PT.Q,Producer price index (PPI),Quarterly,Percent,Producer price index (PPI),Producer: goods and services,Year-over-year (YOY) percent change,
+412,Panama,PAN.WPI.POP_PCH_PT.Q,Wholesale price index (WPI),Quarterly,Percent,Wholesale price index (WPI),Wholesale trade,Period-over-preceding period percent change,
+413,"Croatia, Republic of",HRV.WPI.POP_PCH_PT.Q,Wholesale price index (WPI),Quarterly,Percent,Wholesale price index (WPI),Wholesale trade,Period-over-preceding period percent change,
+414,Taiwan Province of China,TWN.WPI.YOY_PCH_PT.Q,Wholesale price index (WPI),Quarterly,Percent,Wholesale price index (WPI),Wholesale trade,Year-over-year (YOY) percent change,
+415,Taiwan Province of China,TWN.WPI.YOY_PCH_PT.M,Wholesale price index (WPI),Monthly,Percent,Wholesale price index (WPI),Wholesale trade,Year-over-year (YOY) percent change,
+416,"Congo, Republic of",COG.WPI.POP_PCH_PT.Q,Wholesale price index (WPI),Quarterly,Percent,Wholesale price index (WPI),Wholesale trade,Period-over-preceding period percent change,
+417,Thailand,THA.WPI.POP_PCH_PT.A,Wholesale price index (WPI),Annual,Percent,Wholesale price index (WPI),Wholesale trade,Period-over-preceding period percent change,
+418,Oman,OMN.PPI.YOY_PCH_PT.Q,Producer price index (PPI),Quarterly,Percent,Producer price index (PPI),Producer: goods and services,Year-over-year (YOY) percent change,
+419,Algeria,DZA.PPI.YOY_PCH_PT.A,Producer price index (PPI),Annual,Percent,Producer price index (PPI),Producer: goods and services,Year-over-year (YOY) percent change,
+420,Israel,ISR.PPI.POP_PCH_PT.Q,Producer price index (PPI),Quarterly,Percent,Producer price index (PPI),Producer: goods and services,Period-over-preceding period percent change,
+421,Iceland,ISL.PPI.YOY_PCH_PT.Q,Producer price index (PPI),Quarterly,Percent,Producer price index (PPI),Producer: goods and services,Year-over-year (YOY) percent change,
+422,Canada,CAN.PPI.YOY_PCH_PT.Q,Producer price index (PPI),Quarterly,Percent,Producer price index (PPI),Producer: goods and services,Year-over-year (YOY) percent change,
+423,"Kazakhstan, Republic of",KAZ.PPI.POP_PCH_PT.Q,Producer price index (PPI),Quarterly,Percent,Producer price index (PPI),Producer: goods and services,Period-over-preceding period percent change,
+424,Oman,OMN.PPI.YOY_PCH_PT.A,Producer price index (PPI),Annual,Percent,Producer price index (PPI),Producer: goods and services,Year-over-year (YOY) percent change,
+425,Israel,ISR.PPI.POP_PCH_PT.A,Producer price index (PPI),Annual,Percent,Producer price index (PPI),Producer: goods and services,Period-over-preceding period percent change,
+426,Jordan,JOR.WPI.POP_PCH_PT.Q,Wholesale price index (WPI),Quarterly,Percent,Wholesale price index (WPI),Wholesale trade,Period-over-preceding period percent change,
+427,Brazil,BRA.WPI.POP_PCH_PT.Q,Wholesale price index (WPI),Quarterly,Percent,Wholesale price index (WPI),Wholesale trade,Period-over-preceding period percent change,
+428,Brazil,BRA.PPI.POP_PCH_PT.Q,Producer price index (PPI),Quarterly,Percent,Producer price index (PPI),Producer: goods and services,Period-over-preceding period percent change,
+429,Jordan,JOR.PPI.POP_PCH_PT.Q,Producer price index (PPI),Quarterly,Percent,Producer price index (PPI),Producer: goods and services,Period-over-preceding period percent change,
+430,Russian Federation,RUS.PPI.IX.Q,Producer price index (PPI),Quarterly,Index,Producer price index (PPI),Producer: goods and services,,2010=100
+431,Israel,ISR.WPI.POP_PCH_PT.M,Wholesale price index (WPI),Monthly,Percent,Wholesale price index (WPI),Wholesale trade,Period-over-preceding period percent change,
+432,Lebanon,LBN.WPI.POP_PCH_PT.M,Wholesale price index (WPI),Monthly,Percent,Wholesale price index (WPI),Wholesale trade,Period-over-preceding period percent change,
+433,Ecuador,ECU.WPI.YOY_PCH_PT.M,Wholesale price index (WPI),Monthly,Percent,Wholesale price index (WPI),Wholesale trade,Year-over-year (YOY) percent change,
+434,"Iran, Islamic Republic of",IRN.PPI.POP_PCH_PT.M,Producer price index (PPI),Monthly,Percent,Producer price index (PPI),Producer: goods and services,Period-over-preceding period percent change,
+435,Mexico,MEX.WPI.YOY_PCH_PT.M,Wholesale price index (WPI),Monthly,Percent,Wholesale price index (WPI),Wholesale trade,Year-over-year (YOY) percent change,
+436,"Iran, Islamic Republic of",IRN.WPI.POP_PCH_PT.M,Wholesale price index (WPI),Monthly,Percent,Wholesale price index (WPI),Wholesale trade,Period-over-preceding period percent change,
+437,Thailand,THA.WPI.YOY_PCH_PT.M,Wholesale price index (WPI),Monthly,Percent,Wholesale price index (WPI),Wholesale trade,Year-over-year (YOY) percent change,
+438,"Korea, Republic of",KOR.WPI.YOY_PCH_PT.M,Wholesale price index (WPI),Monthly,Percent,Wholesale price index (WPI),Wholesale trade,Year-over-year (YOY) percent change,
+439,"Korea, Republic of",KOR.WPI.POP_PCH_PT.M,Wholesale price index (WPI),Monthly,Percent,Wholesale price index (WPI),Wholesale trade,Period-over-preceding period percent change,
+440,Australia,AUS.PPI.YOY_PCH_PT.M,Producer price index (PPI),Monthly,Percent,Producer price index (PPI),Producer: goods and services,Year-over-year (YOY) percent change,
+441,Ecuador,ECU.WPI.POP_PCH_PT.M,Wholesale price index (WPI),Monthly,Percent,Wholesale price index (WPI),Wholesale trade,Period-over-preceding period percent change,
+442,Australia,AUS.PPI.POP_PCH_PT.M,Producer price index (PPI),Monthly,Percent,Producer price index (PPI),Producer: goods and services,Period-over-preceding period percent change,
+443,Ecuador,ECU.PPI.YOY_PCH_PT.M,Producer price index (PPI),Monthly,Percent,Producer price index (PPI),Producer: goods and services,Year-over-year (YOY) percent change,
+444,"Korea, Republic of",KOR.PPI.POP_PCH_PT.M,Producer price index (PPI),Monthly,Percent,Producer price index (PPI),Producer: goods and services,Period-over-preceding period percent change,
+445,Australia,AUS.WPI.POP_PCH_PT.M,Wholesale price index (WPI),Monthly,Percent,Wholesale price index (WPI),Wholesale trade,Period-over-preceding period percent change,
+446,Australia,AUS.WPI.YOY_PCH_PT.M,Wholesale price index (WPI),Monthly,Percent,Wholesale price index (WPI),Wholesale trade,Year-over-year (YOY) percent change,
+447,"Korea, Republic of",KOR.WPI.YOY_PCH_PT.Q,Wholesale price index (WPI),Quarterly,Percent,Wholesale price index (WPI),Wholesale trade,Year-over-year (YOY) percent change,
+448,South Africa,ZAF.PPI.POP_PCH_PT.M,Producer price index (PPI),Monthly,Percent,Producer price index (PPI),Producer: goods and services,Period-over-preceding period percent change,
+449,Australia,AUS.PPI.POP_PCH_PT.Q,Producer price index (PPI),Quarterly,Percent,Producer price index (PPI),Producer: goods and services,Period-over-preceding period percent change,
+450,Israel,ISR.PPI.YOY_PCH_PT.Q,Producer price index (PPI),Quarterly,Percent,Producer price index (PPI),Producer: goods and services,Year-over-year (YOY) percent change,
+451,Thailand,THA.WPI.POP_PCH_PT.Q,Wholesale price index (WPI),Quarterly,Percent,Wholesale price index (WPI),Wholesale trade,Period-over-preceding period percent change,
+452,South Africa,ZAF.PPI.POP_PCH_PT.Q,Producer price index (PPI),Quarterly,Percent,Producer price index (PPI),Producer: goods and services,Period-over-preceding period percent change,
+453,Israel,ISR.WPI.YOY_PCH_PT.Q,Wholesale price index (WPI),Quarterly,Percent,Wholesale price index (WPI),Wholesale trade,Year-over-year (YOY) percent change,
+454,Brazil,BRA.PPI.YOY_PCH_PT.Q,Producer price index (PPI),Quarterly,Percent,Producer price index (PPI),Producer: goods and services,Year-over-year (YOY) percent change,
+455,"Ethiopia, The Federal Democratic Republic of",ETH.PPI.YOY_PCH_PT.Q,Producer price index (PPI),Quarterly,Percent,Producer price index (PPI),Producer: goods and services,Year-over-year (YOY) percent change,
+456,"Iran, Islamic Republic of",IRN.PPI.POP_PCH_PT.Q,Producer price index (PPI),Quarterly,Percent,Producer price index (PPI),Producer: goods and services,Period-over-preceding period percent change,
+457,Jordan,JOR.PPI.YOY_PCH_PT.M,Producer price index (PPI),Monthly,Percent,Producer price index (PPI),Producer: goods and services,Year-over-year (YOY) percent change,
+458,"Korea, Republic of",KOR.WPI.POP_PCH_PT.Q,Wholesale price index (WPI),Quarterly,Percent,Wholesale price index (WPI),Wholesale trade,Period-over-preceding period percent change,
+459,Australia,AUS.PPI.YOY_PCH_PT.Q,Producer price index (PPI),Quarterly,Percent,Producer price index (PPI),Producer: goods and services,Year-over-year (YOY) percent change,
+460,Thailand,THA.WPI.YOY_PCH_PT.Q,Wholesale price index (WPI),Quarterly,Percent,Wholesale price index (WPI),Wholesale trade,Year-over-year (YOY) percent change,
+461,Ecuador,ECU.PPI.YOY_PCH_PT.Q,Producer price index (PPI),Quarterly,Percent,Producer price index (PPI),Producer: goods and services,Year-over-year (YOY) percent change,
+462,"Korea, Republic of",KOR.PPI.YOY_PCH_PT.Q,Producer price index (PPI),Quarterly,Percent,Producer price index (PPI),Producer: goods and services,Year-over-year (YOY) percent change,
+463,Israel,ISR.WPI.POP_PCH_PT.Q,Wholesale price index (WPI),Quarterly,Percent,Wholesale price index (WPI),Wholesale trade,Period-over-preceding period percent change,
+464,"Korea, Republic of",KOR.PPI.POP_PCH_PT.Q,Producer price index (PPI),Quarterly,Percent,Producer price index (PPI),Producer: goods and services,Period-over-preceding period percent change,
+465,Jordan,JOR.PPI.YOY_PCH_PT.Q,Producer price index (PPI),Quarterly,Percent,Producer price index (PPI),Producer: goods and services,Year-over-year (YOY) percent change,
+466,India,IND.PPI.POP_PCH_PT.Q,Producer price index (PPI),Quarterly,Percent,Producer price index (PPI),Producer: goods and services,Period-over-preceding period percent change,
+467,Iceland,ISL.PPI.POP_PCH_PT.Q,Producer price index (PPI),Quarterly,Percent,Producer price index (PPI),Producer: goods and services,Period-over-preceding period percent change,
+468,India,IND.PPI.YOY_PCH_PT.Q,Producer price index (PPI),Quarterly,Percent,Producer price index (PPI),Producer: goods and services,Year-over-year (YOY) percent change,
+469,Oman,OMN.PPI.POP_PCH_PT.Q,Producer price index (PPI),Quarterly,Percent,Producer price index (PPI),Producer: goods and services,Period-over-preceding period percent change,
+470,"Kazakhstan, Republic of",KAZ.WPI.YOY_PCH_PT.Q,Wholesale price index (WPI),Quarterly,Percent,Wholesale price index (WPI),Wholesale trade,Year-over-year (YOY) percent change,
+471,Gabon,GAB.WPI.POP_PCH_PT.A,Wholesale price index (WPI),Annual,Percent,Wholesale price index (WPI),Wholesale trade,Period-over-preceding period percent change,
+472,Sri Lanka,LKA.WPI.YOY_PCH_PT.A,Wholesale price index (WPI),Annual,Percent,Wholesale price index (WPI),Wholesale trade,Year-over-year (YOY) percent change,
+473,Gabon,GAB.WPI.YOY_PCH_PT.A,Wholesale price index (WPI),Annual,Percent,Wholesale price index (WPI),Wholesale trade,Year-over-year (YOY) percent change,
+474,Sri Lanka,LKA.WPI.POP_PCH_PT.A,Wholesale price index (WPI),Annual,Percent,Wholesale price index (WPI),Wholesale trade,Period-over-preceding period percent change,
+475,Gabon,GAB.PPI.POP_PCH_PT.A,Producer price index (PPI),Annual,Percent,Producer price index (PPI),Producer: goods and services,Period-over-preceding period percent change,
+476,Gabon,GAB.PPI.YOY_PCH_PT.A,Producer price index (PPI),Annual,Percent,Producer price index (PPI),Producer: goods and services,Year-over-year (YOY) percent change,
+477,India,IND.WPI.IX.Q,Wholesale price index (WPI),Quarterly,Index,Wholesale price index (WPI),Wholesale trade,,2010=100
+478,Russian Federation,RUS.PPI.YOY_PCH_PT.M,Producer price index (PPI),Monthly,Percent,Producer price index (PPI),Producer: goods and services,Year-over-year (YOY) percent change,
+479,Russian Federation,RUS.PPI.POP_PCH_PT.M,Producer price index (PPI),Monthly,Percent,Producer price index (PPI),Producer: goods and services,Period-over-preceding period percent change,
+480,Sri Lanka,LKA.WPI.YOY_PCH_PT.M,Wholesale price index (WPI),Monthly,Percent,Wholesale price index (WPI),Wholesale trade,Year-over-year (YOY) percent change,
+481,Sri Lanka,LKA.WPI.POP_PCH_PT.M,Wholesale price index (WPI),Monthly,Percent,Wholesale price index (WPI),Wholesale trade,Period-over-preceding period percent change,
+482,Gabon,GAB.PPI.POP_PCH_PT.Q,Producer price index (PPI),Quarterly,Percent,Producer price index (PPI),Producer: goods and services,Period-over-preceding period percent change,
+483,Sri Lanka,LKA.WPI.POP_PCH_PT.Q,Wholesale price index (WPI),Quarterly,Percent,Wholesale price index (WPI),Wholesale trade,Period-over-preceding period percent change,
+484,Gabon,GAB.PPI.YOY_PCH_PT.Q,Producer price index (PPI),Quarterly,Percent,Producer price index (PPI),Producer: goods and services,Year-over-year (YOY) percent change,
+485,Sri Lanka,LKA.WPI.YOY_PCH_PT.Q,Wholesale price index (WPI),Quarterly,Percent,Wholesale price index (WPI),Wholesale trade,Year-over-year (YOY) percent change,
+486,Gabon,GAB.WPI.YOY_PCH_PT.Q,Wholesale price index (WPI),Quarterly,Percent,Wholesale price index (WPI),Wholesale trade,Year-over-year (YOY) percent change,
+487,"Gambia, The",GMB.PPI.POP_PCH_PT.Q,Producer price index (PPI),Quarterly,Percent,Producer price index (PPI),Producer: goods and services,Period-over-preceding period percent change,
+488,India,IND.WPI.YOY_PCH_PT.Q,Wholesale price index (WPI),Quarterly,Percent,Wholesale price index (WPI),Wholesale trade,Year-over-year (YOY) percent change,
+489,"Gambia, The",GMB.PPI.YOY_PCH_PT.Q,Producer price index (PPI),Quarterly,Percent,Producer price index (PPI),Producer: goods and services,Year-over-year (YOY) percent change,
+490,India,IND.WPI.POP_PCH_PT.Q,Wholesale price index (WPI),Quarterly,Percent,Wholesale price index (WPI),Wholesale trade,Period-over-preceding period percent change,
+491,India,IND.WPI.POP_PCH_PT.M,Wholesale price index (WPI),Monthly,Percent,Wholesale price index (WPI),Wholesale trade,Period-over-preceding period percent change,
+492,"Gambia, The",GMB.PPI.IX.Q,Producer price index (PPI),Quarterly,Index,Producer price index (PPI),Producer: goods and services,,2010=100
+493,India,IND.WPI.IX.M,Wholesale price index (WPI),Monthly,Index,Wholesale price index (WPI),Wholesale trade,,2010=100
+494,Gabon,GAB.WPI.POP_PCH_PT.Q,Wholesale price index (WPI),Quarterly,Percent,Wholesale price index (WPI),Wholesale trade,Period-over-preceding period percent change,
+495,India,IND.WPI.YOY_PCH_PT.M,Wholesale price index (WPI),Monthly,Percent,Wholesale price index (WPI),Wholesale trade,Year-over-year (YOY) percent change,
+496,New Zealand,NZL.PPI.IX.Q,Producer price index (PPI),Quarterly,Index,Producer price index (PPI),Producer: goods and services,,2010=100
+497,New Zealand,NZL.PPI.POP_PCH_PT.Q,Producer price index (PPI),Quarterly,Percent,Producer price index (PPI),Producer: goods and services,Period-over-preceding period percent change,
+498,New Zealand,NZL.PPI.YOY_PCH_PT.Q,Producer price index (PPI),Quarterly,Percent,Producer price index (PPI),Producer: goods and services,Year-over-year (YOY) percent change,
+499,Russian Federation,RUS.PPI.IX.M,Producer price index (PPI),Monthly,Index,Producer price index (PPI),Producer: goods and services,,2010=100
+500,"Estonia, Republic of",EST.PPI.POP_PCH_PT.A,Producer price index (PPI),Annual,Percent,Producer price index (PPI),Producer: goods and services,Period-over-preceding period percent change,
+501,Denmark,DNK.PPI.YOY_PCH_PT.A,Producer price index (PPI),Annual,Percent,Producer price index (PPI),Producer: goods and services,Year-over-year (YOY) percent change,
+502,"Croatia, Republic of",HRV.PPI.YOY_PCH_PT.A,Producer price index (PPI),Annual,Percent,Producer price index (PPI),Producer: goods and services,Year-over-year (YOY) percent change,
+503,"Estonia, Republic of",EST.PPI.YOY_PCH_PT.A,Producer price index (PPI),Annual,Percent,Producer price index (PPI),Producer: goods and services,Year-over-year (YOY) percent change,
+504,Switzerland,CHE.PPI.YOY_PCH_PT.A,Producer price index (PPI),Annual,Percent,Producer price index (PPI),Producer: goods and services,Year-over-year (YOY) percent change,
+505,Bulgaria,BGR.PPI.YOY_PCH_PT.A,Producer price index (PPI),Annual,Percent,Producer price index (PPI),Producer: goods and services,Year-over-year (YOY) percent change,
+506,Bulgaria,BGR.PPI.POP_PCH_PT.A,Producer price index (PPI),Annual,Percent,Producer price index (PPI),Producer: goods and services,Period-over-preceding period percent change,
+507,Switzerland,CHE.PPI.POP_PCH_PT.A,Producer price index (PPI),Annual,Percent,Producer price index (PPI),Producer: goods and services,Period-over-preceding period percent change,
+508,Switzerland,CHE.PPI.IX.A,Producer price index (PPI),Annual,Index,Producer price index (PPI),Producer: goods and services,,2010=100
+509,Denmark,DNK.PPI.IX.A,Producer price index (PPI),Annual,Index,Producer price index (PPI),Producer: goods and services,,2010=100
+510,"Estonia, Republic of",EST.PPI.IX.A,Producer price index (PPI),Annual,Index,Producer price index (PPI),Producer: goods and services,,2010=100
+511,Bulgaria,BGR.PPI.IX.A,Producer price index (PPI),Annual,Index,Producer price index (PPI),Producer: goods and services,,2010=100
+512,Denmark,DNK.PPI.POP_PCH_PT.A,Producer price index (PPI),Annual,Percent,Producer price index (PPI),Producer: goods and services,Period-over-preceding period percent change,
+513,"Croatia, Republic of",HRV.PPI.POP_PCH_PT.A,Producer price index (PPI),Annual,Percent,Producer price index (PPI),Producer: goods and services,Period-over-preceding period percent change,
+514,"Croatia, Republic of",HRV.PPI.IX.A,Producer price index (PPI),Annual,Index,Producer price index (PPI),Producer: goods and services,,2010=100
+515,Norway,NOR.PPI.IX.A,Producer price index (PPI),Annual,Index,Producer price index (PPI),Producer: goods and services,,2010=100
+516,"Slovenia, Republic of",SVN.PPI.IX.A,Producer price index (PPI),Annual,Index,Producer price index (PPI),Producer: goods and services,,2010=100
+517,"Serbia, Republic of",SRB.PPI.YOY_PCH_PT.A,Producer price index (PPI),Annual,Percent,Producer price index (PPI),Producer: goods and services,Year-over-year (YOY) percent change,
+518,"Serbia, Republic of",SRB.PPI.POP_PCH_PT.A,Producer price index (PPI),Annual,Percent,Producer price index (PPI),Producer: goods and services,Period-over-preceding period percent change,
+519,"Slovenia, Republic of",SVN.PPI.POP_PCH_PT.A,Producer price index (PPI),Annual,Percent,Producer price index (PPI),Producer: goods and services,Period-over-preceding period percent change,
+520,Bosnia and Herzegovina,BIH.PPI.YOY_PCH_PT.A,Producer price index (PPI),Annual,Percent,Producer price index (PPI),Producer: goods and services,Year-over-year (YOY) percent change,
+521,Germany,DEU.PPI.POP_PCH_PT.A,Producer price index (PPI),Annual,Percent,Producer price index (PPI),Producer: goods and services,Period-over-preceding period percent change,
+522,Germany,DEU.PPI.IX.A,Producer price index (PPI),Annual,Index,Producer price index (PPI),Producer: goods and services,,2010=100
+523,Bosnia and Herzegovina,BIH.PPI.IX.A,Producer price index (PPI),Annual,Index,Producer price index (PPI),Producer: goods and services,,2010=100
+524,"Serbia, Republic of",SRB.PPI.IX.A,Producer price index (PPI),Annual,Index,Producer price index (PPI),Producer: goods and services,,2010=100
+525,"Slovenia, Republic of",SVN.PPI.YOY_PCH_PT.A,Producer price index (PPI),Annual,Percent,Producer price index (PPI),Producer: goods and services,Year-over-year (YOY) percent change,
+526,Bosnia and Herzegovina,BIH.PPI.POP_PCH_PT.A,Producer price index (PPI),Annual,Percent,Producer price index (PPI),Producer: goods and services,Period-over-preceding period percent change,
+527,Norway,NOR.PPI.YOY_PCH_PT.A,Producer price index (PPI),Annual,Percent,Producer price index (PPI),Producer: goods and services,Year-over-year (YOY) percent change,
+528,Germany,DEU.PPI.YOY_PCH_PT.A,Producer price index (PPI),Annual,Percent,Producer price index (PPI),Producer: goods and services,Year-over-year (YOY) percent change,
+529,Norway,NOR.PPI.POP_PCH_PT.A,Producer price index (PPI),Annual,Percent,Producer price index (PPI),Producer: goods and services,Period-over-preceding period percent change,
+530,Spain,ESP.PPI.IX.A,Producer price index (PPI),Annual,Index,Producer price index (PPI),Producer: goods and services,,2010=100
+531,Spain,ESP.PPI.YOY_PCH_PT.A,Producer price index (PPI),Annual,Percent,Producer price index (PPI),Producer: goods and services,Year-over-year (YOY) percent change,
+532,Spain,ESP.PPI.POP_PCH_PT.A,Producer price index (PPI),Annual,Percent,Producer price index (PPI),Producer: goods and services,Period-over-preceding period percent change,
+533,"North Macedonia, Republic of",MKD.PPI.YOY_PCH_PT.A,Producer price index (PPI),Annual,Percent,Producer price index (PPI),Producer: goods and services,Year-over-year (YOY) percent change,
+534,"North Macedonia, Republic of",MKD.PPI.IX.A,Producer price index (PPI),Annual,Index,Producer price index (PPI),Producer: goods and services,,2010=100
+535,"North Macedonia, Republic of",MKD.PPI.POP_PCH_PT.A,Producer price index (PPI),Annual,Percent,Producer price index (PPI),Producer: goods and services,Period-over-preceding period percent change,
+536,Angola,AGO.WPI.YOY_PCH_PT.A,Wholesale price index (WPI),Annual,Percent,Wholesale price index (WPI),Wholesale trade,Year-over-year (YOY) percent change,
+537,Angola,AGO.WPI.IX.A,Wholesale price index (WPI),Annual,Index,Wholesale price index (WPI),Wholesale trade,,2010=100
+538,Angola,AGO.WPI.POP_PCH_PT.A,Wholesale price index (WPI),Annual,Percent,Wholesale price index (WPI),Wholesale trade,Period-over-preceding period percent change,
+539,Sierra Leone,SLE.WPI.IX.A,Wholesale price index (WPI),Annual,Index,Wholesale price index (WPI),Wholesale trade,,1985=100
+540,Malaysia,MYS.PPI.YOY_PCH_PT.A,Producer price index (PPI),Annual,Percent,Producer price index (PPI),Producer: goods and services,Year-over-year (YOY) percent change,
+541,Mexico,MEX.PPI.YOY_PCH_PT.A,Producer price index (PPI),Annual,Percent,Producer price index (PPI),Producer: goods and services,Year-over-year (YOY) percent change,
+542,Italy,ITA.PPI.IX.A,Producer price index (PPI),Annual,Index,Producer price index (PPI),Producer: goods and services,,2010=100
+543,Malaysia,MYS.PPI.YOY_PCH_PT.Q,Producer price index (PPI),Quarterly,Percent,Producer price index (PPI),Producer: goods and services,Year-over-year (YOY) percent change,
+544,Kyrgyz Republic,KGZ.PPI.IX.A,Producer price index (PPI),Annual,Index,Producer price index (PPI),Producer: goods and services,,2010=100
+545,"Lithuania, Republic of",LTU.PPI.YOY_PCH_PT.A,Producer price index (PPI),Annual,Percent,Producer price index (PPI),Producer: goods and services,Year-over-year (YOY) percent change,
+546,Malaysia,MYS.PPI.YOY_PCH_PT.M,Producer price index (PPI),Monthly,Percent,Producer price index (PPI),Producer: goods and services,Year-over-year (YOY) percent change,
+547,Mexico,MEX.PPI.IX.A,Producer price index (PPI),Annual,Index,Producer price index (PPI),Producer: goods and services,,2010=100
+548,Malaysia,MYS.PPI.POP_PCH_PT.M,Producer price index (PPI),Monthly,Percent,Producer price index (PPI),Producer: goods and services,Period-over-preceding period percent change,
+549,"Lithuania, Republic of",LTU.PPI.POP_PCH_PT.Q,Producer price index (PPI),Quarterly,Percent,Producer price index (PPI),Producer: goods and services,Period-over-preceding period percent change,
+550,Italy,ITA.WPI.YOY_PCH_PT.Q,Wholesale price index (WPI),Quarterly,Percent,Wholesale price index (WPI),Wholesale trade,Year-over-year (YOY) percent change,
+551,Italy,ITA.WPI.IX.Q,Wholesale price index (WPI),Quarterly,Index,Wholesale price index (WPI),Wholesale trade,,1995=100
+552,Mexico,MEX.PPI.YOY_PCH_PT.Q,Producer price index (PPI),Quarterly,Percent,Producer price index (PPI),Producer: goods and services,Year-over-year (YOY) percent change,
+553,Hungary,HUN.PPI.POP_PCH_PT.Q,Producer price index (PPI),Quarterly,Percent,Producer price index (PPI),Producer: goods and services,Period-over-preceding period percent change,
+554,Italy,ITA.WPI.POP_PCH_PT.Q,Wholesale price index (WPI),Quarterly,Percent,Wholesale price index (WPI),Wholesale trade,Period-over-preceding period percent change,
+555,Italy,ITA.PPI.YOY_PCH_PT.Q,Producer price index (PPI),Quarterly,Percent,Producer price index (PPI),Producer: goods and services,Year-over-year (YOY) percent change,
+556,Hungary,HUN.PPI.YOY_PCH_PT.A,Producer price index (PPI),Annual,Percent,Producer price index (PPI),Producer: goods and services,Year-over-year (YOY) percent change,
+557,Italy,ITA.WPI.POP_PCH_PT.A,Wholesale price index (WPI),Annual,Percent,Wholesale price index (WPI),Wholesale trade,Period-over-preceding period percent change,
+558,Kyrgyz Republic,KGZ.PPI.POP_PCH_PT.A,Producer price index (PPI),Annual,Percent,Producer price index (PPI),Producer: goods and services,Period-over-preceding period percent change,
+559,"Lithuania, Republic of",LTU.PPI.POP_PCH_PT.A,Producer price index (PPI),Annual,Percent,Producer price index (PPI),Producer: goods and services,Period-over-preceding period percent change,
+560,Italy,ITA.WPI.YOY_PCH_PT.A,Wholesale price index (WPI),Annual,Percent,Wholesale price index (WPI),Wholesale trade,Year-over-year (YOY) percent change,
+561,Kyrgyz Republic,KGZ.PPI.YOY_PCH_PT.A,Producer price index (PPI),Annual,Percent,Producer price index (PPI),Producer: goods and services,Year-over-year (YOY) percent change,
+562,Slovak Republic,SVK.PPI.YOY_PCH_PT.M,Producer price index (PPI),Monthly,Percent,Producer price index (PPI),Producer: goods and services,Year-over-year (YOY) percent change,
+563,Kyrgyz Republic,KGZ.PPI.IX.Q,Producer price index (PPI),Quarterly,Index,Producer price index (PPI),Producer: goods and services,,2010=100
+564,Kyrgyz Republic,KGZ.PPI.YOY_PCH_PT.Q,Producer price index (PPI),Quarterly,Percent,Producer price index (PPI),Producer: goods and services,Year-over-year (YOY) percent change,
+565,Italy,ITA.PPI.YOY_PCH_PT.A,Producer price index (PPI),Annual,Percent,Producer price index (PPI),Producer: goods and services,Year-over-year (YOY) percent change,
+566,Italy,ITA.PPI.IX.Q,Producer price index (PPI),Quarterly,Index,Producer price index (PPI),Producer: goods and services,,2010=100
+567,Italy,ITA.WPI.IX.A,Wholesale price index (WPI),Annual,Index,Wholesale price index (WPI),Wholesale trade,,1995=100
+568,Kyrgyz Republic,KGZ.PPI.POP_PCH_PT.Q,Producer price index (PPI),Quarterly,Percent,Producer price index (PPI),Producer: goods and services,Period-over-preceding period percent change,
+569,Italy,ITA.WPI.POP_PCH_PT.M,Wholesale price index (WPI),Monthly,Percent,Wholesale price index (WPI),Wholesale trade,Period-over-preceding period percent change,
+570,Kyrgyz Republic,KGZ.PPI.POP_PCH_PT.M,Producer price index (PPI),Monthly,Percent,Producer price index (PPI),Producer: goods and services,Period-over-preceding period percent change,
+571,Italy,ITA.PPI.YOY_PCH_PT.M,Producer price index (PPI),Monthly,Percent,Producer price index (PPI),Producer: goods and services,Year-over-year (YOY) percent change,
+572,Mexico,MEX.PPI.YOY_PCH_PT.M,Producer price index (PPI),Monthly,Percent,Producer price index (PPI),Producer: goods and services,Year-over-year (YOY) percent change,
+573,Italy,ITA.WPI.YOY_PCH_PT.M,Wholesale price index (WPI),Monthly,Percent,Wholesale price index (WPI),Wholesale trade,Year-over-year (YOY) percent change,
+574,Kyrgyz Republic,KGZ.PPI.YOY_PCH_PT.M,Producer price index (PPI),Monthly,Percent,Producer price index (PPI),Producer: goods and services,Year-over-year (YOY) percent change,
+575,Sierra Leone,SLE.WPI.IX.Q,Wholesale price index (WPI),Quarterly,Index,Wholesale price index (WPI),Wholesale trade,,1985=100
+576,"Lithuania, Republic of",LTU.PPI.IX.Q,Producer price index (PPI),Quarterly,Index,Producer price index (PPI),Producer: goods and services,,2010=100
+577,Sierra Leone,SLE.WPI.YOY_PCH_PT.Q,Wholesale price index (WPI),Quarterly,Percent,Wholesale price index (WPI),Wholesale trade,Year-over-year (YOY) percent change,
+578,Sierra Leone,SLE.WPI.POP_PCH_PT.Q,Wholesale price index (WPI),Quarterly,Percent,Wholesale price index (WPI),Wholesale trade,Period-over-preceding period percent change,
+579,Malaysia,MYS.PPI.POP_PCH_PT.A,Producer price index (PPI),Annual,Percent,Producer price index (PPI),Producer: goods and services,Period-over-preceding period percent change,
+580,Hungary,HUN.PPI.POP_PCH_PT.A,Producer price index (PPI),Annual,Percent,Producer price index (PPI),Producer: goods and services,Period-over-preceding period percent change,
+581,Hungary,HUN.PPI.IX.A,Producer price index (PPI),Annual,Index,Producer price index (PPI),Producer: goods and services,,2010=100
+582,Mexico,MEX.PPI.IX.M,Producer price index (PPI),Monthly,Index,Producer price index (PPI),Producer: goods and services,,2010=100
+583,Mexico,MEX.PPI.POP_PCH_PT.M,Producer price index (PPI),Monthly,Percent,Producer price index (PPI),Producer: goods and services,Period-over-preceding period percent change,
+584,Sierra Leone,SLE.WPI.YOY_PCH_PT.A,Wholesale price index (WPI),Annual,Percent,Wholesale price index (WPI),Wholesale trade,Year-over-year (YOY) percent change,
+585,Sierra Leone,SLE.WPI.POP_PCH_PT.A,Wholesale price index (WPI),Annual,Percent,Wholesale price index (WPI),Wholesale trade,Period-over-preceding period percent change,
+586,Mexico,MEX.PPI.POP_PCH_PT.Q,Producer price index (PPI),Quarterly,Percent,Producer price index (PPI),Producer: goods and services,Period-over-preceding period percent change,
+587,Italy,ITA.WPI.IX.M,Wholesale price index (WPI),Monthly,Index,Wholesale price index (WPI),Wholesale trade,,1995=100
+588,Malaysia,MYS.PPI.IX.M,Producer price index (PPI),Monthly,Index,Producer price index (PPI),Producer: goods and services,,2010=100
+589,Mexico,MEX.PPI.POP_PCH_PT.A,Producer price index (PPI),Annual,Percent,Producer price index (PPI),Producer: goods and services,Period-over-preceding period percent change,
+590,Kyrgyz Republic,KGZ.PPI.IX.M,Producer price index (PPI),Monthly,Index,Producer price index (PPI),Producer: goods and services,,2010=100
+591,Mexico,MEX.PPI.IX.Q,Producer price index (PPI),Quarterly,Index,Producer price index (PPI),Producer: goods and services,,2010=100
+592,Malaysia,MYS.PPI.IX.Q,Producer price index (PPI),Quarterly,Index,Producer price index (PPI),Producer: goods and services,,2010=100
+593,Malaysia,MYS.PPI.IX.A,Producer price index (PPI),Annual,Index,Producer price index (PPI),Producer: goods and services,,2010=100
+594,Malaysia,MYS.PPI.POP_PCH_PT.Q,Producer price index (PPI),Quarterly,Percent,Producer price index (PPI),Producer: goods and services,Period-over-preceding period percent change,
+595,Italy,ITA.PPI.POP_PCH_PT.Q,Producer price index (PPI),Quarterly,Percent,Producer price index (PPI),Producer: goods and services,Period-over-preceding period percent change,
+596,Slovak Republic,SVK.PPI.IX.A,Producer price index (PPI),Annual,Index,Producer price index (PPI),Producer: goods and services,,2010=100
+597,Slovak Republic,SVK.PPI.YOY_PCH_PT.A,Producer price index (PPI),Annual,Percent,Producer price index (PPI),Producer: goods and services,Year-over-year (YOY) percent change,
+598,Italy,ITA.PPI.POP_PCH_PT.A,Producer price index (PPI),Annual,Percent,Producer price index (PPI),Producer: goods and services,Period-over-preceding period percent change,
+599,Slovak Republic,SVK.PPI.POP_PCH_PT.Q,Producer price index (PPI),Quarterly,Percent,Producer price index (PPI),Producer: goods and services,Period-over-preceding period percent change,
+600,Hungary,HUN.PPI.YOY_PCH_PT.Q,Producer price index (PPI),Quarterly,Percent,Producer price index (PPI),Producer: goods and services,Year-over-year (YOY) percent change,
+601,Hungary,HUN.PPI.IX.Q,Producer price index (PPI),Quarterly,Index,Producer price index (PPI),Producer: goods and services,,2010=100
+602,Hungary,HUN.PPI.IX.M,Producer price index (PPI),Monthly,Index,Producer price index (PPI),Producer: goods and services,,2010=100
+603,Slovak Republic,SVK.PPI.POP_PCH_PT.A,Producer price index (PPI),Annual,Percent,Producer price index (PPI),Producer: goods and services,Period-over-preceding period percent change,
+604,Slovak Republic,SVK.PPI.IX.Q,Producer price index (PPI),Quarterly,Index,Producer price index (PPI),Producer: goods and services,,2010=100
+605,"Lithuania, Republic of",LTU.PPI.YOY_PCH_PT.M,Producer price index (PPI),Monthly,Percent,Producer price index (PPI),Producer: goods and services,Year-over-year (YOY) percent change,
+606,"Lithuania, Republic of",LTU.PPI.IX.A,Producer price index (PPI),Annual,Index,Producer price index (PPI),Producer: goods and services,,2010=100
+607,Slovak Republic,SVK.PPI.YOY_PCH_PT.Q,Producer price index (PPI),Quarterly,Percent,Producer price index (PPI),Producer: goods and services,Year-over-year (YOY) percent change,
+608,"Lithuania, Republic of",LTU.PPI.YOY_PCH_PT.Q,Producer price index (PPI),Quarterly,Percent,Producer price index (PPI),Producer: goods and services,Year-over-year (YOY) percent change,
+609,Hungary,HUN.PPI.YOY_PCH_PT.M,Producer price index (PPI),Monthly,Percent,Producer price index (PPI),Producer: goods and services,Year-over-year (YOY) percent change,
+610,Hungary,HUN.PPI.POP_PCH_PT.M,Producer price index (PPI),Monthly,Percent,Producer price index (PPI),Producer: goods and services,Period-over-preceding period percent change,
+611,Slovak Republic,SVK.PPI.POP_PCH_PT.M,Producer price index (PPI),Monthly,Percent,Producer price index (PPI),Producer: goods and services,Period-over-preceding period percent change,
+612,"Lithuania, Republic of",LTU.PPI.IX.M,Producer price index (PPI),Monthly,Index,Producer price index (PPI),Producer: goods and services,,2010=100
+613,Italy,ITA.PPI.POP_PCH_PT.M,Producer price index (PPI),Monthly,Percent,Producer price index (PPI),Producer: goods and services,Period-over-preceding period percent change,
+614,"Lithuania, Republic of",LTU.PPI.POP_PCH_PT.M,Producer price index (PPI),Monthly,Percent,Producer price index (PPI),Producer: goods and services,Period-over-preceding period percent change,
+615,Slovak Republic,SVK.PPI.IX.M,Producer price index (PPI),Monthly,Index,Producer price index (PPI),Producer: goods and services,,2010=100
+616,Italy,ITA.PPI.IX.M,Producer price index (PPI),Monthly,Index,Producer price index (PPI),Producer: goods and services,,2010=100
+617,Switzerland,CHE.PPI.IX.Q,Producer price index (PPI),Quarterly,Index,Producer price index (PPI),Producer: goods and services,,2010=100
+618,Switzerland,CHE.PPI.POP_PCH_PT.Q,Producer price index (PPI),Quarterly,Percent,Producer price index (PPI),Producer: goods and services,Period-over-preceding period percent change,
+619,"Estonia, Republic of",EST.PPI.YOY_PCH_PT.Q,Producer price index (PPI),Quarterly,Percent,Producer price index (PPI),Producer: goods and services,Year-over-year (YOY) percent change,
+620,Switzerland,CHE.PPI.YOY_PCH_PT.Q,Producer price index (PPI),Quarterly,Percent,Producer price index (PPI),Producer: goods and services,Year-over-year (YOY) percent change,
+621,"Estonia, Republic of",EST.PPI.POP_PCH_PT.Q,Producer price index (PPI),Quarterly,Percent,Producer price index (PPI),Producer: goods and services,Period-over-preceding period percent change,
+622,Germany,DEU.PPI.YOY_PCH_PT.Q,Producer price index (PPI),Quarterly,Percent,Producer price index (PPI),Producer: goods and services,Year-over-year (YOY) percent change,
+623,"Slovenia, Republic of",SVN.PPI.YOY_PCH_PT.Q,Producer price index (PPI),Quarterly,Percent,Producer price index (PPI),Producer: goods and services,Year-over-year (YOY) percent change,
+624,Germany,DEU.PPI.POP_PCH_PT.Q,Producer price index (PPI),Quarterly,Percent,Producer price index (PPI),Producer: goods and services,Period-over-preceding period percent change,
+625,Norway,NOR.PPI.POP_PCH_PT.Q,Producer price index (PPI),Quarterly,Percent,Producer price index (PPI),Producer: goods and services,Period-over-preceding period percent change,
+626,"Slovenia, Republic of",SVN.PPI.POP_PCH_PT.Q,Producer price index (PPI),Quarterly,Percent,Producer price index (PPI),Producer: goods and services,Period-over-preceding period percent change,
+627,"Croatia, Republic of",HRV.PPI.YOY_PCH_PT.Q,Producer price index (PPI),Quarterly,Percent,Producer price index (PPI),Producer: goods and services,Year-over-year (YOY) percent change,
+628,"Croatia, Republic of",HRV.PPI.POP_PCH_PT.Q,Producer price index (PPI),Quarterly,Percent,Producer price index (PPI),Producer: goods and services,Period-over-preceding period percent change,
+629,"Serbia, Republic of",SRB.PPI.YOY_PCH_PT.Q,Producer price index (PPI),Quarterly,Percent,Producer price index (PPI),Producer: goods and services,Year-over-year (YOY) percent change,
+630,Cyprus,CYP.PPI.IX.A,Producer price index (PPI),Annual,Index,Producer price index (PPI),Producer: goods and services,,2010=100
+631,"Serbia, Republic of",SRB.PPI.POP_PCH_PT.Q,Producer price index (PPI),Quarterly,Percent,Producer price index (PPI),Producer: goods and services,Period-over-preceding period percent change,
+632,Norway,NOR.PPI.YOY_PCH_PT.Q,Producer price index (PPI),Quarterly,Percent,Producer price index (PPI),Producer: goods and services,Year-over-year (YOY) percent change,
+633,"Serbia, Republic of",SRB.PPI.IX.Q,Producer price index (PPI),Quarterly,Index,Producer price index (PPI),Producer: goods and services,,2010=100
+634,"Croatia, Republic of",HRV.PPI.IX.Q,Producer price index (PPI),Quarterly,Index,Producer price index (PPI),Producer: goods and services,,2010=100
+635,"Estonia, Republic of",EST.PPI.IX.Q,Producer price index (PPI),Quarterly,Index,Producer price index (PPI),Producer: goods and services,,2010=100
+636,"Slovenia, Republic of",SVN.PPI.IX.Q,Producer price index (PPI),Quarterly,Index,Producer price index (PPI),Producer: goods and services,,2010=100
+637,Cyprus,CYP.PPI.POP_PCH_PT.A,Producer price index (PPI),Annual,Percent,Producer price index (PPI),Producer: goods and services,Period-over-preceding period percent change,
+638,Norway,NOR.PPI.IX.Q,Producer price index (PPI),Quarterly,Index,Producer price index (PPI),Producer: goods and services,,2010=100
+639,"Uzbekistan, Republic of",UZB.PPI.POP_PCH_PT.A,Producer price index (PPI),Annual,Percent,Producer price index (PPI),Producer: goods and services,Period-over-preceding period percent change,
+640,Costa Rica,CRI.PPI.YOY_PCH_PT.A,Producer price index (PPI),Annual,Percent,Producer price index (PPI),Producer: goods and services,Year-over-year (YOY) percent change,
+641,Costa Rica,CRI.PPI.POP_PCH_PT.A,Producer price index (PPI),Annual,Percent,Producer price index (PPI),Producer: goods and services,Period-over-preceding period percent change,
+642,"Uzbekistan, Republic of",UZB.PPI.YOY_PCH_PT.A,Producer price index (PPI),Annual,Percent,Producer price index (PPI),Producer: goods and services,Year-over-year (YOY) percent change,
+643,Denmark,DNK.PPI.YOY_PCH_PT.Q,Producer price index (PPI),Quarterly,Percent,Producer price index (PPI),Producer: goods and services,Year-over-year (YOY) percent change,
+644,"North Macedonia, Republic of",MKD.PPI.YOY_PCH_PT.Q,Producer price index (PPI),Quarterly,Percent,Producer price index (PPI),Producer: goods and services,Year-over-year (YOY) percent change,
+645,"North Macedonia, Republic of",MKD.PPI.POP_PCH_PT.Q,Producer price index (PPI),Quarterly,Percent,Producer price index (PPI),Producer: goods and services,Period-over-preceding period percent change,
+646,Denmark,DNK.PPI.IX.Q,Producer price index (PPI),Quarterly,Index,Producer price index (PPI),Producer: goods and services,,2010=100
+647,"Uzbekistan, Republic of",UZB.PPI.IX.A,Producer price index (PPI),Annual,Index,Producer price index (PPI),Producer: goods and services,,2010=100
+648,Denmark,DNK.PPI.POP_PCH_PT.Q,Producer price index (PPI),Quarterly,Percent,Producer price index (PPI),Producer: goods and services,Period-over-preceding period percent change,
+649,Costa Rica,CRI.PPI.IX.A,Producer price index (PPI),Annual,Index,Producer price index (PPI),Producer: goods and services,,2010=100
+650,"North Macedonia, Republic of",MKD.PPI.IX.Q,Producer price index (PPI),Quarterly,Index,Producer price index (PPI),Producer: goods and services,,2010=100
+651,"Netherlands, The",NLD.PPI.YOY_PCH_PT.A,Producer price index (PPI),Annual,Percent,Producer price index (PPI),Producer: goods and services,Year-over-year (YOY) percent change,
+652,"Netherlands, The",NLD.PPI.POP_PCH_PT.A,Producer price index (PPI),Annual,Percent,Producer price index (PPI),Producer: goods and services,Period-over-preceding period percent change,
+653,"Netherlands, The",NLD.PPI.IX.A,Producer price index (PPI),Annual,Index,Producer price index (PPI),Producer: goods and services,,2010=100
+654,Thailand,THA.PPI.YOY_PCH_PT.A,Producer price index (PPI),Annual,Percent,Producer price index (PPI),Producer: goods and services,Year-over-year (YOY) percent change,
+655,Thailand,THA.PPI.POP_PCH_PT.A,Producer price index (PPI),Annual,Percent,Producer price index (PPI),Producer: goods and services,Period-over-preceding period percent change,
+656,Thailand,THA.PPI.IX.A,Producer price index (PPI),Annual,Index,Producer price index (PPI),Producer: goods and services,,2010=100
+657,Germany,DEU.PPI.IX.Q,Producer price index (PPI),Quarterly,Index,Producer price index (PPI),Producer: goods and services,,2010=100
+658,Cyprus,CYP.PPI.YOY_PCH_PT.A,Producer price index (PPI),Annual,Percent,Producer price index (PPI),Producer: goods and services,Year-over-year (YOY) percent change,
+659,"North Macedonia, Republic of",MKD.PPI.YOY_PCH_PT.M,Producer price index (PPI),Monthly,Percent,Producer price index (PPI),Producer: goods and services,Year-over-year (YOY) percent change,
+660,"Estonia, Republic of",EST.PPI.IX.M,Producer price index (PPI),Monthly,Index,Producer price index (PPI),Producer: goods and services,,2010=100
+661,"North Macedonia, Republic of",MKD.PPI.IX.M,Producer price index (PPI),Monthly,Index,Producer price index (PPI),Producer: goods and services,,2010=100
+662,Denmark,DNK.PPI.POP_PCH_PT.M,Producer price index (PPI),Monthly,Percent,Producer price index (PPI),Producer: goods and services,Period-over-preceding period percent change,
+663,Denmark,DNK.PPI.YOY_PCH_PT.M,Producer price index (PPI),Monthly,Percent,Producer price index (PPI),Producer: goods and services,Year-over-year (YOY) percent change,
+664,"North Macedonia, Republic of",MKD.PPI.POP_PCH_PT.M,Producer price index (PPI),Monthly,Percent,Producer price index (PPI),Producer: goods and services,Period-over-preceding period percent change,
+665,Cyprus,CYP.PPI.IX.M,Producer price index (PPI),Monthly,Index,Producer price index (PPI),Producer: goods and services,,2010=100
+666,Norway,NOR.PPI.IX.M,Producer price index (PPI),Monthly,Index,Producer price index (PPI),Producer: goods and services,,2010=100
+667,"Serbia, Republic of",SRB.PPI.IX.M,Producer price index (PPI),Monthly,Index,Producer price index (PPI),Producer: goods and services,,2010=100
+668,"Croatia, Republic of",HRV.PPI.POP_PCH_PT.M,Producer price index (PPI),Monthly,Percent,Producer price index (PPI),Producer: goods and services,Period-over-preceding period percent change,
+669,Switzerland,CHE.PPI.YOY_PCH_PT.M,Producer price index (PPI),Monthly,Percent,Producer price index (PPI),Producer: goods and services,Year-over-year (YOY) percent change,
+670,Germany,DEU.PPI.POP_PCH_PT.M,Producer price index (PPI),Monthly,Percent,Producer price index (PPI),Producer: goods and services,Period-over-preceding period percent change,
+671,Switzerland,CHE.PPI.POP_PCH_PT.M,Producer price index (PPI),Monthly,Percent,Producer price index (PPI),Producer: goods and services,Period-over-preceding period percent change,
+672,"Estonia, Republic of",EST.PPI.YOY_PCH_PT.M,Producer price index (PPI),Monthly,Percent,Producer price index (PPI),Producer: goods and services,Year-over-year (YOY) percent change,
+673,Germany,DEU.PPI.YOY_PCH_PT.M,Producer price index (PPI),Monthly,Percent,Producer price index (PPI),Producer: goods and services,Year-over-year (YOY) percent change,
+674,"Estonia, Republic of",EST.PPI.POP_PCH_PT.M,Producer price index (PPI),Monthly,Percent,Producer price index (PPI),Producer: goods and services,Period-over-preceding period percent change,
+675,Denmark,DNK.PPI.IX.M,Producer price index (PPI),Monthly,Index,Producer price index (PPI),Producer: goods and services,,2010=100
+676,Germany,DEU.PPI.IX.M,Producer price index (PPI),Monthly,Index,Producer price index (PPI),Producer: goods and services,,2010=100
+677,Cyprus,CYP.PPI.IX.Q,Producer price index (PPI),Quarterly,Index,Producer price index (PPI),Producer: goods and services,,2010=100
+678,Cyprus,CYP.PPI.YOY_PCH_PT.M,Producer price index (PPI),Monthly,Percent,Producer price index (PPI),Producer: goods and services,Year-over-year (YOY) percent change,
+679,"Serbia, Republic of",SRB.PPI.POP_PCH_PT.M,Producer price index (PPI),Monthly,Percent,Producer price index (PPI),Producer: goods and services,Period-over-preceding period percent change,
+680,Cyprus,CYP.PPI.POP_PCH_PT.M,Producer price index (PPI),Monthly,Percent,Producer price index (PPI),Producer: goods and services,Period-over-preceding period percent change,
+681,Norway,NOR.PPI.YOY_PCH_PT.M,Producer price index (PPI),Monthly,Percent,Producer price index (PPI),Producer: goods and services,Year-over-year (YOY) percent change,
+682,Norway,NOR.PPI.POP_PCH_PT.M,Producer price index (PPI),Monthly,Percent,Producer price index (PPI),Producer: goods and services,Period-over-preceding period percent change,
+683,"Croatia, Republic of",HRV.PPI.YOY_PCH_PT.M,Producer price index (PPI),Monthly,Percent,Producer price index (PPI),Producer: goods and services,Year-over-year (YOY) percent change,
+684,Cyprus,CYP.PPI.YOY_PCH_PT.Q,Producer price index (PPI),Quarterly,Percent,Producer price index (PPI),Producer: goods and services,Year-over-year (YOY) percent change,
+685,Cyprus,CYP.PPI.POP_PCH_PT.Q,Producer price index (PPI),Quarterly,Percent,Producer price index (PPI),Producer: goods and services,Period-over-preceding period percent change,
+686,"Croatia, Republic of",HRV.PPI.IX.M,Producer price index (PPI),Monthly,Index,Producer price index (PPI),Producer: goods and services,,2010=100
+687,Switzerland,CHE.PPI.IX.M,Producer price index (PPI),Monthly,Index,Producer price index (PPI),Producer: goods and services,,2010=100
+688,"Serbia, Republic of",SRB.PPI.YOY_PCH_PT.M,Producer price index (PPI),Monthly,Percent,Producer price index (PPI),Producer: goods and services,Year-over-year (YOY) percent change,
+689,Spain,ESP.PPI.POP_PCH_PT.Q,Producer price index (PPI),Quarterly,Percent,Producer price index (PPI),Producer: goods and services,Period-over-preceding period percent change,
+690,"Slovenia, Republic of",SVN.PPI.POP_PCH_PT.M,Producer price index (PPI),Monthly,Percent,Producer price index (PPI),Producer: goods and services,Period-over-preceding period percent change,
+691,"Slovenia, Republic of",SVN.PPI.YOY_PCH_PT.M,Producer price index (PPI),Monthly,Percent,Producer price index (PPI),Producer: goods and services,Year-over-year (YOY) percent change,
+692,Spain,ESP.PPI.IX.M,Producer price index (PPI),Monthly,Index,Producer price index (PPI),Producer: goods and services,,2010=100
+693,Spain,ESP.PPI.IX.Q,Producer price index (PPI),Quarterly,Index,Producer price index (PPI),Producer: goods and services,,2010=100
+694,"Slovenia, Republic of",SVN.PPI.IX.M,Producer price index (PPI),Monthly,Index,Producer price index (PPI),Producer: goods and services,,2010=100
+695,Spain,ESP.PPI.YOY_PCH_PT.M,Producer price index (PPI),Monthly,Percent,Producer price index (PPI),Producer: goods and services,Year-over-year (YOY) percent change,
+696,Spain,ESP.PPI.POP_PCH_PT.M,Producer price index (PPI),Monthly,Percent,Producer price index (PPI),Producer: goods and services,Period-over-preceding period percent change,
+697,Spain,ESP.PPI.YOY_PCH_PT.Q,Producer price index (PPI),Quarterly,Percent,Producer price index (PPI),Producer: goods and services,Year-over-year (YOY) percent change,
+698,"Hong Kong Special Administrative Region, People's Republic of China",HKG.PPI.YOY_PCH_PT.A,Producer price index (PPI),Annual,Percent,Producer price index (PPI),Producer: goods and services,Year-over-year (YOY) percent change,
+699,"Hong Kong Special Administrative Region, People's Republic of China",HKG.PPI.IX.A,Producer price index (PPI),Annual,Index,Producer price index (PPI),Producer: goods and services,,2010=100
+700,"Hong Kong Special Administrative Region, People's Republic of China",HKG.PPI.POP_PCH_PT.A,Producer price index (PPI),Annual,Percent,Producer price index (PPI),Producer: goods and services,Period-over-preceding period percent change,
+701,El Salvador,SLV.PPI.IX.M,Producer price index (PPI),Monthly,Index,Producer price index (PPI),Producer: goods and services,,2010=100
+702,Albania,ALB.WPI.IX.A,Wholesale price index (WPI),Annual,Index,Wholesale price index (WPI),Wholesale trade,,1985=100
+703,Austria,AUT.PPI.POP_PCH_PT.A,Producer price index (PPI),Annual,Percent,Producer price index (PPI),Producer: goods and services,Period-over-preceding period percent change,
+704,Austria,AUT.WPI.IX.A,Wholesale price index (WPI),Annual,Index,Wholesale price index (WPI),Wholesale trade,,2010=100
+705,El Salvador,SLV.PPI.IX.Q,Producer price index (PPI),Quarterly,Index,Producer price index (PPI),Producer: goods and services,,2010=100
+706,El Salvador,SLV.WPI.IX.Q,Wholesale price index (WPI),Quarterly,Index,Wholesale price index (WPI),Wholesale trade,,2010=100
+707,Belgium,BEL.PPI.YOY_PCH_PT.A,Producer price index (PPI),Annual,Percent,Producer price index (PPI),Producer: goods and services,Year-over-year (YOY) percent change,
+708,Jamaica,JAM.PPI.IX.M,Producer price index (PPI),Monthly,Index,Producer price index (PPI),Producer: goods and services,,2010=100
+709,Bosnia and Herzegovina,BIH.PPI.IX.Q,Producer price index (PPI),Quarterly,Index,Producer price index (PPI),Producer: goods and services,,2010=100
+710,"Hong Kong Special Administrative Region, People's Republic of China",HKG.PPI.YOY_PCH_PT.Q,Producer price index (PPI),Quarterly,Percent,Producer price index (PPI),Producer: goods and services,Year-over-year (YOY) percent change,
+711,Bosnia and Herzegovina,BIH.PPI.YOY_PCH_PT.Q,Producer price index (PPI),Quarterly,Percent,Producer price index (PPI),Producer: goods and services,Year-over-year (YOY) percent change,
+712,"Belarus, Republic of",BLR.PPI.IX.A,Producer price index (PPI),Annual,Index,Producer price index (PPI),Producer: goods and services,,2010=100
+713,Albania,ALB.PPI.POP_PCH_PT.A,Producer price index (PPI),Annual,Percent,Producer price index (PPI),Producer: goods and services,Period-over-preceding period percent change,
+714,Nicaragua,NIC.PPI.YOY_PCH_PT.A,Producer price index (PPI),Annual,Percent,Producer price index (PPI),Producer: goods and services,Year-over-year (YOY) percent change,
+715,Austria,AUT.WPI.YOY_PCH_PT.Q,Wholesale price index (WPI),Quarterly,Percent,Wholesale price index (WPI),Wholesale trade,Year-over-year (YOY) percent change,
+716,Jamaica,JAM.PPI.POP_PCH_PT.A,Producer price index (PPI),Annual,Percent,Producer price index (PPI),Producer: goods and services,Period-over-preceding period percent change,
+717,El Salvador,SLV.WPI.POP_PCH_PT.M,Wholesale price index (WPI),Monthly,Percent,Wholesale price index (WPI),Wholesale trade,Period-over-preceding period percent change,
+718,Ukraine,UKR.PPI.POP_PCH_PT.A,Producer price index (PPI),Annual,Percent,Producer price index (PPI),Producer: goods and services,Period-over-preceding period percent change,
+719,Albania,ALB.WPI.YOY_PCH_PT.A,Wholesale price index (WPI),Annual,Percent,Wholesale price index (WPI),Wholesale trade,Year-over-year (YOY) percent change,
+720,Austria,AUT.WPI.YOY_PCH_PT.M,Wholesale price index (WPI),Monthly,Percent,Wholesale price index (WPI),Wholesale trade,Year-over-year (YOY) percent change,
+721,El Salvador,SLV.WPI.YOY_PCH_PT.A,Wholesale price index (WPI),Annual,Percent,Wholesale price index (WPI),Wholesale trade,Year-over-year (YOY) percent change,
+722,Albania,ALB.PPI.POP_PCH_PT.Q,Producer price index (PPI),Quarterly,Percent,Producer price index (PPI),Producer: goods and services,Period-over-preceding period percent change,
+723,Ukraine,UKR.PPI.POP_PCH_PT.M,Producer price index (PPI),Monthly,Percent,Producer price index (PPI),Producer: goods and services,Period-over-preceding period percent change,
+724,Austria,AUT.WPI.YOY_PCH_PT.A,Wholesale price index (WPI),Annual,Percent,Wholesale price index (WPI),Wholesale trade,Year-over-year (YOY) percent change,
+725,Belgium,BEL.PPI.POP_PCH_PT.M,Producer price index (PPI),Monthly,Percent,Producer price index (PPI),Producer: goods and services,Period-over-preceding period percent change,
+726,Ukraine,UKR.PPI.IX.Q,Producer price index (PPI),Quarterly,Index,Producer price index (PPI),Producer: goods and services,,2010=100
+727,Nicaragua,NIC.PPI.POP_PCH_PT.M,Producer price index (PPI),Monthly,Percent,Producer price index (PPI),Producer: goods and services,Period-over-preceding period percent change,
+728,Jamaica,JAM.PPI.IX.Q,Producer price index (PPI),Quarterly,Index,Producer price index (PPI),Producer: goods and services,,2010=100
+729,Albania,ALB.PPI.IX.A,Producer price index (PPI),Annual,Index,Producer price index (PPI),Producer: goods and services,,2010=100
+730,Jamaica,JAM.PPI.POP_PCH_PT.M,Producer price index (PPI),Monthly,Percent,Producer price index (PPI),Producer: goods and services,Period-over-preceding period percent change,
+731,Albania,ALB.PPI.YOY_PCH_PT.Q,Producer price index (PPI),Quarterly,Percent,Producer price index (PPI),Producer: goods and services,Year-over-year (YOY) percent change,
+732,Ukraine,UKR.PPI.YOY_PCH_PT.M,Producer price index (PPI),Monthly,Percent,Producer price index (PPI),Producer: goods and services,Year-over-year (YOY) percent change,
+733,Austria,AUT.PPI.POP_PCH_PT.Q,Producer price index (PPI),Quarterly,Percent,Producer price index (PPI),Producer: goods and services,Period-over-preceding period percent change,
+734,Austria,AUT.PPI.IX.Q,Producer price index (PPI),Quarterly,Index,Producer price index (PPI),Producer: goods and services,,2010=100
+735,Austria,AUT.WPI.IX.Q,Wholesale price index (WPI),Quarterly,Index,Wholesale price index (WPI),Wholesale trade,,2010=100
+736,Austria,AUT.WPI.POP_PCH_PT.A,Wholesale price index (WPI),Annual,Percent,Wholesale price index (WPI),Wholesale trade,Period-over-preceding period percent change,
+737,Austria,AUT.WPI.IX.M,Wholesale price index (WPI),Monthly,Index,Wholesale price index (WPI),Wholesale trade,,2010=100
+738,Ukraine,UKR.PPI.IX.M,Producer price index (PPI),Monthly,Index,Producer price index (PPI),Producer: goods and services,,2010=100
+739,Albania,ALB.PPI.IX.M,Producer price index (PPI),Monthly,Index,Producer price index (PPI),Producer: goods and services,,2010=100
+740,Ukraine,UKR.PPI.IX.A,Producer price index (PPI),Annual,Index,Producer price index (PPI),Producer: goods and services,,2010=100
+741,Ukraine,UKR.PPI.YOY_PCH_PT.A,Producer price index (PPI),Annual,Percent,Producer price index (PPI),Producer: goods and services,Year-over-year (YOY) percent change,
+742,Jamaica,JAM.PPI.IX.A,Producer price index (PPI),Annual,Index,Producer price index (PPI),Producer: goods and services,,2010=100
+743,Nicaragua,NIC.PPI.IX.A,Producer price index (PPI),Annual,Index,Producer price index (PPI),Producer: goods and services,,2010=100
+744,Albania,ALB.PPI.IX.Q,Producer price index (PPI),Quarterly,Index,Producer price index (PPI),Producer: goods and services,,2010=100
+745,Albania,ALB.PPI.YOY_PCH_PT.A,Producer price index (PPI),Annual,Percent,Producer price index (PPI),Producer: goods and services,Year-over-year (YOY) percent change,
+746,Austria,AUT.PPI.IX.A,Producer price index (PPI),Annual,Index,Producer price index (PPI),Producer: goods and services,,2010=100
+747,Belgium,BEL.PPI.IX.Q,Producer price index (PPI),Quarterly,Index,Producer price index (PPI),Producer: goods and services,,2010=100
+748,Austria,AUT.PPI.YOY_PCH_PT.A,Producer price index (PPI),Annual,Percent,Producer price index (PPI),Producer: goods and services,Year-over-year (YOY) percent change,
+749,Belgium,BEL.PPI.IX.M,Producer price index (PPI),Monthly,Index,Producer price index (PPI),Producer: goods and services,,2010=100
+750,Nicaragua,NIC.PPI.IX.M,Producer price index (PPI),Monthly,Index,Producer price index (PPI),Producer: goods and services,,2010=100
+751,Nicaragua,NIC.PPI.IX.Q,Producer price index (PPI),Quarterly,Index,Producer price index (PPI),Producer: goods and services,,2010=100
+752,El Salvador,SLV.WPI.IX.M,Wholesale price index (WPI),Monthly,Index,Wholesale price index (WPI),Wholesale trade,,2010=100
+753,El Salvador,SLV.PPI.IX.A,Producer price index (PPI),Annual,Index,Producer price index (PPI),Producer: goods and services,,2010=100
+754,Belgium,BEL.PPI.IX.A,Producer price index (PPI),Annual,Index,Producer price index (PPI),Producer: goods and services,,2010=100
+755,El Salvador,SLV.WPI.IX.A,Wholesale price index (WPI),Annual,Index,Wholesale price index (WPI),Wholesale trade,,2010=100
+756,El Salvador,SLV.WPI.POP_PCH_PT.Q,Wholesale price index (WPI),Quarterly,Percent,Wholesale price index (WPI),Wholesale trade,Period-over-preceding period percent change,
+757,Tunisia,TUN.PPI.POP_PCH_PT.M,Producer price index (PPI),Monthly,Percent,Producer price index (PPI),Producer: goods and services,Period-over-preceding period percent change,
+758,Philippines,PHL.WPI.YOY_PCH_PT.M,Wholesale price index (WPI),Monthly,Percent,Wholesale price index (WPI),Wholesale trade,Year-over-year (YOY) percent change,
+759,Georgia,GEO.PPI.POP_PCH_PT.A,Producer price index (PPI),Annual,Percent,Producer price index (PPI),Producer: goods and services,Period-over-preceding period percent change,
+760,El Salvador,SLV.PPI.YOY_PCH_PT.Q,Producer price index (PPI),Quarterly,Percent,Producer price index (PPI),Producer: goods and services,Year-over-year (YOY) percent change,
+761,Georgia,GEO.PPI.IX.A,Producer price index (PPI),Annual,Index,Producer price index (PPI),Producer: goods and services,,2010=100
+762,Nicaragua,NIC.PPI.YOY_PCH_PT.Q,Producer price index (PPI),Quarterly,Percent,Producer price index (PPI),Producer: goods and services,Year-over-year (YOY) percent change,
+763,Ukraine,UKR.PPI.POP_PCH_PT.Q,Producer price index (PPI),Quarterly,Percent,Producer price index (PPI),Producer: goods and services,Period-over-preceding period percent change,
+764,Georgia,GEO.PPI.YOY_PCH_PT.A,Producer price index (PPI),Annual,Percent,Producer price index (PPI),Producer: goods and services,Year-over-year (YOY) percent change,
+765,Belgium,BEL.PPI.YOY_PCH_PT.M,Producer price index (PPI),Monthly,Percent,Producer price index (PPI),Producer: goods and services,Year-over-year (YOY) percent change,
+766,El Salvador,SLV.WPI.YOY_PCH_PT.M,Wholesale price index (WPI),Monthly,Percent,Wholesale price index (WPI),Wholesale trade,Year-over-year (YOY) percent change,
+767,Albania,ALB.PPI.YOY_PCH_PT.M,Producer price index (PPI),Monthly,Percent,Producer price index (PPI),Producer: goods and services,Year-over-year (YOY) percent change,
+768,Jamaica,JAM.PPI.YOY_PCH_PT.A,Producer price index (PPI),Annual,Percent,Producer price index (PPI),Producer: goods and services,Year-over-year (YOY) percent change,
+769,Albania,ALB.PPI.POP_PCH_PT.M,Producer price index (PPI),Monthly,Percent,Producer price index (PPI),Producer: goods and services,Period-over-preceding period percent change,
+770,Belgium,BEL.PPI.YOY_PCH_PT.Q,Producer price index (PPI),Quarterly,Percent,Producer price index (PPI),Producer: goods and services,Year-over-year (YOY) percent change,
+771,Nicaragua,NIC.PPI.YOY_PCH_PT.M,Producer price index (PPI),Monthly,Percent,Producer price index (PPI),Producer: goods and services,Year-over-year (YOY) percent change,
+772,Austria,AUT.PPI.YOY_PCH_PT.Q,Producer price index (PPI),Quarterly,Percent,Producer price index (PPI),Producer: goods and services,Year-over-year (YOY) percent change,
+773,Belgium,BEL.PPI.POP_PCH_PT.Q,Producer price index (PPI),Quarterly,Percent,Producer price index (PPI),Producer: goods and services,Period-over-preceding period percent change,
+774,Philippines,PHL.WPI.IX.A,Wholesale price index (WPI),Annual,Index,Wholesale price index (WPI),Wholesale trade,,2010=100
+775,El Salvador,SLV.WPI.YOY_PCH_PT.Q,Wholesale price index (WPI),Quarterly,Percent,Wholesale price index (WPI),Wholesale trade,Year-over-year (YOY) percent change,
+776,Georgia,GEO.PPI.IX.Q,Producer price index (PPI),Quarterly,Index,Producer price index (PPI),Producer: goods and services,,2010=100
+777,Austria,AUT.WPI.POP_PCH_PT.M,Wholesale price index (WPI),Monthly,Percent,Wholesale price index (WPI),Wholesale trade,Period-over-preceding period percent change,
+778,El Salvador,SLV.PPI.POP_PCH_PT.M,Producer price index (PPI),Monthly,Percent,Producer price index (PPI),Producer: goods and services,Period-over-preceding period percent change,
+779,Jamaica,JAM.PPI.YOY_PCH_PT.M,Producer price index (PPI),Monthly,Percent,Producer price index (PPI),Producer: goods and services,Year-over-year (YOY) percent change,
+780,Albania,ALB.WPI.POP_PCH_PT.A,Wholesale price index (WPI),Annual,Percent,Wholesale price index (WPI),Wholesale trade,Period-over-preceding period percent change,
+781,Austria,AUT.WPI.POP_PCH_PT.Q,Wholesale price index (WPI),Quarterly,Percent,Wholesale price index (WPI),Wholesale trade,Period-over-preceding period percent change,
+782,Belgium,BEL.PPI.POP_PCH_PT.A,Producer price index (PPI),Annual,Percent,Producer price index (PPI),Producer: goods and services,Period-over-preceding period percent change,
+783,Nicaragua,NIC.PPI.POP_PCH_PT.A,Producer price index (PPI),Annual,Percent,Producer price index (PPI),Producer: goods and services,Period-over-preceding period percent change,
+784,El Salvador,SLV.WPI.POP_PCH_PT.A,Wholesale price index (WPI),Annual,Percent,Wholesale price index (WPI),Wholesale trade,Period-over-preceding period percent change,
+785,El Salvador,SLV.PPI.POP_PCH_PT.A,Producer price index (PPI),Annual,Percent,Producer price index (PPI),Producer: goods and services,Period-over-preceding period percent change,
+786,El Salvador,SLV.PPI.YOY_PCH_PT.A,Producer price index (PPI),Annual,Percent,Producer price index (PPI),Producer: goods and services,Year-over-year (YOY) percent change,
+787,El Salvador,SLV.PPI.YOY_PCH_PT.M,Producer price index (PPI),Monthly,Percent,Producer price index (PPI),Producer: goods and services,Year-over-year (YOY) percent change,
+788,Tunisia,TUN.PPI.POP_PCH_PT.Q,Producer price index (PPI),Quarterly,Percent,Producer price index (PPI),Producer: goods and services,Period-over-preceding period percent change,
+789,Philippines,PHL.WPI.YOY_PCH_PT.Q,Wholesale price index (WPI),Quarterly,Percent,Wholesale price index (WPI),Wholesale trade,Year-over-year (YOY) percent change,
+790,Saudi Arabia,SAU.WPI.POP_PCH_PT.Q,Wholesale price index (WPI),Quarterly,Percent,Wholesale price index (WPI),Wholesale trade,Period-over-preceding period percent change,
+791,Nicaragua,NIC.PPI.POP_PCH_PT.Q,Producer price index (PPI),Quarterly,Percent,Producer price index (PPI),Producer: goods and services,Period-over-preceding period percent change,
+792,Central African Republic,CAF.PPI.IX.Q,Producer price index (PPI),Quarterly,Index,Producer price index (PPI),Producer: goods and services,,2005=100
+793,Tunisia,TUN.WPI.POP_PCH_PT.Q,Wholesale price index (WPI),Quarterly,Percent,Wholesale price index (WPI),Wholesale trade,Period-over-preceding period percent change,
+794,Central African Republic,CAF.PPI.IX.M,Producer price index (PPI),Monthly,Index,Producer price index (PPI),Producer: goods and services,,2005=100
+795,Tunisia,TUN.WPI.POP_PCH_PT.M,Wholesale price index (WPI),Monthly,Percent,Wholesale price index (WPI),Wholesale trade,Period-over-preceding period percent change,
+796,Saudi Arabia,SAU.WPI.IX.A,Wholesale price index (WPI),Annual,Index,Wholesale price index (WPI),Wholesale trade,,2010=100
+797,Philippines,PHL.PPI.YOY_PCH_PT.M,Producer price index (PPI),Monthly,Percent,Producer price index (PPI),Producer: goods and services,Year-over-year (YOY) percent change,
+798,Philippines,PHL.PPI.YOY_PCH_PT.Q,Producer price index (PPI),Quarterly,Percent,Producer price index (PPI),Producer: goods and services,Year-over-year (YOY) percent change,
+799,Central African Republic,CAF.PPI.IX.A,Producer price index (PPI),Annual,Index,Producer price index (PPI),Producer: goods and services,,2005=100
+800,Tunisia,TUN.WPI.POP_PCH_PT.A,Wholesale price index (WPI),Annual,Percent,Wholesale price index (WPI),Wholesale trade,Period-over-preceding period percent change,
+801,Georgia,GEO.PPI.POP_PCH_PT.Q,Producer price index (PPI),Quarterly,Percent,Producer price index (PPI),Producer: goods and services,Period-over-preceding period percent change,
+802,Tunisia,TUN.PPI.POP_PCH_PT.A,Producer price index (PPI),Annual,Percent,Producer price index (PPI),Producer: goods and services,Period-over-preceding period percent change,
+803,Philippines,PHL.WPI.YOY_PCH_PT.A,Wholesale price index (WPI),Annual,Percent,Wholesale price index (WPI),Wholesale trade,Year-over-year (YOY) percent change,
+804,Saudi Arabia,SAU.WPI.IX.Q,Wholesale price index (WPI),Quarterly,Index,Wholesale price index (WPI),Wholesale trade,,2010=100
+805,Central African Republic,CAF.PPI.POP_PCH_PT.A,Producer price index (PPI),Annual,Percent,Producer price index (PPI),Producer: goods and services,Period-over-preceding period percent change,
+806,Saudi Arabia,SAU.WPI.POP_PCH_PT.A,Wholesale price index (WPI),Annual,Percent,Wholesale price index (WPI),Wholesale trade,Period-over-preceding period percent change,
+807,Philippines,PHL.PPI.POP_PCH_PT.A,Producer price index (PPI),Annual,Percent,Producer price index (PPI),Producer: goods and services,Period-over-preceding period percent change,
+808,Central African Republic,CAF.PPI.POP_PCH_PT.M,Producer price index (PPI),Monthly,Percent,Producer price index (PPI),Producer: goods and services,Period-over-preceding period percent change,
+809,Tunisia,TUN.PPI.IX.M,Producer price index (PPI),Monthly,Index,Producer price index (PPI),Producer: goods and services,,2010=100
+810,Tunisia,TUN.WPI.IX.Q,Wholesale price index (WPI),Quarterly,Index,Wholesale price index (WPI),Wholesale trade,,1985=100
+811,Tunisia,TUN.PPI.IX.Q,Producer price index (PPI),Quarterly,Index,Producer price index (PPI),Producer: goods and services,,2010=100
+812,Philippines,PHL.PPI.IX.Q,Producer price index (PPI),Quarterly,Index,Producer price index (PPI),Producer: goods and services,,2010=100
+813,Central African Republic,CAF.PPI.POP_PCH_PT.Q,Producer price index (PPI),Quarterly,Percent,Producer price index (PPI),Producer: goods and services,Period-over-preceding period percent change,
+814,Philippines,PHL.PPI.IX.M,Producer price index (PPI),Monthly,Index,Producer price index (PPI),Producer: goods and services,,2010=100
+815,Philippines,PHL.PPI.POP_PCH_PT.Q,Producer price index (PPI),Quarterly,Percent,Producer price index (PPI),Producer: goods and services,Period-over-preceding period percent change,
+816,Jamaica,JAM.PPI.POP_PCH_PT.Q,Producer price index (PPI),Quarterly,Percent,Producer price index (PPI),Producer: goods and services,Period-over-preceding period percent change,
+817,Ukraine,UKR.PPI.YOY_PCH_PT.Q,Producer price index (PPI),Quarterly,Percent,Producer price index (PPI),Producer: goods and services,Year-over-year (YOY) percent change,
+818,Philippines,PHL.PPI.POP_PCH_PT.M,Producer price index (PPI),Monthly,Percent,Producer price index (PPI),Producer: goods and services,Period-over-preceding period percent change,
+819,Tunisia,TUN.WPI.IX.M,Wholesale price index (WPI),Monthly,Index,Wholesale price index (WPI),Wholesale trade,,1985=100
+820,Tunisia,TUN.WPI.IX.A,Wholesale price index (WPI),Annual,Index,Wholesale price index (WPI),Wholesale trade,,1985=100
+821,Tunisia,TUN.WPI.YOY_PCH_PT.M,Wholesale price index (WPI),Monthly,Percent,Wholesale price index (WPI),Wholesale trade,Year-over-year (YOY) percent change,
+822,Tunisia,TUN.PPI.IX.A,Producer price index (PPI),Annual,Index,Producer price index (PPI),Producer: goods and services,,2010=100
+823,Philippines,PHL.PPI.IX.A,Producer price index (PPI),Annual,Index,Producer price index (PPI),Producer: goods and services,,2010=100
+824,Philippines,PHL.PPI.YOY_PCH_PT.A,Producer price index (PPI),Annual,Percent,Producer price index (PPI),Producer: goods and services,Year-over-year (YOY) percent change,
+825,Philippines,PHL.WPI.IX.M,Wholesale price index (WPI),Monthly,Index,Wholesale price index (WPI),Wholesale trade,,2010=100
+826,Central African Republic,CAF.PPI.YOY_PCH_PT.M,Producer price index (PPI),Monthly,Percent,Producer price index (PPI),Producer: goods and services,Year-over-year (YOY) percent change,
+827,El Salvador,SLV.PPI.POP_PCH_PT.Q,Producer price index (PPI),Quarterly,Percent,Producer price index (PPI),Producer: goods and services,Period-over-preceding period percent change,
+828,Georgia,GEO.PPI.YOY_PCH_PT.Q,Producer price index (PPI),Quarterly,Percent,Producer price index (PPI),Producer: goods and services,Year-over-year (YOY) percent change,
+829,Tunisia,TUN.PPI.YOY_PCH_PT.Q,Producer price index (PPI),Quarterly,Percent,Producer price index (PPI),Producer: goods and services,Year-over-year (YOY) percent change,
+830,Jamaica,JAM.PPI.YOY_PCH_PT.Q,Producer price index (PPI),Quarterly,Percent,Producer price index (PPI),Producer: goods and services,Year-over-year (YOY) percent change,
+831,Philippines,PHL.WPI.POP_PCH_PT.A,Wholesale price index (WPI),Annual,Percent,Wholesale price index (WPI),Wholesale trade,Period-over-preceding period percent change,
+832,Saudi Arabia,SAU.WPI.YOY_PCH_PT.Q,Wholesale price index (WPI),Quarterly,Percent,Wholesale price index (WPI),Wholesale trade,Year-over-year (YOY) percent change,
+833,Philippines,PHL.WPI.IX.Q,Wholesale price index (WPI),Quarterly,Index,Wholesale price index (WPI),Wholesale trade,,2010=100
+834,Tunisia,TUN.WPI.YOY_PCH_PT.A,Wholesale price index (WPI),Annual,Percent,Wholesale price index (WPI),Wholesale trade,Year-over-year (YOY) percent change,
+835,Central African Republic,CAF.PPI.YOY_PCH_PT.Q,Producer price index (PPI),Quarterly,Percent,Producer price index (PPI),Producer: goods and services,Year-over-year (YOY) percent change,
+836,Tunisia,TUN.PPI.YOY_PCH_PT.A,Producer price index (PPI),Annual,Percent,Producer price index (PPI),Producer: goods and services,Year-over-year (YOY) percent change,
+837,Tunisia,TUN.PPI.YOY_PCH_PT.M,Producer price index (PPI),Monthly,Percent,Producer price index (PPI),Producer: goods and services,Year-over-year (YOY) percent change,
+838,Philippines,PHL.WPI.POP_PCH_PT.Q,Wholesale price index (WPI),Quarterly,Percent,Wholesale price index (WPI),Wholesale trade,Period-over-preceding period percent change,
+839,Saudi Arabia,SAU.WPI.YOY_PCH_PT.A,Wholesale price index (WPI),Annual,Percent,Wholesale price index (WPI),Wholesale trade,Year-over-year (YOY) percent change,
+840,Central African Republic,CAF.PPI.YOY_PCH_PT.A,Producer price index (PPI),Annual,Percent,Producer price index (PPI),Producer: goods and services,Year-over-year (YOY) percent change,
+841,Philippines,PHL.WPI.POP_PCH_PT.M,Wholesale price index (WPI),Monthly,Percent,Wholesale price index (WPI),Wholesale trade,Period-over-preceding period percent change,
+842,Tunisia,TUN.WPI.YOY_PCH_PT.Q,Wholesale price index (WPI),Quarterly,Percent,Wholesale price index (WPI),Wholesale trade,Year-over-year (YOY) percent change,
+843,Angola,AGO.WPI.YOY_PCH_PT.Q,Wholesale price index (WPI),Quarterly,Percent,Wholesale price index (WPI),Wholesale trade,Year-over-year (YOY) percent change,
+844,"Uzbekistan, Republic of",UZB.PPI.IX.Q,Producer price index (PPI),Quarterly,Index,Producer price index (PPI),Producer: goods and services,,2010=100
+845,Costa Rica,CRI.PPI.IX.M,Producer price index (PPI),Monthly,Index,Producer price index (PPI),Producer: goods and services,,2010=100
+846,"Hong Kong Special Administrative Region, People's Republic of China",HKG.PPI.IX.Q,Producer price index (PPI),Quarterly,Index,Producer price index (PPI),Producer: goods and services,,2010=100
+847,"Belarus, Republic of",BLR.PPI.POP_PCH_PT.A,Producer price index (PPI),Annual,Percent,Producer price index (PPI),Producer: goods and services,Period-over-preceding period percent change,
+848,Bulgaria,BGR.PPI.POP_PCH_PT.Q,Producer price index (PPI),Quarterly,Percent,Producer price index (PPI),Producer: goods and services,Period-over-preceding period percent change,
+849,"Uzbekistan, Republic of",UZB.PPI.POP_PCH_PT.Q,Producer price index (PPI),Quarterly,Percent,Producer price index (PPI),Producer: goods and services,Period-over-preceding period percent change,
+850,Thailand,THA.PPI.POP_PCH_PT.Q,Producer price index (PPI),Quarterly,Percent,Producer price index (PPI),Producer: goods and services,Period-over-preceding period percent change,
+851,"Uzbekistan, Republic of",UZB.PPI.YOY_PCH_PT.Q,Producer price index (PPI),Quarterly,Percent,Producer price index (PPI),Producer: goods and services,Year-over-year (YOY) percent change,
+852,Angola,AGO.WPI.POP_PCH_PT.Q,Wholesale price index (WPI),Quarterly,Percent,Wholesale price index (WPI),Wholesale trade,Period-over-preceding period percent change,
+853,Bulgaria,BGR.PPI.IX.Q,Producer price index (PPI),Quarterly,Index,Producer price index (PPI),Producer: goods and services,,2010=100
+854,"Hong Kong Special Administrative Region, People's Republic of China",HKG.PPI.POP_PCH_PT.Q,Producer price index (PPI),Quarterly,Percent,Producer price index (PPI),Producer: goods and services,Period-over-preceding period percent change,
+855,Costa Rica,CRI.PPI.POP_PCH_PT.Q,Producer price index (PPI),Quarterly,Percent,Producer price index (PPI),Producer: goods and services,Period-over-preceding period percent change,
+856,Bulgaria,BGR.PPI.YOY_PCH_PT.Q,Producer price index (PPI),Quarterly,Percent,Producer price index (PPI),Producer: goods and services,Year-over-year (YOY) percent change,
+857,Thailand,THA.PPI.YOY_PCH_PT.Q,Producer price index (PPI),Quarterly,Percent,Producer price index (PPI),Producer: goods and services,Year-over-year (YOY) percent change,
+858,"Belarus, Republic of",BLR.PPI.YOY_PCH_PT.A,Producer price index (PPI),Annual,Percent,Producer price index (PPI),Producer: goods and services,Year-over-year (YOY) percent change,
+859,Bosnia and Herzegovina,BIH.PPI.POP_PCH_PT.Q,Producer price index (PPI),Quarterly,Percent,Producer price index (PPI),Producer: goods and services,Period-over-preceding period percent change,
+860,Angola,AGO.WPI.IX.Q,Wholesale price index (WPI),Quarterly,Index,Wholesale price index (WPI),Wholesale trade,,2010=100
+861,Thailand,THA.PPI.IX.Q,Producer price index (PPI),Quarterly,Index,Producer price index (PPI),Producer: goods and services,,2010=100
+862,Costa Rica,CRI.PPI.POP_PCH_PT.M,Producer price index (PPI),Monthly,Percent,Producer price index (PPI),Producer: goods and services,Period-over-preceding period percent change,
+863,Costa Rica,CRI.PPI.YOY_PCH_PT.M,Producer price index (PPI),Monthly,Percent,Producer price index (PPI),Producer: goods and services,Year-over-year (YOY) percent change,
+864,Costa Rica,CRI.PPI.YOY_PCH_PT.Q,Producer price index (PPI),Quarterly,Percent,Producer price index (PPI),Producer: goods and services,Year-over-year (YOY) percent change,
+865,Costa Rica,CRI.PPI.IX.Q,Producer price index (PPI),Quarterly,Index,Producer price index (PPI),Producer: goods and services,,2010=100
+866,United States,USA.PPI.IX.Q,Producer price index (PPI),Quarterly,Index,Producer price index (PPI),Producer: goods and services,,2010=100
+867,United States,USA.PPI.YOY_PCH_PT.M,Producer price index (PPI),Monthly,Percent,Producer price index (PPI),Producer: goods and services,Year-over-year (YOY) percent change,
+868,United States,USA.PPI.YOY_PCH_PT.A,Producer price index (PPI),Annual,Percent,Producer price index (PPI),Producer: goods and services,Year-over-year (YOY) percent change,
+869,United States,USA.PPI.IX.M,Producer price index (PPI),Monthly,Index,Producer price index (PPI),Producer: goods and services,,2010=100
+870,United States,USA.PPI.POP_PCH_PT.A,Producer price index (PPI),Annual,Percent,Producer price index (PPI),Producer: goods and services,Period-over-preceding period percent change,
+871,United States,USA.PPI.IX.A,Producer price index (PPI),Annual,Index,Producer price index (PPI),Producer: goods and services,,2010=100
+872,United States,USA.PPI.YOY_PCH_PT.Q,Producer price index (PPI),Quarterly,Percent,Producer price index (PPI),Producer: goods and services,Year-over-year (YOY) percent change,
+873,United States,USA.PPI.POP_PCH_PT.M,Producer price index (PPI),Monthly,Percent,Producer price index (PPI),Producer: goods and services,Period-over-preceding period percent change,
+874,Euro Area (EA),G163.PPI.IX.A,Producer price index (PPI),Annual,Index,Producer price index (PPI),Producer: goods and services,,2010=100
+875,Euro Area (EA),G163.PPI.POP_PCH_PT.Q,Producer price index (PPI),Quarterly,Percent,Producer price index (PPI),Producer: goods and services,Period-over-preceding period percent change,
+876,Euro Area (EA),G163.PPI.YOY_PCH_PT.Q,Producer price index (PPI),Quarterly,Percent,Producer price index (PPI),Producer: goods and services,Year-over-year (YOY) percent change,
+877,Euro Area (EA),G163.PPI.YOY_PCH_PT.M,Producer price index (PPI),Monthly,Percent,Producer price index (PPI),Producer: goods and services,Year-over-year (YOY) percent change,
+878,Euro Area (EA),G163.PPI.IX.Q,Producer price index (PPI),Quarterly,Index,Producer price index (PPI),Producer: goods and services,,2010=100
+879,Euro Area (EA),G163.PPI.IX.M,Producer price index (PPI),Monthly,Index,Producer price index (PPI),Producer: goods and services,,2010=100
+880,Euro Area (EA),G163.PPI.POP_PCH_PT.M,Producer price index (PPI),Monthly,Percent,Producer price index (PPI),Producer: goods and services,Period-over-preceding period percent change,
+881,United States,USA.PPI.POP_PCH_PT.Q,Producer price index (PPI),Quarterly,Percent,Producer price index (PPI),Producer: goods and services,Period-over-preceding period percent change,
+882,Paraguay,PRY.WPI.YOY_PCH_PT.A,Wholesale price index (WPI),Annual,Percent,Wholesale price index (WPI),Wholesale trade,Year-over-year (YOY) percent change,
+883,Portugal,PRT.PPI.IX.Q,Producer price index (PPI),Quarterly,Index,Producer price index (PPI),Producer: goods and services,,2010=100
+884,Uruguay,URY.WPI.IX.Q,Wholesale price index (WPI),Quarterly,Index,Wholesale price index (WPI),Wholesale trade,,2010=100
+885,"China, People's Republic of",CHN.WPI.YOY_PCH_PT.A,Wholesale price index (WPI),Annual,Percent,Wholesale price index (WPI),Wholesale trade,Year-over-year (YOY) percent change,
+886,Greece,GRC.PPI.POP_PCH_PT.A,Producer price index (PPI),Annual,Percent,Producer price index (PPI),Producer: goods and services,Period-over-preceding period percent change,
+887,Paraguay,PRY.WPI.POP_PCH_PT.M,Wholesale price index (WPI),Monthly,Percent,Wholesale price index (WPI),Wholesale trade,Period-over-preceding period percent change,
+888,Paraguay,PRY.WPI.YOY_PCH_PT.M,Wholesale price index (WPI),Monthly,Percent,Wholesale price index (WPI),Wholesale trade,Year-over-year (YOY) percent change,
+889,Uruguay,URY.PPI.POP_PCH_PT.A,Producer price index (PPI),Annual,Percent,Producer price index (PPI),Producer: goods and services,Period-over-preceding period percent change,
+890,Ghana,GHA.PPI.IX.Q,Producer price index (PPI),Quarterly,Index,Producer price index (PPI),Producer: goods and services,,2010=100
+891,Greece,GRC.PPI.POP_PCH_PT.M,Producer price index (PPI),Monthly,Percent,Producer price index (PPI),Producer: goods and services,Period-over-preceding period percent change,
+892,"China, People's Republic of",CHN.PPI.IX.Q,Producer price index (PPI),Quarterly,Index,Producer price index (PPI),Producer: goods and services,,2010=100
+893,Portugal,PRT.PPI.POP_PCH_PT.A,Producer price index (PPI),Annual,Percent,Producer price index (PPI),Producer: goods and services,Period-over-preceding period percent change,
+894,Paraguay,PRY.PPI.YOY_PCH_PT.M,Producer price index (PPI),Monthly,Percent,Producer price index (PPI),Producer: goods and services,Year-over-year (YOY) percent change,
+895,Paraguay,PRY.WPI.POP_PCH_PT.A,Wholesale price index (WPI),Annual,Percent,Wholesale price index (WPI),Wholesale trade,Period-over-preceding period percent change,
+896,Uruguay,URY.WPI.POP_PCH_PT.A,Wholesale price index (WPI),Annual,Percent,Wholesale price index (WPI),Wholesale trade,Period-over-preceding period percent change,
+897,Ghana,GHA.WPI.IX.Q,Wholesale price index (WPI),Quarterly,Index,Wholesale price index (WPI),Wholesale trade,,1990=100
+898,Portugal,PRT.PPI.YOY_PCH_PT.A,Producer price index (PPI),Annual,Percent,Producer price index (PPI),Producer: goods and services,Year-over-year (YOY) percent change,
+899,Paraguay,PRY.WPI.IX.Q,Wholesale price index (WPI),Quarterly,Index,Wholesale price index (WPI),Wholesale trade,,1995=100
+900,Uruguay,URY.PPI.YOY_PCH_PT.A,Producer price index (PPI),Annual,Percent,Producer price index (PPI),Producer: goods and services,Year-over-year (YOY) percent change,
+901,"China, People's Republic of",CHN.WPI.POP_PCH_PT.A,Wholesale price index (WPI),Annual,Percent,Wholesale price index (WPI),Wholesale trade,Period-over-preceding period percent change,
+902,Paraguay,PRY.PPI.YOY_PCH_PT.A,Producer price index (PPI),Annual,Percent,Producer price index (PPI),Producer: goods and services,Year-over-year (YOY) percent change,
+903,Ghana,GHA.WPI.POP_PCH_PT.A,Wholesale price index (WPI),Annual,Percent,Wholesale price index (WPI),Wholesale trade,Period-over-preceding period percent change,
+904,France,FRA.PPI.YOY_PCH_PT.M,Producer price index (PPI),Monthly,Percent,Producer price index (PPI),Producer: goods and services,Year-over-year (YOY) percent change,
+905,Uruguay,URY.PPI.IX.Q,Producer price index (PPI),Quarterly,Index,Producer price index (PPI),Producer: goods and services,,2010=100
+906,Ghana,GHA.PPI.POP_PCH_PT.A,Producer price index (PPI),Annual,Percent,Producer price index (PPI),Producer: goods and services,Period-over-preceding period percent change,
+907,"China, People's Republic of",CHN.PPI.POP_PCH_PT.A,Producer price index (PPI),Annual,Percent,Producer price index (PPI),Producer: goods and services,Period-over-preceding period percent change,
+908,Ghana,GHA.WPI.YOY_PCH_PT.A,Wholesale price index (WPI),Annual,Percent,Wholesale price index (WPI),Wholesale trade,Year-over-year (YOY) percent change,
+909,Paraguay,PRY.PPI.POP_PCH_PT.A,Producer price index (PPI),Annual,Percent,Producer price index (PPI),Producer: goods and services,Period-over-preceding period percent change,
+910,France,FRA.PPI.YOY_PCH_PT.A,Producer price index (PPI),Annual,Percent,Producer price index (PPI),Producer: goods and services,Year-over-year (YOY) percent change,
+911,Uruguay,URY.WPI.YOY_PCH_PT.A,Wholesale price index (WPI),Annual,Percent,Wholesale price index (WPI),Wholesale trade,Year-over-year (YOY) percent change,
+912,Greece,GRC.PPI.IX.Q,Producer price index (PPI),Quarterly,Index,Producer price index (PPI),Producer: goods and services,,2010=100
+913,Greece,GRC.PPI.YOY_PCH_PT.M,Producer price index (PPI),Monthly,Percent,Producer price index (PPI),Producer: goods and services,Year-over-year (YOY) percent change,
+914,Greece,GRC.PPI.YOY_PCH_PT.A,Producer price index (PPI),Annual,Percent,Producer price index (PPI),Producer: goods and services,Year-over-year (YOY) percent change,
+915,France,FRA.PPI.IX.Q,Producer price index (PPI),Quarterly,Index,Producer price index (PPI),Producer: goods and services,,2010=100
+916,"China, People's Republic of",CHN.PPI.YOY_PCH_PT.A,Producer price index (PPI),Annual,Percent,Producer price index (PPI),Producer: goods and services,Year-over-year (YOY) percent change,
+917,Paraguay,PRY.PPI.IX.Q,Producer price index (PPI),Quarterly,Index,Producer price index (PPI),Producer: goods and services,,2010=100
+918,France,FRA.PPI.POP_PCH_PT.A,Producer price index (PPI),Annual,Percent,Producer price index (PPI),Producer: goods and services,Period-over-preceding period percent change,
+919,France,FRA.PPI.POP_PCH_PT.M,Producer price index (PPI),Monthly,Percent,Producer price index (PPI),Producer: goods and services,Period-over-preceding period percent change,
+920,Ghana,GHA.PPI.YOY_PCH_PT.A,Producer price index (PPI),Annual,Percent,Producer price index (PPI),Producer: goods and services,Year-over-year (YOY) percent change,
+921,"China, People's Republic of",CHN.PPI.IX.A,Producer price index (PPI),Annual,Index,Producer price index (PPI),Producer: goods and services,,2010=100
+922,Uruguay,URY.PPI.IX.A,Producer price index (PPI),Annual,Index,Producer price index (PPI),Producer: goods and services,,2010=100
+923,Paraguay,PRY.WPI.POP_PCH_PT.Q,Wholesale price index (WPI),Quarterly,Percent,Wholesale price index (WPI),Wholesale trade,Period-over-preceding period percent change,
+924,"China, People's Republic of",CHN.PPI.IX.M,Producer price index (PPI),Monthly,Index,Producer price index (PPI),Producer: goods and services,,2010=100
+925,Ghana,GHA.PPI.IX.M,Producer price index (PPI),Monthly,Index,Producer price index (PPI),Producer: goods and services,,2010=100
+926,Portugal,PRT.PPI.IX.A,Producer price index (PPI),Annual,Index,Producer price index (PPI),Producer: goods and services,,2010=100
+927,"China, People's Republic of",CHN.WPI.IX.A,Wholesale price index (WPI),Annual,Index,Wholesale price index (WPI),Wholesale trade,,1990=100
+928,Portugal,PRT.PPI.IX.M,Producer price index (PPI),Monthly,Index,Producer price index (PPI),Producer: goods and services,,2010=100
+929,Paraguay,PRY.PPI.IX.A,Producer price index (PPI),Annual,Index,Producer price index (PPI),Producer: goods and services,,2010=100
+930,Paraguay,PRY.WPI.IX.A,Wholesale price index (WPI),Annual,Index,Wholesale price index (WPI),Wholesale trade,,1995=100
+931,Portugal,PRT.PPI.POP_PCH_PT.M,Producer price index (PPI),Monthly,Percent,Producer price index (PPI),Producer: goods and services,Period-over-preceding period percent change,
+932,Paraguay,PRY.PPI.YOY_PCH_PT.Q,Producer price index (PPI),Quarterly,Percent,Producer price index (PPI),Producer: goods and services,Year-over-year (YOY) percent change,
+933,Uruguay,URY.PPI.POP_PCH_PT.M,Producer price index (PPI),Monthly,Percent,Producer price index (PPI),Producer: goods and services,Period-over-preceding period percent change,
+934,Greece,GRC.PPI.POP_PCH_PT.Q,Producer price index (PPI),Quarterly,Percent,Producer price index (PPI),Producer: goods and services,Period-over-preceding period percent change,
+935,Uruguay,URY.PPI.POP_PCH_PT.Q,Producer price index (PPI),Quarterly,Percent,Producer price index (PPI),Producer: goods and services,Period-over-preceding period percent change,
+936,Ghana,GHA.WPI.IX.M,Wholesale price index (WPI),Monthly,Index,Wholesale price index (WPI),Wholesale trade,,1990=100
+937,Portugal,PRT.PPI.POP_PCH_PT.Q,Producer price index (PPI),Quarterly,Percent,Producer price index (PPI),Producer: goods and services,Period-over-preceding period percent change,
+938,Ghana,GHA.PPI.POP_PCH_PT.Q,Producer price index (PPI),Quarterly,Percent,Producer price index (PPI),Producer: goods and services,Period-over-preceding period percent change,
+939,Uruguay,URY.WPI.POP_PCH_PT.Q,Wholesale price index (WPI),Quarterly,Percent,Wholesale price index (WPI),Wholesale trade,Period-over-preceding period percent change,
+940,Greece,GRC.PPI.IX.A,Producer price index (PPI),Annual,Index,Producer price index (PPI),Producer: goods and services,,2010=100
+941,Paraguay,PRY.WPI.IX.M,Wholesale price index (WPI),Monthly,Index,Wholesale price index (WPI),Wholesale trade,,1990=100
+942,Ghana,GHA.WPI.IX.A,Wholesale price index (WPI),Annual,Index,Wholesale price index (WPI),Wholesale trade,,1990=100
+943,"China, People's Republic of",CHN.PPI.POP_PCH_PT.Q,Producer price index (PPI),Quarterly,Percent,Producer price index (PPI),Producer: goods and services,Period-over-preceding period percent change,
+944,Ghana,GHA.PPI.POP_PCH_PT.M,Producer price index (PPI),Monthly,Percent,Producer price index (PPI),Producer: goods and services,Period-over-preceding period percent change,
+945,Uruguay,URY.PPI.IX.M,Producer price index (PPI),Monthly,Index,Producer price index (PPI),Producer: goods and services,,2010=100
+946,"China, People's Republic of",CHN.PPI.POP_PCH_PT.M,Producer price index (PPI),Monthly,Percent,Producer price index (PPI),Producer: goods and services,Period-over-preceding period percent change,
+947,France,FRA.PPI.YOY_PCH_PT.Q,Producer price index (PPI),Quarterly,Percent,Producer price index (PPI),Producer: goods and services,Year-over-year (YOY) percent change,
+948,Uruguay,URY.WPI.YOY_PCH_PT.Q,Wholesale price index (WPI),Quarterly,Percent,Wholesale price index (WPI),Wholesale trade,Year-over-year (YOY) percent change,
+949,Ghana,GHA.PPI.YOY_PCH_PT.Q,Producer price index (PPI),Quarterly,Percent,Producer price index (PPI),Producer: goods and services,Year-over-year (YOY) percent change,
+950,Ghana,GHA.WPI.POP_PCH_PT.M,Wholesale price index (WPI),Monthly,Percent,Wholesale price index (WPI),Wholesale trade,Period-over-preceding period percent change,
+951,Portugal,PRT.PPI.YOY_PCH_PT.M,Producer price index (PPI),Monthly,Percent,Producer price index (PPI),Producer: goods and services,Year-over-year (YOY) percent change,
+952,Ghana,GHA.WPI.YOY_PCH_PT.Q,Wholesale price index (WPI),Quarterly,Percent,Wholesale price index (WPI),Wholesale trade,Year-over-year (YOY) percent change,
+953,Greece,GRC.PPI.YOY_PCH_PT.Q,Producer price index (PPI),Quarterly,Percent,Producer price index (PPI),Producer: goods and services,Year-over-year (YOY) percent change,
+954,Portugal,PRT.PPI.YOY_PCH_PT.Q,Producer price index (PPI),Quarterly,Percent,Producer price index (PPI),Producer: goods and services,Year-over-year (YOY) percent change,
+955,Paraguay,PRY.PPI.POP_PCH_PT.M,Producer price index (PPI),Monthly,Percent,Producer price index (PPI),Producer: goods and services,Period-over-preceding period percent change,
+956,Uruguay,URY.PPI.YOY_PCH_PT.Q,Producer price index (PPI),Quarterly,Percent,Producer price index (PPI),Producer: goods and services,Year-over-year (YOY) percent change,
+957,Paraguay,PRY.PPI.POP_PCH_PT.Q,Producer price index (PPI),Quarterly,Percent,Producer price index (PPI),Producer: goods and services,Period-over-preceding period percent change,
+958,Ghana,GHA.WPI.POP_PCH_PT.Q,Wholesale price index (WPI),Quarterly,Percent,Wholesale price index (WPI),Wholesale trade,Period-over-preceding period percent change,
+959,Uruguay,URY.PPI.YOY_PCH_PT.M,Producer price index (PPI),Monthly,Percent,Producer price index (PPI),Producer: goods and services,Year-over-year (YOY) percent change,
+960,Ghana,GHA.WPI.YOY_PCH_PT.M,Wholesale price index (WPI),Monthly,Percent,Wholesale price index (WPI),Wholesale trade,Year-over-year (YOY) percent change,
+961,Greece,GRC.PPI.IX.M,Producer price index (PPI),Monthly,Index,Producer price index (PPI),Producer: goods and services,,2010=100
+962,Ghana,GHA.PPI.IX.A,Producer price index (PPI),Annual,Index,Producer price index (PPI),Producer: goods and services,,2010=100
+963,Paraguay,PRY.PPI.IX.M,Producer price index (PPI),Monthly,Index,Producer price index (PPI),Producer: goods and services,,2010=100
+964,Ghana,GHA.PPI.YOY_PCH_PT.M,Producer price index (PPI),Monthly,Percent,Producer price index (PPI),Producer: goods and services,Year-over-year (YOY) percent change,
+965,France,FRA.PPI.IX.A,Producer price index (PPI),Annual,Index,Producer price index (PPI),Producer: goods and services,,2010=100
+966,Paraguay,PRY.WPI.YOY_PCH_PT.Q,Wholesale price index (WPI),Quarterly,Percent,Wholesale price index (WPI),Wholesale trade,Year-over-year (YOY) percent change,
+967,Uruguay,URY.WPI.IX.A,Wholesale price index (WPI),Annual,Index,Wholesale price index (WPI),Wholesale trade,,2010=100
+968,"China, People's Republic of",CHN.PPI.YOY_PCH_PT.Q,Producer price index (PPI),Quarterly,Percent,Producer price index (PPI),Producer: goods and services,Year-over-year (YOY) percent change,
+969,"China, People's Republic of",CHN.PPI.YOY_PCH_PT.M,Producer price index (PPI),Monthly,Percent,Producer price index (PPI),Producer: goods and services,Year-over-year (YOY) percent change,
+970,France,FRA.PPI.POP_PCH_PT.Q,Producer price index (PPI),Quarterly,Percent,Producer price index (PPI),Producer: goods and services,Period-over-preceding period percent change,
+971,France,FRA.PPI.IX.M,Producer price index (PPI),Monthly,Index,Producer price index (PPI),Producer: goods and services,,2010=100
+972,Sweden,SWE.PPI.IX.A,Producer price index (PPI),Annual,Index,Producer price index (PPI),Producer: goods and services,,2010=100
+973,Malta,MLT.PPI.IX.A,Producer price index (PPI),Annual,Index,Producer price index (PPI),Producer: goods and services,,2010=100
+974,Malta,MLT.PPI.IX.M,Producer price index (PPI),Monthly,Index,Producer price index (PPI),Producer: goods and services,,2010=100
+975,"Poland, Republic of",POL.PPI.IX.M,Producer price index (PPI),Monthly,Index,Producer price index (PPI),Producer: goods and services,,2010=100
+976,Czech Republic,CZE.PPI.IX.A,Producer price index (PPI),Annual,Index,Producer price index (PPI),Producer: goods and services,,2010=100
+977,United Kingdom,GBR.PPI.IX.M,Producer price index (PPI),Monthly,Index,Producer price index (PPI),Producer: goods and services,,2010=100
+978,"Latvia, Republic of",LVA.PPI.IX.A,Producer price index (PPI),Annual,Index,Producer price index (PPI),Producer: goods and services,,2010=100
+979,Indonesia,IDN.WPI.IX.A,Wholesale price index (WPI),Annual,Index,Wholesale price index (WPI),Wholesale trade,,2010=100
+980,Sweden,SWE.WPI.IX.A,Wholesale price index (WPI),Annual,Index,Wholesale price index (WPI),Wholesale trade,,1970=100
+981,United Kingdom,GBR.PPI.IX.Q,Producer price index (PPI),Quarterly,Index,Producer price index (PPI),Producer: goods and services,,2010=100
+982,"Poland, Republic of",POL.PPI.IX.A,Producer price index (PPI),Annual,Index,Producer price index (PPI),Producer: goods and services,,2010=100
+983,"Netherlands, The",NLD.PPI.IX.Q,Producer price index (PPI),Quarterly,Index,Producer price index (PPI),Producer: goods and services,,2010=100
+984,"Latvia, Republic of",LVA.PPI.POP_PCH_PT.M,Producer price index (PPI),Monthly,Percent,Producer price index (PPI),Producer: goods and services,Period-over-preceding period percent change,
+985,"Poland, Republic of",POL.PPI.YOY_PCH_PT.M,Producer price index (PPI),Monthly,Percent,Producer price index (PPI),Producer: goods and services,Year-over-year (YOY) percent change,
+986,United Kingdom,GBR.PPI.YOY_PCH_PT.M,Producer price index (PPI),Monthly,Percent,Producer price index (PPI),Producer: goods and services,Year-over-year (YOY) percent change,
+987,"Poland, Republic of",POL.PPI.IX.Q,Producer price index (PPI),Quarterly,Index,Producer price index (PPI),Producer: goods and services,,2010=100
+988,Sweden,SWE.PPI.YOY_PCH_PT.A,Producer price index (PPI),Annual,Percent,Producer price index (PPI),Producer: goods and services,Year-over-year (YOY) percent change,
+989,Czech Republic,CZE.PPI.YOY_PCH_PT.A,Producer price index (PPI),Annual,Percent,Producer price index (PPI),Producer: goods and services,Year-over-year (YOY) percent change,
+990,Sweden,SWE.WPI.POP_PCH_PT.A,Wholesale price index (WPI),Annual,Percent,Wholesale price index (WPI),Wholesale trade,Period-over-preceding period percent change,
+991,Indonesia,IDN.WPI.POP_PCH_PT.M,Wholesale price index (WPI),Monthly,Percent,Wholesale price index (WPI),Wholesale trade,Period-over-preceding period percent change,
+992,Malta,MLT.PPI.POP_PCH_PT.A,Producer price index (PPI),Annual,Percent,Producer price index (PPI),Producer: goods and services,Period-over-preceding period percent change,
+993,"Poland, Republic of",POL.PPI.YOY_PCH_PT.A,Producer price index (PPI),Annual,Percent,Producer price index (PPI),Producer: goods and services,Year-over-year (YOY) percent change,
+994,"Latvia, Republic of",LVA.PPI.YOY_PCH_PT.A,Producer price index (PPI),Annual,Percent,Producer price index (PPI),Producer: goods and services,Year-over-year (YOY) percent change,
+995,Indonesia,IDN.WPI.POP_PCH_PT.A,Wholesale price index (WPI),Annual,Percent,Wholesale price index (WPI),Wholesale trade,Period-over-preceding period percent change,
+996,Sweden,SWE.PPI.POP_PCH_PT.A,Producer price index (PPI),Annual,Percent,Producer price index (PPI),Producer: goods and services,Period-over-preceding period percent change,
+997,Malta,MLT.PPI.IX.Q,Producer price index (PPI),Quarterly,Index,Producer price index (PPI),Producer: goods and services,,2010=100
+998,Indonesia,IDN.WPI.YOY_PCH_PT.A,Wholesale price index (WPI),Annual,Percent,Wholesale price index (WPI),Wholesale trade,Year-over-year (YOY) percent change,
+999,Mauritius,MUS.PPI.POP_PCH_PT.A,Producer price index (PPI),Annual,Percent,Producer price index (PPI),Producer: goods and services,Period-over-preceding period percent change,
+1000,"Poland, Republic of",POL.PPI.POP_PCH_PT.M,Producer price index (PPI),Monthly,Percent,Producer price index (PPI),Producer: goods and services,Period-over-preceding period percent change,
+1001,"Egypt, Arab Republic of",EGY.WPI.IX.M,Wholesale price index (WPI),Monthly,Index,Wholesale price index (WPI),Wholesale trade,,2010=100
+1002,Malta,MLT.PPI.POP_PCH_PT.M,Producer price index (PPI),Monthly,Percent,Producer price index (PPI),Producer: goods and services,Period-over-preceding period percent change,
+1003,Sweden,SWE.PPI.YOY_PCH_PT.M,Producer price index (PPI),Monthly,Percent,Producer price index (PPI),Producer: goods and services,Year-over-year (YOY) percent change,
+1004,Czech Republic,CZE.PPI.IX.Q,Producer price index (PPI),Quarterly,Index,Producer price index (PPI),Producer: goods and services,,2010=100
+1005,"Latvia, Republic of",LVA.PPI.POP_PCH_PT.A,Producer price index (PPI),Annual,Percent,Producer price index (PPI),Producer: goods and services,Period-over-preceding period percent change,
+1006,Sweden,SWE.PPI.POP_PCH_PT.M,Producer price index (PPI),Monthly,Percent,Producer price index (PPI),Producer: goods and services,Period-over-preceding period percent change,
+1007,"Egypt, Arab Republic of",EGY.WPI.IX.Q,Wholesale price index (WPI),Quarterly,Index,Wholesale price index (WPI),Wholesale trade,,2010=100
+1008,"Kosovo, Republic of",KOS.PPI.POP_PCH_PT.A,Producer price index (PPI),Annual,Percent,Producer price index (PPI),Producer: goods and services,Period-over-preceding period percent change,
+1009,Czech Republic,CZE.PPI.POP_PCH_PT.A,Producer price index (PPI),Annual,Percent,Producer price index (PPI),Producer: goods and services,Period-over-preceding period percent change,
+1010,"Kosovo, Republic of",KOS.PPI.IX.A,Producer price index (PPI),Annual,Index,Producer price index (PPI),Producer: goods and services,,2010=100
+1011,"Kosovo, Republic of",KOS.PPI.YOY_PCH_PT.A,Producer price index (PPI),Annual,Percent,Producer price index (PPI),Producer: goods and services,Year-over-year (YOY) percent change,
+1012,"Latvia, Republic of",LVA.PPI.IX.Q,Producer price index (PPI),Quarterly,Index,Producer price index (PPI),Producer: goods and services,,2010=100
+1013,Indonesia,IDN.WPI.IX.Q,Wholesale price index (WPI),Quarterly,Index,Wholesale price index (WPI),Wholesale trade,,2010=100
+1014,United Kingdom,GBR.PPI.IX.A,Producer price index (PPI),Annual,Index,Producer price index (PPI),Producer: goods and services,,2010=100
+1015,"Latvia, Republic of",LVA.PPI.IX.M,Producer price index (PPI),Monthly,Index,Producer price index (PPI),Producer: goods and services,,2010=100
+1016,"Egypt, Arab Republic of",EGY.WPI.POP_PCH_PT.M,Wholesale price index (WPI),Monthly,Percent,Wholesale price index (WPI),Wholesale trade,Period-over-preceding period percent change,
+1017,Mauritius,MUS.PPI.IX.A,Producer price index (PPI),Annual,Index,Producer price index (PPI),Producer: goods and services,,2010=100
+1018,Indonesia,IDN.WPI.IX.M,Wholesale price index (WPI),Monthly,Index,Wholesale price index (WPI),Wholesale trade,,2010=100
+1019,"Egypt, Arab Republic of",EGY.WPI.IX.A,Wholesale price index (WPI),Annual,Index,Wholesale price index (WPI),Wholesale trade,,2010=100
+1020,Mauritius,MUS.PPI.IX.M,Producer price index (PPI),Monthly,Index,Producer price index (PPI),Producer: goods and services,,2010=100
+1021,Sweden,SWE.PPI.IX.Q,Producer price index (PPI),Quarterly,Index,Producer price index (PPI),Producer: goods and services,,2010=100
+1022,Sweden,SWE.PPI.IX.M,Producer price index (PPI),Monthly,Index,Producer price index (PPI),Producer: goods and services,,2010=100
+1023,Indonesia,IDN.WPI.POP_PCH_PT.Q,Wholesale price index (WPI),Quarterly,Percent,Wholesale price index (WPI),Wholesale trade,Period-over-preceding period percent change,
+1024,Sweden,SWE.PPI.POP_PCH_PT.Q,Producer price index (PPI),Quarterly,Percent,Producer price index (PPI),Producer: goods and services,Period-over-preceding period percent change,
+1025,"Egypt, Arab Republic of",EGY.WPI.YOY_PCH_PT.Q,Wholesale price index (WPI),Quarterly,Percent,Wholesale price index (WPI),Wholesale trade,Year-over-year (YOY) percent change,
+1026,"Türkiye, Republic of",TUR.WPI.IX.M,Wholesale price index (WPI),Monthly,Index,Wholesale price index (WPI),Wholesale trade,,2010=100
+1027,United Kingdom,GBR.PPI.YOY_PCH_PT.Q,Producer price index (PPI),Quarterly,Percent,Producer price index (PPI),Producer: goods and services,Year-over-year (YOY) percent change,
+1028,"Türkiye, Republic of",TUR.WPI.IX.Q,Wholesale price index (WPI),Quarterly,Index,Wholesale price index (WPI),Wholesale trade,,2010=100
+1029,"Latvia, Republic of",LVA.PPI.POP_PCH_PT.Q,Producer price index (PPI),Quarterly,Percent,Producer price index (PPI),Producer: goods and services,Period-over-preceding period percent change,
+1030,Kenya,KEN.WPI.POP_PCH_PT.A,Wholesale price index (WPI),Annual,Percent,Wholesale price index (WPI),Wholesale trade,Period-over-preceding period percent change,
+1031,Vietnam,VNM.WPI.YOY_PCH_PT.A,Wholesale price index (WPI),Annual,Percent,Wholesale price index (WPI),Wholesale trade,Year-over-year (YOY) percent change,
+1032,Czech Republic,CZE.PPI.POP_PCH_PT.Q,Producer price index (PPI),Quarterly,Percent,Producer price index (PPI),Producer: goods and services,Period-over-preceding period percent change,
+1033,Ireland,IRL.PPI.IX.M,Producer price index (PPI),Monthly,Index,Producer price index (PPI),Producer: goods and services,,2010=100
+1034,Malta,MLT.PPI.YOY_PCH_PT.M,Producer price index (PPI),Monthly,Percent,Producer price index (PPI),Producer: goods and services,Year-over-year (YOY) percent change,
+1035,Sweden,SWE.PPI.YOY_PCH_PT.Q,Producer price index (PPI),Quarterly,Percent,Producer price index (PPI),Producer: goods and services,Year-over-year (YOY) percent change,
+1036,Czech Republic,CZE.PPI.YOY_PCH_PT.Q,Producer price index (PPI),Quarterly,Percent,Producer price index (PPI),Producer: goods and services,Year-over-year (YOY) percent change,
+1037,Kenya,KEN.WPI.POP_PCH_PT.M,Wholesale price index (WPI),Monthly,Percent,Wholesale price index (WPI),Wholesale trade,Period-over-preceding period percent change,
+1038,Ireland,IRL.PPI.IX.A,Producer price index (PPI),Annual,Index,Producer price index (PPI),Producer: goods and services,,2010=100
+1039,Malta,MLT.PPI.YOY_PCH_PT.Q,Producer price index (PPI),Quarterly,Percent,Producer price index (PPI),Producer: goods and services,Year-over-year (YOY) percent change,
+1040,"Poland, Republic of",POL.PPI.POP_PCH_PT.Q,Producer price index (PPI),Quarterly,Percent,Producer price index (PPI),Producer: goods and services,Period-over-preceding period percent change,
+1041,"Türkiye, Republic of",TUR.WPI.YOY_PCH_PT.M,Wholesale price index (WPI),Monthly,Percent,Wholesale price index (WPI),Wholesale trade,Year-over-year (YOY) percent change,
+1042,"Poland, Republic of",POL.PPI.YOY_PCH_PT.Q,Producer price index (PPI),Quarterly,Percent,Producer price index (PPI),Producer: goods and services,Year-over-year (YOY) percent change,
+1043,"Türkiye, Republic of",TUR.WPI.YOY_PCH_PT.A,Wholesale price index (WPI),Annual,Percent,Wholesale price index (WPI),Wholesale trade,Year-over-year (YOY) percent change,
+1044,Vietnam,VNM.PPI.YOY_PCH_PT.A,Producer price index (PPI),Annual,Percent,Producer price index (PPI),Producer: goods and services,Year-over-year (YOY) percent change,
+1045,"Türkiye, Republic of",TUR.PPI.IX.M,Producer price index (PPI),Monthly,Index,Producer price index (PPI),Producer: goods and services,,2010=100
+1046,Kenya,KEN.WPI.YOY_PCH_PT.A,Wholesale price index (WPI),Annual,Percent,Wholesale price index (WPI),Wholesale trade,Year-over-year (YOY) percent change,
+1047,Mauritius,MUS.PPI.POP_PCH_PT.Q,Producer price index (PPI),Quarterly,Percent,Producer price index (PPI),Producer: goods and services,Period-over-preceding period percent change,
+1048,Sweden,SWE.WPI.YOY_PCH_PT.A,Wholesale price index (WPI),Annual,Percent,Wholesale price index (WPI),Wholesale trade,Year-over-year (YOY) percent change,
+1049,"Türkiye, Republic of",TUR.PPI.IX.Q,Producer price index (PPI),Quarterly,Index,Producer price index (PPI),Producer: goods and services,,2010=100
+1050,Ireland,IRL.PPI.IX.Q,Producer price index (PPI),Quarterly,Index,Producer price index (PPI),Producer: goods and services,,2010=100
+1051,Malta,MLT.PPI.YOY_PCH_PT.A,Producer price index (PPI),Annual,Percent,Producer price index (PPI),Producer: goods and services,Year-over-year (YOY) percent change,
+1052,Mauritius,MUS.PPI.POP_PCH_PT.M,Producer price index (PPI),Monthly,Percent,Producer price index (PPI),Producer: goods and services,Period-over-preceding period percent change,
+1053,"Poland, Republic of",POL.PPI.POP_PCH_PT.A,Producer price index (PPI),Annual,Percent,Producer price index (PPI),Producer: goods and services,Period-over-preceding period percent change,
+1054,Vietnam,VNM.WPI.POP_PCH_PT.A,Wholesale price index (WPI),Annual,Percent,Wholesale price index (WPI),Wholesale trade,Period-over-preceding period percent change,
+1055,"Kosovo, Republic of",KOS.PPI.POP_PCH_PT.Q,Producer price index (PPI),Quarterly,Percent,Producer price index (PPI),Producer: goods and services,Period-over-preceding period percent change,
+1056,"Kosovo, Republic of",KOS.PPI.IX.Q,Producer price index (PPI),Quarterly,Index,Producer price index (PPI),Producer: goods and services,,2010=100
+1057,Ireland,IRL.PPI.YOY_PCH_PT.A,Producer price index (PPI),Annual,Percent,Producer price index (PPI),Producer: goods and services,Year-over-year (YOY) percent change,
+1058,"Egypt, Arab Republic of",EGY.WPI.YOY_PCH_PT.M,Wholesale price index (WPI),Monthly,Percent,Wholesale price index (WPI),Wholesale trade,Year-over-year (YOY) percent change,
+1059,"Türkiye, Republic of",TUR.PPI.YOY_PCH_PT.M,Producer price index (PPI),Monthly,Percent,Producer price index (PPI),Producer: goods and services,Year-over-year (YOY) percent change,
+1060,"Egypt, Arab Republic of",EGY.WPI.YOY_PCH_PT.A,Wholesale price index (WPI),Annual,Percent,Wholesale price index (WPI),Wholesale trade,Year-over-year (YOY) percent change,
+1061,United Kingdom,GBR.PPI.YOY_PCH_PT.A,Producer price index (PPI),Annual,Percent,Producer price index (PPI),Producer: goods and services,Year-over-year (YOY) percent change,
+1062,Mauritius,MUS.PPI.IX.Q,Producer price index (PPI),Quarterly,Index,Producer price index (PPI),Producer: goods and services,,2010=100
+1063,United Kingdom,GBR.PPI.POP_PCH_PT.A,Producer price index (PPI),Annual,Percent,Producer price index (PPI),Producer: goods and services,Period-over-preceding period percent change,
+1064,Mauritius,MUS.PPI.YOY_PCH_PT.A,Producer price index (PPI),Annual,Percent,Producer price index (PPI),Producer: goods and services,Year-over-year (YOY) percent change,
+1065,Indonesia,IDN.WPI.YOY_PCH_PT.M,Wholesale price index (WPI),Monthly,Percent,Wholesale price index (WPI),Wholesale trade,Year-over-year (YOY) percent change,
+1066,"Latvia, Republic of",LVA.PPI.YOY_PCH_PT.M,Producer price index (PPI),Monthly,Percent,Producer price index (PPI),Producer: goods and services,Year-over-year (YOY) percent change,
+1067,"Egypt, Arab Republic of",EGY.WPI.POP_PCH_PT.A,Wholesale price index (WPI),Annual,Percent,Wholesale price index (WPI),Wholesale trade,Period-over-preceding period percent change,
+1068,Mauritius,MUS.PPI.YOY_PCH_PT.M,Producer price index (PPI),Monthly,Percent,Producer price index (PPI),Producer: goods and services,Year-over-year (YOY) percent change,
+1069,United Kingdom,GBR.PPI.POP_PCH_PT.M,Producer price index (PPI),Monthly,Percent,Producer price index (PPI),Producer: goods and services,Period-over-preceding period percent change,
+1070,Ireland,IRL.PPI.POP_PCH_PT.M,Producer price index (PPI),Monthly,Percent,Producer price index (PPI),Producer: goods and services,Period-over-preceding period percent change,
+1071,Ireland,IRL.PPI.POP_PCH_PT.Q,Producer price index (PPI),Quarterly,Percent,Producer price index (PPI),Producer: goods and services,Period-over-preceding period percent change,
+1072,Trinidad and Tobago,TTO.PPI.POP_PCH_PT.Q,Producer price index (PPI),Quarterly,Percent,Producer price index (PPI),Producer: goods and services,Period-over-preceding period percent change,
+1073,"Türkiye, Republic of",TUR.WPI.YOY_PCH_PT.Q,Wholesale price index (WPI),Quarterly,Percent,Wholesale price index (WPI),Wholesale trade,Year-over-year (YOY) percent change,
+1074,Kenya,KEN.WPI.POP_PCH_PT.Q,Wholesale price index (WPI),Quarterly,Percent,Wholesale price index (WPI),Wholesale trade,Period-over-preceding period percent change,
+1075,Ireland,IRL.PPI.YOY_PCH_PT.Q,Producer price index (PPI),Quarterly,Percent,Producer price index (PPI),Producer: goods and services,Year-over-year (YOY) percent change,
+1076,Ireland,IRL.PPI.YOY_PCH_PT.M,Producer price index (PPI),Monthly,Percent,Producer price index (PPI),Producer: goods and services,Year-over-year (YOY) percent change,
+1077,Trinidad and Tobago,TTO.PPI.YOY_PCH_PT.Q,Producer price index (PPI),Quarterly,Percent,Producer price index (PPI),Producer: goods and services,Year-over-year (YOY) percent change,
+1078,"Türkiye, Republic of",TUR.PPI.YOY_PCH_PT.Q,Producer price index (PPI),Quarterly,Percent,Producer price index (PPI),Producer: goods and services,Year-over-year (YOY) percent change,
+1079,Vietnam,VNM.WPI.POP_PCH_PT.M,Wholesale price index (WPI),Monthly,Percent,Wholesale price index (WPI),Wholesale trade,Period-over-preceding period percent change,
+1080,Trinidad and Tobago,TTO.PPI.YOY_PCH_PT.A,Producer price index (PPI),Annual,Percent,Producer price index (PPI),Producer: goods and services,Year-over-year (YOY) percent change,
+1081,"Türkiye, Republic of",TUR.PPI.IX.A,Producer price index (PPI),Annual,Index,Producer price index (PPI),Producer: goods and services,,2010=100
+1082,Vietnam,VNM.WPI.POP_PCH_PT.Q,Wholesale price index (WPI),Quarterly,Percent,Wholesale price index (WPI),Wholesale trade,Period-over-preceding period percent change,
+1083,Trinidad and Tobago,TTO.PPI.IX.Q,Producer price index (PPI),Quarterly,Index,Producer price index (PPI),Producer: goods and services,,2010=100
+1084,"Türkiye, Republic of",TUR.PPI.YOY_PCH_PT.A,Producer price index (PPI),Annual,Percent,Producer price index (PPI),Producer: goods and services,Year-over-year (YOY) percent change,
+1085,Vietnam,VNM.PPI.POP_PCH_PT.A,Producer price index (PPI),Annual,Percent,Producer price index (PPI),Producer: goods and services,Period-over-preceding period percent change,
+1086,"Türkiye, Republic of",TUR.PPI.POP_PCH_PT.Q,Producer price index (PPI),Quarterly,Percent,Producer price index (PPI),Producer: goods and services,Period-over-preceding period percent change,
+1087,Kenya,KEN.WPI.IX.A,Wholesale price index (WPI),Annual,Index,Wholesale price index (WPI),Wholesale trade,,1995=100
+1088,"Türkiye, Republic of",TUR.WPI.POP_PCH_PT.A,Wholesale price index (WPI),Annual,Percent,Wholesale price index (WPI),Wholesale trade,Period-over-preceding period percent change,
+1089,Vietnam,VNM.PPI.IX.A,Producer price index (PPI),Annual,Index,Producer price index (PPI),Producer: goods and services,,2010=100
+1090,"Türkiye, Republic of",TUR.WPI.POP_PCH_PT.M,Wholesale price index (WPI),Monthly,Percent,Wholesale price index (WPI),Wholesale trade,Period-over-preceding period percent change,
+1091,Trinidad and Tobago,TTO.PPI.IX.A,Producer price index (PPI),Annual,Index,Producer price index (PPI),Producer: goods and services,,2010=100
+1092,Vietnam,VNM.WPI.IX.M,Wholesale price index (WPI),Monthly,Index,Wholesale price index (WPI),Wholesale trade,,1970=100
+1093,Kenya,KEN.WPI.YOY_PCH_PT.Q,Wholesale price index (WPI),Quarterly,Percent,Wholesale price index (WPI),Wholesale trade,Year-over-year (YOY) percent change,
+1094,"Türkiye, Republic of",TUR.WPI.POP_PCH_PT.Q,Wholesale price index (WPI),Quarterly,Percent,Wholesale price index (WPI),Wholesale trade,Period-over-preceding period percent change,
+1095,Kenya,KEN.WPI.YOY_PCH_PT.M,Wholesale price index (WPI),Monthly,Percent,Wholesale price index (WPI),Wholesale trade,Year-over-year (YOY) percent change,
+1096,Vietnam,VNM.WPI.IX.Q,Wholesale price index (WPI),Quarterly,Index,Wholesale price index (WPI),Wholesale trade,,1970=100
+1097,Malta,MLT.PPI.POP_PCH_PT.Q,Producer price index (PPI),Quarterly,Percent,Producer price index (PPI),Producer: goods and services,Period-over-preceding period percent change,
+1098,"Latvia, Republic of",LVA.PPI.YOY_PCH_PT.Q,Producer price index (PPI),Quarterly,Percent,Producer price index (PPI),Producer: goods and services,Year-over-year (YOY) percent change,
+1099,"Egypt, Arab Republic of",EGY.WPI.POP_PCH_PT.Q,Wholesale price index (WPI),Quarterly,Percent,Wholesale price index (WPI),Wholesale trade,Period-over-preceding period percent change,
+1100,Indonesia,IDN.WPI.YOY_PCH_PT.Q,Wholesale price index (WPI),Quarterly,Percent,Wholesale price index (WPI),Wholesale trade,Year-over-year (YOY) percent change,
+1101,Vietnam,VNM.WPI.IX.A,Wholesale price index (WPI),Annual,Index,Wholesale price index (WPI),Wholesale trade,,1970=100
+1102,"Kosovo, Republic of",KOS.PPI.YOY_PCH_PT.Q,Producer price index (PPI),Quarterly,Percent,Producer price index (PPI),Producer: goods and services,Year-over-year (YOY) percent change,
+1103,"Türkiye, Republic of",TUR.PPI.POP_PCH_PT.M,Producer price index (PPI),Monthly,Percent,Producer price index (PPI),Producer: goods and services,Period-over-preceding period percent change,
+1104,Ireland,IRL.PPI.POP_PCH_PT.A,Producer price index (PPI),Annual,Percent,Producer price index (PPI),Producer: goods and services,Period-over-preceding period percent change,
+1105,United Kingdom,GBR.PPI.POP_PCH_PT.Q,Producer price index (PPI),Quarterly,Percent,Producer price index (PPI),Producer: goods and services,Period-over-preceding period percent change,
+1106,Kenya,KEN.WPI.IX.M,Wholesale price index (WPI),Monthly,Index,Wholesale price index (WPI),Wholesale trade,,1995=100
+1107,Mauritius,MUS.PPI.YOY_PCH_PT.Q,Producer price index (PPI),Quarterly,Percent,Producer price index (PPI),Producer: goods and services,Year-over-year (YOY) percent change,
+1108,"Türkiye, Republic of",TUR.PPI.POP_PCH_PT.A,Producer price index (PPI),Annual,Percent,Producer price index (PPI),Producer: goods and services,Period-over-preceding period percent change,
+1109,Trinidad and Tobago,TTO.PPI.POP_PCH_PT.A,Producer price index (PPI),Annual,Percent,Producer price index (PPI),Producer: goods and services,Period-over-preceding period percent change,
+1110,Kenya,KEN.WPI.IX.Q,Wholesale price index (WPI),Quarterly,Index,Wholesale price index (WPI),Wholesale trade,,1995=100
+1111,Vietnam,VNM.WPI.YOY_PCH_PT.M,Wholesale price index (WPI),Monthly,Percent,Wholesale price index (WPI),Wholesale trade,Year-over-year (YOY) percent change,
+1112,"Türkiye, Republic of",TUR.WPI.IX.A,Wholesale price index (WPI),Annual,Index,Wholesale price index (WPI),Wholesale trade,,2010=100
+1113,Vietnam,VNM.WPI.YOY_PCH_PT.Q,Wholesale price index (WPI),Quarterly,Percent,Wholesale price index (WPI),Wholesale trade,Year-over-year (YOY) percent change,
+1114,"Netherlands, The",NLD.PPI.YOY_PCH_PT.Q,Producer price index (PPI),Quarterly,Percent,Producer price index (PPI),Producer: goods and services,Year-over-year (YOY) percent change,
+1115,"Netherlands, The",NLD.PPI.POP_PCH_PT.Q,Producer price index (PPI),Quarterly,Percent,Producer price index (PPI),Producer: goods and services,Period-over-preceding period percent change,
+1116,Austria,AUT.PPI.POP_PCH_PT.M,Producer price index (PPI),Monthly,Percent,Producer price index (PPI),Producer: goods and services,Period-over-preceding period percent change,
+1117,"Uzbekistan, Republic of",UZB.PPI.IX.M,Producer price index (PPI),Monthly,Index,Producer price index (PPI),Producer: goods and services,,2010=100
+1118,"Netherlands, The",NLD.PPI.IX.M,Producer price index (PPI),Monthly,Index,Producer price index (PPI),Producer: goods and services,,2010=100
+1119,Austria,AUT.PPI.IX.M,Producer price index (PPI),Monthly,Index,Producer price index (PPI),Producer: goods and services,,2010=100
+1120,Angola,AGO.WPI.IX.M,Wholesale price index (WPI),Monthly,Index,Wholesale price index (WPI),Wholesale trade,,2010=100
+1121,Austria,AUT.PPI.YOY_PCH_PT.M,Producer price index (PPI),Monthly,Percent,Producer price index (PPI),Producer: goods and services,Year-over-year (YOY) percent change,
+1122,"Belarus, Republic of",BLR.PPI.IX.M,Producer price index (PPI),Monthly,Index,Producer price index (PPI),Producer: goods and services,,2010=100
+1123,Bulgaria,BGR.PPI.IX.M,Producer price index (PPI),Monthly,Index,Producer price index (PPI),Producer: goods and services,,2010=100
+1124,"Belarus, Republic of",BLR.PPI.POP_PCH_PT.Q,Producer price index (PPI),Quarterly,Percent,Producer price index (PPI),Producer: goods and services,Period-over-preceding period percent change,
+1125,Angola,AGO.WPI.POP_PCH_PT.M,Wholesale price index (WPI),Monthly,Percent,Wholesale price index (WPI),Wholesale trade,Period-over-preceding period percent change,
+1126,Georgia,GEO.PPI.YOY_PCH_PT.M,Producer price index (PPI),Monthly,Percent,Producer price index (PPI),Producer: goods and services,Year-over-year (YOY) percent change,
+1127,Bulgaria,BGR.PPI.YOY_PCH_PT.M,Producer price index (PPI),Monthly,Percent,Producer price index (PPI),Producer: goods and services,Year-over-year (YOY) percent change,
+1128,"Belarus, Republic of",BLR.PPI.YOY_PCH_PT.Q,Producer price index (PPI),Quarterly,Percent,Producer price index (PPI),Producer: goods and services,Year-over-year (YOY) percent change,
+1129,Czech Republic,CZE.PPI.YOY_PCH_PT.M,Producer price index (PPI),Monthly,Percent,Producer price index (PPI),Producer: goods and services,Year-over-year (YOY) percent change,
+1130,Georgia,GEO.PPI.POP_PCH_PT.M,Producer price index (PPI),Monthly,Percent,Producer price index (PPI),Producer: goods and services,Period-over-preceding period percent change,
+1131,Thailand,THA.PPI.YOY_PCH_PT.M,Producer price index (PPI),Monthly,Percent,Producer price index (PPI),Producer: goods and services,Year-over-year (YOY) percent change,
+1132,"Uzbekistan, Republic of",UZB.PPI.YOY_PCH_PT.M,Producer price index (PPI),Monthly,Percent,Producer price index (PPI),Producer: goods and services,Year-over-year (YOY) percent change,
+1133,"Netherlands, The",NLD.PPI.YOY_PCH_PT.M,Producer price index (PPI),Monthly,Percent,Producer price index (PPI),Producer: goods and services,Year-over-year (YOY) percent change,
+1134,"Belarus, Republic of",BLR.PPI.IX.Q,Producer price index (PPI),Quarterly,Index,Producer price index (PPI),Producer: goods and services,,2010=100
+1135,"Netherlands, The",NLD.PPI.POP_PCH_PT.M,Producer price index (PPI),Monthly,Percent,Producer price index (PPI),Producer: goods and services,Period-over-preceding period percent change,
+1136,"Uzbekistan, Republic of",UZB.PPI.POP_PCH_PT.M,Producer price index (PPI),Monthly,Percent,Producer price index (PPI),Producer: goods and services,Period-over-preceding period percent change,
+1137,Czech Republic,CZE.PPI.POP_PCH_PT.M,Producer price index (PPI),Monthly,Percent,Producer price index (PPI),Producer: goods and services,Period-over-preceding period percent change,
+1138,Czech Republic,CZE.PPI.IX.M,Producer price index (PPI),Monthly,Index,Producer price index (PPI),Producer: goods and services,,2010=100
+1139,Georgia,GEO.PPI.IX.M,Producer price index (PPI),Monthly,Index,Producer price index (PPI),Producer: goods and services,,2010=100
+1140,Angola,AGO.WPI.YOY_PCH_PT.M,Wholesale price index (WPI),Monthly,Percent,Wholesale price index (WPI),Wholesale trade,Year-over-year (YOY) percent change,
+1141,Thailand,THA.PPI.POP_PCH_PT.M,Producer price index (PPI),Monthly,Percent,Producer price index (PPI),Producer: goods and services,Period-over-preceding period percent change,
+1142,Bosnia and Herzegovina,BIH.PPI.YOY_PCH_PT.M,Producer price index (PPI),Monthly,Percent,Producer price index (PPI),Producer: goods and services,Year-over-year (YOY) percent change,
+1143,Bulgaria,BGR.PPI.POP_PCH_PT.M,Producer price index (PPI),Monthly,Percent,Producer price index (PPI),Producer: goods and services,Period-over-preceding period percent change,
+1144,"Belarus, Republic of",BLR.PPI.POP_PCH_PT.M,Producer price index (PPI),Monthly,Percent,Producer price index (PPI),Producer: goods and services,Period-over-preceding period percent change,
+1145,Thailand,THA.PPI.IX.M,Producer price index (PPI),Monthly,Index,Producer price index (PPI),Producer: goods and services,,2010=100
+1146,"Belarus, Republic of",BLR.PPI.YOY_PCH_PT.M,Producer price index (PPI),Monthly,Percent,Producer price index (PPI),Producer: goods and services,Year-over-year (YOY) percent change,
+1147,Bosnia and Herzegovina,BIH.PPI.IX.M,Producer price index (PPI),Monthly,Index,Producer price index (PPI),Producer: goods and services,,2010=100
+1148,Bosnia and Herzegovina,BIH.PPI.POP_PCH_PT.M,Producer price index (PPI),Monthly,Percent,Producer price index (PPI),Producer: goods and services,Period-over-preceding period percent change,
+1149,Romania,ROU.PPI.IX.A,Producer price index (PPI),Annual,Index,Producer price index (PPI),Producer: goods and services,,2010=100
+1150,Romania,ROU.PPI.POP_PCH_PT.Q,Producer price index (PPI),Quarterly,Percent,Producer price index (PPI),Producer: goods and services,Period-over-preceding period percent change,
+1151,Romania,ROU.PPI.YOY_PCH_PT.A,Producer price index (PPI),Annual,Percent,Producer price index (PPI),Producer: goods and services,Year-over-year (YOY) percent change,
+1152,Romania,ROU.PPI.POP_PCH_PT.M,Producer price index (PPI),Monthly,Percent,Producer price index (PPI),Producer: goods and services,Period-over-preceding period percent change,
+1153,Romania,ROU.PPI.IX.M,Producer price index (PPI),Monthly,Index,Producer price index (PPI),Producer: goods and services,,2010=100
+1154,Romania,ROU.PPI.YOY_PCH_PT.Q,Producer price index (PPI),Quarterly,Percent,Producer price index (PPI),Producer: goods and services,Year-over-year (YOY) percent change,
+1155,Romania,ROU.PPI.POP_PCH_PT.A,Producer price index (PPI),Annual,Percent,Producer price index (PPI),Producer: goods and services,Period-over-preceding period percent change,
+1156,Romania,ROU.PPI.IX.Q,Producer price index (PPI),Quarterly,Index,Producer price index (PPI),Producer: goods and services,,2010=100
+1157,Romania,ROU.PPI.YOY_PCH_PT.M,Producer price index (PPI),Monthly,Percent,Producer price index (PPI),Producer: goods and services,Year-over-year (YOY) percent change,

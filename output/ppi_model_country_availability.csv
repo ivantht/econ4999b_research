@@ -1,0 +1,204 @@
+model_country,imf_country,series_code,indicator,frequency,observed_count_in_model_window,expected_count_in_model_window,missing_count_in_model_window,first_available_period,last_available_period,missing_periods_in_model_window
+Argentina,Argentina,,,,0,,,,,No series found for this country in dataset.
+Chile,Chile,,,,0,,,,,No series found for this country in dataset.
+Egypt,"Egypt, Arab Republic of",EGY.WPI.IX.A,Wholesale price index (WPI),Annual,17,24,7,1970,2016,2017 to 2023
+Egypt,"Egypt, Arab Republic of",EGY.WPI.POP_PCH_PT.A,Wholesale price index (WPI),Annual,17,24,7,1971,2016,2017 to 2023
+Egypt,"Egypt, Arab Republic of",EGY.WPI.YOY_PCH_PT.A,Wholesale price index (WPI),Annual,17,24,7,1971,2016,2017 to 2023
+Egypt,"Egypt, Arab Republic of",EGY.WPI.IX.M,Wholesale price index (WPI),Monthly,190,288,98,1991-M08,2015-M10,2015-M11 to 2023-M12
+Egypt,"Egypt, Arab Republic of",EGY.WPI.POP_PCH_PT.M,Wholesale price index (WPI),Monthly,190,288,98,1991-M09,2015-M10,2015-M11 to 2023-M12
+Egypt,"Egypt, Arab Republic of",EGY.WPI.YOY_PCH_PT.M,Wholesale price index (WPI),Monthly,190,288,98,1992-M08,2015-M10,2015-M11 to 2023-M12
+Egypt,"Egypt, Arab Republic of",EGY.WPI.IX.Q,Wholesale price index (WPI),Quarterly,63,96,33,1970-Q3,2015-Q3,2015-Q4 to 2023-Q4
+Egypt,"Egypt, Arab Republic of",EGY.WPI.POP_PCH_PT.Q,Wholesale price index (WPI),Quarterly,63,96,33,1970-Q4,2015-Q3,2015-Q4 to 2023-Q4
+Egypt,"Egypt, Arab Republic of",EGY.WPI.YOY_PCH_PT.Q,Wholesale price index (WPI),Quarterly,63,96,33,1971-Q3,2015-Q3,2015-Q4 to 2023-Q4
+Hungary,Hungary,HUN.PPI.IX.A,Producer price index (PPI),Annual,24,24,0,2000,2025,
+Hungary,Hungary,HUN.PPI.POP_PCH_PT.A,Producer price index (PPI),Annual,23,24,1,2001,2025,2000
+Hungary,Hungary,HUN.PPI.YOY_PCH_PT.A,Producer price index (PPI),Annual,23,24,1,2001,2025,2000
+Hungary,Hungary,HUN.PPI.IX.M,Producer price index (PPI),Monthly,288,288,0,2000-M01,2026-M04,
+Hungary,Hungary,HUN.PPI.POP_PCH_PT.M,Producer price index (PPI),Monthly,287,288,1,2000-M02,2026-M04,2000-M01
+Hungary,Hungary,HUN.PPI.YOY_PCH_PT.M,Producer price index (PPI),Monthly,276,288,12,2001-M01,2026-M04,2000-M01 to 2000-M12
+Hungary,Hungary,HUN.PPI.IX.Q,Producer price index (PPI),Quarterly,96,96,0,2000-Q1,2026-Q1,
+Hungary,Hungary,HUN.PPI.POP_PCH_PT.Q,Producer price index (PPI),Quarterly,95,96,1,2000-Q2,2026-Q1,2000-Q1
+Hungary,Hungary,HUN.PPI.YOY_PCH_PT.Q,Producer price index (PPI),Quarterly,92,96,4,2001-Q1,2026-Q1,2000-Q1 to 2000-Q4
+India,India,IND.PPI.IX.A,Producer price index (PPI),Annual,19,24,5,2001,2019,2000; 2020 to 2023
+India,India,IND.PPI.POP_PCH_PT.A,Producer price index (PPI),Annual,18,24,6,2002,2019,2000 to 2001; 2020 to 2023
+India,India,IND.PPI.YOY_PCH_PT.A,Producer price index (PPI),Annual,18,24,6,2002,2019,2000 to 2001; 2020 to 2023
+India,India,IND.WPI.IX.A,Wholesale price index (WPI),Annual,24,24,0,2000,2024,
+India,India,IND.WPI.POP_PCH_PT.A,Wholesale price index (WPI),Annual,23,24,1,2001,2024,2000
+India,India,IND.WPI.YOY_PCH_PT.A,Wholesale price index (WPI),Annual,23,24,1,2001,2024,2000
+India,India,IND.PPI.IX.M,Producer price index (PPI),Monthly,233,288,55,2001-M01,2020-M05,2000-M01 to 2000-M12; 2020-M06 to 2023-M12
+India,India,IND.PPI.POP_PCH_PT.M,Producer price index (PPI),Monthly,232,288,56,2001-M02,2020-M05,2000-M01 to 2001-M01; 2020-M06 to 2023-M12
+India,India,IND.PPI.YOY_PCH_PT.M,Producer price index (PPI),Monthly,221,288,67,2002-M01,2020-M05,2000-M01 to 2001-M12; 2020-M06 to 2023-M12
+India,India,IND.WPI.IX.M,Wholesale price index (WPI),Monthly,288,288,0,2000-M01,2025-M10,
+India,India,IND.WPI.POP_PCH_PT.M,Wholesale price index (WPI),Monthly,287,288,1,2000-M02,2025-M10,2000-M01
+India,India,IND.WPI.YOY_PCH_PT.M,Wholesale price index (WPI),Monthly,276,288,12,2001-M01,2025-M10,2000-M01 to 2000-M12
+India,India,IND.PPI.IX.Q,Producer price index (PPI),Quarterly,77,96,19,2001-Q1,2020-Q1,2000-Q1 to 2000-Q4; 2020-Q2 to 2023-Q4
+India,India,IND.PPI.POP_PCH_PT.Q,Producer price index (PPI),Quarterly,76,96,20,2001-Q2,2020-Q1,2000-Q1 to 2001-Q1; 2020-Q2 to 2023-Q4
+India,India,IND.PPI.YOY_PCH_PT.Q,Producer price index (PPI),Quarterly,73,96,23,2002-Q1,2020-Q1,2000-Q1 to 2001-Q4; 2020-Q2 to 2023-Q4
+India,India,IND.WPI.IX.Q,Wholesale price index (WPI),Quarterly,96,96,0,2000-Q1,2025-Q3,
+India,India,IND.WPI.POP_PCH_PT.Q,Wholesale price index (WPI),Quarterly,95,96,1,2000-Q2,2025-Q3,2000-Q1
+India,India,IND.WPI.YOY_PCH_PT.Q,Wholesale price index (WPI),Quarterly,92,96,4,2001-Q1,2025-Q3,2000-Q1 to 2000-Q4
+Indonesia,Indonesia,IDN.WPI.IX.A,Wholesale price index (WPI),Annual,19,24,5,1978,2018,2019 to 2023
+Indonesia,Indonesia,IDN.WPI.POP_PCH_PT.A,Wholesale price index (WPI),Annual,19,24,5,1979,2018,2019 to 2023
+Indonesia,Indonesia,IDN.WPI.YOY_PCH_PT.A,Wholesale price index (WPI),Annual,19,24,5,1979,2018,2019 to 2023
+Indonesia,Indonesia,IDN.WPI.IX.M,Wholesale price index (WPI),Monthly,232,288,56,1980-M01,2019-M04,2019-M05 to 2023-M12
+Indonesia,Indonesia,IDN.WPI.POP_PCH_PT.M,Wholesale price index (WPI),Monthly,232,288,56,1980-M02,2019-M04,2019-M05 to 2023-M12
+Indonesia,Indonesia,IDN.WPI.YOY_PCH_PT.M,Wholesale price index (WPI),Monthly,232,288,56,1981-M01,2019-M04,2019-M05 to 2023-M12
+Indonesia,Indonesia,IDN.WPI.IX.Q,Wholesale price index (WPI),Quarterly,77,96,19,1979-Q1,2019-Q1,2019-Q2 to 2023-Q4
+Indonesia,Indonesia,IDN.WPI.POP_PCH_PT.Q,Wholesale price index (WPI),Quarterly,77,96,19,1979-Q2,2019-Q1,2019-Q2 to 2023-Q4
+Indonesia,Indonesia,IDN.WPI.YOY_PCH_PT.Q,Wholesale price index (WPI),Quarterly,77,96,19,1980-Q1,2019-Q1,2019-Q2 to 2023-Q4
+Mexico,Mexico,MEX.PPI.IX.A,Producer price index (PPI),Annual,15,24,9,2008,2022,2000 to 2007; 2023
+Mexico,Mexico,MEX.PPI.POP_PCH_PT.A,Producer price index (PPI),Annual,14,24,10,2009,2022,2000 to 2008; 2023
+Mexico,Mexico,MEX.PPI.YOY_PCH_PT.A,Producer price index (PPI),Annual,14,24,10,2009,2022,2000 to 2008; 2023
+Mexico,Mexico,MEX.WPI.IX.A,Wholesale price index (WPI),Annual,1,24,23,1978,2000,2001 to 2023
+Mexico,Mexico,MEX.WPI.POP_PCH_PT.A,Wholesale price index (WPI),Annual,1,24,23,1979,2000,2001 to 2023
+Mexico,Mexico,MEX.WPI.YOY_PCH_PT.A,Wholesale price index (WPI),Annual,1,24,23,1979,2000,2001 to 2023
+Mexico,Mexico,MEX.PPI.IX.M,Producer price index (PPI),Monthly,186,288,102,2008-M01,2023-M06,2000-M01 to 2007-M12; 2023-M07 to 2023-M12
+Mexico,Mexico,MEX.PPI.POP_PCH_PT.M,Producer price index (PPI),Monthly,185,288,103,2008-M02,2023-M06,2000-M01 to 2008-M01; 2023-M07 to 2023-M12
+Mexico,Mexico,MEX.PPI.YOY_PCH_PT.M,Producer price index (PPI),Monthly,174,288,114,2009-M01,2023-M06,2000-M01 to 2008-M12; 2023-M07 to 2023-M12
+Mexico,Mexico,MEX.WPI.IX.M,Wholesale price index (WPI),Monthly,12,288,276,1979-M01,2000-M12,2001-M01 to 2023-M12
+Mexico,Mexico,MEX.WPI.POP_PCH_PT.M,Wholesale price index (WPI),Monthly,12,288,276,1979-M02,2000-M12,2001-M01 to 2023-M12
+Mexico,Mexico,MEX.WPI.YOY_PCH_PT.M,Wholesale price index (WPI),Monthly,12,288,276,1980-M01,2000-M12,2001-M01 to 2023-M12
+Mexico,Mexico,MEX.PPI.IX.Q,Producer price index (PPI),Quarterly,62,96,34,2008-Q1,2023-Q2,2000-Q1 to 2007-Q4; 2023-Q3 to 2023-Q4
+Mexico,Mexico,MEX.PPI.POP_PCH_PT.Q,Producer price index (PPI),Quarterly,61,96,35,2008-Q2,2023-Q2,2000-Q1 to 2008-Q1; 2023-Q3 to 2023-Q4
+Mexico,Mexico,MEX.PPI.YOY_PCH_PT.Q,Producer price index (PPI),Quarterly,58,96,38,2009-Q1,2023-Q2,2000-Q1 to 2008-Q4; 2023-Q3 to 2023-Q4
+Mexico,Mexico,MEX.WPI.IX.Q,Wholesale price index (WPI),Quarterly,4,96,92,1979-Q1,2000-Q4,2001-Q1 to 2023-Q4
+Mexico,Mexico,MEX.WPI.POP_PCH_PT.Q,Wholesale price index (WPI),Quarterly,4,96,92,1979-Q2,2000-Q4,2001-Q1 to 2023-Q4
+Mexico,Mexico,MEX.WPI.YOY_PCH_PT.Q,Wholesale price index (WPI),Quarterly,4,96,92,1980-Q1,2000-Q4,2001-Q1 to 2023-Q4
+Peru,Peru,PER.WPI.IX.A,Wholesale price index (WPI),Annual,20,24,4,1980,2019,2020 to 2023
+Peru,Peru,PER.WPI.POP_PCH_PT.A,Wholesale price index (WPI),Annual,20,24,4,1981,2019,2020 to 2023
+Peru,Peru,PER.WPI.YOY_PCH_PT.A,Wholesale price index (WPI),Annual,20,24,4,1981,2019,2020 to 2023
+Peru,Peru,PER.WPI.IX.M,Wholesale price index (WPI),Monthly,242,288,46,1980-M01,2020-M02,2020-M03 to 2023-M12
+Peru,Peru,PER.WPI.POP_PCH_PT.M,Wholesale price index (WPI),Monthly,242,288,46,1980-M02,2020-M02,2020-M03 to 2023-M12
+Peru,Peru,PER.WPI.YOY_PCH_PT.M,Wholesale price index (WPI),Monthly,242,288,46,1981-M01,2020-M02,2020-M03 to 2023-M12
+Peru,Peru,PER.WPI.IX.Q,Wholesale price index (WPI),Quarterly,80,96,16,1980-Q1,2019-Q4,2020-Q1 to 2023-Q4
+Peru,Peru,PER.WPI.POP_PCH_PT.Q,Wholesale price index (WPI),Quarterly,80,96,16,1980-Q2,2019-Q4,2020-Q1 to 2023-Q4
+Peru,Peru,PER.WPI.YOY_PCH_PT.Q,Wholesale price index (WPI),Quarterly,80,96,16,1981-Q1,2019-Q4,2020-Q1 to 2023-Q4
+Philippines,Philippines,PHL.PPI.IX.A,Producer price index (PPI),Annual,22,24,2,2001,2022,2000; 2023
+Philippines,Philippines,PHL.PPI.POP_PCH_PT.A,Producer price index (PPI),Annual,21,24,3,2002,2022,2000 to 2001; 2023
+Philippines,Philippines,PHL.PPI.YOY_PCH_PT.A,Producer price index (PPI),Annual,21,24,3,2002,2022,2000 to 2001; 2023
+Philippines,Philippines,PHL.WPI.IX.A,Wholesale price index (WPI),Annual,16,24,8,2006,2021,2000 to 2005; 2022 to 2023
+Philippines,Philippines,PHL.WPI.POP_PCH_PT.A,Wholesale price index (WPI),Annual,15,24,9,2007,2021,2000 to 2006; 2022 to 2023
+Philippines,Philippines,PHL.WPI.YOY_PCH_PT.A,Wholesale price index (WPI),Annual,15,24,9,2007,2021,2000 to 2006; 2022 to 2023
+Philippines,Philippines,PHL.PPI.IX.M,Producer price index (PPI),Monthly,264,288,24,2001-M01,2022-M12,2000-M01 to 2000-M12; 2023-M01 to 2023-M12
+Philippines,Philippines,PHL.PPI.POP_PCH_PT.M,Producer price index (PPI),Monthly,263,288,25,2001-M02,2022-M12,2000-M01 to 2001-M01; 2023-M01 to 2023-M12
+Philippines,Philippines,PHL.PPI.YOY_PCH_PT.M,Producer price index (PPI),Monthly,252,288,36,2002-M01,2022-M12,2000-M01 to 2001-M12; 2023-M01 to 2023-M12
+Philippines,Philippines,PHL.WPI.IX.M,Wholesale price index (WPI),Monthly,203,288,85,2006-M01,2022-M11,2000-M01 to 2005-M12; 2022-M12 to 2023-M12
+Philippines,Philippines,PHL.WPI.POP_PCH_PT.M,Wholesale price index (WPI),Monthly,202,288,86,2006-M02,2022-M11,2000-M01 to 2006-M01; 2022-M12 to 2023-M12
+Philippines,Philippines,PHL.WPI.YOY_PCH_PT.M,Wholesale price index (WPI),Monthly,191,288,97,2007-M01,2022-M11,2000-M01 to 2006-M12; 2022-M12 to 2023-M12
+Philippines,Philippines,PHL.PPI.IX.Q,Producer price index (PPI),Quarterly,88,96,8,2001-Q1,2022-Q4,2000-Q1 to 2000-Q4; 2023-Q1 to 2023-Q4
+Philippines,Philippines,PHL.PPI.POP_PCH_PT.Q,Producer price index (PPI),Quarterly,87,96,9,2001-Q2,2022-Q4,2000-Q1 to 2001-Q1; 2023-Q1 to 2023-Q4
+Philippines,Philippines,PHL.PPI.YOY_PCH_PT.Q,Producer price index (PPI),Quarterly,84,96,12,2002-Q1,2022-Q4,2000-Q1 to 2001-Q4; 2023-Q1 to 2023-Q4
+Philippines,Philippines,PHL.WPI.IX.Q,Wholesale price index (WPI),Quarterly,67,96,29,2006-Q1,2022-Q3,2000-Q1 to 2005-Q4; 2022-Q4 to 2023-Q4
+Philippines,Philippines,PHL.WPI.POP_PCH_PT.Q,Wholesale price index (WPI),Quarterly,66,96,30,2006-Q2,2022-Q3,2000-Q1 to 2006-Q1; 2022-Q4 to 2023-Q4
+Philippines,Philippines,PHL.WPI.YOY_PCH_PT.Q,Wholesale price index (WPI),Quarterly,63,96,33,2007-Q1,2022-Q3,2000-Q1 to 2006-Q4; 2022-Q4 to 2023-Q4
+South Africa,South Africa,ZAF.PPI.IX.A,Producer price index (PPI),Annual,20,24,4,1980,2019,2020 to 2023
+South Africa,South Africa,ZAF.PPI.POP_PCH_PT.A,Producer price index (PPI),Annual,20,24,4,1981,2019,2020 to 2023
+South Africa,South Africa,ZAF.PPI.YOY_PCH_PT.A,Producer price index (PPI),Annual,20,24,4,1981,2019,2020 to 2023
+South Africa,South Africa,ZAF.PPI.IX.M,Producer price index (PPI),Monthly,251,288,37,1980-M01,2020-M11,2020-M12 to 2023-M12
+South Africa,South Africa,ZAF.PPI.POP_PCH_PT.M,Producer price index (PPI),Monthly,251,288,37,1980-M02,2020-M11,2020-M12 to 2023-M12
+South Africa,South Africa,ZAF.PPI.YOY_PCH_PT.M,Producer price index (PPI),Monthly,251,288,37,1981-M01,2020-M11,2020-M12 to 2023-M12
+South Africa,South Africa,ZAF.PPI.IX.Q,Producer price index (PPI),Quarterly,83,96,13,1980-Q1,2020-Q3,2020-Q4 to 2023-Q4
+South Africa,South Africa,ZAF.PPI.POP_PCH_PT.Q,Producer price index (PPI),Quarterly,83,96,13,1980-Q2,2020-Q3,2020-Q4 to 2023-Q4
+South Africa,South Africa,ZAF.PPI.YOY_PCH_PT.Q,Producer price index (PPI),Quarterly,83,96,13,1981-Q1,2020-Q3,2020-Q4 to 2023-Q4
+South Korea,"Korea, Republic of",KOR.PPI.IX.A,Producer price index (PPI),Annual,22,24,2,1965,2021,2022 to 2023
+South Korea,"Korea, Republic of",KOR.PPI.POP_PCH_PT.A,Producer price index (PPI),Annual,22,24,2,1966,2021,2022 to 2023
+South Korea,"Korea, Republic of",KOR.PPI.YOY_PCH_PT.A,Producer price index (PPI),Annual,22,24,2,1966,2021,2022 to 2023
+South Korea,"Korea, Republic of",KOR.WPI.IX.A,Wholesale price index (WPI),Annual,0,24,24,1952,1992,2000 to 2023
+South Korea,"Korea, Republic of",KOR.WPI.POP_PCH_PT.A,Wholesale price index (WPI),Annual,0,24,24,1953,1992,2000 to 2023
+South Korea,"Korea, Republic of",KOR.WPI.YOY_PCH_PT.A,Wholesale price index (WPI),Annual,0,24,24,1953,1992,2000 to 2023
+South Korea,"Korea, Republic of",KOR.PPI.IX.M,Producer price index (PPI),Monthly,268,288,20,1965-M01,2022-M04,2022-M05 to 2023-M12
+South Korea,"Korea, Republic of",KOR.PPI.POP_PCH_PT.M,Producer price index (PPI),Monthly,268,288,20,1965-M02,2022-M04,2022-M05 to 2023-M12
+South Korea,"Korea, Republic of",KOR.PPI.YOY_PCH_PT.M,Producer price index (PPI),Monthly,268,288,20,1966-M01,2022-M04,2022-M05 to 2023-M12
+South Korea,"Korea, Republic of",KOR.WPI.IX.M,Wholesale price index (WPI),Monthly,0,288,288,1957-M01,1992-M11,2000-M01 to 2023-M12
+South Korea,"Korea, Republic of",KOR.WPI.POP_PCH_PT.M,Wholesale price index (WPI),Monthly,0,288,288,1957-M02,1992-M11,2000-M01 to 2023-M12
+South Korea,"Korea, Republic of",KOR.WPI.YOY_PCH_PT.M,Wholesale price index (WPI),Monthly,0,288,288,1958-M01,1992-M11,2000-M01 to 2023-M12
+South Korea,"Korea, Republic of",KOR.PPI.IX.Q,Producer price index (PPI),Quarterly,89,96,7,1965-Q1,2022-Q1,2022-Q2 to 2023-Q4
+South Korea,"Korea, Republic of",KOR.PPI.POP_PCH_PT.Q,Producer price index (PPI),Quarterly,89,96,7,1965-Q2,2022-Q1,2022-Q2 to 2023-Q4
+South Korea,"Korea, Republic of",KOR.PPI.YOY_PCH_PT.Q,Producer price index (PPI),Quarterly,89,96,7,1966-Q1,2022-Q1,2022-Q2 to 2023-Q4
+South Korea,"Korea, Republic of",KOR.WPI.IX.Q,Wholesale price index (WPI),Quarterly,0,96,96,1957-Q1,1992-Q4,2000-Q1 to 2023-Q4
+South Korea,"Korea, Republic of",KOR.WPI.POP_PCH_PT.Q,Wholesale price index (WPI),Quarterly,0,96,96,1957-Q2,1992-Q4,2000-Q1 to 2023-Q4
+South Korea,"Korea, Republic of",KOR.WPI.YOY_PCH_PT.Q,Wholesale price index (WPI),Quarterly,0,96,96,1958-Q1,1992-Q4,2000-Q1 to 2023-Q4
+Taiwan,Taiwan Province of China,TWN.WPI.IX.A,Wholesale price index (WPI),Annual,19,24,5,1949,2018,2019 to 2023
+Taiwan,Taiwan Province of China,TWN.WPI.POP_PCH_PT.A,Wholesale price index (WPI),Annual,19,24,5,1950,2018,2019 to 2023
+Taiwan,Taiwan Province of China,TWN.WPI.YOY_PCH_PT.A,Wholesale price index (WPI),Annual,19,24,5,1950,2018,2019 to 2023
+Taiwan,Taiwan Province of China,TWN.WPI.IX.M,Wholesale price index (WPI),Monthly,231,288,57,1989-M01,2019-M03,2019-M04 to 2023-M12
+Taiwan,Taiwan Province of China,TWN.WPI.POP_PCH_PT.M,Wholesale price index (WPI),Monthly,231,288,57,1989-M02,2019-M03,2019-M04 to 2023-M12
+Taiwan,Taiwan Province of China,TWN.WPI.YOY_PCH_PT.M,Wholesale price index (WPI),Monthly,231,288,57,1990-M01,2019-M03,2019-M04 to 2023-M12
+Taiwan,Taiwan Province of China,TWN.WPI.IX.Q,Wholesale price index (WPI),Quarterly,77,96,19,1989-Q1,2019-Q1,2019-Q2 to 2023-Q4
+Taiwan,Taiwan Province of China,TWN.WPI.POP_PCH_PT.Q,Wholesale price index (WPI),Quarterly,77,96,19,1989-Q2,2019-Q1,2019-Q2 to 2023-Q4
+Taiwan,Taiwan Province of China,TWN.WPI.YOY_PCH_PT.Q,Wholesale price index (WPI),Quarterly,77,96,19,1990-Q1,2019-Q1,2019-Q2 to 2023-Q4
+Thailand,Thailand,THA.PPI.IX.A,Producer price index (PPI),Annual,24,24,0,1957,2025,
+Thailand,Thailand,THA.PPI.POP_PCH_PT.A,Producer price index (PPI),Annual,24,24,0,1958,2025,
+Thailand,Thailand,THA.PPI.YOY_PCH_PT.A,Producer price index (PPI),Annual,24,24,0,1958,2025,
+Thailand,Thailand,THA.WPI.IX.A,Wholesale price index (WPI),Annual,1,24,23,1957,2000,2001 to 2023
+Thailand,Thailand,THA.WPI.POP_PCH_PT.A,Wholesale price index (WPI),Annual,1,24,23,1958,2000,2001 to 2023
+Thailand,Thailand,THA.WPI.YOY_PCH_PT.A,Wholesale price index (WPI),Annual,1,24,23,1958,2000,2001 to 2023
+Thailand,Thailand,THA.PPI.IX.M,Producer price index (PPI),Monthly,288,288,0,1957-M01,2026-M08,
+Thailand,Thailand,THA.PPI.POP_PCH_PT.M,Producer price index (PPI),Monthly,288,288,0,1957-M02,2026-M08,
+Thailand,Thailand,THA.PPI.YOY_PCH_PT.M,Producer price index (PPI),Monthly,288,288,0,1958-M01,2026-M08,
+Thailand,Thailand,THA.WPI.IX.M,Wholesale price index (WPI),Monthly,12,288,276,1957-M01,2000-M12,2001-M01 to 2023-M12
+Thailand,Thailand,THA.WPI.POP_PCH_PT.M,Wholesale price index (WPI),Monthly,12,288,276,1957-M02,2000-M12,2001-M01 to 2023-M12
+Thailand,Thailand,THA.WPI.YOY_PCH_PT.M,Wholesale price index (WPI),Monthly,12,288,276,1958-M01,2000-M12,2001-M01 to 2023-M12
+Thailand,Thailand,THA.PPI.IX.Q,Producer price index (PPI),Quarterly,96,96,0,1957-Q1,2026-Q2,
+Thailand,Thailand,THA.PPI.POP_PCH_PT.Q,Producer price index (PPI),Quarterly,96,96,0,1957-Q2,2026-Q2,
+Thailand,Thailand,THA.PPI.YOY_PCH_PT.Q,Producer price index (PPI),Quarterly,96,96,0,1958-Q1,2026-Q2,
+Thailand,Thailand,THA.WPI.IX.Q,Wholesale price index (WPI),Quarterly,4,96,92,1957-Q1,2000-Q4,2001-Q1 to 2023-Q4
+Thailand,Thailand,THA.WPI.POP_PCH_PT.Q,Wholesale price index (WPI),Quarterly,4,96,92,1957-Q2,2000-Q4,2001-Q1 to 2023-Q4
+Thailand,Thailand,THA.WPI.YOY_PCH_PT.Q,Wholesale price index (WPI),Quarterly,4,96,92,1958-Q1,2000-Q4,2001-Q1 to 2023-Q4
+Tunisia,Tunisia,TUN.PPI.IX.A,Producer price index (PPI),Annual,19,24,5,1990,2018,2019 to 2023
+Tunisia,Tunisia,TUN.PPI.POP_PCH_PT.A,Producer price index (PPI),Annual,19,24,5,1991,2018,2019 to 2023
+Tunisia,Tunisia,TUN.PPI.YOY_PCH_PT.A,Producer price index (PPI),Annual,19,24,5,1991,2018,2019 to 2023
+Tunisia,Tunisia,TUN.WPI.IX.A,Wholesale price index (WPI),Annual,0,24,24,1962,1987,2000 to 2023
+Tunisia,Tunisia,TUN.WPI.POP_PCH_PT.A,Wholesale price index (WPI),Annual,0,24,24,1963,1987,2000 to 2023
+Tunisia,Tunisia,TUN.WPI.YOY_PCH_PT.A,Wholesale price index (WPI),Annual,0,24,24,1963,1987,2000 to 2023
+Tunisia,Tunisia,TUN.PPI.IX.M,Producer price index (PPI),Monthly,230,288,58,1995-M06,2019-M02,2019-M03 to 2023-M12
+Tunisia,Tunisia,TUN.PPI.POP_PCH_PT.M,Producer price index (PPI),Monthly,230,288,58,1995-M07,2019-M02,2019-M03 to 2023-M12
+Tunisia,Tunisia,TUN.PPI.YOY_PCH_PT.M,Producer price index (PPI),Monthly,230,288,58,1996-M06,2019-M02,2019-M03 to 2023-M12
+Tunisia,Tunisia,TUN.WPI.IX.M,Wholesale price index (WPI),Monthly,0,288,288,1962-M01,1987-M12,2000-M01 to 2023-M12
+Tunisia,Tunisia,TUN.WPI.POP_PCH_PT.M,Wholesale price index (WPI),Monthly,0,288,288,1962-M02,1987-M12,2000-M01 to 2023-M12
+Tunisia,Tunisia,TUN.WPI.YOY_PCH_PT.M,Wholesale price index (WPI),Monthly,0,288,288,1963-M01,1987-M12,2000-M01 to 2023-M12
+Tunisia,Tunisia,TUN.PPI.IX.Q,Producer price index (PPI),Quarterly,76,96,20,1995-Q3,2018-Q4,2019-Q1 to 2023-Q4
+Tunisia,Tunisia,TUN.PPI.POP_PCH_PT.Q,Producer price index (PPI),Quarterly,76,96,20,1995-Q4,2018-Q4,2019-Q1 to 2023-Q4
+Tunisia,Tunisia,TUN.PPI.YOY_PCH_PT.Q,Producer price index (PPI),Quarterly,76,96,20,1996-Q3,2018-Q4,2019-Q1 to 2023-Q4
+Tunisia,Tunisia,TUN.WPI.IX.Q,Wholesale price index (WPI),Quarterly,0,96,96,1962-Q1,1987-Q4,2000-Q1 to 2023-Q4
+Tunisia,Tunisia,TUN.WPI.POP_PCH_PT.Q,Wholesale price index (WPI),Quarterly,0,96,96,1962-Q2,1987-Q4,2000-Q1 to 2023-Q4
+Tunisia,Tunisia,TUN.WPI.YOY_PCH_PT.Q,Wholesale price index (WPI),Quarterly,0,96,96,1963-Q1,1987-Q4,2000-Q1 to 2023-Q4
+Turkey,"Turkey, Republic of",TUR.PPI.IX.A,Producer price index (PPI),Annual,20,24,4,1981,2019,2020 to 2023
+Turkey,"Turkey, Republic of",TUR.PPI.POP_PCH_PT.A,Producer price index (PPI),Annual,20,24,4,1982,2019,2020 to 2023
+Turkey,"Turkey, Republic of",TUR.PPI.YOY_PCH_PT.A,Producer price index (PPI),Annual,20,24,4,1982,2019,2020 to 2023
+Turkey,"Turkey, Republic of",TUR.WPI.IX.A,Wholesale price index (WPI),Annual,14,24,10,1981,2013,2014 to 2023
+Turkey,"Turkey, Republic of",TUR.WPI.POP_PCH_PT.A,Wholesale price index (WPI),Annual,14,24,10,1982,2013,2014 to 2023
+Turkey,"Turkey, Republic of",TUR.WPI.YOY_PCH_PT.A,Wholesale price index (WPI),Annual,14,24,10,1982,2013,2014 to 2023
+Turkey,"Turkey, Republic of",TUR.PPI.IX.M,Producer price index (PPI),Monthly,243,288,45,1986-M01,2020-M03,2020-M04 to 2023-M12
+Turkey,"Turkey, Republic of",TUR.PPI.POP_PCH_PT.M,Producer price index (PPI),Monthly,243,288,45,1986-M02,2020-M03,2020-M04 to 2023-M12
+Turkey,"Turkey, Republic of",TUR.PPI.YOY_PCH_PT.M,Producer price index (PPI),Monthly,243,288,45,1987-M01,2020-M03,2020-M04 to 2023-M12
+Turkey,"Turkey, Republic of",TUR.WPI.IX.M,Wholesale price index (WPI),Monthly,168,288,120,1986-M01,2013-M12,2014-M01 to 2023-M12
+Turkey,"Turkey, Republic of",TUR.WPI.POP_PCH_PT.M,Wholesale price index (WPI),Monthly,168,288,120,1986-M02,2013-M12,2014-M01 to 2023-M12
+Turkey,"Turkey, Republic of",TUR.WPI.YOY_PCH_PT.M,Wholesale price index (WPI),Monthly,168,288,120,1987-M01,2013-M12,2014-M01 to 2023-M12
+Turkey,"Turkey, Republic of",TUR.PPI.IX.Q,Producer price index (PPI),Quarterly,81,96,15,1986-Q1,2020-Q1,2020-Q2 to 2023-Q4
+Turkey,"Turkey, Republic of",TUR.PPI.POP_PCH_PT.Q,Producer price index (PPI),Quarterly,81,96,15,1986-Q2,2020-Q1,2020-Q2 to 2023-Q4
+Turkey,"Turkey, Republic of",TUR.PPI.YOY_PCH_PT.Q,Producer price index (PPI),Quarterly,81,96,15,1987-Q1,2020-Q1,2020-Q2 to 2023-Q4
+Turkey,"Turkey, Republic of",TUR.WPI.IX.Q,Wholesale price index (WPI),Quarterly,56,96,40,1986-Q1,2013-Q4,2014-Q1 to 2023-Q4
+Turkey,"Turkey, Republic of",TUR.WPI.POP_PCH_PT.Q,Wholesale price index (WPI),Quarterly,56,96,40,1986-Q2,2013-Q4,2014-Q1 to 2023-Q4
+Turkey,"Turkey, Republic of",TUR.WPI.YOY_PCH_PT.Q,Wholesale price index (WPI),Quarterly,56,96,40,1987-Q1,2013-Q4,2014-Q1 to 2023-Q4
+Ukraine,Ukraine,UKR.PPI.IX.A,Producer price index (PPI),Annual,22,24,2,1992,2021,2022 to 2023
+Ukraine,Ukraine,UKR.PPI.POP_PCH_PT.A,Producer price index (PPI),Annual,22,24,2,1993,2021,2022 to 2023
+Ukraine,Ukraine,UKR.PPI.YOY_PCH_PT.A,Producer price index (PPI),Annual,22,24,2,1993,2021,2022 to 2023
+Ukraine,Ukraine,UKR.PPI.IX.M,Producer price index (PPI),Monthly,266,288,22,1992-M01,2022-M02,2022-M03 to 2023-M12
+Ukraine,Ukraine,UKR.PPI.POP_PCH_PT.M,Producer price index (PPI),Monthly,266,288,22,1992-M02,2022-M02,2022-M03 to 2023-M12
+Ukraine,Ukraine,UKR.PPI.YOY_PCH_PT.M,Producer price index (PPI),Monthly,266,288,22,1993-M01,2022-M02,2022-M03 to 2023-M12
+Ukraine,Ukraine,UKR.PPI.IX.Q,Producer price index (PPI),Quarterly,88,96,8,1992-Q1,2021-Q4,2022-Q1 to 2023-Q4
+Ukraine,Ukraine,UKR.PPI.POP_PCH_PT.Q,Producer price index (PPI),Quarterly,88,96,8,1992-Q2,2021-Q4,2022-Q1 to 2023-Q4
+Ukraine,Ukraine,UKR.PPI.YOY_PCH_PT.Q,Producer price index (PPI),Quarterly,88,96,8,1993-Q1,2021-Q4,2022-Q1 to 2023-Q4
+Vietnam,Vietnam,VNM.PPI.IX.A,Producer price index (PPI),Annual,9,24,15,2005,2016,2000 to 2004; 2006 to 2008; 2017 to 2023
+Vietnam,Vietnam,VNM.PPI.POP_PCH_PT.A,Producer price index (PPI),Annual,7,24,17,2010,2016,2000 to 2009; 2017 to 2023
+Vietnam,Vietnam,VNM.PPI.YOY_PCH_PT.A,Producer price index (PPI),Annual,7,24,17,2010,2016,2000 to 2009; 2017 to 2023
+Vietnam,Vietnam,VNM.WPI.IX.A,Wholesale price index (WPI),Annual,0,24,24,1949,1974,2000 to 2023
+Vietnam,Vietnam,VNM.WPI.POP_PCH_PT.A,Wholesale price index (WPI),Annual,0,24,24,1950,1974,2000 to 2023
+Vietnam,Vietnam,VNM.WPI.YOY_PCH_PT.A,Wholesale price index (WPI),Annual,0,24,24,1950,1974,2000 to 2023
+Vietnam,Vietnam,VNM.WPI.IX.M,Wholesale price index (WPI),Monthly,0,288,288,1957-M01,1974-M12,2000-M01 to 2023-M12
+Vietnam,Vietnam,VNM.WPI.POP_PCH_PT.M,Wholesale price index (WPI),Monthly,0,288,288,1957-M02,1974-M12,2000-M01 to 2023-M12
+Vietnam,Vietnam,VNM.WPI.YOY_PCH_PT.M,Wholesale price index (WPI),Monthly,0,288,288,1958-M01,1974-M12,2000-M01 to 2023-M12
+Vietnam,Vietnam,VNM.WPI.IX.Q,Wholesale price index (WPI),Quarterly,0,96,96,1957-Q1,1974-Q4,2000-Q1 to 2023-Q4
+Vietnam,Vietnam,VNM.WPI.POP_PCH_PT.Q,Wholesale price index (WPI),Quarterly,0,96,96,1957-Q2,1974-Q4,2000-Q1 to 2023-Q4
+Vietnam,Vietnam,VNM.WPI.YOY_PCH_PT.Q,Wholesale price index (WPI),Quarterly,0,96,96,1958-Q1,1974-Q4,2000-Q1 to 2023-Q4

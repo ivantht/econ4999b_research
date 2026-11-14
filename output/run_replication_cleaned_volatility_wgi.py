@@ -236,7 +236,7 @@ def fit(rows):
     }
 
 
-def write_outputs(path_csv, path_html, results, all_countries):
+def write_outputs(path_csv, path_html, results, all_countries, sample_note=None):
     fields = [
         "dimension", "dimension_label", "variable", "label",
         "paper_gpr", "coef",
@@ -311,6 +311,7 @@ def write_outputs(path_csv, path_html, results, all_countries):
             "<th>Coefficient</th><th>Cluster SE</th><th>Cluster p</th></tr></thead>"
             f"<tbody>{''.join(body)}</tbody></table>"
         )
+    sample_note_html = f"<p>{escape(sample_note)}</p>" if sample_note else ""
     html = f"""<!doctype html>
 <html lang="en">
 <head>
@@ -330,6 +331,7 @@ th:first-child, td:first-child {{ text-align: left; }}
 <p>The outcome is capital-flow volatility in <code>cleaned/replication_cleaned</code>, the standard deviation of portfolio inflows over three months, in billion dollars. GPR is the country article share, standardized within each country on the months that enter the regression. The controls are lagged one month: log industrial production, inflation, the policy rate, log oil, log VIX, log global EPU, financial development, central-bank independence, and debt to GDP.</p>
 <p>Each regression uses one dimension from <code>cleaned/wgi.csv</code>: rule of law, government effectiveness, or regulatory quality. The score is the calendar year of the lagged month. Years the file does not contain are left blank. WGI is centered on this regression, and the interaction is that centered score times standardized GPR. The GPR coefficient is the effect at the average score.</p>
 <p>Country fixed effects. The within standard error treats months as independent. The clustered standard error clusters by country. Table 2's GPR coefficient of 0.867 is shown as a reference and has no WGI term. *** p&lt;0.01, ** p&lt;0.05, * p&lt;0.10.</p>
+{sample_note_html}
 </div>
 {''.join(blocks)}
 </body>
