@@ -1,16 +1,22 @@
 """Three exchange-rate models on the replication countries except Ukraine and Thailand.
 
 Model 1 is the paper's log real-exchange-rate equation plus one WGI dimension
-and its interaction with GPR. Model 2 uses the fitted nominal-export trend.
-Model 3 uses fitted inflation and the fitted smoothed real-export growth rate.
+and its interaction with GPR. Model 2 uses the fitted nominal-export component.
+Model 3 fits inflation and the real-export component, passes both into the
+nominal-export component, and passes that fitted export into the exchange rate.
+
+The default run uses the Hodrick-Prescott log trend. Pass "cycle" to use the
+log cycle instead and write a separate results page.
 """
 
 import csv
 import os
+import sys
 from collections import defaultdict
 from html import escape
 
 import numpy as np
+import openpyxl
 
 import run_export_reer_2sls as est
 
@@ -19,10 +25,12 @@ ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
 OUTPUT = os.path.join(ROOT, "output")
 CLEANED = os.path.join(ROOT, "cleaned")
 PANEL = os.path.join(CLEANED, "replication_cleaned", "country_month.csv")
-REAL_EXPORT = os.path.join(CLEANED, "real_export.csv")
-GROWTH_TREND = os.path.join(CLEANED, "real_export_yoy_percent_hp_trend.csv")
-GROWTH_CYCLE = os.path.join(CLEANED, "real_export_yoy_percent_hp_cycle.csv")
-HP_LAMBDA = 129600.0
+IMPORT_GDP = os.path.join(CLEANED, "import_gdp.csv")
+REAL_EXPORT_TREND = os.path.join(CLEANED, "real_export_hp_trend.csv")
+REAL_EXPORT_CYCLE = os.path.join(CLEANED, "real_export_hp_cycle.csv")
+TOTAL_IMPORT_CYCLE = os.path.join(CLEANED, "total_import_hp_cycle.csv")
+NOMINAL_GDP_CYCLE = os.path.join(CLEANED, "nominal_gdp_hp_cycle.csv")
+NOMINAL_EXPORT_HP = os.path.join(CLEANED, "monthly nominal export hp.xlsx")
 
 PANEL_NAME = {"Turkiye": "Turkey", "Korea": "South Korea"}
 DROP = {"Ukraine", "Thailand"}
@@ -43,15 +51,23 @@ M2_SECOND = [
     "export_trend_hat", "policy_rate_l1", "inflation_l1", "log_oil_l1",
     "log_vix_l1", "log_gepu_l1", "financial_development_l1", "debt_gdp_l1",
 ]
-M3_INFLATION = ["policy_rate_l1", "log_oil_l1", "gpr", "wgi_l1", "wgi_x_gpr"]
-M3_INFLATION_EXCLUDED = ["gpr", "wgi_l1", "wgi_x_gpr"]
+M3_INFLATION = [
+    "import_gdp_l1", "policy_rate_l1", "log_oil_l1", "gpr", "wgi_l1", "wgi_x_gpr",
+]
+# Policy rate and oil are also absent from the next stage. They are left out of
+# this test because five country clusters cannot support a six-restriction Wald test.
+M3_INFLATION_EXCLUDED = ["import_gdp_l1", "gpr", "wgi_l1", "wgi_x_gpr"]
 M3_EXPORT = [
     "ip_growth_l1", "log_vix_l1", "log_gepu_l1", "gpr", "wgi_l1", "wgi_x_gpr",
 ]
-M3_EXPORT_EXCLUDED = ["ip_growth_l1", "gpr", "wgi_l1", "wgi_x_gpr"]
-M3_SECOND = [
-    "inflation_hat", "export_growth_hat", "policy_rate_l1", "log_oil_l1",
-    "log_vix_l1", "log_gepu_l1", "financial_development_l1", "debt_gdp_l1",
+M3_EXPORT_EXCLUDED = ["gpr", "wgi_l1", "wgi_x_gpr"]
+M3_NOMINAL = [
+    "inflation_hat", "real_export_hat", "log_vix_l1", "log_gepu_l1", "ip_growth_l1",
+]
+M3_NOMINAL_EXCLUDED = ["inflation_hat", "real_export_hat", "ip_growth_l1"]
+M3_REER = [
+    "export_trend_hat", "policy_rate_l1", "log_oil_l1", "log_vix_l1", "log_gepu_l1",
+    "financial_development_l1", "debt_gdp_l1",
 ]
 
 LABELS = {
@@ -67,8 +83,9 @@ LABELS = {
     "debt_gdp_l1": "Debt/GDP",
     "ip_growth_l1": "Industrial-production growth",
     "export_trend_hat": "Fitted nominal-export trend",
+    "import_gdp_l1": "Import share of GDP",
     "inflation_hat": "Fitted inflation",
-    "export_growth_hat": "Fitted real-export growth",
+    "real_export_hat": "Fitted real-export trend",
 }
 
 EQUATIONS = {
@@ -87,20 +104,87 @@ EQUATIONS = {
         "+ lagged financial development + lagged debt/GDP + country effects"
     ),
     "m3_inflation": (
-        "Inflation = lagged policy rate + lagged log oil + GPR + lagged WGI "
-        "+ WGI × GPR + country effects"
+        "Inflation = lagged import share of GDP + lagged policy rate + lagged log oil "
+        "+ GPR + lagged WGI + WGI × GPR + country effects"
     ),
     "m3_export": (
-        "Smoothed real-export percent change = lagged industrial-production growth "
+        "Real-export log trend = lagged industrial-production growth "
         "+ lagged log VIX + lagged log global EPU + GPR + lagged WGI "
         "+ WGI × GPR + country effects"
     ),
-    "m3_second": (
-        "log(REER) = fitted inflation + fitted real-export growth + lagged policy rate "
+    "m3_nominal": (
+        "Nominal-export log trend = fitted inflation + fitted real-export trend "
+        "+ lagged log VIX + lagged log global EPU + lagged industrial-production growth "
+        "+ country effects"
+    ),
+    "m3_reer": (
+        "log(REER) = fitted nominal-export trend + lagged policy rate + lagged log oil "
+        "+ lagged log VIX + lagged log global EPU + lagged financial development "
+        "+ lagged debt/GDP + country effects"
+    ),
+}
+
+EQUATIONS_CYCLE = {
+    "m1": EQUATIONS["m1"],
+    "m2_first": (
+        "Nominal-export log cycle = GPR + lagged WGI + WGI × GPR + lagged log VIX "
+        "+ lagged log global EPU + lagged industrial-production growth + country effects"
+    ),
+    "m2_second": (
+        "log(REER) = fitted nominal-export cycle + lagged policy rate + lagged inflation "
         "+ lagged log oil + lagged log VIX + lagged log global EPU "
         "+ lagged financial development + lagged debt/GDP + country effects"
     ),
+    "m3_inflation": (
+        "Inflation = lagged cyclical import-to-GDP ratio + lagged policy rate + lagged log oil "
+        "+ GPR + lagged WGI + WGI × GPR + country effects"
+    ),
+    "m3_export": (
+        "Real-export log cycle = lagged industrial-production growth "
+        "+ lagged log VIX + lagged log global EPU + GPR + lagged WGI "
+        "+ WGI × GPR + country effects"
+    ),
+    "m3_nominal": (
+        "Nominal-export log cycle = fitted inflation + fitted real-export cycle "
+        "+ lagged log VIX + lagged log global EPU + lagged industrial-production growth "
+        "+ country effects"
+    ),
+    "m3_reer": (
+        "log(REER) = fitted nominal-export cycle + lagged policy rate + lagged log oil "
+        "+ lagged log VIX + lagged log global EPU + lagged financial development "
+        "+ lagged debt/GDP + country effects"
+    ),
 }
+
+LABELS_CYCLE = {
+    **LABELS,
+    "export_trend_hat": "Fitted nominal-export cycle",
+    "import_gdp_l1": "Cyclical import-to-GDP ratio",
+    "real_export_hat": "Fitted real-export cycle",
+}
+
+TREND_NOTE = (
+    "<p>Ukraine and Thailand are dropped. GPR is contemporaneous and standardized within country. "
+    "The other controls, including WGI, use the previous month. WGI is centered before it is multiplied by GPR. "
+    "Each cell shows the coefficient, the country-clustered standard error in parentheses, and the 95% confidence interval. "
+    "Standard errors after the first stage use the structural residual. *** p&lt;0.01, ** p&lt;0.05, * p&lt;0.10.</p>"
+    "<p>Industrial-production growth is the year-over-year percent change in the replication file, lagged one month. "
+    "There is no monthly GDP series. The import share is the annual trend ratio of imports to nominal GDP, "
+    "repeated within the year, and January uses the previous year. The nominal-export outcome and the real-export "
+    "outcome are Hodrick-Prescott log trends, so they are not logged again.</p>"
+)
+
+CYCLE_NOTE = (
+    "<p>Ukraine and Thailand are dropped. GPR is contemporaneous and standardized within country. "
+    "The other controls, including WGI, use the previous month. WGI is centered before it is multiplied by GPR. "
+    "Each cell shows the coefficient, the country-clustered standard error in parentheses, and the 95% confidence interval. "
+    "Standard errors after the first stage use the structural residual. *** p&lt;0.01, ** p&lt;0.05, * p&lt;0.10.</p>"
+    "<p>This page uses the Hodrick-Prescott log cycle, the deviation from the smooth trend. "
+    "Industrial-production growth is the year-over-year percent change in the replication file, lagged one month. "
+    "There is no monthly GDP series. The import term is the annual ratio of the import cycle to the GDP cycle, "
+    "exp(import cycle − GDP cycle), repeated within the year, and January uses the previous year. "
+    "The nominal-export outcome and the real-export outcome are Hodrick-Prescott log cycles, so they are not logged again.</p>"
+)
 
 
 def num(text):
@@ -112,77 +196,54 @@ def num(text):
     return float(text)
 
 
-def load_real_export():
+def load_import_share():
     out = defaultdict(dict)
-    with open(REAL_EXPORT, encoding="utf-8-sig", newline="") as handle:
+    with open(IMPORT_GDP, encoding="utf-8-sig", newline="") as handle:
         for row in csv.DictReader(handle):
-            value = num(row["real_export"])
-            if value is not None and value > 0:
-                out[row["country"].strip()][row["year_month"].strip()] = value
+            value = num(row["import_gdp"])
+            if value is not None:
+                out[row["country"].strip()][int(row["year"])] = value
     return out
 
 
-def contiguous_stretches(months):
-    stretches = []
-    current = []
-    for month in months:
-        if current and month != est.add_months(current[-1], 1):
-            stretches.append(current)
-            current = []
-        current.append(month)
-    if current:
-        stretches.append(current)
-    return stretches
-
-
-def hp_trend(values):
-    n = len(values)
-    if n < 4:
-        return None
-    second = np.zeros((n - 2, n))
-    for index in range(n - 2):
-        second[index, index:index + 3] = (1.0, -2.0, 1.0)
-    penalty = HP_LAMBDA * (second.T @ second)
-    return np.linalg.solve(np.eye(n) + penalty, np.array(values, dtype=float))
-
-
-def write_growth_files():
-    exports = load_real_export()
-    order = []
-    with open(os.path.join(CLEANED, "country.csv"), encoding="utf-8-sig", newline="") as handle:
+def load_annual_cycle(path):
+    out = defaultdict(dict)
+    with open(path, encoding="utf-8-sig", newline="") as handle:
         for row in csv.DictReader(handle):
-            if row["country"].strip():
-                order.append(row["country"].strip())
-    trend_rows = []
-    cycle_rows = []
-    notes = []
-    for country in order:
-        series = exports.get(country, {})
-        growth = {}
-        for month, value in series.items():
-            earlier = series.get(est.add_months(month, -12))
-            if earlier is not None and earlier > 0:
-                growth[month] = (value / earlier - 1.0) * 100.0
-        for stretch in contiguous_stretches(sorted(growth)):
-            trend = hp_trend([growth[month] for month in stretch])
-            if trend is None:
-                notes.append(f"{country} {stretch[0]} to {stretch[-1]}: too short to filter")
+            value = num(row["y"])
+            if value is not None:
+                out[row["country"].strip()][int(row["year"])] = value
+    return out
+
+
+def load_cycle_import_ratio():
+    imports = load_annual_cycle(TOTAL_IMPORT_CYCLE)
+    gdp = load_annual_cycle(NOMINAL_GDP_CYCLE)
+    out = defaultdict(dict)
+    for country, years in imports.items():
+        for year, import_cycle in years.items():
+            gdp_cycle = gdp.get(country, {}).get(year)
+            if gdp_cycle is None:
                 continue
-            for month, trend_value in zip(stretch, trend):
-                trend_rows.append((country, month, float(trend_value)))
-                cycle_rows.append((country, month, float(growth[month] - trend_value)))
-            notes.append(f"{country} {stretch[0]} to {stretch[-1]}: {len(stretch)} months")
-    write_series(GROWTH_TREND, "ytrend", trend_rows)
-    write_series(GROWTH_CYCLE, "y", cycle_rows)
-    return notes
+            out[country][year] = float(np.exp(import_cycle - gdp_cycle))
+    return out
 
 
-def write_series(path, column, rows):
-    with open(path, "w", encoding="utf-8", newline="") as handle:
-        writer = csv.writer(handle, lineterminator="\n")
-        writer.writerow(["country", "year_month", column])
-        for country, month, value in rows:
-            writer.writerow([country, month, f"{value:.16g}"])
+def load_export_component(sheet):
+    wb = openpyxl.load_workbook(NOMINAL_EXPORT_HP, read_only=True, data_only=True)
+    ws = wb[sheet]
+    out = defaultdict(dict)
+    for row in ws.iter_rows(min_row=2, values_only=True):
+        if not row or row[0] is None or row[1] is None or row[2] is None:
+            continue
+        out[str(row[0]).strip()][str(row[1]).strip()] = float(row[2])
+    wb.close()
+    return out
+
+
+def import_share_l1(shares, country, month):
+    lag = est.add_months(month, -1)
+    return shares.get(country, {}).get(int(lag[:4]))
 
 
 def load_named_month(path, column):
@@ -361,6 +422,13 @@ def fit_ols(rows, columns, outcome):
     }
 
 
+def demean_within(values, grouped):
+    out = np.array(values, dtype=float, copy=True)
+    for indexes in grouped.values():
+        out[indexes] -= out[indexes].mean()
+    return out
+
+
 def fit_system(rows, stages, second_exog, second_names, outcome):
     countries = sorted({row["country"] for row in rows})
     y = np.array([row[outcome] for row in rows], dtype=float)
@@ -378,8 +446,10 @@ def fit_system(rows, stages, second_exog, second_names, outcome):
         residual = endog - matrix @ beta
         variance, _ = est.cluster_variance(matrix, residual, grouped, n, matrix.shape[1])
         f_stat, f_p, f_df1 = partial_f(beta, variance, names, excluded, g - 1)
-        fitted.append(matrix @ beta)
-        actual.append(endog)
+        # Country effects are in both stages. Remove the country mean from the
+        # fitted and actual series so the second stage is not collinear.
+        fitted.append(demean_within(matrix @ beta, grouped))
+        actual.append(demean_within(endog, grouped))
         first.append({
             "label": label,
             "stats": est.inference(names, beta, variance, g),
@@ -404,11 +474,77 @@ def fit_system(rows, stages, second_exog, second_names, outcome):
     }
 
 
+def stage_record(beta, variance, names, excluded, g):
+    f_stat, f_p, f_df1 = partial_f(beta, variance, names, excluded, g - 1)
+    return {
+        "stats": est.inference(names, beta, variance, g),
+        "partial_f": f_stat,
+        "partial_f_p": f_p,
+        "partial_f_df1": f_df1,
+        "partial_f_df2": g - 1,
+    }
+
+
+def fit_chain(rows):
+    countries = sorted({row["country"] for row in rows})
+    n = len(rows)
+    grouped = est.cluster_indices(rows)
+    g = len(grouped)
+    fitted = []
+    actual = []
+    first = []
+    for endog_key, columns, excluded in (
+        ("inflation", M3_INFLATION, M3_INFLATION_EXCLUDED),
+        ("real_export", M3_EXPORT, M3_EXPORT_EXCLUDED),
+    ):
+        matrix, names, _ = est.design_matrix(rows, columns, countries)
+        endog = np.array([row[endog_key] for row in rows], dtype=float)
+        beta = np.linalg.lstsq(matrix, endog, rcond=None)[0]
+        residual = endog - matrix @ beta
+        variance, _ = est.cluster_variance(matrix, residual, grouped, n, matrix.shape[1])
+        fitted.append(demean_within(matrix @ beta, grouped))
+        actual.append(demean_within(endog, grouped))
+        first.append(stage_record(beta, variance, names, excluded, g))
+
+    nominal_columns = ["log_vix_l1", "log_gepu_l1", "ip_growth_l1"]
+    exog, exog_names, _ = est.design_matrix(rows, nominal_columns, countries)
+    xhat = np.column_stack([np.ones(n), *fitted, exog[:, 1:]])
+    x_struct = np.column_stack([np.ones(n), *actual, exog[:, 1:]])
+    nominal_names = ["const", "inflation_hat", "real_export_hat", *exog_names[1:]]
+    nominal = np.array([row["ytrend"] for row in rows], dtype=float)
+    beta = np.linalg.lstsq(xhat, nominal, rcond=None)[0]
+    structural = nominal - x_struct @ beta
+    variance, _ = est.cluster_variance(xhat, structural, grouped, n, xhat.shape[1])
+    nominal_stage = stage_record(beta, variance, nominal_names, M3_NOMINAL_EXCLUDED, g)
+
+    reer_columns = [
+        "policy_rate_l1", "log_oil_l1", "log_vix_l1", "log_gepu_l1",
+        "financial_development_l1", "debt_gdp_l1",
+    ]
+    reer_exog, reer_names, _ = est.design_matrix(rows, reer_columns, countries)
+    nominal_hat = demean_within(xhat @ beta, grouped)
+    nominal_actual = demean_within(nominal, grouped)
+    y = np.array([row["log_reer"] for row in rows], dtype=float)
+    xhat3 = np.column_stack([np.ones(n), nominal_hat, reer_exog[:, 1:]])
+    x_struct3 = np.column_stack([np.ones(n), nominal_actual, reer_exog[:, 1:]])
+    reer_x_names = ["const", "export_trend_hat", *reer_names[1:]]
+    beta3 = np.linalg.lstsq(xhat3, y, rcond=None)[0]
+    structural3 = y - x_struct3 @ beta3
+    variance3, _ = est.cluster_variance(xhat3, structural3, grouped, n, xhat3.shape[1])
+    return {
+        "inflation": first[0],
+        "real_export": first[1],
+        "nominal": nominal_stage,
+        "stats": est.inference(reer_x_names, beta3, variance3, g),
+        "sample": sample_info(rows),
+    }
+
+
 def stat_fields(stat):
     return {key: f"{stat[key]:.10g}" for key in ("coef", "se", "t", "p", "ci_lo", "ci_hi")}
 
 
-def write_csv(path, blocks):
+def write_csv(path, blocks, labels):
     fields = [
         "model", "stage", "outcome", "dimension", "dimension_label", "variable", "label",
         "coef", "se", "t", "p", "ci_lo", "ci_hi",
@@ -441,7 +577,7 @@ def write_csv(path, blocks):
                     writer.writerow({
                         **shared,
                         "variable": variable,
-                        "label": LABELS[variable],
+                        "label": labels[variable],
                         **stat_fields(fit["stats"][variable]),
                     })
 
@@ -454,7 +590,7 @@ def cell(stat):
     )
 
 
-def write_html(path, blocks, growth_notes):
+def write_html(path, blocks, labels, page_title, note):
     parts = []
     for block in blocks:
         header = "".join(f"<th>{escape(label)}</th>" for _, label, _ in block["results"])
@@ -463,7 +599,7 @@ def write_html(path, blocks, growth_notes):
             cells = "".join(
                 f"<td>{cell(fit['stats'][variable])}</td>" for _, _, fit in block["results"]
             )
-            body.append(f"<tr><td>{escape(LABELS[variable])}</td>{cells}</tr>")
+            body.append(f"<tr><td>{escape(labels[variable])}</td>{cells}</tr>")
         sample = "".join(
             "<td>{n}<br>{g} countries<br>{start} to {end}</td>".format(
                 n=fit["sample"]["n_obs"],
@@ -489,20 +625,19 @@ def write_html(path, blocks, growth_notes):
         )
         parts.append(
             f"<h2>{escape(block['title'])}</h2>"
-            f"<p><strong>Outcome:</strong> {escape(block['outcome'])}</p>"
             f"<p class=\"equation\">{escape(block['equation'])}</p>"
+            f"<p><strong>Y:</strong> {escape(block['outcome'])}</p>"
             "<table><thead><tr><th>Variable</th>"
             f"{header}</tr></thead><tbody>{''.join(body)}"
             f"<tr><td>Observations</td>{sample}</tr>{extra}</tbody></table>"
             "<h3>Countries that remain</h3><ul>"
             f"{kept}</ul><h3>Countries that drop</h3><ul>{dropped}</ul>"
         )
-    stretches = "".join(f"<li>{escape(note)}</li>" for note in growth_notes)
     html = f"""<!doctype html>
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<title>Three exchange-rate models</title>
+<title>{escape(page_title)}</title>
 <style>
 body {{ font: 16px/1.5 Georgia, serif; max-width: 1100px; margin: 2em auto; padding: 0 1em; color: #20242a; }}
 table {{ border-collapse: collapse; width: 100%; margin: 1em 0; font-size: .92em; }}
@@ -513,13 +648,10 @@ th:first-child, td:first-child {{ text-align: left; }}
 </style>
 </head>
 <body>
-<h1>Three exchange-rate models</h1>
+<h1>{escape(page_title)}</h1>
 <div class="note">
-<p>Ukraine and Thailand are dropped. GPR is contemporaneous and standardized within country. The other controls, including WGI, use the previous month. WGI is centered before it is multiplied by GPR. Each cell shows the coefficient, the country-clustered standard error in parentheses, and the 95% confidence interval. Second-stage standard errors use the structural residual. *** p&lt;0.01, ** p&lt;0.05, * p&lt;0.10.</p>
-<p>Industrial-production growth is the year-over-year percent change in the replication file, lagged one month. Nominal GDP and total nominal imports are not in the files, so nominal imports divided by nominal GDP are not in Model 3. The real-export growth rate is the year-over-year percent change after its cycle is removed with lambda 129,600. That monthly scaling is not from the lecture.</p>
+{note}
 </div>
-<h2>Real-export growth stretches</h2>
-<ul>{stretches}</ul>
 {''.join(parts)}
 </body>
 </html>
@@ -532,14 +664,36 @@ def empty_extra(_country, _month, _source):
     return {}
 
 
-def main():
-    notes = write_growth_files()
-    print("Real-export growth stretches:")
-    for note in notes:
-        print(" ", note)
+def main(mode="trend"):
+    if mode not in ("trend", "cycle"):
+        raise SystemExit("Use trend or cycle.")
     index, panel_countries = load_replication()
-    export_trend = est.read_export_trend()
-    export_growth = load_named_month(GROWTH_TREND, "ytrend")
+    if mode == "cycle":
+        export_trend = load_export_component("y")
+        real_export = load_named_month(REAL_EXPORT_CYCLE, "y")
+        import_share = load_cycle_import_ratio()
+        labels = LABELS_CYCLE
+        equations = EQUATIONS_CYCLE
+        export_outcome = "Hodrick-Prescott log cycle of nominal exports"
+        real_outcome = "Real-export log cycle"
+        nominal_outcome = "Nominal-export log cycle"
+        page_title = "Three exchange-rate models, Hodrick-Prescott cycle"
+        note = CYCLE_NOTE
+        html_name = "three_fx_models_cycle_results.html"
+        csv_name = "three_fx_models_cycle_results.csv"
+    else:
+        export_trend = est.read_export_trend()
+        real_export = load_named_month(REAL_EXPORT_TREND, "ytrend")
+        import_share = load_import_share()
+        labels = LABELS
+        equations = EQUATIONS
+        export_outcome = "Hodrick-Prescott log trend of nominal exports"
+        real_outcome = "Real-export log trend"
+        nominal_outcome = "Nominal-export log trend"
+        page_title = "Three exchange-rate models"
+        note = TREND_NOTE
+        html_name = "three_fx_models_results.html"
+        csv_name = "three_fx_models_results.csv"
     outside_export = sorted(set(export_trend) - set(panel_countries))
     blocks = []
 
@@ -570,7 +724,7 @@ def main():
 
     run_dimension(
         "Model 1. Exchange rate",
-        EQUATIONS["m1"],
+        equations["m1"],
         "Log real effective exchange rate",
         M1,
         ["log_reer", "gpr_raw", "wgi_raw", "policy_rate_l1", "inflation_l1", "log_oil_l1",
@@ -589,7 +743,7 @@ def main():
     def model2(rows):
         fitted = fit_system(
             rows,
-            [("ytrend", M2_FIRST, M2_EXCLUDED, "Nominal-export log trend")],
+            [("ytrend", M2_FIRST, M2_EXCLUDED, export_outcome)],
             [name for name in M2_SECOND if name != "export_trend_hat"],
             ["export_trend_hat"],
             "log_reer",
@@ -607,7 +761,7 @@ def main():
 
     run_dimension(
         "Model 2. Second stage",
-        EQUATIONS["m2_second"],
+        equations["m2_second"],
         "Log real effective exchange rate",
         M2_SECOND,
         ["log_reer", "gpr_raw", "wgi_raw", "ytrend", "ip_growth_l1", "policy_rate_l1",
@@ -623,8 +777,8 @@ def main():
         "model": "2",
         "stage": "first",
         "title": "Model 2. First stage",
-        "equation": EQUATIONS["m2_first"],
-        "outcome": "Hodrick-Prescott log trend of nominal exports",
+        "equation": equations["m2_first"],
+        "outcome": export_outcome,
         "columns": M2_FIRST,
         "dropped": second["dropped"],
         "results": [
@@ -639,60 +793,57 @@ def main():
             for code, label, fit in second["results"]
         ],
     })
+    for _, _, fit in second["results"]:
+        for key in ("partial_f", "partial_f_p", "partial_f_df1", "partial_f_df2"):
+            fit.pop(key, None)
 
-    def growth_extra(country, month, source):
+    def channel_extra(country, month, source):
         return {
             "inflation": num(source.get("inflation")),
-            "export_growth": export_growth.get(country, {}).get(month),
+            "real_export": real_export.get(country, {}).get(month),
+            "ytrend": export_trend.get(country, {}).get(month),
+            "import_gdp_l1": import_share_l1(import_share, country, month),
             "ip_growth_l1": ip_growth(index, country, month),
         }
 
     def model3(rows):
-        fitted = fit_system(
-            rows,
-            [
-                ("inflation", M3_INFLATION, M3_INFLATION_EXCLUDED, "Inflation"),
-                ("export_growth", M3_EXPORT, M3_EXPORT_EXCLUDED, "Smoothed real-export percent change"),
-            ],
-            [name for name in M3_SECOND if name not in ("inflation_hat", "export_growth_hat")],
-            ["inflation_hat", "export_growth_hat"],
-            "log_reer",
-        )
-        return {"system": fitted, "stats": fitted["second"], "sample": fitted["sample"]}
+        return fit_chain(rows)
 
     run_dimension(
-        "Model 3. Second stage",
-        EQUATIONS["m3_second"],
+        "Model 3. Third stage",
+        equations["m3_reer"],
         "Log real effective exchange rate",
-        M3_SECOND,
-        ["log_reer", "gpr_raw", "wgi_raw", "inflation", "export_growth", "ip_growth_l1",
-         "policy_rate_l1", "log_oil_l1", "log_vix_l1", "log_gepu_l1",
-         "financial_development_l1", "debt_gdp_l1"],
-        growth_extra,
+        M3_REER,
+        ["log_reer", "gpr_raw", "wgi_raw", "inflation", "real_export", "ytrend",
+         "import_gdp_l1", "ip_growth_l1", "policy_rate_l1", "log_oil_l1",
+         "log_vix_l1", "log_gepu_l1", "financial_development_l1", "debt_gdp_l1"],
+        channel_extra,
         model3,
-        ("3", "second"),
+        ("3", "third"),
     )
     third = blocks[-1]
-    for offset, (columns, equation, outcome, stage_name) in enumerate((
-        (M3_INFLATION, EQUATIONS["m3_inflation"], "Inflation", "inflation"),
-        (M3_EXPORT, EQUATIONS["m3_export"], "Smoothed real-export percent change", "export growth"),
-    )):
+    earlier = [
+        ("inflation", M3_INFLATION, equations["m3_inflation"], "Inflation", "first, inflation"),
+        ("real_export", M3_EXPORT, equations["m3_export"], real_outcome, "first, real export"),
+        ("nominal", M3_NOMINAL, equations["m3_nominal"], nominal_outcome, "second"),
+    ]
+    for offset, (key, columns, equation, outcome, stage_name) in enumerate(earlier):
         blocks.insert(-1, {
             "model": "3",
             "stage": stage_name,
-            "title": f"Model 3. First stage, {outcome}",
+            "title": f"Model 3. {outcome}",
             "equation": equation,
             "outcome": outcome,
             "columns": columns,
             "dropped": third["dropped"],
             "results": [
                 (code, label, {
-                    "stats": fit["system"]["first"][offset]["stats"],
+                    "stats": fit[key]["stats"],
                     "sample": fit["sample"],
-                    "partial_f": fit["system"]["first"][offset]["partial_f"],
-                    "partial_f_p": fit["system"]["first"][offset]["partial_f_p"],
-                    "partial_f_df1": fit["system"]["first"][offset]["partial_f_df1"],
-                    "partial_f_df2": fit["system"]["first"][offset]["partial_f_df2"],
+                    "partial_f": fit[key]["partial_f"],
+                    "partial_f_p": fit[key]["partial_f_p"],
+                    "partial_f_df1": fit[key]["partial_f_df1"],
+                    "partial_f_df2": fit[key]["partial_f_df2"],
                 })
                 for code, label, fit in third["results"]
             ],
@@ -708,9 +859,9 @@ def main():
         if country in DROP or country not in model1["present"]
     ]
 
-    write_csv(os.path.join(OUTPUT, "three_fx_models_results.csv"), blocks)
-    write_html(os.path.join(OUTPUT, "three_fx_models_results.html"), blocks, notes)
+    write_csv(os.path.join(OUTPUT, csv_name), blocks, labels)
+    write_html(os.path.join(OUTPUT, html_name), blocks, labels, page_title, note)
 
 
 if __name__ == "__main__":
-    main()
+    main(sys.argv[1] if len(sys.argv) > 1 else "trend")

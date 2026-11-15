@@ -3,7 +3,8 @@
 The outcome is cf_vol in the literature-review panel: the standard deviation of
 portfolio inflows over three months. GPR is that panel's within-country z-score.
 WGI comes from cleaned/wgi.csv, lagged to the previous month and centered.
-Industrial production is omitted. Country fixed effects, clustered standard errors.
+Industrial production is the lagged log from the literature-review panel.
+Country fixed effects, clustered standard errors.
 """
 
 import csv
@@ -43,6 +44,7 @@ DIMENSIONS = {
 
 CONTROLS = [
     "policy_rate_l1",
+    "log_ip_l1",
     "inflation_l1",
     "log_oil_l1",
     "log_vix_l1",
@@ -54,6 +56,7 @@ CONTROLS = [
 
 PANEL_CONTROLS = {
     "policy_rate_l1": "rate_l1",
+    "log_ip_l1": "ln_ip_l1",
     "inflation_l1": "infl_l1",
     "log_oil_l1": "ln_oil_l1",
     "log_vix_l1": "ln_vix_l1",
@@ -65,6 +68,7 @@ PANEL_CONTROLS = {
 
 CONTROL_LABELS = {
     "policy_rate_l1": "Policy rate",
+    "log_ip_l1": "Real industrial production",
     "inflation_l1": "Inflation",
     "log_oil_l1": "Oil price",
     "log_vix_l1": "VIX",
@@ -220,7 +224,7 @@ th:first-child, td:first-child {{ text-align: left; }}
 <div class="note">
 <p>The outcome is the standard deviation of portfolio inflows over three months, the author's volatility measure. It is not the quarterly dollar flow.</p>
 <p>GPR is the country index standardized within each country, in the same month. Each regression uses one WGI dimension from <code>cleaned/wgi.csv</code>, taken from the year of the previous month and centered on this sample. The GPR coefficient is the effect at that average. The interaction is the extra GPR effect when WGI is one point higher.</p>
-<p>Real industrial production is omitted. The other controls are lagged one month and include central bank independence. Standard errors are clustered by country. *** p&lt;0.01, ** p&lt;0.05, * p&lt;0.10.</p>
+<p>Real industrial production is the lagged log of the real index. The other controls are lagged one month and include central bank independence. Standard errors are clustered by country. *** p&lt;0.01, ** p&lt;0.05, * p&lt;0.10.</p>
 </div>
 {''.join(blocks)}
 </body>
