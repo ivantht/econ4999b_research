@@ -486,3 +486,267 @@ Import dependence, price pass-through and commodity cycles could alter the appar
 :::
 :::
 :::
+
+## Capital-flow volatility | Design
+
+::: {.eyebrow}
+Equation (2) with one WGI dimension
+:::
+
+::: {.formula}
+$$
+vol_{it} = \alpha_i + \beta_1 GPR_{it}^{z} + \beta_2 WGI_{i,t-1}
++ \beta_3 (WGI_{i,t-1}\times GPR_{it}^{z})
++ \boldsymbol{\gamma}^{\mathsf T}\mathbf{X}_{i,t-1} + \varepsilon_{it}.
+$$
+:::
+
+::: {.columns}
+::: {.column width="49%"}
+::: {.card}
+<div class="card-title">Outcome</div>
+
+- $vol$: three-month standard deviation of gross portfolio inflows, billion dollars
+- $GPR^{z}$: country article share, standardized within country
+- $WGI$: rule of law, government effectiveness, or regulatory quality, lagged and centered
+:::
+:::
+::: {.column width="49%"}
+::: {.card}
+<div class="card-title">Controls and estimation</div>
+
+- $\mathbf X$: policy rate, log industrial production, inflation, log oil, log VIX, log global EPU, financial development, central-bank independence, debt/GDP
+- Country fixed effects; country-clustered standard errors
+:::
+:::
+:::
+
+::: {.footnote}
+Table 2's GPR coefficient of 0.867 is a paper reference with no WGI term. Ukraine, Thailand, Indonesia, the Philippines and South Africa have no complete month.
+:::
+
+## Capital-flow volatility | Rule of law {.report-slide}
+
+```{=html}
+<table class="source-results">
+<colgroup><col style="width: 34%"><col style="width: 33%"><col style="width: 33%"></colgroup>
+<thead><tr><th>Variable</th><th>Within</th><th>Cluster</th></tr></thead>
+<tbody>
+<tr><td>GPR</td><td><strong>-0.5852***</strong><br>(0.1911)</td><td>-0.5852<br>(0.4597)</td></tr>
+<tr><td>WGI</td><td><strong>-13.1173***</strong><br>(1.5267)</td><td>-13.1173<br>(10.5582)</td></tr>
+<tr><td>WGI × GPR</td><td>-0.3404<br>(0.2357)</td><td><strong>-0.3404**</strong><br>(0.1542)</td></tr>
+<tr><td>Policy rate</td><td>-0.0274<br>(0.1042)</td><td>-0.0274<br>(0.1257)</td></tr>
+<tr><td>Real industrial production</td><td><strong>5.7441***</strong><br>(1.4655)</td><td>5.7441<br>(4.8178)</td></tr>
+<tr><td>Inflation</td><td>-0.0791<br>(0.1097)</td><td>-0.0791<br>(0.0950)</td></tr>
+<tr><td>Oil price</td><td><strong>1.8332***</strong><br>(0.5239)</td><td><strong>1.8332*</strong><br>(1.0695)</td></tr>
+<tr><td>VIX</td><td><strong>3.9447***</strong><br>(0.5999)</td><td>3.9447<br>(2.7754)</td></tr>
+<tr><td>Global EPU</td><td><strong>-1.6293**</strong><br>(0.6721)</td><td>-1.6293<br>(1.8417)</td></tr>
+<tr><td>Financial development</td><td>-0.6453<br>(5.6719)</td><td>-0.6453<br>(15.1680)</td></tr>
+<tr><td>Central bank independence</td><td>-18.1654<br>(12.4743)</td><td>-18.1654<br>(19.7742)</td></tr>
+<tr><td>Debt/GDP</td><td><strong>0.2593***</strong><br>(0.0172)</td><td>0.2593<br>(0.1618)</td></tr>
+</tbody>
+</table>
+```
+
+::: {.footnote}
+N = 4,609, 24 countries, 2000-02 to 2022-01. Within R² = 0.1009. WGI centered at 0.8828. Parentheses: SE. Bold: p &lt; .10.
+:::
+
+## Capital-flow volatility | Government effectiveness {.report-slide}
+
+```{=html}
+<table class="source-results">
+<colgroup><col style="width: 34%"><col style="width: 33%"><col style="width: 33%"></colgroup>
+<thead><tr><th>Variable</th><th>Within</th><th>Cluster</th></tr></thead>
+<tbody>
+<tr><td>GPR</td><td><strong>-0.6200***</strong><br>(0.1919)</td><td>-0.6200<br>(0.4915)</td></tr>
+<tr><td>WGI</td><td><strong>-6.5955***</strong><br>(1.2320)</td><td>-6.5955<br>(5.7534)</td></tr>
+<tr><td>WGI × GPR</td><td><strong>-0.6299**</strong><br>(0.2669)</td><td><strong>-0.6299*</strong><br>(0.3243)</td></tr>
+<tr><td>Policy rate</td><td><strong>-0.1716*</strong><br>(0.1038)</td><td>-0.1716<br>(0.2228)</td></tr>
+<tr><td>Real industrial production</td><td><strong>7.8185***</strong><br>(1.4973)</td><td>7.8185<br>(6.4723)</td></tr>
+<tr><td>Inflation</td><td>0.0576<br>(0.1088)</td><td>0.0576<br>(0.1574)</td></tr>
+<tr><td>Oil price</td><td><strong>1.8964***</strong><br>(0.5265)</td><td><strong>1.8964*</strong><br>(0.9189)</td></tr>
+<tr><td>VIX</td><td><strong>3.9527***</strong><br>(0.6046)</td><td>3.9527<br>(2.7502)</td></tr>
+<tr><td>Global EPU</td><td>-0.8032<br>(0.6716)</td><td>-0.8032<br>(1.2679)</td></tr>
+<tr><td>Financial development</td><td>-1.8122<br>(5.7199)</td><td>-1.8122<br>(15.0991)</td></tr>
+<tr><td>Central bank independence</td><td>5.5336<br>(12.7525)</td><td>5.5336<br>(17.6638)</td></tr>
+<tr><td>Debt/GDP</td><td><strong>0.2595***</strong><br>(0.0173)</td><td>0.2595<br>(0.1637)</td></tr>
+</tbody>
+</table>
+```
+
+::: {.footnote}
+N = 4,609, 24 countries, 2000-02 to 2022-01. Within R² = 0.0927. WGI centered at 1.0510. Parentheses: SE. Bold: p &lt; .10.
+:::
+
+## Capital-flow volatility | Regulatory quality {.report-slide}
+
+```{=html}
+<table class="source-results">
+<colgroup><col style="width: 34%"><col style="width: 33%"><col style="width: 33%"></colgroup>
+<thead><tr><th>Variable</th><th>Within</th><th>Cluster</th></tr></thead>
+<tbody>
+<tr><td>GPR</td><td><strong>-0.6406***</strong><br>(0.1925)</td><td>-0.6406<br>(0.5142)</td></tr>
+<tr><td>WGI</td><td>-1.7713<br>(1.5154)</td><td>-1.7713<br>(2.5987)</td></tr>
+<tr><td>WGI × GPR</td><td><strong>-0.7736***</strong><br>(0.2815)</td><td>-0.7736<br>(0.4750)</td></tr>
+<tr><td>Policy rate</td><td>-0.1320<br>(0.1047)</td><td>-0.1320<br>(0.1943)</td></tr>
+<tr><td>Real industrial production</td><td><strong>6.5229***</strong><br>(1.4912)</td><td>6.5229<br>(5.7223)</td></tr>
+<tr><td>Inflation</td><td>0.0624<br>(0.1094)</td><td>0.0624<br>(0.1675)</td></tr>
+<tr><td>Oil price</td><td><strong>1.7922***</strong><br>(0.5285)</td><td><strong>1.7922*</strong><br>(0.9299)</td></tr>
+<tr><td>VIX</td><td><strong>3.7766***</strong><br>(0.6060)</td><td>3.7766<br>(2.6425)</td></tr>
+<tr><td>Global EPU</td><td>-0.9976<br>(0.6755)</td><td>-0.9976<br>(1.3458)</td></tr>
+<tr><td>Financial development</td><td>-4.9091<br>(5.8222)</td><td>-4.9091<br>(16.4906)</td></tr>
+<tr><td>Central bank independence</td><td>-9.5202<br>(12.6454)</td><td>-9.5202<br>(16.6134)</td></tr>
+<tr><td>Debt/GDP</td><td><strong>0.2571***</strong><br>(0.0180)</td><td>0.2571<br>(0.1638)</td></tr>
+</tbody>
+</table>
+```
+
+::: {.footnote}
+N = 4,609, 24 countries, 2000-02 to 2022-01. Within R² = 0.0872. WGI centered at 0.9871. Parentheses: SE. Bold: p &lt; .10. Dropped: Indonesia, the Philippines, Thailand, Ukraine, South Africa.
+:::
+
+## Subsample design
+
+::: {.eyebrow}
+Ten emerging economies
+:::
+
+::: {.formula .compact-formula}
+$$
+\begin{aligned}
+y_{i,t}^{j}&=\beta_1 GPR_{i,t}^{z}+\beta_2 WGI_{i,t-1}+\beta_3(WGI_{i,t-1}\times GPR_{i,t}^{z})\\
+&+\gamma'X_{i,t-1}+\delta_i+\varepsilon_{i,t}
+\end{aligned}
+$$
+:::
+
+::: {.small}
+$y^{j}$: capital-flow volatility or log real exchange rate.
+:::
+
+::: {.columns}
+::: {.column width="49%"}
+::: {.card}
+<div class="card-title">Top and bottom groups</div>
+
+- **Sample**: 10 emerging economies with complete months
+- **Split**: top three and bottom three on each WGI aspect, 2000–2021 average
+- **Left out before ranking**: Indonesia, the Philippines, South Africa, Thailand, Ukraine
+:::
+:::
+::: {.column width="49%"}
+::: {.card}
+<div class="card-title">What is estimated</div>
+
+- **GPR**: standardized within country on the months in that regression
+- **WGI**: lagged score, not centered, so GPR is the effect at a score of zero
+- **WGI × GPR**: change in the GPR association for a one-point higher score
+:::
+:::
+:::
+
+::: {.footnote}
+Two completed checks: rank all ten; then remove China, rank the remaining nine again, and re-estimate the top three and bottom three. Country fixed effects. Controls are lagged one month.
+:::
+
+## How to read WGI × GPR
+
+::: {.columns}
+::: {.column width="49%"}
+::: {.card}
+<div class="card-title">Exchange rate</div>
+
+**Log real effective exchange rate**
+
+- **Negative**: a higher score, a weaker currency when GPR is higher
+- **Positive**: a higher score, a stronger currency when GPR is higher
+- About a 1 percent move for a coefficient of 0.01
+:::
+:::
+::: {.column width="49%"}
+::: {.card}
+<div class="card-title">Capital-flow volatility</div>
+
+**Three-month standard deviation of portfolio inflows**
+
+- **Negative**: a higher score, calmer capital-flow when GPR is higher
+- **Positive**: a higher score, more volatile capital-flow when GPR is higher
+- The unit is billion dollars
+:::
+:::
+:::
+
+::: {.footnote}
+Stars: within standard errors. *** p &lt; 0.01, ** p &lt; 0.05, * p &lt; 0.10. Each group is three countries. Bold marks p &lt; .10, matching the model tables.
+:::
+
+## All ten: WGI × GPR {.report-slide}
+
+::: {.small}
+Top three and bottom three of the ten emerging economies. Every cell is a WGI × GPR coefficient.
+:::
+
+::: {.compare-table}
+| Aspect | Volatility, top | Volatility, bottom | Exchange rate, top | Exchange rate, bottom |
+|:-------|:--------:|:-----------:|:------:|:---------:|
+| Voice and accountability | 0.129 | −0.321 | −0.002 | **−0.014\*\*** |
+| Political stability | 0.272 | −0.105 | 0.006 | **−0.021\*\*\*** |
+| Government effectiveness | −0.102 | 0.194 | −0.013 | **−0.022\*** |
+| Regulatory quality | 0.042 | 1.137 | **−0.011\*\*** | −0.017 |
+| Rule of law | 0.133 | 1.018 | −0.005 | **0.030\*** |
+| Control of corruption | −0.032 | −0.067 | 0.004 | **0.021\*\*** |
+:::
+
+::: {.footnote}
+Within standard errors. No volatility interaction is significant. Exchange rate is the log real effective exchange rate.
+:::
+
+## China removed: WGI × GPR {.report-slide}
+
+::: {.small}
+China is removed, then the remaining nine are ranked again. Top three are unchanged.
+:::
+
+::: {.compare-table}
+| Aspect | Volatility, top | Volatility, bottom | Exchange rate, top | Exchange rate, bottom |
+|:-------|:--------:|:-----------:|:------:|:---------:|
+| Voice and accountability | 0.129 | 0.156 | −0.002 | **−0.021\*\*** |
+| Political stability | 0.272 | −0.105 | 0.006 | **−0.021\*\*\*** |
+| Government effectiveness | −0.102 | **−1.545\*\*\*** | −0.013 | **−0.043\*\*\*** |
+| Regulatory quality | 0.042 | 0.406 | **−0.011\*\*** | **−0.019\*** |
+| Rule of law | 0.133 | 0.236 | −0.005 | **0.031\*\*** |
+| Control of corruption | −0.032 | −0.224 | 0.004 | **0.039\*\*\*** |
+:::
+
+::: {.footnote}
+New bottom three: voice and accountability, Malaysia, Türkiye, Colombia; government effectiveness, Colombia, Brazil, Mexico; regulatory quality, India, Brazil, Colombia; rule of law, Mexico, Colombia, Brazil; control of corruption, Mexico, India, Colombia. Political stability is unchanged.
+:::
+
+## What stays the same
+
+```{=html}
+<div class="idea">
+<div class="idea-number">01</div>
+<div>
+<div class="idea-title">Exchange rate, low-score groups</div>
+Mostly not a buffer: voice and accountability, political stability, and government effectiveness stay negative in the bottom three. A higher score goes with a weaker real exchange rate when GPR is higher.
+</div>
+</div>
+
+<div class="idea">
+<div class="idea-number">02</div>
+<div>
+<div class="idea-title">Two positive exceptions</div>
+Rule of law and control of corruption: the bottom-three exchange-rate interactions stay positive after China is removed, 0.031 and 0.039, both significant at the 5 percent level or better. A higher score goes with a stronger real exchange rate when GPR is higher.
+</div>
+</div>
+
+<div class="idea">
+<div class="idea-number">03</div>
+<div>
+<div class="idea-title">What changes</div>
+Government effectiveness: the bottom three become Colombia, Brazil, and Mexico. The exchange-rate interaction is −0.043 and the volatility interaction is −1.545, both significant at the 1 percent level. Regulatory quality in the new bottom three is −0.019, significant at the 10 percent level.
+</div>
+</div>
+```

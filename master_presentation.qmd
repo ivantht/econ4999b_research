@@ -10,300 +10,300 @@ format:
     embed-resources: true
 ---
 
-## [Presentation title] {.cover}
+## Geopolitical risk, WGI, and the real exchange rate {.cover}
 
 ::: {.cover-content}
-[Institution or course]
+ECON 4999B
 
-# [Presentation title]
+# Geopolitical risk, WGI, and the real exchange rate
 
-**[Subtitle]**
+**Capital-flow volatility and the export channel**
 
-[Presenters]  
-[Date]
+Research presentation  
+November 2026
 :::
 
-## [Research question]
+## Research question
 
 ::: {.question-banner}
-**[Main research question]**
+**Does WGI change how geopolitical risk moves the real exchange rate, and does that run through capital-flow volatility or exports?**
 :::
 
 ::: {.columns}
 ::: {.column width="50%"}
-### [Objective]
+### Objective
 
-- **[Key term]**: [Placeholder]
-- **[Key term]**: [Placeholder]
+- **GPR**: country article share, standardized within country
+- **WGI**: six governance scores, lagged and centered
 :::
 
 ::: {.column width="50%"}
-### [Approach]
+### Approach
 
-- **[Key term]**: [Placeholder]
-- **[Key term]**: [Placeholder]
+- **Baseline**: log REER on GPR, WGI, and WGI × GPR
+- **Channels**: capital-flow volatility, then exports
 :::
 :::
 
-## [Baseline model]
+## Baseline model
 
 ::: {.columns}
 ::: {.column width="46%"}
 ::: {.finding-card}
 ::: {.card-label}
-[Model overview]
+Model 1
 :::
 
-**[Specification]**
+**Log real effective exchange rate**
 
-- [Outcome and main variables]
-- [Controls and fixed effects]
-- [Sample and estimation]
+- Outcome is log REER; GPR, lagged WGI, and WGI × GPR
+- Lagged controls and country fixed effects
+- Clustered standard errors by country
 :::
 :::
 
 ::: {.column width="54%"}
 ::: {.table-area}
-**[Baseline equation or model summary]**
+**Model 1, six WGI dimensions**
 
-| [Component] | [Placeholder] |
+| Component | Detail |
 |:------------|:--------------|
-| [Outcome] | [To be added] |
-| [Interaction] | [To be added] |
-| [Controls] | [To be added] |
-| [Sample] | [To be added] |
+| Outcome | Log real effective exchange rate |
+| Interaction | Centered WGI × within-country GPR |
+| Controls | Policy rate, inflation, log oil, log VIX, log GEPU, FD, debt/GDP |
+| Sample | 6,628 months, 27 countries, 2000–02 to 2022–01 |
 :::
 :::
 :::
 
-## [Exchange-rate buffering: baseline results]
+## Exchange-rate buffering: baseline results
 
 ::: {.columns}
 ::: {.column width="40%"}
 ::: {.finding-card}
 ::: {.card-label}
-[Key finding]
+Model 1
 :::
 
-**[Buffering conclusion]**
+**No GPR buffering at average WGI**
 
-- [Coefficient and direction]
-- [Statistical significance]
-- [Interpretation]
+- GPR is 0.0005 and 0.0001, both insignificant
+- WGI is positive: rule of law 0.167*, regulatory quality 0.139**
+- WGI × GPR is −0.0036 and −0.0020, both insignificant
 :::
 :::
 
 ::: {.column width="60%"}
 ::: {.table-area}
-**[Baseline regression results]**
+**Model 1, log REER**
 
-| [Variable] | [Model 1] | [Model 2] |
+| Variable | Rule of law | Regulatory quality |
 |:-----------|:---------:|:---------:|
-| [Term] | [ ] | [ ] |
-| [Interaction] | [ ] | [ ] |
-| [Controls] | [ ] | [ ] |
-| [Observations] | [ ] | [ ] |
+| GPR | 0.0005 | 0.0001 |
+| WGI × GPR | −0.0036 | −0.0020 |
+| Controls | Yes | Yes |
+| Observations | 6,628 | 6,628 |
 
 ::: {.table-note}
-[Standard errors and significance notes]
+Clustered standard errors by country. Ukraine and Thailand dropped. *** p&lt;0.01, ** p&lt;0.05, * p&lt;0.10.
 :::
 :::
 :::
 :::
 
-## [Institutional aspects]
+## Institutional aspects
 
 ::: {.columns}
 ::: {.column width="40%"}
 ::: {.finding-card}
 ::: {.card-label}
-[Key finding]
+Model 1 WGI
 :::
 
-**[Institutional aspect]**
+**A higher score lines up with a stronger real rate**
 
-- [Relevant interaction]
-- [Significance and direction]
-- [Comparison across aspects]
+- GPR is about zero in every column
+- Only voice and accountability has an interaction star, −0.009*
+- Regulatory quality is the only WGI main effect significant at 5 percent
 :::
 :::
 
 ::: {.column width="60%"}
 ::: {.table-area}
-**[Institutional-aspect results]**
+**Model 1 WGI coefficients, log REER**
 
-| [Aspect] | [Estimate] | [Significance] |
+| Aspect | Estimate | Significance |
 |:---------|:----------:|:--------------:|
-| [Aspect 1] | [ ] | [ ] |
-| [Aspect 2] | [ ] | [ ] |
-| [Aspect 3] | [ ] | [ ] |
-| [Additional aspects] | [ ] | [ ] |
+| Regulatory quality | 0.139 | ** |
+| Rule of law | 0.167 | * |
+| Government effectiveness | 0.100 | * |
+| Voice, stability, corruption | 0.137, 0.066*, 0.120* | * |
 
 ::: {.table-note}
-[Model and significance notes]
+Model 1, N = 6,628. Clustered standard errors. Additional row: voice 0.137, political stability 0.066*, control of corruption 0.120*.
 :::
 :::
 :::
 :::
 
-## [Capital-flow volatility]
+## Capital-flow volatility
 
 ::: {.columns}
 ::: {.column width="40%"}
 ::: {.finding-card}
 ::: {.card-label}
-[Mechanism]
+Channel 1
 :::
 
-**[Institution and capital flows]**
+**Pooled GPR is negative, not clustered-significant**
 
-- [Proposed channel]
-- [Estimate and significance]
-- [What higher volatility implies]
+- Three-month SD of portfolio inflows, billion dollars
+- GPR −0.585, cluster p = 0.22; within ***
+- GE interaction −0.630*; RQ interaction −0.774, cluster p = 0.12
 :::
 :::
 
 ::: {.column width="60%"}
 ::: {.table-area}
-**[Capital-flow volatility results]**
+**Rule of law, 24 countries**
 
-| [Variable] | [Estimate] | [Significance] |
+| Variable | Estimate | Significance |
 |:-----------|:----------:|:--------------:|
-| [Term] | [ ] | [ ] |
-| [Interaction] | [ ] | [ ] |
-| [Controls] | [ ] | [ ] |
-| [Observations] | [ ] | [ ] |
+| GPR | −0.585 |  |
+| WGI × GPR | −0.340 | ** |
+| Controls | Yes |  |
+| Observations | 4,609 |  |
 
 ::: {.table-note}
-[Definition and model notes]
+Clustered SE for stars unless noted. GPR is *** under within SEs. Emerging-only simple slope is about +0.06. Outcome is not the real exchange rate.
 :::
 :::
 :::
 :::
 
-## [Net-export channel]
+## Net-export channel
 
 ::: {.columns}
 ::: {.column width="50%"}
 ::: {.finding-card}
 ::: {.card-label}
-[Proposed channel]
+Model 2 first stage
 :::
 
-**[Institutional aspect]**
+**WGI and the nominal-export trend**
 
-- [Link to exchange rates]
-- [Link to net exports]
-- [Qualifications]
+- Rule of law on the log export trend is −2.03***
+- GPR and WGI × GPR are insignificant
+- Fitted export then enters the real-rate equation
 :::
 :::
 
 ::: {.column width="50%"}
 ::: {.finding-card}
 ::: {.card-label}
-[Evidence]
+Models 2 and 3
 :::
 
-**[Result or figure]**
+**Export to the real exchange rate**
 
-- [Estimate and significance]
-- [Interpretation]
-- [Limitations]
-:::
-:::
-:::
-
-## [Inflation results]
-
-::: {.columns}
-::: {.column width="40%"}
-::: {.finding-card}
-::: {.card-label}
-[Key finding]
-:::
-
-**[Inflation result]**
-
-- [Estimate and significance]
-- [Economic interpretation]
-- [Model qualification]
-:::
-:::
-
-::: {.column width="60%"}
-::: {.table-area}
-**[Inflation regression results]**
-
-| [Variable] | [Model 1] | [Model 2] |
-|:-----------|:---------:|:---------:|
-| [Term] | [ ] | [ ] |
-| [Interaction] | [ ] | [ ] |
-| [Controls] | [ ] | [ ] |
-| [Observations] | [ ] | [ ] |
-
-::: {.table-note}
-[Standard errors and significance notes]
-:::
+- Fitted nominal-export trend, rule of law: −0.155***
+- A higher fitted export trend depreciates log REER
+- Model 3 puts GPR, WGI, and the interaction only in the inflation and real-export first stages
 :::
 :::
 :::
 
-## [Real-export results]
+## Inflation results
 
 ::: {.columns}
 ::: {.column width="40%"}
 ::: {.finding-card}
 ::: {.card-label}
-[Key finding]
+Model 3, first stage
 :::
 
-**[Real-export result]**
+**WGI, not GPR, lines up with inflation**
 
-- [Estimate and significance]
-- [Economic interpretation]
-- [Model qualification]
+- Political stability WGI −3.22**; government effectiveness −4.08*
+- GPR and WGI × GPR are insignificant
+- Five countries, 2006–01 to 2022–01
 :::
 :::
 
 ::: {.column width="60%"}
 ::: {.table-area}
-**[Real-export regression results]**
+**Inflation, Model 3**
 
-| [Variable] | [Model 1] | [Model 2] |
+| Variable | Political stability | Government effectiveness |
 |:-----------|:---------:|:---------:|
-| [Term] | [ ] | [ ] |
-| [Interaction] | [ ] | [ ] |
-| [Controls] | [ ] | [ ] |
-| [Observations] | [ ] | [ ] |
+| GPR | −0.062 | −0.029 |
+| WGI × GPR | 0.130 | −0.025 |
+| Controls | Yes | Yes |
+| Observations | 956 | 956 |
 
 ::: {.table-note}
-[Standard errors and significance notes]
+Clustered standard errors by country. GPR, WGI, and the interaction are in this stage only. *** p&lt;0.01, ** p&lt;0.05, * p&lt;0.10.
 :::
 :::
 :::
 :::
 
-## [Interpreting the results]
+## Real-export results
+
+::: {.columns}
+::: {.column width="40%"}
+::: {.finding-card}
+::: {.card-label}
+Model 3, first stage
+:::
+
+**WGI is negative on the real-export trend**
+
+- Rule of law −1.009***; control of corruption −1.004**
+- GPR and WGI × GPR are about zero
+- Within-country scores fell while export trends rose; not a causal cut in trade
+:::
+:::
+
+::: {.column width="60%"}
+::: {.table-area}
+**Real-export log trend, Model 3**
+
+| Variable | Rule of law | Control of corruption |
+|:-----------|:---------:|:---------:|
+| GPR | 0.000 | 0.008 |
+| WGI × GPR | −0.004 | −0.001 |
+| Controls | Yes | Yes |
+| Observations | 956 | 956 |
+
+::: {.table-note}
+Clustered standard errors by country. Chile, Hungary, India, Mexico, and Turkey. *** p&lt;0.01, ** p&lt;0.05, * p&lt;0.10.
+:::
+:::
+:::
+:::
+
+## Interpreting the results
 
 ::: {.stacked-point}
 ::: {.point-label}
-[Result 1]
+Model 1
 :::
-**[Economic explanation]**: [Placeholder]
-:::
-
-::: {.stacked-point}
-::: {.point-label}
-[Result 2]
-:::
-**[Economic explanation]**: [Placeholder]
+**No GPR effect at average WGI**: GPR on log REER is about zero. WGI is positive. WGI × GPR is not a buffer in the full 27-country sample.
 :::
 
 ::: {.stacked-point}
 ::: {.point-label}
-[Result 3]
+Capital-flow volatility
 :::
-**[Economic explanation and limitations]**: [Placeholder]
+**Pooled GPR is negative, clustered insignificant**: the United States pulls the 24-country slope down. Among emerging markets the simple slope is about +0.06 and the country signs are mixed.
+:::
+
+::: {.stacked-point}
+::: {.point-label}
+Export channel
+:::
+**WGI, not GPR, lines up with exports**: rule of law on the real-export trend is −1.009***. GPR and the interaction stay near zero. That coefficient is the within-country decline in scores while export trends rose.
 :::
 
 ## Subsample design
@@ -442,31 +442,31 @@ What changes
 **Government effectiveness**: the bottom three become Colombia, Brazil, and Mexico. The exchange-rate interaction is −0.043 and the volatility interaction is −1.545, both significant at the 1 percent level. Regulatory quality in the new bottom three is −0.019, significant at the 10 percent level.
 :::
 
-## [Conclusion]
+## Conclusion
 
 ::: {.stacked-point}
 ::: {.point-label}
-[Buffering]
+Buffering
 :::
-**[Conclusion]**: [Placeholder]
-:::
-
-::: {.stacked-point}
-::: {.point-label}
-[Mechanisms]
-:::
-**[Conclusion]**: [Placeholder]
+**Model 1**: GPR does not move log REER at average WGI. WGI itself is positive. The interaction is not a full-sample buffer.
 :::
 
 ::: {.stacked-point}
 ::: {.point-label}
-[Robustness]
+Mechanisms
 :::
-**[Conclusion and limitations]**: [Placeholder]
+**Two channels**: pooled volatility GPR is negative but clustered insignificant; emerging signs mix. On exports, WGI is negative and GPR is not.
 :::
 
-## [Questions] {.closing}
+::: {.stacked-point}
+::: {.point-label}
+Robustness
+:::
+**Limits**: Model 3 has five countries. Use clustered standard errors. The OECD portfolio series does not match the paper’s Table 1 vintage.
+:::
+
+## Questions {.closing}
 
 ::: {.closing-content}
-**[Questions]**
+**Questions**
 :::
