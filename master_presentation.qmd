@@ -308,13 +308,20 @@ format:
 
 ## Subsample design
 
+::: {.title-eq}
+$$
+\begin{aligned}
+&y_{i,t}^{j}=\beta_1 GPR_{i,t}^{z}+\beta_2 WGI_{i,t-1}+\beta_3(WGI_{i,t-1}\times GPR_{i,t}^{z})\\
+&+\gamma'X_{i,t-1}+\delta_i+\varepsilon_{i,t}
+\end{aligned}
+$$
+
+$y^{j}$: capital-flow volatility or log real exchange rate
+:::
+
 ::: {.columns}
 ::: {.column width="50%"}
 ::: {.finding-card}
-::: {.card-label}
-My part
-:::
-
 **Top and bottom groups**
 
 - **Sample**: 10 emerging economies with complete months
@@ -325,10 +332,6 @@ My part
 
 ::: {.column width="50%"}
 ::: {.finding-card}
-::: {.card-label}
-Same equation in every group
-:::
-
 **What is estimated**
 
 - **GPR**: standardized within country on the months in that regression
