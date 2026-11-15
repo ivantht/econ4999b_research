@@ -306,77 +306,137 @@ format:
 **[Economic explanation and limitations]**: [Placeholder]
 :::
 
-## [Subsample tests: model comparison]
+## Subsample design
 
 ::: {.columns}
 ::: {.column width="50%"}
 ::: {.finding-card}
 ::: {.card-label}
-[Original model]
+My part
 :::
 
-- **[Specification]**: [Placeholder]
-- **[Sample]**: [Placeholder]
-- **[Controls]**: [Placeholder]
+**Top and bottom groups**
+
+- **Sample**: 10 emerging economies with complete months
+- **Split**: top three and bottom three on each WGI aspect, 2000–2021 average
+- **Left out before ranking**: Indonesia, the Philippines, South Africa, Thailand, Ukraine
 :::
 :::
 
 ::: {.column width="50%"}
 ::: {.finding-card}
 ::: {.card-label}
-[Robustness model]
+Same equation in every group
 :::
 
-- **[Specification]**: [Placeholder]
-- **[Sample]**: [Placeholder]
-- **[Controls]**: [Placeholder]
+**What is estimated**
+
+- **GPR**: standardized within country on the months in that regression
+- **WGI**: lagged score, not centered, so GPR is the effect at a score of zero
+- **WGI × GPR**: change in the GPR association for a one-point higher score
 :::
 :::
 :::
 
 ::: {.bottom-callout}
-**[What changes and what stays the same]**: [Placeholder]
+**Two completed checks**: rank all ten; then remove China, rank the remaining nine again, and re-estimate the top three and bottom three. Country fixed effects. Controls are lagged one month.
 :::
 
-## [Subsample tests: results]
+## How to read WGI × GPR
+
+::: {.columns}
+::: {.column width="50%"}
+::: {.finding-card}
+::: {.card-label}
+Exchange rate
+:::
+
+**Log real effective exchange rate**
+
+- **Negative**: a higher score, a weaker currency when GPR is higher
+- **Positive**: a higher score, a stronger currency when GPR is higher
+- About a 1 percent move for a coefficient of 0.01
+:::
+:::
+
+::: {.column width="50%"}
+::: {.finding-card}
+::: {.card-label}
+Capital-flow volatility
+:::
+
+**Three-month standard deviation of portfolio inflows**
+
+- **Negative**: a higher score, calmer inflows when GPR is higher
+- **Positive**: a higher score, more volatile inflows when GPR is higher
+- The unit is billion dollars
+:::
+:::
+:::
+
+::: {.bottom-callout}
+**Stars**: within standard errors. *** p&lt;0.01, ** p&lt;0.05, * p&lt;0.10. Each group is three countries.
+:::
+
+## All ten: WGI × GPR
 
 ::: {.table-area .wide-table}
-**[Original and subsample regression results]**
+**Top three and bottom three of the ten emerging economies**
 
-| [Variable] | [Original] | [Subsample 1] | [Subsample 2] |
-|:-----------|:----------:|:-------------:|:-------------:|
-| [Term] | [ ] | [ ] | [ ] |
-| [Interaction] | [ ] | [ ] | [ ] |
-| [Controls] | [ ] | [ ] | [ ] |
-| [Observations] | [ ] | [ ] | [ ] |
+| Aspect | Capital-flow Volatility, top | Capital-flow Volatility, bottom | Exchange Rate, top | Exchange Rate, bottom |
+|:-------|:--------:|:-----------:|:------:|:---------:|
+| Voice and accountability | 0.129 | −0.321 | −0.002 | −0.014** |
+| Political stability | 0.272 | −0.105 | 0.006 | −0.021*** |
+| Government effectiveness | −0.102 | 0.194 | −0.013 | −0.022* |
+| Regulatory quality | 0.042 | 1.137 | −0.011** | −0.017 |
+| Rule of law | 0.133 | 1.018 | −0.005 | 0.030* |
+| Control of corruption | −0.032 | −0.067 | 0.004 | 0.021** |
 
 ::: {.table-note}
-[Sample definitions, standard errors and significance notes]
+Every WGI × GPR cell from the ten-economy top-and-bottom results. Within standard errors. No volatility interaction is significant. Exchange Rate is the log real effective exchange rate.
 :::
 :::
 
-## [Subsample tests: key differences]
+## China removed: WGI × GPR
 
-::: {.columns}
-::: {.column width="50%"}
-### [Comparison 1]
+::: {.table-area .wide-table}
+**China is removed, then the remaining nine are ranked again**
 
-- **[Direction]**: [Placeholder]
-- **[Magnitude]**: [Placeholder]
-- **[Significance]**: [Placeholder]
+| Aspect | Capital-flow Volatility, top | Capital-flow Volatility, bottom | Exchange Rate, top | Exchange Rate, bottom |
+|:-------|:--------:|:-----------:|:------:|:---------:|
+| Voice and accountability | 0.129 | 0.156 | −0.002 | −0.021** |
+| Political stability | 0.272 | −0.105 | 0.006 | −0.021*** |
+| Government effectiveness | −0.102 | −1.545*** | −0.013 | −0.043*** |
+| Regulatory quality | 0.042 | 0.406 | −0.011** | −0.019* |
+| Rule of law | 0.133 | 0.236 | −0.005 | 0.031** |
+| Control of corruption | −0.032 | −0.224 | 0.004 | 0.039*** |
+
+::: {.table-note}
+Top three are unchanged. New bottom three: voice and accountability, Malaysia, Türkiye, Colombia; government effectiveness, Colombia, Brazil, Mexico; regulatory quality, India, Brazil, Colombia; rule of law, Mexico, Colombia, Brazil; control of corruption, Mexico, India, Colombia. Political stability is unchanged.
+:::
 :::
 
-::: {.column width="50%"}
-### [Comparison 2]
+## What stays the same
 
-- **[Direction]**: [Placeholder]
-- **[Magnitude]**: [Placeholder]
-- **[Significance]**: [Placeholder]
+::: {.stacked-point}
+::: {.point-label}
+Exchange rate, low-score groups
 :::
+**Mostly not a buffer**: voice and accountability, political stability, and government effectiveness stay negative in the bottom three. A higher score goes with a weaker real exchange rate when GPR is higher.
 :::
 
-::: {.bottom-callout}
-**[Interpretation and any formal comparison]**: [Placeholder]
+::: {.stacked-point}
+::: {.point-label}
+Two positive exceptions
+:::
+**Rule of law and control of corruption**: the bottom-three exchange-rate interactions stay positive after China is removed, 0.031 and 0.039, both significant at the 5 percent level or better. A higher score goes with a stronger real exchange rate when GPR is higher.
+:::
+
+::: {.stacked-point}
+::: {.point-label}
+What changes
+:::
+**Government effectiveness**: the bottom three become Colombia, Brazil, and Mexico. The exchange-rate interaction is −0.043 and the volatility interaction is −1.545, both significant at the 1 percent level. Regulatory quality in the new bottom three is −0.019, significant at the 10 percent level.
 :::
 
 ## [Conclusion]
