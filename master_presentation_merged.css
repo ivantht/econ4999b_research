@@ -1,0 +1,31 @@
+.reveal .compare-table {
+  margin-top: 8px;
+  font-size: 0.62em;
+}
+
+.reveal .compare-table table {
+  width: 100%;
+  margin: 0;
+  border-collapse: collapse;
+  table-layout: fixed;
+}
+
+.reveal .compare-table th,
+.reveal .compare-table td {
+  padding: 8px 8px;
+  border-bottom: 1px solid var(--line);
+  background: white;
+  text-align: right;
+  vertical-align: middle;
+  line-height: 1.25;
+}
+
+.reveal .compare-table th {
+  background: var(--pale);
+  font-weight: 700;
+}
+
+.reveal .compare-table th:first-child,
+.reveal .compare-table td:first-child {
+  text-align: left;
+}
