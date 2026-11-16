@@ -650,37 +650,6 @@ $y^{j}$: capital-flow volatility or log real exchange rate.
 Two completed checks: rank all ten; then remove China, rank the remaining nine again, and re-estimate the top three and bottom three. Country fixed effects. Controls are lagged one month.
 :::
 
-## How to read WGI × GPR
-
-::: {.columns}
-::: {.column width="49%"}
-::: {.card}
-<div class="card-title">Exchange rate</div>
-
-**Log real effective exchange rate**
-
-- **Negative**: a higher score, a weaker currency when GPR is higher
-- **Positive**: a higher score, a stronger currency when GPR is higher
-- About a 1 percent move for a coefficient of 0.01
-:::
-:::
-::: {.column width="49%"}
-::: {.card}
-<div class="card-title">Capital-flow volatility</div>
-
-**Three-month standard deviation of portfolio inflows**
-
-- **Negative**: a higher score, calmer capital-flow when GPR is higher
-- **Positive**: a higher score, more volatile capital-flow when GPR is higher
-- The unit is billion dollars
-:::
-:::
-:::
-
-::: {.footnote}
-Stars: within standard errors. *** p &lt; 0.01, ** p &lt; 0.05, * p &lt; 0.10. Each group is three countries. Bold marks p &lt; .10, matching the model tables.
-:::
-
 ## All ten: WGI × GPR {.report-slide}
 
 ::: {.small}
