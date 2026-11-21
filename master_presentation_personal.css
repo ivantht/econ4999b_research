@@ -36,6 +36,8 @@
 .reveal .source-results th {font-weight: 700;line-height: 1.12;}
 .reveal .source-results th:first-child,.reveal .source-results td:first-child { text-align: left; }
 .reveal .source-results .sample-row td:not(:first-child) { font-size: 0.88em; }
+.reveal .source-results tr.interest td { background: #fde8dc; }
+.reveal .source-results tr.interest td:first-child { color: #b74922; font-weight: 700; }
 .reveal .report-slide h2 { margin-bottom: 12px; }
 .reveal .factor-table {max-width: 1050px;margin: 0 auto;font-size: 0.56em;}
 .reveal .factor-table table {width: 100%;margin: 0;border-collapse: collapse;table-layout: fixed;}

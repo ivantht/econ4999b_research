@@ -191,6 +191,120 @@
   text-align: center;
 }
 
+/* Content + Channel 1 overview: long titles, nested bullets, slide-2 type scale */
+#definition-of-geopolitical-risk-institutional-quality-and-exchange-rate,
+#content,
+#channel-1-how-institutional-quality-affect-exchange-rate {
+  display: flex !important;
+  flex-direction: column;
+}
+
+#definition-of-geopolitical-risk-institutional-quality-and-exchange-rate > h2,
+#content > h2,
+#channel-1-how-institutional-quality-affect-exchange-rate > h2 {
+  margin-bottom: 14px;
+  font-size: 40px;
+  line-height: 1.1;
+}
+
+#definition-of-geopolitical-risk-institutional-quality-and-exchange-rate > .question-banner {
+  margin-bottom: 18px;
+  font-size: 32.4px;
+  line-height: 1.25;
+}
+
+#definition-of-geopolitical-risk-institutional-quality-and-exchange-rate > ul,
+#content > ul,
+#channel-1-how-institutional-quality-affect-exchange-rate > ul {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 0 0 8px 1.05em;
+  font-size: 32.4px;
+  line-height: 1.25;
+}
+
+#definition-of-geopolitical-risk-institutional-quality-and-exchange-rate > ul > li,
+#content > ul > li,
+#channel-1-how-institutional-quality-affect-exchange-rate > ul > li {
+  margin-bottom: 0;
+}
+
+/* Channel 1 overview: inset the list so Model 1 clears the title and Model 3
+   clears the bottom edge. */
+#channel-1-how-institutional-quality-affect-exchange-rate > ul {
+  padding: 44px 0 16px;
+  box-sizing: border-box;
+}
+
+#definition-of-geopolitical-risk-institutional-quality-and-exchange-rate > ul ul,
+#content > ul ul,
+#channel-1-how-institutional-quality-affect-exchange-rate > ul ul {
+  margin-top: 8px;
+  margin-left: 1.05em;
+  font-size: 27px;
+  line-height: 1.22;
+}
+
+/* Motivation slide: two per-country charts side by side */
+#motivation---russia-ukraine-war {
+  display: flex !important;
+  flex-direction: column;
+}
+
+#motivation---russia-ukraine-war > h2 {
+  margin-bottom: 16px;
+  font-size: 40px;
+  line-height: 1.1;
+}
+
+#motivation---russia-ukraine-war > .columns {
+  flex: 1;
+  align-items: flex-start;
+}
+
+#motivation---russia-ukraine-war .chart-card {
+  position: relative;
+  box-sizing: border-box;
+  padding: 30px 12px 12px;
+  border: 2px solid var(--line);
+  border-radius: 12px;
+  background: white;
+}
+
+#motivation---russia-ukraine-war .chart-card p {
+  margin: 0;
+}
+
+#motivation---russia-ukraine-war .chart-card img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: none;
+  margin: 0;
+}
+
+#motivation---russia-ukraine-war .chart-card .card-label {
+  font-size: 27px;
+}
+
+#motivation---russia-ukraine-war > .question-banner {
+  margin: 20px 0 0;
+  font-size: 32.4px;
+  line-height: 1.25;
+}
+
+#motivation---russia-ukraine-war > ul {
+  margin: 14px 0 0 1.05em;
+  font-size: 32.4px;
+  line-height: 1.25;
+}
+
+#motivation---russia-ukraine-war > ul > li {
+  margin-bottom: 6px;
+}
+
 .reveal .bottom-callout {
   margin-top: 36px;
   font-size: 0.82em;

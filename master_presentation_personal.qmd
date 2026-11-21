@@ -16,20 +16,43 @@ format:
 
 ::: {.cover-title}
 ::: {.eyebrow}
-Personal working presentation
+ECON 4999B Presentation
 :::
 
 ::: {.big-title}
 Institutions, geopolitical risk, and exchange rates
 :::
 
-::: {.cover-subtitle}
-Three empirical models | working draft for later integration
+::: {.deck-note}
+Examine how the real effective exchange rate is affected via two channels, with a subsample check.
+:::
 :::
 
-::: {.deck-note}
-Separate from the original master presentation. Result tables show all reported variables; interpretation and mechanism slides include space for review.
+## Two channels
+
+::: {.eyebrow}
+What we investigate
 :::
+
+::: {.columns}
+::: {.column width="49%"}
+::: {.card}
+<div class="card-title">Export channel</div>
+
+GPR and WGI may move the real exchange rate through exports: institutions and risk first affect export volumes, then the currency.
+:::
+:::
+::: {.column width="49%"}
+::: {.card}
+<div class="card-title">Capital-flow channel</div>
+
+GPR and WGI may also move the currency through capital-flow volatility: portfolio inflows become more or less volatile when geopolitical risk rises.
+:::
+:::
+:::
+
+::: {.callout}
+**Conclusion.** WGI cannot serve as a buffer under geopolitical shocks. The WGI × GPR interaction does not show that stronger institutions mute the effect of GPR.
 :::
 
 ## Model context: variables and controls
@@ -109,9 +132,9 @@ WGI is centered. Its coefficient is evaluated at standardized GPR = 0; the inter
 <colgroup><col style="width: 23%"><col style="width: 12.833%"><col style="width: 12.833%"><col style="width: 12.833%"><col style="width: 12.833%"><col style="width: 12.833%"><col style="width: 12.833%"></colgroup>
 <thead><tr><th>Variable</th><th>Voice and accountability</th><th>Political stability</th><th>Government effectiveness</th><th>Regulatory quality</th><th>Rule of law</th><th>Control of corruption</th></tr></thead>
 <tbody>
-<tr><td>GPR</td><td>0.0006<br>(0.0031)</td><td>0.0023<br>(0.0034)</td><td>0.0009<br>(0.0030)</td><td>0.0001<br>(0.0032)</td><td>0.0005<br>(0.0033)</td><td>-0.0003<br>(0.0028)</td></tr>
-<tr><td>WGI</td><td>0.1366<br>(0.0863)</td><td><strong>0.0658*</strong><br>(0.0375)</td><td><strong>0.1002*</strong><br>(0.0564)</td><td><strong>0.1389**</strong><br>(0.0547)</td><td><strong>0.1673*</strong><br>(0.0848)</td><td><strong>0.1204*</strong><br>(0.0690)</td></tr>
-<tr><td>WGI × GPR</td><td><strong>-0.0091*</strong><br>(0.0053)</td><td>-0.0002<br>(0.0033)</td><td>-0.0014<br>(0.0044)</td><td>-0.0020<br>(0.0049)</td><td>-0.0036<br>(0.0041)</td><td>-0.0009<br>(0.0030)</td></tr>
+<tr class="interest"><td>GPR</td><td>0.0006<br>(0.0031)</td><td>0.0023<br>(0.0034)</td><td>0.0009<br>(0.0030)</td><td>0.0001<br>(0.0032)</td><td>0.0005<br>(0.0033)</td><td>-0.0003<br>(0.0028)</td></tr>
+<tr class="interest"><td>WGI</td><td>0.1366<br>(0.0863)</td><td><strong>0.0658*</strong><br>(0.0375)</td><td><strong>0.1002*</strong><br>(0.0564)</td><td><strong>0.1389**</strong><br>(0.0547)</td><td><strong>0.1673*</strong><br>(0.0848)</td><td><strong>0.1204*</strong><br>(0.0690)</td></tr>
+<tr class="interest"><td>WGI × GPR</td><td><strong>-0.0091*</strong><br>(0.0053)</td><td>-0.0002<br>(0.0033)</td><td>-0.0014<br>(0.0044)</td><td>-0.0020<br>(0.0049)</td><td>-0.0036<br>(0.0041)</td><td>-0.0009<br>(0.0030)</td></tr>
 <tr><td>Policy rate</td><td>0.0021<br>(0.0025)</td><td><strong>0.0036*</strong><br>(0.0020)</td><td><strong>0.0052***</strong><br>(0.0018)</td><td><strong>0.0038**</strong><br>(0.0018)</td><td>0.0033<br>(0.0020)</td><td><strong>0.0040**</strong><br>(0.0019)</td></tr>
 <tr><td>Inflation</td><td><strong>-0.0098***</strong><br>(0.0032)</td><td><strong>-0.0112***</strong><br>(0.0022)</td><td><strong>-0.0121***</strong><br>(0.0020)</td><td><strong>-0.0117***</strong><br>(0.0021)</td><td><strong>-0.0104***</strong><br>(0.0027)</td><td><strong>-0.0116***</strong><br>(0.0023)</td></tr>
 <tr><td>Log oil price</td><td><strong>0.0484**</strong><br>(0.0181)</td><td><strong>0.0611***</strong><br>(0.0168)</td><td><strong>0.0650***</strong><br>(0.0163)</td><td><strong>0.0655***</strong><br>(0.0160)</td><td><strong>0.0634***</strong><br>(0.0161)</td><td><strong>0.0682***</strong><br>(0.0150)</td></tr>
@@ -134,8 +157,8 @@ Coefficients with country-clustered standard errors in parentheses; confidence i
 <div class="idea">
 <div class="idea-number">01</div>
 <div>
-<div class="idea-title">Distinct institutional measures and timing</div>
-Voice and accountability reflects participation; government effectiveness, public services; rule of law, legal enforcement; and corruption control, public-sector integrity. These differ from the macro controls, but may still be correlated. Lagging WGI helps with timing; it does not eliminate reverse causality.
+<div class="idea-title">Extension of existing research</div>
+Existing research has shown that for emerging economies, GPR can negatively affect the real exchange rate. We would like to know if institutional quality affects the real exchange rate directly, or through another channel.
 </div>
 </div>
 
@@ -151,40 +174,13 @@ The GPR coefficient is statistically insignificant in all six WGI specifications
 <div class="idea-number">03</div>
 <div>
 <div class="idea-title">Institutions and the exchange-rate level</div>
-WGI coefficients are positive in all six specifications and significant in five at 10% (one at 5%). Stronger institutions may support confidence and a stronger REER; currency stability requires a separate volatility test.
+WGI coefficients are positive in all six specifications and significant in five at 10% (one at 5%). Stronger institutions may support confidence and a stronger REER.
 </div>
 </div>
 ```
 
 ::: {.footnote}
 WGI effects are evaluated at average country GPR. Country-clustered inference; these results support interpretation, not a causal conclusion.
-:::
-
-## Model 1 | Intuition and qualitative arguments
-
-::: {.columns}
-::: {.column width="49%"}
-::: {.card}
-<div class="card-title">Intuition</div>
-
-Institutions may affect the credibility of policy responses when geopolitical uncertainty rises.
-
-<div class="card-title">Alternative interpretation</div>
-
-Institutional scores may proxy for other slowly changing economic features; country fixed effects do not remove time-varying confounding.
-:::
-:::
-::: {.column width="49%"}
-::: {.card .placeholder}
-<div class="card-title">Qualitative argument</div>
-
-[Add country examples or evidence.]
-
-<div class="card-title">Questions for review</div>
-
-[Clarify REER direction and whether the proposed buffering mechanism fits the estimated interaction.]
-:::
-:::
 :::
 
 ## Model 2 | Design
@@ -214,6 +210,37 @@ $$
 - GPR, WGI, their interaction and IP growth are excluded from the second-stage equation. The staged interpretation depends on exclusion and instrument-strength assumptions.
 :::
 
+## How to read WGI × GPR {#how-to-read-wgi-gpr-2}
+
+::: {.columns}
+::: {.column width="49%"}
+::: {.card}
+<div class="card-title">Exchange rate</div>
+
+**Log real effective exchange rate**
+
+- **Negative**: a higher score, a weaker currency when GPR is higher
+- **Positive**: a higher score, a stronger currency when GPR is higher
+- About a 1 percent move for a coefficient of 0.01
+:::
+:::
+::: {.column width="49%"}
+::: {.card}
+<div class="card-title">Capital-flow volatility</div>
+
+**Three-month standard deviation of portfolio inflows**
+
+- **Negative**: a higher score, calmer capital-flow when GPR is higher
+- **Positive**: a higher score, more volatile capital-flow when GPR is higher
+- The unit is billion dollars
+:::
+:::
+:::
+
+::: {.footnote}
+Stars: within standard errors. *** p &lt; 0.01, ** p &lt; 0.05, * p &lt; 0.10. Each group is three countries. Bold marks p &lt; .10, matching the model tables.
+:::
+
 ## Model 2 | Results: first stage {.report-slide}
 
 ```{=html}
@@ -221,9 +248,9 @@ $$
 <colgroup><col style="width: 23%"><col style="width: 12.833%"><col style="width: 12.833%"><col style="width: 12.833%"><col style="width: 12.833%"><col style="width: 12.833%"><col style="width: 12.833%"></colgroup>
 <thead><tr><th>Variable</th><th>Voice and accountability</th><th>Political stability</th><th>Government effectiveness</th><th>Regulatory quality</th><th>Rule of law</th><th>Control of corruption</th></tr></thead>
 <tbody>
-<tr><td>GPR</td><td>-0.0238<br>(0.0275)</td><td>0.0203<br>(0.0201)</td><td>0.0499<br>(0.0413)</td><td>0.0060<br>(0.0265)</td><td>-0.0048<br>(0.0183)</td><td>0.0089<br>(0.0300)</td></tr>
-<tr><td>WGI</td><td><strong>-1.7545***</strong><br>(0.3423)</td><td><strong>-0.9913*</strong><br>(0.4003)</td><td>0.5004<br>(0.7104)</td><td><strong>-1.3564*</strong><br>(0.5425)</td><td><strong>-2.0261***</strong><br>(0.3624)</td><td><strong>-1.7041**</strong><br>(0.6413)</td></tr>
-<tr><td>WGI × GPR</td><td>0.0113<br>(0.0387)</td><td>0.0579<br>(0.0300)</td><td>-0.0270<br>(0.0920)</td><td>0.0042<br>(0.0762)</td><td>0.0080<br>(0.0273)</td><td>0.0037<br>(0.0270)</td></tr>
+<tr class="interest"><td>GPR</td><td>-0.0238<br>(0.0275)</td><td>0.0203<br>(0.0201)</td><td>0.0499<br>(0.0413)</td><td>0.0060<br>(0.0265)</td><td>-0.0048<br>(0.0183)</td><td>0.0089<br>(0.0300)</td></tr>
+<tr class="interest"><td>WGI</td><td><strong>-1.7545***</strong><br>(0.3423)</td><td><strong>-0.9913*</strong><br>(0.4003)</td><td>0.5004<br>(0.7104)</td><td><strong>-1.3564*</strong><br>(0.5425)</td><td><strong>-2.0261***</strong><br>(0.3624)</td><td><strong>-1.7041**</strong><br>(0.6413)</td></tr>
+<tr class="interest"><td>WGI × GPR</td><td>0.0113<br>(0.0387)</td><td>0.0579<br>(0.0300)</td><td>-0.0270<br>(0.0920)</td><td>0.0042<br>(0.0762)</td><td>0.0080<br>(0.0273)</td><td>0.0037<br>(0.0270)</td></tr>
 <tr><td>Log VIX</td><td>0.0631<br>(0.0609)</td><td>-0.0145<br>(0.0872)</td><td><strong>-0.0917**</strong><br>(0.0298)</td><td>-0.0740<br>(0.0582)</td><td>-0.0239<br>(0.0766)</td><td>0.0140<br>(0.0606)</td></tr>
 <tr><td>Industrial-production growth</td><td>-0.0007<br>(0.0020)</td><td>0.0022<br>(0.0028)</td><td>-0.0000<br>(0.0017)</td><td>-0.0001<br>(0.0025)</td><td>0.0004<br>(0.0023)</td><td>0.0015<br>(0.0018)</td></tr>
 <tr class="sample-row"><td>Observations</td><td>1149<br>6 countries<br>2006-01 to 2022-01</td><td>1149<br>6 countries<br>2006-01 to 2022-01</td><td>1149<br>6 countries<br>2006-01 to 2022-01</td><td>1149<br>6 countries<br>2006-01 to 2022-01</td><td>1149<br>6 countries<br>2006-01 to 2022-01</td><td>1149<br>6 countries<br>2006-01 to 2022-01</td></tr>
@@ -243,7 +270,7 @@ Coefficients with country-clustered standard errors in parentheses; confidence i
 <colgroup><col style="width: 23%"><col style="width: 12.833%"><col style="width: 12.833%"><col style="width: 12.833%"><col style="width: 12.833%"><col style="width: 12.833%"><col style="width: 12.833%"></colgroup>
 <thead><tr><th>Variable</th><th>Voice and accountability</th><th>Political stability</th><th>Government effectiveness</th><th>Regulatory quality</th><th>Rule of law</th><th>Control of corruption</th></tr></thead>
 <tbody>
-<tr><td>Fitted nominal-export trend</td><td><strong>-0.1515***</strong><br>(0.0312)</td><td>-0.1124<br>(0.0845)</td><td>0.1143<br>(0.1927)</td><td>-0.2603<br>(0.1510)</td><td><strong>-0.1551***</strong><br>(0.0295)</td><td><strong>-0.1691**</strong><br>(0.0539)</td></tr>
+<tr class="interest"><td>Fitted nominal-export trend</td><td><strong>-0.1515***</strong><br>(0.0312)</td><td>-0.1124<br>(0.0845)</td><td>0.1143<br>(0.1927)</td><td>-0.2603<br>(0.1510)</td><td><strong>-0.1551***</strong><br>(0.0295)</td><td><strong>-0.1691**</strong><br>(0.0539)</td></tr>
 <tr><td>Policy rate</td><td><strong>-0.0037**</strong><br>(0.0010)</td><td><strong>-0.0039*</strong><br>(0.0018)</td><td>-0.0008<br>(0.0034)</td><td><strong>-0.0046**</strong><br>(0.0015)</td><td><strong>-0.0034**</strong><br>(0.0010)</td><td>-0.0030<br>(0.0019)</td></tr>
 <tr><td>Inflation</td><td><strong>-0.0138**</strong><br>(0.0042)</td><td><strong>-0.0168***</strong><br>(0.0035)</td><td>-0.0191<br>(0.0106)</td><td>-0.0118<br>(0.0076)</td><td><strong>-0.0138**</strong><br>(0.0041)</td><td><strong>-0.0135**</strong><br>(0.0050)</td></tr>
 <tr><td>Log oil price</td><td>0.0466<br>(0.0246)</td><td><strong>0.0863**</strong><br>(0.0287)</td><td>0.0906<br>(0.0567)</td><td>0.0567<br>(0.0430)</td><td><strong>0.0656*</strong><br>(0.0270)</td><td>0.0580<br>(0.0330)</td></tr>
@@ -280,40 +307,13 @@ The negative institutional association with exports is contrary to our predictio
 
 <div class="card-title">Possible mechanism</div>
 
-Export booms may coincide with commodity or exchange-rate shocks that are not fully captured. [Review evidence.]
+Exports can be further broken down into real exports, which represent quantity, and inflation, which represents price.
 :::
 :::
 :::
 
 ::: {.footnote}
 Only six country clusters; the reported partial F is low for GE and RQ. Exclusion restrictions and weak instruments require further scrutiny.
-:::
-
-## Model 2 | Intuition and qualitative arguments
-
-::: {.columns}
-::: {.column width="49%"}
-::: {.card}
-<div class="card-title">Intuition</div>
-
-Productive capacity and global financial conditions may influence exports, which may then be associated with the exchange rate.
-
-<div class="card-title">Competing explanations</div>
-
-Commodity dependence, reverse causality, or time-varying omitted factors could produce an unexpected sign.
-:::
-:::
-::: {.column width="49%"}
-::: {.card .placeholder}
-<div class="card-title">Qualitative argument</div>
-
-[Add evidence on export composition and country-specific episodes.]
-
-<div class="card-title">Questions for review</div>
-
-[Assess exclusion restrictions, first-stage relevance and the direction of the REER index.]
-:::
-:::
 :::
 
 ## Model 3 | Design
@@ -351,9 +351,9 @@ $M$: import share of GDP; $r$: policy rate; $\pi$: inflation; $x^R$, $x^N$: real
 <tbody>
 <tr><td>Import share of GDP</td><td>11.6645<br>(22.6958)</td><td>16.3191<br>(17.3934)</td><td>24.4967<br>(19.3169)</td><td>22.8710<br>(23.6930)</td><td>10.7729<br>(23.6858)</td><td>16.2027<br>(17.2694)</td></tr>
 <tr><td>Policy rate</td><td><strong>0.5387***</strong><br>(0.0566)</td><td><strong>0.5448***</strong><br>(0.0398)</td><td><strong>0.4445***</strong><br>(0.0708)</td><td><strong>0.5213***</strong><br>(0.0460)</td><td><strong>0.5383***</strong><br>(0.0416)</td><td><strong>0.5210***</strong><br>(0.0448)</td></tr>
-<tr><td>GPR</td><td>-0.0370<br>(0.1503)</td><td>-0.0624<br>(0.1191)</td><td>-0.0286<br>(0.0710)</td><td>-0.0089<br>(0.0899)</td><td>0.0013<br>(0.1373)</td><td>0.0072<br>(0.1010)</td></tr>
-<tr><td>WGI</td><td>-2.3309<br>(2.5726)</td><td><strong>-3.2245**</strong><br>(0.9129)</td><td><strong>-4.0752*</strong><br>(1.5947)</td><td>-0.6627<br>(1.7661)</td><td>-2.7017<br>(3.4843)</td><td>-2.0236<br>(1.0752)</td></tr>
-<tr><td>WGI × GPR</td><td>0.2065<br>(0.1953)</td><td>0.1300<br>(0.1714)</td><td>-0.0246<br>(0.2092)</td><td>-0.1877<br>(0.2239)</td><td>0.2103<br>(0.1816)</td><td>0.0986<br>(0.1862)</td></tr>
+<tr class="interest"><td>GPR</td><td>-0.0370<br>(0.1503)</td><td>-0.0624<br>(0.1191)</td><td>-0.0286<br>(0.0710)</td><td>-0.0089<br>(0.0899)</td><td>0.0013<br>(0.1373)</td><td>0.0072<br>(0.1010)</td></tr>
+<tr class="interest"><td>WGI</td><td>-2.3309<br>(2.5726)</td><td><strong>-3.2245**</strong><br>(0.9129)</td><td><strong>-4.0752*</strong><br>(1.5947)</td><td>-0.6627<br>(1.7661)</td><td>-2.7017<br>(3.4843)</td><td>-2.0236<br>(1.0752)</td></tr>
+<tr class="interest"><td>WGI × GPR</td><td>0.2065<br>(0.1953)</td><td>0.1300<br>(0.1714)</td><td>-0.0246<br>(0.2092)</td><td>-0.1877<br>(0.2239)</td><td>0.2103<br>(0.1816)</td><td>0.0986<br>(0.1862)</td></tr>
 <tr class="sample-row"><td>Observations</td><td>956<br>5 countries<br>2006-01 to 2022-01</td><td>956<br>5 countries<br>2006-01 to 2022-01</td><td>956<br>5 countries<br>2006-01 to 2022-01</td><td>956<br>5 countries<br>2006-01 to 2022-01</td><td>956<br>5 countries<br>2006-01 to 2022-01</td><td>956<br>5 countries<br>2006-01 to 2022-01</td></tr>
 <tr><td>Partial F on the excluded instruments</td><td><strong>13.73</strong><br><strong>p=0.0132</strong><br>F(4, 4)</td><td><strong>19.96</strong><br><strong>p=0.0066</strong><br>F(4, 4)</td><td><strong>41.99</strong><br><strong>p=0.0016</strong><br>F(4, 4)</td><td>1.95<br>p=0.2662<br>F(4, 4)</td><td><strong>429.13</strong><br><strong>p=0.0000</strong><br>F(4, 4)</td><td><strong>33.19</strong><br><strong>p=0.0025</strong><br>F(4, 4)</td></tr>
 </tbody>
@@ -373,9 +373,9 @@ Coefficients with country-clustered standard errors in parentheses; confidence i
 <tbody>
 <tr><td>Industrial-production growth</td><td>-0.0005<br>(0.0011)</td><td>0.0013<br>(0.0011)</td><td>-0.0000<br>(0.0008)</td><td>0.0004<br>(0.0009)</td><td>0.0008<br>(0.0006)</td><td><strong>0.0011*</strong><br>(0.0005)</td></tr>
 <tr><td>Log VIX</td><td>0.0213<br>(0.0244)</td><td>-0.0163<br>(0.0437)</td><td><strong>-0.0608*</strong><br>(0.0264)</td><td>-0.0311<br>(0.0361)</td><td>-0.0101<br>(0.0484)</td><td>0.0055<br>(0.0351)</td></tr>
-<tr><td>GPR</td><td>-0.0097<br>(0.0113)</td><td>0.0131<br>(0.0102)</td><td>0.0349<br>(0.0241)</td><td>0.0057<br>(0.0142)</td><td>0.0002<br>(0.0092)</td><td>0.0082<br>(0.0154)</td></tr>
-<tr><td>WGI</td><td><strong>-0.8313***</strong><br>(0.1379)</td><td><strong>-0.5409**</strong><br>(0.1576)</td><td>0.0759<br>(0.3592)</td><td><strong>-0.7365*</strong><br>(0.2731)</td><td><strong>-1.0090***</strong><br>(0.1363)</td><td><strong>-1.0037**</strong><br>(0.2835)</td></tr>
-<tr><td>WGI × GPR</td><td>-0.0033<br>(0.0198)</td><td>0.0334<br>(0.0188)</td><td>-0.0090<br>(0.0532)</td><td>-0.0076<br>(0.0353)</td><td>-0.0042<br>(0.0137)</td><td>-0.0013<br>(0.0128)</td></tr>
+<tr class="interest"><td>GPR</td><td>-0.0097<br>(0.0113)</td><td>0.0131<br>(0.0102)</td><td>0.0349<br>(0.0241)</td><td>0.0057<br>(0.0142)</td><td>0.0002<br>(0.0092)</td><td>0.0082<br>(0.0154)</td></tr>
+<tr class="interest"><td>WGI</td><td><strong>-0.8313***</strong><br>(0.1379)</td><td><strong>-0.5409**</strong><br>(0.1576)</td><td>0.0759<br>(0.3592)</td><td><strong>-0.7365*</strong><br>(0.2731)</td><td><strong>-1.0090***</strong><br>(0.1363)</td><td><strong>-1.0037**</strong><br>(0.2835)</td></tr>
+<tr class="interest"><td>WGI × GPR</td><td>-0.0033<br>(0.0198)</td><td>0.0334<br>(0.0188)</td><td>-0.0090<br>(0.0532)</td><td>-0.0076<br>(0.0353)</td><td>-0.0042<br>(0.0137)</td><td>-0.0013<br>(0.0128)</td></tr>
 <tr class="sample-row"><td>Observations</td><td>956<br>5 countries<br>2006-01 to 2022-01</td><td>956<br>5 countries<br>2006-01 to 2022-01</td><td>956<br>5 countries<br>2006-01 to 2022-01</td><td>956<br>5 countries<br>2006-01 to 2022-01</td><td>956<br>5 countries<br>2006-01 to 2022-01</td><td>956<br>5 countries<br>2006-01 to 2022-01</td></tr>
 <tr><td>Partial F on the excluded instruments</td><td><strong>20.55</strong><br><strong>p=0.0068</strong><br>F(3, 4)</td><td><strong>4.63</strong><br><strong>p=0.0863</strong><br>F(3, 4)</td><td><strong>4.21</strong><br><strong>p=0.0994</strong><br>F(3, 4)</td><td>3.45<br>p=0.1313<br>F(3, 4)</td><td><strong>82.91</strong><br><strong>p=0.0005</strong><br>F(3, 4)</td><td><strong>46.73</strong><br><strong>p=0.0014</strong><br>F(3, 4)</td></tr>
 </tbody>
@@ -393,8 +393,8 @@ Coefficients with country-clustered standard errors in parentheses; confidence i
 <colgroup><col style="width: 23%"><col style="width: 12.833%"><col style="width: 12.833%"><col style="width: 12.833%"><col style="width: 12.833%"><col style="width: 12.833%"><col style="width: 12.833%"></colgroup>
 <thead><tr><th>Variable</th><th>Voice and accountability</th><th>Political stability</th><th>Government effectiveness</th><th>Regulatory quality</th><th>Rule of law</th><th>Control of corruption</th></tr></thead>
 <tbody>
-<tr><td>Fitted inflation</td><td>0.0325<br>(0.0284)</td><td>0.0525<br>(0.0336)</td><td>0.0689<br>(0.0886)</td><td>0.0528<br>(0.0400)</td><td>0.0282<br>(0.0264)</td><td>0.0171<br>(0.0147)</td></tr>
-<tr><td>Fitted real-export trend</td><td><strong>2.0439***</strong><br>(0.1527)</td><td><strong>1.7476**</strong><br>(0.4480)</td><td><strong>2.7071*</strong><br>(1.0282)</td><td><strong>1.9137***</strong><br>(0.2677)</td><td><strong>2.0848***</strong><br>(0.1334)</td><td><strong>1.9127***</strong><br>(0.1878)</td></tr>
+<tr class="interest"><td>Fitted inflation</td><td>0.0325<br>(0.0284)</td><td>0.0525<br>(0.0336)</td><td>0.0689<br>(0.0886)</td><td>0.0528<br>(0.0400)</td><td>0.0282<br>(0.0264)</td><td>0.0171<br>(0.0147)</td></tr>
+<tr class="interest"><td>Fitted real-export trend</td><td><strong>2.0439***</strong><br>(0.1527)</td><td><strong>1.7476**</strong><br>(0.4480)</td><td><strong>2.7071*</strong><br>(1.0282)</td><td><strong>1.9137***</strong><br>(0.2677)</td><td><strong>2.0848***</strong><br>(0.1334)</td><td><strong>1.9127***</strong><br>(0.1878)</td></tr>
 <tr><td>Log VIX</td><td>0.0186<br>(0.0490)</td><td>0.0065<br>(0.0857)</td><td>0.0523<br>(0.0872)</td><td>0.0041<br>(0.0707)</td><td>0.0183<br>(0.0479)</td><td>0.0081<br>(0.0470)</td></tr>
 <tr><td>Industrial-production growth</td><td>0.0012<br>(0.0010)</td><td>0.0022<br>(0.0019)</td><td>0.0018<br>(0.0025)</td><td>0.0017<br>(0.0016)</td><td>0.0012<br>(0.0010)</td><td>0.0011<br>(0.0009)</td></tr>
 <tr class="sample-row"><td>Observations</td><td>956<br>5 countries<br>2006-01 to 2022-01</td><td>956<br>5 countries<br>2006-01 to 2022-01</td><td>956<br>5 countries<br>2006-01 to 2022-01</td><td>956<br>5 countries<br>2006-01 to 2022-01</td><td>956<br>5 countries<br>2006-01 to 2022-01</td><td>956<br>5 countries<br>2006-01 to 2022-01</td></tr>
@@ -414,7 +414,7 @@ Coefficients with country-clustered standard errors in parentheses; confidence i
 <colgroup><col style="width: 23%"><col style="width: 12.833%"><col style="width: 12.833%"><col style="width: 12.833%"><col style="width: 12.833%"><col style="width: 12.833%"><col style="width: 12.833%"></colgroup>
 <thead><tr><th>Variable</th><th>Voice and accountability</th><th>Political stability</th><th>Government effectiveness</th><th>Regulatory quality</th><th>Rule of law</th><th>Control of corruption</th></tr></thead>
 <tbody>
-<tr><td>Fitted nominal-export trend</td><td><strong>-0.1572**</strong><br>(0.0345)</td><td>-0.1011<br>(0.0909)</td><td>-0.2782<br>(0.2730)</td><td>-0.2615<br>(0.1772)</td><td><strong>-0.1782***</strong><br>(0.0277)</td><td><strong>-0.1821*</strong><br>(0.0775)</td></tr>
+<tr class="interest"><td>Fitted nominal-export trend</td><td><strong>-0.1572**</strong><br>(0.0345)</td><td>-0.1011<br>(0.0909)</td><td>-0.2782<br>(0.2730)</td><td>-0.2615<br>(0.1772)</td><td><strong>-0.1782***</strong><br>(0.0277)</td><td><strong>-0.1821*</strong><br>(0.0775)</td></tr>
 <tr><td>Policy rate</td><td>-0.0019<br>(0.0012)</td><td>-0.0019<br>(0.0018)</td><td>0.0048<br>(0.0126)</td><td>0.0007<br>(0.0070)</td><td>-0.0023<br>(0.0016)</td><td>-0.0029<br>(0.0028)</td></tr>
 <tr><td>Inflation</td><td><strong>-0.0130*</strong><br>(0.0049)</td><td><strong>-0.0161**</strong><br>(0.0041)</td><td>-0.0175<br>(0.0128)</td><td>-0.0101<br>(0.0061)</td><td><strong>-0.0125*</strong><br>(0.0045)</td><td><strong>-0.0116*</strong><br>(0.0048)</td></tr>
 <tr><td>Log oil price</td><td><strong>0.0686**</strong><br>(0.0198)</td><td><strong>0.1123**</strong><br>(0.0253)</td><td>0.1070<br>(0.0516)</td><td>0.0803<br>(0.0499)</td><td><strong>0.0869**</strong><br>(0.0233)</td><td><strong>0.0813*</strong><br>(0.0358)</td></tr>
@@ -447,44 +447,21 @@ Coefficients with country-clustered standard errors in parentheses; confidence i
 ::: {.card}
 <div class="card-title">Conclusion</div>
 
-The real-export channel is more consistently visible than the inflation channel in these estimates.
-
-<div class="card-title">Possible mechanism</div>
-
-Greater real export volumes may raise nominal export values; exchange-rate effects may depend on the composition and pricing of exports.
+The real-export channel has a very limited effect on the real effective exchange rate.
 :::
 :::
-:::
-
-::: {.footnote}
-These are associations from sequential fitted regressions, not established causal mediation. Only five country clusters are available.
 :::
 
 ## Model 3 | Intuition and qualitative arguments
 
-::: {.columns}
-::: {.column width="49%"}
 ::: {.card}
 <div class="card-title">Intuition</div>
 
 External shocks and institutions may influence prices and production separately before affecting nominal exports and exchange rates.
 
-<div class="card-title">Competing explanations</div>
+<div class="card-title">Explanations</div>
 
-Import dependence, price pass-through and commodity cycles could alter the apparent export channel.
-:::
-:::
-::: {.column width="49%"}
-::: {.card .placeholder}
-<div class="card-title">Qualitative argument</div>
-
-[Add supporting evidence or illustrative episodes.]
-
-<div class="card-title">Questions for review</div>
-
-[Review instrument validity, uncertainty through multiple stages and alternative channel explanations.]
-:::
-:::
+Import dependence and price pass-through can alter the result of the export channel.
 :::
 
 ## Capital-flow volatility | Design
@@ -532,9 +509,9 @@ Table 2's GPR coefficient of 0.867 is a paper reference with no WGI term. Ukrain
 <colgroup><col style="width: 34%"><col style="width: 33%"><col style="width: 33%"></colgroup>
 <thead><tr><th>Variable</th><th>Within</th><th>Cluster</th></tr></thead>
 <tbody>
-<tr><td>GPR</td><td><strong>-0.5852***</strong><br>(0.1911)</td><td>-0.5852<br>(0.4597)</td></tr>
-<tr><td>WGI</td><td><strong>-13.1173***</strong><br>(1.5267)</td><td>-13.1173<br>(10.5582)</td></tr>
-<tr><td>WGI × GPR</td><td>-0.3404<br>(0.2357)</td><td><strong>-0.3404**</strong><br>(0.1542)</td></tr>
+<tr class="interest"><td>GPR</td><td><strong>-0.5852***</strong><br>(0.1911)</td><td>-0.5852<br>(0.4597)</td></tr>
+<tr class="interest"><td>WGI</td><td><strong>-13.1173***</strong><br>(1.5267)</td><td>-13.1173<br>(10.5582)</td></tr>
+<tr class="interest"><td>WGI × GPR</td><td>-0.3404<br>(0.2357)</td><td><strong>-0.3404**</strong><br>(0.1542)</td></tr>
 <tr><td>Policy rate</td><td>-0.0274<br>(0.1042)</td><td>-0.0274<br>(0.1257)</td></tr>
 <tr><td>Real industrial production</td><td><strong>5.7441***</strong><br>(1.4655)</td><td>5.7441<br>(4.8178)</td></tr>
 <tr><td>Inflation</td><td>-0.0791<br>(0.1097)</td><td>-0.0791<br>(0.0950)</td></tr>
@@ -559,9 +536,9 @@ N = 4,609, 24 countries, 2000-02 to 2022-01. Within R² = 0.1009. WGI centered a
 <colgroup><col style="width: 34%"><col style="width: 33%"><col style="width: 33%"></colgroup>
 <thead><tr><th>Variable</th><th>Within</th><th>Cluster</th></tr></thead>
 <tbody>
-<tr><td>GPR</td><td><strong>-0.6200***</strong><br>(0.1919)</td><td>-0.6200<br>(0.4915)</td></tr>
-<tr><td>WGI</td><td><strong>-6.5955***</strong><br>(1.2320)</td><td>-6.5955<br>(5.7534)</td></tr>
-<tr><td>WGI × GPR</td><td><strong>-0.6299**</strong><br>(0.2669)</td><td><strong>-0.6299*</strong><br>(0.3243)</td></tr>
+<tr class="interest"><td>GPR</td><td><strong>-0.6200***</strong><br>(0.1919)</td><td>-0.6200<br>(0.4915)</td></tr>
+<tr class="interest"><td>WGI</td><td><strong>-6.5955***</strong><br>(1.2320)</td><td>-6.5955<br>(5.7534)</td></tr>
+<tr class="interest"><td>WGI × GPR</td><td><strong>-0.6299**</strong><br>(0.2669)</td><td><strong>-0.6299*</strong><br>(0.3243)</td></tr>
 <tr><td>Policy rate</td><td><strong>-0.1716*</strong><br>(0.1038)</td><td>-0.1716<br>(0.2228)</td></tr>
 <tr><td>Real industrial production</td><td><strong>7.8185***</strong><br>(1.4973)</td><td>7.8185<br>(6.4723)</td></tr>
 <tr><td>Inflation</td><td>0.0576<br>(0.1088)</td><td>0.0576<br>(0.1574)</td></tr>
@@ -586,9 +563,9 @@ N = 4,609, 24 countries, 2000-02 to 2022-01. Within R² = 0.0927. WGI centered a
 <colgroup><col style="width: 34%"><col style="width: 33%"><col style="width: 33%"></colgroup>
 <thead><tr><th>Variable</th><th>Within</th><th>Cluster</th></tr></thead>
 <tbody>
-<tr><td>GPR</td><td><strong>-0.6406***</strong><br>(0.1925)</td><td>-0.6406<br>(0.5142)</td></tr>
-<tr><td>WGI</td><td>-1.7713<br>(1.5154)</td><td>-1.7713<br>(2.5987)</td></tr>
-<tr><td>WGI × GPR</td><td><strong>-0.7736***</strong><br>(0.2815)</td><td>-0.7736<br>(0.4750)</td></tr>
+<tr class="interest"><td>GPR</td><td><strong>-0.6406***</strong><br>(0.1925)</td><td>-0.6406<br>(0.5142)</td></tr>
+<tr class="interest"><td>WGI</td><td>-1.7713<br>(1.5154)</td><td>-1.7713<br>(2.5987)</td></tr>
+<tr class="interest"><td>WGI × GPR</td><td><strong>-0.7736***</strong><br>(0.2815)</td><td>-0.7736<br>(0.4750)</td></tr>
 <tr><td>Policy rate</td><td>-0.1320<br>(0.1047)</td><td>-0.1320<br>(0.1943)</td></tr>
 <tr><td>Real industrial production</td><td><strong>6.5229***</strong><br>(1.4912)</td><td>6.5229<br>(5.7223)</td></tr>
 <tr><td>Inflation</td><td>0.0624<br>(0.1094)</td><td>0.0624<br>(0.1675)</td></tr>
@@ -604,6 +581,26 @@ N = 4,609, 24 countries, 2000-02 to 2022-01. Within R² = 0.0927. WGI centered a
 
 ::: {.footnote}
 N = 4,609, 24 countries, 2000-02 to 2022-01. Within R² = 0.0872. WGI centered at 0.9871. Parentheses: SE. Bold: p &lt; .10. Dropped: Indonesia, the Philippines, Thailand, Ukraine, South Africa.
+:::
+
+## Capital-flow volatility | Findings and interpretation
+
+::: {.card}
+<div class="card-title">Significant results</div>
+
+- GPR is about −0.59 to −0.64: \*\*\* if months are treated as independent, insignificant once clustered by country.
+- WGI × GPR is −0.340\*\* for rule of law and −0.630\* for government effectiveness under clustered SEs. Regulatory quality’s interaction is insignificant once clustered.
+:::
+
+::: {.card}
+<div class="card-title">Conclusion</div>
+
+The capital-flow channel does not show a strong effect of institutional quality as a buffer under shocks, but institutional quality itself can significantly lower capital-flow volatility.
+
+```{=html}
+<p style="margin-top: 1.4em;">This implies that better institutions should predict a more stable exchange rate.</p>
+```
+
 :::
 
 ## Subsample design

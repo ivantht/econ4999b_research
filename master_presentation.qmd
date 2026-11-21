@@ -23,93 +23,71 @@ Research presentation
 November 2026
 :::
 
-## Research question
+## Definition of Geopolitical Risk, Institutional Quality and Exchange Rate
 
 ::: {.question-banner}
 **Does WGI change how geopolitical risk moves the real exchange rate, and does that run through capital-flow volatility or exports?**
 :::
 
+- **Geopolitical Risk**: armed conflict, terrorism, and tension between states — not general economic uncertainty
+  - we will measure Geopolitical Risk with the paper uses the monthly country-specific GPR index of Caldara and Iacoviello (2022)
+- **Institutional Quality**: The quality of an institution
+  - we use the world governance index as a proxy of institutional quality
+- **Exchange rate**: real effective exchange rate
+  - we would like to capture the price movement between domestic and its trade partner
+
+## Content
+
+- **Motivation**
+- **Transmission Channel**
+  - Channel 1: How IQ affect real effective exchange rate and via the channel of export
+  - Channel 2: How does IQ affect the stability of real effective exchange rate via volatility of capital flow
+- **Result Overview**
+- **Channel result**
+- **Robustness test - Subsample**
+- **Conclusion**
+
+## Motivation - Russia-Ukraine War
+
 ::: {.columns}
 ::: {.column width="50%"}
-### Objective
+::: {.chart-card}
+::: {.card-label}
+Kazakhstan
+:::
 
-- **GPR**: country article share, standardized within country
-- **WGI**: six governance scores, lagged and centered
+![](output/figures/usd_per_KZT_monthly_pct_change.png)
+:::
 :::
 
 ::: {.column width="50%"}
-### Approach
-
-- **Baseline**: log REER on GPR, WGI, and WGI × GPR
-- **Channels**: capital-flow volatility, then exports
-:::
-:::
-
-## Baseline model
-
-::: {.columns}
-::: {.column width="46%"}
-::: {.finding-card}
+::: {.chart-card}
 ::: {.card-label}
-Model 1
+Georgia
 :::
 
-**Log real effective exchange rate**
-
-- Outcome is log REER; GPR, lagged WGI, and WGI × GPR
-- Lagged controls and country fixed effects
-- Clustered standard errors by country
-:::
-:::
-
-::: {.column width="54%"}
-::: {.table-area}
-**Model 1, six WGI dimensions**
-
-| Component | Detail |
-|:------------|:--------------|
-| Outcome | Log real effective exchange rate |
-| Interaction | Centered WGI × within-country GPR |
-| Controls | Policy rate, inflation, log oil, log VIX, log GEPU, FD, debt/GDP |
-| Sample | 6,628 months, 27 countries, 2000–02 to 2022–01 |
+![](output/figures/usd_per_GEL_monthly_pct_change.png)
 :::
 :::
 :::
 
-## Exchange-rate buffering: baseline results
+- With similar exposure to the crisis, Georgia displays a smaller decline in exchange rate
+- We know that Kazakhstan has a more significant corruption issue than Georgia
 
-::: {.columns}
-::: {.column width="40%"}
-::: {.finding-card}
-::: {.card-label}
-Model 1
+::: {.question-banner}
+**Can institutional quality explain the difference in the decline in exchange rate?**
 :::
 
-**No GPR buffering at average WGI**
+## Channel 1: How Institutional Quality affect Exchange Rate
 
-- GPR is 0.0005 and 0.0001, both insignificant
-- WGI is positive: rule of law 0.167*, regulatory quality 0.139**
-- WGI × GPR is −0.0036 and −0.0020, both insignificant
-:::
-:::
-
-::: {.column width="60%"}
-::: {.table-area}
-**Model 1, log REER**
-
-| Variable | Rule of law | Regulatory quality |
-|:-----------|:---------:|:---------:|
-| GPR | 0.0005 | 0.0001 |
-| WGI × GPR | −0.0036 | −0.0020 |
-| Controls | Yes | Yes |
-| Observations | 6,628 | 6,628 |
-
-::: {.table-note}
-Clustered standard errors by country. Ukraine and Thailand dropped. *** p&lt;0.01, ** p&lt;0.05, * p&lt;0.10.
-:::
-:::
-:::
-:::
+- **Model 1: How institutional quality affect exchange rate directly**
+  - Real effective exchange rate directly regress on Institutional Quality, Geopolitical Risk and its interaction
+- **Model 2: How institutional quality affect exchange rate via nominal export**
+  - First regress nominal export on institutional quality, geopolitical risk and its interaction
+  - Then, regress real effective exchange rate on the estimated nominal export
+- **Model 3: How institutional quality affect exchange rate via real export**
+  - First regress real export on institutional quality, geopolitical risk and its interaction
+  - Then, regress real effective exchange rate on the estimated real export
 
 ## Institutional aspects
 
