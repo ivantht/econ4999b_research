@@ -819,13 +819,15 @@ text-align: center;
 
 #definition-of-geopolitical-risk-institutional-quality-and-exchange-rate,
 #content,
-#channel-1-how-institutional-quality-affect-exchange-rate {
+#channel-1-how-institutional-quality-affect-exchange-rate,
+#channel-2-how-institutional-quality-affect-capital-flow-volatility {
 display: flex !important;
 flex-direction: column;
 }
 #definition-of-geopolitical-risk-institutional-quality-and-exchange-rate > h2,
 #content > h2,
-#channel-1-how-institutional-quality-affect-exchange-rate > h2 {
+#channel-1-how-institutional-quality-affect-exchange-rate > h2,
+#channel-2-how-institutional-quality-affect-capital-flow-volatility > h2 {
 margin-bottom: 14px;
 font-size: 40px;
 line-height: 1.1;
@@ -837,7 +839,8 @@ line-height: 1.25;
 }
 #definition-of-geopolitical-risk-institutional-quality-and-exchange-rate > ul,
 #content > ul,
-#channel-1-how-institutional-quality-affect-exchange-rate > ul {
+#channel-1-how-institutional-quality-affect-exchange-rate > ul,
+#channel-2-how-institutional-quality-affect-capital-flow-volatility > ul {
 flex: 1;
 display: flex;
 flex-direction: column;
@@ -848,7 +851,8 @@ line-height: 1.25;
 }
 #definition-of-geopolitical-risk-institutional-quality-and-exchange-rate > ul > li,
 #content > ul > li,
-#channel-1-how-institutional-quality-affect-exchange-rate > ul > li {
+#channel-1-how-institutional-quality-affect-exchange-rate > ul > li,
+#channel-2-how-institutional-quality-affect-capital-flow-volatility > ul > li {
 margin-bottom: 0;
 }
 
@@ -856,9 +860,85 @@ margin-bottom: 0;
 padding: 44px 0 16px;
 box-sizing: border-box;
 }
+
+#channel-2-how-institutional-quality-affect-capital-flow-volatility > ul {
+justify-content: center;
+padding: 0;
+box-sizing: border-box;
+}
+#channel-2-how-institutional-quality-affect-capital-flow-volatility > ul > li + li {
+margin-top: 40px;
+}
+
+#subsample-design-overview {
+display: flex !important;
+flex-direction: column;
+}
+#subsample-design-overview > h2 {
+margin-bottom: 10px;
+font-size: 40px;
+line-height: 1.1;
+}
+#subsample-design-overview > .title-eq {
+margin: 0 0 10px;
+padding: 8px 16px;
+border-left: 6px solid var(--orange);
+background: #eaf1f8;
+line-height: 1.15;
+}
+#subsample-design-overview > .title-eq > p {
+margin: 0;
+}
+#subsample-design-overview > .title-eq .MathJax_Display,
+#subsample-design-overview > .title-eq mjx-container,
+#subsample-design-overview > .title-eq .math.display {
+margin: 0 !important;
+text-align: center !important;
+white-space: nowrap;
+}
+
+#subsample-design-overview > .title-eq > p:first-child,
+#subsample-design-overview > .title-eq > p:first-child .math.display {
+font-size: 0.88em;
+line-height: 1.1;
+}
+
+#subsample-design-overview > .eq-note {
+margin: -4px 0 10px;
+padding-left: 16px;
+color: #4a6473;
+font-size: 0.6em;
+font-style: italic;
+line-height: 1.2;
+}
+#subsample-design-overview > .eq-note p {
+margin: 0;
+}
+#subsample-design-overview > .columns {
+flex: 1;
+min-height: 0;
+align-items: stretch;
+gap: 24px;
+}
+#subsample-design-overview .finding-card {
+min-height: 0;
+height: 100%;
+margin-top: 0;
+padding: 16px 16px 10px;
+font-size: 32.4px;
+line-height: 1.12;
+}
+#subsample-design-overview .finding-card p {
+margin: 0 0 6px;
+}
+#subsample-design-overview .finding-card li {
+margin-bottom: 4px;
+line-height: 1.12;
+}
 #definition-of-geopolitical-risk-institutional-quality-and-exchange-rate > ul ul,
 #content > ul ul,
-#channel-1-how-institutional-quality-affect-exchange-rate > ul ul {
+#channel-1-how-institutional-quality-affect-exchange-rate > ul ul,
+#channel-2-how-institutional-quality-affect-capital-flow-volatility > ul ul {
 margin-top: 8px;
 margin-left: 1.05em;
 font-size: 27px;
@@ -1567,113 +1647,43 @@ November 2026</p>
 </ul></li>
 </ul>
 </section>
-<section id="institutional-aspects" class="slide level2">
-<h2>Institutional aspects</h2>
-<div class="columns">
-<div class="column" style="width:40%;">
-<div class="finding-card">
-<div class="card-label">
-<p>Model 1 WGI</p>
-</div>
-<p><strong>A higher score lines up with a stronger real rate</strong></p>
+<section id="channel-2-how-institutional-quality-affect-capital-flow-volatility" class="slide level2">
+<h2>Channel 2: How Institutional Quality affect Capital Flow Volatility</h2>
 <ul>
-<li>GPR is about zero in every column</li>
-<li>Only voice and accountability has an interaction star, −0.009*</li>
-<li>Regulatory quality is the only WGI main effect significant at 5 percent</li>
+<li><strong>Intuition: weaker institution should experience a more volatile currency</strong>
+<ul>
+<li>We would like to rule out the possibility of managed flow such as Vietnam, therefore we will measure the vol. in capital flow instead</li>
+</ul></li>
+<li><strong>Model: extend on John Beirne model, we will include institutional quality in his model measuring how geopolitical risk affecting capital flow vol</strong></li>
 </ul>
-</div>
-</div><div class="column" style="width:60%;">
-<div class="table-area">
-<p><strong>Model 1 WGI coefficients, log REER</strong></p>
-<table class="caption-top">
-<thead>
-<tr class="header">
-<th style="text-align: left;">Aspect</th>
-<th style="text-align: center;">Estimate</th>
-<th style="text-align: center;">Significance</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td style="text-align: left;">Regulatory quality</td>
-<td style="text-align: center;">0.139</td>
-<td style="text-align: center;">**</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">Rule of law</td>
-<td style="text-align: center;">0.167</td>
-<td style="text-align: center;">*</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">Government effectiveness</td>
-<td style="text-align: center;">0.100</td>
-<td style="text-align: center;">*</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">Voice, stability, corruption</td>
-<td style="text-align: center;">0.137, 0.066<em>, 0.120</em></td>
-<td style="text-align: center;">*</td>
-</tr>
-</tbody>
-</table>
-<div class="table-note">
-<p>Model 1, N = 6,628. Clustered standard errors. Additional row: voice 0.137, political stability 0.066<em>, control of corruption 0.120</em>.</p>
-</div>
-</div>
-</div></div>
 </section>
-<section id="capital-flow-volatility" class="slide level2">
-<h2>Capital-flow volatility</h2>
-<div class="columns">
-<div class="column" style="width:40%;">
-<div class="finding-card">
-<div class="card-label">
-<p>Channel 1</p>
+<section id="subsample-design-overview" class="slide level2">
+<h2>Subsample design</h2>
+<div class="title-eq">
+<p><span class="math display">\[
+y_{i,t}^{j}=\beta_1 GPR_{i,t}^{z}+\beta_2 WGI_{i,t-1}+\gamma&#39;X_{i,t-1}+\delta_i+\varepsilon_{i,t}
+\]</span></p>
 </div>
-<p><strong>Pooled GPR is negative, not clustered-significant</strong></p>
+<div class="eq-note">
+<p><span class="math inline">\(y^{j}\)</span>: capital-flow volatility or log real exchange rate</p>
+</div>
+<div class="columns">
+<div class="column" style="width:50%;">
+<div class="finding-card">
+<p><strong>Top and bottom groups</strong></p>
 <ul>
-<li>Three-month SD of portfolio inflows, billion dollars</li>
-<li>GPR −0.585, cluster p = 0.22; within ***</li>
-<li>GE interaction −0.630*; RQ interaction −0.774, cluster p = 0.12</li>
+<li><strong>Sample</strong>: 10 emerging economies with complete months</li>
+<li><strong>Split</strong>: top three and bottom three on each WGI aspect, 2000–2021 average</li>
+<li><strong>Left out before ranking</strong>: Indonesia, the Philippines, South Africa, Thailand, Ukraine</li>
 </ul>
 </div>
-</div><div class="column" style="width:60%;">
-<div class="table-area">
-<p><strong>Rule of law, 24 countries</strong></p>
-<table class="caption-top">
-<thead>
-<tr class="header">
-<th style="text-align: left;">Variable</th>
-<th style="text-align: center;">Estimate</th>
-<th style="text-align: center;">Significance</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td style="text-align: left;">GPR</td>
-<td style="text-align: center;">−0.585</td>
-<td style="text-align: center;"></td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">WGI × GPR</td>
-<td style="text-align: center;">−0.340</td>
-<td style="text-align: center;">**</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">Controls</td>
-<td style="text-align: center;">Yes</td>
-<td style="text-align: center;"></td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">Observations</td>
-<td style="text-align: center;">4,609</td>
-<td style="text-align: center;"></td>
-</tr>
-</tbody>
-</table>
-<div class="table-note">
-<p>Clustered SE for stars unless noted. GPR is *** under within SEs. Emerging-only simple slope is about +0.06. Outcome is not the real exchange rate.</p>
-</div>
+</div><div class="column" style="width:50%;">
+<div class="finding-card">
+<p><strong>What is estimated</strong></p>
+<ul>
+<li><strong>GPR</strong>: standardized within country on the months in that regression</li>
+<li><strong>WGI</strong>: lagged score, not centered, so GPR is the effect at a score of zero</li>
+</ul>
 </div>
 </div></div>
 </section>

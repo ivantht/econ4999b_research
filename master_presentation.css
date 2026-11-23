@@ -191,17 +191,19 @@
   text-align: center;
 }
 
-/* Content + Channel 1 overview: long titles, nested bullets, slide-2 type scale */
+/* Content + Channel overviews: long titles, nested bullets, slide-2 type scale */
 #definition-of-geopolitical-risk-institutional-quality-and-exchange-rate,
 #content,
-#channel-1-how-institutional-quality-affect-exchange-rate {
+#channel-1-how-institutional-quality-affect-exchange-rate,
+#channel-2-how-institutional-quality-affect-capital-flow-volatility {
   display: flex !important;
   flex-direction: column;
 }
 
 #definition-of-geopolitical-risk-institutional-quality-and-exchange-rate > h2,
 #content > h2,
-#channel-1-how-institutional-quality-affect-exchange-rate > h2 {
+#channel-1-how-institutional-quality-affect-exchange-rate > h2,
+#channel-2-how-institutional-quality-affect-capital-flow-volatility > h2 {
   margin-bottom: 14px;
   font-size: 40px;
   line-height: 1.1;
@@ -215,7 +217,8 @@
 
 #definition-of-geopolitical-risk-institutional-quality-and-exchange-rate > ul,
 #content > ul,
-#channel-1-how-institutional-quality-affect-exchange-rate > ul {
+#channel-1-how-institutional-quality-affect-exchange-rate > ul,
+#channel-2-how-institutional-quality-affect-capital-flow-volatility > ul {
   flex: 1;
   display: flex;
   flex-direction: column;
@@ -227,7 +230,8 @@
 
 #definition-of-geopolitical-risk-institutional-quality-and-exchange-rate > ul > li,
 #content > ul > li,
-#channel-1-how-institutional-quality-affect-exchange-rate > ul > li {
+#channel-1-how-institutional-quality-affect-exchange-rate > ul > li,
+#channel-2-how-institutional-quality-affect-capital-flow-volatility > ul > li {
   margin-bottom: 0;
 }
 
@@ -238,9 +242,101 @@
   box-sizing: border-box;
 }
 
+/* Channel 2 overview: only two items, so center the pair in the space under
+   the title and keep a fixed gap between them. */
+#channel-2-how-institutional-quality-affect-capital-flow-volatility > ul {
+  justify-content: center;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#channel-2-how-institutional-quality-affect-capital-flow-volatility > ul > li + li {
+  margin-top: 40px;
+}
+
+/* Subsample-design overview: title at the slide-2 scale, the equation on one
+   row inside a full-width banner, then two equal cards. */
+#subsample-design-overview {
+  display: flex !important;
+  flex-direction: column;
+}
+
+#subsample-design-overview > h2 {
+  margin-bottom: 10px;
+  font-size: 40px;
+  line-height: 1.1;
+}
+
+#subsample-design-overview > .title-eq {
+  margin: 0 0 10px;
+  padding: 8px 16px;
+  border-left: 6px solid var(--orange);
+  background: #eaf1f8;
+  line-height: 1.15;
+}
+
+#subsample-design-overview > .title-eq > p {
+  margin: 0;
+}
+
+#subsample-design-overview > .title-eq .MathJax_Display,
+#subsample-design-overview > .title-eq mjx-container,
+#subsample-design-overview > .title-eq .math.display {
+  margin: 0 !important;
+  text-align: center !important;
+  white-space: nowrap;
+}
+
+/* Keep the equation on a single row inside the banner, as large as fits. */
+#subsample-design-overview > .title-eq > p:first-child,
+#subsample-design-overview > .title-eq > p:first-child .math.display {
+  font-size: 0.88em;
+  line-height: 1.1;
+}
+
+/* y-definition sits under the banner as a footnote. */
+#subsample-design-overview > .eq-note {
+  margin: -4px 0 10px;
+  padding-left: 16px;
+  color: #4a6473;
+  font-size: 0.6em;
+  font-style: italic;
+  line-height: 1.2;
+}
+
+#subsample-design-overview > .eq-note p {
+  margin: 0;
+}
+
+#subsample-design-overview > .columns {
+  flex: 1;
+  min-height: 0;
+  align-items: stretch;
+  gap: 24px;
+}
+
+#subsample-design-overview .finding-card {
+  min-height: 0;
+  height: 100%;
+  margin-top: 0;
+  padding: 16px 16px 10px;
+  font-size: 32.4px;
+  line-height: 1.12;
+}
+
+#subsample-design-overview .finding-card p {
+  margin: 0 0 6px;
+}
+
+#subsample-design-overview .finding-card li {
+  margin-bottom: 4px;
+  line-height: 1.12;
+}
+
 #definition-of-geopolitical-risk-institutional-quality-and-exchange-rate > ul ul,
 #content > ul ul,
-#channel-1-how-institutional-quality-affect-exchange-rate > ul ul {
+#channel-1-how-institutional-quality-affect-exchange-rate > ul ul,
+#channel-2-how-institutional-quality-affect-capital-flow-volatility > ul ul {
   margin-top: 8px;
   margin-left: 1.05em;
   font-size: 27px;

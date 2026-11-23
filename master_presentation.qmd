@@ -89,72 +89,41 @@ Georgia
   - First regress real export on institutional quality, geopolitical risk and its interaction
   - Then, regress real effective exchange rate on the estimated real export
 
-## Institutional aspects
+## Channel 2: How Institutional Quality affect Capital Flow Volatility
+
+- **Intuition: weaker institution should experience a more volatile currency**
+  - We would like to rule out the possibility of managed flow such as Vietnam, therefore we will measure the vol. in capital flow instead
+- **Model: extend on John Beirne model, we will include institutional quality in his model measuring how geopolitical risk affecting capital flow vol**
+
+## Subsample design {#subsample-design-overview}
+
+::: {.title-eq}
+$$
+y_{i,t}^{j}=\beta_1 GPR_{i,t}^{z}+\beta_2 WGI_{i,t-1}+\gamma'X_{i,t-1}+\delta_i+\varepsilon_{i,t}
+$$
+:::
+
+::: {.eq-note}
+$y^{j}$: capital-flow volatility or log real exchange rate
+:::
 
 ::: {.columns}
-::: {.column width="40%"}
+::: {.column width="50%"}
 ::: {.finding-card}
-::: {.card-label}
-Model 1 WGI
-:::
+**Top and bottom groups**
 
-**A higher score lines up with a stronger real rate**
-
-- GPR is about zero in every column
-- Only voice and accountability has an interaction star, −0.009*
-- Regulatory quality is the only WGI main effect significant at 5 percent
+- **Sample**: 10 emerging economies with complete months
+- **Split**: top three and bottom three on each WGI aspect, 2000–2021 average
+- **Left out before ranking**: Indonesia, the Philippines, South Africa, Thailand, Ukraine
 :::
 :::
 
-::: {.column width="60%"}
-::: {.table-area}
-**Model 1 WGI coefficients, log REER**
-
-| Aspect | Estimate | Significance |
-|:---------|:----------:|:--------------:|
-| Regulatory quality | 0.139 | ** |
-| Rule of law | 0.167 | * |
-| Government effectiveness | 0.100 | * |
-| Voice, stability, corruption | 0.137, 0.066*, 0.120* | * |
-
-::: {.table-note}
-Model 1, N = 6,628. Clustered standard errors. Additional row: voice 0.137, political stability 0.066*, control of corruption 0.120*.
-:::
-:::
-:::
-:::
-
-## Capital-flow volatility
-
-::: {.columns}
-::: {.column width="40%"}
+::: {.column width="50%"}
 ::: {.finding-card}
-::: {.card-label}
-Channel 1
-:::
+**What is estimated**
 
-**Pooled GPR is negative, not clustered-significant**
-
-- Three-month SD of portfolio inflows, billion dollars
-- GPR −0.585, cluster p = 0.22; within ***
-- GE interaction −0.630*; RQ interaction −0.774, cluster p = 0.12
-:::
-:::
-
-::: {.column width="60%"}
-::: {.table-area}
-**Rule of law, 24 countries**
-
-| Variable | Estimate | Significance |
-|:-----------|:----------:|:--------------:|
-| GPR | −0.585 |  |
-| WGI × GPR | −0.340 | ** |
-| Controls | Yes |  |
-| Observations | 4,609 |  |
-
-::: {.table-note}
-Clustered SE for stars unless noted. GPR is *** under within SEs. Emerging-only simple slope is about +0.06. Outcome is not the real exchange rate.
-:::
+- **GPR**: standardized within country on the months in that regression
+- **WGI**: lagged score, not centered, so GPR is the effect at a score of zero
 :::
 :::
 :::
