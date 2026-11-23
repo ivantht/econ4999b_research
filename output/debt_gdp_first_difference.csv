@@ -1,0 +1,823 @@
+country,year,d_debt_gdp_pct,source
+Argentina,2001,7.17378000,cleaned/debt_gdp.csv
+Argentina,2002,99.19592900,cleaned/debt_gdp.csv
+Argentina,2003,-22.04091400,cleaned/debt_gdp.csv
+Argentina,2004,-7.28378600,cleaned/debt_gdp.csv
+Argentina,2005,-37.59604900,cleaned/debt_gdp.csv
+Argentina,2006,-9.48910900,cleaned/debt_gdp.csv
+Argentina,2007,-8.65997900,cleaned/debt_gdp.csv
+Argentina,2008,-8.31885900,cleaned/debt_gdp.csv
+Argentina,2009,1.58322800,cleaned/debt_gdp.csv
+Argentina,2010,-11.94276500,cleaned/debt_gdp.csv
+Argentina,2011,-4.51946100,cleaned/debt_gdp.csv
+Argentina,2012,1.50119400,cleaned/debt_gdp.csv
+Argentina,2013,3.06002200,cleaned/debt_gdp.csv
+Argentina,2014,1.20078000,cleaned/debt_gdp.csv
+Argentina,2015,7.86579300,cleaned/debt_gdp.csv
+Argentina,2016,0.49753700,cleaned/debt_gdp.csv
+Argentina,2017,3.96766200,cleaned/debt_gdp.csv
+Argentina,2018,28.21847300,cleaned/debt_gdp.csv
+Argentina,2019,4.59337000,cleaned/debt_gdp.csv
+Argentina,2020,13.97612700,cleaned/debt_gdp.csv
+Argentina,2021,-22.77305600,cleaned/debt_gdp.csv
+Argentina,2022,3.25987300,cleaned/debt_gdp.csv
+Argentina,2023,69.07213100,cleaned/debt_gdp.csv
+Argentina,2024,-68.78965500,cleaned/debt_gdp.csv
+Argentina,2025,-4.52088800,cleaned/debt_gdp.csv
+Argentina,2026,-10.71518200,cleaned/debt_gdp.csv
+Belgium,2001,-1.37200000,replication panel
+Belgium,2002,-2.78000000,replication panel
+Belgium,2003,-3.77800000,replication panel
+Belgium,2004,-4.48900000,replication panel
+Belgium,2005,-2.02800000,replication panel
+Belgium,2006,-3.64800000,replication panel
+Belgium,2007,-4.16900000,replication panel
+Belgium,2008,5.83500000,replication panel
+Belgium,2009,6.69300000,replication panel
+Belgium,2010,0.39200000,replication panel
+Belgium,2011,2.49000000,replication panel
+Belgium,2012,1.60000000,replication panel
+Belgium,2013,0.68600000,replication panel
+Belgium,2014,1.50300000,replication panel
+Belgium,2015,-0.99900000,replication panel
+Belgium,2016,-0.12100000,replication panel
+Belgium,2017,-3.00400000,replication panel
+Belgium,2018,-2.42300000,replication panel
+Belgium,2019,-2.51600000,replication panel
+Belgium,2020,13.63700000,replication panel
+Belgium,2021,-2.72800000,replication panel
+Belgium,2022,-5.81500000,replication panel
+Belgium,2023,0.56600000,replication panel
+Brazil,2001,5.13300000,replication panel
+Brazil,2002,8.76400000,replication panel
+Brazil,2003,-4.58100000,replication panel
+Brazil,2004,-3.48900000,replication panel
+Brazil,2005,-1.05600000,replication panel
+Brazil,2006,-2.37000000,replication panel
+Brazil,2007,-1.57400000,replication panel
+Brazil,2008,-1.60500000,replication panel
+Brazil,2009,3.28200000,replication panel
+Brazil,2010,-2.26900000,replication panel
+Brazil,2011,-1.79900000,replication panel
+Brazil,2012,0.98000000,replication panel
+Brazil,2013,-2.01900000,replication panel
+Brazil,2014,2.02200000,replication panel
+Brazil,2015,10.11300000,replication panel
+Brazil,2016,5.69200000,replication panel
+Brazil,2017,5.32300000,replication panel
+Brazil,2018,2.03200000,replication panel
+Brazil,2019,2.34100000,replication panel
+Brazil,2020,8.88900000,replication panel
+Brazil,2021,-7.07300000,replication panel
+Brazil,2022,-4.99500000,replication panel
+Brazil,2023,0.06200000,replication panel
+Canada,2001,1.02500000,replication panel
+Canada,2002,-1.85800000,replication panel
+Canada,2003,-3.69200000,replication panel
+Canada,2004,-4.02300000,replication panel
+Canada,2005,-1.24900000,replication panel
+Canada,2006,-0.72000000,replication panel
+Canada,2007,-2.73900000,replication panel
+Canada,2008,3.17400000,replication panel
+Canada,2009,11.44900000,replication panel
+Canada,2010,2.17200000,replication panel
+Canada,2011,0.31000000,replication panel
+Canada,2012,2.86500000,replication panel
+Canada,2013,0.45400000,replication panel
+Canada,2014,-2.06400000,replication panel
+Canada,2015,6.48800000,replication panel
+Canada,2016,0.36800000,replication panel
+Canada,2017,-1.45500000,replication panel
+Canada,2018,-0.16600000,replication panel
+Canada,2019,-0.56600000,replication panel
+Canada,2020,27.85600000,replication panel
+Canada,2021,-5.44900000,replication panel
+Canada,2022,-8.41000000,replication panel
+Canada,2023,3.50400000,replication panel
+Chile,2001,1.20200000,replication panel
+Chile,2002,0.69700000,replication panel
+Chile,2003,-2.47200000,replication panel
+Chile,2004,-2.25900000,replication panel
+Chile,2005,-3.27400000,replication panel
+Chile,2006,-2.01800000,replication panel
+Chile,2007,-1.12100000,replication panel
+Chile,2008,1.01500000,replication panel
+Chile,2009,0.92900000,replication panel
+Chile,2010,2.76200000,replication panel
+Chile,2011,2.52000000,replication panel
+Chile,2012,0.81200000,replication panel
+Chile,2013,0.84500000,replication panel
+Chile,2014,2.23600000,replication panel
+Chile,2015,2.35500000,replication panel
+Chile,2016,3.72600000,replication panel
+Chile,2017,2.55100000,replication panel
+Chile,2018,2.14600000,replication panel
+Chile,2019,2.53200000,replication panel
+Chile,2020,4.05000000,replication panel
+Chile,2021,4.06800000,replication panel
+Chile,2022,1.45900000,replication panel
+Chile,2023,1.50800000,replication panel
+China,2001,1.54400000,replication panel
+China,2002,1.30100000,replication panel
+China,2003,0.86500000,replication panel
+China,2004,-0.41800000,replication panel
+China,2005,-0.09000000,replication panel
+China,2006,-0.73600000,replication panel
+China,2007,3.53400000,replication panel
+China,2008,-1.99300000,replication panel
+China,2009,7.27000000,replication panel
+China,2010,-0.64200000,replication panel
+China,2011,-0.15900000,replication panel
+China,2012,0.64100000,replication panel
+China,2013,2.61300000,replication panel
+China,2014,2.87000000,replication panel
+China,2015,1.47400000,replication panel
+China,2016,8.93800000,replication panel
+China,2017,4.18300000,replication panel
+China,2018,1.67400000,replication panel
+China,2019,3.86400000,replication panel
+China,2020,9.59400000,replication panel
+China,2021,1.11200000,replication panel
+China,2022,5.30600000,replication panel
+China,2023,6.56100000,replication panel
+Colombia,2001,3.10700000,replication panel
+Colombia,2002,6.45100000,replication panel
+Colombia,2003,-2.50600000,replication panel
+Colombia,2004,-3.55800000,replication panel
+Colombia,2005,-2.94900000,replication panel
+Colombia,2006,-2.56400000,replication panel
+Colombia,2007,-3.30600000,replication panel
+Colombia,2008,-0.28100000,replication panel
+Colombia,2009,3.00500000,replication panel
+Colombia,2010,1.11000000,replication panel
+Colombia,2011,-0.71400000,replication panel
+Colombia,2012,-1.81600000,replication panel
+Colombia,2013,3.62500000,replication panel
+Colombia,2014,5.72700000,replication panel
+Colombia,2015,7.05600000,replication panel
+Colombia,2016,-0.47100000,replication panel
+Colombia,2017,-0.45500000,replication panel
+Colombia,2018,2.31200000,replication panel
+Colombia,2019,-0.78900000,replication panel
+Colombia,2020,14.30200000,replication panel
+Colombia,2021,-0.85700000,replication panel
+Colombia,2022,-3.11700000,replication panel
+Colombia,2023,-5.84300000,replication panel
+Denmark,2001,-3.45700000,replication panel
+Denmark,2002,0.22400000,replication panel
+Denmark,2003,-2.15800000,replication panel
+Denmark,2004,-1.94700000,replication panel
+Denmark,2005,-6.85500000,replication panel
+Denmark,2006,-6.16900000,replication panel
+Denmark,2007,-3.70800000,replication panel
+Denmark,2008,6.05600000,replication panel
+Denmark,2009,7.51000000,replication panel
+Denmark,2010,3.07400000,replication panel
+Denmark,2011,3.86300000,replication panel
+Denmark,2012,-1.27500000,replication panel
+Denmark,2013,-0.94100000,replication panel
+Denmark,2014,0.94200000,replication panel
+Denmark,2015,-4.16200000,replication panel
+Denmark,2016,-2.85800000,replication panel
+Denmark,2017,-1.53900000,replication panel
+Denmark,2018,-1.61400000,replication panel
+Denmark,2019,-0.20400000,replication panel
+Denmark,2020,7.94300000,replication panel
+Denmark,2021,-5.79100000,replication panel
+Denmark,2022,-6.41000000,replication panel
+Denmark,2023,-0.48800000,replication panel
+Egypt,2001,7.45889100,cleaned/debt_gdp.csv
+Egypt,2002,6.62977000,cleaned/debt_gdp.csv
+Egypt,2003,11.31885100,cleaned/debt_gdp.csv
+Egypt,2004,-0.58301500,cleaned/debt_gdp.csv
+Egypt,2005,1.75070800,cleaned/debt_gdp.csv
+Egypt,2006,-12.33832800,cleaned/debt_gdp.csv
+Egypt,2007,-9.65667200,cleaned/debt_gdp.csv
+Egypt,2008,-9.50694200,cleaned/debt_gdp.csv
+Egypt,2009,2.68942300,cleaned/debt_gdp.csv
+Egypt,2010,0.13950300,cleaned/debt_gdp.csv
+Egypt,2011,3.24043500,cleaned/debt_gdp.csv
+Egypt,2012,-2.96835100,cleaned/debt_gdp.csv
+Egypt,2013,9.95042500,cleaned/debt_gdp.csv
+Egypt,2014,1.06199100,cleaned/debt_gdp.csv
+Egypt,2015,2.87963600,cleaned/debt_gdp.csv
+Egypt,2016,7.83262100,cleaned/debt_gdp.csv
+Egypt,2017,6.21402500,cleaned/debt_gdp.csv
+Egypt,2018,-9.85124200,cleaned/debt_gdp.csv
+Egypt,2019,-7.85701500,cleaned/debt_gdp.csv
+Egypt,2020,6.13040900,cleaned/debt_gdp.csv
+Egypt,2021,3.68012600,cleaned/debt_gdp.csv
+Egypt,2022,-1.36907400,cleaned/debt_gdp.csv
+Egypt,2023,7.39600500,cleaned/debt_gdp.csv
+Egypt,2024,-5.00359900,cleaned/debt_gdp.csv
+Egypt,2025,-4.09245400,cleaned/debt_gdp.csv
+Egypt,2026,-2.85427200,cleaned/debt_gdp.csv
+Finland,2001,-1.55000000,replication panel
+Finland,2002,-0.76800000,replication panel
+Finland,2003,2.56800000,replication panel
+Finland,2004,-0.12000000,replication panel
+Finland,2005,-2.70700000,replication panel
+Finland,2006,-1.86500000,replication panel
+Finland,2007,-4.09900000,replication panel
+Finland,2008,-1.34300000,replication panel
+Finland,2009,8.97100000,replication panel
+Finland,2010,8.57900000,replication panel
+Finland,2011,1.91100000,replication panel
+Finland,2012,5.83200000,replication panel
+Finland,2013,2.95600000,replication panel
+Finland,2014,4.00100000,replication panel
+Finland,2015,3.95100000,replication panel
+Finland,2016,-0.11500000,replication panel
+Finland,2017,-2.06800000,replication panel
+Finland,2018,-1.30300000,replication panel
+Finland,2019,-0.03700000,replication panel
+Finland,2020,10.17400000,replication panel
+Finland,2021,-2.16800000,replication panel
+Finland,2022,0.78700000,replication panel
+Finland,2023,3.26800000,replication panel
+France,2001,-0.39700000,replication panel
+France,2002,1.93100000,replication panel
+France,2003,4.10800000,replication panel
+France,2004,1.51400000,replication panel
+France,2005,1.31100000,replication panel
+France,2006,-2.78800000,replication panel
+France,2007,0.07900000,replication panel
+France,2008,4.34000000,replication panel
+France,2009,14.23800000,replication panel
+France,2010,2.22200000,replication panel
+France,2011,2.46900000,replication panel
+France,2012,2.99200000,replication panel
+France,2013,2.80600000,replication panel
+France,2014,1.59400000,replication panel
+France,2015,0.80300000,replication panel
+France,2016,1.18300000,replication panel
+France,2017,0.59600000,replication panel
+France,2018,-0.23200000,replication panel
+France,2019,-0.38600000,replication panel
+France,2020,16.72700000,replication panel
+France,2021,-2.12800000,replication panel
+France,2022,-1.41700000,replication panel
+France,2023,-1.55300000,replication panel
+Germany,2001,-1.17700000,replication panel
+Germany,2002,1.76100000,replication panel
+Germany,2003,3.52100000,replication panel
+Germany,2004,1.62100000,replication panel
+Germany,2005,2.15500000,replication panel
+Germany,2006,-0.72300000,replication panel
+Germany,2007,-2.71000000,replication panel
+Germany,2008,1.47300000,replication panel
+Germany,2009,7.17600000,replication panel
+Germany,2010,8.67300000,replication panel
+Germany,2011,-2.55100000,replication panel
+Germany,2012,1.34600000,replication panel
+Germany,2013,-2.36900000,replication panel
+Germany,2014,-2.91500000,replication panel
+Germany,2015,-3.30400000,replication panel
+Germany,2016,-2.93400000,replication panel
+Germany,2017,-4.25600000,replication panel
+Germany,2018,-3.21700000,replication panel
+Germany,2019,-2.10800000,replication panel
+Germany,2020,9.33400000,replication panel
+Germany,2021,0.04200000,replication panel
+Germany,2022,-3.08000000,replication panel
+Germany,2023,-2.11900000,replication panel
+Hungary,2001,-3.43300000,replication panel
+Hungary,2002,3.35200000,replication panel
+Hungary,2003,2.61700000,replication panel
+Hungary,2004,0.73300000,replication panel
+Hungary,2005,1.67200000,replication panel
+Hungary,2006,3.91000000,replication panel
+Hungary,2007,1.09100000,replication panel
+Hungary,2008,6.22100000,replication panel
+Hungary,2009,6.38700000,replication panel
+Hungary,2010,1.98600000,replication panel
+Hungary,2011,0.29400000,replication panel
+Hungary,2012,-2.10400000,replication panel
+Hungary,2013,-1.14400000,replication panel
+Hungary,2014,-0.72900000,replication panel
+Hungary,2015,-0.76700000,replication panel
+Hungary,2016,-1.07800000,replication panel
+Hungary,2017,-2.64400000,replication panel
+Hungary,2018,-3.18600000,replication panel
+Hungary,2019,-3.82800000,replication panel
+Hungary,2020,13.69900000,replication panel
+Hungary,2021,-2.47200000,replication panel
+Hungary,2022,-2.35700000,replication panel
+Hungary,2023,-0.89200000,replication panel
+India,2001,5.16900000,replication panel
+India,2002,4.19400000,replication panel
+India,2003,1.57900000,replication panel
+India,2004,-0.99300000,replication panel
+India,2005,-2.51200000,replication panel
+India,2006,-4.43700000,replication panel
+India,2007,-2.48600000,replication panel
+India,2008,-1.08700000,replication panel
+India,2009,-1.59800000,replication panel
+India,2010,-5.06800000,replication panel
+India,2011,0.94600000,replication panel
+India,2012,-0.66300000,replication panel
+India,2013,-0.27200000,replication panel
+India,2014,-0.61100000,replication panel
+India,2015,1.94700000,replication panel
+India,2016,-0.10600000,replication panel
+India,2017,0.72600000,replication panel
+India,2018,0.72300000,replication panel
+India,2019,4.64800000,replication panel
+India,2020,13.38700000,replication panel
+India,2021,-4.94000000,replication panel
+India,2022,-1.31400000,replication panel
+India,2023,-0.94200000,replication panel
+Indonesia,2001,-13.73500000,replication panel
+Indonesia,2002,-11.36300000,replication panel
+Indonesia,2003,-6.69600000,replication panel
+Indonesia,2004,-4.31500000,replication panel
+Indonesia,2005,-8.71600000,replication panel
+Indonesia,2006,-6.76400000,replication panel
+Indonesia,2007,2.27300000,replication panel
+Indonesia,2008,-7.86900000,replication panel
+Indonesia,2009,-3.76900000,replication panel
+Indonesia,2010,-0.12000000,replication panel
+Indonesia,2011,-3.25700000,replication panel
+Indonesia,2012,-0.15100000,replication panel
+Indonesia,2013,1.92900000,replication panel
+Indonesia,2014,-0.23900000,replication panel
+Indonesia,2015,2.36800000,replication panel
+Indonesia,2016,0.94200000,replication panel
+Indonesia,2017,1.44100000,replication panel
+Indonesia,2018,1.02700000,replication panel
+Indonesia,2019,0.14000000,replication panel
+Indonesia,2020,9.18400000,replication panel
+Indonesia,2021,1.39300000,replication panel
+Indonesia,2022,-0.99900000,replication panel
+Indonesia,2023,-0.54000000,replication panel
+Italy,2001,-0.23000000,replication panel
+Italy,2002,-2.56600000,replication panel
+Italy,2003,-0.80600000,replication panel
+Italy,2004,-0.39900000,replication panel
+Italy,2005,1.43400000,replication panel
+Italy,2006,0.07700000,replication panel
+Italy,2007,-2.79900000,replication panel
+Italy,2008,2.33400000,replication panel
+Italy,2009,10.33300000,replication panel
+Italy,2010,2.61600000,replication panel
+Italy,2011,0.36900000,replication panel
+Italy,2012,6.76400000,replication panel
+Italy,2013,5.94600000,replication panel
+Italy,2014,2.93900000,replication panel
+Italy,2015,-0.00900000,replication panel
+Italy,2016,-0.55100000,replication panel
+Italy,2017,-0.50600000,replication panel
+Italy,2018,0.44900000,replication panel
+Italy,2019,-0.31500000,replication panel
+Italy,2020,20.46500000,replication panel
+Italy,2021,-8.55300000,replication panel
+Italy,2022,-7.45600000,replication panel
+Italy,2023,-3.70000000,replication panel
+Japan,2001,9.51500000,replication panel
+Japan,2002,8.97200000,replication panel
+Japan,2003,5.92500000,replication panel
+Japan,2004,9.46900000,replication panel
+Japan,2005,5.10500000,replication panel
+Japan,2006,-0.45200000,replication panel
+Japan,2007,-1.19200000,replication panel
+Japan,2008,7.90000000,replication panel
+Japan,2009,17.95600000,replication panel
+Japan,2010,7.07200000,replication panel
+Japan,2011,13.28300000,replication panel
+Japan,2012,6.93100000,replication panel
+Japan,2013,3.35800000,replication panel
+Japan,2014,3.83000000,replication panel
+Japan,2015,-5.00300000,replication panel
+Japan,2016,4.14300000,replication panel
+Japan,2017,-1.10000000,replication panel
+Japan,2018,1.05900000,replication panel
+Japan,2019,4.00100000,replication panel
+Japan,2020,21.98800000,replication panel
+Japan,2021,-4.71700000,replication panel
+Japan,2022,-5.34300000,replication panel
+Japan,2023,-8.33800000,replication panel
+Malaysia,2001,5.54700000,replication panel
+Malaysia,2002,1.46700000,replication panel
+Malaysia,2003,1.86100000,replication panel
+Malaysia,2004,0.56700000,replication panel
+Malaysia,2005,-1.18200000,replication panel
+Malaysia,2006,-1.11600000,replication panel
+Malaysia,2007,-0.31400000,replication panel
+Malaysia,2008,0.01300000,replication panel
+Malaysia,2009,11.04700000,replication panel
+Malaysia,2010,0.80400000,replication panel
+Malaysia,2011,0.68600000,replication panel
+Malaysia,2012,1.89000000,replication panel
+Malaysia,2013,1.86800000,replication panel
+Malaysia,2014,-0.28300000,replication panel
+Malaysia,2015,1.59800000,replication panel
+Malaysia,2016,-1.18400000,replication panel
+Malaysia,2017,-1.39200000,replication panel
+Malaysia,2018,1.25100000,replication panel
+Malaysia,2019,1.43700000,replication panel
+Malaysia,2020,10.61000000,replication panel
+Malaysia,2021,1.46900000,replication panel
+Malaysia,2022,-3.66200000,replication panel
+Malaysia,2023,4.24900000,replication panel
+Mexico,2001,-1.14000000,replication panel
+Mexico,2002,2.55100000,replication panel
+Mexico,2003,2.26700000,replication panel
+Mexico,2004,-3.22700000,replication panel
+Mexico,2005,-2.06500000,replication panel
+Mexico,2006,-1.06400000,replication panel
+Mexico,2007,-0.24800000,replication panel
+Mexico,2008,5.07600000,replication panel
+Mexico,2009,1.06200000,replication panel
+Mexico,2010,-1.51200000,replication panel
+Mexico,2011,1.01200000,replication panel
+Mexico,2012,-0.35200000,replication panel
+Mexico,2013,3.25100000,replication panel
+Mexico,2014,3.02700000,replication panel
+Mexico,2015,3.88000000,replication panel
+Mexico,2016,4.03000000,replication panel
+Mexico,2017,-2.48200000,replication panel
+Mexico,2018,-0.31900000,replication panel
+Mexico,2019,-0.33300000,replication panel
+Mexico,2020,6.58700000,replication panel
+Mexico,2021,-1.76100000,replication panel
+Mexico,2022,-2.87500000,replication panel
+Mexico,2023,-1.04900000,replication panel
+Netherlands,2001,-2.74100000,replication panel
+Netherlands,2002,-0.72100000,replication panel
+Netherlands,2003,1.11100000,replication panel
+Netherlands,2004,0.29100000,replication panel
+Netherlands,2005,-0.51500000,replication panel
+Netherlands,2006,-4.62000000,replication panel
+Netherlands,2007,-2.21900000,replication panel
+Netherlands,2008,11.61100000,replication panel
+Netherlands,2009,1.93800000,replication panel
+Netherlands,2010,2.60700000,replication panel
+Netherlands,2011,2.27000000,replication panel
+Netherlands,2012,4.52300000,replication panel
+Netherlands,2013,1.47100000,replication panel
+Netherlands,2014,0.00500000,replication panel
+Netherlands,2015,-3.36700000,replication panel
+Netherlands,2016,-2.91600000,replication panel
+Netherlands,2017,-4.89700000,replication panel
+Netherlands,2018,-4.46400000,replication panel
+Netherlands,2019,-3.92500000,replication panel
+Netherlands,2020,5.75100000,replication panel
+Netherlands,2021,-2.91700000,replication panel
+Netherlands,2022,-2.08600000,replication panel
+Netherlands,2023,-3.24700000,replication panel
+Peru,2001,-1.06781100,cleaned/debt_gdp.csv
+Peru,2002,1.62169100,cleaned/debt_gdp.csv
+Peru,2003,3.91297000,cleaned/debt_gdp.csv
+Peru,2004,-2.63808500,cleaned/debt_gdp.csv
+Peru,2005,-6.37847500,cleaned/debt_gdp.csv
+Peru,2006,-5.41898000,cleaned/debt_gdp.csv
+Peru,2007,-3.07035700,cleaned/debt_gdp.csv
+Peru,2008,-3.74397700,cleaned/debt_gdp.csv
+Peru,2009,0.05396400,cleaned/debt_gdp.csv
+Peru,2010,-3.07285200,cleaned/debt_gdp.csv
+Peru,2011,-2.00042500,cleaned/debt_gdp.csv
+Peru,2012,-2.44442200,cleaned/debt_gdp.csv
+Peru,2013,-0.76061200,cleaned/debt_gdp.csv
+Peru,2014,0.55731200,cleaned/debt_gdp.csv
+Peru,2015,3.22917800,cleaned/debt_gdp.csv
+Peru,2016,0.24286400,cleaned/debt_gdp.csv
+Peru,2017,0.86761700,cleaned/debt_gdp.csv
+Peru,2018,0.88979000,cleaned/debt_gdp.csv
+Peru,2019,0.81273100,cleaned/debt_gdp.csv
+Peru,2020,7.78954200,cleaned/debt_gdp.csv
+Peru,2021,1.23519400,cleaned/debt_gdp.csv
+Peru,2022,-2.07367900,cleaned/debt_gdp.csv
+Peru,2023,-1.04400900,cleaned/debt_gdp.csv
+Peru,2024,-0.34324600,cleaned/debt_gdp.csv
+Peru,2025,-1.91992300,cleaned/debt_gdp.csv
+Peru,2026,-1.53710300,cleaned/debt_gdp.csv
+Philippines,2001,0.26800000,replication panel
+Philippines,2002,5.71300000,replication panel
+Philippines,2003,6.20900000,replication panel
+Philippines,2004,-0.31100000,replication panel
+Philippines,2005,-6.40800000,replication panel
+Philippines,2006,-7.48500000,replication panel
+Philippines,2007,-7.02100000,replication panel
+Philippines,2008,-0.15800000,replication panel
+Philippines,2009,-0.20500000,replication panel
+Philippines,2010,-2.21800000,replication panel
+Philippines,2011,-2.15300000,replication panel
+Philippines,2012,0.25700000,replication panel
+Philippines,2013,-1.82800000,replication panel
+Philippines,2014,-3.56400000,replication panel
+Philippines,2015,-0.61100000,replication panel
+Philippines,2016,-2.31200000,replication panel
+Philippines,2017,0.75400000,replication panel
+Philippines,2018,-0.98300000,replication panel
+Philippines,2019,-0.17400000,replication panel
+Philippines,2020,14.67100000,replication panel
+Philippines,2021,5.36100000,replication panel
+Philippines,2022,0.38400000,replication panel
+Philippines,2023,-0.90500000,replication panel
+Poland,2001,0.76200000,replication panel
+Poland,2002,4.38900000,replication panel
+Poland,2003,4.81100000,replication panel
+Poland,2004,-1.22500000,replication panel
+Poland,2005,1.46200000,replication panel
+Poland,2006,0.62400000,replication panel
+Poland,2007,-2.67000000,replication panel
+Poland,2008,2.13100000,replication panel
+Poland,2009,3.14200000,replication panel
+Poland,2010,4.04700000,replication panel
+Poland,2011,1.03200000,replication panel
+Poland,2012,-0.30800000,replication panel
+Poland,2013,2.38700000,replication panel
+Poland,2014,-5.72900000,replication panel
+Poland,2015,-0.07400000,replication panel
+Poland,2016,3.07300000,replication panel
+Poland,2017,-3.68500000,replication panel
+Poland,2018,-2.21000000,replication panel
+Poland,2019,-3.02300000,replication panel
+Poland,2020,11.37400000,replication panel
+Poland,2021,-3.57100000,replication panel
+Poland,2022,-4.22800000,replication panel
+Poland,2023,0.93200000,replication panel
+Portugal,2001,3.18700000,replication panel
+Portugal,2002,2.66400000,replication panel
+Portugal,2003,3.85300000,replication panel
+Portugal,2004,3.20200000,replication panel
+Portugal,2005,5.15000000,replication panel
+Portugal,2006,1.43000000,replication panel
+Portugal,2007,-0.95100000,replication panel
+Portugal,2008,2.91500000,replication panel
+Portugal,2009,12.15600000,replication panel
+Portugal,2010,12.27600000,replication panel
+Portugal,2011,13.94900000,replication panel
+Portugal,2012,14.58000000,replication panel
+Portugal,2013,2.23700000,replication panel
+Portugal,2014,1.61200000,replication panel
+Portugal,2015,-1.43000000,replication panel
+Portugal,2016,0.15700000,replication panel
+Portugal,2017,-5.15100000,replication panel
+Portugal,2018,-4.91700000,replication panel
+Portugal,2019,-5.00200000,replication panel
+Portugal,2020,17.98600000,replication panel
+Portugal,2021,-10.21800000,replication panel
+Portugal,2022,-12.64600000,replication panel
+Portugal,2023,-13.49900000,replication panel
+South Africa,2001,0.11600000,replication panel
+South Africa,2002,-6.24400000,replication panel
+South Africa,2003,-0.28700000,replication panel
+South Africa,2004,-0.78100000,replication panel
+South Africa,2005,-1.09600000,replication panel
+South Africa,2006,-1.60700000,replication panel
+South Africa,2007,-3.70400000,replication panel
+South Africa,2008,-0.28100000,replication panel
+South Africa,2009,2.95000000,replication panel
+South Africa,2010,4.19000000,replication panel
+South Africa,2011,3.55700000,replication panel
+South Africa,2012,2.66600000,replication panel
+South Africa,2013,2.94800000,replication panel
+South Africa,2014,2.89700000,replication panel
+South Africa,2015,1.94200000,replication panel
+South Africa,2016,1.93900000,replication panel
+South Africa,2017,1.45400000,replication panel
+South Africa,2018,2.94800000,replication panel
+South Africa,2019,4.56500000,replication panel
+South Africa,2020,12.82600000,replication panel
+South Africa,2021,-0.25500000,replication panel
+South Africa,2022,2.16000000,replication panel
+South Africa,2023,2.53100000,replication panel
+South Korea,2001,0.53800000,replication panel
+South Korea,2002,-0.18100000,replication panel
+South Korea,2003,2.65800000,replication panel
+South Korea,2004,2.50100000,replication panel
+South Korea,2005,3.31400000,replication panel
+South Korea,2006,2.12600000,replication panel
+South Korea,2007,-0.69700000,replication panel
+South Korea,2008,-0.49000000,replication panel
+South Korea,2009,2.93500000,replication panel
+South Korea,2010,-0.51600000,replication panel
+South Korea,2011,3.42500000,replication panel
+South Korea,2012,1.83600000,replication panel
+South Korea,2013,2.46800000,replication panel
+South Korea,2014,1.87200000,replication panel
+South Korea,2015,0.96700000,replication panel
+South Korea,2016,0.30100000,replication panel
+South Korea,2017,-1.13300000,replication panel
+South Korea,2018,-0.15700000,replication panel
+South Korea,2019,1.87600000,replication panel
+South Korea,2020,6.18500000,replication panel
+South Korea,2021,2.07300000,replication panel
+South Korea,2022,1.81000000,replication panel
+South Korea,2023,0.89900000,replication panel
+Spain,2001,-3.78900000,replication panel
+Spain,2002,-2.81500000,replication panel
+Spain,2003,-3.55000000,replication panel
+Spain,2004,-2.35400000,replication panel
+Spain,2005,-2.93800000,replication panel
+Spain,2006,-3.37600000,replication panel
+Spain,2007,-3.32100000,replication panel
+Spain,2008,3.91100000,replication panel
+Spain,2009,13.47000000,replication panel
+Spain,2010,7.18700000,replication panel
+Spain,2011,9.26200000,replication panel
+Spain,2012,20.03200000,replication panel
+Spain,2013,10.44000000,replication panel
+Spain,2014,4.41800000,replication panel
+Spain,2015,-1.97600000,replication panel
+Spain,2016,-0.47500000,replication panel
+Spain,2017,-0.82300000,replication panel
+Spain,2018,-1.42600000,replication panel
+Spain,2019,-2.13900000,replication panel
+Spain,2020,21.60000000,replication panel
+Spain,2021,-3.58500000,replication panel
+Spain,2022,-6.19000000,replication panel
+Spain,2023,-4.37000000,replication panel
+Sweden,2001,1.54800000,replication panel
+Sweden,2002,-2.14600000,replication panel
+Sweden,2003,-0.39500000,replication panel
+Sweden,2004,-0.77900000,replication panel
+Sweden,2005,0.23100000,replication panel
+Sweden,2006,-5.05700000,replication panel
+Sweden,2007,-4.64100000,replication panel
+Sweden,2008,-1.24700000,replication panel
+Sweden,2009,3.24000000,replication panel
+Sweden,2010,-2.59900000,replication panel
+Sweden,2011,-0.92300000,replication panel
+Sweden,2012,0.32200000,replication panel
+Sweden,2013,2.78500000,replication panel
+Sweden,2014,4.90900000,replication panel
+Sweden,2015,-1.23000000,replication panel
+Sweden,2016,-1.67000000,replication panel
+Sweden,2017,-1.22800000,replication panel
+Sweden,2018,-1.74800000,replication panel
+Sweden,2019,-4.11600000,replication panel
+Sweden,2020,4.44500000,replication panel
+Sweden,2021,-3.45400000,replication panel
+Sweden,2022,-3.05600000,replication panel
+Sweden,2023,-2.16800000,replication panel
+Taiwan,2001,3.89826800,cleaned/debt_gdp.csv
+Taiwan,2002,-0.34674200,cleaned/debt_gdp.csv
+Taiwan,2003,2.37113900,cleaned/debt_gdp.csv
+Taiwan,2004,1.29579200,cleaned/debt_gdp.csv
+Taiwan,2005,0.62206200,cleaned/debt_gdp.csv
+Taiwan,2006,-0.77084000,cleaned/debt_gdp.csv
+Taiwan,2007,-1.14042900,cleaned/debt_gdp.csv
+Taiwan,2008,1.19663100,cleaned/debt_gdp.csv
+Taiwan,2009,3.35761900,cleaned/debt_gdp.csv
+Taiwan,2010,0.17906800,cleaned/debt_gdp.csv
+Taiwan,2011,1.45276700,cleaned/debt_gdp.csv
+Taiwan,2012,0.86230300,cleaned/debt_gdp.csv
+Taiwan,2013,-0.31018600,cleaned/debt_gdp.csv
+Taiwan,2014,-1.40631400,cleaned/debt_gdp.csv
+Taiwan,2015,-1.54700100,cleaned/debt_gdp.csv
+Taiwan,2016,-0.57751200,cleaned/debt_gdp.csv
+Taiwan,2017,-0.90598300,cleaned/debt_gdp.csv
+Taiwan,2018,-0.62660800,cleaned/debt_gdp.csv
+Taiwan,2019,-1.21934200,cleaned/debt_gdp.csv
+Taiwan,2020,-0.65436000,cleaned/debt_gdp.csv
+Taiwan,2021,-1.87257500,cleaned/debt_gdp.csv
+Taiwan,2022,-0.60354400,cleaned/debt_gdp.csv
+Taiwan,2023,-0.46175200,cleaned/debt_gdp.csv
+Taiwan,2024,-2.23802800,cleaned/debt_gdp.csv
+Taiwan,2025,-3.21347200,cleaned/debt_gdp.csv
+Taiwan,2026,-2.50803400,cleaned/debt_gdp.csv
+Thailand,2001,-0.35700000,replication panel
+Thailand,2002,-2.56700000,replication panel
+Thailand,2003,-7.40100000,replication panel
+Thailand,2004,-1.23500000,replication panel
+Thailand,2005,-0.80400000,replication panel
+Thailand,2006,-6.28500000,replication panel
+Thailand,2007,-3.19200000,replication panel
+Thailand,2008,-1.03800000,replication panel
+Thailand,2009,7.41700000,replication panel
+Thailand,2010,-2.53300000,replication panel
+Thailand,2011,-0.71500000,replication panel
+Thailand,2012,2.81400000,replication panel
+Thailand,2013,0.26000000,replication panel
+Thailand,2014,1.14400000,replication panel
+Thailand,2015,-0.77500000,replication panel
+Thailand,2016,-0.81400000,replication panel
+Thailand,2017,0.03200000,replication panel
+Thailand,2018,0.16400000,replication panel
+Thailand,2019,-0.87800000,replication panel
+Thailand,2020,8.35700000,replication panel
+Thailand,2021,8.93000000,replication panel
+Thailand,2022,2.19700000,replication panel
+Thailand,2023,1.77400000,replication panel
+Tunisia,2001,-10.70431400,cleaned/debt_gdp.csv
+Tunisia,2002,-0.52984800,cleaned/debt_gdp.csv
+Tunisia,2003,0.93111700,cleaned/debt_gdp.csv
+Tunisia,2004,-0.97878700,cleaned/debt_gdp.csv
+Tunisia,2005,-1.60091900,cleaned/debt_gdp.csv
+Tunisia,2006,-4.26147800,cleaned/debt_gdp.csv
+Tunisia,2007,-3.01075800,cleaned/debt_gdp.csv
+Tunisia,2008,-1.34163700,cleaned/debt_gdp.csv
+Tunisia,2009,-1.06325800,cleaned/debt_gdp.csv
+Tunisia,2010,-1.49611100,cleaned/debt_gdp.csv
+Tunisia,2011,4.53254200,cleaned/debt_gdp.csv
+Tunisia,2012,5.70450500,cleaned/debt_gdp.csv
+Tunisia,2013,-3.41249700,cleaned/debt_gdp.csv
+Tunisia,2014,5.10548500,cleaned/debt_gdp.csv
+Tunisia,2015,1.66718700,cleaned/debt_gdp.csv
+Tunisia,2016,6.50741100,cleaned/debt_gdp.csv
+Tunisia,2017,8.19063100,cleaned/debt_gdp.csv
+Tunisia,2018,5.80957800,cleaned/debt_gdp.csv
+Tunisia,2019,-5.61165000,cleaned/debt_gdp.csv
+Tunisia,2020,10.41127700,cleaned/debt_gdp.csv
+Tunisia,2021,2.02044200,cleaned/debt_gdp.csv
+Tunisia,2022,3.25708900,cleaned/debt_gdp.csv
+Tunisia,2023,0.99658300,cleaned/debt_gdp.csv
+Tunisia,2024,1.62851700,cleaned/debt_gdp.csv
+Tunisia,2025,-3.87142100,cleaned/debt_gdp.csv
+Tunisia,2026,4.37989600,cleaned/debt_gdp.csv
+Turkey,2001,24.19100000,replication panel
+Turkey,2002,-4.00300000,replication panel
+Turkey,2003,-6.34600000,replication panel
+Turkey,2004,-8.00200000,replication panel
+Turkey,2005,-6.96200000,replication panel
+Turkey,2006,-5.97100000,replication panel
+Turkey,2007,-6.46600000,replication panel
+Turkey,2008,-0.01100000,replication panel
+Turkey,2009,5.46400000,replication panel
+Turkey,2010,-3.70100000,replication panel
+Turkey,2011,-3.59900000,replication panel
+Turkey,2012,-3.68500000,replication panel
+Turkey,2013,-1.33500000,replication panel
+Turkey,2014,-2.61500000,replication panel
+Turkey,2015,-1.11400000,replication panel
+Turkey,2016,0.58400000,replication panel
+Turkey,2017,0.03000000,replication panel
+Turkey,2018,2.08300000,replication panel
+Turkey,2019,2.53000000,replication panel
+Turkey,2020,7.05600000,replication panel
+Turkey,2021,0.93800000,replication panel
+Turkey,2022,-9.58200000,replication panel
+Turkey,2023,-1.53900000,replication panel
+Ukraine,2001,-7.10000000,replication panel
+Ukraine,2002,-3.11000000,replication panel
+Ukraine,2003,-4.20000000,replication panel
+Ukraine,2004,-4.58200000,replication panel
+Ukraine,2005,-7.05700000,replication panel
+Ukraine,2006,-2.94000000,replication panel
+Ukraine,2007,-2.53400000,replication panel
+Ukraine,2008,8.14600000,replication panel
+Ukraine,2009,15.01200000,replication panel
+Ukraine,2010,5.20100000,replication panel
+Ukraine,2011,-3.75000000,replication panel
+Ukraine,2012,0.66600000,replication panel
+Ukraine,2013,2.97700000,replication panel
+Ukraine,2014,29.79800000,replication panel
+Ukraine,2015,9.01400000,replication panel
+Ukraine,2016,0.18200000,replication panel
+Ukraine,2017,-7.89300000,replication panel
+Ukraine,2018,-11.26700000,replication panel
+Ukraine,2019,-9.90100000,replication panel
+Ukraine,2020,10.05300000,replication panel
+Ukraine,2021,-11.58800000,replication panel
+Ukraine,2022,28.80000000,replication panel
+Ukraine,2023,4.61200000,replication panel
+United States,2002,2.39200000,replication panel
+United States,2003,3.08000000,replication panel
+United States,2004,7.47400000,replication panel
+United States,2005,-0.66900000,replication panel
+United States,2006,-1.26500000,replication panel
+United States,2007,0.39600000,replication panel
+United States,2008,8.85100000,replication panel
+United States,2009,13.19700000,replication panel
+United States,2010,8.56000000,replication panel
+United States,2011,4.33400000,replication panel
+United States,2012,3.56300000,replication panel
+United States,2013,1.27800000,replication panel
+United States,2014,-0.09300000,replication panel
+United States,2015,0.42500000,replication panel
+United States,2016,1.92600000,replication panel
+United States,2017,-1.05200000,replication panel
+United States,2018,1.31300000,replication panel
+United States,2019,1.15600000,replication panel
+United States,2020,23.83500000,replication panel
+United States,2021,-7.31600000,replication panel
+United States,2022,-5.91000000,replication panel
+United States,2023,0.19200000,replication panel
+Vietnam,2001,0.66545700,cleaned/debt_gdp.csv
+Vietnam,2002,2.29115700,cleaned/debt_gdp.csv
+Vietnam,2003,2.12387300,cleaned/debt_gdp.csv
+Vietnam,2004,-0.47253800,cleaned/debt_gdp.csv
+Vietnam,2005,-0.69356200,cleaned/debt_gdp.csv
+Vietnam,2006,1.57912100,cleaned/debt_gdp.csv
+Vietnam,2007,1.96125700,cleaned/debt_gdp.csv
+Vietnam,2008,-1.16422600,cleaned/debt_gdp.csv
+Vietnam,2009,5.12495800,cleaned/debt_gdp.csv
+Vietnam,2010,1.11637800,cleaned/debt_gdp.csv
+Vietnam,2011,-1.10114000,cleaned/debt_gdp.csv
+Vietnam,2012,2.14431400,cleaned/debt_gdp.csv
+Vietnam,2013,3.08309300,cleaned/debt_gdp.csv
+Vietnam,2014,1.98235900,cleaned/debt_gdp.csv
+Vietnam,2015,2.72137900,cleaned/debt_gdp.csv
+Vietnam,2016,1.76362800,cleaned/debt_gdp.csv
+Vietnam,2017,-1.25913600,cleaned/debt_gdp.csv
+Vietnam,2018,-2.82313200,cleaned/debt_gdp.csv
+Vietnam,2019,-2.80466000,cleaned/debt_gdp.csv
+Vietnam,2020,0.32546700,cleaned/debt_gdp.csv
+Vietnam,2021,-2.08162600,cleaned/debt_gdp.csv
+Vietnam,2022,-4.31374200,cleaned/debt_gdp.csv
+Vietnam,2023,-0.64639500,cleaned/debt_gdp.csv
+Vietnam,2024,-3.11139700,cleaned/debt_gdp.csv
+Vietnam,2025,-0.68223300,cleaned/debt_gdp.csv
+Vietnam,2026,-2.20594000,cleaned/debt_gdp.csv
