@@ -208,3 +208,72 @@ Control of corruption                   0.168
 Charts: [output/correlation_quarterly_lead_gpr_reer_and_wgi_emerging.html](../output/correlation_quarterly_lead_gpr_reer_and_wgi_emerging.html)
 
 
+
+Use the regression format to check the correlation found above:
+The LHS for regression is y
+The RHS regresssor is x
+where x and y are defined below:
+For quarter t, x is the average of the three monthly gpr_z values. y is the sum of the three monthly d_log_reer values in quarter t+1, the change in log REER over the next quarter.
+on the RHS, also add an interaction term between x and country-specific average WGI.
+
+Quarterly lead regression, emerging economies
+
+\[
+\Delta\log REER_{i,t+1}
+= \alpha_i + \beta_1 GPR^z_{i,t}
++ \beta_2\left(GPR^z_{i,t} \times \overline{WGI}_i\right)
++ \varepsilon_{i,t}.
+\]
+
+The source is `cleaned/data_for_quarter_model.csv`. The outcome is the stored `d_log_reer` in the following calendar quarter, and GPR is the stored quarterly `gpr_z` in quarter \(t\). Each country's WGI average is the same average used in the scatterplots above: the mean of its available annual scores in 2000–2023, excluding the missing year 2001. Each average uses 23 years. One regression is estimated for each WGI measure.
+
+The sample is the 15 emerging economies above, with 95 pairs per country. GPR quarters run from 2000Q1 through 2023Q3 and outcome quarters from 2000Q2 through 2023Q4. Observations in 2001 are included because the WGI regressor uses the country average, not that year's WGI score.
+
+Each regression includes country fixed effects and no additional controls. The standalone WGI average is omitted because it is constant within country and absorbed by the fixed effects. The GPR coefficient is the association at an average WGI of zero; the interaction coefficient describes how the GPR slope varies with average WGI. The product is not centered or standardized.
+
+Parentheses contain country-clustered standard errors, with the correction \(G/(G-1)\times(N-1)/(N-k)\), where \(k\) includes the country fixed effects and the two slopes. Clustered interaction \(p\)-values use a two-sided \(t\) distribution with 14 degrees of freedom. Within \(R^2\) is computed after removing country means.
+
+| WGI measure | GPR (clustered SE) | GPR × average WGI (clustered SE) | Interaction p-value, clustered | Observations | Countries | Within \(R^2\) |
+| --- | ---: | ---: | ---: | ---: | ---: | ---: |
+| Voice and accountability | -0.000252 (0.001795) | 0.003026 (0.001868) | 0.128 | 1,425 | 15 | 0.0011 |
+| Political stability | 0.000770 (0.001535) | 0.002158 (0.002146) | 0.332 | 1,425 | 15 | 0.0006 |
+| Government effectiveness | -0.000466 (0.002060) | 0.002155 (0.002839) | 0.461 | 1,425 | 15 | 0.0002 |
+| Regulatory quality | -0.000685 (0.002074) | 0.002642 (0.002668) | 0.339 | 1,425 | 15 | 0.0004 |
+| Rule of law | 0.000203 (0.001689) | 0.002265 (0.002768) | 0.427 | 1,425 | 15 | 0.0004 |
+| Control of corruption | 0.000235 (0.001769) | 0.002040 (0.002473) | 0.423 | 1,425 | 15 | 0.0004 |
+
+All six interaction estimates are positive, but none has \(p<0.10\). They describe associations, not causal effects; the full-period WGI average includes years after some observations. These interaction coefficients are not the cross-country Pearson correlations reported above: they measure variation in the pooled within-country GPR slope, rather than correlation between each country's Pearson coefficient and its average WGI.
+
+Interactive results: [output/quarterly_gpr_reer_correlations_dashboard.html](../output/quarterly_gpr_reer_correlations_dashboard.html); select next-quarter timing.
+
+Two-stage standardized regression
+
+For each country, use the same 95 quarterly pairs as the lead correlation table, with \(x_{it}=GPR^z_{it}\) and \(y_{it}=\Delta\log REER_{i,t+1}\). Standardize each variable over those paired quarters:
+
+\[
+x^*_{it}=\frac{x_{it}-\bar{x}_i}{s_{x,i}},\qquad
+y^*_{it}=\frac{y_{it}-\bar{y}_i}{s_{y,i}},
+\]
+
+where each \(s\) is the sample standard deviation, whose variance uses divisor 94. Estimate a separate regression for each country:
+
+\[
+y^*_{it}=a_i+b_i x^*_{it}+u_{it}.
+\]
+
+Each estimated slope \(\hat b_i\) equals that country's Pearson correlation in the quarterly lead table above. Across the 15 countries, standardize the unrounded \(\hat b_i\) and each country-average WGI using their cross-country means and sample standard deviations, then estimate separately for each WGI measure:
+
+\[
+\hat b_i^*=a+\gamma\,\overline{WGI}_i^*+v_i.
+\]
+
+The estimated \(\gamma\) equals the cross-country Pearson correlation in the WGI table above. Two-sided \(p\)-values use conventional OLS inference with 13 degrees of freedom and treat the estimated country correlations as observed outcomes.
+
+| WGI measure | \(\hat\gamma\) | p-value | Countries |
+| --- | ---: | ---: | ---: |
+| Voice and accountability | 0.434 | 0.106 | 15 |
+| Political stability | 0.252 | 0.365 | 15 |
+| Government effectiveness | 0.082 | 0.772 | 15 |
+| Regulatory quality | 0.220 | 0.431 | 15 |
+| Rule of law | 0.216 | 0.439 | 15 |
+| Control of corruption | 0.168 | 0.550 | 15 |
