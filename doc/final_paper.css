@@ -1,0 +1,163 @@
+html,
+body {
+  background: #fff !important;
+  color: #000 !important;
+}
+
+body {
+  font-family: "Latin Modern Roman", "Computer Modern", "Times New Roman", serif;
+  font-size: 10pt;
+  line-height: 1.2;
+}
+
+#quarto-content {
+  display: block;
+}
+
+#quarto-document-content {
+  box-sizing: border-box;
+  width: 8.5in;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 1.2in;
+  color: #000;
+}
+
+#title-block-header .title {
+  margin: 0 0 1em;
+  text-align: center;
+  font-size: 17.28pt;
+  font-weight: normal;
+  line-height: 1.2;
+}
+
+#title-block-header.quarto-title-block.default .quarto-title-meta {
+  display: block;
+  margin: 0 0 2em;
+  text-align: center;
+}
+
+#title-block-header .quarto-title-meta-heading {
+  display: none;
+}
+
+#title-block-header .quarto-title-meta p {
+  margin: 0.5em 0;
+  text-indent: 0;
+}
+
+#title-block-header .abstract {
+  margin: 0 0.5in 2em;
+  font-size: 9pt;
+}
+
+#title-block-header .abstract .block-title {
+  margin-bottom: 0.6em;
+  text-align: center;
+  font-weight: bold;
+}
+
+#title-block-header .abstract p {
+  margin: 0;
+  text-indent: 0;
+}
+
+#quarto-document-content h1,
+#quarto-document-content h2 {
+  color: #000;
+  border: 0;
+  font-family: inherit;
+  font-weight: bold;
+}
+
+#quarto-document-content section h1 {
+  margin: 1.4em 0 0.8em;
+  font-size: 14.4pt;
+}
+
+#quarto-document-content section h2 {
+  margin: 1.2em 0 0.6em;
+  font-size: 12pt;
+}
+
+#quarto-document-content section p {
+  margin: 0;
+  text-align: justify;
+  text-indent: 1.5em;
+}
+
+#quarto-document-content section h1 + p,
+#quarto-document-content section h2 + p,
+#quarto-document-content section p:has(.math.display) {
+  text-indent: 0;
+}
+
+#quarto-document-content mjx-container[display="true"] {
+  max-width: 100%;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+#quarto-document-content a {
+  color: #000;
+}
+
+#quarto-document-content table {
+  width: 100%;
+  margin: 0 auto;
+  color: #000;
+  font-size: 10pt;
+}
+
+#quarto-document-content table th,
+#quarto-document-content table td {
+  padding: 0.25em 0.5em;
+  vertical-align: top;
+}
+
+.quarto-float-caption,
+.channels-figure figcaption {
+  color: #000;
+  text-align: center;
+  font-size: 10pt;
+}
+
+.channels-figure {
+  margin: 1.5em 0;
+  text-align: center;
+}
+
+.channel-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6em;
+  margin: 0 0 1em;
+}
+
+.channel-box {
+  box-sizing: border-box;
+  display: flex;
+  min-height: 4em;
+  max-width: 12em;
+  flex: 1 1 0;
+  align-items: center;
+  justify-content: center;
+  padding: 0.35em;
+  border: 1px solid #000;
+}
+
+.channel-arrow {
+  flex: 0 0 auto;
+}
+
+@media (max-width: 600px) {
+  #quarto-document-content {
+    padding: 1.5em;
+  }
+
+  #title-block-header .abstract {
+    margin-right: 1em;
+    margin-left: 1em;
+  }
+}
