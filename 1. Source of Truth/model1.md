@@ -645,3 +645,27 @@ This year's `public_debt_gdp` level minus last year's level.
 | Years | 2002 to 2021 | 2002 to 2021 | 2002 to 2021 | 2002 to 2021 | 2002 to 2021 | 2002 to 2021 |
 | Within \(R^2\) | 0.3205 | 0.2937 | 0.2972 | 0.2889 | 0.3056 | 0.2788 |
 | \(R^2\) | 0.3532 | 0.3277 | 0.3310 | 0.3231 | 0.3391 | 0.3135 |
+
+
+### Debt/GDP, annual percentage change
+
+\[
+100 \times \frac{\text{public\_debt\_gdp}_{it}-\text{public\_debt\_gdp}_{i,t-1}}{\text{public\_debt\_gdp}_{i,t-1}}
+\]
+
+GPR, WGI, and the interaction are the year-\(t\) values. \(\overline{GPR}^{z}_{it}\) is the mean of the twelve monthly `gpr_z` values. WGI is that year's score. Their product is not centered. The only previous-year value is last year's debt level, the base of the percentage change. A year stays in when that base is negative, and stays out when the base is missing or zero. In this file every emerging debt ratio is positive. Country fixed effects and country-clustered standard errors match the annual tables above. The regression is `output/run_model1_annual_debt_pct.py`. Results are `output/model1_annual_emerging_debt_pct_results.csv`.
+
+300 country-years, 15 emerging economies, 2002–2021. Each country contributes every year in that window, including Ukraine. Parentheses are country-clustered standard errors. \(p<0.01\), \(p<0.05\), \(p<0.10\).
+
+|  | Voice and accountability | Political stability | Government effectiveness | Regulatory quality | Rule of law | Control of corruption |
+| --- | ---: | ---: | ---: | ---: | ---: | ---: |
+| WGI | −2.283752 (5.474548) | 1.527493 (2.882755) | 10.519630** (3.914050) | −5.300214 (6.984104) | −5.982334 (7.185872) | 1.228869 (5.487676) |
+| GPR, standardized | −2.523078 (1.904430) | −6.156580*** (1.295931) | 0.010666 (1.861425) | −0.781504 (2.456552) | −3.772059** (1.277457) | −3.179165** (1.317486) |
+| WGI x GPR | −5.159175** (2.055281) | −5.970064*** (1.654616) | −10.095812** (3.418075) | −6.949179* (3.392825) | −6.156354** (2.818176) | −4.998132 (3.526474) |
+| Observations | 300 | 300 | 300 | 300 | 300 | 300 |
+| Countries | 15 | 15 | 15 | 15 | 15 | 15 |
+| Years | 2002 to 2021 | 2002 to 2021 | 2002 to 2021 | 2002 to 2021 | 2002 to 2021 | 2002 to 2021 |
+| Within \(R^2\) | 0.0276 | 0.0384 | 0.0672 | 0.0329 | 0.0323 | 0.0191 |
+| \(R^2\) | 0.0678 | 0.0782 | 0.1058 | 0.0729 | 0.0724 | 0.0598 |
+
+Countries: Brazil, Chile, China, Colombia, Hungary, India, Indonesia, Malaysia, Mexico, Philippines, Poland, South Africa, Thailand, Turkiye, and Ukraine.
