@@ -1,0 +1,43 @@
+check,compared,matches,mismatches,left_only,right_only,max_abs_difference,notes
+quarterly_panel_vs_cleaned_gpr,1056,1056,0,1728,0,1.1102230246251565e-16,Left: panel; right: separately sourced cleaned data. Match tolerance: abs 1e-6 or relative 1e-8; different sources may legitimately differ.
+quarterly_panel_vs_cleaned_reer,960,960,0,1824,0,0.0,Left: panel; right: separately sourced cleaned data. Match tolerance: abs 1e-6 or relative 1e-8; different sources may legitimately differ.
+quarterly_panel_vs_cleaned_policy_rate,741,670,71,1877,96,0.33333333333333304,Left: panel; right: separately sourced cleaned data. Match tolerance: abs 1e-6 or relative 1e-8; different sources may legitimately differ.
+quarterly_panel_vs_cleaned_inflation,976,0,976,1808,0,131.13774988415412,Left: panel; right: separately sourced cleaned data. Match tolerance: abs 1e-6 or relative 1e-8; different sources may legitimately differ.
+quarterly_panel_vs_cleaned_oil_price,2784,1247,1537,0,0,0.44333333333332803,Left: panel; right: separately sourced cleaned data. Match tolerance: abs 1e-6 or relative 1e-8; different sources may legitimately differ.
+quarterly_panel_vs_cleaned_vix,2784,0,2784,0,0,7.061094022936125,Left: panel; right: separately sourced cleaned data. Match tolerance: abs 1e-6 or relative 1e-8; different sources may legitimately differ.
+quarterly_panel_vs_cleaned_gepu,2784,2784,0,0,0,2.842170943040401e-14,Left: panel; right: separately sourced cleaned data. Match tolerance: abs 1e-6 or relative 1e-8; different sources may legitimately differ.
+quarterly_panel_vs_cleaned_public_debt_gdp,1008,4,1004,1772,0,3.518118000000001,Left: panel; right: separately sourced cleaned data. Match tolerance: abs 1e-6 or relative 1e-8; different sources may legitimately differ.
+quarterly_panel_vs_cleaned_wgi_va,2668,2668,0,0,0,0.0,Left: panel; right: separately sourced cleaned data. Match tolerance: abs 1e-6 or relative 1e-8; different sources may legitimately differ.
+quarterly_panel_vs_cleaned_wgi_pv,2668,2668,0,0,0,0.0,Left: panel; right: separately sourced cleaned data. Match tolerance: abs 1e-6 or relative 1e-8; different sources may legitimately differ.
+quarterly_panel_vs_cleaned_wgi_ge,2668,2668,0,0,0,0.0,Left: panel; right: separately sourced cleaned data. Match tolerance: abs 1e-6 or relative 1e-8; different sources may legitimately differ.
+quarterly_panel_vs_cleaned_wgi_rq,2668,2668,0,0,0,0.0,Left: panel; right: separately sourced cleaned data. Match tolerance: abs 1e-6 or relative 1e-8; different sources may legitimately differ.
+quarterly_panel_vs_cleaned_wgi_rl,2668,2668,0,0,0,0.0,Left: panel; right: separately sourced cleaned data. Match tolerance: abs 1e-6 or relative 1e-8; different sources may legitimately differ.
+quarterly_panel_vs_cleaned_wgi_cc,2668,2668,0,0,0,0.0,Left: panel; right: separately sourced cleaned data. Match tolerance: abs 1e-6 or relative 1e-8; different sources may legitimately differ.
+quarterly_panel_vs_cleaned_d_log_reer,950,950,0,1805,0,1.3823632249304607e-08,Left: panel; right: separately sourced cleaned data. Match tolerance: abs 1e-6 or relative 1e-8; different sources may legitimately differ.
+quarterly_panel_vs_cleaned_d_policy_rate,733,666,67,1860,98,0.5,Left: panel; right: separately sourced cleaned data. Match tolerance: abs 1e-6 or relative 1e-8; different sources may legitimately differ.
+quarterly_panel_vs_cleaned_d_inflation,965,0,965,1790,5,110.23808636999999,Left: panel; right: separately sourced cleaned data. Match tolerance: abs 1e-6 or relative 1e-8; different sources may legitimately differ.
+quarterly_panel_vs_cleaned_d_log_oil,2755,1189,1566,0,0,0.012288943090404646,Left: panel; right: separately sourced cleaned data. Match tolerance: abs 1e-6 or relative 1e-8; different sources may legitimately differ.
+quarterly_panel_vs_cleaned_d_log_gepu,2755,2755,0,0,29,1.1480950190545514e-08,Left: panel; right: separately sourced cleaned data. Match tolerance: abs 1e-6 or relative 1e-8; different sources may legitimately differ.
+quarterly_panel_vs_cleaned_d_public_debt_gdp,964,4,960,1700,0,1.5290810000000086,Left: panel; right: separately sourced cleaned data. Match tolerance: abs 1e-6 or relative 1e-8; different sources may legitimately differ.
+quarterly_panel_vs_cleaned_d_wgi_va,2436,2436,0,0,0,2.220446049250313e-16,Left: panel; right: separately sourced cleaned data. Match tolerance: abs 1e-6 or relative 1e-8; different sources may legitimately differ.
+quarterly_panel_vs_cleaned_d_wgi_pv,2436,2436,0,0,0,2.498001805406602e-16,Left: panel; right: separately sourced cleaned data. Match tolerance: abs 1e-6 or relative 1e-8; different sources may legitimately differ.
+quarterly_panel_vs_cleaned_d_wgi_ge,2436,2436,0,0,0,3.608224830031759e-16,Left: panel; right: separately sourced cleaned data. Match tolerance: abs 1e-6 or relative 1e-8; different sources may legitimately differ.
+quarterly_panel_vs_cleaned_d_wgi_rq,2436,2436,0,0,0,3.452099717193846e-16,Left: panel; right: separately sourced cleaned data. Match tolerance: abs 1e-6 or relative 1e-8; different sources may legitimately differ.
+quarterly_panel_vs_cleaned_d_wgi_rl,2436,2436,0,0,0,4.2327252813834093e-16,Left: panel; right: separately sourced cleaned data. Match tolerance: abs 1e-6 or relative 1e-8; different sources may legitimately differ.
+quarterly_panel_vs_cleaned_d_wgi_cc,2436,2436,0,0,0,3.8163916471489756e-16,Left: panel; right: separately sourced cleaned data. Match tolerance: abs 1e-6 or relative 1e-8; different sources may legitimately differ.
+quarterly_panel_vs_cleaned_ln_vix,2784,0,2784,0,0,0.3134352713408468,Left: panel; right: separately sourced cleaned data. Match tolerance: abs 1e-6 or relative 1e-8; different sources may legitimately differ.
+financial_development_not_comparable,,,,,,,Panel IMF financial-development index and cleaned fd_fdi_ovrl are different indicators; not substituted or compared.
+monthly_panel_recomputed_d_log_reer,8323,8323,0,0,0,4.999984967724025e-09,Left: stored monthly change; right: recomputed from consecutive panel months; includes missingness counts.
+monthly_panel_recomputed_d_policy_rate,7833,7833,0,0,0,1.7763568394002505e-15,Left: stored monthly change; right: recomputed from consecutive panel months; includes missingness counts.
+monthly_panel_recomputed_d_inflation,8323,8323,0,0,0,4.9981997429782155e-09,Left: stored monthly change; right: recomputed from consecutive panel months; includes missingness counts.
+monthly_panel_recomputed_d_log_oil,8323,8323,0,0,0,4.968415678874294e-09,Left: stored monthly change; right: recomputed from consecutive panel months; includes missingness counts.
+monthly_panel_recomputed_d_log_gepu,8323,8323,0,0,0,4.9816717279105305e-09,Left: stored monthly change; right: recomputed from consecutive panel months; includes missingness counts.
+monthly_panel_recomputed_gpr_z,8352,8352,0,0,0,4.999602953859039e-09,Stored z-score versus country mean and sample SD over available 2000–2023 monthly GPR.
+annual_panel_recomputed_d_financial_development,609,609,0,0,0,4.998131020172991e-09,Left: stored annual change in January; right: panel annual value minus previous calendar year.
+annual_panel_recomputed_d_public_debt_gdp,666,666,0,0,0,4.1744385725905886e-14,Left: stored annual change in January; right: panel annual value minus previous calendar year.
+annual_panel_recomputed_d_wgi_va,609,609,0,0,0,2.220446049250313e-16,Left: stored annual change in January; right: panel annual value minus previous calendar year.
+annual_panel_recomputed_d_wgi_pv,609,609,0,0,0,2.498001805406602e-16,Left: stored annual change in January; right: panel annual value minus previous calendar year.
+annual_panel_recomputed_d_wgi_ge,609,609,0,0,0,3.608224830031759e-16,Left: stored annual change in January; right: panel annual value minus previous calendar year.
+annual_panel_recomputed_d_wgi_rq,609,609,0,0,0,3.452099717193846e-16,Left: stored annual change in January; right: panel annual value minus previous calendar year.
+annual_panel_recomputed_d_wgi_rl,609,609,0,0,0,4.2327252813834093e-16,Left: stored annual change in January; right: panel annual value minus previous calendar year.
+annual_panel_recomputed_d_wgi_cc,609,609,0,0,0,3.8163916471489756e-16,Left: stored annual change in January; right: panel annual value minus previous calendar year.
