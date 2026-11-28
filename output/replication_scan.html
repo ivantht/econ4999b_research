@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Replication audit: Table 2 column 1</title>
+<style>
+:root { --ink:#1c2530; --muted:#5b6b7b; --line:#d3dde5; --pale:#f6f9fb; --orange:#c2571f; }
+body { font: 16px/1.55 Georgia, "Times New Roman", serif; color: var(--ink);
+  max-width: 1120px; margin: 2.5em auto; padding: 0 1.2em; }
+h1 { font-size: 1.55em; margin: 0 0 .2em; line-height: 1.25; }
+h2 { font-size: 1.1em; margin: 2em 0 .5em; padding-bottom: .3em;
+  border-bottom: 2px solid var(--line); }
+.sub { color: var(--muted); margin: 0 0 1.5em; }
+.note { background: var(--pale); border-left: 4px solid var(--orange);
+  padding: .9em 1.1em; margin: 1.2em 0; font-size: .93em; }
+.note p { margin: .35em 0; }
+table { border-collapse: collapse; width: 100%; margin: .8em 0 1.2em; font-size: .84em; }
+th, td { border-bottom: 1px solid var(--line); padding: .45em .5em; text-align: right;
+  vertical-align: top; font-variant-numeric: tabular-nums; }
+thead th { background: var(--pale); text-align: center; font-size: .95em; line-height: 1.3; }
+tbody th { text-align: left; font-weight: normal; width: 20em; }
+td.pos { color: #1f5c8a; font-weight: 700; }
+td.neg { color: #b04a1c; font-weight: 700; }
+td .se { display: block; font-weight: 400; color: var(--muted); font-size: .92em; }
+tr.paper td, tr.paper th { background: #fff5da; }
+.verdict { background: #fdf1ec; border-left: 4px solid var(--orange);
+  padding: 1em 1.2em; margin: 1.4em 0; }
+.verdict p { margin: .4em 0; }
+code { font-size: .92em; background: var(--pale); padding: .05em .3em; }
+ul { margin: .5em 0; } li { margin: .4em 0; }
+</style>
+</head>
+<body>
+<h1>Replication audit: capital-flow volatility on GPR</h1>
+<p class="sub">Paper Table 2, column 1, estimated on
+<code>cleaned/replication_cleaned/country_month.csv</code></p>
+
+<div class="note">
+<p><strong>Target.</strong> The paper reports a GPR coefficient of
++0.867 (0.382), significant at 5 percent, with
+N = 4,779 and R-squared = 0.058.</p>
+<p><strong>Specification held fixed.</strong> Equation (2): the outcome on
+standardized GPR plus the nine controls, every control lagged one month, country
+fixed effects, and standard errors clustered by country.</p>
+<p><strong>What varies.</strong> Only the three choices below: how the outcome is
+built, how GPR is standardized, and whether fixed effects are included.</p>
+</div>
+
+<h2>1. How the outcome is built</h2>
+<p>The panel stores capital-flow volatility as the standard deviation of
+portfolio inflows over the current and two prior months, requiring three observed
+months. Inflows are blank in 1,813 of 8,352 rows, and 17 of 29 countries have at
+least one gap. The paper's Table 1 reports a minimum of exactly zero, which no
+observed inflow series produces, so it likely fills gaps with zero.</p>
+<table>
+<thead><tr>
+<th></th><th>Values</th><th>Mean</th><th>SD</th><th>Min</th><th>Max</th>
+<th>Est. N</th><th>R&sup2;</th><th>Within R&sup2;</th><th>GPR coefficient</th>
+</tr></thead>
+<tbody><tr><th>Three observed months (the stored column)</th><td>6,505</td><td>8.85</td><td>21.51</td><td>0.003</td><td>412.4</td><td>4,720</td><td>0.544</td><td>0.0949</td><td class="neg">-0.467<span class="se">(0.388)</span><span class="se">p = 0.241</span></td></tr><tr><th>Missing inflow as zero, ddof = 1</th><td>8,352</td><td>6.91</td><td>19.34</td><td>0.000</td><td>412.4</td><td>6,031</td><td>0.546</td><td>0.1063</td><td class="neg">-0.359<span class="se">(0.374)</span><span class="se">p = 0.347</span></td></tr><tr><th>Missing inflow as zero, ddof = 0</th><td>8,352</td><td>5.64</td><td>15.79</td><td>0.000</td><td>336.7</td><td>6,031</td><td>0.546</td><td>0.1063</td><td class="neg">-0.293<span class="se">(0.305)</span><span class="se">p = 0.347</span></td></tr><tr><th>At least two observed months</th><td>6,511</td><td>8.85</td><td>21.51</td><td>0.003</td><td>412.4</td><td>4,734</td><td>0.544</td><td>0.0945</td><td class="neg">-0.461<span class="se">(0.387)</span><span class="se">p = 0.245</span></td></tr><tr class='paper'><th>Paper, Table 2 column 1</th><td>&mdash;</td><td>7.22</td><td>19.62</td><td>0.000</td><td>528.4</td><td>4,779</td><td>&mdash;</td><td>0.058</td><td class="pos">+0.867**<span class="se">(0.382)</span></td></tr></tbody>
+</table>
+<p class="sub">GPR by country and country fixed effects in every row above.</p>
+
+<h2>2. Standardization and fixed effects</h2>
+<p>The paper says GPR is "standardized by country". Standardizing within country
+sets each country's mean to zero, so adding country fixed effects on top removes
+almost nothing further. That makes these four cells close to only two distinct
+estimates, and it is why the sign does not respond to the fixed-effect choice on
+its own.</p>
+<table>
+<thead><tr>
+<th></th><th>Est. N</th><th>Countries</th><th>R&sup2;</th><th>Within R&sup2;</th>
+<th>GPR coefficient</th>
+</tr></thead>
+<tbody><tr><th>GPR By country + country FE</th><td>4,720</td><td>24</td><td>0.544</td><td>0.095</td><td class="neg">-0.467<span class="se">(0.388)</span><span class="se">p = 0.241</span></td></tr><tr><th>GPR By country + no FE</th><td>4,720</td><td>24</td><td>0.258</td><td>0.095</td><td class="neg">-0.496<span class="se">(0.489)</span><span class="se">p = 0.321</span></td></tr><tr><th>GPR Pooled + country FE</th><td>4,720</td><td>24</td><td>0.550</td><td>0.108</td><td class="neg">-2.601***<span class="se">(0.256)</span><span class="se">p = 0.000</span></td></tr><tr><th>GPR Pooled + no FE</th><td>4,720</td><td>24</td><td>0.366</td><td>0.108</td><td class="pos">+5.938***<span class="se">(0.650)</span><span class="se">p = 0.000</span></td></tr></tbody>
+</table>
+
+<h2>3. Window</h2>
+<p>Narrowing the window is the only lever left that changes the sample without
+changing the specification. None of these windows reaches the paper's
+N = 4,779.</p>
+<table>
+<thead><tr><th></th><th>Est. N</th><th>Countries</th><th>GPR coefficient</th></tr></thead>
+<tbody><tr><th>2000 to 2023</th><td>4,720</td><td>24</td><td class="neg">-0.467<span class="se">(0.388)</span><span class="se">p = 0.241</span></td></tr><tr><th>2002 to 2023</th><td>4,508</td><td>24</td><td class="neg">-0.685<span class="se">(0.553)</span><span class="se">p = 0.228</span></td></tr><tr><th>2000 to 2021</th><td>4,700</td><td>24</td><td class="neg">-0.407<span class="se">(0.319)</span><span class="se">p = 0.215</span></td></tr><tr><th>2000 to 2019</th><td>4,155</td><td>24</td><td class="neg">-0.183<span class="se">(0.195)</span><span class="se">p = 0.357</span></td></tr></tbody>
+</table>
+
+<h2>4. Countries the baseline cannot use</h2>
+<p>Five emerging economies contribute no observations at all, because their
+industrial production series is empty in this panel. The paper's baseline is
+stated over 29 countries, but this panel supports at most 24.</p>
+<table>
+<thead><tr><th>Country</th><th>Observations in the estimation sample</th></tr></thead>
+<tbody><tr><th>Indonesia</th><td>0</td></tr><tr><th>Philippines</th><td>0</td></tr><tr><th>South Africa</th><td>0</td></tr><tr><th>Thailand</th><td>0</td></tr><tr><th>Ukraine</th><td>0</td></tr></tbody>
+</table>
+
+<h2>Verdict</h2>
+<div class="verdict">
+<p><strong>The GPR coefficient is negative in 11 of 12
+specifications.</strong> The only positive cells are: GPR Pooled + no FE.</p>
+<p>The sign is therefore not a matter of the outcome's construction, the
+standardization choice, the window, or the fixed-effect choice taken
+individually. It turns positive only when GPR is pooled-standardized and country
+fixed effects are dropped at the same time, which sets aside two parts of the
+paper's stated method.</p>
+<p>That cell is also the wrong comparison for a different reason: with no fixed
+effects, the coefficient is identified off cross-country differences in GPR
+levels, which is precisely the variation that fixed effects exist to remove.</p>
+</div>
+
+<p class="sub">Generated by <code>output/run_replication_scan.py</code>. Numbers in
+<code>output/replication_scan.csv</code>. *** p&lt;0.01, ** p&lt;0.05, * p&lt;0.10.</p>
+</body>
+</html>

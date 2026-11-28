@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>GPR z-score and capital-flow volatility: emerging economies</title>
+<style>
+  :root { --ink:#16181d; --muted:#6b7280; --line:#e3e6ea; --pos:#2f6fb5; --neg:#c2410c; }
+  body { font-family:"Segoe UI",-apple-system,BlinkMacSystemFont,sans-serif;
+          margin:38px auto 70px; max-width:900px; padding:0 26px;
+          color:var(--ink); background:#fff; line-height:1.58; }
+  h1 { font-size:21px; font-weight:650; margin:0 0 5px; letter-spacing:-.01em; }
+  h2 { font-size:15px; font-weight:650; margin:32px 0 6px; }
+  .sub { color:var(--muted); font-size:13px; margin:0 0 16px; }
+  p { margin:0 0 11px; font-size:14px; max-width:820px; }
+  .note { background:#fbfcfd; border-left:3px solid #94a3b8; padding:12px 15px;
+           font-size:13px; color:#374151; margin:18px 0; max-width:820px; }
+  .note b { color:var(--ink); }
+  .warn { background:#fffbf3; border-left:3px solid #b45309; padding:12px 15px;
+           font-size:13px; color:#4a3a1e; margin:18px 0; max-width:820px; }
+  .warn b { color:var(--ink); }
+  .wrap { border:1px solid var(--line); border-radius:6px; background:#fff;
+           max-width:900px; overflow-x:auto; }
+  .wrap svg { display:block; }
+  table { width:100%; border-collapse:collapse; margin:10px 0 6px; font-size:13px; max-width:560px; }
+  thead th { text-align:left; font-weight:640; font-size:11px; letter-spacing:.04em;
+              text-transform:uppercase; color:var(--muted);
+              border-bottom:1.5px solid var(--ink); padding:7px 9px; }
+  tbody td { padding:5px 9px; border-bottom:1px solid var(--line); }
+  tbody tr:hover { background:#fbfcfd; }
+  .num { text-align:right; font-variant-numeric:tabular-nums; }
+  .strong { font-weight:620; }
+  .sig { color:var(--neg); }
+  .kpi { display:flex; gap:30px; margin:18px 0 4px; flex-wrap:wrap; }
+  .kpi div span { display:block; font-size:11px; color:var(--muted);
+                   text-transform:uppercase; letter-spacing:.05em; }
+  .big { font-size:26px; font-weight:620; letter-spacing:-.02em; }
+  footer { margin-top:34px; padding-top:14px; border-top:1px solid var(--line);
+            font-size:12px; color:var(--muted); max-width:820px; }
+  code { font-size:12px; background:#f3f4f6; padding:1px 5px; border-radius:3px; }
+  pre { background:#f8f9fb; border:1px solid var(--line); border-radius:5px;
+         padding:12px 14px; font-size:12px; overflow-x:auto; max-width:560px; }
+</style>
+</head>
+<body>
+
+<h1>GPR and capital-flow volatility: emerging economies</h1>
+<p class="sub">Pearson correlation per country &middot; monthly &middot; January 2000 &ndash; December 2023
+&middot; 13 emerging markets, excluding China and Hungary</p>
+
+<div class="note">
+<b>x is <code>gpr_z</code>, y is <code>capital_flow_volatility</code>, both current month.</b>
+Because <code>gpr_z</code> is built as (gpr &minus; country mean) / country standard deviation,
+it is a strictly increasing linear transform of <code>gpr</code> <i>within</i> each country.
+Pearson correlation is invariant to such transforms, so every number below is numerically
+identical to the one obtained from raw <code>gpr</code>. The standardization only changes how
+values are interpreted, not the correlation.
+</div>
+
+<div class="warn">
+<b>China and Hungary are excluded, and that single change flips the headline result.</b>
+In the 15-country sample those two countries carry the largest correlations (+0.410 and +0.342)
+and together account for the entire pooled positive association. Removing them takes the pooled
+r from +0.135 to -0.011 and the country-mean r from +0.026 to -0.028. The
+15-country table was therefore not robust: two observations out of fifteen were driving it.
+</div>
+
+<div class="kpi">
+  <div><span>Countries</span><div class="big">13</div></div>
+  <div><span>Observations</span><div class="big">2,849</div></div>
+  <div><span>Mean r</span><div class="big">-0.028</div></div>
+  <div><span>Median r</span><div class="big">-0.006</div></div>
+  <div><span>Significant (5%)</span><div class="big">3/13</div></div>
+</div>
+
+<div class="wrap">
+<svg xmlns="http://www.w3.org/2000/svg" width="880" height="520" viewBox="0 0 880 520" font-family="Segoe UI, Helvetica, Arial, sans-serif">
+<rect width="880" height="520" fill="#ffffff"/>
+<line x1="176.3" y1="64" x2="176.3" y2="438" stroke="#dfe3e8" stroke-width="1" stroke-dasharray="2 3"/>
+<text x="176.3" y="455" font-size="10.5" fill="#6b7280" text-anchor="middle">-0.4</text>
+<line x1="321.7" y1="64" x2="321.7" y2="438" stroke="#dfe3e8" stroke-width="1" stroke-dasharray="2 3"/>
+<text x="321.7" y="455" font-size="10.5" fill="#6b7280" text-anchor="middle">-0.2</text>
+<line x1="467.0" y1="64" x2="467.0" y2="438" stroke="#dfe3e8" stroke-width="1"/>
+<text x="467.0" y="455" font-size="10.5" fill="#6b7280" text-anchor="middle">0.0</text>
+<line x1="612.3" y1="64" x2="612.3" y2="438" stroke="#dfe3e8" stroke-width="1" stroke-dasharray="2 3"/>
+<text x="612.3" y="455" font-size="10.5" fill="#6b7280" text-anchor="middle">+0.2</text>
+<line x1="757.7" y1="64" x2="757.7" y2="438" stroke="#dfe3e8" stroke-width="1" stroke-dasharray="2 3"/>
+<text x="757.7" y="455" font-size="10.5" fill="#6b7280" text-anchor="middle">+0.4</text>
+<rect x="467.0" y="69.9" width="94.2" height="17.0" fill="#2f6fb5" fill-opacity="0.92" rx="1.5"/>
+<text x="130" y="82.4" font-size="11" fill="#16181d" text-anchor="end">Brazil</text>
+<text x="806.0" y="81.9" font-size="10" fill="#374151" text-anchor="start" font-weight="600">+0.130*</text>
+<rect x="467.0" y="98.7" width="59.8" height="17.0" fill="#2f6fb5" fill-opacity="0.5" rx="1.5"/>
+<text x="130" y="111.2" font-size="11" fill="#16181d" text-anchor="end">Indonesia</text>
+<text x="806.0" y="110.7" font-size="10" fill="#374151" text-anchor="start">+0.082</text>
+<rect x="467.0" y="127.4" width="55.3" height="17.0" fill="#2f6fb5" fill-opacity="0.5" rx="1.5"/>
+<text x="130" y="139.9" font-size="11" fill="#16181d" text-anchor="end">Colombia</text>
+<text x="806.0" y="139.4" font-size="10" fill="#374151" text-anchor="start">+0.076</text>
+<rect x="467.0" y="156.2" width="44.9" height="17.0" fill="#2f6fb5" fill-opacity="0.5" rx="1.5"/>
+<text x="130" y="168.7" font-size="11" fill="#16181d" text-anchor="end">Malaysia</text>
+<text x="806.0" y="168.2" font-size="10" fill="#374151" text-anchor="start">+0.062</text>
+<rect x="467.0" y="185.0" width="39.6" height="17.0" fill="#2f6fb5" fill-opacity="0.5" rx="1.5"/>
+<text x="130" y="197.5" font-size="11" fill="#16181d" text-anchor="end">Turkiye</text>
+<text x="806.0" y="197.0" font-size="10" fill="#374151" text-anchor="start">+0.055</text>
+<rect x="467.0" y="213.7" width="1.2" height="17.0" fill="#2f6fb5" fill-opacity="0.5" rx="1.5"/>
+<text x="130" y="226.2" font-size="11" fill="#16181d" text-anchor="end">Chile</text>
+<text x="806.0" y="225.7" font-size="10" fill="#374151" text-anchor="start">+0.001</text>
+<rect x="462.8" y="242.5" width="4.2" height="17.0" fill="#c2410c" fill-opacity="0.5" rx="1.5"/>
+<text x="130" y="255.0" font-size="11" fill="#16181d" text-anchor="end">Philippines</text>
+<text x="806.0" y="254.5" font-size="10" fill="#374151" text-anchor="start">-0.006</text>
+<rect x="451.9" y="271.3" width="15.1" height="17.0" fill="#c2410c" fill-opacity="0.5" rx="1.5"/>
+<text x="130" y="283.8" font-size="11" fill="#16181d" text-anchor="end">South Africa</text>
+<text x="806.0" y="283.3" font-size="10" fill="#374151" text-anchor="start">-0.021</text>
+<rect x="397.2" y="300.0" width="69.8" height="17.0" fill="#c2410c" fill-opacity="0.5" rx="1.5"/>
+<text x="130" y="312.5" font-size="11" fill="#16181d" text-anchor="end">Poland</text>
+<text x="806.0" y="312.0" font-size="10" fill="#374151" text-anchor="start">-0.096</text>
+<rect x="387.4" y="328.8" width="79.6" height="17.0" fill="#c2410c" fill-opacity="0.5" rx="1.5"/>
+<text x="130" y="341.3" font-size="11" fill="#16181d" text-anchor="end">India</text>
+<text x="806.0" y="340.8" font-size="10" fill="#374151" text-anchor="start">-0.110</text>
+<rect x="378.8" y="357.6" width="88.2" height="17.0" fill="#c2410c" fill-opacity="0.5" rx="1.5"/>
+<text x="130" y="370.1" font-size="11" fill="#16181d" text-anchor="end">Mexico</text>
+<text x="806.0" y="369.6" font-size="10" fill="#374151" text-anchor="start">-0.121</text>
+<rect x="363.0" y="386.3" width="104.0" height="17.0" fill="#c2410c" fill-opacity="0.92" rx="1.5"/>
+<text x="130" y="398.8" font-size="11" fill="#16181d" text-anchor="end">Thailand</text>
+<text x="806.0" y="398.3" font-size="10" fill="#374151" text-anchor="start" font-weight="600">-0.143*</text>
+<rect x="269.8" y="415.1" width="197.2" height="17.0" fill="#c2410c" fill-opacity="0.92" rx="1.5"/>
+<text x="130" y="427.6" font-size="11" fill="#16181d" text-anchor="end">Ukraine</text>
+<text x="806.0" y="427.1" font-size="10" fill="#374151" text-anchor="start" font-weight="600">-0.271*</text>
+<line x1="467.0" y1="64" x2="467.0" y2="438" stroke="#9aa3ad" stroke-width="1.2"/>
+<text x="467.0" y="482" font-size="11" fill="#6b7280" text-anchor="middle">Pearson r  (gpr_z , capital_flow_volatility), monthly 2000&#8211;2023</text>
+<text x="806.0" y="455" font-size="10.5" fill="#9aa3ad" text-anchor="start">r</text>
+<text x="40" y="26" font-size="13.5" font-weight="600" fill="#16181d">GPR and capital-flow volatility: emerging economies</text>
+<text x="40" y="43" font-size="10.5" fill="#6b7280">13 countries, 2,849 country-months, excluding China and Hungary. Solid bars are significant at 5% (|t| &gt; 1.96).</text>
+<rect x="140" y="501" width="9" height="9" fill="#2f6fb5" rx="1.5"/>
+<text x="154" y="509" font-size="10" fill="#6b7280">positive</text>
+<rect x="218" y="501" width="9" height="9" fill="#c2410c" rx="1.5"/>
+<text x="232" y="509" font-size="10" fill="#6b7280">negative</text>
+<rect x="296" y="501" width="9" height="9" fill="#8b8f96" rx="1.5" fill-opacity="0.5"/>
+<text x="310" y="509" font-size="10" fill="#6b7280">faded = not significant</text>
+</svg>
+</div>
+
+<h2>Correlation table</h2>
+<p>Each row uses only the months in which both series are observed for that country, so the sample
+size varies. <span class="sig">*</span> marks |t| &gt; 1.96 using the standard
+t = r&radic;(n&minus;2)/(1&minus;r&sup2;) approximation.</p>
+<table>
+  <thead><tr><th>Country</th><th class="num">Months</th><th class="num">r</th></tr></thead>
+  <tbody>
+<tr><td>Brazil</td><td class="num">288</td><td class="num strong">+0.130 <span class="sig">*</span></td></tr>
+<tr><td>Indonesia</td><td class="num">154</td><td class="num strong">+0.082</td></tr>
+<tr><td>Colombia</td><td class="num">106</td><td class="num strong">+0.076</td></tr>
+<tr><td>Malaysia</td><td class="num">153</td><td class="num strong">+0.062</td></tr>
+<tr><td>Turkiye</td><td class="num">288</td><td class="num strong">+0.055</td></tr>
+<tr><td>Chile</td><td class="num">250</td><td class="num strong">+0.001</td></tr>
+<tr><td>Philippines</td><td class="num">226</td><td class="num strong">-0.006</td></tr>
+<tr><td>South Africa</td><td class="num">288</td><td class="num strong">-0.021</td></tr>
+<tr><td>Poland</td><td class="num">238</td><td class="num strong">-0.096</td></tr>
+<tr><td>India</td><td class="num">288</td><td class="num strong">-0.110</td></tr>
+<tr><td>Mexico</td><td class="num">178</td><td class="num strong">-0.121</td></tr>
+<tr><td>Thailand</td><td class="num">226</td><td class="num strong">-0.143 <span class="sig">*</span></td></tr>
+<tr><td>Ukraine</td><td class="num">166</td><td class="num strong">-0.271 <span class="sig">*</span></td></tr>
+  </tbody>
+</table>
+
+<h2>What the pattern says</h2>
+<p>6 of 13 countries have a positive correlation, but the spread runs from
++0.130 to -0.271. The country-level
+average is -0.028 and the median -0.006: with the two high-correlation economies
+gone, the centre of the distribution is essentially zero and very slightly negative.</p>
+<p>Only <b>Brazil</b> (+0.130), <b>Thailand</b> (&minus;0.143) and <b>Ukraine</b> (&minus;0.271)
+clear the conventional threshold, and Brazil and Thailand only just, at |t| slightly above 2. The
+three largest remaining coefficients disagree in sign, so there is no emerging-market pattern to
+read off this table.</p>
+<p>Read together with the pooled figures &mdash; -0.011 on the raw pool and
+-0.0174 after removing country means &mdash; the per-country scatter is consistent with
+there being <i>no</i> stable within-country link between geopolitical risk and capital-flow
+volatility once China and Hungary are set aside.</p>
+
+<h2>Ready-to-paste block</h2>
+<pre>Country            Months       r
+Brazil             288   +0.130  *
+Indonesia          154   +0.082
+Colombia           106   +0.076
+Malaysia           153   +0.062
+Turkiye            288   +0.055
+Chile              250   +0.001
+Philippines        226   -0.006
+South Africa       288   -0.021
+Poland             238   -0.096
+India              288   -0.110
+Mexico             178   -0.121
+Thailand           226   -0.143  *
+Ukraine            166   -0.271  *</pre>
+
+<h2>Method</h2>
+<p>Data: <code>cleaned/replication_cleaned/country_month.csv</code>, rows with
+<code>group == "Emerging"</code> and country not in {China, Hungary}. Months outside 2000-01 to
+2023-12 are excluded, as are rows where either series is missing. Volatility values at or below
+zero cannot be logged but are kept here because this table uses Pearson on levels, not on logs.
+No controls, no lags, no detrending: these are raw contemporaneous associations.</p>
+<p>The exclusion is a fragility check, not a preferred specification. China and Hungary were not
+selected on any institutional criterion; they were removed because they are the two outliers that
+generate the result.</p>
+
+<footer>
+Chart is hand-built SVG. Correlation is Pearson. Within-country figure is computed on
+country-demeaned values of both series. Significance uses the t approximation and is indicative
+only, since monthly volatility is serially correlated, which makes the effective sample smaller
+than the month count.
+</footer>
+
+</body>
+</html>

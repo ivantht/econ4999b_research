@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Debt/GDP and capital flows: monthly vs quarterly correlations</title>
+<style>
+  :root {
+    --ink: #16181d; --muted: #6b7280; --line: #e3e6ea;
+    --pos: #1f6feb; --neg: #c2410c; --panel: #fbfcfd;
+  }
+  body {
+    font-family: "Segoe UI", -apple-system, BlinkMacSystemFont, sans-serif;
+    margin: 40px auto 72px; max-width: 940px; padding: 0 24px;
+    color: var(--ink); background: #fff; line-height: 1.55;
+  }
+  h1 { font-size: 23px; font-weight: 650; margin: 0 0 6px; letter-spacing: -.01em; }
+  h2 { font-size: 16px; font-weight: 650; margin: 38px 0 10px; }
+  .sub { color: var(--muted); font-size: 13px; margin: 0 0 26px; }
+  p { margin: 0 0 12px; font-size: 14px; }
+  table { width: 100%; border-collapse: collapse; margin: 8px 0 6px; font-size: 13.5px; }
+  thead th {
+    text-align: left; font-weight: 640; font-size: 12px; letter-spacing: .03em;
+    text-transform: uppercase; color: var(--muted);
+    border-bottom: 1.5px solid var(--ink); padding: 8px 10px; vertical-align: bottom;
+  }
+  tbody td { padding: 8px 10px; border-bottom: 1px solid var(--line); }
+  tbody tr:hover { background: var(--panel); }
+  .num { text-align: right; font-variant-numeric: tabular-nums; }
+  .yr { font-variant-numeric: tabular-nums; color: var(--muted); }
+  .grp { font-weight: 600; }
+  .bar { height: 9px; border-radius: 2px; display: block; }
+  .bar.pos { background: var(--pos); }
+  .bar.neg { background: var(--neg); }
+  .note {
+    background: var(--panel); border-left: 3px solid #94a3b8;
+    padding: 12px 14px; font-size: 13px; color: #374151; margin: 16px 0;
+  }
+  .note b { color: var(--ink); }
+  .flag { font-size: 12.5px; color: var(--muted); margin-top: 4px; }
+  .chips { display: flex; flex-wrap: wrap; gap: 6px; margin: 8px 0 0; }
+  .chip {
+    font-size: 12px; padding: 3px 9px; border: 1px solid var(--line);
+    border-radius: 20px; color: #374151; background: #fff;
+  }
+  .big { font-size: 34px; font-weight: 620; letter-spacing: -.02em; }
+  .kpi { display: flex; gap: 34px; margin: 18px 0 6px; }
+  .kpi div span { display: block; font-size: 11.5px; color: var(--muted); text-transform: uppercase; letter-spacing: .04em; }
+  footer { margin-top: 44px; padding-top: 14px; border-top: 1px solid var(--line); font-size: 12px; color: var(--muted); }
+  .legend { font-size: 12px; color: var(--muted); margin-top: 6px; }
+</style>
+</head>
+<body>
+
+<h1>Debt/GDP and capital flows</h1>
+<p class="sub">Bivariate correlations, monthly vs quarterly &middot; 29 economies, 2000&ndash;2023</p>
+
+<div class="note">
+<b>Read this first.</b> Debt/GDP is an <b>annual</b> series in both files: the monthly panel has
+only 24 distinct values repeated across 288 months per country. So &ldquo;monthly&rdquo; versus
+&ldquo;quarterly&rdquo; changes the <i>sample size</i>, not the resolution of the debt series.
+The level correlation therefore mostly picks up <i>between-country</i> differences, while the
+first-difference column isolates <i>within-country changes</i>.
+</div>
+
+<div class="kpi">
+  <div><span>Countries</span><div class="big">29</div></div>
+  <div><span>Emerging</span><div class="big">15</div></div>
+  <div><span>Years positive</span><div class="big">21/21</div></div>
+  <div><span>Mean annual r</span><div class="big">+0.29</div></div>
+</div>
+
+<h2>1. Debt/GDP vs. capital-flow volatility</h2>
+<table>
+  <thead>
+    <tr>
+      <th>Frequency</th><th>Sample</th><th class="num">N</th>
+      <th class="num">Pooled</th><th class="num">Within-country</th>
+      <th class="num">First difference</th><th>Pooled strength</th>
+    </tr>
+  </thead>
+  <tbody>
+<tr><td>Monthly</td><td>All countries</td><td class='num'>6,493</td><td class='num'>+0.374***</td><td class='num'>+0.267***</td><td class='num'>+0.020</td><td>moderate</td></tr>
+<tr><td>Monthly</td><td>Emerging only</td><td class='num'>3,157</td><td class='num'>+0.219***</td><td class='num'>+0.151***</td><td class='num'>+0.009</td><td>weak</td></tr>
+<tr><td>Quarterly</td><td>All countries</td><td class='num'>2,159</td><td class='num'>+0.391***</td><td class='num'>+0.292***</td><td class='num'>+0.056***</td><td>moderate</td></tr>
+<tr><td>Quarterly</td><td>Emerging only</td><td class='num'>1,049</td><td class='num'>+0.239***</td><td class='num'>+0.176***</td><td class='num'>+0.097***</td><td>weak</td></tr>
+  </tbody>
+</table>
+<p class="flag">Pooled = pooled Pearson r across all country-months. Within-country = both variables
+demeaned by country mean. First difference = correlation of period-to-period changes within each country.</p>
+
+<h2>2. Debt/GDP vs. portfolio inflow (level)</h2>
+<table>
+  <thead>
+    <tr>
+      <th>Frequency</th><th>Sample</th><th class="num">N</th>
+      <th class="num">Pooled</th><th class="num">Within-country</th>
+      <th class="num">First difference</th><th>Pooled strength</th>
+    </tr>
+  </thead>
+  <tbody>
+<tr><td>Monthly</td><td>All countries</td><td class='num'>6,527</td><td class='num'>+0.093***</td><td class='num'>-0.035</td><td class='num'>+0.027</td><td>negligible</td></tr>
+<tr><td>Monthly</td><td>Emerging only</td><td class='num'>3,179</td><td class='num'>+0.019</td><td class='num'>-0.059***</td><td class='num'>+0.004</td><td>negligible</td></tr>
+<tr><td>Quarterly</td><td>All countries</td><td class='num'>2,175</td><td class='num'>+0.148***</td><td class='num'>-0.066***</td><td class='num'>+0.003</td><td>weak</td></tr>
+<tr><td>Quarterly</td><td>Emerging only</td><td class='num'>1,059</td><td class='num'>+0.026</td><td class='num'>-0.084***</td><td class='num'>-0.045</td><td>negligible</td></tr>
+  </tbody>
+</table>
+<p class="flag">Unlike volatility, the flow <i>level</i> shows essentially no association with
+debt/GDP &mdash; and the within-country correlation is slightly negative.</p>
+
+<h2>3. Is the volatility result an artifact? Year-by-year check</h2>
+<p>If the positive pooled correlation were driven by a handful of high-debt countries or a single
+episode, the annual cross-sections would be noisy around zero. They are not: the correlation is
+positive in 21 of 21 years, averaging +0.29.</p>
+<table>
+  <thead>
+    <tr><th>Year</th><th class="num">N</th><th class="num">r (debt, CFV)</th><th>Magnitude</th></tr>
+  </thead>
+  <tbody>
+<tr><td class='yr'>2003</td><td class='num'>58</td><td class='num'>+0.229</td><td><div class='bar pos' style='width:22%'></div></td></tr>
+<tr><td class='yr'>2004</td><td class='num'>70</td><td class='num'>+0.411</td><td><div class='bar pos' style='width:41%'></div></td></tr>
+<tr><td class='yr'>2005</td><td class='num'>92</td><td class='num'>+0.432</td><td><div class='bar pos' style='width:43%'></div></td></tr>
+<tr><td class='yr'>2006</td><td class='num'>96</td><td class='num'>+0.417</td><td><div class='bar pos' style='width:41%'></div></td></tr>
+<tr><td class='yr'>2007</td><td class='num'>96</td><td class='num'>+0.558</td><td><div class='bar pos' style='width:55%'></div></td></tr>
+<tr><td class='yr'>2008</td><td class='num'>106</td><td class='num'>+0.447</td><td><div class='bar pos' style='width:44%'></div></td></tr>
+<tr><td class='yr'>2009</td><td class='num'>118</td><td class='num'>+0.380</td><td><div class='bar pos' style='width:38%'></div></td></tr>
+<tr><td class='yr'>2010</td><td class='num'>130</td><td class='num'>+0.292</td><td><div class='bar pos' style='width:29%'></div></td></tr>
+<tr><td class='yr'>2011</td><td class='num'>151</td><td class='num'>+0.307</td><td><div class='bar pos' style='width:30%'></div></td></tr>
+<tr><td class='yr'>2012</td><td class='num'>156</td><td class='num'>+0.266</td><td><div class='bar pos' style='width:26%'></div></td></tr>
+<tr><td class='yr'>2013</td><td class='num'>156</td><td class='num'>+0.233</td><td><div class='bar pos' style='width:23%'></div></td></tr>
+<tr><td class='yr'>2014</td><td class='num'>166</td><td class='num'>+0.130</td><td><div class='bar pos' style='width:13%'></div></td></tr>
+<tr><td class='yr'>2015</td><td class='num'>178</td><td class='num'>+0.043</td><td><div class='bar pos' style='width:4%'></div></td></tr>
+<tr><td class='yr'>2016</td><td class='num'>180</td><td class='num'>+0.133</td><td><div class='bar pos' style='width:13%'></div></td></tr>
+<tr><td class='yr'>2017</td><td class='num'>180</td><td class='num'>+0.126</td><td><div class='bar pos' style='width:12%'></div></td></tr>
+<tr><td class='yr'>2018</td><td class='num'>180</td><td class='num'>+0.424</td><td><div class='bar pos' style='width:42%'></div></td></tr>
+<tr><td class='yr'>2019</td><td class='num'>180</td><td class='num'>+0.234</td><td><div class='bar pos' style='width:23%'></div></td></tr>
+<tr><td class='yr'>2020</td><td class='num'>180</td><td class='num'>+0.234</td><td><div class='bar pos' style='width:23%'></div></td></tr>
+<tr><td class='yr'>2021</td><td class='num'>180</td><td class='num'>+0.153</td><td><div class='bar pos' style='width:15%'></div></td></tr>
+<tr><td class='yr'>2022</td><td class='num'>180</td><td class='num'>+0.239</td><td><div class='bar pos' style='width:23%'></div></td></tr>
+<tr><td class='yr'>2023</td><td class='num'>180</td><td class='num'>+0.314</td><td><div class='bar pos' style='width:31%'></div></td></tr>
+  </tbody>
+</table>
+<p class="legend">Monthly emerging-market panel, cross-sectional correlation within each calendar year.</p>
+
+<h2>4. Emerging-market countries in the sample</h2>
+<div class="chips">
+<span class="chip">Brazil</span><span class="chip">Chile</span><span class="chip">China</span><span class="chip">Colombia</span><span class="chip">Hungary</span><span class="chip">Indonesia</span><span class="chip">India</span><span class="chip">Mexico</span><span class="chip">Malaysia</span><span class="chip">Philippines</span><span class="chip">Poland</span><span class="chip">Thailand</span><span class="chip">Turkiye</span><span class="chip">Ukraine</span><span class="chip">South Africa</span>
+</div>
+
+<h2>5. What this does and does not say</h2>
+<p><b>Consistent across frequencies.</b> Volatility correlates with debt/GDP at roughly +0.22 to
++0.24 in the emerging panel whether the data are monthly or quarterly. The frequency choice is
+not driving anything.</p>
+<p><b>Mostly a cross-country fact, with a real time dimension.</b> The first-difference correlation
+collapses toward zero, but the annual cross-sections stay positive, so the pattern is not merely
+fixed country differences.</p>
+<p><b>Volatility, not volume.</b> The correlation with the flow level is near zero to slightly
+negative within countries, suggesting the debt link runs through instability of flows rather than
+their size.</p>
+<p><b>Not a regression coefficient.</b> These are raw correlations, with no controls for GPR,
+inflation, the policy rate, or country fixed effects. They are not directly comparable in magnitude
+to the conditional debt/GDP coefficients in the model 2 specifications.</p>
+
+<footer>
+Generated from <code>cleaned/replication_cleaned/country_month.csv</code> and
+<code>cleaned/data_for_quarter_model.csv</code>. Pairwise complete observations; no imputation.
+Stars: * p&lt;0.10, ** p&lt;0.05, *** p&lt;0.01 using a normal approximation to the Pearson test,
+suppressed when |r| &lt; 0.05. Indicative only for pooled panels, where observations are not
+independent &mdash; treat them as a rough guide, not inference.
+</footer>
+
+</body>
+</html>

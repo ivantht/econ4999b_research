@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Overall capital flows and debt/GDP: 15 emerging markets</title>
+<style>
+  :root {
+    --ink: #16181d; --muted: #6b7280; --line: #e3e6ea;
+    --pos: #1f6feb; --neg: #c2410c; --panel: #fbfcfd;
+  }
+  body {
+    font-family: "Segoe UI", -apple-system, BlinkMacSystemFont, sans-serif;
+    margin: 40px auto 76px; max-width: 960px; padding: 0 24px;
+    color: var(--ink); background: #fff; line-height: 1.58;
+  }
+  h1 { font-size: 23px; font-weight: 650; margin: 0 0 5px; letter-spacing: -.01em; }
+  h2 { font-size: 16px; font-weight: 650; margin: 40px 0 4px; }
+  .sub { color: var(--muted); font-size: 13px; margin: 0 0 8px; }
+  p { margin: 0 0 12px; font-size: 14px; }
+  table { width: 100%; border-collapse: collapse; margin: 10px 0 6px; font-size: 13.5px; }
+  thead th {
+    text-align: left; font-weight: 640; font-size: 11.5px; letter-spacing: .04em;
+    text-transform: uppercase; color: var(--muted);
+    border-bottom: 1.5px solid var(--ink); padding: 8px 10px; vertical-align: bottom;
+  }
+  tbody td { padding: 8px 10px; border-bottom: 1px solid var(--line); vertical-align: top; }
+  tbody tr:hover { background: var(--panel); }
+  .num { text-align: right; font-variant-numeric: tabular-nums; }
+  .strong { font-weight: 620; }
+  .lbl { font-weight: 560; }
+  .sm { display: block; font-weight: 400; font-size: 11.5px; color: var(--muted); margin-top: 2px; }
+  .pos { color: var(--pos); } .neg { color: var(--neg); }
+  .note {
+    background: var(--panel); border-left: 3px solid #94a3b8;
+    padding: 12px 15px; font-size: 13px; color: #374151; margin: 18px 0;
+  }
+  .note b { color: var(--ink); }
+  .flag { font-size: 12.5px; color: var(--muted); margin-top: 4px; }
+  .kpi { display: flex; gap: 36px; margin: 20px 0 4px; flex-wrap: wrap; }
+  .kpi div span {
+    display: block; font-size: 11px; color: var(--muted);
+    text-transform: uppercase; letter-spacing: .05em; margin-bottom: 1px;
+  }
+  .big { font-size: 30px; font-weight: 620; letter-spacing: -.02em; }
+  .chips { display: flex; flex-wrap: wrap; gap: 6px; margin: 10px 0 0; }
+  .chip {
+    font-size: 12px; padding: 3px 9px; border: 1px solid var(--line);
+    border-radius: 20px; color: #374151;
+  }
+  footer { margin-top: 46px; padding-top: 14px; border-top: 1px solid var(--line); font-size: 12px; color: var(--muted); }
+  code { font-size: 12px; background: #f3f4f6; padding: 1px 5px; border-radius: 3px; }
+</style>
+</head>
+<body>
+
+<h1>Overall capital flows and the debt-to-GDP ratio</h1>
+<p class="sub">Quarterly &middot; 15 emerging markets &middot; 2000&ndash;2023</p>
+
+<div class="note">
+<b>What &ldquo;overall&rdquo; means here.</b> The flow is the IMF
+<i>Financial account balance, excluding reserves and related items</i>, in USD millions &mdash; direct
+investment, portfolio investment, other investment and financial derivatives combined. Negative
+values are net inflows; positive values net outflows. This is <code>cleaned/capital_flow.csv</code>.
+<br><br>
+<b>Quarterly only.</b> No monthly overall-flow series exists in this project. The monthly panel
+carries portfolio investment alone, and the underlying IMF extract is quarterly and annual.
+</div>
+
+<div class="kpi">
+  <div><span>Countries</span><div class="big">15</div></div>
+  <div><span>Quarters</span><div class="big">1,440</div></div>
+  <div><span>Years</span><div class="big">24</div></div>
+  <div><span>Mean flow</span><div class="big">-2,761</div></div>
+</div>
+<p class="flag">Mean flow in USD millions. Every country has 106 quarters of coverage.</p>
+
+<h2>1. Correlation with the debt-to-GDP ratio</h2>
+<table>
+  <thead>
+    <tr><th>Measure</th><th class="num">N</th><th class="num">Pooled</th>
+        <th class="num">Within-country</th><th class="num">First difference</th></tr>
+  </thead>
+  <tbody>
+<tr><td class='lbl'>Overall flow (level)<span class='sm'>Net acquisition of assets less liabilities, USD mn</span></td><td class='num'>1,440</td><td class='num strong'>-0.005</td><td class='num'>+0.147***</td><td class='num'>+0.026</td></tr>
+<tr><td class='lbl'>Absolute overall flow<span class='sm'>Size of the flow, sign removed</span></td><td class='num'>1,440</td><td class='num strong'>+0.071***</td><td class='num'>-0.051*</td><td class='num'>-0.004</td></tr>
+<tr><td class='lbl'>Overall flow volatility<span class='sm'>Rolling 3-quarter standard deviation</span></td><td class='num'>1,410</td><td class='num strong'>+0.008</td><td class='num'>-0.001</td><td class='num'>+0.008</td></tr>
+  </tbody>
+</table>
+<p class="flag">Pooled = all country-quarters. Within-country = both variables demeaned by
+country. First difference = quarter-to-quarter changes within country.</p>
+
+<p>The picture is essentially a null, with one exception. Volatility shows no association with
+debt/GDP at all (+0.008 pooled, &minus;0.001 within, +0.008 differenced), and neither does the
+absolute size of the flow. The single non-trivial coefficient is the <i>within-country</i> correlation
+of the signed level (+0.147), discussed below. That is a materially different answer from the
+portfolio-flow series, which returned roughly +0.24 pooled.</p>
+
+<h2>2. Where does the flow correlation actually live?</h2>
+<p>Aggregation is doing something: the within-country association is concentrated in the signed
+level (+0.147), not in volatility. The sign is interpretable &mdash; higher debt goes with
+somewhat smaller net inflows &mdash; but the magnitude is modest, and it does not survive into
+volatility or into the differenced series.</p>
+<table>
+  <thead>
+    <tr><th>Country</th><th class="num">N</th><th class="num">r (level)</th>
+        <th class="num">r (volatility)</th><th class="num">Mean debt %</th></tr>
+  </thead>
+  <tbody>
+<tr><td>Indonesia</td><td class='num'>96</td><td class='num pos'>+0.502</td><td class='num'>-0.433</td><td class='num'>38.8</td></tr>
+<tr><td>South Africa</td><td class='num'>96</td><td class='num pos'>+0.376</td><td class='num'>+0.180</td><td class='num'>42.5</td></tr>
+<tr><td>Peru</td><td class='num'>96</td><td class='num pos'>+0.330</td><td class='num'>-0.257</td><td class='num'>31.8</td></tr>
+<tr><td>Turkey</td><td class='num'>96</td><td class='num pos'>+0.317</td><td class='num'>-0.455</td><td class='num'>40.2</td></tr>
+<tr><td>Argentina</td><td class='num'>96</td><td class='num pos'>+0.291</td><td class='num'>-0.030</td><td class='num'>73.9</td></tr>
+<tr><td>Hungary</td><td class='num'>96</td><td class='num pos'>+0.187</td><td class='num'>+0.486</td><td class='num'>69.7</td></tr>
+<tr><td>India</td><td class='num'>96</td><td class='num pos'>+0.169</td><td class='num'>+0.052</td><td class='num'>76.5</td></tr>
+<tr><td>Ukraine</td><td class='num'>96</td><td class='num pos'>+0.147</td><td class='num'>+0.303</td><td class='num'>45.4</td></tr>
+<tr><td>Mexico</td><td class='num'>96</td><td class='num pos'>+0.122</td><td class='num'>+0.342</td><td class='num'>45.2</td></tr>
+<tr><td>Thailand</td><td class='num'>96</td><td class='num pos'>+0.121</td><td class='num'>-0.243</td><td class='num'>46.2</td></tr>
+<tr><td>Philippines</td><td class='num'>96</td><td class='num pos'>+0.036</td><td class='num'>-0.132</td><td class='num'>51.4</td></tr>
+<tr><td>Tunisia</td><td class='num'>96</td><td class='num neg'>-0.130</td><td class='num'>+0.700</td><td class='num'>56.7</td></tr>
+<tr><td>Vietnam</td><td class='num'>96</td><td class='num neg'>-0.257</td><td class='num'>+0.484</td><td class='num'>36.1</td></tr>
+<tr><td>Egypt</td><td class='num'>96</td><td class='num neg'>-0.330</td><td class='num'>+0.082</td><td class='num'>83.4</td></tr>
+<tr><td>Chile</td><td class='num'>96</td><td class='num neg'>-0.458</td><td class='num'>+0.374</td><td class='num'>17.2</td></tr>
+  </tbody>
+</table>
+<p class="flag">Country-by-country correlations over time. Level: 11 of 15
+are positive. Volatility: 9 of 15 are positive. Country signs disagree
+sharply &mdash; Chile &minus;0.458 on the level, Indonesia +0.502 &mdash; which is why the pooled
+figure collapses.</p>
+
+<h2>3. Component decomposition, identical sample</h2>
+<p>If the overall-flow result were merely an artifact of mixing components, the parts would
+disagree with the whole. They do not: all four sit in a narrow band.</p>
+<table>
+  <thead>
+    <tr><th>Component</th><th class="num">N</th><th class="num">Pooled</th>
+        <th class="num">Within</th><th class="num">Mean country r</th>
+        <th class="num">Positive</th></tr>
+  </thead>
+  <tbody>
+<tr><td class='lbl'>Overall flow</td><td class='num'>1,410</td><td class='num strong'>+0.008</td><td class='num'>-0.001</td><td class='num'>+0.097</td><td class='num'>9/15</td></tr>
+<tr><td class='lbl'>Direct investment</td><td class='num'>1,244</td><td class='num strong'>+0.098***</td><td class='num'>+0.105</td><td class='num'>+0.069</td><td class='num'>9/14</td></tr>
+<tr><td class='lbl'>Portfolio investment</td><td class='num'>1,236</td><td class='num strong'>+0.034</td><td class='num'>-0.033</td><td class='num'>-0.046</td><td class='num'>5/14</td></tr>
+<tr><td class='lbl'>Other investment</td><td class='num'>1,244</td><td class='num strong'>+0.152***</td><td class='num'>+0.052</td><td class='num'>+0.089</td><td class='num'>10/14</td></tr>
+  </tbody>
+</table>
+<p class="flag">Volatility of each component, same 15 countries, same quarters, same 3-quarter
+rolling window, same debt series.</p>
+
+<p>Two things follow. First, the components co-move rather than offset: their volatilities
+correlate at +0.45 to +0.57 with each other, so aggregation does not wash out a component-level
+signal. Second, portfolio investment is the <i>weakest</i> component on this sample (+0.034
+pooled, and negative on average across countries), which means the +0.24 from the model file
+cannot be attributed to the portfolio definition. It comes from the sample: those 15 countries
+include Brazil, China, Colombia, Malaysia, Poland and T&uuml;rkiye, and that six-country block
+alone carries a within-country correlation of +0.294 on the model file's own volatility series.</p>
+
+<h2>4. Why the two numbers are not comparable</h2>
+<p>An additional reason to be careful: the model file's <code>portfolio_inflow</code> is not in
+the same units as the USD flow used here. Regressing one on the other implies a
+GDP-like denominator, so the model variable is effectively GDP-normalised while the overall flow
+is in levels. A pooled correlation in levels mixes a scale effect into the statistic: countries
+with larger economies have both bigger dollar flows and their own debt levels, so the pooled
+coefficient partly measures size, not behaviour. Within-country correlations are immune to this,
+and they are where the two series are closest.</p>
+
+<h2>5. Bottom line</h2>
+<p><b>Overall capital flows carry no debt/GDP signal in volatility terms.</b> Pooled +0.008,
+within-country &minus;0.001. Unlike portfolio flows, there is no cross-country gradient to explain.</p>
+<p><b>The one non-trivial association is the signed level, within country (+0.147).</b> It points
+the intuitive way &mdash; more indebted economies attract smaller net inflows &mdash; but it is
+weak, dispersed in sign across countries, and absent from the differenced series (+0.026).</p>
+<p><b>Treat the earlier +0.24 as a portfolio-flow, model-sample statistic.</b> It is reproducible,
+but it reflects that nine-country overlapping set plus the six non-overlapping economies, not the
+overall financial account and not a consistent panel.</p>
+
+<h2>6. Countries</h2>
+<div class="chips">
+<span class="chip">Mexico</span><span class="chip">Argentina</span><span class="chip">Chile</span><span class="chip">Peru</span><span class="chip">Hungary</span><span class="chip">Ukraine</span><span class="chip">Turkey</span><span class="chip">Egypt</span><span class="chip">Tunisia</span><span class="chip">South Africa</span><span class="chip">India</span><span class="chip">Indonesia</span><span class="chip">Philippines</span><span class="chip">Thailand</span><span class="chip">Vietnam</span>
+</div>
+
+<footer>
+Flow: <code>cleaned/capital_flow.csv</code> (IMF BOP 21.0.0, financial account balance excluding
+reserves, USD millions). Debt: <code>cleaned/debt_gdp.csv</code>, annual general-government gross
+debt, percent of GDP, repeated across the quarters of each year. South Korea excluded as an
+advanced economy. 2024&ndash;2026 dropped to match the 2000&ndash;2023 study window.
+Stars: * p&lt;0.10, ** p&lt;0.05, *** p&lt;0.01, normal approximation, suppressed when |r| &lt; 0.05;
+indicative only, as pooled observations are not independent.
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Model 2: capital-flow volatility and institutional quality</title>
+<style>
+:root { --ink:#1c2530; --muted:#5b6b7b; --line:#d3dde5; --pale:#f6f9fb; --orange:#c2571f; }
+body { font: 16px/1.55 Georgia, "Times New Roman", serif; color: var(--ink);
+  max-width: 1180px; margin: 2.5em auto; padding: 0 1.2em; }
+h1 { font-size: 1.65em; margin: 0 0 .2em; line-height: 1.2; }
+h2 { font-size: 1.15em; margin: 2em 0 .5em; padding-bottom: .3em;
+  border-bottom: 2px solid var(--line); }
+.sub { color: var(--muted); margin: 0 0 1.6em; }
+.note { background: var(--pale); border-left: 4px solid var(--orange);
+  padding: .9em 1.1em; margin: 1.2em 0; font-size: .93em; }
+.note p { margin: .35em 0; }
+table { border-collapse: collapse; width: 100%; margin: 1em 0 1.6em; font-size: .82em; }
+th, td { border-bottom: 1px solid var(--line); padding: .45em .5em; text-align: right;
+  vertical-align: top; }
+thead th { background: var(--pale); font-size: .95em; text-align: center; line-height: 1.25; }
+tbody th { text-align: left; font-weight: normal; width: 15em; }
+td .coef { display: block; font-weight: 700; font-variant-numeric: tabular-nums; }
+td .se { display: block; color: var(--muted); font-size: .95em;
+  font-variant-numeric: tabular-nums; }
+td .pv { display: block; font-size: .88em; font-variant-numeric: tabular-nums; }
+td.p01 { background: #d9f0dc; }
+td.p05 { background: #e6f5e8; }
+td.p10 { background: #f2f8e8; }
+td.pns { color: #53616e; }
+td.p01 .pv, td.p05 .pv, td.p10 .pv { font-weight: 700; }
+td.na, td.fit { color: var(--muted); }
+caption { caption-side: bottom; text-align: left; color: var(--muted);
+  font-size: .88em; padding-top: .6em; }
+.legend { font-size: .88em; color: var(--muted); }
+.legend span { display: inline-block; padding: .12em .55em; margin-right: .4em;
+  border: 1px solid var(--line); }
+.legend .p01 { background: #d9f0dc; } .legend .p05 { background: #e6f5e8; }
+.legend .p10 { background: #f2f8e8; }
+code { font-size: .92em; background: var(--pale); padding: .05em .3em; }
+ul { margin: .5em 0; } li { margin: .35em 0; }
+</style>
+</head>
+<body>
+<h1>Model 2: capital-flow volatility and institutional quality</h1>
+<p class="sub">Emerging economies, 14 countries,
+2002-02 to 2022-01, 2,567 country-months</p>
+
+<div class="note">
+<p>Outcome: <code>capital_flow_volatility</code> from
+<code>cleaned/replication_cleaned/country_month.csv</code> &mdash; the three-month
+rolling standard deviation of monthly portfolio inflows, in billions of US dollars,
+entering in levels.</p>
+<p>Sample: rows where <code>group</code> is <code>Emerging</code>. One regression per
+WGI dimension. Country fixed effects. Standard errors clustered by country.</p>
+<p>Cells show the coefficient and stars, the clustered standard error in parentheses,
+and the exact p-value. Shaded cells are significant at the level shown in the legend
+below. Six WGI dimensions give six independent regressions, so a coefficient can be
+positive in one column and negative in another without contradiction.</p>
+</div>
+
+<h2>Where the effects are significant</h2>
+<table>
+<thead><tr><th>Term</th><th>Columns with p &lt; 0.10</th><th>p-value range</th></tr></thead>
+<tbody><tr><th>GPR, standardized</th><td>none</td><td>0.337&ndash;0.965</td></tr><tr><th>WGI x GPR</th><td>none</td><td>0.276&ndash;0.831</td></tr><tr><th>WGI, lagged</th><td>Government effectiveness</td><td>0.057&ndash;0.978</td></tr></tbody>
+</table>
+<p class="legend">
+<span class="p01">p &lt; 0.01</span><span class="p05">p &lt; 0.05</span>
+<span class="p10">p &lt; 0.10</span><span>not significant</span>
+</p>
+
+<h2>Full estimates</h2>
+<table>
+<thead><tr><th></th><th>Voice and accountability</th><th>Political stability</th><th>Government effectiveness</th><th>Regulatory quality</th><th>Rule of law</th><th>Control of corruption</th></tr></thead>
+<tbody><tr><th>WGI, lagged</th><td class="pns"><span class="coef">-0.6529</span><span class="se">(0.4567)</span><span class="pv">p = 0.176</span></td><td class="pns"><span class="coef">-0.2734</span><span class="se">(0.5352)</span><span class="pv">p = 0.618</span></td><td class="p10"><span class="coef">1.2381*</span><span class="se">(0.5921)</span><span class="pv">p = 0.057</span></td><td class="pns"><span class="coef">-0.1969</span><span class="se">(0.5819)</span><span class="pv">p = 0.741</span></td><td class="pns"><span class="coef">0.0097</span><span class="se">(0.3403)</span><span class="pv">p = 0.978</span></td><td class="pns"><span class="coef">0.2152</span><span class="se">(0.8864)</span><span class="pv">p = 0.812</span></td></tr><tr><th>GPR, standardized</th><td class="pns"><span class="coef">0.0686</span><span class="se">(0.0955)</span><span class="pv">p = 0.485</span></td><td class="pns"><span class="coef">0.0713</span><span class="se">(0.0716)</span><span class="pv">p = 0.337</span></td><td class="pns"><span class="coef">0.0045</span><span class="se">(0.0990)</span><span class="pv">p = 0.965</span></td><td class="pns"><span class="coef">0.0819</span><span class="se">(0.1445)</span><span class="pv">p = 0.580</span></td><td class="pns"><span class="coef">0.0522</span><span class="se">(0.0842)</span><span class="pv">p = 0.547</span></td><td class="pns"><span class="coef">0.0521</span><span class="se">(0.0805)</span><span class="pv">p = 0.529</span></td></tr><tr><th>WGI x GPR</th><td class="pns"><span class="coef">-0.2686</span><span class="se">(0.2360)</span><span class="pv">p = 0.276</span></td><td class="pns"><span class="coef">0.0653</span><span class="se">(0.0639)</span><span class="pv">p = 0.326</span></td><td class="pns"><span class="coef">0.1162</span><span class="se">(0.1334)</span><span class="pv">p = 0.400</span></td><td class="pns"><span class="coef">-0.0750</span><span class="se">(0.1607)</span><span class="pv">p = 0.648</span></td><td class="pns"><span class="coef">-0.1265</span><span class="se">(0.1482)</span><span class="pv">p = 0.409</span></td><td class="pns"><span class="coef">0.0186</span><span class="se">(0.0853)</span><span class="pv">p = 0.831</span></td></tr><tr><th>Policy rate, lagged change</th><td class="pns"><span class="coef">0.0383</span><span class="se">(0.0597)</span><span class="pv">p = 0.533</span></td><td class="pns"><span class="coef">0.0467</span><span class="se">(0.0719)</span><span class="pv">p = 0.527</span></td><td class="pns"><span class="coef">0.0384</span><span class="se">(0.0665)</span><span class="pv">p = 0.574</span></td><td class="pns"><span class="coef">0.0512</span><span class="se">(0.0652)</span><span class="pv">p = 0.446</span></td><td class="pns"><span class="coef">0.0499</span><span class="se">(0.0658)</span><span class="pv">p = 0.462</span></td><td class="pns"><span class="coef">0.0503</span><span class="se">(0.0638)</span><span class="pv">p = 0.445</span></td></tr><tr><th>Inflation, lagged change</th><td class="pns"><span class="coef">-0.0248</span><span class="se">(0.0451)</span><span class="pv">p = 0.591</span></td><td class="pns"><span class="coef">-0.0288</span><span class="se">(0.0403)</span><span class="pv">p = 0.488</span></td><td class="pns"><span class="coef">-0.0338</span><span class="se">(0.0445)</span><span class="pv">p = 0.460</span></td><td class="pns"><span class="coef">-0.0214</span><span class="se">(0.0435)</span><span class="pv">p = 0.631</span></td><td class="pns"><span class="coef">-0.0187</span><span class="se">(0.0405)</span><span class="pv">p = 0.652</span></td><td class="pns"><span class="coef">-0.0244</span><span class="se">(0.0453)</span><span class="pv">p = 0.599</span></td></tr><tr><th>Log oil price, lagged change</th><td class="p05"><span class="coef">-1.3140**</span><span class="se">(0.6000)</span><span class="pv">p = 0.047</span></td><td class="p05"><span class="coef">-1.3586**</span><span class="se">(0.5998)</span><span class="pv">p = 0.041</span></td><td class="p10"><span class="coef">-1.2730*</span><span class="se">(0.6198)</span><span class="pv">p = 0.061</span></td><td class="p05"><span class="coef">-1.3501**</span><span class="se">(0.6005)</span><span class="pv">p = 0.043</span></td><td class="p05"><span class="coef">-1.3513**</span><span class="se">(0.6106)</span><span class="pv">p = 0.045</span></td><td class="p05"><span class="coef">-1.3737**</span><span class="se">(0.6123)</span><span class="pv">p = 0.043</span></td></tr><tr><th>Log global EPU, lagged change</th><td class="pns"><span class="coef">-0.0297</span><span class="se">(0.1998)</span><span class="pv">p = 0.884</span></td><td class="pns"><span class="coef">-0.0351</span><span class="se">(0.1948)</span><span class="pv">p = 0.860</span></td><td class="pns"><span class="coef">-0.0215</span><span class="se">(0.2037)</span><span class="pv">p = 0.918</span></td><td class="pns"><span class="coef">-0.0272</span><span class="se">(0.1918)</span><span class="pv">p = 0.889</span></td><td class="pns"><span class="coef">-0.0239</span><span class="se">(0.1989)</span><span class="pv">p = 0.906</span></td><td class="pns"><span class="coef">-0.0249</span><span class="se">(0.1929)</span><span class="pv">p = 0.899</span></td></tr><tr><th>Financial development, lagged change</th><td class="p10"><span class="coef">-7.3235*</span><span class="se">(3.8531)</span><span class="pv">p = 0.080</span></td><td class="pns"><span class="coef">-8.4250</span><span class="se">(5.0974)</span><span class="pv">p = 0.122</span></td><td class="pns"><span class="coef">-7.7075</span><span class="se">(4.8271)</span><span class="pv">p = 0.134</span></td><td class="pns"><span class="coef">-8.4256</span><span class="se">(4.9324)</span><span class="pv">p = 0.111</span></td><td class="pns"><span class="coef">-8.3786</span><span class="se">(4.8573)</span><span class="pv">p = 0.108</span></td><td class="pns"><span class="coef">-8.4209</span><span class="se">(4.7709)</span><span class="pv">p = 0.101</span></td></tr><tr><th>Debt/GDP, lagged change</th><td class="pns"><span class="coef">0.0260</span><span class="se">(0.0305)</span><span class="pv">p = 0.410</span></td><td class="pns"><span class="coef">0.0361</span><span class="se">(0.0217)</span><span class="pv">p = 0.121</span></td><td class="pns"><span class="coef">0.0308</span><span class="se">(0.0274)</span><span class="pv">p = 0.281</span></td><td class="pns"><span class="coef">0.0352</span><span class="se">(0.0221)</span><span class="pv">p = 0.136</span></td><td class="pns"><span class="coef">0.0361</span><span class="se">(0.0237)</span><span class="pv">p = 0.151</span></td><td class="p10"><span class="coef">0.0378*</span><span class="se">(0.0213)</span><span class="pv">p = 0.099</span></td></tr><tr><th>Log VIX, lagged</th><td class="pns"><span class="coef">0.5159</span><span class="se">(0.4819)</span><span class="pv">p = 0.304</span></td><td class="pns"><span class="coef">0.4464</span><span class="se">(0.4075)</span><span class="pv">p = 0.293</span></td><td class="pns"><span class="coef">0.4621</span><span class="se">(0.4502)</span><span class="pv">p = 0.323</span></td><td class="pns"><span class="coef">0.4386</span><span class="se">(0.4150)</span><span class="pv">p = 0.310</span></td><td class="pns"><span class="coef">0.4374</span><span class="se">(0.4288)</span><span class="pv">p = 0.326</span></td><td class="pns"><span class="coef">0.4114</span><span class="se">(0.3815)</span><span class="pv">p = 0.300</span></td></tr><tr><th>Observations</th><td class="fit">2,567</td><td class="fit">2,567</td><td class="fit">2,567</td><td class="fit">2,567</td><td class="fit">2,567</td><td class="fit">2,567</td></tr><tr><th>Countries</th><td class="fit">14</td><td class="fit">14</td><td class="fit">14</td><td class="fit">14</td><td class="fit">14</td><td class="fit">14</td></tr><tr><th>Window</th><td class="fit">2002-02 to 2022-01</td><td class="fit">2002-02 to 2022-01</td><td class="fit">2002-02 to 2022-01</td><td class="fit">2002-02 to 2022-01</td><td class="fit">2002-02 to 2022-01</td><td class="fit">2002-02 to 2022-01</td></tr><tr><th>Within R&amp;sup2; </th><td class="fit">0.0384</td><td class="fit">0.0305</td><td class="fit">0.0393</td><td class="fit">0.0298</td><td class="fit">0.0302</td><td class="fit">0.0296</td></tr><tr><th>R&amp;sup2; </th><td class="fit">0.4146</td><td class="fit">0.4098</td><td class="fit">0.4151</td><td class="fit">0.4094</td><td class="fit">0.4096</td><td class="fit">0.4092</td></tr></tbody>
+</table>
+<p class="legend">*** p &lt; 0.01, ** p &lt; 0.05, * p &lt; 0.10. Country-clustered
+standard errors in parentheses. p-values use a two-sided t distribution with
+13 degrees of freedom.</p>
+
+<h2>Reading the table</h2>
+<ul>
+<li>The outcome is in billions of dollars, so a coefficient is a change in that unit.</li>
+<li>GPR is standardized within country, so its coefficient is the effect of a
+one-standard-deviation rise in geopolitical risk.</li>
+<li>The interaction is the change in that GPR slope per one point of the lagged WGI
+score. Its coefficient is small relative to the spread of the WGI scores in most
+columns.</li>
+<li>Only the lagged log oil-price change is significant at 10 percent in all six
+columns. GPR and the interaction are significant in none, and the lagged WGI score
+in one (government effectiveness, p = 0.057).</li>
+</ul>
+
+<h2>Countries in this regression</h2>
+<p>Brazil, Chile, China, Colombia, Hungary, India, Indonesia, Malaysia, Mexico, Philippines, Poland, South Africa, Thailand, Turkiye</p>
+<p class="legend">Ukraine carries the <code>Emerging</code> label in the panel but
+contributes no observations: it has no policy rate, so the lagged policy-rate change
+is always blank.</p>
+</body>
+</html>

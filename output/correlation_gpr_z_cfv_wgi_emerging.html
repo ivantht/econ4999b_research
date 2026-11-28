@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>WGI and the GPR-volatility correlation: emerging economies</title>
+<style>
+  :root { --ink:#16181d; --muted:#6b7280; --line:#e3e6ea; --warn:#b45309; }
+  body { font-family:"Segoe UI",-apple-system,BlinkMacSystemFont,sans-serif;
+          margin:38px auto 70px; max-width:1160px; padding:0 26px;
+          color:var(--ink); background:#fff; line-height:1.58; }
+  h1 { font-size:21px; font-weight:650; margin:0 0 5px; letter-spacing:-.01em; }
+  h2 { font-size:15px; font-weight:650; margin:32px 0 6px; }
+  .sub { color:var(--muted); font-size:13px; margin:0 0 16px; }
+  p { margin:0 0 11px; font-size:14px; max-width:880px; }
+  .note { background:#fbfcfd; border-left:3px solid #94a3b8; padding:12px 15px;
+           font-size:13px; color:#374151; margin:18px 0; max-width:880px; }
+  .warn { background:#fffbf3; border-left:3px solid var(--warn); padding:12px 15px;
+           font-size:13px; color:#4a3a1e; margin:18px 0; max-width:880px; }
+  .note b, .warn b { color:var(--ink); }
+  .wrap { border:1px solid var(--line); border-radius:6px; background:#fff; overflow-x:auto; }
+  .wrap svg { display:block; }
+  table { width:100%; border-collapse:collapse; margin:10px 0 6px; font-size:13px; max-width:520px; }
+  thead th { text-align:left; font-weight:640; font-size:11px; letter-spacing:.04em;
+              text-transform:uppercase; color:var(--muted);
+              border-bottom:1.5px solid var(--ink); padding:7px 9px; }
+  tbody td { padding:5px 9px; border-bottom:1px solid var(--line); }
+  tbody tr:hover { background:#fbfcfd; }
+  .num { text-align:right; font-variant-numeric:tabular-nums; }
+  .strong { font-weight:620; }
+  .sig { color:var(--warn); }
+  footer { margin-top:34px; padding-top:14px; border-top:1px solid var(--line);
+            font-size:12px; color:var(--muted); max-width:880px; }
+  code { font-size:12px; background:#f3f4f6; padding:1px 5px; border-radius:3px; }
+  pre { background:#f8f9fb; border:1px solid var(--line); border-radius:5px;
+         padding:12px 14px; font-size:12px; overflow-x:auto; max-width:520px; }
+</style>
+</head>
+<body>
+
+<h1>Institutions and the GPR&ndash;volatility correlation</h1>
+<p class="sub">Emerging economies &middot; 13 countries, excluding China and Hungary &middot;
+each country&rsquo;s monthly r between <code>gpr_z</code> and <code>capital_flow_volatility</code>,
+paired with its average WGI score</p>
+
+<div class="warn">
+<b>None of these six correlations is statistically distinguishable from zero.</b>
+With n = 13 countries, the 5% two-sided critical value is |r| = 0.509. The strongest
+relationship here is |r| = 0.296, which is still far short of it.
+The honest reading is that this sample carries essentially no information about whether
+institutional quality moderates the GPR&ndash;volatility link.
+</div>
+
+<div class="wrap">
+<svg xmlns="http://www.w3.org/2000/svg" width="1056" height="774" viewBox="0 0 1056 774" font-family="Segoe UI, Helvetica, Arial, sans-serif">
+<rect width="1056" height="774" fill="#ffffff"/>
+<text x="62" y="28" font-size="14.5" font-weight="650" fill="#16181d">Institutions and the GPR&ndash;volatility correlation</text>
+<text x="62" y="48" font-size="11" fill="#6b7280">Each dot is one emerging economy. Vertical axis: that country&rsquo;s Pearson r between gpr_z and capital-flow volatility.</text>
+<text x="62" y="64" font-size="11" fill="#6b7280">Horizontal axis: that country&rsquo;s average WGI score, 23 annual values from 2000 to 2023.</text>
+<text x="62" y="88" font-size="11" fill="#b45309">With 13 countries the 5% two-sided threshold is |r| &gt; 0.509; none of the six correlations reaches it.</text>
+<line x1="62" y1="347.6" x2="362" y2="347.6" stroke="#e6e9ed" stroke-width="1" stroke-dasharray="2 3"/>
+<text x="54" y="351.1" font-size="9.5" fill="#8b9199" text-anchor="end">-0.4</text>
+<line x1="62" y1="297.8" x2="362" y2="297.8" stroke="#e6e9ed" stroke-width="1" stroke-dasharray="2 3"/>
+<text x="54" y="301.3" font-size="9.5" fill="#8b9199" text-anchor="end">-0.2</text>
+<line x1="62" y1="248.0" x2="362" y2="248.0" stroke="#e6e9ed" stroke-width="1"/>
+<text x="54" y="251.5" font-size="9.5" fill="#8b9199" text-anchor="end">0.0</text>
+<line x1="62" y1="198.2" x2="362" y2="198.2" stroke="#e6e9ed" stroke-width="1" stroke-dasharray="2 3"/>
+<text x="54" y="201.7" font-size="9.5" fill="#8b9199" text-anchor="end">+0.2</text>
+<line x1="62" y1="148.4" x2="362" y2="148.4" stroke="#e6e9ed" stroke-width="1" stroke-dasharray="2 3"/>
+<text x="54" y="151.9" font-size="9.5" fill="#8b9199" text-anchor="end">+0.4</text>
+<line x1="91.0" y1="360" x2="91.0" y2="364" stroke="#c7ccd2" stroke-width="1"/>
+<text x="91.0" y="376" font-size="9.5" fill="#8b9199" text-anchor="middle">-0.47</text>
+<line x1="162.4" y1="360" x2="162.4" y2="364" stroke="#c7ccd2" stroke-width="1"/>
+<text x="162.4" y="376" font-size="9.5" fill="#8b9199" text-anchor="middle">0.00</text>
+<line x1="333.0" y1="360" x2="333.0" y2="364" stroke="#c7ccd2" stroke-width="1"/>
+<text x="333.0" y="376" font-size="9.5" fill="#8b9199" text-anchor="middle">1.11</text>
+<rect x="62" y="136" width="300" height="224" fill="none" stroke="#dfe3e8" stroke-width="1"/>
+<circle cx="238.6" cy="215.8" r="3.3" fill="#2f6fb5" fill-opacity="0.8"/>
+<circle cx="333.0" cy="247.6" r="3.3" fill="#2f6fb5" fill-opacity="0.8"/>
+<circle cx="148.1" cy="229.1" r="3.3" fill="#2f6fb5" fill-opacity="0.8"/>
+<circle cx="167.2" cy="227.5" r="3.3" fill="#2f6fb5" fill-opacity="0.8"/>
+<circle cx="217.7" cy="275.3" r="3.3" fill="#2f6fb5" fill-opacity="0.8"/>
+<circle cx="182.6" cy="278.2" r="3.3" fill="#2f6fb5" fill-opacity="0.8"/>
+<circle cx="109.8" cy="232.6" r="3.3" fill="#2f6fb5" fill-opacity="0.8"/>
+<circle cx="157.4" cy="249.4" r="3.3" fill="#2f6fb5" fill-opacity="0.8"/>
+<circle cx="291.2" cy="271.9" r="3.3" fill="#2f6fb5" fill-opacity="0.8"/>
+<circle cx="91.0" cy="283.6" r="3.3" fill="#2f6fb5" fill-opacity="0.8"/>
+<circle cx="99.0" cy="234.4" r="3.3" fill="#2f6fb5" fill-opacity="0.8"/>
+<circle cx="141.5" cy="315.5" r="3.3" fill="#2f6fb5" fill-opacity="0.8"/>
+<circle cx="260.3" cy="253.2" r="3.3" fill="#2f6fb5" fill-opacity="0.8"/>
+<text x="244.6" y="219.2" font-size="8.5" fill="#4b5563" text-anchor="start">Brazil</text>
+<text x="173.2" y="230.9" font-size="8.5" fill="#4b5563" text-anchor="start">Indonesia</text>
+<text x="142.1" y="232.5" font-size="8.5" fill="#4b5563" text-anchor="end">Colombia</text>
+<text x="109.8" y="245.1" font-size="8.5" fill="#4b5563" text-anchor="middle">Malaysia</text>
+<text x="99.0" y="219.4" font-size="8.5" fill="#4b5563" text-anchor="middle">Turkiye</text>
+<text x="327.0" y="251.0" font-size="8.5" fill="#4b5563" text-anchor="end">Chile</text>
+<text x="163.4" y="252.8" font-size="8.5" fill="#4b5563" text-anchor="start">Philippin.</text>
+<text x="260.3" y="245.2" font-size="8.5" fill="#4b5563" text-anchor="middle">S. Africa</text>
+<text x="297.2" y="275.3" font-size="8.5" fill="#4b5563" text-anchor="start">Poland</text>
+<text x="223.7" y="278.7" font-size="8.5" fill="#4b5563" text-anchor="start">India</text>
+<text x="188.6" y="281.6" font-size="8.5" fill="#4b5563" text-anchor="start">Mexico</text>
+<text x="97.0" y="287.0" font-size="8.5" fill="#4b5563" text-anchor="start">Thailand</text>
+<text x="147.5" y="318.9" font-size="8.5" fill="#4b5563" text-anchor="start">Ukraine</text>
+<text x="62" y="110" font-size="11.5" font-weight="600" fill="#16181d">Voice and accountability</text>
+<text x="62" y="125" font-size="10.5" fill="#6b7280">r = +0.046<tspan fill="#9aa0a8">   n = 13</tspan></text>
+<line x1="390" y1="347.6" x2="690" y2="347.6" stroke="#e6e9ed" stroke-width="1" stroke-dasharray="2 3"/>
+<line x1="390" y1="297.8" x2="690" y2="297.8" stroke="#e6e9ed" stroke-width="1" stroke-dasharray="2 3"/>
+<line x1="390" y1="248.0" x2="690" y2="248.0" stroke="#e6e9ed" stroke-width="1"/>
+<line x1="390" y1="198.2" x2="690" y2="198.2" stroke="#e6e9ed" stroke-width="1" stroke-dasharray="2 3"/>
+<line x1="390" y1="148.4" x2="690" y2="148.4" stroke="#e6e9ed" stroke-width="1" stroke-dasharray="2 3"/>
+<line x1="419.0" y1="360" x2="419.0" y2="364" stroke="#c7ccd2" stroke-width="1"/>
+<text x="419.0" y="376" font-size="9.5" fill="#8b9199" text-anchor="middle">-1.35</text>
+<line x1="577.6" y1="360" x2="577.6" y2="364" stroke="#c7ccd2" stroke-width="1"/>
+<text x="577.6" y="376" font-size="9.5" fill="#8b9199" text-anchor="middle">0.00</text>
+<line x1="661.0" y1="360" x2="661.0" y2="364" stroke="#c7ccd2" stroke-width="1"/>
+<text x="661.0" y="376" font-size="9.5" fill="#8b9199" text-anchor="middle">0.71</text>
+<rect x="390" y="136" width="300" height="224" fill="none" stroke="#dfe3e8" stroke-width="1"/>
+<circle cx="548.1" cy="215.8" r="3.3" fill="#2f6fb5" fill-opacity="0.8"/>
+<circle cx="648.2" cy="247.6" r="3.3" fill="#2f6fb5" fill-opacity="0.8"/>
+<circle cx="419.0" cy="229.1" r="3.3" fill="#2f6fb5" fill-opacity="0.8"/>
+<circle cx="473.1" cy="227.5" r="3.3" fill="#2f6fb5" fill-opacity="0.8"/>
+<circle cx="475.4" cy="275.3" r="3.3" fill="#2f6fb5" fill-opacity="0.8"/>
+<circle cx="500.3" cy="278.2" r="3.3" fill="#2f6fb5" fill-opacity="0.8"/>
+<circle cx="592.8" cy="232.6" r="3.3" fill="#2f6fb5" fill-opacity="0.8"/>
+<circle cx="432.3" cy="249.4" r="3.3" fill="#2f6fb5" fill-opacity="0.8"/>
+<circle cx="661.0" cy="271.9" r="3.3" fill="#2f6fb5" fill-opacity="0.8"/>
+<circle cx="483.2" cy="283.6" r="3.3" fill="#2f6fb5" fill-opacity="0.8"/>
+<circle cx="477.7" cy="234.4" r="3.3" fill="#2f6fb5" fill-opacity="0.8"/>
+<circle cx="491.0" cy="315.5" r="3.3" fill="#2f6fb5" fill-opacity="0.8"/>
+<circle cx="549.6" cy="253.2" r="3.3" fill="#2f6fb5" fill-opacity="0.8"/>
+<text x="554.1" y="219.2" font-size="8.5" fill="#4b5563" text-anchor="start">Brazil</text>
+<text x="479.1" y="230.9" font-size="8.5" fill="#4b5563" text-anchor="start">Indonesia</text>
+<text x="425.0" y="232.5" font-size="8.5" fill="#4b5563" text-anchor="start">Colombia</text>
+<text x="598.8" y="236.0" font-size="8.5" fill="#4b5563" text-anchor="start">Malaysia</text>
+<text x="477.7" y="246.9" font-size="8.5" fill="#4b5563" text-anchor="middle">Turkiye</text>
+<text x="654.2" y="251.0" font-size="8.5" fill="#4b5563" text-anchor="start">Chile</text>
+<text x="432.3" y="261.9" font-size="8.5" fill="#4b5563" text-anchor="middle">Philippin.</text>
+<text x="555.6" y="256.6" font-size="8.5" fill="#4b5563" text-anchor="start">S. Africa</text>
+<text x="655.0" y="275.3" font-size="8.5" fill="#4b5563" text-anchor="end">Poland</text>
+<text x="481.4" y="278.7" font-size="8.5" fill="#4b5563" text-anchor="start">India</text>
+<text x="506.3" y="281.6" font-size="8.5" fill="#4b5563" text-anchor="start">Mexico</text>
+<text x="477.2" y="287.0" font-size="8.5" fill="#4b5563" text-anchor="end">Thailand</text>
+<text x="497.0" y="318.9" font-size="8.5" fill="#4b5563" text-anchor="start">Ukraine</text>
+<text x="390" y="110" font-size="11.5" font-weight="600" fill="#16181d">Political stability</text>
+<text x="390" y="125" font-size="10.5" fill="#6b7280">r = +0.010<tspan fill="#9aa0a8">   n = 13</tspan></text>
+<line x1="718" y1="347.6" x2="1018" y2="347.6" stroke="#e6e9ed" stroke-width="1" stroke-dasharray="2 3"/>
+<line x1="718" y1="297.8" x2="1018" y2="297.8" stroke="#e6e9ed" stroke-width="1" stroke-dasharray="2 3"/>
+<line x1="718" y1="248.0" x2="1018" y2="248.0" stroke="#e6e9ed" stroke-width="1"/>
+<line x1="718" y1="198.2" x2="1018" y2="198.2" stroke="#e6e9ed" stroke-width="1" stroke-dasharray="2 3"/>
+<line x1="718" y1="148.4" x2="1018" y2="148.4" stroke="#e6e9ed" stroke-width="1" stroke-dasharray="2 3"/>
+<line x1="747.0" y1="360" x2="747.0" y2="364" stroke="#c7ccd2" stroke-width="1"/>
+<text x="747.0" y="376" font-size="9.5" fill="#8b9199" text-anchor="middle">-0.67</text>
+<line x1="836.2" y1="360" x2="836.2" y2="364" stroke="#c7ccd2" stroke-width="1"/>
+<text x="836.2" y="376" font-size="9.5" fill="#8b9199" text-anchor="middle">0.00</text>
+<line x1="989.0" y1="360" x2="989.0" y2="364" stroke="#c7ccd2" stroke-width="1"/>
+<text x="989.0" y="376" font-size="9.5" fill="#8b9199" text-anchor="middle">1.14</text>
+<rect x="718" y="136" width="300" height="224" fill="none" stroke="#dfe3e8" stroke-width="1"/>
+<circle cx="830.1" cy="215.8" r="3.3" fill="#2f6fb5" fill-opacity="0.8"/>
+<circle cx="989.0" cy="247.6" r="3.3" fill="#2f6fb5" fill-opacity="0.8"/>
+<circle cx="818.5" cy="229.1" r="3.3" fill="#2f6fb5" fill-opacity="0.8"/>
+<circle cx="821.3" cy="227.5" r="3.3" fill="#2f6fb5" fill-opacity="0.8"/>
+<circle cx="853.5" cy="275.3" r="3.3" fill="#2f6fb5" fill-opacity="0.8"/>
+<circle cx="839.1" cy="278.2" r="3.3" fill="#2f6fb5" fill-opacity="0.8"/>
+<circle cx="947.2" cy="232.6" r="3.3" fill="#2f6fb5" fill-opacity="0.8"/>
+<circle cx="844.0" cy="249.4" r="3.3" fill="#2f6fb5" fill-opacity="0.8"/>
+<circle cx="912.5" cy="271.9" r="3.3" fill="#2f6fb5" fill-opacity="0.8"/>
+<circle cx="857.0" cy="283.6" r="3.3" fill="#2f6fb5" fill-opacity="0.8"/>
+<circle cx="859.5" cy="234.4" r="3.3" fill="#2f6fb5" fill-opacity="0.8"/>
+<circle cx="747.0" cy="315.5" r="3.3" fill="#2f6fb5" fill-opacity="0.8"/>
+<circle cx="881.4" cy="253.2" r="3.3" fill="#2f6fb5" fill-opacity="0.8"/>
+<text x="836.1" y="219.2" font-size="8.5" fill="#4b5563" text-anchor="start">Brazil</text>
+<text x="827.3" y="230.9" font-size="8.5" fill="#4b5563" text-anchor="start">Indonesia</text>
+<text x="812.5" y="232.5" font-size="8.5" fill="#4b5563" text-anchor="end">Colombia</text>
+<text x="953.2" y="236.0" font-size="8.5" fill="#4b5563" text-anchor="start">Malaysia</text>
+<text x="859.5" y="246.9" font-size="8.5" fill="#4b5563" text-anchor="middle">Turkiye</text>
+<text x="983.0" y="251.0" font-size="8.5" fill="#4b5563" text-anchor="end">Chile</text>
+<text x="838.0" y="252.8" font-size="8.5" fill="#4b5563" text-anchor="end">Philippin.</text>
+<text x="887.4" y="256.6" font-size="8.5" fill="#4b5563" text-anchor="start">S. Africa</text>
+<text x="918.5" y="275.3" font-size="8.5" fill="#4b5563" text-anchor="start">Poland</text>
+<text x="859.5" y="278.7" font-size="8.5" fill="#4b5563" text-anchor="start">India</text>
+<text x="833.1" y="281.6" font-size="8.5" fill="#4b5563" text-anchor="end">Mexico</text>
+<text x="857.0" y="296.1" font-size="8.5" fill="#4b5563" text-anchor="middle">Thailand</text>
+<text x="753.0" y="318.9" font-size="8.5" fill="#4b5563" text-anchor="start">Ukraine</text>
+<text x="718" y="110" font-size="11.5" font-weight="600" fill="#16181d">Government effectiveness</text>
+<text x="718" y="125" font-size="10.5" fill="#6b7280">r = +0.296<tspan fill="#9aa0a8">   n = 13</tspan></text>
+<line x1="62" y1="629.6" x2="362" y2="629.6" stroke="#e6e9ed" stroke-width="1" stroke-dasharray="2 3"/>
+<text x="54" y="633.1" font-size="9.5" fill="#8b9199" text-anchor="end">-0.4</text>
+<line x1="62" y1="579.8" x2="362" y2="579.8" stroke="#e6e9ed" stroke-width="1" stroke-dasharray="2 3"/>
+<text x="54" y="583.3" font-size="9.5" fill="#8b9199" text-anchor="end">-0.2</text>
+<line x1="62" y1="530.0" x2="362" y2="530.0" stroke="#e6e9ed" stroke-width="1"/>
+<text x="54" y="533.5" font-size="9.5" fill="#8b9199" text-anchor="end">0.0</text>
+<line x1="62" y1="480.2" x2="362" y2="480.2" stroke="#e6e9ed" stroke-width="1" stroke-dasharray="2 3"/>
+<text x="54" y="483.7" font-size="9.5" fill="#8b9199" text-anchor="end">+0.2</text>
+<line x1="62" y1="430.4" x2="362" y2="430.4" stroke="#e6e9ed" stroke-width="1" stroke-dasharray="2 3"/>
+<text x="54" y="433.9" font-size="9.5" fill="#8b9199" text-anchor="end">+0.4</text>
+<line x1="91.0" y1="642" x2="91.0" y2="646" stroke="#c7ccd2" stroke-width="1"/>
+<text x="91.0" y="658" font-size="9.5" fill="#8b9199" text-anchor="middle">-0.51</text>
+<line x1="157.0" y1="642" x2="157.0" y2="646" stroke="#c7ccd2" stroke-width="1"/>
+<text x="157.0" y="658" font-size="9.5" fill="#8b9199" text-anchor="middle">0.00</text>
+<line x1="333.0" y1="642" x2="333.0" y2="646" stroke="#c7ccd2" stroke-width="1"/>
+<text x="333.0" y="658" font-size="9.5" fill="#8b9199" text-anchor="middle">1.35</text>
+<rect x="62" y="418" width="300" height="224" fill="none" stroke="#dfe3e8" stroke-width="1"/>
+<circle cx="159.8" cy="497.8" r="3.3" fill="#2f6fb5" fill-opacity="0.8"/>
+<circle cx="333.0" cy="529.6" r="3.3" fill="#2f6fb5" fill-opacity="0.8"/>
+<circle cx="180.3" cy="511.1" r="3.3" fill="#2f6fb5" fill-opacity="0.8"/>
+<circle cx="141.0" cy="509.5" r="3.3" fill="#2f6fb5" fill-opacity="0.8"/>
+<circle cx="119.7" cy="557.3" r="3.3" fill="#2f6fb5" fill-opacity="0.8"/>
+<circle cx="188.9" cy="560.2" r="3.3" fill="#2f6fb5" fill-opacity="0.8"/>
+<circle cx="242.2" cy="514.6" r="3.3" fill="#2f6fb5" fill-opacity="0.8"/>
+<circle cx="165.4" cy="531.4" r="3.3" fill="#2f6fb5" fill-opacity="0.8"/>
+<circle cx="261.0" cy="553.9" r="3.3" fill="#2f6fb5" fill-opacity="0.8"/>
+<circle cx="176.9" cy="565.6" r="3.3" fill="#2f6fb5" fill-opacity="0.8"/>
+<circle cx="178.1" cy="516.4" r="3.3" fill="#2f6fb5" fill-opacity="0.8"/>
+<circle cx="91.0" cy="597.5" r="3.3" fill="#2f6fb5" fill-opacity="0.8"/>
+<circle cx="214.1" cy="535.2" r="3.3" fill="#2f6fb5" fill-opacity="0.8"/>
+<text x="165.8" y="501.2" font-size="8.5" fill="#4b5563" text-anchor="start">Brazil</text>
+<text x="135.0" y="512.9" font-size="8.5" fill="#4b5563" text-anchor="end">Indonesia</text>
+<text x="186.3" y="514.5" font-size="8.5" fill="#4b5563" text-anchor="start">Colombia</text>
+<text x="248.2" y="518.0" font-size="8.5" fill="#4b5563" text-anchor="start">Malaysia</text>
+<text x="172.1" y="519.8" font-size="8.5" fill="#4b5563" text-anchor="end">Turkiye</text>
+<text x="327.0" y="533.0" font-size="8.5" fill="#4b5563" text-anchor="end">Chile</text>
+<text x="171.4" y="534.8" font-size="8.5" fill="#4b5563" text-anchor="start">Philippin.</text>
+<text x="214.1" y="547.7" font-size="8.5" fill="#4b5563" text-anchor="middle">S. Africa</text>
+<text x="267.0" y="557.3" font-size="8.5" fill="#4b5563" text-anchor="start">Poland</text>
+<text x="125.7" y="560.7" font-size="8.5" fill="#4b5563" text-anchor="start">India</text>
+<text x="194.9" y="563.6" font-size="8.5" fill="#4b5563" text-anchor="start">Mexico</text>
+<text x="176.9" y="578.1" font-size="8.5" fill="#4b5563" text-anchor="middle">Thailand</text>
+<text x="97.0" y="600.9" font-size="8.5" fill="#4b5563" text-anchor="start">Ukraine</text>
+<text x="62" y="392" font-size="11.5" font-weight="600" fill="#16181d">Regulatory quality</text>
+<text x="62" y="407" font-size="10.5" fill="#6b7280">r = +0.265<tspan fill="#9aa0a8">   n = 13</tspan></text>
+<line x1="390" y1="629.6" x2="690" y2="629.6" stroke="#e6e9ed" stroke-width="1" stroke-dasharray="2 3"/>
+<line x1="390" y1="579.8" x2="690" y2="579.8" stroke="#e6e9ed" stroke-width="1" stroke-dasharray="2 3"/>
+<line x1="390" y1="530.0" x2="690" y2="530.0" stroke="#e6e9ed" stroke-width="1"/>
+<line x1="390" y1="480.2" x2="690" y2="480.2" stroke="#e6e9ed" stroke-width="1" stroke-dasharray="2 3"/>
+<line x1="390" y1="430.4" x2="690" y2="430.4" stroke="#e6e9ed" stroke-width="1" stroke-dasharray="2 3"/>
+<line x1="419.0" y1="642" x2="419.0" y2="646" stroke="#c7ccd2" stroke-width="1"/>
+<text x="419.0" y="658" font-size="9.5" fill="#8b9199" text-anchor="middle">-0.71</text>
+<line x1="515.0" y1="642" x2="515.0" y2="646" stroke="#c7ccd2" stroke-width="1"/>
+<text x="515.0" y="658" font-size="9.5" fill="#8b9199" text-anchor="middle">0.00</text>
+<line x1="661.0" y1="642" x2="661.0" y2="646" stroke="#c7ccd2" stroke-width="1"/>
+<text x="661.0" y="658" font-size="9.5" fill="#8b9199" text-anchor="middle">1.08</text>
+<rect x="390" y="418" width="300" height="224" fill="none" stroke="#dfe3e8" stroke-width="1"/>
+<circle cx="476.2" cy="497.8" r="3.3" fill="#2f6fb5" fill-opacity="0.8"/>
+<circle cx="661.0" cy="529.6" r="3.3" fill="#2f6fb5" fill-opacity="0.8"/>
+<circle cx="445.4" cy="511.1" r="3.3" fill="#2f6fb5" fill-opacity="0.8"/>
+<circle cx="449.1" cy="509.5" r="3.3" fill="#2f6fb5" fill-opacity="0.8"/>
+<circle cx="515.5" cy="557.3" r="3.3" fill="#2f6fb5" fill-opacity="0.8"/>
+<circle cx="433.9" cy="560.2" r="3.3" fill="#2f6fb5" fill-opacity="0.8"/>
+<circle cx="550.0" cy="514.6" r="3.3" fill="#2f6fb5" fill-opacity="0.8"/>
+<circle cx="444.9" cy="531.4" r="3.3" fill="#2f6fb5" fill-opacity="0.8"/>
+<circle cx="595.3" cy="553.9" r="3.3" fill="#2f6fb5" fill-opacity="0.8"/>
+<circle cx="492.9" cy="565.6" r="3.3" fill="#2f6fb5" fill-opacity="0.8"/>
+<circle cx="481.7" cy="516.4" r="3.3" fill="#2f6fb5" fill-opacity="0.8"/>
+<circle cx="419.0" cy="597.5" r="3.3" fill="#2f6fb5" fill-opacity="0.8"/>
+<circle cx="520.4" cy="535.2" r="3.3" fill="#2f6fb5" fill-opacity="0.8"/>
+<text x="482.2" y="501.2" font-size="8.5" fill="#4b5563" text-anchor="start">Brazil</text>
+<text x="455.1" y="512.9" font-size="8.5" fill="#4b5563" text-anchor="start">Indonesia</text>
+<text x="439.4" y="514.5" font-size="8.5" fill="#4b5563" text-anchor="end">Colombia</text>
+<text x="556.0" y="518.0" font-size="8.5" fill="#4b5563" text-anchor="start">Malaysia</text>
+<text x="481.7" y="528.9" font-size="8.5" fill="#4b5563" text-anchor="middle">Turkiye</text>
+<text x="655.0" y="533.0" font-size="8.5" fill="#4b5563" text-anchor="end">Chile</text>
+<text x="444.9" y="543.9" font-size="8.5" fill="#4b5563" text-anchor="middle">Philippin.</text>
+<text x="526.4" y="538.6" font-size="8.5" fill="#4b5563" text-anchor="start">S. Africa</text>
+<text x="601.3" y="557.3" font-size="8.5" fill="#4b5563" text-anchor="start">Poland</text>
+<text x="521.5" y="560.7" font-size="8.5" fill="#4b5563" text-anchor="start">India</text>
+<text x="439.9" y="563.6" font-size="8.5" fill="#4b5563" text-anchor="start">Mexico</text>
+<text x="492.9" y="557.6" font-size="8.5" fill="#4b5563" text-anchor="middle">Thailand</text>
+<text x="425.0" y="600.9" font-size="8.5" fill="#4b5563" text-anchor="start">Ukraine</text>
+<text x="390" y="392" font-size="11.5" font-weight="600" fill="#16181d">Rule of law</text>
+<text x="390" y="407" font-size="10.5" fill="#6b7280">r = +0.110<tspan fill="#9aa0a8">   n = 13</tspan></text>
+<line x1="718" y1="629.6" x2="1018" y2="629.6" stroke="#e6e9ed" stroke-width="1" stroke-dasharray="2 3"/>
+<line x1="718" y1="579.8" x2="1018" y2="579.8" stroke="#e6e9ed" stroke-width="1" stroke-dasharray="2 3"/>
+<line x1="718" y1="530.0" x2="1018" y2="530.0" stroke="#e6e9ed" stroke-width="1"/>
+<line x1="718" y1="480.2" x2="1018" y2="480.2" stroke="#e6e9ed" stroke-width="1" stroke-dasharray="2 3"/>
+<line x1="718" y1="430.4" x2="1018" y2="430.4" stroke="#e6e9ed" stroke-width="1" stroke-dasharray="2 3"/>
+<line x1="747.0" y1="642" x2="747.0" y2="646" stroke="#c7ccd2" stroke-width="1"/>
+<text x="747.0" y="658" font-size="9.5" fill="#8b9199" text-anchor="middle">-1.02</text>
+<line x1="852.4" y1="642" x2="852.4" y2="646" stroke="#c7ccd2" stroke-width="1"/>
+<text x="852.4" y="658" font-size="9.5" fill="#8b9199" text-anchor="middle">0.00</text>
+<line x1="989.0" y1="642" x2="989.0" y2="646" stroke="#c7ccd2" stroke-width="1"/>
+<text x="989.0" y="658" font-size="9.5" fill="#8b9199" text-anchor="middle">1.32</text>
+<rect x="718" y="418" width="300" height="224" fill="none" stroke="#dfe3e8" stroke-width="1"/>
+<circle cx="832.3" cy="497.8" r="3.3" fill="#2f6fb5" fill-opacity="0.8"/>
+<circle cx="989.0" cy="529.6" r="3.3" fill="#2f6fb5" fill-opacity="0.8"/>
+<circle cx="822.0" cy="511.1" r="3.3" fill="#2f6fb5" fill-opacity="0.8"/>
+<circle cx="780.2" cy="509.5" r="3.3" fill="#2f6fb5" fill-opacity="0.8"/>
+<circle cx="816.0" cy="557.3" r="3.3" fill="#2f6fb5" fill-opacity="0.8"/>
+<circle cx="790.7" cy="560.2" r="3.3" fill="#2f6fb5" fill-opacity="0.8"/>
+<circle cx="870.3" cy="514.6" r="3.3" fill="#2f6fb5" fill-opacity="0.8"/>
+<circle cx="786.4" cy="531.4" r="3.3" fill="#2f6fb5" fill-opacity="0.8"/>
+<circle cx="915.9" cy="553.9" r="3.3" fill="#2f6fb5" fill-opacity="0.8"/>
+<circle cx="814.7" cy="565.6" r="3.3" fill="#2f6fb5" fill-opacity="0.8"/>
+<circle cx="839.2" cy="516.4" r="3.3" fill="#2f6fb5" fill-opacity="0.8"/>
+<circle cx="747.0" cy="597.5" r="3.3" fill="#2f6fb5" fill-opacity="0.8"/>
+<circle cx="863.9" cy="535.2" r="3.3" fill="#2f6fb5" fill-opacity="0.8"/>
+<text x="838.3" y="501.2" font-size="8.5" fill="#4b5563" text-anchor="start">Brazil</text>
+<text x="774.2" y="512.9" font-size="8.5" fill="#4b5563" text-anchor="end">Indonesia</text>
+<text x="828.0" y="514.5" font-size="8.5" fill="#4b5563" text-anchor="start">Colombia</text>
+<text x="876.3" y="518.0" font-size="8.5" fill="#4b5563" text-anchor="start">Malaysia</text>
+<text x="839.2" y="528.9" font-size="8.5" fill="#4b5563" text-anchor="middle">Turkiye</text>
+<text x="983.0" y="533.0" font-size="8.5" fill="#4b5563" text-anchor="end">Chile</text>
+<text x="780.4" y="534.8" font-size="8.5" fill="#4b5563" text-anchor="end">Philippin.</text>
+<text x="869.9" y="538.6" font-size="8.5" fill="#4b5563" text-anchor="start">S. Africa</text>
+<text x="921.9" y="557.3" font-size="8.5" fill="#4b5563" text-anchor="start">Poland</text>
+<text x="822.0" y="560.7" font-size="8.5" fill="#4b5563" text-anchor="start">India</text>
+<text x="784.7" y="563.6" font-size="8.5" fill="#4b5563" text-anchor="end">Mexico</text>
+<text x="814.7" y="578.1" font-size="8.5" fill="#4b5563" text-anchor="middle">Thailand</text>
+<text x="753.0" y="600.9" font-size="8.5" fill="#4b5563" text-anchor="start">Ukraine</text>
+<text x="718" y="392" font-size="11.5" font-weight="600" fill="#16181d">Control of corruption</text>
+<text x="718" y="407" font-size="10.5" fill="#6b7280">r = +0.267<tspan fill="#9aa0a8">   n = 13</tspan></text>
+</svg>
+</div>
+
+<h2>Correlation table</h2>
+<p>Each number pairs a country&rsquo;s correlation from the previous table with that country&rsquo;s
+mean WGI score. 23 annual values are available between 2000 and 2023 because WGI is
+blank in 2001.</p>
+<table>
+  <thead><tr><th>WGI measure</th><th class="num">r</th><th class="num">t</th></tr></thead>
+  <tbody>
+<tr><td>Government effectiveness</td><td class="num strong">+0.296</td><td class="num">1.03</td></tr>
+<tr><td>Control of corruption</td><td class="num strong">+0.267</td><td class="num">0.92</td></tr>
+<tr><td>Regulatory quality</td><td class="num strong">+0.265</td><td class="num">0.91</td></tr>
+<tr><td>Rule of law</td><td class="num strong">+0.110</td><td class="num">0.37</td></tr>
+<tr><td>Voice and accountability</td><td class="num strong">+0.046</td><td class="num">0.15</td></tr>
+<tr><td>Political stability</td><td class="num strong">+0.010</td><td class="num">0.03</td></tr>
+  </tbody>
+</table>
+
+<h2>Why this is uninformative, not a finding</h2>
+<p><b>The outcome is already noisy.</b> The country-level correlations being correlated here run
+from &minus;0.271 to +0.130 and were estimated from between 106 and 288 monthly observations. Each
+is measured with substantial error, so the regressand in this exercise is mostly estimation noise.
+Attenuation bias pushes all six coefficients toward zero.</p>
+<p><b>The earlier version of this table was driven by two points.</b> With China and Hungary
+included, voice and accountability read &minus;0.307 and five dimensions leaned positive. Remove
+those two countries and voice and accountability becomes +0.046
+while government effectiveness, regulatory quality and control of corruption all strengthen slightly.
+That reshuffling is the signature of a coefficient resting on two observations, not on a
+cross-country relationship.</p>
+<p><b>What the remaining pattern means.</b> The three governance dimensions that now lead
+&mdash; government effectiveness, control of corruption, regulatory quality &mdash; sit between
++0.26 and +0.30, still well short of the 0.509 threshold, and the two political dimensions
+collapse to roughly zero. All six would need to move together, in the same direction and past the
+threshold, before this could be called a moderating effect.</p>
+<p><b>What would actually test the claim.</b> Interact GPR with WGI inside a panel regression with
+country and time fixed effects, so the test uses the 2,849 country-months rather than 13 country
+averages. That is the specification the earlier tables in this file move toward.</p>
+
+<h2>Ready-to-paste block</h2>
+<pre>WGI measure                       r
+Government effectiveness       0.296
+Control of corruption          0.267
+Regulatory quality             0.265
+Rule of law                    0.110
+Voice and accountability       0.046
+Political stability            0.010
+
+* |r| > 0.509, the 5% two-sided threshold at n = 13. No measure clears it.</pre>
+
+<footer>
+Data: <code>cleaned/replication_cleaned/country_month.csv</code>, emerging economies only.
+The country correlation reuses the monthly current-month Pearson r of <code>gpr_z</code> against
+<code>capital_flow_volatility</code> from the preceding table; the WGI figure is the simple mean of
+available annual values, unchanged across the months of a year. Chart is hand-built SVG.
+</footer>
+
+</body>
+</html>

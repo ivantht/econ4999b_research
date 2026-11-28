@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Model 2 on annual data: capital-flow volatility and institutional quality</title>
+<style>
+:root { --ink:#1c2530; --muted:#5b6b7b; --line:#d3dde5; --pale:#f6f9fb; --orange:#c2571f; }
+body { font: 16px/1.55 Georgia, "Times New Roman", serif; color: var(--ink);
+  max-width: 1180px; margin: 2.5em auto; padding: 0 1.2em; }
+h1 { font-size: 1.6em; margin: 0 0 .2em; line-height: 1.2; }
+h2 { font-size: 1.14em; margin: 2.1em 0 .5em; padding-bottom: .3em;
+  border-bottom: 2px solid var(--line); }
+.sub { color: var(--muted); margin: 0 0 1.5em; }
+.note { background: var(--pale); border-left: 4px solid var(--orange);
+  padding: .9em 1.1em; margin: 1.2em 0; font-size: .93em; }
+.note p { margin: .4em 0; }
+table { border-collapse: collapse; width: 100%; margin: 1em 0 1.6em; font-size: .78em; }
+th, td { border-bottom: 1px solid var(--line); padding: .45em .5em; text-align: right;
+  vertical-align: top; }
+thead th { background: var(--pale); font-size: .95em; text-align: center; line-height: 1.25; }
+tbody th { text-align: left; font-weight: normal; width: 14em; }
+td .coef, td .annual { display: block; font-weight: 700; font-variant-numeric: tabular-nums; }
+td .se { display: block; color: var(--muted); font-size: .95em;
+  font-variant-numeric: tabular-nums; }
+td .pv { display: block; font-size: .85em; font-variant-numeric: tabular-nums; color: #7c8794; }
+td .tiny { display: block; font-size: .78em; color: #7c8794; font-variant-numeric: tabular-nums; }
+td .ref { display: block; font-size: .78em; color: #9aa0a8; font-variant-numeric: tabular-nums;
+  border-top: 1px dotted #dfe4e9; margin-top: .25em; padding-top: .2em; }
+td.p01 { background:#d9f0dc; } td.p05 { background:#e6f5e8; }
+td.p10 { background:#f2f8e8; } td.pns { color:#53616e; }
+td.p01 .pv, td.p05 .pv, td.p10 .pv { font-weight: 700; }
+td.num { font-variant-numeric: tabular-nums; }
+.legend { font-size: .86em; color: var(--muted); }
+code { font-size: .92em; background: var(--pale); padding: .05em .3em; }
+ul { margin:.5em 0; } li { margin:.35em 0; }
+</style>
+</head>
+<body>
+<h1>Model 2 on annual data</h1>
+<p class="sub">Emerging economies, 14 countries, 2002&ndash;2021,
+204 country-years &mdash; one observation per country per year</p>
+
+<div class="note">
+<p><b>Same specification, different clock.</b> The outcome, the WGI term, the interaction,
+the seven controls, the country fixed effects, and the country clustering are those of the
+monthly Model 2. What changes is that each observation is a country-year rather than a
+country-month.</p>
+<p><b>Aggregation.</b> Every monthly regressor is averaged inside the calendar year. The
+outcome is the mean of the twelve monthly three-month rolling standard deviations, which is
+the same rule the quarterly file uses on three months.</p>
+<p><b>Complete years only.</b> A country-year enters when all twelve monthly volatilities are
+observed. Eleven country-years carrying nine or ten months are excluded from the main sample and
+readmitted in the robustness table.</p>
+<p><b>WGI enters at its current-year value, not lagged.</b> WGI is constant within a calendar
+year in the source panel, so a one-year lag would substitute last year's institutional score.
+Using the current-year score keeps this run as close as possible to the monthly one, where
+eleven of twelve months already use the current year's value. The downside is that the WGI
+term is not predetermined here, so it cannot be read as an exogenous institution effect.</p>
+</div>
+
+<h2>Estimates</h2>
+<table>
+<thead><tr><th></th><th>Voice and accountability</th><th>Political stability</th><th>Government effectiveness</th><th>Regulatory quality</th><th>Rule of law</th><th>Control of corruption</th></tr></thead>
+<tbody><tr><th>WGI, current year</th><td class="pns"><span class="coef">-0.9619</span><span class="se">(0.6467)</span><span class="pv">p = 0.161</span></td><td class="pns"><span class="coef">-0.4699</span><span class="se">(0.5161)</span><span class="pv">p = 0.379</span></td><td class="p05"><span class="coef">+1.3133**</span><span class="se">(0.4809)</span><span class="pv">p = 0.017</span></td><td class="pns"><span class="coef">-0.3366</span><span class="se">(0.6021)</span><span class="pv">p = 0.586</span></td><td class="pns"><span class="coef">-0.4261</span><span class="se">(0.5289)</span><span class="pv">p = 0.435</span></td><td class="pns"><span class="coef">+0.1094</span><span class="se">(0.7808)</span><span class="pv">p = 0.891</span></td></tr><tr><th>GPR, standardized</th><td class="pns"><span class="coef">-0.2299</span><span class="se">(0.1514)</span><span class="pv">p = 0.153</span></td><td class="pns"><span class="coef">-0.0765</span><span class="se">(0.1471)</span><span class="pv">p = 0.612</span></td><td class="p05"><span class="coef">-0.3343**</span><span class="se">(0.1277)</span><span class="pv">p = 0.021</span></td><td class="pns"><span class="coef">-0.2074</span><span class="se">(0.2588)</span><span class="pv">p = 0.437</span></td><td class="pns"><span class="coef">-0.2382</span><span class="se">(0.1663)</span><span class="pv">p = 0.176</span></td><td class="pns"><span class="coef">-0.1328</span><span class="se">(0.1593)</span><span class="pv">p = 0.420</span></td></tr><tr><th>WGI &times; GPR</th><td class="pns"><span class="coef">-0.6392</span><span class="se">(0.3727)</span><span class="pv">p = 0.110</span></td><td class="pns"><span class="coef">+0.2339</span><span class="se">(0.2275)</span><span class="pv">p = 0.323</span></td><td class="pns"><span class="coef">+0.5731</span><span class="se">(0.3782)</span><span class="pv">p = 0.154</span></td><td class="pns"><span class="coef">+0.1209</span><span class="se">(0.4490)</span><span class="pv">p = 0.792</span></td><td class="pns"><span class="coef">-0.2483</span><span class="se">(0.4178)</span><span class="pv">p = 0.563</span></td><td class="pns"><span class="coef">+0.3127</span><span class="se">(0.3692)</span><span class="pv">p = 0.412</span></td></tr><tr><th>Policy rate, lagged change</th><td class="pns"><span class="coef">-0.0415</span><span class="se">(0.6738)</span><span class="pv">p = 0.952</span></td><td class="pns"><span class="coef">+0.1386</span><span class="se">(0.6853)</span><span class="pv">p = 0.843</span></td><td class="pns"><span class="coef">+0.1159</span><span class="se">(0.7642)</span><span class="pv">p = 0.882</span></td><td class="pns"><span class="coef">+0.1546</span><span class="se">(0.7037)</span><span class="pv">p = 0.830</span></td><td class="pns"><span class="coef">+0.0780</span><span class="se">(0.7312)</span><span class="pv">p = 0.917</span></td><td class="pns"><span class="coef">+0.1074</span><span class="se">(0.7269)</span><span class="pv">p = 0.885</span></td></tr><tr><th>Inflation, lagged change</th><td class="pns"><span class="coef">+0.1028</span><span class="se">(0.4322)</span><span class="pv">p = 0.816</span></td><td class="pns"><span class="coef">+0.1185</span><span class="se">(0.4286)</span><span class="pv">p = 0.787</span></td><td class="pns"><span class="coef">+0.0051</span><span class="se">(0.4720)</span><span class="pv">p = 0.992</span></td><td class="pns"><span class="coef">+0.1375</span><span class="se">(0.4315)</span><span class="pv">p = 0.755</span></td><td class="pns"><span class="coef">+0.1109</span><span class="se">(0.4322)</span><span class="pv">p = 0.802</span></td><td class="pns"><span class="coef">+0.1342</span><span class="se">(0.4399)</span><span class="pv">p = 0.765</span></td></tr><tr><th>Log oil price, lagged change</th><td class="pns"><span class="coef">+1.7908</span><span class="se">(2.2462)</span><span class="pv">p = 0.440</span></td><td class="pns"><span class="coef">+1.9890</span><span class="se">(2.0474)</span><span class="pv">p = 0.349</span></td><td class="pns"><span class="coef">+2.6066</span><span class="se">(2.5359)</span><span class="pv">p = 0.323</span></td><td class="pns"><span class="coef">+2.0276</span><span class="se">(2.3223)</span><span class="pv">p = 0.398</span></td><td class="pns"><span class="coef">+1.9792</span><span class="se">(2.5037)</span><span class="pv">p = 0.443</span></td><td class="pns"><span class="coef">+1.8094</span><span class="se">(2.1325)</span><span class="pv">p = 0.412</span></td></tr><tr><th>Log global EPU, lagged change</th><td class="pns"><span class="coef">-2.8114</span><span class="se">(3.4659)</span><span class="pv">p = 0.432</span></td><td class="pns"><span class="coef">-1.4561</span><span class="se">(2.1791)</span><span class="pv">p = 0.516</span></td><td class="pns"><span class="coef">-1.1352</span><span class="se">(2.8263)</span><span class="pv">p = 0.694</span></td><td class="pns"><span class="coef">-1.5111</span><span class="se">(2.4135)</span><span class="pv">p = 0.542</span></td><td class="pns"><span class="coef">-1.9307</span><span class="se">(2.9308)</span><span class="pv">p = 0.522</span></td><td class="pns"><span class="coef">-0.7358</span><span class="se">(2.0662)</span><span class="pv">p = 0.727</span></td></tr><tr><th>Financial development, lagged change</th><td class="pns"><span class="coef">+3.1280</span><span class="se">(4.0766)</span><span class="pv">p = 0.457</span></td><td class="pns"><span class="coef">+2.5234</span><span class="se">(3.1486)</span><span class="pv">p = 0.437</span></td><td class="pns"><span class="coef">+1.8765</span><span class="se">(3.2332)</span><span class="pv">p = 0.572</span></td><td class="pns"><span class="coef">+2.0508</span><span class="se">(3.3178)</span><span class="pv">p = 0.547</span></td><td class="pns"><span class="coef">+2.4648</span><span class="se">(3.6526)</span><span class="pv">p = 0.512</span></td><td class="pns"><span class="coef">+1.8463</span><span class="se">(3.3792)</span><span class="pv">p = 0.594</span></td></tr><tr><th>Debt/GDP, lagged change</th><td class="pns"><span class="coef">+0.0043</span><span class="se">(0.0345)</span><span class="pv">p = 0.903</span></td><td class="pns"><span class="coef">+0.0271</span><span class="se">(0.0207)</span><span class="pv">p = 0.213</span></td><td class="pns"><span class="coef">+0.0343</span><span class="se">(0.0268)</span><span class="pv">p = 0.224</span></td><td class="pns"><span class="coef">+0.0289</span><span class="se">(0.0216)</span><span class="pv">p = 0.204</span></td><td class="pns"><span class="coef">+0.0259</span><span class="se">(0.0303)</span><span class="pv">p = 0.409</span></td><td class="pns"><span class="coef">+0.0336</span><span class="se">(0.0235)</span><span class="pv">p = 0.176</span></td></tr><tr><th>Log VIX, lagged</th><td class="pns"><span class="coef">+0.3210</span><span class="se">(0.7052)</span><span class="pv">p = 0.656</span></td><td class="pns"><span class="coef">+0.0794</span><span class="se">(0.4816)</span><span class="pv">p = 0.872</span></td><td class="pns"><span class="coef">+0.0412</span><span class="se">(0.6066)</span><span class="pv">p = 0.947</span></td><td class="pns"><span class="coef">+0.1015</span><span class="se">(0.5132)</span><span class="pv">p = 0.846</span></td><td class="pns"><span class="coef">+0.1015</span><span class="se">(0.5851)</span><span class="pv">p = 0.865</span></td><td class="pns"><span class="coef">+0.0011</span><span class="se">(0.4475)</span><span class="pv">p = 0.998</span></td></tr></tbody>
+</table>
+<p class="legend">*** p &lt; 0.01, ** p &lt; 0.05, * p &lt; 0.10. Country-clustered standard
+errors in parentheses, 14 clusters, 13 degrees of freedom.</p>
+
+<h2>Three frequencies side by side</h2>
+<p class="legend">Bold is the annual estimate. Below it, <code>M</code> is the monthly and
+<code>Q</code> the quarterly coefficient with stars and p-value from the earlier runs.</p>
+<table>
+<thead><tr><th></th><th>Voice and accountability</th><th>Political stability</th><th>Government effectiveness</th><th>Regulatory quality</th><th>Rule of law</th><th>Control of corruption</th></tr></thead>
+<tbody><tr><th>GPR, standardized</th><td><span class="annual">-0.230</span><span class="tiny">p 0.15</span><span class="ref">M +0.069<br><span class='tiny'>p 0.48</span></span><span class="ref">Q +0.161<br><span class='tiny'>p 0.31</span></span></td><td><span class="annual">-0.077</span><span class="tiny">p 0.61</span><span class="ref">M +0.071<br><span class='tiny'>p 0.34</span></span><span class="ref">Q +0.189<br><span class='tiny'>p 0.34</span></span></td><td><span class="annual">-0.334**</span><span class="tiny">p 0.02</span><span class="ref">M +0.004<br><span class='tiny'>p 0.96</span></span><span class="ref">Q +0.024<br><span class='tiny'>p 0.89</span></span></td><td><span class="annual">-0.207</span><span class="tiny">p 0.44</span><span class="ref">M +0.082<br><span class='tiny'>p 0.58</span></span><span class="ref">Q +0.281<br><span class='tiny'>p 0.40</span></span></td><td><span class="annual">-0.238</span><span class="tiny">p 0.18</span><span class="ref">M +0.052<br><span class='tiny'>p 0.55</span></span><span class="ref">Q +0.158<br><span class='tiny'>p 0.38</span></span></td><td><span class="annual">-0.133</span><span class="tiny">p 0.42</span><span class="ref">M +0.052<br><span class='tiny'>p 0.53</span></span><span class="ref">Q +0.170<br><span class='tiny'>p 0.39</span></span></td></tr><tr><th>WGI &times; GPR</th><td><span class="annual">-0.639</span><span class="tiny">p 0.11</span><span class="ref">M -0.269<br><span class='tiny'>p 0.28</span></span><span class="ref">Q -0.780<br><span class='tiny'>p 0.12</span></span></td><td><span class="annual">+0.234</span><span class="tiny">p 0.32</span><span class="ref">M +0.065<br><span class='tiny'>p 0.33</span></span><span class="ref">Q +0.092<br><span class='tiny'>p 0.54</span></span></td><td><span class="annual">+0.573</span><span class="tiny">p 0.15</span><span class="ref">M +0.116<br><span class='tiny'>p 0.40</span></span><span class="ref">Q +0.373<br><span class='tiny'>p 0.28</span></span></td><td><span class="annual">+0.121</span><span class="tiny">p 0.79</span><span class="ref">M -0.075<br><span class='tiny'>p 0.65</span></span><span class="ref">Q -0.349<br><span class='tiny'>p 0.45</span></span></td><td><span class="annual">-0.248</span><span class="tiny">p 0.56</span><span class="ref">M -0.126<br><span class='tiny'>p 0.41</span></span><span class="ref">Q -0.402<br><span class='tiny'>p 0.41</span></span></td><td><span class="annual">+0.313</span><span class="tiny">p 0.41</span><span class="ref">M +0.019<br><span class='tiny'>p 0.83</span></span><span class="ref">Q +0.074<br><span class='tiny'>p 0.76</span></span></td></tr></tbody>
+</table>
+
+<h2>Fit</h2>
+<table>
+<thead><tr><th>Dimension</th><th>Country-years</th><th>Countries</th>
+<th>Within R&sup2;</th><th>R&sup2;</th></tr></thead>
+<tbody><tr><td>Voice and accountability</td><td class='num'>204</td><td class='num'>14</td><td class='num'>0.0553</td><td class='num'>0.6982</td></tr><tr><td>Political stability</td><td class='num'>204</td><td class='num'>14</td><td class='num'>0.0303</td><td class='num'>0.6903</td></tr><tr><td>Government effectiveness</td><td class='num'>204</td><td class='num'>14</td><td class='num'>0.0585</td><td class='num'>0.6993</td></tr><tr><td>Regulatory quality</td><td class='num'>204</td><td class='num'>14</td><td class='num'>0.0226</td><td class='num'>0.6878</td></tr><tr><td>Rule of law</td><td class='num'>204</td><td class='num'>14</td><td class='num'>0.0239</td><td class='num'>0.6882</td></tr><tr><td>Control of corruption</td><td class='num'>204</td><td class='num'>14</td><td class='num'>0.0235</td><td class='num'>0.6881</td></tr></tbody>
+</table>
+
+<h2>Robustness</h2>
+<p class="legend"><b>Incomplete years allowed.</b> The main sample requires all twelve monthly
+volatilities; these columns lower the floor to nine months, which admits the eleven
+country-years whose series starts or stops inside the year. 214 country-years,
+14 countries.</p>
+<table>
+<thead><tr><th></th><th>Voice and accountability</th><th>Political stability</th><th>Government effectiveness</th><th>Regulatory quality</th><th>Rule of law</th><th>Control of corruption</th></tr></thead>
+<tbody><tr><th>GPR, standardized</th><td class="pns">-0.0176<span class="tiny">p 0.94</span></td><td class="pns">+0.0485<span class="tiny">p 0.89</span></td><td class="pns">-0.1789<span class="tiny">p 0.38</span></td><td class="pns">+0.0519<span class="tiny">p 0.91</span></td><td class="pns">-0.0525<span class="tiny">p 0.86</span></td><td class="pns">-0.0175<span class="tiny">p 0.95</span></td></tr><tr><th>WGI &times; GPR</th><td class="pns">-1.0401<span class="tiny">p 0.10</span></td><td class="pns">+0.1807<span class="tiny">p 0.43</span></td><td class="pns">+0.4301<span class="tiny">p 0.38</span></td><td class="pns">-0.2258<span class="tiny">p 0.64</span></td><td class="pns">-0.4374<span class="tiny">p 0.40</span></td><td class="pns">+0.1411<span class="tiny">p 0.67</span></td></tr></tbody>
+</table>
+<p class="legend"><b>WGI lagged a full year.</b> The convention used for every control, applied
+to the institution term. 201 country-years, 14 countries. The interaction and
+the government-effectiveness result survive; the GPR level does not.</p>
+<table>
+<thead><tr><th></th><th>Voice and accountability</th><th>Political stability</th><th>Government effectiveness</th><th>Regulatory quality</th><th>Rule of law</th><th>Control of corruption</th></tr></thead>
+<tbody><tr><th>GPR, standardized</th><td class="pns">-0.0942<span class="tiny">p 0.50</span></td><td class="pns">+0.0093<span class="tiny">p 0.95</span></td><td class="pns">-0.1950<span class="tiny">p 0.28</span></td><td class="pns">-0.0053<span class="tiny">p 0.98</span></td><td class="pns">-0.0507<span class="tiny">p 0.74</span></td><td class="pns">-0.0429<span class="tiny">p 0.77</span></td></tr><tr><th>WGI &times; GPR</th><td class="pns">-0.5071<span class="tiny">p 0.18</span></td><td class="pns">+0.1413<span class="tiny">p 0.32</span></td><td class="pns">+0.2476<span class="tiny">p 0.65</span></td><td class="pns">-0.2260<span class="tiny">p 0.41</span></td><td class="pns">-0.0399<span class="tiny">p 0.91</span></td><td class="pns">+0.1458<span class="tiny">p 0.66</span></td></tr></tbody>
+</table>
+
+<h2>Reading the annual run</h2>
+<ul>
+<li>The interaction is insignificant in every column, with <i>p</i> from 0.110 to 0.792, so the
+annual data give no evidence that institutional quality conditions the GPR effect.</li>
+<li>GPR itself is negative everywhere and clears 5 percent once, in the government-effectiveness
+column (−0.3343, <i>p</i> = 0.021). The remaining five columns sit between <i>p</i> = 0.153 and
+<i>p</i> = 0.612. Unlike the monthly and quarterly runs, which put the GPR level at or near zero,
+the annual estimates lean negative, but one rejection in six is thin support and the other five
+columns do not corroborate it.</li>
+<li>Government effectiveness is also the one column where WGI itself is significant
+(1.3133, <i>p</i> = 0.017), with a positive sign. Both annual rejections therefore sit in the same
+column and share its regressors, so they are not two independent findings. This is the same
+column that reached 10 percent monthly and 5 percent quarterly, which makes it the most
+persistent institutional result in the project — and the one most in need of a specification
+that can separate the level from the interaction.</li>
+<li>The sample falls to 204 country-years from 2,567 country-months. Clustering is
+unchanged at 14 countries, so precision is limited: the interaction's standard error is
+at least half its point estimate in every column and exceeds the estimate itself in three.</li>
+<li>Comparing coefficients across frequencies is not meaningful in magnitude. Averaging twelve
+months removes within-year noise and shrinks the variance of both the outcome and the
+regressors, so annual coefficients are not rescaled versions of the monthly ones.</li>
+<li>Ukraine carries the <code>Emerging</code> label but contributes no observations, because it
+has no policy rate. That is the same exclusion as in the monthly and quarterly runs.</li>
+</ul>
+
+<h2>Files</h2>
+<p>Annual panel: <code>cleaned/replication_cleaned/country_year.csv</code>, built by
+<code>output/build_annual_panel.py</code>. Regression:
+<code>output/run_model2_annual.py</code>. Coefficients:
+<code>output/model2_annual_results.csv</code>. The monthly and quarterly results are untouched.</p>
+</body>
+</html>

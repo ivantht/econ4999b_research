@@ -1,0 +1,121 @@
+dimension,dimension_label,outcome,term,term_label,coef,se,p,stars,n_obs,n_country,within_r2,r2,month_min,month_max
+va,Voice and accountability,portfolio_inflow_volatility,wgi_va,"WGI, lagged",-0.65291890,0.45669162,0.17640173,,2567,14,0.0384,0.4146,2002-02,2022-01
+va,Voice and accountability,inflow_volatility,wgi_va,"WGI, lagged",-2.90988618,1.79380009,0.12875228,,2567,14,0.0321,0.3245,2002-02,2022-01
+va,Voice and accountability,portfolio_inflow_volatility,gpr_z,"GPR, standardized",0.06863683,0.09546558,0.48488350,,2567,14,0.0384,0.4146,2002-02,2022-01
+va,Voice and accountability,inflow_volatility,gpr_z,"GPR, standardized",0.04841542,0.12087229,0.69525624,,2567,14,0.0321,0.3245,2002-02,2022-01
+va,Voice and accountability,portfolio_inflow_volatility,wgi_x_gpr,WGI x GPR,-0.26855680,0.23597548,0.27563108,,2567,14,0.0384,0.4146,2002-02,2022-01
+va,Voice and accountability,inflow_volatility,wgi_x_gpr,WGI x GPR,-0.26116326,0.26764810,0.34698674,,2567,14,0.0321,0.3245,2002-02,2022-01
+va,Voice and accountability,portfolio_inflow_volatility,d_policy_rate,"Policy rate, lagged change",0.03825460,0.05967167,0.53260718,,2567,14,0.0384,0.4146,2002-02,2022-01
+va,Voice and accountability,inflow_volatility,d_policy_rate,"Policy rate, lagged change",0.08344226,0.14085723,0.56375252,,2567,14,0.0321,0.3245,2002-02,2022-01
+va,Voice and accountability,portfolio_inflow_volatility,d_inflation,"Inflation, lagged change",-0.02482331,0.04507801,0.59119479,,2567,14,0.0384,0.4146,2002-02,2022-01
+va,Voice and accountability,inflow_volatility,d_inflation,"Inflation, lagged change",0.08046963,0.06196962,0.21666705,,2567,14,0.0321,0.3245,2002-02,2022-01
+va,Voice and accountability,portfolio_inflow_volatility,d_log_oil,"Log oil price, lagged change",-1.31398050,0.59996474,0.04735053,**,2567,14,0.0384,0.4146,2002-02,2022-01
+va,Voice and accountability,inflow_volatility,d_log_oil,"Log oil price, lagged change",1.35801711,2.32296067,0.56882008,,2567,14,0.0321,0.3245,2002-02,2022-01
+va,Voice and accountability,portfolio_inflow_volatility,d_log_gepu,"Log global EPU, lagged change",-0.02973398,0.19977894,0.88396828,,2567,14,0.0384,0.4146,2002-02,2022-01
+va,Voice and accountability,inflow_volatility,d_log_gepu,"Log global EPU, lagged change",0.41462274,0.46581280,0.38958452,,2567,14,0.0321,0.3245,2002-02,2022-01
+va,Voice and accountability,portfolio_inflow_volatility,d_financial_development,"Financial development, lagged change",-7.32350841,3.85306957,0.07974364,*,2567,14,0.0384,0.4146,2002-02,2022-01
+va,Voice and accountability,inflow_volatility,d_financial_development,"Financial development, lagged change",8.36390404,14.40525355,0.57142836,,2567,14,0.0321,0.3245,2002-02,2022-01
+va,Voice and accountability,portfolio_inflow_volatility,d_public_debt_gdp,"Debt/GDP, lagged change",0.02598372,0.03054669,0.41037288,,2567,14,0.0384,0.4146,2002-02,2022-01
+va,Voice and accountability,inflow_volatility,d_public_debt_gdp,"Debt/GDP, lagged change",0.07300816,0.06367439,0.27221918,,2567,14,0.0321,0.3245,2002-02,2022-01
+va,Voice and accountability,portfolio_inflow_volatility,ln_vix,"Log VIX, lagged",0.51587721,0.48188415,0.30384936,,2567,14,0.0384,0.4146,2002-02,2022-01
+va,Voice and accountability,inflow_volatility,ln_vix,"Log VIX, lagged",0.76425843,0.49857314,0.14927156,,2567,14,0.0321,0.3245,2002-02,2022-01
+pv,Political stability,portfolio_inflow_volatility,wgi_pv,"WGI, lagged",-0.27337055,0.53518905,0.61805969,,2567,14,0.0305,0.4098,2002-02,2022-01
+pv,Political stability,inflow_volatility,wgi_pv,"WGI, lagged",-0.40001038,0.43607215,0.37568826,,2567,14,0.0171,0.314,2002-02,2022-01
+pv,Political stability,portfolio_inflow_volatility,gpr_z,"GPR, standardized",0.07134685,0.07160536,0.33724635,,2567,14,0.0305,0.4098,2002-02,2022-01
+pv,Political stability,inflow_volatility,gpr_z,"GPR, standardized",0.15925780,0.15249728,0.31536317,,2567,14,0.0171,0.314,2002-02,2022-01
+pv,Political stability,portfolio_inflow_volatility,wgi_x_gpr,WGI x GPR,0.06527550,0.06389739,0.32562092,,2567,14,0.0305,0.4098,2002-02,2022-01
+pv,Political stability,inflow_volatility,wgi_x_gpr,WGI x GPR,0.20751167,0.16883414,0.24082331,,2567,14,0.0171,0.314,2002-02,2022-01
+pv,Political stability,portfolio_inflow_volatility,d_policy_rate,"Policy rate, lagged change",0.04674826,0.07191439,0.52697823,,2567,14,0.0305,0.4098,2002-02,2022-01
+pv,Political stability,inflow_volatility,d_policy_rate,"Policy rate, lagged change",0.13827502,0.17463137,0.44267990,,2567,14,0.0171,0.314,2002-02,2022-01
+pv,Political stability,portfolio_inflow_volatility,d_inflation,"Inflation, lagged change",-0.02877009,0.04028822,0.48778563,,2567,14,0.0305,0.4098,2002-02,2022-01
+pv,Political stability,inflow_volatility,d_inflation,"Inflation, lagged change",0.10453323,0.06805287,0.14849834,,2567,14,0.0171,0.314,2002-02,2022-01
+pv,Political stability,portfolio_inflow_volatility,d_log_oil,"Log oil price, lagged change",-1.35860712,0.59981769,0.04124564,**,2567,14,0.0305,0.4098,2002-02,2022-01
+pv,Political stability,inflow_volatility,d_log_oil,"Log oil price, lagged change",1.21605726,2.24074951,0.59651752,,2567,14,0.0171,0.314,2002-02,2022-01
+pv,Political stability,portfolio_inflow_volatility,d_log_gepu,"Log global EPU, lagged change",-0.03514741,0.19478186,0.85958584,,2567,14,0.0305,0.4098,2002-02,2022-01
+pv,Political stability,inflow_volatility,d_log_gepu,"Log global EPU, lagged change",0.45133455,0.49819700,0.38145421,,2567,14,0.0171,0.314,2002-02,2022-01
+pv,Political stability,portfolio_inflow_volatility,d_financial_development,"Financial development, lagged change",-8.42496747,5.09742094,0.12230690,,2567,14,0.0305,0.4098,2002-02,2022-01
+pv,Political stability,inflow_volatility,d_financial_development,"Financial development, lagged change",5.31189225,14.85069006,0.72631824,,2567,14,0.0171,0.314,2002-02,2022-01
+pv,Political stability,portfolio_inflow_volatility,d_public_debt_gdp,"Debt/GDP, lagged change",0.03606233,0.02172052,0.12077110,,2567,14,0.0305,0.4098,2002-02,2022-01
+pv,Political stability,inflow_volatility,d_public_debt_gdp,"Debt/GDP, lagged change",0.11143883,0.07660306,0.16945419,,2567,14,0.0171,0.314,2002-02,2022-01
+pv,Political stability,portfolio_inflow_volatility,ln_vix,"Log VIX, lagged",0.44641485,0.40753205,0.29321639,,2567,14,0.0305,0.4098,2002-02,2022-01
+pv,Political stability,inflow_volatility,ln_vix,"Log VIX, lagged",0.50296105,0.33693605,0.15937006,,2567,14,0.0171,0.314,2002-02,2022-01
+ge,Government effectiveness,portfolio_inflow_volatility,wgi_ge,"WGI, lagged",1.23812409,0.59208591,0.05671868,*,2567,14,0.0393,0.4151,2002-02,2022-01
+ge,Government effectiveness,inflow_volatility,wgi_ge,"WGI, lagged",0.68519313,1.06478360,0.53108529,,2567,14,0.0169,0.3139,2002-02,2022-01
+ge,Government effectiveness,portfolio_inflow_volatility,gpr_z,"GPR, standardized",0.00445804,0.09902686,0.96477676,,2567,14,0.0393,0.4151,2002-02,2022-01
+ge,Government effectiveness,inflow_volatility,gpr_z,"GPR, standardized",0.00898201,0.12120217,0.94205290,,2567,14,0.0169,0.3139,2002-02,2022-01
+ge,Government effectiveness,portfolio_inflow_volatility,wgi_x_gpr,WGI x GPR,0.11617457,0.13337194,0.39952333,,2567,14,0.0393,0.4151,2002-02,2022-01
+ge,Government effectiveness,inflow_volatility,wgi_x_gpr,WGI x GPR,0.19128306,0.20095663,0.35852999,,2567,14,0.0169,0.3139,2002-02,2022-01
+ge,Government effectiveness,portfolio_inflow_volatility,d_policy_rate,"Policy rate, lagged change",0.03837186,0.06652555,0.57392796,,2567,14,0.0393,0.4151,2002-02,2022-01
+ge,Government effectiveness,inflow_volatility,d_policy_rate,"Policy rate, lagged change",0.13973195,0.17193286,0.43101541,,2567,14,0.0169,0.3139,2002-02,2022-01
+ge,Government effectiveness,portfolio_inflow_volatility,d_inflation,"Inflation, lagged change",-0.03384330,0.04448907,0.46040598,,2567,14,0.0393,0.4151,2002-02,2022-01
+ge,Government effectiveness,inflow_volatility,d_inflation,"Inflation, lagged change",0.10952492,0.07357594,0.16044695,,2567,14,0.0169,0.3139,2002-02,2022-01
+ge,Government effectiveness,portfolio_inflow_volatility,d_log_oil,"Log oil price, lagged change",-1.27297048,0.61979491,0.06067305,*,2567,14,0.0393,0.4151,2002-02,2022-01
+ge,Government effectiveness,inflow_volatility,d_log_oil,"Log oil price, lagged change",1.26539015,2.26534262,0.58593708,,2567,14,0.0169,0.3139,2002-02,2022-01
+ge,Government effectiveness,portfolio_inflow_volatility,d_log_gepu,"Log global EPU, lagged change",-0.02149279,0.20365072,0.91756040,,2567,14,0.0393,0.4151,2002-02,2022-01
+ge,Government effectiveness,inflow_volatility,d_log_gepu,"Log global EPU, lagged change",0.46960826,0.50944289,0.37342025,,2567,14,0.0169,0.3139,2002-02,2022-01
+ge,Government effectiveness,portfolio_inflow_volatility,d_financial_development,"Financial development, lagged change",-7.70748452,4.82710449,0.13434278,,2567,14,0.0393,0.4151,2002-02,2022-01
+ge,Government effectiveness,inflow_volatility,d_financial_development,"Financial development, lagged change",5.61439713,14.85850711,0.71163412,,2567,14,0.0169,0.3139,2002-02,2022-01
+ge,Government effectiveness,portfolio_inflow_volatility,d_public_debt_gdp,"Debt/GDP, lagged change",0.03079129,0.02737007,0.28093236,,2567,14,0.0393,0.4151,2002-02,2022-01
+ge,Government effectiveness,inflow_volatility,d_public_debt_gdp,"Debt/GDP, lagged change",0.10839757,0.07533040,0.17380145,,2567,14,0.0169,0.3139,2002-02,2022-01
+ge,Government effectiveness,portfolio_inflow_volatility,ln_vix,"Log VIX, lagged",0.46214018,0.45020827,0.32337658,,2567,14,0.0393,0.4151,2002-02,2022-01
+ge,Government effectiveness,inflow_volatility,ln_vix,"Log VIX, lagged",0.50561311,0.36396353,0.18811362,,2567,14,0.0169,0.3139,2002-02,2022-01
+rq,Regulatory quality,portfolio_inflow_volatility,wgi_rq,"WGI, lagged",-0.19689390,0.58193790,0.74050760,,2567,14,0.0298,0.4094,2002-02,2022-01
+rq,Regulatory quality,inflow_volatility,wgi_rq,"WGI, lagged",-1.88209817,1.51555353,0.23622851,,2567,14,0.0201,0.3161,2002-02,2022-01
+rq,Regulatory quality,portfolio_inflow_volatility,gpr_z,"GPR, standardized",0.08194732,0.14447161,0.58022740,,2567,14,0.0298,0.4094,2002-02,2022-01
+rq,Regulatory quality,inflow_volatility,gpr_z,"GPR, standardized",0.07197573,0.17565843,0.68866233,,2567,14,0.0201,0.3161,2002-02,2022-01
+rq,Regulatory quality,portfolio_inflow_volatility,wgi_x_gpr,WGI x GPR,-0.07500762,0.16074106,0.64848358,,2567,14,0.0298,0.4094,2002-02,2022-01
+rq,Regulatory quality,inflow_volatility,wgi_x_gpr,WGI x GPR,0.03082456,0.22927303,0.89511006,,2567,14,0.0201,0.3161,2002-02,2022-01
+rq,Regulatory quality,portfolio_inflow_volatility,d_policy_rate,"Policy rate, lagged change",0.05121127,0.06522340,0.44642961,,2567,14,0.0298,0.4094,2002-02,2022-01
+rq,Regulatory quality,inflow_volatility,d_policy_rate,"Policy rate, lagged change",0.15420580,0.17926807,0.40526552,,2567,14,0.0201,0.3161,2002-02,2022-01
+rq,Regulatory quality,portfolio_inflow_volatility,d_inflation,"Inflation, lagged change",-0.02142315,0.04353601,0.63086864,,2567,14,0.0298,0.4094,2002-02,2022-01
+rq,Regulatory quality,inflow_volatility,d_inflation,"Inflation, lagged change",0.11187702,0.06906075,0.12922927,,2567,14,0.0201,0.3161,2002-02,2022-01
+rq,Regulatory quality,portfolio_inflow_volatility,d_log_oil,"Log oil price, lagged change",-1.35007168,0.60046900,0.04253587,**,2567,14,0.0298,0.4094,2002-02,2022-01
+rq,Regulatory quality,inflow_volatility,d_log_oil,"Log oil price, lagged change",1.28811707,2.31447346,0.58728902,,2567,14,0.0201,0.3161,2002-02,2022-01
+rq,Regulatory quality,portfolio_inflow_volatility,d_log_gepu,"Log global EPU, lagged change",-0.02724880,0.19175614,0.88917865,,2567,14,0.0298,0.4094,2002-02,2022-01
+rq,Regulatory quality,inflow_volatility,d_log_gepu,"Log global EPU, lagged change",0.41773143,0.46057766,0.38092573,,2567,14,0.0201,0.3161,2002-02,2022-01
+rq,Regulatory quality,portfolio_inflow_volatility,d_financial_development,"Financial development, lagged change",-8.42560642,4.93235630,0.11134494,,2567,14,0.0298,0.4094,2002-02,2022-01
+rq,Regulatory quality,inflow_volatility,d_financial_development,"Financial development, lagged change",5.39783325,14.63597474,0.71820916,,2567,14,0.0201,0.3161,2002-02,2022-01
+rq,Regulatory quality,portfolio_inflow_volatility,d_public_debt_gdp,"Debt/GDP, lagged change",0.03519584,0.02212164,0.13562064,,2567,14,0.0298,0.4094,2002-02,2022-01
+rq,Regulatory quality,inflow_volatility,d_public_debt_gdp,"Debt/GDP, lagged change",0.09915516,0.07056954,0.18344403,,2567,14,0.0201,0.3161,2002-02,2022-01
+rq,Regulatory quality,portfolio_inflow_volatility,ln_vix,"Log VIX, lagged",0.43857354,0.41497791,0.30982029,,2567,14,0.0298,0.4094,2002-02,2022-01
+rq,Regulatory quality,inflow_volatility,ln_vix,"Log VIX, lagged",0.59515975,0.43984585,0.19908383,,2567,14,0.0201,0.3161,2002-02,2022-01
+rl,Rule of law,portfolio_inflow_volatility,wgi_rl,"WGI, lagged",0.00969048,0.34031715,0.97771592,,2567,14,0.0302,0.4096,2002-02,2022-01
+rl,Rule of law,inflow_volatility,wgi_rl,"WGI, lagged",-1.84190260,0.92885661,0.06890645,*,2567,14,0.0196,0.3158,2002-02,2022-01
+rl,Rule of law,portfolio_inflow_volatility,gpr_z,"GPR, standardized",0.05215461,0.08423911,0.54653067,,2567,14,0.0302,0.4096,2002-02,2022-01
+rl,Rule of law,inflow_volatility,gpr_z,"GPR, standardized",0.05625635,0.11160363,0.62264450,,2567,14,0.0196,0.3158,2002-02,2022-01
+rl,Rule of law,portfolio_inflow_volatility,wgi_x_gpr,WGI x GPR,-0.12645080,0.14820561,0.40898756,,2567,14,0.0302,0.4096,2002-02,2022-01
+rl,Rule of law,inflow_volatility,wgi_x_gpr,WGI x GPR,-0.03375499,0.18008050,0.85420656,,2567,14,0.0196,0.3158,2002-02,2022-01
+rl,Rule of law,portfolio_inflow_volatility,d_policy_rate,"Policy rate, lagged change",0.04990193,0.06578975,0.46167898,,2567,14,0.0302,0.4096,2002-02,2022-01
+rl,Rule of law,inflow_volatility,d_policy_rate,"Policy rate, lagged change",0.11854519,0.17064534,0.49947937,,2567,14,0.0196,0.3158,2002-02,2022-01
+rl,Rule of law,portfolio_inflow_volatility,d_inflation,"Inflation, lagged change",-0.01866617,0.04046852,0.65224049,,2567,14,0.0302,0.4096,2002-02,2022-01
+rl,Rule of law,inflow_volatility,d_inflation,"Inflation, lagged change",0.09443748,0.06749937,0.18519165,,2567,14,0.0196,0.3158,2002-02,2022-01
+rl,Rule of law,portfolio_inflow_volatility,d_log_oil,"Log oil price, lagged change",-1.35131563,0.61061517,0.04539644,**,2567,14,0.0302,0.4096,2002-02,2022-01
+rl,Rule of law,inflow_volatility,d_log_oil,"Log oil price, lagged change",1.28469653,2.26589386,0.58039214,,2567,14,0.0196,0.3158,2002-02,2022-01
+rl,Rule of law,portfolio_inflow_volatility,d_log_gepu,"Log global EPU, lagged change",-0.02393890,0.19890604,0.90604385,,2567,14,0.0302,0.4096,2002-02,2022-01
+rl,Rule of law,inflow_volatility,d_log_gepu,"Log global EPU, lagged change",0.45138703,0.49914821,0.38228151,,2567,14,0.0196,0.3158,2002-02,2022-01
+rl,Rule of law,portfolio_inflow_volatility,d_financial_development,"Financial development, lagged change",-8.37857396,4.85727311,0.10821294,,2567,14,0.0302,0.4096,2002-02,2022-01
+rl,Rule of law,inflow_volatility,d_financial_development,"Financial development, lagged change",5.63649157,14.50283486,0.70382744,,2567,14,0.0196,0.3158,2002-02,2022-01
+rl,Rule of law,portfolio_inflow_volatility,d_public_debt_gdp,"Debt/GDP, lagged change",0.03610294,0.02368550,0.15139488,,2567,14,0.0302,0.4096,2002-02,2022-01
+rl,Rule of law,inflow_volatility,d_public_debt_gdp,"Debt/GDP, lagged change",0.09053173,0.07336142,0.23902842,,2567,14,0.0196,0.3158,2002-02,2022-01
+rl,Rule of law,portfolio_inflow_volatility,ln_vix,"Log VIX, lagged",0.43742330,0.42879415,0.32627942,,2567,14,0.0302,0.4096,2002-02,2022-01
+rl,Rule of law,inflow_volatility,ln_vix,"Log VIX, lagged",0.57738521,0.39125982,0.16382887,,2567,14,0.0196,0.3158,2002-02,2022-01
+cc,Control of corruption,portfolio_inflow_volatility,wgi_cc,"WGI, lagged",0.21519409,0.88637736,0.81196481,,2567,14,0.0296,0.4092,2002-02,2022-01
+cc,Control of corruption,inflow_volatility,wgi_cc,"WGI, lagged",-1.75170420,1.36810890,0.22278465,,2567,14,0.0196,0.3158,2002-02,2022-01
+cc,Control of corruption,portfolio_inflow_volatility,gpr_z,"GPR, standardized",0.05211050,0.08052341,0.52879887,,2567,14,0.0296,0.4092,2002-02,2022-01
+cc,Control of corruption,inflow_volatility,gpr_z,"GPR, standardized",0.07728070,0.11274488,0.50510151,,2567,14,0.0196,0.3158,2002-02,2022-01
+cc,Control of corruption,portfolio_inflow_volatility,wgi_x_gpr,WGI x GPR,0.01859696,0.08525988,0.83072150,,2567,14,0.0296,0.4092,2002-02,2022-01
+cc,Control of corruption,inflow_volatility,wgi_x_gpr,WGI x GPR,0.03921272,0.15354225,0.80242017,,2567,14,0.0196,0.3158,2002-02,2022-01
+cc,Control of corruption,portfolio_inflow_volatility,d_policy_rate,"Policy rate, lagged change",0.05033400,0.06383118,0.44451852,,2567,14,0.0296,0.4092,2002-02,2022-01
+cc,Control of corruption,inflow_volatility,d_policy_rate,"Policy rate, lagged change",0.15010389,0.17529863,0.40735236,,2567,14,0.0196,0.3158,2002-02,2022-01
+cc,Control of corruption,portfolio_inflow_volatility,d_inflation,"Inflation, lagged change",-0.02438395,0.04529124,0.59941162,,2567,14,0.0296,0.4092,2002-02,2022-01
+cc,Control of corruption,inflow_volatility,d_inflation,"Inflation, lagged change",0.12601569,0.07353513,0.11031578,,2567,14,0.0196,0.3158,2002-02,2022-01
+cc,Control of corruption,portfolio_inflow_volatility,d_log_oil,"Log oil price, lagged change",-1.37368312,0.61233196,0.04293008,**,2567,14,0.0296,0.4092,2002-02,2022-01
+cc,Control of corruption,inflow_volatility,d_log_oil,"Log oil price, lagged change",1.31707310,2.30157069,0.57691547,,2567,14,0.0196,0.3158,2002-02,2022-01
+cc,Control of corruption,portfolio_inflow_volatility,d_log_gepu,"Log global EPU, lagged change",-0.02492759,0.19288721,0.89915057,,2567,14,0.0296,0.4092,2002-02,2022-01
+cc,Control of corruption,inflow_volatility,d_log_gepu,"Log global EPU, lagged change",0.43865053,0.48127668,0.37865928,,2567,14,0.0196,0.3158,2002-02,2022-01
+cc,Control of corruption,portfolio_inflow_volatility,d_financial_development,"Financial development, lagged change",-8.42094419,4.77091843,0.10101775,,2567,14,0.0296,0.4092,2002-02,2022-01
+cc,Control of corruption,inflow_volatility,d_financial_development,"Financial development, lagged change",4.38652689,14.02527078,0.75942461,,2567,14,0.0196,0.3158,2002-02,2022-01
+cc,Control of corruption,portfolio_inflow_volatility,d_public_debt_gdp,"Debt/GDP, lagged change",0.03782767,0.02126994,0.09871024,*,2567,14,0.0296,0.4092,2002-02,2022-01
+cc,Control of corruption,inflow_volatility,d_public_debt_gdp,"Debt/GDP, lagged change",0.10410489,0.07143099,0.16873054,,2567,14,0.0196,0.3158,2002-02,2022-01
+cc,Control of corruption,portfolio_inflow_volatility,ln_vix,"Log VIX, lagged",0.41143364,0.38153256,0.30047140,,2567,14,0.0296,0.4092,2002-02,2022-01
+cc,Control of corruption,inflow_volatility,ln_vix,"Log VIX, lagged",0.62566639,0.41303726,0.15375480,,2567,14,0.0196,0.3158,2002-02,2022-01
