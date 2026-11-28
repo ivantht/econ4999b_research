@@ -935,6 +935,87 @@ margin: 0 0 6px;
 margin-bottom: 4px;
 line-height: 1.12;
 }
+
+.channel-1-page {
+display: flex !important;
+flex-direction: column;
+}
+.channel-1-page > h2 {
+margin-bottom: 10px;
+font-size: 40px;
+line-height: 1.1;
+}
+.channel-1-page > .title-eq {
+margin: 0 0 10px;
+padding: 8px 16px;
+border-left: 6px solid var(--orange);
+background: #eaf1f8;
+line-height: 1.15;
+}
+.channel-1-page > .title-eq > p {
+margin: 0;
+}
+.channel-1-page > .title-eq .MathJax_Display,
+.channel-1-page > .title-eq mjx-container,
+.channel-1-page > .title-eq .math.display {
+margin: 0 !important;
+text-align: center !important;
+white-space: nowrap;
+}
+.channel-1-page > .title-eq > p:first-child,
+.channel-1-page > .title-eq > p:first-child .math.display {
+font-size: 0.88em;
+line-height: 1.1;
+}
+.channel-1-page > .eq-note {
+margin: -4px 0 6px;
+padding-left: 16px;
+color: #4a6473;
+font-size: 0.6em;
+font-style: italic;
+line-height: 1.2;
+}
+.channel-1-page > .eq-note p {
+margin: 0;
+}
+.channel-1-page > .table-area {
+flex: 0 0 auto;
+min-height: 0;
+padding-top: 0;
+font-size: 0.62em;
+}
+.channel-1-page > .table-area table {
+font-size: 1em;
+}
+.channel-1-page > .table-area th,
+.channel-1-page > .table-area td {
+padding: 6px 6px;
+line-height: 1.2;
+text-align: center;
+}
+.channel-1-page > .table-area th:first-child,
+.channel-1-page > .table-area td:first-child {
+text-align: left;
+white-space: nowrap;
+}
+.channel-1-page > .table-area .pv {
+color: #4a6473;
+font-size: 0.85em;
+}
+.channel-1-page > .table-area .table-note {
+margin-top: 10px;
+font-size: 0.95em;
+}
+.channel-1-page > ul.takeaway {
+flex: 0 0 auto;
+margin: 10px 0 0 34px;
+padding-left: 0;
+font-size: 0.74em;
+line-height: 1.25;
+}
+.channel-1-page > ul.takeaway li {
+margin-bottom: 4px;
+}
 #definition-of-geopolitical-risk-institutional-quality-and-exchange-rate > ul ul,
 #content > ul ul,
 #channel-1-how-institutional-quality-affect-exchange-rate > ul ul,
@@ -1570,7 +1651,7 @@ November 2026</p>
 <section id="definition-of-geopolitical-risk-institutional-quality-and-exchange-rate" class="slide level2">
 <h2>Definition of Geopolitical Risk, Institutional Quality and Exchange Rate</h2>
 <div class="question-banner">
-<p><strong>Does WGI change how geopolitical risk moves the real exchange rate, and does that run through capital-flow volatility or exports?</strong></p>
+<p><strong>Can WGI serve as a cushion for the exchange rate under geopolitical uncertainty?</strong></p>
 </div>
 <ul>
 <li><strong>Geopolitical Risk</strong>: armed conflict, terrorism, and tension between states — not general economic uncertainty
@@ -1593,12 +1674,11 @@ November 2026</p>
 <li><strong>Motivation</strong></li>
 <li><strong>Transmission Channel</strong>
 <ul>
-<li>Channel 1: How IQ affect real effective exchange rate and via the channel of export</li>
-<li>Channel 2: How does IQ affect the stability of real effective exchange rate via volatility of capital flow</li>
+<li>Channel 1: How does IQ affect real effective exchange rate</li>
+<li>Channel 2: How does IQ affect the volatility of real effective exchange rate via capital flow</li>
 </ul></li>
 <li><strong>Result Overview</strong></li>
-<li><strong>Channel result</strong></li>
-<li><strong>Robustness test - Subsample</strong></li>
+<li><strong>Channel Detail</strong></li>
 <li><strong>Conclusion</strong></li>
 </ul>
 </section>
@@ -1634,16 +1714,17 @@ November 2026</p>
 <li><strong>Model 1: How institutional quality affect exchange rate directly</strong>
 <ul>
 <li>Real effective exchange rate directly regress on Institutional Quality, Geopolitical Risk and its interaction</li>
+<li>We will investigate Monthly, Quarterly, Annual</li>
 </ul></li>
-<li><strong>Model 2: How institutional quality affect exchange rate via nominal export</strong>
+<li><strong>Model 2: How does institutional quality affect exchange rate via public debt</strong>
 <ul>
-<li>First regress nominal export on institutional quality, geopolitical risk and its interaction</li>
-<li>Then, regress real effective exchange rate on the estimated nominal export</li>
+<li>First regress debt to GDP ratio on WGI, GPR and interaction term</li>
+<li>Then, regress real effective exchange rate on estimated debt to GDP ratio</li>
 </ul></li>
-<li><strong>Model 3: How institutional quality affect exchange rate via real export</strong>
+<li><strong>Model 3: How does institutional quality affect exchange rate via capital flow</strong>
 <ul>
-<li>First regress real export on institutional quality, geopolitical risk and its interaction</li>
-<li>Then, regress real effective exchange rate on the estimated real export</li>
+<li>First regress capital flow on WGI, GPR and interaction term</li>
+<li>Then, regress real effective exchange rate on estimated capital flow</li>
 </ul></li>
 </ul>
 </section>
@@ -1657,424 +1738,514 @@ November 2026</p>
 <li><strong>Model: extend on John Beirne model, we will include institutional quality in his model measuring how geopolitical risk affecting capital flow vol</strong></li>
 </ul>
 </section>
-<section id="subsample-design-overview" class="slide level2">
-<h2>Subsample design</h2>
-<div class="title-eq">
-<p><span class="math display">\[
-y_{i,t}^{j}=\beta_1 GPR_{i,t}^{z}+\beta_2 WGI_{i,t-1}+\gamma&#39;X_{i,t-1}+\delta_i+\varepsilon_{i,t}
-\]</span></p>
-</div>
-<div class="eq-note">
-<p><span class="math inline">\(y^{j}\)</span>: capital-flow volatility or log real exchange rate</p>
-</div>
-<div class="columns">
-<div class="column" style="width:50%;">
-<div class="finding-card">
-<p><strong>Top and bottom groups</strong></p>
-<ul>
-<li><strong>Sample</strong>: 10 emerging economies with complete months</li>
-<li><strong>Split</strong>: top three and bottom three on each WGI aspect, 2000–2021 average</li>
-<li><strong>Left out before ranking</strong>: Indonesia, the Philippines, South Africa, Thailand, Ukraine</li>
-</ul>
-</div>
-</div><div class="column" style="width:50%;">
-<div class="finding-card">
-<p><strong>What is estimated</strong></p>
-<ul>
-<li><strong>GPR</strong>: standardized within country on the months in that regression</li>
-<li><strong>WGI</strong>: lagged score, not centered, so GPR is the effect at a score of zero</li>
-</ul>
-</div>
-</div></div>
-</section>
-<section id="net-export-channel" class="slide level2">
-<h2>Net-export channel</h2>
-<div class="columns">
-<div class="column" style="width:50%;">
-<div class="finding-card">
-<div class="card-label">
-<p>Model 2 first stage</p>
-</div>
-<p><strong>WGI and the nominal-export trend</strong></p>
-<ul>
-<li>Rule of law on the log export trend is −2.03***</li>
-<li>GPR and WGI × GPR are insignificant</li>
-<li>Fitted export then enters the real-rate equation</li>
-</ul>
-</div>
-</div><div class="column" style="width:50%;">
-<div class="finding-card">
-<div class="card-label">
-<p>Models 2 and 3</p>
-</div>
-<p><strong>Export to the real exchange rate</strong></p>
-<ul>
-<li>Fitted nominal-export trend, rule of law: −0.155***</li>
-<li>A higher fitted export trend depreciates log REER</li>
-<li>Model 3 puts GPR, WGI, and the interaction only in the inflation and real-export first stages</li>
-</ul>
-</div>
-</div></div>
-</section>
-<section id="inflation-results" class="slide level2">
-<h2>Inflation results</h2>
-<div class="columns">
-<div class="column" style="width:40%;">
-<div class="finding-card">
-<div class="card-label">
-<p>Model 3, first stage</p>
-</div>
-<p><strong>WGI, not GPR, lines up with inflation</strong></p>
-<ul>
-<li>Political stability WGI −3.22**; government effectiveness −4.08*</li>
-<li>GPR and WGI × GPR are insignificant</li>
-<li>Five countries, 2006–01 to 2022–01</li>
-</ul>
-</div>
-</div><div class="column" style="width:60%;">
-<div class="table-area">
-<p><strong>Inflation, Model 3</strong></p>
-<table class="caption-top">
-<thead>
-<tr class="header">
-<th style="text-align: left;">Variable</th>
-<th style="text-align: center;">Political stability</th>
-<th style="text-align: center;">Government effectiveness</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td style="text-align: left;">GPR</td>
-<td style="text-align: center;">−0.062</td>
-<td style="text-align: center;">−0.029</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">WGI × GPR</td>
-<td style="text-align: center;">0.130</td>
-<td style="text-align: center;">−0.025</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">Controls</td>
-<td style="text-align: center;">Yes</td>
-<td style="text-align: center;">Yes</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">Observations</td>
-<td style="text-align: center;">956</td>
-<td style="text-align: center;">956</td>
-</tr>
-</tbody>
-</table>
-<div class="table-note">
-<p>Clustered standard errors by country. GPR, WGI, and the interaction are in this stage only. *** p&lt;0.01, ** p&lt;0.05, * p&lt;0.10.</p>
-</div>
-</div>
-</div></div>
-</section>
-<section id="real-export-results" class="slide level2">
-<h2>Real-export results</h2>
-<div class="columns">
-<div class="column" style="width:40%;">
-<div class="finding-card">
-<div class="card-label">
-<p>Model 3, first stage</p>
-</div>
-<p><strong>WGI is negative on the real-export trend</strong></p>
-<ul>
-<li>Rule of law −1.009*<strong>; control of corruption −1.004</strong></li>
-<li>GPR and WGI × GPR are about zero</li>
-<li>Within-country scores fell while export trends rose; not a causal cut in trade</li>
-</ul>
-</div>
-</div><div class="column" style="width:60%;">
-<div class="table-area">
-<p><strong>Real-export log trend, Model 3</strong></p>
-<table class="caption-top">
-<thead>
-<tr class="header">
-<th style="text-align: left;">Variable</th>
-<th style="text-align: center;">Rule of law</th>
-<th style="text-align: center;">Control of corruption</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td style="text-align: left;">GPR</td>
-<td style="text-align: center;">0.000</td>
-<td style="text-align: center;">0.008</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">WGI × GPR</td>
-<td style="text-align: center;">−0.004</td>
-<td style="text-align: center;">−0.001</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">Controls</td>
-<td style="text-align: center;">Yes</td>
-<td style="text-align: center;">Yes</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">Observations</td>
-<td style="text-align: center;">956</td>
-<td style="text-align: center;">956</td>
-</tr>
-</tbody>
-</table>
-<div class="table-note">
-<p>Clustered standard errors by country. Chile, Hungary, India, Mexico, and Turkey. *** p&lt;0.01, ** p&lt;0.05, * p&lt;0.10.</p>
-</div>
-</div>
-</div></div>
-</section>
-<section id="interpreting-the-results" class="slide level2">
-<h2>Interpreting the results</h2>
-<div class="stacked-point">
-<div class="point-label">
-<p>Model 1</p>
-</div>
-<p><strong>No GPR effect at average WGI</strong>: GPR on log REER is about zero. WGI is positive. WGI × GPR is not a buffer in the full 27-country sample.</p>
-</div>
-<div class="stacked-point">
-<div class="point-label">
-<p>Capital-flow volatility</p>
-</div>
-<p><strong>Pooled GPR is negative, clustered insignificant</strong>: the United States pulls the 24-country slope down. Among emerging markets the simple slope is about +0.06 and the country signs are mixed.</p>
-</div>
-<div class="stacked-point">
-<div class="point-label">
-<p>Export channel</p>
-</div>
-<p><strong>WGI, not GPR, lines up with exports</strong>: rule of law on the real-export trend is −1.009***. GPR and the interaction stay near zero. That coefficient is the within-country decline in scores while export trends rose.</p>
-</div>
-</section>
-<section id="subsample-design" class="slide level2">
-<h2>Subsample design</h2>
+
+<section id="channel-1-iq-on-reer" class="slide level2 channel-1-page">
+<h2>Channel 1: IQ on REER (Monthly)</h2>
 <div class="title-eq">
 <p><span class="math display">\[
 \begin{aligned}
-&amp;y_{i,t}^{j}=\beta_1 GPR_{i,t}^{z}+\beta_2 WGI_{i,t-1}+\beta_3(WGI_{i,t-1}\times GPR_{i,t}^{z})\\
-&amp;+\gamma&#39;X_{i,t-1}+\delta_i+\varepsilon_{i,t}
+\Delta \log REER_{i,t}={}&\beta_1 GPR_{i,t}^{z}+\beta_2 WGI_{i,t-1}+\beta_3\left(WGI_{i,t-1}\times GPR_{i,t}^{z}\right)\\
+&+\gamma^{\prime}X_{i,t-1}+\delta_i+\varepsilon_{i,t}
 \end{aligned}
 \]</span></p>
-<p><span class="math inline">\(y^{j}\)</span>: capital-flow volatility or log real exchange rate</p>
 </div>
-<div class="columns">
-<div class="column" style="width:50%;">
-<div class="finding-card">
-<p><strong>Top and bottom groups</strong></p>
-<ul>
-<li><strong>Sample</strong>: 10 emerging economies with complete months</li>
-<li><strong>Split</strong>: top three and bottom three on each WGI aspect, 2000–2021 average</li>
-<li><strong>Left out before ranking</strong>: Indonesia, the Philippines, South Africa, Thailand, Ukraine</li>
-</ul>
+<div class="eq-note">
+<p><span class="math inline">\(Y=\Delta \log REER_{i,t}\)</span>: monthly change in log REER&nbsp;&nbsp;|&nbsp;&nbsp;<span class="math inline">\(GPR_{i,t}^{z}\)</span>: country-standardized geopolitical risk&nbsp;&nbsp;|&nbsp;&nbsp;<span class="math inline">\(WGI_{i,t-1}\times GPR_{i,t}^{z}\)</span>: interaction<br/>
+<span class="math inline">\(X_{i,t-1}\)</span>: lagged controls (policy rate, inflation, oil price, VIX, EPU, financial development, debt/GDP)&nbsp;&nbsp;|&nbsp;&nbsp;<span class="math inline">\(\delta_i\)</span>: country fixed effect&nbsp;&nbsp;|&nbsp;&nbsp;<span class="math inline">\(\varepsilon_{i,t}\)</span>: country-clustered error</p>
 </div>
-</div><div class="column" style="width:50%;">
-<div class="finding-card">
-<p><strong>What is estimated</strong></p>
-<ul>
-<li><strong>GPR</strong>: standardized within country on the months in that regression</li>
-<li><strong>WGI</strong>: lagged score, not centered, so GPR is the effect at a score of zero</li>
-<li><strong>WGI × GPR</strong>: change in the GPR association for a one-point higher score</li>
-</ul>
-</div>
-</div></div>
-<div class="bottom-callout">
-<p><strong>Two completed checks</strong>: rank all ten; then remove China, rank the remaining nine again, and re-estimate the top three and bottom three. Country fixed effects. Controls are lagged one month.</p>
-</div>
-</section>
-<section id="how-to-read-wgi-gpr" class="slide level2">
-<h2>How to read WGI × GPR</h2>
-<div class="columns">
-<div class="column" style="width:50%;">
-<div class="finding-card">
-<div class="card-label">
-<p>Exchange rate</p>
-</div>
-<p><strong>Log real effective exchange rate</strong></p>
-<ul>
-<li><strong>Negative</strong>: a higher score, a weaker currency when GPR is higher</li>
-<li><strong>Positive</strong>: a higher score, a stronger currency when GPR is higher</li>
-<li>About a 1 percent move for a coefficient of 0.01</li>
-</ul>
-</div>
-</div><div class="column" style="width:50%;">
-<div class="finding-card">
-<div class="card-label">
-<p>Capital-flow volatility</p>
-</div>
-<p><strong>Three-month standard deviation of portfolio inflows</strong></p>
-<ul>
-<li><strong>Negative</strong>: a higher score, calmer inflows when GPR is higher</li>
-<li><strong>Positive</strong>: a higher score, more volatile inflows when GPR is higher</li>
-<li>The unit is billion dollars</li>
-</ul>
-</div>
-</div></div>
-<div class="bottom-callout">
-<p><strong>Stars</strong>: within standard errors. *** p&lt;0.01, ** p&lt;0.05, * p&lt;0.10. Each group is three countries.</p>
-</div>
-</section>
-<section id="all-ten-wgi-gpr" class="slide level2">
-<h2>All ten: WGI × GPR</h2>
-<div class="table-area wide-table">
-<p><strong>Top three and bottom three of the ten emerging economies</strong></p>
-<table class="caption-top">
-<colgroup>
-<col style="width: 16%">
-<col style="width: 20%">
-<col style="width: 26%">
-<col style="width: 16%">
-<col style="width: 22%">
-</colgroup>
+<div class="table-area">
+<table>
 <thead>
-<tr class="header">
-<th style="text-align: left;">Aspect</th>
-<th style="text-align: center;">Capital-flow Volatility, top</th>
-<th style="text-align: center;">Capital-flow Volatility, bottom</th>
-<th style="text-align: center;">Exchange Rate, top</th>
-<th style="text-align: center;">Exchange Rate, bottom</th>
+<tr>
+<th></th>
+<th>Voice &amp;<br/>account.</th>
+<th>Political<br/>stability</th>
+<th>Gov.<br/>effectiveness</th>
+<th>Regulatory<br/>quality</th>
+<th>Rule of<br/>law</th>
+<th>Control of<br/>corruption</th>
 </tr>
 </thead>
 <tbody>
-<tr class="odd">
-<td style="text-align: left;">Voice and accountability</td>
-<td style="text-align: center;">0.129</td>
-<td style="text-align: center;">−0.321</td>
-<td style="text-align: center;">−0.002</td>
-<td style="text-align: center;">−0.014**</td>
+<tr>
+<td><strong>WGI, lagged</strong></td>
+<td>0.0020<br/><span class="pv">(0.455)</span></td>
+<td>0.0002<br/><span class="pv">(0.907)</span></td>
+<td>0.0033**<br/><span class="pv">(0.037)</span></td>
+<td>0.0041*<br/><span class="pv">(0.071)</span></td>
+<td>0.0014<br/><span class="pv">(0.658)</span></td>
+<td>0.0004<br/><span class="pv">(0.845)</span></td>
 </tr>
-<tr class="even">
-<td style="text-align: left;">Political stability</td>
-<td style="text-align: center;">0.272</td>
-<td style="text-align: center;">−0.105</td>
-<td style="text-align: center;">0.006</td>
-<td style="text-align: center;">−0.021***</td>
+<tr>
+<td><strong>GPR, standardized</strong></td>
+<td>−0.0001<br/><span class="pv">(0.607)</span></td>
+<td>−0.0003<br/><span class="pv">(0.235)</span></td>
+<td>−0.0001<br/><span class="pv">(0.768)</span></td>
+<td>−0.0002<br/><span class="pv">(0.705)</span></td>
+<td>−0.0002<br/><span class="pv">(0.484)</span></td>
+<td>−0.0002<br/><span class="pv">(0.402)</span></td>
 </tr>
-<tr class="odd">
-<td style="text-align: left;">Government effectiveness</td>
-<td style="text-align: center;">−0.102</td>
-<td style="text-align: center;">0.194</td>
-<td style="text-align: center;">−0.013</td>
-<td style="text-align: center;">−0.022*</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">Regulatory quality</td>
-<td style="text-align: center;">0.042</td>
-<td style="text-align: center;">1.137</td>
-<td style="text-align: center;">−0.011**</td>
-<td style="text-align: center;">−0.017</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">Rule of law</td>
-<td style="text-align: center;">0.133</td>
-<td style="text-align: center;">1.018</td>
-<td style="text-align: center;">−0.005</td>
-<td style="text-align: center;">0.030*</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">Control of corruption</td>
-<td style="text-align: center;">−0.032</td>
-<td style="text-align: center;">−0.067</td>
-<td style="text-align: center;">0.004</td>
-<td style="text-align: center;">0.021**</td>
+<tr>
+<td><strong>WGI × GPR</strong></td>
+<td>−0.0006*<br/><span class="pv">(0.059)</span></td>
+<td>−0.0004<br/><span class="pv">(0.378)</span></td>
+<td>−0.0002<br/><span class="pv">(0.671)</span></td>
+<td>−0.0000<br/><span class="pv">(0.940)</span></td>
+<td>−0.0003<br/><span class="pv">(0.403)</span></td>
+<td>−0.0004<br/><span class="pv">(0.431)</span></td>
 </tr>
 </tbody>
 </table>
-<div class="table-note">
-<p>Every WGI × GPR cell from the ten-economy top-and-bottom results. Within standard errors. No volatility interaction is significant. Exchange Rate is the log real effective exchange rate.</p>
+<p class="table-note">3,315 country-months, 14 emerging economies, Feb 2002–Jan 2022. Country fixed effects; country-clustered standard errors. Each column is a separate regression on one WGI aspect. p-values in parentheses. * p&lt;0.10, ** p&lt;0.05, *** p&lt;0.01.</p>
 </div>
-</div>
+<ul class="takeaway">
+<li>From a monthly basis, we cannot find any significant result</li>
+<li>After analysing the data, we see that there should be a correlation for annual and quarterly data</li>
+</ul>
 </section>
-<section id="china-removed-wgi-gpr" class="slide level2">
-<h2>China removed: WGI × GPR</h2>
-<div class="table-area wide-table">
-<p><strong>China is removed, then the remaining nine are ranked again</strong></p>
-<table class="caption-top">
-<colgroup>
-<col style="width: 16%">
-<col style="width: 20%">
-<col style="width: 26%">
-<col style="width: 16%">
-<col style="width: 22%">
-</colgroup>
+<section id="channel-1-iq-on-reer-quarterly" class="slide level2 channel-1-page">
+<h2>Channel 1: IQ on REER (Quarterly)</h2>
+<div class="title-eq">
+<p><span class="math display">\[
+\begin{aligned}
+\Delta \log REER_{i,q-1}={}&\beta_1 GPR_{i,q}^{z}+\beta_2 WGI_{i,q-1}+\beta_3\left(WGI_{i,q-1}\times GPR_{i,q}^{z}\right)\\
+&+\gamma^{\prime}X_{i,q-1}+\delta_i+\varepsilon_{i,q-1}
+\end{aligned}
+\]</span></p>
+</div>
+<div class="eq-note">
+<p><span class="math inline">\(Y=\Delta \log REER_{i,q-1}\)</span>: previous quarter's change in log REER&nbsp;&nbsp;|&nbsp;&nbsp;<span class="math inline">\(WGI_{i,q-1}\)</span>: institutional quality, lagged one quarter&nbsp;&nbsp;|&nbsp;&nbsp;<span class="math inline">\(GPR_{i,q}^{z}\)</span>: country-standardized geopolitical risk&nbsp;&nbsp;|&nbsp;&nbsp;<span class="math inline">\(WGI_{i,q-1}\times GPR_{i,q}^{z}\)</span>: interaction<br/>
+<span class="math inline">\(X_{i,q-1}\)</span>: lagged controls (policy rate, inflation, oil price, VIX, EPU, financial development, debt/GDP)&nbsp;&nbsp;|&nbsp;&nbsp;<span class="math inline">\(\delta_i\)</span>: country fixed effect&nbsp;&nbsp;|&nbsp;&nbsp;<span class="math inline">\(\varepsilon_{i,q-1}\)</span>: country-clustered error</p>
+</div>
+<div class="table-area">
+<table>
 <thead>
-<tr class="header">
-<th style="text-align: left;">Aspect</th>
-<th style="text-align: center;">Capital-flow Volatility, top</th>
-<th style="text-align: center;">Capital-flow Volatility, bottom</th>
-<th style="text-align: center;">Exchange Rate, top</th>
-<th style="text-align: center;">Exchange Rate, bottom</th>
+<tr>
+<th></th>
+<th>Voice &amp;<br/>account.</th>
+<th>Political<br/>stability</th>
+<th>Gov.<br/>effectiveness</th>
+<th>Regulatory<br/>quality</th>
+<th>Rule of<br/>law</th>
+<th>Control of<br/>corruption</th>
 </tr>
 </thead>
 <tbody>
-<tr class="odd">
-<td style="text-align: left;">Voice and accountability</td>
-<td style="text-align: center;">0.129</td>
-<td style="text-align: center;">0.156</td>
-<td style="text-align: center;">−0.002</td>
-<td style="text-align: center;">−0.021**</td>
+<tr>
+<td><strong>WGI, lagged one quarter</strong></td>
+<td>0.0057<br/><span class="pv">(0.366)</span></td>
+<td>0.0002<br/><span class="pv">(0.943)</span></td>
+<td>0.0111**<br/><span class="pv">(0.022)</span></td>
+<td>0.0149**<br/><span class="pv">(0.044)</span></td>
+<td>0.0027<br/><span class="pv">(0.743)</span></td>
+<td>0.0062<br/><span class="pv">(0.364)</span></td>
 </tr>
-<tr class="even">
-<td style="text-align: left;">Political stability</td>
-<td style="text-align: center;">0.272</td>
-<td style="text-align: center;">−0.105</td>
-<td style="text-align: center;">0.006</td>
-<td style="text-align: center;">−0.021***</td>
+<tr>
+<td><strong>GPR, standardized</strong></td>
+<td>−0.0013<br/><span class="pv">(0.341)</span></td>
+<td>−0.0010<br/><span class="pv">(0.399)</span></td>
+<td>−0.0011<br/><span class="pv">(0.551)</span></td>
+<td>−0.0024<br/><span class="pv">(0.213)</span></td>
+<td>−0.0014<br/><span class="pv">(0.267)</span></td>
+<td>−0.0016<br/><span class="pv">(0.196)</span></td>
 </tr>
-<tr class="odd">
-<td style="text-align: left;">Government effectiveness</td>
-<td style="text-align: center;">−0.102</td>
-<td style="text-align: center;">−1.545***</td>
-<td style="text-align: center;">−0.013</td>
-<td style="text-align: center;">−0.043***</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">Regulatory quality</td>
-<td style="text-align: center;">0.042</td>
-<td style="text-align: center;">0.406</td>
-<td style="text-align: center;">−0.011**</td>
-<td style="text-align: center;">−0.019*</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">Rule of law</td>
-<td style="text-align: center;">0.133</td>
-<td style="text-align: center;">0.236</td>
-<td style="text-align: center;">−0.005</td>
-<td style="text-align: center;">0.031**</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">Control of corruption</td>
-<td style="text-align: center;">−0.032</td>
-<td style="text-align: center;">−0.224</td>
-<td style="text-align: center;">0.004</td>
-<td style="text-align: center;">0.039***</td>
+<tr>
+<td><strong>WGI × GPR</strong></td>
+<td>0.0014<br/><span class="pv">(0.510)</span></td>
+<td>0.0013<br/><span class="pv">(0.403)</span></td>
+<td>−0.0010<br/><span class="pv">(0.739)</span></td>
+<td>0.0028<br/><span class="pv">(0.229)</span></td>
+<td>0.0016<br/><span class="pv">(0.453)</span></td>
+<td>0.0025<br/><span class="pv">(0.139)</span></td>
 </tr>
 </tbody>
 </table>
-<div class="table-note">
-<p>Top three are unchanged. New bottom three: voice and accountability, Malaysia, Türkiye, Colombia; government effectiveness, Colombia, Brazil, Mexico; regulatory quality, India, Brazil, Colombia; rule of law, Mexico, Colombia, Brazil; control of corruption, Mexico, India, Colombia. Political stability is unchanged.</p>
+<p class="table-note">1,104 country-quarters, 14 emerging economies, 2002-Q2–2022-Q1. Country fixed effects; country-clustered standard errors. Each column is a separate regression on one WGI aspect. p-values in parentheses. * p&lt;0.10, ** p&lt;0.05, *** p&lt;0.01.</p>
 </div>
-</div>
+<ul class="takeaway" style="margin-top:4px; font-size:0.68em; line-height:1.18;">
+<li>From the result above, we can only conclude that better government effectiveness and regulatory quality will have a positive effect on exchange rate</li>
+<li>It does not explain the cushion effect of WGI</li>
+<li>We will proceed to annual data</li>
+</ul>
 </section>
-<section id="what-stays-the-same" class="slide level2">
-<h2>What stays the same</h2>
-<div class="stacked-point">
-<div class="point-label">
-<p>Exchange rate, low-score groups</p>
+<section id="channel-1-iq-on-reer-annual" class="slide level2 channel-1-page">
+<h2>Channel 1: IQ on REER (Annual)</h2>
+<div class="title-eq">
+<p><span class="math display">\[
+\begin{aligned}
+\Delta \log REER_{i,t}={}&\beta_1 GPR_{i,t}^{z}+\beta_2 WGI_{i,t}+\beta_3\left(WGI_{i,t}\times GPR_{i,t}^{z}\right)\\
+&+\gamma^{\prime}X_{i,t}+\delta_i+\varepsilon_{i,t}
+\end{aligned}
+\]</span></p>
 </div>
-<p><strong>Mostly not a buffer</strong>: voice and accountability, political stability, and government effectiveness stay negative in the bottom three. A higher score goes with a weaker real exchange rate when GPR is higher.</p>
+<div class="eq-note">
+<p><span class="math inline">\(Y=\Delta \log REER_{i,t}\)</span>: annual change in log REER&nbsp;&nbsp;|&nbsp;&nbsp;<span class="math inline">\(WGI_{i,t}\)</span>: institutional quality, current year&nbsp;&nbsp;|&nbsp;&nbsp;<span class="math inline">\(GPR_{i,t}^{z}\)</span>: country-standardized geopolitical risk&nbsp;&nbsp;|&nbsp;&nbsp;<span class="math inline">\(WGI_{i,t}\times GPR_{i,t}^{z}\)</span>: interaction<br/>
+<span class="math inline">\(X_{i,t}\)</span>: controls in year \(t\) (policy rate, inflation, oil price, EPU: annual change; log VIX: annual mean; financial development, debt/GDP: annual change)&nbsp;&nbsp;|&nbsp;&nbsp;<span class="math inline">\(\delta_i\)</span>: country fixed effect&nbsp;&nbsp;|&nbsp;&nbsp;<span class="math inline">\(\varepsilon_{i,t}\)</span>: country-clustered error</p>
 </div>
-<div class="stacked-point">
-<div class="point-label">
-<p>Two positive exceptions</p>
+<div class="table-area">
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Voice &amp;<br/>account.</th>
+<th>Political<br/>stability</th>
+<th>Gov.<br/>effectiveness</th>
+<th>Regulatory<br/>quality</th>
+<th>Rule of<br/>law</th>
+<th>Control of<br/>corruption</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>WGI, current year</strong></td>
+<td>0.0288<br/><span class="pv">(0.151)</span></td>
+<td>0.0051<br/><span class="pv">(0.720)</span></td>
+<td>0.0206<br/><span class="pv">(0.149)</span></td>
+<td>0.0407*<br/><span class="pv">(0.056)</span></td>
+<td>0.0292<br/><span class="pv">(0.216)</span></td>
+<td>0.0314*<br/><span class="pv">(0.093)</span></td>
+</tr>
+<tr>
+<td><strong>GPR, standardized</strong></td>
+<td>−0.0144**<br/><span class="pv">(0.034)</span></td>
+<td>−0.0154**<br/><span class="pv">(0.029)</span></td>
+<td>−0.0152**<br/><span class="pv">(0.012)</span></td>
+<td>−0.0156**<br/><span class="pv">(0.013)</span></td>
+<td>−0.0148**<br/><span class="pv">(0.013)</span></td>
+<td>−0.0161***<br/><span class="pv">(0.005)</span></td>
+</tr>
+<tr>
+<td><strong>WGI × GPR</strong></td>
+<td>0.0046<br/><span class="pv">(0.433)</span></td>
+<td>0.0007<br/><span class="pv">(0.913)</span></td>
+<td>−0.0024<br/><span class="pv">(0.755)</span></td>
+<td>−0.0022<br/><span class="pv">(0.705)</span></td>
+<td>0.0036<br/><span class="pv">(0.653)</span></td>
+<td>0.0065<br/><span class="pv">(0.318)</span></td>
+</tr>
+</tbody>
+</table>
+<p class="table-note">273 country-years, 14 emerging economies, 2002–2021. Country fixed effects; country-clustered standard errors. Each column is a separate regression on one WGI aspect. p-values in parentheses. * p&lt;0.10, ** p&lt;0.05, *** p&lt;0.01.</p>
 </div>
-<p><strong>Rule of law and control of corruption</strong>: the bottom-three exchange-rate interactions stay positive after China is removed, 0.031 and 0.039, both significant at the 5 percent level or better. A higher score goes with a stronger real exchange rate when GPR is higher.</p>
+<ul class="takeaway">
+<li>There is a very significant drag of GPR on REER in annual, but we do not see WGI playing any roles in this case</li>
+<li>We argue that the interaction variable is highly correlated with the control variable</li>
+</ul>
+</section>
+<section id="channel-1-model-2" class="slide level2 channel-1-page">
+<h2>Channel 1 - Model 2</h2>
+<div class="title-eq">
+<p><span class="math display">\[
+\begin{aligned}
+100\times\frac{Debt_{i,t}-Debt_{i,t-1}}{Debt_{i,t-1}}={}&\beta_1 GPR_{i,t}^{z}+\beta_2 WGI_{i,t}+\beta_3\left(WGI_{i,t}\times GPR_{i,t}^{z}\right)\\
+&+\delta_i+\varepsilon_{i,t}
+\end{aligned}
+\]</span></p>
 </div>
-<div class="stacked-point">
-<div class="point-label">
-<p>What changes</p>
+<div class="eq-note">
+<p><span class="math inline">\(Y=100\times\dfrac{Debt_{i,t}-Debt_{i,t-1}}{Debt_{i,t-1}}\)</span>: annual percentage change in the debt-to-GDP ratio&nbsp;&nbsp;|&nbsp;&nbsp;<span class="math inline">\(WGI_{i,t}\)</span>: institutional quality, current year&nbsp;&nbsp;|&nbsp;&nbsp;<span class="math inline">\(GPR_{i,t}^{z}\)</span>: country-standardized geopolitical risk&nbsp;&nbsp;|&nbsp;&nbsp;<span class="math inline">\(WGI_{i,t}\times GPR_{i,t}^{z}\)</span>: interaction<br/>
+No control variables in this specification&nbsp;&nbsp;|&nbsp;&nbsp;<span class="math inline">\(\delta_i\)</span>: country fixed effect&nbsp;&nbsp;|&nbsp;&nbsp;<span class="math inline">\(\varepsilon_{i,t}\)</span>: country-clustered error</p>
 </div>
-<p><strong>Government effectiveness</strong>: the bottom three become Colombia, Brazil, and Mexico. The exchange-rate interaction is −0.043 and the volatility interaction is −1.545, both significant at the 1 percent level. Regulatory quality in the new bottom three is −0.019, significant at the 10 percent level.</p>
+<div class="table-area">
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Voice &amp;<br/>account.</th>
+<th>Political<br/>stability</th>
+<th>Gov.<br/>effectiveness</th>
+<th>Regulatory<br/>quality</th>
+<th>Rule of<br/>law</th>
+<th>Control of<br/>corruption</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>WGI, current year</strong></td>
+<td>−2.2838<br/><span class="pv">(0.683)</span></td>
+<td>1.5275<br/><span class="pv">(0.605)</span></td>
+<td>10.5196**<br/><span class="pv">(0.018)</span></td>
+<td>−5.3002<br/><span class="pv">(0.461)</span></td>
+<td>−5.9823<br/><span class="pv">(0.419)</span></td>
+<td>1.2289<br/><span class="pv">(0.826)</span></td>
+</tr>
+<tr>
+<td><strong>GPR, standardized</strong></td>
+<td>−2.5231<br/><span class="pv">(0.206)</span></td>
+<td>−6.1566***<br/><span class="pv">(0.000)</span></td>
+<td>0.0107<br/><span class="pv">(0.996)</span></td>
+<td>−0.7815<br/><span class="pv">(0.755)</span></td>
+<td>−3.7721**<br/><span class="pv">(0.011)</span></td>
+<td>−3.1792**<br/><span class="pv">(0.030)</span></td>
+</tr>
+<tr>
+<td><strong>WGI × GPR</strong></td>
+<td>−5.1592**<br/><span class="pv">(0.025)</span></td>
+<td>−5.9701***<br/><span class="pv">(0.003)</span></td>
+<td>−10.0958**<br/><span class="pv">(0.011)</span></td>
+<td>−6.9492*<br/><span class="pv">(0.060)</span></td>
+<td>−6.1564**<br/><span class="pv">(0.046)</span></td>
+<td>−4.9981<br/><span class="pv">(0.178)</span></td>
+</tr>
+</tbody>
+</table>
+<p class="table-note">300 country-years, 15 emerging economies, 2002–2021. Country fixed effects; country-clustered standard errors. Each column is a separate regression on one WGI aspect. p-values in parentheses. * p&lt;0.10, ** p&lt;0.05, *** p&lt;0.01.</p>
+</div>
+<ul class="takeaway" style="margin-top:2px; font-size:0.64em; line-height:1.14;">
+<li>We can see that there is a significance in the interaction variable and GPR, but the result we have is not economically intuitive</li>
+<li>We argue that debt to GDP ratio only capture the public debt, the effect should be reflected in the private sector, therefore we measure capital flow which capture the private sector flow</li>
+</ul>
+</section>
+<section id="channel-1-model-3" class="slide level2 channel-1-page">
+<h2>Channel 1 - Model 3</h2>
+<div class="title-eq">
+<p><span class="math display">\[
+\begin{aligned}
+CF_{i,q}={}&\beta_1 GPR_{i,q}^{z}+\beta_2 WGI_{i,q-1}+\beta_3\left(WGI_{i,q-1}\times GPR_{i,q}^{z}\right)\\
+&+\gamma^{\prime}X_{i,q-1}+\delta_i+\varepsilon_{i,q}
+\end{aligned}
+\]</span></p>
+</div>
+<div class="eq-note">
+<p><span class="math inline">\(Y=CF_{i,q}\)</span>: quarterly capital flow, first stage&nbsp;&nbsp;|&nbsp;&nbsp;<span class="math inline">\(WGI_{i,q-1}\)</span>: institutional quality, lagged one quarter&nbsp;&nbsp;|&nbsp;&nbsp;<span class="math inline">\(GPR_{i,q}^{z}\)</span>: standardized geopolitical risk&nbsp;&nbsp;|&nbsp;&nbsp;<span class="math inline">\(WGI_{i,q-1}\times GPR_{i,q}^{z}\)</span>: interaction<br/>
+<span class="math inline">\(X_{i,q-1}\)</span>: lagged controls&nbsp;&nbsp;|&nbsp;&nbsp;<span class="math inline">\(\delta_i\)</span>: country fixed effect&nbsp;&nbsp;|&nbsp;&nbsp;<span class="math inline">\(\varepsilon_{i,q}\)</span>: country-clustered error</p>
+</div>
+<div class="table-area">
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Voice &amp;<br/>account.</th>
+<th>Political<br/>stability</th>
+<th>Gov.<br/>effectiveness</th>
+<th>Regulatory<br/>quality</th>
+<th>Rule of<br/>law</th>
+<th>Control of<br/>corruption</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>WGI, lagged one quarter</strong></td>
+<td>−4604.59**<br/><span class="pv">(0.035)</span></td>
+<td>−949.99<br/><span class="pv">(0.436)</span></td>
+<td>−4469.47**<br/><span class="pv">(0.044)</span></td>
+<td>−2839.09<br/><span class="pv">(0.114)</span></td>
+<td>−3831.84<br/><span class="pv">(0.158)</span></td>
+<td>−4202.39**<br/><span class="pv">(0.021)</span></td>
+</tr>
+<tr>
+<td><strong>GPR, standardized</strong></td>
+<td>276.22<br/><span class="pv">(0.206)</span></td>
+<td>271.57<br/><span class="pv">(0.199)</span></td>
+<td>216.52<br/><span class="pv">(0.317)</span></td>
+<td>278.21<br/><span class="pv">(0.224)</span></td>
+<td>301.47<br/><span class="pv">(0.174)</span></td>
+<td>270.79<br/><span class="pv">(0.243)</span></td>
+</tr>
+<tr>
+<td><strong>WGI × GPR</strong></td>
+<td>30.01<br/><span class="pv">(0.926)</span></td>
+<td>−245.80<br/><span class="pv">(0.345)</span></td>
+<td>3.71<br/><span class="pv">(0.991)</span></td>
+<td>−176.89<br/><span class="pv">(0.577)</span></td>
+<td>−185.53<br/><span class="pv">(0.439)</span></td>
+<td>−114.13<br/><span class="pv">(0.610)</span></td>
+</tr>
+</tbody>
+</table>
+<p class="table-note">926 country-quarters, 16 emerging economies, 2000-Q2–2023-Q4. First stage: capital flow on GPR, WGI and the interaction, with lagged controls. Country fixed effects; country-clustered standard errors. Each column is a separate regression on one WGI aspect. p-values in parentheses. * p&lt;0.10, ** p&lt;0.05, *** p&lt;0.01.</p>
+</div>
+<ul class="takeaway" style="margin-top:5px; font-size:0.72em; line-height:1.2;">
+<li>A negative sign imply a higher inflow, we can see that better institutional quality will lead to more inflow</li>
+<li>But we do not see any cushion effect in here</li>
+</ul>
+</section>
+<section id="channel-2-model-1-monthly" class="slide level2 channel-1-page">
+<h2>Channel 2 - Monthly</h2>
+<div class="title-eq">
+<p><span class="math display">\[
+\begin{aligned}
+CFV_{i,t}={}&\beta_1 GPR_{i,t}^{z}+\beta_2 WGI_{i,t-1}+\beta_3\left(WGI_{i,t-1}\times GPR_{i,t}^{z}\right)\\
+&+\gamma^{\prime}X_{i,t-1}+\delta_i+\varepsilon_{i,t}
+\end{aligned}
+\]</span></p>
+</div>
+<div class="eq-note">
+<p><span class="math inline">\(CFV_{i,t}\)</span>: 3-month rolling SD of portfolio inflows, US$ bn, level&nbsp;&nbsp;|&nbsp;&nbsp;<span class="math inline">\(WGI_{i,t-1}\)</span>: institutional quality, lagged one month&nbsp;&nbsp;|&nbsp;&nbsp;<span class="math inline">\(GPR_{i,t}^{z}\)</span>: standardized geopolitical risk&nbsp;&nbsp;|&nbsp;&nbsp;<span class="math inline">\(WGI_{i,t-1}\times GPR_{i,t}^{z}\)</span>: interaction<br/>
+<span class="math inline">\(X_{i,t-1}\)</span>: lagged controls&nbsp;&nbsp;|&nbsp;&nbsp;<span class="math inline">\(\delta_i\)</span>: country fixed effect&nbsp;&nbsp;|&nbsp;&nbsp;<span class="math inline">\(\varepsilon_{i,t}\)</span>: country-clustered error</p>
+</div>
+<div class="table-area">
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Voice &amp;<br/>account.</th>
+<th>Political<br/>stability</th>
+<th>Gov.<br/>effectiveness</th>
+<th>Regulatory<br/>quality</th>
+<th>Rule of<br/>law</th>
+<th>Control of<br/>corruption</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>WGI, lagged one month</strong></td>
+<td>−0.6529<br/><span class="pv">(0.176)</span></td>
+<td>−0.2734<br/><span class="pv">(0.618)</span></td>
+<td>1.2381*<br/><span class="pv">(0.057)</span></td>
+<td>−0.1969<br/><span class="pv">(0.740)</span></td>
+<td>0.0097<br/><span class="pv">(0.978)</span></td>
+<td>0.2152<br/><span class="pv">(0.812)</span></td>
+</tr>
+<tr>
+<td><strong>GPR, standardized</strong></td>
+<td>0.0686<br/><span class="pv">(0.485)</span></td>
+<td>0.0713<br/><span class="pv">(0.338)</span></td>
+<td>0.0045<br/><span class="pv">(0.964)</span></td>
+<td>0.0819<br/><span class="pv">(0.581)</span></td>
+<td>0.0522<br/><span class="pv">(0.546)</span></td>
+<td>0.0521<br/><span class="pv">(0.529)</span></td>
+</tr>
+<tr>
+<td><strong>WGI × GPR</strong></td>
+<td>−0.2686<br/><span class="pv">(0.276)</span></td>
+<td>0.0653<br/><span class="pv">(0.325)</span></td>
+<td>0.1162<br/><span class="pv">(0.400)</span></td>
+<td>−0.0750<br/><span class="pv">(0.648)</span></td>
+<td>−0.1265<br/><span class="pv">(0.409)</span></td>
+<td>0.0186<br/><span class="pv">(0.831)</span></td>
+</tr>
+</tbody>
+</table>
+<p class="table-note">2,567 country-months, 14 emerging economies, February 2002–January 2022. Country fixed effects; country-clustered standard errors (14 clusters, 13 df). Each column is a separate regression on one WGI aspect. p-values in parentheses. * p&lt;0.10, ** p&lt;0.05, *** p&lt;0.01.</p>
+</div>
+<ul class="takeaway" style="margin-top:5px; font-size:0.72em; line-height:1.2;">
+<li>We do not see any significant effect in monthly data</li>
+<li>We will proceed to analyse quarterly and annual data</li>
+</ul>
+</section>
+<section id="channel-2-model-1-quarterly" class="slide level2 channel-1-page">
+<h2>Channel 2 - Quarterly</h2>
+<div class="title-eq">
+<p><span class="math display">\[
+\begin{aligned}
+CFV_{i,q}={}&\beta_1 GPR_{i,q}^{z}+\beta_2 WGI_{i,q-1}+\beta_3\left(WGI_{i,q-1}\times GPR_{i,q}^{z}\right)\\
+&+\gamma^{\prime}X_{i,q-1}+\delta_i+\varepsilon_{i,q}
+\end{aligned}
+\]</span></p>
+</div>
+<div class="eq-note">
+<p><span class="math inline">\(CFV_{i,q}\)</span>: mean of the three monthly 3-month rolling SDs inside quarter \(q\), US$ bn&nbsp;&nbsp;|&nbsp;&nbsp;<span class="math inline">\(WGI_{i,q-1}\)</span>: institutional quality, lagged one quarter&nbsp;&nbsp;|&nbsp;&nbsp;<span class="math inline">\(GPR_{i,q}^{z}\)</span>: standardized geopolitical risk&nbsp;&nbsp;|&nbsp;&nbsp;<span class="math inline">\(WGI_{i,q-1}\times GPR_{i,q}^{z}\)</span>: interaction<br/>
+<span class="math inline">\(X_{i,q-1}\)</span>: lagged controls&nbsp;&nbsp;|&nbsp;&nbsp;<span class="math inline">\(\delta_i\)</span>: country fixed effect&nbsp;&nbsp;|&nbsp;&nbsp;<span class="math inline">\(\varepsilon_{i,q}\)</span>: country-clustered error</p>
+</div>
+<div class="table-area">
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Voice &amp;<br/>account.</th>
+<th>Political<br/>stability</th>
+<th>Gov.<br/>effectiveness</th>
+<th>Regulatory<br/>quality</th>
+<th>Rule of<br/>law</th>
+<th>Control of<br/>corruption</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>WGI, lagged one quarter</strong></td>
+<td>−0.5714<br/><span class="pv">(0.275)</span></td>
+<td>−0.2127<br/><span class="pv">(0.707)</span></td>
+<td>1.2736**<br/><span class="pv">(0.039)</span></td>
+<td>−0.1361<br/><span class="pv">(0.817)</span></td>
+<td>0.2132<br/><span class="pv">(0.641)</span></td>
+<td>0.3335<br/><span class="pv">(0.723)</span></td>
+</tr>
+<tr>
+<td><strong>GPR, standardized</strong></td>
+<td>0.1613<br/><span class="pv">(0.309)</span></td>
+<td>0.1888<br/><span class="pv">(0.338)</span></td>
+<td>0.0236<br/><span class="pv">(0.888)</span></td>
+<td>0.2810<br/><span class="pv">(0.398)</span></td>
+<td>0.1585<br/><span class="pv">(0.377)</span></td>
+<td>0.1698<br/><span class="pv">(0.393)</span></td>
+</tr>
+<tr>
+<td><strong>WGI × GPR</strong></td>
+<td>−0.7799<br/><span class="pv">(0.121)</span></td>
+<td>0.0918<br/><span class="pv">(0.544)</span></td>
+<td>0.3731<br/><span class="pv">(0.277)</span></td>
+<td>−0.3489<br/><span class="pv">(0.454)</span></td>
+<td>−0.4016<br/><span class="pv">(0.411)</span></td>
+<td>0.0740<br/><span class="pv">(0.755)</span></td>
+</tr>
+</tbody>
+</table>
+<p class="table-note">859 country-quarters, 14 emerging economies, 2002-Q2–2022-Q1. Country fixed effects; country-clustered standard errors (14 clusters, 13 df). Each column is a separate regression on one WGI aspect. p-values in parentheses. * p&lt;0.10, ** p&lt;0.05, *** p&lt;0.01.</p>
+</div>
+<ul class="takeaway" style="margin-top:5px; font-size:0.72em; line-height:1.2;">
+<li>We do not see any significance in quarterly data on capital flow volatility in emerging markets</li>
+<li>We will proceed to annual data</li>
+</ul>
+</section>
+<section id="channel-2-model-1-annual" class="slide level2 channel-1-page">
+<h2>Channel 2 - Annual</h2>
+<div class="title-eq">
+<p><span class="math display">\[
+\begin{aligned}
+CFV_{i,t}={}&\beta_1 GPR_{i,t}^{z}+\beta_2 WGI_{i,t}+\beta_3\left(WGI_{i,t}\times GPR_{i,t}^{z}\right)\\
+&+\gamma^{\prime}X_{i,t-1}+\delta_i+\varepsilon_{i,t}
+\end{aligned}
+\]</span></p>
+</div>
+<div class="eq-note">
+<p><span class="math inline">\(CFV_{i,t}\)</span>: mean of the twelve monthly 3-month rolling SDs inside year \(t\), US$ bn&nbsp;&nbsp;|&nbsp;&nbsp;<span class="math inline">\(WGI_{i,t}\)</span>: current-year score (constant within the year)&nbsp;&nbsp;|&nbsp;&nbsp;<span class="math inline">\(GPR_{i,t}^{z}\)</span>: standardized geopolitical risk&nbsp;&nbsp;|&nbsp;&nbsp;<span class="math inline">\(X_{i,t-1}\)</span>: lagged controls<br/>
+WGI is not lagged a full year: as it is fixed within the calendar year, the current-year score reproduces the monthly convention (11 of 12 months already use it)</p>
+</div>
+<div class="table-area">
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Voice &amp;<br/>account.</th>
+<th>Political<br/>stability</th>
+<th>Gov.<br/>effectiveness</th>
+<th>Regulatory<br/>quality</th>
+<th>Rule of<br/>law</th>
+<th>Control of<br/>corruption</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>WGI, current year</strong></td>
+<td>−0.9619<br/><span class="pv">(0.161)</span></td>
+<td>−0.4699<br/><span class="pv">(0.379)</span></td>
+<td>1.3133**<br/><span class="pv">(0.017)</span></td>
+<td>−0.3366<br/><span class="pv">(0.586)</span></td>
+<td>−0.4261<br/><span class="pv">(0.435)</span></td>
+<td>0.1094<br/><span class="pv">(0.891)</span></td>
+</tr>
+<tr>
+<td><strong>GPR, standardized</strong></td>
+<td>−0.2299<br/><span class="pv">(0.153)</span></td>
+<td>−0.0765<br/><span class="pv">(0.612)</span></td>
+<td>−0.3343**<br/><span class="pv">(0.021)</span></td>
+<td>−0.2074<br/><span class="pv">(0.437)</span></td>
+<td>−0.2382<br/><span class="pv">(0.176)</span></td>
+<td>−0.1328<br/><span class="pv">(0.420)</span></td>
+</tr>
+<tr>
+<td><strong>WGI × GPR</strong></td>
+<td>−0.6392<br/><span class="pv">(0.110)</span></td>
+<td>0.2339<br/><span class="pv">(0.323)</span></td>
+<td>0.5731<br/><span class="pv">(0.154)</span></td>
+<td>0.1209<br/><span class="pv">(0.792)</span></td>
+<td>−0.2483<br/><span class="pv">(0.563)</span></td>
+<td>0.3127<br/><span class="pv">(0.412)</span></td>
+</tr>
+</tbody>
+</table>
+<p class="table-note">204 country-years, 14 emerging economies, 2002–2021. Country fixed effects; country-clustered standard errors (14 clusters, 13 df). Each column is a separate regression on one WGI aspect. p-values in parentheses. * p&lt;0.10, ** p&lt;0.05, *** p&lt;0.01.</p>
 </div>
 </section>
 <section id="conclusion" class="slide level2">
