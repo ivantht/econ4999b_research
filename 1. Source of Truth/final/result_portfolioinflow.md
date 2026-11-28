@@ -132,17 +132,17 @@ A positive correlation means economies with a higher average WGI tend to have a 
 
 Charts: [correlation_annual_gpr_portfolio_inflow_and_wgi_emerging.html](../output/correlation_annual_gpr_portfolio_inflow_and_wgi_emerging.html)
 
-![Voice and accountability, r = -0.633](figures/portfolio_inflow_wgi_voice_and_accountability.png)
+![Voice and accountability, r = -0.633](../figures/portfolio_inflow_wgi_voice_and_accountability.png)
 
-![Political stability, r = -0.321](figures/portfolio_inflow_wgi_political_stability.png)
+![Political stability, r = -0.321](../figures/portfolio_inflow_wgi_political_stability.png)
 
-![Government effectiveness, r = -0.401](figures/portfolio_inflow_wgi_government_effectiveness.png)
+![Government effectiveness, r = -0.401](../figures/portfolio_inflow_wgi_government_effectiveness.png)
 
-![Regulatory quality, r = -0.546](figures/portfolio_inflow_wgi_regulatory_quality.png)
+![Regulatory quality, r = -0.546](../figures/portfolio_inflow_wgi_regulatory_quality.png)
 
-![Rule of law, r = -0.478](figures/portfolio_inflow_wgi_rule_of_law.png)
+![Rule of law, r = -0.478](../figures/portfolio_inflow_wgi_rule_of_law.png)
 
-![Control of corruption, r = -0.416](figures/portfolio_inflow_wgi_control_of_corruption.png)
+![Control of corruption, r = -0.416](../figures/portfolio_inflow_wgi_control_of_corruption.png)
 
 
 ## What the scatter plots imply

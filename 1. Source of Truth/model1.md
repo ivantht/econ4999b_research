@@ -94,6 +94,33 @@ Standardized GPR and WGI × GPR have \(p>0.10\) in every column. The lagged regu
 | Within \(R^2\) | 0.0117 | 0.0114 | 0.0114 | 0.0118 | 0.0115 | 0.0114 |
 | \(R^2\) | 0.0139 | 0.0136 | 0.0136 | 0.0140 | 0.0137 | 0.0136 |
 
+## Monthly estimates, emerging economies
+
+Same equation, country fixed effects, and country-clustered standard errors as the monthly regression above. The sample is the Emerging group in `cleaned/replication_cleaned/country_month.csv`. The regression is `output/run_model1_monthly_emerging.py`. Results are `output/model1_monthly_emerging_results.csv`.
+
+3,315 country-months, 14 countries, February 2002–January 2022. Twelve countries contribute all 240 months. Türkiye contributes 238 months, from April 2002. Indonesia contributes 197 months, from September 2005 through January 2022. Those shorter spans are months in which the lagged policy-rate change is blank. Ukraine has no policy rate in the file, so it contributes no months.
+
+Countries: Brazil, Chile, China, Colombia, Hungary, India, Indonesia, Malaysia, Mexico, Philippines, Poland, South Africa, Thailand, and Türkiye.
+
+Standardized GPR has \(p>0.10\) in every column. The voice-and-accountability interaction is the WGI × GPR coefficient with \(p<0.10\). Lagged government effectiveness and lagged regulatory quality are the governance coefficients with \(p<0.10\). The lagged policy-rate change, the lagged log oil-price change, and the lagged debt/GDP change clear that threshold in every column.
+
+|  | Voice and accountability | Political stability | Government effectiveness | Regulatory quality | Rule of law | Control of corruption |
+| --- | ---: | ---: | ---: | ---: | ---: | ---: |
+| WGI, lagged | 0.001961 (0.002547) | 0.000186 (0.001560) | 0.003344** (0.001443) | 0.004071* (0.002073) | 0.001419 (0.003132) | 0.000415 (0.002086) |
+| GPR, standardized | −0.000112 (0.000213) | −0.000348 (0.000280) | −0.000088 (0.000293) | −0.000160 (0.000414) | −0.000186 (0.000258) | −0.000202 (0.000233) |
+| WGI × GPR | −0.000640* (0.000309) | −0.000360 (0.000395) | −0.000226 (0.000520) | −0.000046 (0.000597) | −0.000322 (0.000372) | −0.000358 (0.000440) |
+| Policy rate, lagged change | 0.001446*** (0.000420) | 0.001404*** (0.000419) | 0.001355*** (0.000423) | 0.001381*** (0.000414) | 0.001416*** (0.000413) | 0.001397*** (0.000415) |
+| Inflation, lagged change | 0.001844 (0.001296) | 0.001815 (0.001278) | 0.001796 (0.001248) | 0.001820 (0.001256) | 0.001826 (0.001297) | 0.001805 (0.001259) |
+| Log oil price, lagged change | 0.017572** (0.007385) | 0.017597** (0.007359) | 0.018086** (0.007187) | 0.017591** (0.007249) | 0.017559** (0.007385) | 0.017619** (0.007351) |
+| Log VIX, lagged | 0.002910 (0.001778) | 0.002919 (0.001780) | 0.003154 (0.001812) | 0.002887 (0.001736) | 0.002912 (0.001774) | 0.002915 (0.001807) |
+| Log global EPU, lagged change | 0.002962 (0.001864) | 0.002947 (0.001885) | 0.002883 (0.001882) | 0.002954 (0.001869) | 0.002927 (0.001886) | 0.002935 (0.001896) |
+| Financial development, lagged change | 0.039451 (0.025691) | 0.040595 (0.026788) | 0.043340 (0.026483) | 0.038627 (0.026030) | 0.040142 (0.026143) | 0.040805 (0.026975) |
+| Debt/GDP, lagged change | −0.000767*** (0.000129) | −0.000779*** (0.000140) | −0.000811*** (0.000144) | −0.000766*** (0.000136) | −0.000766*** (0.000133) | −0.000775*** (0.000139) |
+| Observations | 3,315 | 3,315 | 3,315 | 3,315 | 3,315 | 3,315 |
+| Countries | 14 | 14 | 14 | 14 | 14 | 14 |
+| Within \(R^2\) | 0.0285 | 0.0280 | 0.0288 | 0.0288 | 0.0280 | 0.0280 |
+| \(R^2\) | 0.0305 | 0.0300 | 0.0308 | 0.0308 | 0.0300 | 0.0299 |
+
 ## Quarterly outcome timings
 
 Three ways to date the outcome on one row of `cleaned/data_for_quarter_model.csv`. The row is country \(i\) in calendar quarter \(t\). The regressors below are the same in all three. One regression for each WGI dimension uses one `wgi_*_lag1q` column and its matching `wgi_*_lag1q_x_gpr_z`. These timings are separate from the monthly regression estimated above.
